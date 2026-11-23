@@ -1,11 +1,2174 @@
 {
   "append_state": {
-    "entry_count": 73,
+    "entry_count": 219,
     "last_entry_key": "written on the dark|guy gavriel kay",
     "last_position": "2026.07",
     "source_revision": null
   },
   "entries": [
+    {
+      "authors": [
+        "Michael G. Coney"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1983"
+      },
+      "title": "Cat Karina"
+    },
+    {
+      "authors": [
+        "Crawford Kilian"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1983"
+      },
+      "title": "Eyas"
+    },
+    {
+      "authors": [
+        "Pauline Gedge"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1983"
+      },
+      "title": "Stargate"
+    },
+    {
+      "authors": [
+        "Andrew Weiner"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1983"
+      },
+      "title": "Station Gehenna"
+    },
+    {
+      "authors": [
+        "John Robert Colombo"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1983"
+      },
+      "title": "Wendigo: An Anthology of Fact and Fantastic Fiction"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1986"
+      },
+      "title": "The Handmaid's Tale"
+    },
+    {
+      "authors": [
+        "Phyllis Gotlieb"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1986"
+      },
+      "title": "The Kingdom of the Cats"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1986"
+      },
+      "title": "Mulengro"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1988"
+      },
+      "title": "Jack the Giant Killer"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1988"
+      },
+      "title": "The Darkest Road"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1988"
+      },
+      "title": "Memory Wire"
+    },
+    {
+      "authors": [
+        "Spider Robinson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1988"
+      },
+      "title": "Time Pressure"
+    },
+    {
+      "authors": [
+        "William Gibson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1989"
+      },
+      "title": "Mona Lisa Overdrive"
+    },
+    {
+      "authors": [
+        "Candas Jane Dorsey"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1989"
+      },
+      "title": "Machine Sex and Other Stories"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1989"
+      },
+      "title": "Memory Wire"
+    },
+    {
+      "authors": [
+        "\u00c9lisabeth Vonarburg"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1989"
+      },
+      "title": "The Silent City"
+    },
+    {
+      "authors": [
+        "Spider Robinson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1989"
+      },
+      "title": "Time Pressure"
+    },
+    {
+      "authors": [
+        "Dave Duncan"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1990"
+      },
+      "title": "West of January"
+    },
+    {
+      "authors": [
+        "Terence M. Green"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1990"
+      },
+      "title": "Barking Dogs"
+    },
+    {
+      "authors": [
+        "Tanya Huff"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1990"
+      },
+      "title": "Gate of Darkness, Circle of Light"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1990"
+      },
+      "title": "Gypsies"
+    },
+    {
+      "authors": [
+        "Crawford Kilian"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1990"
+      },
+      "title": "Rogue Emperor"
+    },
+    {
+      "authors": [
+        "Eileen Kernaghan"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1990"
+      },
+      "title": "The Sarsen Witch"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1991"
+      },
+      "title": "Tigana"
+    },
+    {
+      "authors": [
+        "Tanya Huff"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1991"
+      },
+      "title": "Gate of Darkness, Circle of Light"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1991"
+      },
+      "title": "Golden Fleece"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1991"
+      },
+      "title": "Gypsies"
+    },
+    {
+      "authors": [
+        "Michael G. Coney"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1991"
+      },
+      "title": "King of the Scepter'd Isle"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1992"
+      },
+      "title": "Golden Fleece"
+    },
+    {
+      "authors": [
+        "Tanya Huff"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1992"
+      },
+      "title": "Blood Price"
+    },
+    {
+      "authors": [
+        "William Gibson",
+        "Bruce Sterling"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1992"
+      },
+      "title": "The Difference Engine"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1992"
+      },
+      "title": "The Divide"
+    },
+    {
+      "authors": [
+        "Spider Robinson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1992"
+      },
+      "title": "Kill the Editor"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1992"
+      },
+      "title": "The Little Country"
+    },
+    {
+      "authors": [
+        "Sean Stewart"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1993"
+      },
+      "title": "Passion Play"
+    },
+    {
+      "authors": [
+        "Tanya Huff"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1993"
+      },
+      "title": "Blood Trail"
+    },
+    {
+      "authors": [
+        "Terence M. Green"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1993"
+      },
+      "title": "Children of the Rainbow"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1993"
+      },
+      "title": "Far-Seer"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1993"
+      },
+      "title": "A Song for Arbonne"
+    },
+    {
+      "authors": [
+        "Sean Stewart"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1994"
+      },
+      "title": "Nobody's Son"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1994"
+      },
+      "title": "Far-Seer"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1994"
+      },
+      "title": "A Song for Arbonne"
+    },
+    {
+      "authors": [
+        "William Gibson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1994"
+      },
+      "title": "Virtual Light"
+    },
+    {
+      "authors": [
+        "William Gibson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1995"
+      },
+      "title": "Virtual Light"
+    },
+    {
+      "authors": [
+        "Spider Robinson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1995"
+      },
+      "title": "The Callahan Touch"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1995"
+      },
+      "title": "End of an Era"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1995"
+      },
+      "title": "Mysterium"
+    },
+    {
+      "authors": [
+        "Nancy Kilpatrick"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1995"
+      },
+      "title": "Near Death"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1996"
+      },
+      "title": "The Terminal Experiment"
+    },
+    {
+      "authors": [
+        "Dave Duncan"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1996"
+      },
+      "title": "The Cursed"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1996"
+      },
+      "title": "The Lions of Al-Rassan"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1996"
+      },
+      "title": "Mysterium"
+    },
+    {
+      "authors": [
+        "Sean Stewart"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1996"
+      },
+      "title": "Resurrection Man"
+    },
+    {
+      "authors": [
+        "Spider Robinson",
+        "Jeanne Robinson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1996"
+      },
+      "title": "Starmind"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1997"
+      },
+      "title": "Starplex"
+    },
+    {
+      "authors": [
+        "Nancy Kilpatrick"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1997"
+      },
+      "title": "Child of the Night"
+    },
+    {
+      "authors": [
+        "Tanya Huff"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1997"
+      },
+      "title": "No Quarter"
+    },
+    {
+      "authors": [
+        "Sean Stewart"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1997"
+      },
+      "title": "Resurrection Man"
+    },
+    {
+      "authors": [
+        "Terence M. Green"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1997"
+      },
+      "title": "Shadow of Ashland"
+    },
+    {
+      "authors": [
+        "Candas Jane Dorsey"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1998"
+      },
+      "title": "Black Wine"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1998"
+      },
+      "title": "Frameshift"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1998"
+      },
+      "title": "Illegal Alien"
+    },
+    {
+      "authors": [
+        "Terence M. Green"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1998"
+      },
+      "title": "Shadow of Ashland"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1998"
+      },
+      "title": "Trader"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1999"
+      },
+      "title": "Darwinia"
+    },
+    {
+      "authors": [
+        "Nancy Kilpatrick"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1999"
+      },
+      "title": "Dracul: An Eternal Love Story"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1999"
+      },
+      "title": "Factoring Humanity"
+    },
+    {
+      "authors": [
+        "Phyllis Gotlieb"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1999"
+      },
+      "title": "Flesh and Gold"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1999"
+      },
+      "title": "Sailing to Sarantium"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "Aurora Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_1999"
+      },
+      "title": "Someplace to Be Flying"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2000"
+      },
+      "title": "Flashforward"
+    },
+    {
+      "authors": [
+        "Julie E. Czerneda"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2000"
+      },
+      "title": "Beholder's Eye"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2000"
+      },
+      "title": "Bios"
+    },
+    {
+      "authors": [
+        "Nalo Hopkinson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2000"
+      },
+      "title": "Brown Girl in the Ring"
+    },
+    {
+      "authors": [
+        "Edo van Belkom"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2000"
+      },
+      "title": "Death Drives a Semi"
+    },
+    {
+      "authors": [
+        "Peter Watts"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2000"
+      },
+      "title": "Starfish"
+    },
+    {
+      "authors": [
+        "Eileen Kernaghan"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2001"
+      },
+      "title": "The Snow Queen"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2001"
+      },
+      "title": "Calculating God"
+    },
+    {
+      "authors": [
+        "Julie E. Czerneda"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2001"
+      },
+      "title": "Changing Vision"
+    },
+    {
+      "authors": [
+        "James Alan Gardner"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2001"
+      },
+      "title": "Hunted"
+    },
+    {
+      "authors": [
+        "Lisa Smedman"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2001"
+      },
+      "title": "The Playback War"
+    },
+    {
+      "authors": [
+        "Julie E. Czerneda"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2002"
+      },
+      "title": "In the Company of Others"
+    },
+    {
+      "authors": [
+        "James Alan Gardner"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2002"
+      },
+      "title": "Ascending"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2002"
+      },
+      "title": "The Chronoliths"
+    },
+    {
+      "authors": [
+        "Peter Watts"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2002"
+      },
+      "title": "Maelstrom"
+    },
+    {
+      "authors": [
+        "Edo van Belkom"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2002"
+      },
+      "title": "Teeth"
+    },
+    {
+      "authors": [
+        "Karl Schroeder"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2003"
+      },
+      "title": "Permanence"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2003"
+      },
+      "title": "Hominids"
+    },
+    {
+      "authors": [
+        "Edo van Belkom"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2003"
+      },
+      "title": "Martyrs"
+    },
+    {
+      "authors": [
+        "Julie E. Czerneda"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2003"
+      },
+      "title": "To Trade the Stars"
+    },
+    {
+      "authors": [
+        "Karin Lowachee"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2003"
+      },
+      "title": "Warchild"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2004"
+      },
+      "title": "Blind Lake"
+    },
+    {
+      "authors": [
+        "Karin Lowachee"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2004"
+      },
+      "title": "Burndive"
+    },
+    {
+      "authors": [
+        "Julie E. Czerneda"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2004"
+      },
+      "title": "Hidden in Sight"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2004"
+      },
+      "title": "Humans"
+    },
+    {
+      "authors": [
+        "Edo van Belkom"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2004"
+      },
+      "title": "Scream Queen"
+    },
+    {
+      "authors": [
+        "Caitlin Sweet"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2004"
+      },
+      "title": "A Telling of Stars"
+    },
+    {
+      "authors": [
+        "Edo van Belkom"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2005"
+      },
+      "title": "Wolf Pack"
+    },
+    {
+      "authors": [
+        "Eileen Kernaghan"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2005"
+      },
+      "title": "The Alchemist's Daughter"
+    },
+    {
+      "authors": [
+        "Matthew Hughes"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2005"
+      },
+      "title": "Black Brillion"
+    },
+    {
+      "authors": [
+        "Stephanie Bedwell-Grime"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2005"
+      },
+      "title": "Fallen Angel"
+    },
+    {
+      "authors": [
+        "James Alan Gardner"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2005"
+      },
+      "title": "Radiant"
+    },
+    {
+      "authors": [
+        "Julie E. Czerneda"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2005"
+      },
+      "title": "Survival"
+    },
+    {
+      "authors": [
+        "Karin Lowachee"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2006"
+      },
+      "title": "Cagebird"
+    },
+    {
+      "authors": [
+        "Edo van Belkom"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2006"
+      },
+      "title": "Lone Wolf"
+    },
+    {
+      "authors": [
+        "Julie E. Czerneda"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2006"
+      },
+      "title": "Migration"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2006"
+      },
+      "title": "Mindscan"
+    },
+    {
+      "authors": [
+        "Caitlin Sweet"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2006"
+      },
+      "title": "Silences of Home"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2006"
+      },
+      "title": "Spin"
+    },
+    {
+      "authors": [
+        "Dave Duncan"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2007"
+      },
+      "title": "Children of Chaos"
+    },
+    {
+      "authors": [
+        "Peter Watts"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2007"
+      },
+      "title": "Blindsight"
+    },
+    {
+      "authors": [
+        "Julie E. Czerneda"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2007"
+      },
+      "title": "Regeneration"
+    },
+    {
+      "authors": [
+        "Lynda Williams"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2007"
+      },
+      "title": "Righteous Anger"
+    },
+    {
+      "authors": [
+        "Tanya Huff"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2007"
+      },
+      "title": "Smoke and Ashes"
+    },
+    {
+      "authors": [
+        "Karl Schroeder"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2007"
+      },
+      "title": "Sun of Suns"
+    },
+    {
+      "authors": [
+        "Nalo Hopkinson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2008"
+      },
+      "title": "The New Moon's Arms"
+    },
+    {
+      "authors": [
+        "Denys\u00e9 Bridger"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2008"
+      },
+      "title": "As Fate Decrees"
+    },
+    {
+      "authors": [
+        "Edo van Belkom"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2008"
+      },
+      "title": "Cry Wolf"
+    },
+    {
+      "authors": [
+        "Derwin Mak"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2008"
+      },
+      "title": "The Moon Under Her Feet"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2008"
+      },
+      "title": "Rollback"
+    },
+    {
+      "authors": [
+        "Edward Willett"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2009"
+      },
+      "title": "Marseguro"
+    },
+    {
+      "authors": [
+        "Ursula Pflug"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2009"
+      },
+      "title": "After the Fires"
+    },
+    {
+      "authors": [
+        "Hayden Trenholm"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2009"
+      },
+      "title": "Defining Diana"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2009"
+      },
+      "title": "Identity Theft and Other Stories"
+    },
+    {
+      "authors": [
+        "Douglas Smith"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2009"
+      },
+      "title": "Impossibilia"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2010"
+      },
+      "title": "WWW: Wake"
+    },
+    {
+      "authors": [
+        "Leslie Carmichael"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2010"
+      },
+      "title": "The Amulet of Amon-Ra"
+    },
+    {
+      "authors": [
+        "Barbara Galler-Smith",
+        "Josh Langston"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2010"
+      },
+      "title": "Druids"
+    },
+    {
+      "authors": [
+        "Hayden Trenholm"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2010"
+      },
+      "title": "Steel Whispers"
+    },
+    {
+      "authors": [
+        "Edward Willett"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2010"
+      },
+      "title": "Terra Insegura"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2011"
+      },
+      "title": "WWW: Watch"
+    },
+    {
+      "authors": [
+        "Craig Russell"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2011"
+      },
+      "title": "Black Bottle Man"
+    },
+    {
+      "authors": [
+        "Marie Bilodeau"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2011"
+      },
+      "title": "Destiny's Blood"
+    },
+    {
+      "authors": [
+        "Hayden Trenholm"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2011"
+      },
+      "title": "Stealing Home"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2011"
+      },
+      "title": "Under Heaven"
+    },
     {
       "authors": [
         "Robert J. Sawyer"
@@ -101,6 +2264,182 @@
         "url": "https://www.sfadb.com/Aurora_Awards_2012"
       },
       "title": "Technicolor Ultra Mall"
+    },
+    {
+      "authors": [
+        "Tanya Huff"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2013"
+      },
+      "title": "The Silvered"
+    },
+    {
+      "authors": [
+        "Marie Bilodeau"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2013"
+      },
+      "title": "Destiny's Fall"
+    },
+    {
+      "authors": [
+        "Karen Dudley"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2013"
+      },
+      "title": "Food for the Gods"
+    },
+    {
+      "authors": [
+        "Lynda Williams"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2013"
+      },
+      "title": "Healer's Sword: Part 7 of the Okal Rel Saga"
+    },
+    {
+      "authors": [
+        "Chadwick Ginther"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2013"
+      },
+      "title": "Thunder Road"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2013"
+      },
+      "title": "Triggers"
+    },
+    {
+      "authors": [
+        "Julie E. Czerneda"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2014"
+      },
+      "title": "A Turn of Light"
+    },
+    {
+      "authors": [
+        "Robert J. Sawyer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2014"
+      },
+      "title": "Red Planet Blues"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2014"
+      },
+      "title": "River of Stars"
+    },
+    {
+      "authors": [
+        "Susan MacGregor"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2014"
+      },
+      "title": "The Tattooed Witch"
+    },
+    {
+      "authors": [
+        "Chadwick Ginther"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2014"
+      },
+      "title": "Tombstone Blues"
     },
     {
       "authors": [
@@ -1175,12 +3514,13 @@
       "title": "Written on the Dark"
     }
   ],
-  "fetched_at": "2026-07-08T23:34:50Z",
+  "fetched_at": "2026-07-20T13:08:16Z",
   "list_id": "aurora_novel",
   "list_name": "Aurora - Novel",
   "match_series": false,
   "notes": [],
   "parser": "aurora_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Aurora - Novel",

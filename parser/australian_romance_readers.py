@@ -24,6 +24,8 @@ try:
     strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.parser.annual_updates import read_annual_pages
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError,CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
@@ -31,6 +33,8 @@ except ImportError:
     strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .annual_updates import read_annual_pages
+  from errors import ImportCancelledError,CamoufoxRequiredError
 
 
 ARRA_AWARD_NAME = 'Australian Romance Readers Awards'
@@ -46,7 +50,22 @@ class AustralianRomanceReadersAwardsParser(AwardParserBase):
 
   def parse(
       self, html, base_url=ARRA_AWARDS_URL, name=ARRA_AWARD_NAME, fetch_url=None,
-      year_pages=None):
+      year_pages=None,cached_parsed=None,incremental_update=False):
+    if fetch_url is not None and year_pages is None:
+      discovered=[(ARRA_REST_PAGE_URL.format(slug=self.slug_from_year_url(url)),self.year_url_sort_key(url))
+        for url in self.discover_year_urls(html,base_url)]
+      def read_year(payload,url):
+        year=self.year_from_text(self.slug_from_rest_url(url))
+        content,source=self.rest_page_content(payload,ARRA_AWARDS_URL+f'{year}-2/')
+        rows=self.dedupe_rows(self.parse_year_page(content,source))
+        return {'entries':self.entries_from_rows(rows),'notes':[]}
+      result=read_annual_pages(json.dumps([base_url,name,type(self).__name__,ARRA_REST_PAGE_URL]),
+        discovered,fetch_url,read_year,cached_parsed,incremental_update,allow_partial=True,
+        failure_note=lambda url,year,err:f'ARRA year page could not be fetched through REST: {year}: {err}')
+      self.add_coverage_notes(result['entries'],result['notes'])
+      parsed=self.parsed_result(name,base_url,result['entries'],notes=result['notes'])
+      parsed['incremental_state']=result['incremental_state']
+      return parsed
     notes = []
     rows = []
     if year_pages is not None:
@@ -71,8 +90,10 @@ class AustralianRomanceReadersAwardsParser(AwardParserBase):
     urls = []
     for link in soup.find_all('a', href=True):
       href = urljoin(base_url, link['href'])
-      if re.search(r'/awards/(?:19|20)\d{2}-2/?$', href) and href not in urls:
-        urls.append(href)
+      match=re.search(r'/awards/((?:19|20)\d{2}-2)/?$',href)
+      if match:
+        canonical=ARRA_AWARDS_URL+match.group(1)+'/'
+        if canonical not in urls:urls.append(canonical)
     return tuple(sorted(urls, key=self.year_url_sort_key))
 
   def year_url_sort_key(self, url):
@@ -86,6 +107,8 @@ class AustralianRomanceReadersAwardsParser(AwardParserBase):
       try:
         rest_html = fetch_url(ARRA_REST_PAGE_URL.format(slug=slug))
         content_html, source_url = self.rest_page_content(rest_html, year_url)
+      except (ImportCancelledError,CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'ARRA year page could not be fetched through REST: {year_url}: {err}')
         continue
@@ -95,6 +118,10 @@ class AustralianRomanceReadersAwardsParser(AwardParserBase):
   def slug_from_year_url(self, url):
     match = re.search(r'/awards/((?:19|20)\d{2}-2)/?$', url or '')
     return match.group(1) if match is not None else ''
+
+  def slug_from_rest_url(self,url):
+    match=re.search(r'[?&]slug=((?:19|20)\d{2}-2)(?:&|$)',url)
+    return match.group(1) if match else ''
 
   def rest_page_content(self, rest_html, fallback_url):
     try:
@@ -172,6 +199,10 @@ class AustralianRomanceReadersAwardsParser(AwardParserBase):
   def category_from_node(self, node):
     if not getattr(node, 'name', None) or node.name in {'ul', 'li', 'table', 'tbody', 'tr', 'td'}:
       return ''
+    for label in node.find_all(['strong','b']):
+      text=self.clean_category(label.get_text(' ',strip=True))
+      if re.match(r'^favou?rite\b',text,re.I) and self.looks_like_category(text):
+        return text
     text = self.clean_category(node.get_text(' ', strip=True))
     return text if self.looks_like_category(text) else ''
 
@@ -267,6 +298,15 @@ class AustralianRomanceReadersAwardsParser(AwardParserBase):
     )
 
   def title_author_from_node(self, node):
+    marked=node.find(['em','i'])
+    text=self.row_text(node)
+    if marked is not None:
+      title=normalize_line(marked.get_text(' ',strip=True))
+      if text.startswith(title):
+        credit=re.match(r'^\s*(?:/|[\u2013\u2014]|by)\s+(.+)$',text[len(title):],re.I)
+        if credit:
+          authors=self.clean_authors(credit.group(1))
+          if title and authors:return self.clean_title(title),authors
     return self.title_author_from_text(self.row_text(node))
 
   def row_text(self, node):
@@ -367,6 +407,7 @@ class AustralianRomanceReadersAwardsParser(AwardParserBase):
 
   def clean_category(self, value):
     value = normalize_line(value).replace('\u2013', '-').replace('\u2014', '-')
+    value = re.sub(r'\s+(?:-\s+)?(?:proudly\s+)?sponsored by .+$','',value,flags=re.I)
     value = re.sub(r'\s+for\s+(?:19|20)\d{2}$', '', value, flags=re.I)
     if re.search(r'\bpublished\s+in\s+(?:19|20)\d{2}$', value, re.I) is None:
       value = re.sub(r'\s+(?:19|20)\d{2}$', '', value)

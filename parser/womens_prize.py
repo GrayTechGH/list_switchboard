@@ -13,6 +13,8 @@ Maintenance notes:
 """
 
 import re
+import json
+import datetime
 from urllib.parse import urljoin
 
 from lxml import html as lxml_html
@@ -23,12 +25,16 @@ try:
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError,CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from errors import ImportCancelledError,CamoufoxRequiredError
 
 
 RESULT_ORDER = {
@@ -78,45 +84,123 @@ class WomensPrizeOfficialParser(AwardParserBase):
     self.category = category
     self.prize_aliases = tuple(prize_aliases or (award_name,))
 
-  def parse(self, html, base_url, name, category=None, fetch_url=None, **_kwargs):
+  def parse(self, html, base_url, name, category=None, fetch_url=None,
+      cached_parsed=None,incremental_update=False, **_kwargs):
     notes = []
-    rows = self.parse_rows(
-      html,
-      base_url,
-      category or self.category,
-      fetch_url,
-      notes)
+    category=category or self.category
+    cache=ParsedUnitCache('womens-prize-work-details-v1',json.dumps([
+      base_url,name,self.award_name,category,self.prize_aliases]),cached_parsed,incremental_update)
+    rows,units=self.parse_source_units(html,base_url,category,fetch_url,notes,cache)
     entries = self.entries_from_rows(self.dedupe_rows(rows))
-    return self.parsed_result(
+    entries=sorted(entries,key=lambda item:position_sort_key(item.get('position','')))
+    for url,(source_rows,revision,complete) in units.items():
+      projected,metadata=project_source_rows(source_rows,entries,
+        lambda row:(str(row['award_year']),normalize_heading(row['title'])))
+      cache.put(url,projected,revision=revision,complete=complete,metadata=metadata)
+    parsed=self.parsed_result(
       name,
       base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      entries,
       notes=notes)
+    parsed['incremental_state']=cache.state(entries)
+    parsed['incremental_state']['discovery']={'refresh_units':[
+      url for url,(rows,_revision,_complete) in units.items()
+      if any(int(row['award_year'])>=datetime.datetime.now().year for row in rows)]}
+    return parsed
 
   def parse_rows(self, html, base_url, category, fetch_url, notes):
+    return self.parse_source_units(html,base_url,category,fetch_url,notes)[0]
+
+  def parse_source_units(self,html,base_url,category,fetch_url,notes,cache=None):
     rows = []
+    units={}
     for item in self.landing_items(html, base_url):
+      url=item['source_url']
+      revision=[item.get('award_year'),normalize_heading(item.get('title','')),normalize_heading(item.get('author',''))]
+      previous=None
+      old=(cache.old_units.get(url) or {}) if cache else {}
+      if cache:
+        try:
+          previous=restore_source_rows(cache.previous(url),old.get('metadata') or {})
+        except (ValueError,TypeError):
+          pass
+      if (item.get('award_year') and int(item['award_year'])<datetime.datetime.now().year and
+          old.get('complete') is True and old.get('revision')==revision and previous and
+          all(r.get('title') and r.get('author') and r.get('category')==category for r in previous)):
+        restored=[dict(r,award_year=str(item['award_year']),result=item['result'],category=category) for r in previous]
+        rows.extend(restored)
+        units[url]=(restored,revision,True)
+        continue
       if fetch_url is not None and item['source_url']:
         try:
           detail = self.row_from_detail_page(
             fetch_url(item['source_url']),
             item['source_url'],
-            category)
+            category,metadata_only=True)
+          if detail is None or (item.get('award_year') and detail['award_year']!=str(item['award_year'])):
+            # A fetched sibling-prize or wrong-year page is not evidence for
+            # the landing card. Keep it retryable without importing that card.
+            notes.append('Official Women\'s Prize detail did not identify the expected prize/year: '+url)
+            units[url]=([],revision,False)
+            continue
+          detail=dict(detail,result=item['result'],award_year=str(item.get('award_year') or detail['award_year']))
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
         except Exception as err:
           notes.append(
             'Official Women\'s Prize detail page failed for %s: %s' % (
               item['source_url'], str(err) or err.__class__.__name__))
+          retained=previous or []
+          if retained:
+            retained=[dict(r,result=item['result'],award_year=str(item.get('award_year') or r['award_year'])) for r in retained]
+            rows.extend(retained)
+            units[url]=(retained,revision,False)
+            continue
         else:
           if detail is not None:
             rows.append(detail)
+            units[url]=([detail],revision,True)
           continue
       row = self.row_from_landing_item(item, category)
       if row is not None:
         rows.append(row)
-    return rows
+      units[url]=([row] if row else [],revision,False)
+    return rows,units
 
   def landing_items(self, html, base_url):
     root = self.html_root(html)
+    modern=root.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," previous_winners ")]')
+    if modern:
+      items={}
+      for block in modern:
+        for p in block.xpath('.//p'):
+          links=p.xpath('.//a[contains(@href,"/library/")]')
+          years=p.xpath('.//*[contains(concat(" ",normalize-space(@class)," ")," win_year ")]')
+          if not links or not years:
+            continue
+          year=self.year_from_text(self.node_text(years[0]))
+          if not year:
+            continue
+          link=links[0]
+          url=urljoin(base_url,link.get('href'))
+          author=' '.join(self.node_text(n) if hasattr(n,'xpath') else str(n)
+            for n in p.xpath('.//br/following-sibling::node()')).strip()
+          items[url]={'source_url':url,'title':self.clean_title(self.node_text(link)),
+            'author':self.clean_author(author),'result':RESULT_WINNER,'award_year':year}
+      for heading in root.xpath('//h2'):
+        label=self.node_text(heading)
+        if self.result_from_text(label)!=RESULT_SHORTLISTED or not self.names_configured_prize(label):
+          continue
+        sections=heading.xpath('ancestor::section[1]')
+        if not sections:
+          continue
+        for link in sections[0].xpath('.//a[contains(concat(" ",normalize-space(@class)," ")," book_card ")]'):
+          url=urljoin(base_url,link.get('href') or '')
+          images=link.xpath('.//img[@alt]')
+          if url not in items:
+            items[url]={'source_url':url,'title':images[0].get('alt') if images else '',
+              'author':'','result':RESULT_SHORTLISTED,'award_year':self.year_from_text(label)}
+      return list(items.values())
     items = []
     seen = set()
     for link in root.xpath('//a[@href]'):
@@ -185,15 +269,16 @@ class WomensPrizeOfficialParser(AwardParserBase):
       title, author = self.title_author_from_text(self.node_text(link))
     return title, author
 
-  def row_from_detail_page(self, html, base_url, category):
+  def row_from_detail_page(self, html, base_url, category,metadata_only=False):
     root = self.html_root(html)
-    text = self.node_text(root)
+    labels=root.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," book_prize ")]')
+    text=self.node_text(labels[0]) if labels else self.node_text(root)
     if not self.names_configured_prize(text):
       return None
     result = self.result_from_text(text)
     year = self.year_from_result_text(text) or self.year_from_text(text)
     title, author = self.title_author_from_detail(root)
-    if year is None or result is None or not title or not author:
+    if year is None or (result is None and not metadata_only) or not title or not author:
       return None
     return {
       'award_year': str(year),
@@ -217,6 +302,13 @@ class WomensPrizeOfficialParser(AwardParserBase):
     }
 
   def title_author_from_detail(self, root):
+    metadata=root.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," book_meta ")]//h3')
+    if metadata:
+      titles=metadata[0].xpath('.//strong')
+      author=' '.join(self.node_text(n) if hasattr(n,'xpath') else str(n)
+        for n in metadata[0].xpath('.//br/following-sibling::node()')).strip()
+      if titles and author:
+        return self.clean_title(self.node_text(titles[0])),self.clean_author(author)
     title = ''
     author = ''
     title_nodes = root.xpath('(//main//h1|//h1)[1]')
@@ -241,7 +333,8 @@ class WomensPrizeOfficialParser(AwardParserBase):
       nodes = node.xpath(xpath)
       if nodes:
         return nodes[0]
-    return node.getparent() or node
+    parent=node.getparent()
+    return parent if parent is not None else node
 
   def names_configured_prize(self, value):
     text = normalize_heading(value)

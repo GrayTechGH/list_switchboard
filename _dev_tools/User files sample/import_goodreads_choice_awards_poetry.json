@@ -1,0 +1,4104 @@
+{
+  "append_state": {
+    "entry_count": 240,
+    "last_entry_key": "golden ax|rio cortez",
+    "last_position": "2022.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Billy Collins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "Horoscopes for the Dead",
+      "votes": "1260"
+    },
+    {
+      "authors": [
+        "Brian McGackin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "Broetry Poetry for Dudes",
+      "votes": "814"
+    },
+    {
+      "authors": [
+        "Rae Armantrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "Money Shot",
+      "votes": "770"
+    },
+    {
+      "authors": [
+        "Maxine Hong Kingston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "I Love a Broad Margin to My Life",
+      "votes": "742"
+    },
+    {
+      "authors": [
+        "Aimee Nezhukumatathil"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "Lucky Fish",
+      "votes": "716"
+    },
+    {
+      "authors": [
+        "Heather Christle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "The Trees The Trees",
+      "votes": "612"
+    },
+    {
+      "authors": [
+        "Matthew Henriksen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "Ordinary Sun",
+      "votes": "585"
+    },
+    {
+      "authors": [
+        "Nick Flynn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "The Captain Asks for a Show of Hands",
+      "votes": "467"
+    },
+    {
+      "authors": [
+        "Dorianne Laux"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "The Book of Men",
+      "votes": "391"
+    },
+    {
+      "authors": [
+        "Joseph Lease"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "Testify",
+      "votes": "369"
+    },
+    {
+      "authors": [
+        "Dean Young"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "Fall Higher",
+      "votes": "164"
+    },
+    {
+      "authors": [
+        "Susan Howe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "That This",
+      "votes": "144"
+    },
+    {
+      "authors": [
+        "Jeannine Hall Gailey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "She Returns to the Floating World",
+      "votes": "141"
+    },
+    {
+      "authors": [
+        "Mark Leidner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "The Angel in the Dream of Our Hangover",
+      "votes": "117"
+    },
+    {
+      "authors": [
+        "Michael Dickman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "Flies",
+      "votes": "105"
+    },
+    {
+      "authors": [
+        "Adrienne Rich"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "Tonight No Poetry Will Serve",
+      "votes": "103"
+    },
+    {
+      "authors": [
+        "Daniel Ames"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "Feasting at the Table of the Damned",
+      "votes": "76"
+    },
+    {
+      "authors": [
+        "Matthew Rohrer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "Destroyer and Preserver",
+      "votes": "75"
+    },
+    {
+      "authors": [
+        "Mark Leidner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "Beauty Was the Case That They Gave Me",
+      "votes": "39"
+    },
+    {
+      "authors": [
+        "Yusef Komunyakaa"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Poetry",
+      "position": "2011.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2011"
+      },
+      "title": "The Chameleon Couch",
+      "votes": "21"
+    },
+    {
+      "authors": [
+        "Mary Oliver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "A Thousand Mornings: Poems",
+      "votes": "5520"
+    },
+    {
+      "authors": [
+        "Michael Robbins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "Alien vs. Predator",
+      "votes": "1333"
+    },
+    {
+      "authors": [
+        "Rebecca Lindenberg"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "Love, an Index",
+      "votes": "1193"
+    },
+    {
+      "authors": [
+        "Sarah Kay"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "B",
+      "votes": "1012"
+    },
+    {
+      "authors": [
+        "Non Nomen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "The Unwords",
+      "votes": "851"
+    },
+    {
+      "authors": [
+        "Eduardo C. Corral"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "Slow Lightning",
+      "votes": "801"
+    },
+    {
+      "authors": [
+        "Natasha Trethewey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "Thrall",
+      "votes": "778"
+    },
+    {
+      "authors": [
+        "C.A. Conrad"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "A Beautiful Marsupial Afternoon",
+      "votes": "693"
+    },
+    {
+      "authors": [
+        "D.A. Powell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "Useless Landscape, or A Guide for Boys",
+      "votes": "678"
+    },
+    {
+      "authors": [
+        "Emily Pettit"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "Goat In The Snow",
+      "votes": "610"
+    },
+    {
+      "authors": [
+        "Dana Ward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "This Can't Be Life",
+      "votes": "389"
+    },
+    {
+      "authors": [
+        "Mark Strand"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "Almost Invisible",
+      "votes": "311"
+    },
+    {
+      "authors": [
+        "Gregory Sherl"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "The Oregon Trail Is the Oregon Trail",
+      "votes": "295"
+    },
+    {
+      "authors": [
+        "Eileen Myles"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "Snowflake",
+      "votes": "251"
+    },
+    {
+      "authors": [
+        "Jessica Bell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "Fabric",
+      "votes": "236"
+    },
+    {
+      "authors": [
+        "Zachary Schomburg"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "Fjords Vol.1",
+      "votes": "227"
+    },
+    {
+      "authors": [
+        "Leigh Stein"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "Dispatch from the Future",
+      "votes": "170"
+    },
+    {
+      "authors": [
+        "Lesl\u00e9a Newman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "October Mourning",
+      "votes": "154"
+    },
+    {
+      "authors": [
+        "Amy Durant"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "Out of True",
+      "votes": "122"
+    },
+    {
+      "authors": [
+        "Matthew Dickman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Poetry",
+      "position": "2012.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2012"
+      },
+      "title": "Mayakovsky's Revolver",
+      "votes": "52"
+    },
+    {
+      "authors": [
+        "J.R.R. Tolkien"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "The Fall of Arthur",
+      "votes": "15096"
+    },
+    {
+      "authors": [
+        "Lang Leav"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Love & Misadventure",
+      "votes": "6120"
+    },
+    {
+      "authors": [
+        "Mary Oliver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Dog Songs",
+      "votes": "5958"
+    },
+    {
+      "authors": [
+        "Billy Collins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Aimless Love",
+      "votes": "3446"
+    },
+    {
+      "authors": [
+        "Bo Burnham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Egghead; or, You Can't Survive on Ideas Alone",
+      "votes": "2542"
+    },
+    {
+      "authors": [
+        "Mira Gonz\u00e1lez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "I Will Never Be Beautiful Enough to Make Us Beautiful Together",
+      "votes": "2519"
+    },
+    {
+      "authors": [
+        "David Rakoff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Love, Dishonor, Marry, Die, Cherish, Perish",
+      "votes": "2256"
+    },
+    {
+      "authors": [
+        "Shinji Moon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "The Anatomy of Being",
+      "votes": "2235"
+    },
+    {
+      "authors": [
+        "Meggie C. Royer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Survival Songs",
+      "votes": "1982"
+    },
+    {
+      "authors": [
+        "Alice Walker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "The World Will Follow Joy",
+      "votes": "1946"
+    },
+    {
+      "authors": [
+        "Karen Green"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Bough Down",
+      "votes": "596"
+    },
+    {
+      "authors": [
+        "Anne Carson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Red Doc>",
+      "votes": "419"
+    },
+    {
+      "authors": [
+        "Mary Szybist"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Incarnadine",
+      "votes": "394"
+    },
+    {
+      "authors": [
+        "Matt Rasmussen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Black Aperture",
+      "votes": "369"
+    },
+    {
+      "authors": [
+        "Jeannine Hall Gailey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Unexplained Fevers",
+      "votes": "308"
+    },
+    {
+      "authors": [
+        "Wayne McNeill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Songbook for Haunted Boys and Girls",
+      "votes": "277"
+    },
+    {
+      "authors": [
+        "Frank Bidart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Metaphysical Dog",
+      "votes": "259"
+    },
+    {
+      "authors": [
+        "Stephanie M. Wytovich"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Hysteria",
+      "votes": "243"
+    },
+    {
+      "authors": [
+        "Nayyirah Waheed"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "Salt",
+      "votes": "114"
+    },
+    {
+      "authors": [
+        "Victoria Chang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Poetry",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2013"
+      },
+      "title": "The Boss",
+      "votes": "53"
+    },
+    {
+      "authors": [
+        "Lang Leav"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "Lullabies",
+      "votes": "9571"
+    },
+    {
+      "authors": [
+        "Christine Heppermann"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "Poisoned Apples",
+      "votes": "8761"
+    },
+    {
+      "authors": [
+        "Maya Angelou"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "His Day Is Done",
+      "votes": "8692"
+    },
+    {
+      "authors": [
+        "Anthony Holden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "Poems That Make Grown Men Cry",
+      "votes": "7220"
+    },
+    {
+      "authors": [
+        "Tyler Knott Gregson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "Chasers of the Light",
+      "votes": "6688"
+    },
+    {
+      "authors": [
+        "Sarah Kay"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "No Matter the Wreckage",
+      "votes": "5968"
+    },
+    {
+      "authors": [
+        "Mary Oliver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "Blue Horses",
+      "votes": "5335"
+    },
+    {
+      "authors": [
+        "Spencer Madsen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "You Can Make Anything Sad",
+      "votes": "4872"
+    },
+    {
+      "authors": [
+        "Patricia Lockwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "Motherland Fatherland Homelandsexuals",
+      "votes": "3961"
+    },
+    {
+      "authors": [
+        "Eliza Griswold"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "I Am the Beggar of the World",
+      "votes": "3596"
+    },
+    {
+      "authors": [
+        "pleasefindthis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "I Wrote This For You",
+      "votes": "1923"
+    },
+    {
+      "authors": [
+        "Caitlyn Siehl"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "What We Buried",
+      "votes": "1664"
+    },
+    {
+      "authors": [
+        "Claudia Rankine"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "Citizen",
+      "votes": "1631"
+    },
+    {
+      "authors": [
+        "Kevin Powers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "Letter Composed During a Lull in the Fighting",
+      "votes": "1542"
+    },
+    {
+      "authors": [
+        "Kathryn Perez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "Jessica's Journal",
+      "votes": "1143"
+    },
+    {
+      "authors": [
+        "Nayyirah Waheed"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "Nejma",
+      "votes": "670"
+    },
+    {
+      "authors": [
+        "Saeed Jones"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "Prelude to Bruise",
+      "votes": "569"
+    },
+    {
+      "authors": [
+        "Rachel Zucker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "The Pedestrians",
+      "votes": "552"
+    },
+    {
+      "authors": [
+        "Tarfia Faizullah"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "Seam",
+      "votes": "452"
+    },
+    {
+      "authors": [
+        "Edward Hirsch"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Poetry",
+      "position": "2014.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2014"
+      },
+      "title": "Gabriel",
+      "votes": "232"
+    },
+    {
+      "authors": [
+        "Trista Mateer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "The Dogs I Have Kissed",
+      "votes": "8725"
+    },
+    {
+      "authors": [
+        "Lang Leav"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "Memories",
+      "votes": "7517"
+    },
+    {
+      "authors": [
+        "Erik Didriksen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "Pop Sonnets",
+      "votes": "7328"
+    },
+    {
+      "authors": [
+        "Robert M. Drake"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "Black Butterfly",
+      "votes": "6016"
+    },
+    {
+      "authors": [
+        "pleasefindthis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "I Wrote This for You and Only You",
+      "votes": "5269"
+    },
+    {
+      "authors": [
+        "Michael Faudet"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "Dirty Pretty Things",
+      "votes": "5199"
+    },
+    {
+      "authors": [
+        "Ross Gay"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "Catalog of Unabashed Gratitude",
+      "votes": "3196"
+    },
+    {
+      "authors": [
+        "Noah Cicero"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "Bipolar Cowboy",
+      "votes": "3175"
+    },
+    {
+      "authors": [
+        "Clementine von Radics"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "Mouthful of Forevers",
+      "votes": "3174"
+    },
+    {
+      "authors": [
+        "Amber Tamblyn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "Dark Sparkler",
+      "votes": "2771"
+    },
+    {
+      "authors": [
+        "Richard Siken"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "War of the Foxes",
+      "votes": "1392"
+    },
+    {
+      "authors": [
+        "Mary Oliver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "Felicity",
+      "votes": "1350"
+    },
+    {
+      "authors": [
+        "Terrance Hayes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "How to Be Drawn",
+      "votes": "1325"
+    },
+    {
+      "authors": [
+        "Andrea Gibson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "Pansy",
+      "votes": "1208"
+    },
+    {
+      "authors": [
+        "Tyler Knott Gregson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "All the Words Are Yours",
+      "votes": "1021"
+    },
+    {
+      "authors": [
+        "Irum Zahra"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "Psychaotic",
+      "votes": "631"
+    },
+    {
+      "authors": [
+        "Christopher Poindexter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "Naked Human",
+      "votes": "575"
+    },
+    {
+      "authors": [
+        "Frank Stanford"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "What About This",
+      "votes": "506"
+    },
+    {
+      "authors": [
+        "Jeannine Hall Gailey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "The Robot Scientist's Daughter",
+      "votes": "416"
+    },
+    {
+      "authors": [
+        "Delicious David"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Poetry",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2015"
+      },
+      "title": "Dark Desires",
+      "votes": "235"
+    },
+    {
+      "authors": [
+        "Amanda Lovelace"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "The Princess Saves Herself in This One",
+      "votes": "22560"
+    },
+    {
+      "authors": [
+        "Lang Leav"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "The Universe of Us",
+      "votes": "9638"
+    },
+    {
+      "authors": [
+        "Pablo Neruda"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Then Come Back",
+      "votes": "8873"
+    },
+    {
+      "authors": [
+        "Savannah Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Graffiti",
+      "votes": "8197"
+    },
+    {
+      "authors": [
+        "Samantha Jayne"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Quarter Life Poetry",
+      "votes": "7951"
+    },
+    {
+      "authors": [
+        "Kwame Alexander"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Booked",
+      "votes": "7375"
+    },
+    {
+      "authors": [
+        "Sierra DeMulder"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Today Means Amen",
+      "votes": "6011"
+    },
+    {
+      "authors": [
+        "Robert M. Drake"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Beautiful And Damned",
+      "votes": "5888"
+    },
+    {
+      "authors": [
+        "Alicia Cook"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Stuff I've Been Feeling Lately",
+      "votes": "4255"
+    },
+    {
+      "authors": [
+        "J.R. Rogue"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "La Douleur Exquise",
+      "votes": "3246"
+    },
+    {
+      "authors": [
+        "R.H. Sin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Whiskey Words & a Shovel II",
+      "votes": "2052"
+    },
+    {
+      "authors": [
+        "Ocean Vuong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Night Sky with Exit Wounds",
+      "votes": "1854"
+    },
+    {
+      "authors": [
+        "Vivek Shraya"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Even This Page Is White",
+      "votes": "1563"
+    },
+    {
+      "authors": [
+        "Sarah Kay"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "The Type",
+      "votes": "1517"
+    },
+    {
+      "authors": [
+        "Michael Faudet"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Bitter Sweet Love",
+      "votes": "1217"
+    },
+    {
+      "authors": [
+        "Billy Collins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Rain in Portugal, The",
+      "votes": "985"
+    },
+    {
+      "authors": [
+        "K.W. Peery"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Tales of a Receding Hairline",
+      "votes": "974"
+    },
+    {
+      "authors": [
+        "Solmaz Sharif"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Look",
+      "votes": "557"
+    },
+    {
+      "authors": [
+        "Jeannine Hall Gailey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "Field Guide to the End of the World",
+      "votes": "461"
+    },
+    {
+      "authors": [
+        "Larry Levis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Poetry",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2016"
+      },
+      "title": "The Darkening Trapeze",
+      "votes": "330"
+    },
+    {
+      "authors": [
+        "Rupi Kaur"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "The Sun and Her Flowers",
+      "votes": "35856"
+    },
+    {
+      "authors": [
+        "Sabrina Benaim"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Depression & Other Magic Tricks",
+      "votes": "22625"
+    },
+    {
+      "authors": [
+        "Kwame Alexander"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Solo",
+      "votes": "7924"
+    },
+    {
+      "authors": [
+        "Atticus ."
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Love Her Wild",
+      "votes": "7546"
+    },
+    {
+      "authors": [
+        "Jason Reynolds"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Long Way Down",
+      "votes": "6903"
+    },
+    {
+      "authors": [
+        "Sarah Crossan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "We Come Apart",
+      "votes": "5716"
+    },
+    {
+      "authors": [
+        "Olivia Gatwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "New American Best Friend",
+      "votes": "5609"
+    },
+    {
+      "authors": [
+        "Morgan Parker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "There Are More Beautiful Things Than Beyonc\u00e9",
+      "votes": "5501"
+    },
+    {
+      "authors": [
+        "Hollie McNish"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Plum",
+      "votes": "4127"
+    },
+    {
+      "authors": [
+        "Eve L. Ewing"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Electric Arches",
+      "votes": "3798"
+    },
+    {
+      "authors": [
+        "Marie Howe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Magdalene",
+      "votes": "1617"
+    },
+    {
+      "authors": [
+        "Gabbie Hanna"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Adultolescence",
+      "votes": "1616"
+    },
+    {
+      "authors": [
+        "Pyrokardia"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Broken Wishbones and Empty Spaces",
+      "votes": "1358"
+    },
+    {
+      "authors": [
+        "Chen Chen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "When I Grow Up I Want to Be a List of Further Possibilities",
+      "votes": "1210"
+    },
+    {
+      "authors": [
+        "Tommy Pico"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Nature Poem",
+      "votes": "1061"
+    },
+    {
+      "authors": [
+        "J.R. Rogue"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Exits, Desires, and Slow Fires",
+      "votes": "921"
+    },
+    {
+      "authors": [
+        "Morgan Nikola-Wren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Magic with Skin On",
+      "votes": "867"
+    },
+    {
+      "authors": [
+        "Kaveh Akbar"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Portrait of the Alcoholic",
+      "votes": "866"
+    },
+    {
+      "authors": [
+        "Danez Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Don't Call Us Dead",
+      "votes": "796"
+    },
+    {
+      "authors": [
+        "Natalie Shapero"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Poetry",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2017"
+      },
+      "title": "Hard Child",
+      "votes": "781"
+    },
+    {
+      "authors": [
+        "Amanda Lovelace",
+        "ladybookmad"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "The Witch Doesn't Burn in This One",
+      "votes": "25298"
+    },
+    {
+      "authors": [
+        "Elizabeth Acevedo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "The Poet X",
+      "votes": "20025"
+    },
+    {
+      "authors": [
+        "Florence Welch"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "Useless Magic",
+      "votes": "15540"
+    },
+    {
+      "authors": [
+        "Atticus ."
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "The Dark Between Stars",
+      "votes": "14265"
+    },
+    {
+      "authors": [
+        "Alice Walker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "Taking the Arrow Out of the Heart",
+      "votes": "11579"
+    },
+    {
+      "authors": [
+        "Kwame Alexander"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "Rebound",
+      "votes": "8598"
+    },
+    {
+      "authors": [
+        "Fatimah Asghar"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "If They Come for Us",
+      "votes": "8031"
+    },
+    {
+      "authors": [
+        "Andrea Gibson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "Take Me With You",
+      "votes": "6987"
+    },
+    {
+      "authors": [
+        "Lang Leav"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "Sea of Strangers",
+      "votes": "6452"
+    },
+    {
+      "authors": [
+        "R.H. Sin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "She Felt Like Feeling Nothing",
+      "votes": "6388"
+    },
+    {
+      "authors": [
+        "Rudy Francisco"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "Helium",
+      "votes": "2974"
+    },
+    {
+      "authors": [
+        "Jason Reynolds"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "For Every One",
+      "votes": "2809"
+    },
+    {
+      "authors": [
+        "Tracy K. Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "Wade in the Water",
+      "votes": "2453"
+    },
+    {
+      "authors": [
+        "Neil Hilborn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "The Future",
+      "votes": "2237"
+    },
+    {
+      "authors": [
+        "Brittainy C. Cherry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "A Love Letter from the Girls Who Feel Everything",
+      "votes": "1632"
+    },
+    {
+      "authors": [
+        "Cleo Wade"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "Heart Talk",
+      "votes": "1472"
+    },
+    {
+      "authors": [
+        "Terrance Hayes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "American Sonnets for My Past and Future Assassin",
+      "votes": "1444"
+    },
+    {
+      "authors": [
+        "Joy McCullough"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "Blood Water Paint",
+      "votes": "1248"
+    },
+    {
+      "authors": [
+        "Leonard Cohen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "The Flame",
+      "votes": "1217"
+    },
+    {
+      "authors": [
+        "Kevin Young"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Poetry",
+      "position": "2018.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2018"
+      },
+      "title": "Brown",
+      "votes": "486"
+    },
+    {
+      "authors": [
+        "Laurie Halse Anderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "Shout",
+      "votes": "18911"
+    },
+    {
+      "authors": [
+        "Amanda Lovelace"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "The Mermaid's Voice Returns in This One",
+      "votes": "18710"
+    },
+    {
+      "authors": [
+        "Atticus ."
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "The Truth About Magic",
+      "votes": "14270"
+    },
+    {
+      "authors": [
+        "Andrea Gibson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "Lord of the Butterflies",
+      "votes": "11598"
+    },
+    {
+      "authors": [
+        "Nikita Gill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "Great Goddesses - Life Lessons from Myths and Monsters",
+      "votes": "9777"
+    },
+    {
+      "authors": [
+        "Lang Leav"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "Love Looks Pretty on You",
+      "votes": "9311"
+    },
+    {
+      "authors": [
+        "DaMaris B. Hill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "A Bound Woman Is a Dangerous Thing",
+      "votes": "8200"
+    },
+    {
+      "authors": [
+        "Jasmin Kaur"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "When You Ask Me Where I'm Going",
+      "votes": "7741"
+    },
+    {
+      "authors": [
+        "R.H. Sin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "Empty Bottles Full of Stories",
+      "votes": "5925"
+    },
+    {
+      "authors": [
+        "Olivia Gatwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "Life of the Party",
+      "votes": "5777"
+    },
+    {
+      "authors": [
+        "Morgan Parker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "Magical Negro",
+      "votes": "2690"
+    },
+    {
+      "authors": [
+        "Madisen Kuhn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "Almost Home",
+      "votes": "2246"
+    },
+    {
+      "authors": [
+        "Jericho Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "The Tradition",
+      "votes": "2026"
+    },
+    {
+      "authors": [
+        "Ilya Kaminsky"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "Deaf Republic",
+      "votes": "1817"
+    },
+    {
+      "authors": [
+        "Franny Choi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "Soft Science",
+      "votes": "1665"
+    },
+    {
+      "authors": [
+        "J.R. Rogue"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "I'm Not Your Paper Princess",
+      "votes": "1644"
+    },
+    {
+      "authors": [
+        "Brenda Shaughnessy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "The Octopus Museum",
+      "votes": "1485"
+    },
+    {
+      "authors": [
+        "Trista Mateer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "Aphrodite Made Me Do It",
+      "votes": "1477"
+    },
+    {
+      "authors": [
+        "Hanif Abdurraqib"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "A Fortune for Your Disaster",
+      "votes": "1286"
+    },
+    {
+      "authors": [
+        "Jen Campbell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Poetry",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2019"
+      },
+      "title": "The Girl Aquarium",
+      "votes": "899"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Dearly",
+      "votes": "22811"
+    },
+    {
+      "authors": [
+        "Lana Del Rey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Violet Bent Backwards Over the Grass",
+      "votes": "20696"
+    },
+    {
+      "authors": [
+        "Amanda Lovelace"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Break Your Glass Slippers",
+      "votes": "17975"
+    },
+    {
+      "authors": [
+        "Lili Reinhart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Swimming Lessons",
+      "votes": "16204"
+    },
+    {
+      "authors": [
+        "Rupi Kaur"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Home Body",
+      "votes": "15932"
+    },
+    {
+      "authors": [
+        "Lois Lowry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "On the Horizon",
+      "votes": "11743"
+    },
+    {
+      "authors": [
+        "Nikita Gill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "The Girl and the Goddess",
+      "votes": "10699"
+    },
+    {
+      "authors": [
+        "Danez Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Homie",
+      "votes": "9934"
+    },
+    {
+      "authors": [
+        "Morgan Harper Nichols"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "All Along You Were Blooming",
+      "votes": "9773"
+    },
+    {
+      "authors": [
+        "Kate Baer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "What Kind of Woman",
+      "votes": "8892"
+    },
+    {
+      "authors": [
+        "Natalie D\u00edaz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Postcolonial Love Poem",
+      "votes": "2721"
+    },
+    {
+      "authors": [
+        "Billy Collins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Whale Day",
+      "votes": "2670"
+    },
+    {
+      "authors": [
+        "Naomi Shihab Nye"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Cast Away",
+      "votes": "2536"
+    },
+    {
+      "authors": [
+        "Nate Marshall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Finna",
+      "votes": "2079"
+    },
+    {
+      "authors": [
+        "Alicia Cook"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Sorry I Haven't Texted You Back",
+      "votes": "1920"
+    },
+    {
+      "authors": [
+        "Katie Wismer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Poems for the End of the World",
+      "votes": "1780"
+    },
+    {
+      "authors": [
+        "Elaine Kahn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Romance or the End",
+      "votes": "1618"
+    },
+    {
+      "authors": [
+        "Barbara Kingsolver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "How to Fly in Ten Thousand Easy Lessons",
+      "votes": "1354"
+    },
+    {
+      "authors": [
+        "Meg Johnson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Without",
+      "votes": "1166"
+    },
+    {
+      "authors": [
+        "Savannah Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Poetry",
+      "position": "2020.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2020"
+      },
+      "title": "Sweetdark",
+      "votes": "1074"
+    },
+    {
+      "authors": [
+        "Amanda Gorman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "The Hill We Climb: An Inaugural Poem for the Country",
+      "votes": "49251"
+    },
+    {
+      "authors": [
+        "Jasmine Mans"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "Black Girl, Call Home",
+      "votes": "13407"
+    },
+    {
+      "authors": [
+        "Amanda Lovelace"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "Shine your Icy Crown",
+      "votes": "11579"
+    },
+    {
+      "authors": [
+        "Andrea Gibson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "You Better Be Lightning",
+      "votes": "11388"
+    },
+    {
+      "authors": [
+        "Kate Baer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "I Hope This Finds You Well",
+      "votes": "10293"
+    },
+    {
+      "authors": [
+        "Nikita Gill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "Where Hope Comes From",
+      "votes": "9184"
+    },
+    {
+      "authors": [
+        "Maggie Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "Goldenrod",
+      "votes": "8950"
+    },
+    {
+      "authors": [
+        "Amber McBride"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "Me",
+      "votes": "6933"
+    },
+    {
+      "authors": [
+        "Yung Pueblo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "Clarity & Connection",
+      "votes": "6889"
+    },
+    {
+      "authors": [
+        "Safia Elhillo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "Home Is Not a Country",
+      "votes": "6658"
+    },
+    {
+      "authors": [
+        "Andrew Shaffer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "Look Mom I\u2019m a Poet",
+      "votes": "2371"
+    },
+    {
+      "authors": [
+        "Jasmin Kaur"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "If I Tell You the Truth",
+      "votes": "2355"
+    },
+    {
+      "authors": [
+        "Morgan Harper Nichols"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "How Far You Have Come",
+      "votes": "2199"
+    },
+    {
+      "authors": [
+        "Rudy Francisco"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "I'll Fly Away",
+      "votes": "2137"
+    },
+    {
+      "authors": [
+        "Mahogany L. Browne"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "Chlorine Sky",
+      "votes": "2084"
+    },
+    {
+      "authors": [
+        "Colby Cedar Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "Call Me Athena",
+      "votes": "2042"
+    },
+    {
+      "authors": [
+        "Joyce Carol Oates"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "American Melancholy",
+      "votes": "2023"
+    },
+    {
+      "authors": [
+        "Martina McGowan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "I am The Rage",
+      "votes": "1684"
+    },
+    {
+      "authors": [
+        "Elisabet Velasquez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "When We Make It",
+      "votes": "1601"
+    },
+    {
+      "authors": [
+        "Catherine Cohen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Poetry",
+      "position": "2021.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2021"
+      },
+      "title": "God I Feel Modern Tonight",
+      "votes": "937"
+    },
+    {
+      "authors": [
+        "Amanda Gorman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "Call Us What We Carry",
+      "votes": "44813"
+    },
+    {
+      "authors": [
+        "Ocean Vuong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "Time Is a Mother",
+      "votes": "27726"
+    },
+    {
+      "authors": [
+        "Amanda Lovelace"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "Unlock Your Storybook Heart",
+      "votes": "13617"
+    },
+    {
+      "authors": [
+        "F.S. Yousaf"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "Serenity",
+      "votes": "13223"
+    },
+    {
+      "authors": [
+        "Dakota Warren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "On Sun Swallowing",
+      "votes": "11747"
+    },
+    {
+      "authors": [
+        "Kate Baer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "And Yet",
+      "votes": "11588"
+    },
+    {
+      "authors": [
+        "Franny Choi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "The World Keeps Ending, and the World Goes On",
+      "votes": "10086"
+    },
+    {
+      "authors": [
+        "a Voice in Her Head by Warsan Shire"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "Bless the Daughter Raised",
+      "votes": "8870"
+    },
+    {
+      "authors": [
+        "Sandra Cisneros"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "Woman Without Shame",
+      "votes": "8560"
+    },
+    {
+      "authors": [
+        "Billy Collins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "Musical Tables",
+      "votes": "8441"
+    },
+    {
+      "authors": [
+        "Tayi Tibble"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "Poukahangatus",
+      "votes": "2651"
+    },
+    {
+      "authors": [
+        "Ada Limon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "The Hurting Kind",
+      "votes": "2596"
+    },
+    {
+      "authors": [
+        "Melody Godfred"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "The Shift",
+      "votes": "2521"
+    },
+    {
+      "authors": [
+        "Joy Harjo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "Weaving Sundown in a Scarlet Light",
+      "votes": "1909"
+    },
+    {
+      "authors": [
+        "Saeed Jones"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "Alive at the End of the World",
+      "votes": "1907"
+    },
+    {
+      "authors": [
+        "Safia Elhillo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "Girls That Never Die",
+      "votes": "1831"
+    },
+    {
+      "authors": [
+        "Alora Young"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "Walking Gentry Home",
+      "votes": "1737"
+    },
+    {
+      "authors": [
+        "Elisa Gabbert"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "Normal Distance",
+      "votes": "1561"
+    },
+    {
+      "authors": [
+        "Paul Tran"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "All the Flowers Kneeling",
+      "votes": "1090"
+    },
+    {
+      "authors": [
+        "Rio Cortez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Poetry",
+      "position": "2022.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-poetry-books-2022"
+      },
+      "title": "Golden Ax",
+      "votes": "707"
+    }
+  ],
+  "fetched_at": "2026-07-28T03:18:39Z",
+  "list_id": "goodreads_choice_awards_poetry",
+  "list_name": "Goodreads Choice Awards - Poetry (discontinued)",
+  "match_series": false,
+  "notes": [],
+  "parser": "goodreads_choice_awards_poetry",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Poetry (discontinued)",
+    "source_id": "goodreads_choice_awards_poetry",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

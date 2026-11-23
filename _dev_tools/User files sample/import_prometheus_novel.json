@@ -3829,12 +3829,13 @@
       "title": "War By Other Means"
     }
   ],
-  "fetched_at": "2026-07-11T00:48:55Z",
+  "fetched_at": "2026-07-24T09:57:55Z",
   "list_id": "prometheus_novel",
   "list_name": "Prometheus - Novel",
   "match_series": false,
   "notes": [],
   "parser": "prometheus_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Prometheus - Novel",

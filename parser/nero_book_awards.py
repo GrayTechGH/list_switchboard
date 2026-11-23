@@ -15,6 +15,8 @@ Maintenance notes:
 """
 
 import re
+import json
+import datetime
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
@@ -25,12 +27,16 @@ try:
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError,CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from errors import ImportCancelledError,CamoufoxRequiredError
 
 
 AWARD_NAME = 'Nero Book Awards'
@@ -244,36 +250,86 @@ class NeroBookAwardsOfficialParser(NeroBookAwardsBaseParser):
 
   def parse(
       self, html, base_url=OFFICIAL_URL, name=AWARD_NAME, fetch_url=None,
-      log=None, progress=None):
+      log=None, progress=None,cached_parsed=None,incremental_update=False):
     soup = BeautifulSoup(html, 'html.parser')
     rows = []
     notes = []
     archive_links = self.archive_links(soup, base_url)
+    cache=ParsedUnitCache('nero-books-annual-ballots-v1',json.dumps([
+      base_url,name,self.category,self.category_aliases]),cached_parsed,incremental_update)
+    units={}
 
     if fetch_url is not None and archive_links:
       links = self.links_for_category(archive_links)
-      total = len(links)
-      for index, (kind, year, url) in enumerate(links, 1):
+      groups={}
+      for kind,year,url in links:
+        groups.setdefault(year,[]).append((kind,url))
+      latest=max(groups,default=0)
+      for index,(year,sources) in enumerate(groups.items(),1):
+        revision=[[kind,url] for kind,url in sources]
+        old=cache.old_units.get(str(year)) or {}
+        previous=[]
         try:
-          if progress is not None:
-            progress(index, total, f'Fetching {name} archive page {index} of {total}')
-          page_html = fetch_url(url)
-          rows.extend(self.rows_for_archive_page(kind, page_html, url, year))
-        except Exception as err:
-          notes.append(f'{name} archive page could not be fetched: {url}: {err}')
-          if log is not None:
-            log(f'{name} archive page failed: {url}: {err}')
+          previous=restore_source_rows(cache.previous(str(year)),old.get('metadata') or {})
+        except (ValueError,TypeError):
+          pass
+        if (year<min(latest,datetime.datetime.now().year) and old.get('complete') is True and
+            old.get('revision')==revision and previous):
+          source_rows,complete=previous,True
+        else:
+          source_rows=[]
+          count=len(notes)
+          by_kind={}
+          for kind,url in sources:
+            try:
+              page_rows=self.rows_for_archive_page(kind,fetch_url(url),url,year)
+              by_kind.setdefault(kind,[]).extend(page_rows)
+              source_rows.extend(page_rows)
+            except (ImportCancelledError,CamoufoxRequiredError):
+              raise
+            except Exception as err:
+              notes.append(f'{name} archive page could not be fetched: {url}: {err}')
+              if log is not None:
+                log(f'{name} archive page failed: {url}: {err}')
+          complete=count==len(notes) and self.complete_ballot(by_kind)
+          if not complete:
+            if count==len(notes):
+              notes.append(f'{name} {year} ballot is incomplete; its source pages remain pending.')
+            if previous:
+              source_rows=previous
+        rows.extend(source_rows)
+        units[str(year)]=(source_rows,revision,complete)
+        if progress is not None:
+          progress(index,len(groups),f'Processed {name} award year {year}')
     else:
       rows.extend(self.rows_for_direct_page(soup, base_url))
 
     if self.category != CATEGORY_GOLD_PRIZE:
       rows = self.promote_shortlist_winners(rows)
     entries = self.entries_from_rows(self.dedupe_rows(rows))
-    return self.parsed_result(
+    entries=sorted(entries,key=lambda item:position_sort_key(item.get('position','')))
+    for year,(source_rows,revision,complete) in units.items():
+      projected,metadata=project_source_rows(source_rows,entries,
+        lambda row:(str(row['award_year']),normalize_heading(row['title'])))
+      cache.put(year,projected,revision=revision,complete=complete,metadata=metadata)
+    parsed=self.parsed_result(
       name,
       base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      entries,
       notes=notes)
+    parsed['incremental_state']=cache.state(entries)
+    parsed['incremental_state']['discovery']={'refresh_units':[str(max(map(int,units)))] if units else []}
+    return parsed
+
+  def complete_ballot(self,by_kind):
+    def keys(rows):
+      return {(normalize_heading(r['title']),normalize_heading(r['author'])) for r in rows}
+    if self.category==CATEGORY_GOLD_PRIZE:
+      return set(by_kind)=={'gold'} and len(keys(by_kind['gold']))==1
+    if set(by_kind)!={'shortlist','category_winners'}:
+      return False
+    shortlist,winners=keys(by_kind['shortlist']),keys(by_kind['category_winners'])
+    return len(shortlist)==4 and len(winners)==4 and len(shortlist&winners)==1
 
   def archive_links(self, soup, base_url):
     links = []

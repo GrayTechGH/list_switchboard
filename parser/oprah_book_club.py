@@ -15,6 +15,11 @@ from .book_club_base import (
   BookClubParserBase, clean_author, clean_title, parse_year, split_title_author,
   text_blocks, parsed_source, position_sort_key,
 )
+from .incremental import ParsedUnitCache
+try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
+except ImportError:
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 class OprahBookClubParser(BookClubParserBase):
@@ -29,25 +34,38 @@ class OprahBookClubParser(BookClubParserBase):
     # and can describe the book rather than the club selection.
     return position_sort_key(entry.get('position', ''))
 
-  def parse(self, html, base_url, name=None, scope=None, fetch_url=None):
+  def parse(self, html, base_url, name=None, scope=None, fetch_url=None,
+            cached_parsed=None, incremental_update=False):
     soup = BeautifulSoup(html or '<html></html>', 'html.parser')
     scope = scope or self.DEFAULT_SCOPE
-    entries = self.entries_from_next_data(soup, base_url, scope, fetch_url)
+    units = ParsedUnitCache('oprah-slides-v1',
+      [base_url, scope, self.listicle_id(self.next_page_props(soup))],
+      cached_parsed, incremental_update)
+    notes = []
+    entries = self.entries_from_next_data(soup, base_url, scope, fetch_url, units, notes)
     if not entries:
       entries = self.entries_from_soup(soup, base_url, scope)
-    return {
+    if incremental_update and (cached_parsed or {}).get('entries') and not entries:
+      raise ValueError('Oprah did not expose usable selections; saved history was not replaced.')
+    parsed = {
       'name': name or self.CLUB_NAME,
       'source': parsed_source(name or self.CLUB_NAME, base_url),
       'entries': sorted(entries, key=self.entry_sort_key),
-      'notes': self.notes_for_entries(entries),
+      'notes': notes + self.notes_for_entries(entries),
       'match_series': False,
     }
+    if units.units:
+      parsed['incremental_state'] = units.state(parsed['entries'])
+    if incremental_update:
+      parsed['incremental_update'] = True
+    return parsed
 
   def entries_from_soup(self, soup, base_url, scope):
     entries = self.entries_from_numbered_lines(soup, base_url, scope)
     return entries or super().entries_from_soup(soup, base_url, scope)
 
-  def entries_from_next_data(self, soup, base_url, scope, fetch_url=None):
+  def entries_from_next_data(self, soup, base_url, scope, fetch_url=None,
+                            units=None, notes=None):
     page_props = self.next_page_props(soup)
     if not page_props:
       return []
@@ -55,23 +73,62 @@ class OprahBookClubParser(BookClubParserBase):
     total_count = self.slide_count(page_props, len(slides))
     listicle_id = self.listicle_id(page_props)
     media_pages = self.media_pages(page_props)
-    if fetch_url is not None and listicle_id and total_count > len(slides):
-      page_count = max(len(media_pages), int(math.ceil(
-        float(total_count) / self.LISTICLE_PAGE_SIZE)))
-      for page_number in range(2, page_count + 1):
-        slides.extend(self.fetch_slide_page(
-          fetch_url, base_url, listicle_id, page_number, page_props))
     entries = []
     seen = set()
-    for index, slide in enumerate(slides):
-      entry = self.entry_from_slide(slide, base_url, scope, total_count, index)
+    notes = notes if notes is not None else []
+    root_ids = [slide.get('media_id') for slide in slides]
+    page_count = max(len(media_pages), int(math.ceil(
+      float(total_count) / self.LISTICLE_PAGE_SIZE)))
+    # The root advertises media IDs, not the product IDs used for matching.
+    # Reuse only when those lists account for every slide, including page one.
+    shaped = all(isinstance(page, list) for page in media_pages)
+    identities = root_ids + [item for page in media_pages for item in page] if shaped else []
+    indexed = (units is not None and len(media_pages) == page_count - 1 and
+      shaped and
+      all(isinstance(item, str) and item for item in identities) and
+      len(identities) == total_count and len(set(identities)) == total_count)
+
+    def append_entry(entry):
       if entry is None:
-        continue
+        return False
       key = self.entry_key(entry)
       if key in seen:
-        continue
+        return False
       seen.add(key)
       entries.append(entry)
+      return True
+
+    def append_slide(slide, index):
+      entry = self.entry_from_slide(slide, base_url, scope, total_count, index)
+      if not append_entry(entry):
+        return
+      if indexed:
+        units.put(slide['media_id'], [entry], total_count - index)
+
+    for index, slide in enumerate(slides):
+      append_slide(slide, index)
+    if fetch_url is not None and listicle_id and total_count > len(slides):
+      for page_number in range(2, page_count + 1):
+        offset = len(slides) + (page_number - 2) * self.LISTICLE_PAGE_SIZE
+        wanted = media_pages[page_number - 2] if indexed else []
+        reused = [units.reuse(key, total_count - offset - i)
+          for i, key in enumerate(wanted)]
+        if wanted and all(rows is not None for rows in reused):
+          for rows in reused:
+            for entry in rows:
+              append_entry(entry)
+          continue
+        page = self.fetch_slide_page(fetch_url, base_url, listicle_id, page_number, page_props)
+        actual = [slide.get('media_id') for slide in page]
+        if not page or (indexed and actual != wanted):
+          notes.append(f'Oprah slide page {page_number} is incomplete or changed identity; retry on update.')
+          if indexed:
+            for i, key in enumerate(wanted):
+              for entry in units.failed(key, total_count - offset - i):
+                append_entry(entry)
+            continue
+        for index, slide in enumerate(page, offset):
+          append_slide(slide, index)
     return entries
 
   def next_page_props(self, soup):
@@ -118,6 +175,8 @@ class OprahBookClubParser(BookClubParserBase):
     url = urljoin(base_url, '/api/listicle-slides?' + urlencode(params))
     try:
       data = json.loads(fetch_url(url) or '[]')
+    except (ImportCancelledError, CamoufoxRequiredError):
+      raise
     except Exception:
       return []
     return data if isinstance(data, list) else []

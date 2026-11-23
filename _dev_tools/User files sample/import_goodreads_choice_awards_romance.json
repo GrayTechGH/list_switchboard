@@ -1,0 +1,5125 @@
+{
+  "append_state": {
+    "entry_count": 300,
+    "last_entry_key": "love arranged|lauren asher",
+    "last_position": "2025.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "J.R. Ward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Lover Unleashed",
+      "votes": "5009"
+    },
+    {
+      "authors": [
+        "E.L. James"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Fifty Shades of Grey",
+      "votes": "3815"
+    },
+    {
+      "authors": [
+        "Damon Suede"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Hot Head",
+      "votes": "2830"
+    },
+    {
+      "authors": [
+        "Julia Quinn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Just Like Heaven",
+      "votes": "2778"
+    },
+    {
+      "authors": [
+        "Nora Roberts"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Chasing Fire",
+      "votes": "2724"
+    },
+    {
+      "authors": [
+        "Nalini Singh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Kiss of Snow",
+      "votes": "2322"
+    },
+    {
+      "authors": [
+        "Susan Elizabeth Phillips"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Call Me Irresistible",
+      "votes": "1917"
+    },
+    {
+      "authors": [
+        "Sherrilyn Kenyon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Retribution",
+      "votes": "1850"
+    },
+    {
+      "authors": [
+        "Gena Showalter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "The Darkest Surrender",
+      "votes": "1672"
+    },
+    {
+      "authors": [
+        "Kresley Cole"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Dreams of a Dark Warrior",
+      "votes": "1441"
+    },
+    {
+      "authors": [
+        "Eloisa James"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "When Beauty Tamed the Beast",
+      "votes": "706"
+    },
+    {
+      "authors": [
+        "Lara Adrian"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Deeper Than Midnight",
+      "votes": "500"
+    },
+    {
+      "authors": [
+        "Larissa Ione"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Eternal Rider",
+      "votes": "488"
+    },
+    {
+      "authors": [
+        "Pamela Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Breaking Point",
+      "votes": "440"
+    },
+    {
+      "authors": [
+        "Nalini Singh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Archangel's Blade",
+      "votes": "439"
+    },
+    {
+      "authors": [
+        "Shelly Laurenston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Big Bad Beast",
+      "votes": "434"
+    },
+    {
+      "authors": [
+        "Thea Harrison"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Dragon Bound",
+      "votes": "409"
+    },
+    {
+      "authors": [
+        "Julie James"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "A Lot like Love",
+      "votes": "291"
+    },
+    {
+      "authors": [
+        "Lauren Willig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "The Orchid Affair",
+      "votes": "273"
+    },
+    {
+      "authors": [
+        "Sylvain Reynard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Romance",
+      "position": "2011.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2011"
+      },
+      "title": "Gabriel's Inferno",
+      "votes": "186"
+    },
+    {
+      "authors": [
+        "E.L. James"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "Fifty Shades Freed",
+      "votes": "22976"
+    },
+    {
+      "authors": [
+        "Sylvia Day"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "Bared to You",
+      "votes": "8306"
+    },
+    {
+      "authors": [
+        "J.R. Ward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "Lover Reborn",
+      "votes": "7522"
+    },
+    {
+      "authors": [
+        "Nora Roberts"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "The Witness",
+      "votes": "7177"
+    },
+    {
+      "authors": [
+        "Jeaniene Frost"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "Once Burned",
+      "votes": "6382"
+    },
+    {
+      "authors": [
+        "Samantha Young"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "On Dublin Street",
+      "votes": "6013"
+    },
+    {
+      "authors": [
+        "Julianne Donaldson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "Edenbrooke",
+      "votes": "5176"
+    },
+    {
+      "authors": [
+        "Sylvain Reynard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "Gabriel's Rapture",
+      "votes": "4883"
+    },
+    {
+      "authors": [
+        "Kristen Ashley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "Motorcycle Man",
+      "votes": "4755"
+    },
+    {
+      "authors": [
+        "Kresley Cole"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "Lothaire",
+      "votes": "3140"
+    },
+    {
+      "authors": [
+        "Tara Sivec"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "Seduction and Snacks",
+      "votes": "2026"
+    },
+    {
+      "authors": [
+        "Jennifer Probst"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "The Marriage Bargain",
+      "votes": "1717"
+    },
+    {
+      "authors": [
+        "Gena Showalter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "The Darkest Seduction",
+      "votes": "1580"
+    },
+    {
+      "authors": [
+        "Tina Reber"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "Love Unrehearsed",
+      "votes": "1461"
+    },
+    {
+      "authors": [
+        "Lara Adrian"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "Darker After Midnight",
+      "votes": "1039"
+    },
+    {
+      "authors": [
+        "Julia Quinn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "A Night Like This",
+      "votes": "1022"
+    },
+    {
+      "authors": [
+        "C.J. Roberts"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "Seduced in the Dark",
+      "votes": "586"
+    },
+    {
+      "authors": [
+        "Dani Alexander"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "Shattered Glass",
+      "votes": "542"
+    },
+    {
+      "authors": [
+        "Julie James"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "About That Night",
+      "votes": "513"
+    },
+    {
+      "authors": [
+        "Gina L. Maxwell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Romance",
+      "position": "2012.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2012"
+      },
+      "title": "Seducing Cinderella",
+      "votes": "333"
+    },
+    {
+      "authors": [
+        "J.R. Ward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Lover at Last",
+      "votes": "24333"
+    },
+    {
+      "authors": [
+        "Jamie McGuire"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Walking Disaster",
+      "votes": "17893"
+    },
+    {
+      "authors": [
+        "Sylvia Day"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Entwined with You",
+      "votes": "14855"
+    },
+    {
+      "authors": [
+        "Colleen Hoover"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Losing Hope",
+      "votes": "9882"
+    },
+    {
+      "authors": [
+        "Abbi Glines"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Fallen Too Far",
+      "votes": "8824"
+    },
+    {
+      "authors": [
+        "K.A. Tucker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Ten Tiny Breaths",
+      "votes": "8254"
+    },
+    {
+      "authors": [
+        "S.C. Stephens"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Reckless",
+      "votes": "8222"
+    },
+    {
+      "authors": [
+        "Christina Lauren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Beautiful Bastard",
+      "votes": "7891"
+    },
+    {
+      "authors": [
+        "J. Lynn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Wait for You",
+      "votes": "7846"
+    },
+    {
+      "authors": [
+        "Jodi Ellen Malpas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Beneath This Man",
+      "votes": "6217"
+    },
+    {
+      "authors": [
+        "Emma Chase"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Tangled",
+      "votes": "3396"
+    },
+    {
+      "authors": [
+        "Jessica Sorensen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "The Coincidence of Callie & Kayden",
+      "votes": "3389"
+    },
+    {
+      "authors": [
+        "Nicholas Sparks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "The Longest Ride",
+      "votes": "2309"
+    },
+    {
+      "authors": [
+        "Colleen Hoover"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "This Girl",
+      "votes": "2251"
+    },
+    {
+      "authors": [
+        "Kristen Proby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Play with Me",
+      "votes": "1973"
+    },
+    {
+      "authors": [
+        "Julianne Donaldson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Blackmoore",
+      "votes": "1494"
+    },
+    {
+      "authors": [
+        "Katy Evans"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Real",
+      "votes": "1475"
+    },
+    {
+      "authors": [
+        "Georgia Cates"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Beauty from Pain",
+      "votes": "1357"
+    },
+    {
+      "authors": [
+        "Gail McHugh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Collide",
+      "votes": "562"
+    },
+    {
+      "authors": [
+        "J.C. Reed"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Romance",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2013"
+      },
+      "title": "Surrender Your Love",
+      "votes": "544"
+    },
+    {
+      "authors": [
+        "Diana Gabaldon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Written in My Own Heart's Blood",
+      "votes": "50933"
+    },
+    {
+      "authors": [
+        "Colleen Hoover"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Maybe Someday",
+      "votes": "29535"
+    },
+    {
+      "authors": [
+        "J.R. Ward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "The King",
+      "votes": "28526"
+    },
+    {
+      "authors": [
+        "Colleen Hoover"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Ugly Love",
+      "votes": "19027"
+    },
+    {
+      "authors": [
+        "Mia Sheridan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Archer's Voice",
+      "votes": "16520"
+    },
+    {
+      "authors": [
+        "Jamie McGuire"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Beautiful Oblivion",
+      "votes": "16043"
+    },
+    {
+      "authors": [
+        "Kristen Ashley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "The Will",
+      "votes": "13739"
+    },
+    {
+      "authors": [
+        "Nalini Singh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Shield of Winter",
+      "votes": "11162"
+    },
+    {
+      "authors": [
+        "Sylvain Reynard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Gabriel's Redemption",
+      "votes": "10463"
+    },
+    {
+      "authors": [
+        "K. Bromberg"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Crashed",
+      "votes": "10216"
+    },
+    {
+      "authors": [
+        "Tessa Dare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Romancing the Duke",
+      "votes": "5892"
+    },
+    {
+      "authors": [
+        "Belle Aurora"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Raw",
+      "votes": "4697"
+    },
+    {
+      "authors": [
+        "Shay Savage"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Transcendence",
+      "votes": "3539"
+    },
+    {
+      "authors": [
+        "River Jaymes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "The Backup Boyfriend",
+      "votes": "3367"
+    },
+    {
+      "authors": [
+        "Penelope Ward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Stepbrother Dearest",
+      "votes": "2290"
+    },
+    {
+      "authors": [
+        "Kylie Scott"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Play",
+      "votes": "2282"
+    },
+    {
+      "authors": [
+        "Kate McCarthy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Fighting Redemption",
+      "votes": "2216"
+    },
+    {
+      "authors": [
+        "Christina Lauren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Sweet Filthy Boy",
+      "votes": "2064"
+    },
+    {
+      "authors": [
+        "Samantha Young"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Before Jamaica Lane",
+      "votes": "1711"
+    },
+    {
+      "authors": [
+        "Alessandra Torre"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Romance",
+      "position": "2014.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2014"
+      },
+      "title": "Black Lies",
+      "votes": "1265"
+    },
+    {
+      "authors": [
+        "Colleen Hoover"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "Confess",
+      "votes": "35264"
+    },
+    {
+      "authors": [
+        "E.L. James"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "Grey",
+      "votes": "24347"
+    },
+    {
+      "authors": [
+        "J.R. Ward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "The Shadows",
+      "votes": "19945"
+    },
+    {
+      "authors": [
+        "Elle Kennedy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "The Deal",
+      "votes": "16505"
+    },
+    {
+      "authors": [
+        "Sylvia Day"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "Captivated by You",
+      "votes": "16018"
+    },
+    {
+      "authors": [
+        "Jennifer L. Armentrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "Wicked",
+      "votes": "14420"
+    },
+    {
+      "authors": [
+        "Kristen Ashley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "Ride Steady",
+      "votes": "12954"
+    },
+    {
+      "authors": [
+        "Julie Klassen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "The Secret of Pembrooke Park",
+      "votes": "12927"
+    },
+    {
+      "authors": [
+        "Jamie McGuire"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "Beautiful Redemption",
+      "votes": "11906"
+    },
+    {
+      "authors": [
+        "Sarah MacLean"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "Never Judge a Lady by Her Cover",
+      "votes": "9928"
+    },
+    {
+      "authors": [
+        "Nora Roberts"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "The Liar",
+      "votes": "5044"
+    },
+    {
+      "authors": [
+        "Amy Harmon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "The Law of Moses",
+      "votes": "4430"
+    },
+    {
+      "authors": [
+        "Tillie Cole"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "Souls Unfractured",
+      "votes": "4343"
+    },
+    {
+      "authors": [
+        "Kylie Scott"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "Deep",
+      "votes": "4251"
+    },
+    {
+      "authors": [
+        "Sarina Bowen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "Him",
+      "votes": "3847"
+    },
+    {
+      "authors": [
+        "Samantha Young"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "Hero",
+      "votes": "3707"
+    },
+    {
+      "authors": [
+        "Brittainy C. Cherry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "The Air He Breathes",
+      "votes": "1714"
+    },
+    {
+      "authors": [
+        "Alessandra Torre"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "Hollywood Dirt",
+      "votes": "1213"
+    },
+    {
+      "authors": [
+        "S.C. Stephens"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "Thoughtful",
+      "votes": "1085"
+    },
+    {
+      "authors": [
+        "Corinne Michaels"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Romance",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2015"
+      },
+      "title": "Consolation",
+      "votes": "906"
+    },
+    {
+      "authors": [
+        "Colleen Hoover"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "It Ends with Us",
+      "votes": "59546"
+    },
+    {
+      "authors": [
+        "Robert Thier"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "Storm and Silence",
+      "votes": "44591"
+    },
+    {
+      "authors": [
+        "Nora Roberts"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "The Obsession",
+      "votes": "27445"
+    },
+    {
+      "authors": [
+        "J.R. Ward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "The Beast",
+      "votes": "25473"
+    },
+    {
+      "authors": [
+        "Sylvia Day"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "One with You",
+      "votes": "19423"
+    },
+    {
+      "authors": [
+        "Julia Quinn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "Because of Miss Bridgerton",
+      "votes": "18617"
+    },
+    {
+      "authors": [
+        "C.S. Pacat"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "Kings Rising",
+      "votes": "17124"
+    },
+    {
+      "authors": [
+        "Erin Watt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "Paper Princess",
+      "votes": "13335"
+    },
+    {
+      "authors": [
+        "Sally Thorne"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "The Hating Game",
+      "votes": "10489"
+    },
+    {
+      "authors": [
+        "Penny Reid"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "Beard Science",
+      "votes": "9813"
+    },
+    {
+      "authors": [
+        "Elle Kennedy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "The Score",
+      "votes": "7210"
+    },
+    {
+      "authors": [
+        "Mariana Zapata"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "The Wall of Winnipeg and Me",
+      "votes": "6795"
+    },
+    {
+      "authors": [
+        "Sherrilyn Kenyon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "Born of Legend",
+      "votes": "5262"
+    },
+    {
+      "authors": [
+        "Jamie McGuire"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "Beautiful Burn",
+      "votes": "4916"
+    },
+    {
+      "authors": [
+        "Vi Keeland"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "Stuck-Up Suit",
+      "votes": "4586"
+    },
+    {
+      "authors": [
+        "Lauren Blakely"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "Big Rock",
+      "votes": "4178"
+    },
+    {
+      "authors": [
+        "Penelope Ward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "RoomHate",
+      "votes": "3524"
+    },
+    {
+      "authors": [
+        "Penelope Douglas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "Punk 57",
+      "votes": "1876"
+    },
+    {
+      "authors": [
+        "T.S. Joyce"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "Blackwing Dragon",
+      "votes": "1806"
+    },
+    {
+      "authors": [
+        "T.M. Frazier"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Romance",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2016"
+      },
+      "title": "Preppy",
+      "votes": "1704"
+    },
+    {
+      "authors": [
+        "Colleen Hoover"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Without Merit",
+      "votes": "32241"
+    },
+    {
+      "authors": [
+        "Nora Roberts"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Come Sundown",
+      "votes": "28646"
+    },
+    {
+      "authors": [
+        "Lisa Kleypas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Devil in Spring",
+      "votes": "22527"
+    },
+    {
+      "authors": [
+        "Ilona Andrews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "White Hot",
+      "votes": "21249"
+    },
+    {
+      "authors": [
+        "J.R. Ward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Blood Vow",
+      "votes": "18369"
+    },
+    {
+      "authors": [
+        "Mariana Zapata"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Wait For It",
+      "votes": "14337"
+    },
+    {
+      "authors": [
+        "Vi Keeland"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Egomaniac",
+      "votes": "11441"
+    },
+    {
+      "authors": [
+        "Brittainy C. Cherry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "The Gravity of Us",
+      "votes": "10340"
+    },
+    {
+      "authors": [
+        "Emma Chase"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Royally Matched",
+      "votes": "10044"
+    },
+    {
+      "authors": [
+        "Nalini Singh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Silver Silence",
+      "votes": "10013"
+    },
+    {
+      "authors": [
+        "L.J. Shen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Vicious",
+      "votes": "4720"
+    },
+    {
+      "authors": [
+        "Ella Frank"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Tease",
+      "votes": "4080"
+    },
+    {
+      "authors": [
+        "Laurelin Paige"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Dirty Filthy Rich Men",
+      "votes": "3382"
+    },
+    {
+      "authors": [
+        "Penny Reid"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Beard in Mind",
+      "votes": "3339"
+    },
+    {
+      "authors": [
+        "Penny Reid"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Dating-ish",
+      "votes": "2643"
+    },
+    {
+      "authors": [
+        "Beverly Jenkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Breathless",
+      "votes": "2524"
+    },
+    {
+      "authors": [
+        "Brenda Jackson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Forged in Desire",
+      "votes": "1562"
+    },
+    {
+      "authors": [
+        "Tessa Dare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "The Duchess Deal",
+      "votes": "1554"
+    },
+    {
+      "authors": [
+        "Krista Ritchie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Damaged Like Us",
+      "votes": "1345"
+    },
+    {
+      "authors": [
+        "Kate Stewart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Romance",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2017"
+      },
+      "title": "Drive",
+      "votes": "1272"
+    },
+    {
+      "authors": [
+        "Helen Hoang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "The Kiss Quotient",
+      "votes": "43183"
+    },
+    {
+      "authors": [
+        "Colleen Hoover"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "All Your Perfects",
+      "votes": "32027"
+    },
+    {
+      "authors": [
+        "Jasmine Guillory"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "The Wedding Date",
+      "votes": "28292"
+    },
+    {
+      "authors": [
+        "J.R. Ward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "The Thief",
+      "votes": "21806"
+    },
+    {
+      "authors": [
+        "E.L. James"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "Darker",
+      "votes": "20758"
+    },
+    {
+      "authors": [
+        "Laura Thalassa"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "Pestilence",
+      "votes": "15193"
+    },
+    {
+      "authors": [
+        "Mariana Zapata"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "From Lukov with Love",
+      "votes": "15114"
+    },
+    {
+      "authors": [
+        "Christina Lauren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "Roomies",
+      "votes": "13756"
+    },
+    {
+      "authors": [
+        "Kristen Ashley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "The Hookup",
+      "votes": "13135"
+    },
+    {
+      "authors": [
+        "Lisa Kleypas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "Hello Stranger",
+      "votes": "11957"
+    },
+    {
+      "authors": [
+        "Penelope Douglas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "Birthday Girl",
+      "votes": "5050"
+    },
+    {
+      "authors": [
+        "Vi Keeland"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "Sex, Not Love",
+      "votes": "4697"
+    },
+    {
+      "authors": [
+        "Alyssa Cole"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "A Princess in Theory",
+      "votes": "4278"
+    },
+    {
+      "authors": [
+        "Ella Frank"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "Robbie",
+      "votes": "3585"
+    },
+    {
+      "authors": [
+        "Sarah MacLean"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "Wicked and the Wallflower",
+      "votes": "3097"
+    },
+    {
+      "authors": [
+        "Christina Lauren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "Josh and Hazel's Guide to Not Dating",
+      "votes": "2432"
+    },
+    {
+      "authors": [
+        "Penny Reid"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "Dr. Strange Beard",
+      "votes": "2426"
+    },
+    {
+      "authors": [
+        "K.A. Tucker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "The Simple Wild",
+      "votes": "2332"
+    },
+    {
+      "authors": [
+        "Penny Reid"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "Marriage of Inconvenience",
+      "votes": "1940"
+    },
+    {
+      "authors": [
+        "Krista Ritchie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Romance",
+      "position": "2018.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2018"
+      },
+      "title": "Alphas Like Us",
+      "votes": "1256"
+    },
+    {
+      "authors": [
+        "Casey McQuiston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "Red, White & Royal Blue",
+      "votes": "76688"
+    },
+    {
+      "authors": [
+        "Colleen Hoover"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "Verity",
+      "votes": "35868"
+    },
+    {
+      "authors": [
+        "Christina Lauren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "The Unhoneymooners",
+      "votes": "28816"
+    },
+    {
+      "authors": [
+        "Katherine Center"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "Things You Save in a Fire",
+      "votes": "26097"
+    },
+    {
+      "authors": [
+        "Helen Hoang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "The Bride Test",
+      "votes": "25343"
+    },
+    {
+      "authors": [
+        "J.R. Ward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "The Savior",
+      "votes": "24476"
+    },
+    {
+      "authors": [
+        "L.J. Shen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "The Kiss Thief",
+      "votes": "17513"
+    },
+    {
+      "authors": [
+        "Beth O'Leary"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "The Flatshare",
+      "votes": "17495"
+    },
+    {
+      "authors": [
+        "L.J. Shen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "Pretty Reckless",
+      "votes": "13891"
+    },
+    {
+      "authors": [
+        "Tracey Garvis Graves"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "The Girl He Used to Know",
+      "votes": "13432"
+    },
+    {
+      "authors": [
+        "Uzma Jalaluddin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "Ayesha at Last",
+      "votes": "6287"
+    },
+    {
+      "authors": [
+        "Abby Jimenez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "The Friend Zone",
+      "votes": "5970"
+    },
+    {
+      "authors": [
+        "Jasmine Guillory"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "The Wedding Party",
+      "votes": "5142"
+    },
+    {
+      "authors": [
+        "Helena Hunting"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "Meet Cute",
+      "votes": "4748"
+    },
+    {
+      "authors": [
+        "Jen DeLuca"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "Well Met",
+      "votes": "4257"
+    },
+    {
+      "authors": [
+        "Ilona Andrews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "Sapphire Flames",
+      "votes": "3669"
+    },
+    {
+      "authors": [
+        "Penny Reid"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "Beard Necessities",
+      "votes": "3456"
+    },
+    {
+      "authors": [
+        "Mariana Zapata"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "The Best Thing",
+      "votes": "2215"
+    },
+    {
+      "authors": [
+        "Tessa Dare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "The Wallflower Wager",
+      "votes": "1711"
+    },
+    {
+      "authors": [
+        "Sarah MacLean"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Romance",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2019"
+      },
+      "title": "Brazen and the Beast",
+      "votes": "1335"
+    },
+    {
+      "authors": [
+        "Jennifer L. Armentrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "From Blood and Ash",
+      "votes": "70896"
+    },
+    {
+      "authors": [
+        "Emily Henry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "Beach Read",
+      "votes": "60124"
+    },
+    {
+      "authors": [
+        "Rebecca Serle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "In Five Years",
+      "votes": "37342"
+    },
+    {
+      "authors": [
+        "Colleen Hoover"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "Regretting You",
+      "votes": "35856"
+    },
+    {
+      "authors": [
+        "Alexis Hall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "Boyfriend Material",
+      "votes": "33502"
+    },
+    {
+      "authors": [
+        "Talia Hibbert"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "Take a Hint, Dani Brown",
+      "votes": "26958"
+    },
+    {
+      "authors": [
+        "Kate Stayman-London"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "One to Watch",
+      "votes": "24301"
+    },
+    {
+      "authors": [
+        "Abby Jimenez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "The Happy Ever After Playlist",
+      "votes": "18244"
+    },
+    {
+      "authors": [
+        "Beth O'Leary"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "The Switch",
+      "votes": "17210"
+    },
+    {
+      "authors": [
+        "Alexis Daria"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "You Had Me at Hola",
+      "votes": "14666"
+    },
+    {
+      "authors": [
+        "Josie Silver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "The Two Lives of Lydia Bird",
+      "votes": "7069"
+    },
+    {
+      "authors": [
+        "Jasmine Guillory"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "Party of Two",
+      "votes": "6211"
+    },
+    {
+      "authors": [
+        "Evie Dunmore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "A Rogue of One's Own",
+      "votes": "6005"
+    },
+    {
+      "authors": [
+        "Christina Lauren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "In a Holidaze",
+      "votes": "5713"
+    },
+    {
+      "authors": [
+        "Ilona Andrews"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "Emerald Blaze",
+      "votes": "4913"
+    },
+    {
+      "authors": [
+        "Meryl Wilsner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "Something to Talk About",
+      "votes": "4631"
+    },
+    {
+      "authors": [
+        "Cora Reilly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "Sweet Temptation",
+      "votes": "3643"
+    },
+    {
+      "authors": [
+        "Mariana Zapata"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "Hands Down",
+      "votes": "2892"
+    },
+    {
+      "authors": [
+        "Sarah Hogle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "You Deserve Each Other",
+      "votes": "2139"
+    },
+    {
+      "authors": [
+        "Olivia Dade"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Romance",
+      "position": "2020.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2020"
+      },
+      "title": "Spoiler Alert",
+      "votes": "1884"
+    },
+    {
+      "authors": [
+        "Emily Henry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "People We Meet on Vacation",
+      "votes": "88755"
+    },
+    {
+      "authors": [
+        "Ali Hazelwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "The Love Hypothesis",
+      "votes": "88192"
+    },
+    {
+      "authors": [
+        "Casey McQuiston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "One Last Stop",
+      "votes": "54845"
+    },
+    {
+      "authors": [
+        "Elena Armas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "The Spanish Love Deception",
+      "votes": "40504"
+    },
+    {
+      "authors": [
+        "Talia Hibbert"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "Act Your Age, Eve Brown",
+      "votes": "22992"
+    },
+    {
+      "authors": [
+        "Erin Sterling"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "The Ex Hex",
+      "votes": "22140"
+    },
+    {
+      "authors": [
+        "Katee Robert"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "Neon Gods",
+      "votes": "22046"
+    },
+    {
+      "authors": [
+        "Tia Williams"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "Seven Days in June",
+      "votes": "20052"
+    },
+    {
+      "authors": [
+        "Tessa Bailey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "It Happened One Summer",
+      "votes": "19674"
+    },
+    {
+      "authors": [
+        "Christina Lauren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "The Soulmate Equation",
+      "votes": "19337"
+    },
+    {
+      "authors": [
+        "Helen Hoang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "The Heart Principle",
+      "votes": "6919"
+    },
+    {
+      "authors": [
+        "Beth O'Leary"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "The Road Trip",
+      "votes": "6303"
+    },
+    {
+      "authors": [
+        "Alison Cochrun"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "The Charm Offensive",
+      "votes": "4689"
+    },
+    {
+      "authors": [
+        "Abby Jimenez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "Life's Too Short",
+      "votes": "4231"
+    },
+    {
+      "authors": [
+        "Sally Thorne"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "Second First Impressions",
+      "votes": "3166"
+    },
+    {
+      "authors": [
+        "Rachel Lynn Solomon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "The Ex Talk",
+      "votes": "2954"
+    },
+    {
+      "authors": [
+        "Jasmine Guillory"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "While We Were Dating",
+      "votes": "2682"
+    },
+    {
+      "authors": [
+        "Sara Desai"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "The Dating Plan",
+      "votes": "2202"
+    },
+    {
+      "authors": [
+        "Angie Hockman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "Shipped",
+      "votes": "2095"
+    },
+    {
+      "authors": [
+        "Denise Williams"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Romance",
+      "position": "2021.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2021"
+      },
+      "title": "How to Fail at Flirting",
+      "votes": "2080"
+    },
+    {
+      "authors": [
+        "Emily Henry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "Book Lovers",
+      "votes": "175857"
+    },
+    {
+      "authors": [
+        "Colleen Hoover"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "Reminders of Him",
+      "votes": "64550"
+    },
+    {
+      "authors": [
+        "Colleen Hoover"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "It Starts with Us",
+      "votes": "62221"
+    },
+    {
+      "authors": [
+        "Ali Hazelwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "Love on the Brain",
+      "votes": "48628"
+    },
+    {
+      "authors": [
+        "Carley Fortune"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "Every Summer After",
+      "votes": "40868"
+    },
+    {
+      "authors": [
+        "Lucy Score"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "Things We Never Got Over",
+      "votes": "38940"
+    },
+    {
+      "authors": [
+        "Ashley Herring Blake"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "Delilah Green Doesn't Care",
+      "votes": "37934"
+    },
+    {
+      "authors": [
+        "Ana Huang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "Twisted Hate",
+      "votes": "35508"
+    },
+    {
+      "authors": [
+        "Lauren Asher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "Terms and Conditions",
+      "votes": "27636"
+    },
+    {
+      "authors": [
+        "Tessa Bailey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "Hook, Line, and Sinker",
+      "votes": "26240"
+    },
+    {
+      "authors": [
+        "Abby Jimenez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "Part of Your World",
+      "votes": "9924"
+    },
+    {
+      "authors": [
+        "Akwaeke Emezi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "You Made a Fool of Death with Your Beauty",
+      "votes": "8770"
+    },
+    {
+      "authors": [
+        "Katee Robert"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "Electric Idol",
+      "votes": "8203"
+    },
+    {
+      "authors": [
+        "Katherine Center"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "The Bodyguard",
+      "votes": "7740"
+    },
+    {
+      "authors": [
+        "Elena Armas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "The American Roommate Experiment",
+      "votes": "5335"
+    },
+    {
+      "authors": [
+        "Elissa Sussman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "Funny You Should Ask",
+      "votes": "5123"
+    },
+    {
+      "authors": [
+        "Julia Whelan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "Thank You for Listening",
+      "votes": "4390"
+    },
+    {
+      "authors": [
+        "Erin Sterling"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "The Kiss Curse",
+      "votes": "4088"
+    },
+    {
+      "authors": [
+        "Nisha Sharma"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "Dating Dr. Dil",
+      "votes": "3180"
+    },
+    {
+      "authors": [
+        "Mia Sosa"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Romance",
+      "position": "2022.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2022"
+      },
+      "title": "The Wedding Crasher",
+      "votes": "1723"
+    },
+    {
+      "authors": [
+        "Emily Henry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "Happy Place",
+      "votes": "157687"
+    },
+    {
+      "authors": [
+        "Ali Hazelwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "Love, Theoretically",
+      "votes": "96439"
+    },
+    {
+      "authors": [
+        "Abby Jimenez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "Yours Truly",
+      "votes": "57086"
+    },
+    {
+      "authors": [
+        "Lucy Score"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "Things We Hide from the Light",
+      "votes": "46423"
+    },
+    {
+      "authors": [
+        "Curtis Sittenfeld"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "Romantic Comedy",
+      "votes": "39178"
+    },
+    {
+      "authors": [
+        "Lauren Asher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "Final Offer",
+      "votes": "37873"
+    },
+    {
+      "authors": [
+        "Ana Huang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "King of Pride",
+      "votes": "37653"
+    },
+    {
+      "authors": [
+        "Liz Tomforde"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "The Right Move",
+      "votes": "36246"
+    },
+    {
+      "authors": [
+        "Ashley Poston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "The Seven Year Slip",
+      "votes": "30820"
+    },
+    {
+      "authors": [
+        "Hannah Grace"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "Wildfire",
+      "votes": "29205"
+    },
+    {
+      "authors": [
+        "Carley Fortune"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "Meet Me at the Lake",
+      "votes": "10557"
+    },
+    {
+      "authors": [
+        "Emily Rath"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "Pucking Around",
+      "votes": "10099"
+    },
+    {
+      "authors": [
+        "Christina Lauren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "The True Love Experiment",
+      "votes": "9492"
+    },
+    {
+      "authors": [
+        "Sarah Adams"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "Practice Makes Perfect",
+      "votes": "8518"
+    },
+    {
+      "authors": [
+        "Elsie Silver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "Powerless",
+      "votes": "8486"
+    },
+    {
+      "authors": [
+        "Rebecca Yarros"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "In the Likely Event",
+      "votes": "8421"
+    },
+    {
+      "authors": [
+        "Katherine Center"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "Hello Stranger",
+      "votes": "8197"
+    },
+    {
+      "authors": [
+        "Kate Goldbeck"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "You, Again",
+      "votes": "5513"
+    },
+    {
+      "authors": [
+        "Meghan Quinn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "A Long Time Coming",
+      "votes": "3918"
+    },
+    {
+      "authors": [
+        "Elena Armas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romance",
+      "position": "2023.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romance-books-2023"
+      },
+      "title": "The Long Game",
+      "votes": "3790"
+    },
+    {
+      "authors": [
+        "Emily Henry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "Funny Story",
+      "votes": "179349"
+    },
+    {
+      "authors": [
+        "Abby Jimenez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "Just for the Summer",
+      "votes": "140786"
+    },
+    {
+      "authors": [
+        "Ali Hazelwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "Bride",
+      "votes": "99290"
+    },
+    {
+      "authors": [
+        "Brynne Weaver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "Leather & Lark",
+      "votes": "41321"
+    },
+    {
+      "authors": [
+        "Liz Tomforde"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "Play Along",
+      "votes": "40988"
+    },
+    {
+      "authors": [
+        "Ana Huang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "King of Sloth",
+      "votes": "39476"
+    },
+    {
+      "authors": [
+        "Elsie Silver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "Wild Love",
+      "votes": "34992"
+    },
+    {
+      "authors": [
+        "Laurie Gilmore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "The Cinnamon Bun Book Store",
+      "votes": "33652"
+    },
+    {
+      "authors": [
+        "Christina Lauren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "The Paradise Problem",
+      "votes": "32715"
+    },
+    {
+      "authors": [
+        "Carley Fortune"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "This Summer Will Be Different",
+      "votes": "29357"
+    },
+    {
+      "authors": [
+        "Casey McQuiston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "The Pairing",
+      "votes": "11640"
+    },
+    {
+      "authors": [
+        "Hannah Grace"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "Daydream",
+      "votes": "11560"
+    },
+    {
+      "authors": [
+        "Katherine Center"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "The Rom-Commers",
+      "votes": "10607"
+    },
+    {
+      "authors": [
+        "Ali Hazelwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "Not in Love",
+      "votes": "10380"
+    },
+    {
+      "authors": [
+        "Kennedy Ryan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "This Could Be Us",
+      "votes": "7742"
+    },
+    {
+      "authors": [
+        "Lyla Sage"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "Swift and Saddled",
+      "votes": "6751"
+    },
+    {
+      "authors": [
+        "Tia Williams"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "A Love Song for Ricki Wilde",
+      "votes": "6038"
+    },
+    {
+      "authors": [
+        "Yulin Kuang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "How to End a Love Story",
+      "votes": "5856"
+    },
+    {
+      "authors": [
+        "Kirsty Greenwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "The Love of My Afterlife",
+      "votes": "5488"
+    },
+    {
+      "authors": [
+        "Kevin Kwan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romance",
+      "position": "2024.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2024"
+      },
+      "title": "Lies and Weddings",
+      "votes": "4979"
+    },
+    {
+      "authors": [
+        "Emily Henry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "Great Big Beautiful Life",
+      "votes": "117054"
+    },
+    {
+      "authors": [
+        "Abby Jimenez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "Say You'll Remember Me",
+      "votes": "93945"
+    },
+    {
+      "authors": [
+        "Carley Fortune"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "One Golden Summer",
+      "votes": "93098"
+    },
+    {
+      "authors": [
+        "Ali Hazelwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "Deep End",
+      "votes": "86798"
+    },
+    {
+      "authors": [
+        "Layne Fargo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "The Favorites",
+      "votes": "57653"
+    },
+    {
+      "authors": [
+        "Liz Tomforde"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "Rewind It Back",
+      "votes": "56688"
+    },
+    {
+      "authors": [
+        "B.K. Borison"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "First-Time Caller",
+      "votes": "53979"
+    },
+    {
+      "authors": [
+        "Brynne Weaver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "Scythe & Sparrow",
+      "votes": "44765"
+    },
+    {
+      "authors": [
+        "Elsie Silver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "Wild Side",
+      "votes": "43930"
+    },
+    {
+      "authors": [
+        "Ana Huang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "King of Envy",
+      "votes": "38992"
+    },
+    {
+      "authors": [
+        "Ali Hazelwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "Problematic Summer Romance",
+      "votes": "17738"
+    },
+    {
+      "authors": [
+        "Laurie Gilmore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "The Gingerbread Bakery",
+      "votes": "17019"
+    },
+    {
+      "authors": [
+        "Kennedy Ryan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "Can't Get Enough",
+      "votes": "13433"
+    },
+    {
+      "authors": [
+        "Julie Olivia"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "If It Makes You Happy",
+      "votes": "12763"
+    },
+    {
+      "authors": [
+        "Meghan Quinn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "Till Summer Do Us Part",
+      "votes": "12085"
+    },
+    {
+      "authors": [
+        "Brynne Weaver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "Tourist Season",
+      "votes": "11217"
+    },
+    {
+      "authors": [
+        "Sarah Adams"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "Beg, Borrow, or Steal",
+      "votes": "10892"
+    },
+    {
+      "authors": [
+        "Lucy Score"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "Story of My Life",
+      "votes": "8254"
+    },
+    {
+      "authors": [
+        "Bal Khabra"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "Spiral",
+      "votes": "4803"
+    },
+    {
+      "authors": [
+        "Lauren Asher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romance",
+      "position": "2025.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romance-books-2025"
+      },
+      "title": "Love Arranged",
+      "votes": "3026"
+    }
+  ],
+  "fetched_at": "2026-07-28T03:39:20Z",
+  "list_id": "goodreads_choice_awards_romance",
+  "list_name": "Goodreads Choice Awards - Romance",
+  "match_series": false,
+  "notes": [
+    "Goodreads contributor enrichment stopped after an access challenge; 20 newest-year rows retained ballot credits."
+  ],
+  "parser": "goodreads_choice_awards_romance",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Romance",
+    "source_id": "goodreads_choice_awards_romance",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

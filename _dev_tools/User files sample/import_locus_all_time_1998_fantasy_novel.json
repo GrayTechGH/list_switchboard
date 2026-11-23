@@ -1,0 +1,420 @@
+{
+  "append_state": {
+    "entry_count": 36,
+    "last_entry_key": "fafhrd and grey mouser|fritz leiber",
+    "last_position": "35",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "J. R. R. Tolkien"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "1",
+      "result": "ranked",
+      "title": "The Lord of the Rings"
+    },
+    {
+      "authors": [
+        "J. R. R. Tolkien"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "2",
+      "result": "ranked",
+      "title": "The Hobbit"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "3",
+      "result": "ranked",
+      "title": "The Book of the New Sun"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "4",
+      "result": "ranked",
+      "title": "Earthsea"
+    },
+    {
+      "authors": [
+        "Lewis Carroll"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "5",
+      "result": "ranked",
+      "title": "Alice's Adventures in Wonderland"
+    },
+    {
+      "authors": [
+        "Mervyn Peake"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "6",
+      "result": "ranked",
+      "title": "The Gormenghast Trilogy"
+    },
+    {
+      "authors": [
+        "T. H. White"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "7",
+      "result": "ranked",
+      "title": "The Once and Future King"
+    },
+    {
+      "authors": [
+        "John Crowley"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "8",
+      "result": "ranked",
+      "title": "Little, Big"
+    },
+    {
+      "authors": [
+        "Roger Zelazny"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "9",
+      "result": "ranked",
+      "title": "Nine Princes in Amber"
+    },
+    {
+      "authors": [
+        "Stephen R. Donaldson"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "10",
+      "result": "ranked",
+      "title": "The Chronicles of Thomas Covenant the Unbeliever"
+    },
+    {
+      "authors": [
+        "Anne McCaffrey"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "11",
+      "result": "ranked",
+      "title": "Dragonflight"
+    },
+    {
+      "authors": [
+        "David Eddings"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "12",
+      "result": "ranked",
+      "title": "The Belgariad"
+    },
+    {
+      "authors": [
+        "C. S. Lewis"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "13",
+      "result": "ranked",
+      "title": "The Chronicles of Narnia"
+    },
+    {
+      "authors": [
+        "Tim Powers"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "14",
+      "result": "ranked",
+      "title": "The Anubis Gates"
+    },
+    {
+      "authors": [
+        "Jack Vance"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "15",
+      "result": "ranked",
+      "title": "The Dying Earth"
+    },
+    {
+      "authors": [
+        "L. Frank Baum"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "16",
+      "result": "ranked",
+      "title": "The Wonderful Wizard of Oz"
+    },
+    {
+      "authors": [
+        "Bram Stoker"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "17",
+      "result": "ranked",
+      "title": "Dracula"
+    },
+    {
+      "authors": [
+        "Peter S. Beagle"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "18",
+      "result": "ranked",
+      "title": "The Last Unicorn"
+    },
+    {
+      "authors": [
+        "Marion Zimmer Bradley"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "18",
+      "result": "ranked",
+      "title": "The Mists of Avalon"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "20",
+      "result": "ranked",
+      "title": "The Stand"
+    },
+    {
+      "authors": [
+        "Richard Adams"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "21",
+      "result": "ranked",
+      "title": "Watership Down"
+    },
+    {
+      "authors": [
+        "Patricia A. McKillip"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "22",
+      "result": "ranked",
+      "title": "The Riddle-Master of Hed"
+    },
+    {
+      "authors": [
+        "E. R. Eddison"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "23",
+      "result": "ranked",
+      "title": "The Worm Ouroboros"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "24",
+      "result": "ranked",
+      "title": "Glory Road"
+    },
+    {
+      "authors": [
+        "Robert Holdstock"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "25",
+      "result": "ranked",
+      "title": "Mythago Wood"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "26",
+      "result": "ranked",
+      "title": "The Tales of Alvin Maker"
+    },
+    {
+      "authors": [
+        "Madeleine L'Engle"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "27",
+      "result": "ranked",
+      "title": "A Wrinkle in Time"
+    },
+    {
+      "authors": [
+        "Andre Norton"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "28",
+      "result": "ranked",
+      "title": "Witch World"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "29",
+      "result": "ranked",
+      "title": "The Fionavar Tapestry"
+    },
+    {
+      "authors": [
+        "Katherine Kurtz"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "30",
+      "result": "ranked",
+      "title": "Deryni Rising"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "31",
+      "result": "ranked",
+      "title": "Discworld"
+    },
+    {
+      "authors": [
+        "Ray Bradbury"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "32",
+      "result": "ranked",
+      "title": "Something Wicked This Way Comes"
+    },
+    {
+      "authors": [
+        "Ken Grimwood"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "32",
+      "result": "ranked",
+      "title": "Replay"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "32",
+      "result": "ranked",
+      "title": "Elric"
+    },
+    {
+      "authors": [
+        "L. Sprague de Camp",
+        "Fletcher Pratt"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "35",
+      "result": "ranked",
+      "title": "The Incomplete Enchanter"
+    },
+    {
+      "authors": [
+        "Fritz Leiber"
+      ],
+      "award": "Locus Poll",
+      "category": "All-Time Fantasy Novel",
+      "poll_year": "1998",
+      "position": "35",
+      "result": "ranked",
+      "title": "Fafhrd and Grey Mouser"
+    }
+  ],
+  "fetched_at": "2026-07-23T05:09:42Z",
+  "list_id": "locus_all_time_1998_fantasy_novel",
+  "list_name": "Locus - All-Time 1998 Fantasy Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "locus_all_time_1998_fantasy_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Locus - All-Time 1998 Fantasy Novel",
+    "source_id": "locus_all_time_1998_fantasy_novel",
+    "url": "https://www.sfadb.com/Locus_1998_Fantasy"
+  }
+}

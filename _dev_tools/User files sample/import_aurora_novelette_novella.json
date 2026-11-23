@@ -1,0 +1,520 @@
+{
+  "append_state": {
+    "entry_count": 31,
+    "last_entry_key": "the river has roots|amal el mohtar",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Derek K\u00fcnsken"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2021",
+      "category": "Novelette/Novella",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2021"
+      },
+      "title": "Tool Use by the Humans of Danzhai County"
+    },
+    {
+      "authors": [
+        "Ian Rogers"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2021",
+      "category": "Novelette/Novella",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2021"
+      },
+      "title": "Go Fish"
+    },
+    {
+      "authors": [
+        "Rich Larson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2021",
+      "category": "Novelette/Novella",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2021"
+      },
+      "title": "How Quini the Squid Misplaced His Klobucar"
+    },
+    {
+      "authors": [
+        "L. X. Beckett"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2021",
+      "category": "Novelette/Novella",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2021"
+      },
+      "title": "The Immolation of Kev Magee"
+    },
+    {
+      "authors": [
+        "Rebecca Campbell"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2021",
+      "category": "Novelette/Novella",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2021"
+      },
+      "title": "An Important Failure"
+    },
+    {
+      "authors": [
+        "A. C. Wise"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2021",
+      "category": "Novelette/Novella",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2021"
+      },
+      "title": "To Sail the Black"
+    },
+    {
+      "authors": [
+        "Premee Moham"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2022",
+      "category": "Novelette/Novella",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2022"
+      },
+      "title": "The Annual Migration of Clouds"
+    },
+    {
+      "authors": [
+        "Julie E. Czerneda"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2022",
+      "category": "Novelette/Novella",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2022"
+      },
+      "title": "Decay in Five Stages"
+    },
+    {
+      "authors": [
+        "Liz Westbrook-Trenholm",
+        "Hayden Trenholm"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2022",
+      "category": "Novelette/Novella",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2022"
+      },
+      "title": "Lay Down Your Heart"
+    },
+    {
+      "authors": [
+        "Silvia Moreno-Garcia"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2022",
+      "category": "Novelette/Novella",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2022"
+      },
+      "title": "The Return of the Sorceress"
+    },
+    {
+      "authors": [
+        "Premee Moham"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2022",
+      "category": "Novelette/Novella",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2022"
+      },
+      "title": "These Lifeless Things"
+    },
+    {
+      "authors": [
+        "Fonda Lee"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2023",
+      "category": "Novelette/Novella",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2023"
+      },
+      "title": "The Jade Setter of Janloon"
+    },
+    {
+      "authors": [
+        "C. L. Polk"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2023",
+      "category": "Novelette/Novella",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2023"
+      },
+      "title": "Even Though I Knew the End"
+    },
+    {
+      "authors": [
+        "Kelly Robson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2023",
+      "category": "Novelette/Novella",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2023"
+      },
+      "title": "High Times in the Low Parliament"
+    },
+    {
+      "authors": [
+        "Eric Choi"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2023",
+      "category": "Novelette/Novella",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2023"
+      },
+      "title": "A Sky and a Heaven"
+    },
+    {
+      "authors": [
+        "Silvia Moreno-Garcia"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2023",
+      "category": "Novelette/Novella",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2023"
+      },
+      "title": "The Tiger Came to the Mountains"
+    },
+    {
+      "authors": [
+        "Fonda Lee"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2024",
+      "category": "Novelette/Novella",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2024"
+      },
+      "title": "Untethered Sky"
+    },
+    {
+      "authors": [
+        "Tiffany Morris"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2024",
+      "category": "Novelette/Novella",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2024"
+      },
+      "title": "Green Fuse Burning"
+    },
+    {
+      "authors": [
+        "Ai Jiang"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2024",
+      "category": "Novelette/Novella",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2024"
+      },
+      "title": "I AM AI"
+    },
+    {
+      "authors": [
+        "Nalo Hopkinson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2024",
+      "category": "Novelette/Novella",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2024"
+      },
+      "title": "The Most Strongest Obeah Woman of the World"
+    },
+    {
+      "authors": [
+        "Avi Silver"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2024",
+      "category": "Novelette/Novella",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2024"
+      },
+      "title": "Pluralities"
+    },
+    {
+      "authors": [
+        "Premee Moham"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2025",
+      "category": "Novelette/Novella",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2025"
+      },
+      "title": "The Butcher of the Forest"
+    },
+    {
+      "authors": [
+        "Hayden Trenholm"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2025",
+      "category": "Novelette/Novella",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2025"
+      },
+      "title": "Carter's Refugio"
+    },
+    {
+      "authors": [
+        "Suzan Palumbo"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2025",
+      "category": "Novelette/Novella",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2025"
+      },
+      "title": "Countess"
+    },
+    {
+      "authors": [
+        "A. D. Sui"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2025",
+      "category": "Novelette/Novella",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2025"
+      },
+      "title": "The Dragonfly Gambit"
+    },
+    {
+      "authors": [
+        "Geoffrey W. Cole"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2025",
+      "category": "Novelette/Novella",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2025"
+      },
+      "title": "Zebra Meridian"
+    },
+    {
+      "authors": [
+        "Premee Moham"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2026",
+      "category": "Novelette/Novella",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2026"
+      },
+      "title": "The First Thousand Trees"
+    },
+    {
+      "authors": [
+        "Mich\u00e8le Laframboise"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2026",
+      "category": "Novelette/Novella",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2026"
+      },
+      "title": "In the Gardener's Service"
+    },
+    {
+      "authors": [
+        "Silvia Moreno-Garcia"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2026",
+      "category": "Novelette/Novella",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2026"
+      },
+      "title": "The Lure of Stone"
+    },
+    {
+      "authors": [
+        "Ai Jiang"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2026",
+      "category": "Novelette/Novella",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2026"
+      },
+      "title": "A Palace Near the Wind"
+    },
+    {
+      "authors": [
+        "Amal El-Mohtar"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2026",
+      "category": "Novelette/Novella",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2026"
+      },
+      "title": "The River Has Roots"
+    }
+  ],
+  "fetched_at": "2026-07-20T13:09:51Z",
+  "list_id": "aurora_novelette_novella",
+  "list_name": "Aurora - Novelette/Novella",
+  "match_series": false,
+  "notes": [],
+  "parser": "aurora_novelette_novella",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Aurora - Novelette/Novella",
+    "source_id": "aurora_novelette_novella",
+    "url": "https://www.sfadb.com/Aurora_Awards"
+  }
+}

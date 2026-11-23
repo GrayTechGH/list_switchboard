@@ -24,7 +24,8 @@
     },
     {
       "authors": [
-        "Mark Clifton and Frank Riley"
+        "Mark Clifton",
+        "Frank Riley"
       ],
       "award": "Hugo Award",
       "award_year": "1955",
@@ -1464,7 +1465,8 @@
     },
     {
       "authors": [
-        "Larry Niven and Jerry Pournelle"
+        "Larry Niven",
+        "Jerry Pournelle"
       ],
       "award": "Hugo Award",
       "award_year": "1975",
@@ -1528,7 +1530,8 @@
     },
     {
       "authors": [
-        "Larry Niven and Jerry Pournelle"
+        "Larry Niven",
+        "Jerry Pournelle"
       ],
       "award": "Hugo Award",
       "award_year": "1976",
@@ -1688,7 +1691,8 @@
     },
     {
       "authors": [
-        "Larry Niven and Jerry Pournelle"
+        "Larry Niven",
+        "Jerry Pournelle"
       ],
       "award": "Hugo Award",
       "award_year": "1978",
@@ -2360,7 +2364,8 @@
     },
     {
       "authors": [
-        "Larry Niven and Jerry Pournelle"
+        "Larry Niven",
+        "Jerry Pournelle"
       ],
       "award": "Hugo Award",
       "award_year": "1986",
@@ -4648,7 +4653,8 @@
     },
     {
       "authors": [
-        "Robert Jordan and Brandon Sanderson"
+        "Robert Jordan",
+        "Brandon Sanderson"
       ],
       "award": "Hugo Award",
       "award_year": "2014",
@@ -5703,12 +5709,13 @@
       "title": "Service Model"
     }
   ],
-  "fetched_at": "2026-07-07T13:56:30Z",
+  "fetched_at": "2026-07-23T02:06:54Z",
   "list_id": "hugo_awards_novel",
   "list_name": "Hugo Awards - Novel",
   "match_series": false,
   "notes": [],
   "parser": "hugo_awards_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Hugo Awards - Novel",

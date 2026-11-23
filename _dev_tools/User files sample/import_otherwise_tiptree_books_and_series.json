@@ -1,0 +1,6014 @@
+{
+  "append_state": {
+    "entry_count": 376,
+    "last_entry_key": "what a fish looks like|syr hayati beker",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Eleanor Arnason"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1992",
+      "category": "Books and Series",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "A Woman of the Iron People"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1992",
+      "category": "Books and Series",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "White Queen"
+    },
+    {
+      "authors": [
+        "Marge Piercy"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1992",
+      "category": "Books and Series",
+      "position": "1992.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "He, She and It"
+    },
+    {
+      "authors": [
+        "Greer Ilene Gilman"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1992",
+      "category": "Books and Series",
+      "position": "1992.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Moonwise"
+    },
+    {
+      "authors": [
+        "John Barnes"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1992",
+      "category": "Books and Series",
+      "position": "1992.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Orbital Resonance"
+    },
+    {
+      "authors": [
+        "Karen Joy Fowler"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1992",
+      "category": "Books and Series",
+      "position": "1992.04",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Sarah Canary"
+    },
+    {
+      "authors": [
+        "Mary Gentle"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1992",
+      "category": "Books and Series",
+      "position": "1992.05",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Architecture of Desire"
+    },
+    {
+      "authors": [
+        "Maureen F. McHugh"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1993",
+      "category": "Books and Series",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "China Mountain Zhang"
+    },
+    {
+      "authors": [
+        "Sue Thomas"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1993",
+      "category": "Books and Series",
+      "position": "1993.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Correspondence"
+    },
+    {
+      "authors": [
+        "\u00c9lisabeth Vonarburg"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1993",
+      "category": "Books and Series",
+      "position": "1993.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "In the Mothers' Land"
+    },
+    {
+      "authors": [
+        "Lisa Tuttle"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1993",
+      "category": "Books and Series",
+      "position": "1993.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Lost Futures"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1993",
+      "category": "Books and Series",
+      "position": "1993.04",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Red Mars"
+    },
+    {
+      "authors": [
+        "Judith Moffett"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1993",
+      "category": "Books and Series",
+      "position": "1993.05",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Time, Like an Ever-Rolling Stream"
+    },
+    {
+      "authors": [
+        "Carol Emshwiller"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1993",
+      "category": "Books and Series",
+      "position": "1993.06",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Venus Rising"
+    },
+    {
+      "authors": [
+        "Nicola Griffith"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Ammonite"
+    },
+    {
+      "authors": [
+        "Paul Park"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Coelestis"
+    },
+    {
+      "authors": [
+        "Laurie J. Marks"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Dancing Jack"
+    },
+    {
+      "authors": [
+        "Alice Nunn"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Illicit Passage"
+    },
+    {
+      "authors": [
+        "Sybil Claiborne"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.04",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "In the Garden of Dead Cars"
+    },
+    {
+      "authors": [
+        "Eleanor Arnason"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.05",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Ring of Swords"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.06",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Robber Bride"
+    },
+    {
+      "authors": [
+        "Sheri S. Tepper"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.07",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "A Plague of Angels"
+    },
+    {
+      "authors": [
+        "Norma Marden"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.08",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "An Eye for Dark Places"
+    },
+    {
+      "authors": [
+        "Melissa Scott"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.09",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Burning Bright"
+    },
+    {
+      "authors": [
+        "Wilhelmina Baird"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.10",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "CrashCourse"
+    },
+    {
+      "authors": [
+        "Robin McKinley"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.11",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Deerskin"
+    },
+    {
+      "authors": [
+        "Poppy Z. Brite"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.12",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Drawing Blood"
+    },
+    {
+      "authors": [
+        "Rosaleen Love"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.13",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Evolution Annie and Other Stories"
+    },
+    {
+      "authors": [
+        "David Brin"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.14",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Glory Season"
+    },
+    {
+      "authors": [
+        "Colin Greenland"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.15",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Harm's Way"
+    },
+    {
+      "authors": [
+        "M. J. Engh"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.16",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Rainbow Man"
+    },
+    {
+      "authors": [
+        "S. N. Lewitt"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.17",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Songs of Chaos"
+    },
+    {
+      "authors": [
+        "Stephanie T. Hoppe"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.18",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Assimilation of Leah Wennover"
+    },
+    {
+      "authors": [
+        "Flynn Connolly"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.19",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Rising of the Moon"
+    },
+    {
+      "authors": [
+        "Mary Mackey"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.20",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Year the Horses Came"
+    },
+    {
+      "authors": [
+        "Amy Thomson"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.21",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Virtual Girl"
+    },
+    {
+      "authors": [
+        "Michael Blumlein"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1994",
+      "category": "Books and Series",
+      "position": "1994.22",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "X, Y"
+    },
+    {
+      "authors": [
+        "Nancy Springer"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Larque on the Wing"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "A Fisherman of the Inland Sea"
+    },
+    {
+      "authors": [
+        "Ellen Frye"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Amazon Story Bones"
+    },
+    {
+      "authors": [
+        "L. Warren Douglas"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Cannon's Orb"
+    },
+    {
+      "authors": [
+        "George Turner"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.04",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Genetic Soldier"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.05",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "North Wind"
+    },
+    {
+      "authors": [
+        "Rachel Pollack"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.06",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Temporary Agency"
+    },
+    {
+      "authors": [
+        "Suzy McKee Charnas"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.07",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Furies"
+    },
+    {
+      "authors": [
+        "Melissa Scott"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.08",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Trouble and Her Friends"
+    },
+    {
+      "authors": [
+        "Geoff Ryman"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.09",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Unconquered Countries"
+    },
+    {
+      "authors": [
+        "Caroline Stevermer"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.10",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "A College of Magics"
+    },
+    {
+      "authors": [
+        "Suzette Haden Elgin"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.11",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Earthsong"
+    },
+    {
+      "authors": [
+        "Jacqui Singleton"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.12",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Heartstone and Saber"
+    },
+    {
+      "authors": [
+        "Nancy Springer"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.13",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Metal Angel"
+    },
+    {
+      "authors": [
+        "Vonda N. McIntyre"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.14",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Nautilus"
+    },
+    {
+      "authors": [
+        "Sheri S. Tepper"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.15",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Shadow's End"
+    },
+    {
+      "authors": [
+        "Karen Cadora"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.16",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Stardust Bound"
+    },
+    {
+      "authors": [
+        "Barbara Hambly"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.17",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Stranger at the Wedding"
+    },
+    {
+      "authors": [
+        "Lisa Mason"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.18",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Summer of Love"
+    },
+    {
+      "authors": [
+        "Chris Claremont"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.19",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Sundowner"
+    },
+    {
+      "authors": [
+        "Marc Laidlaw"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.20",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Orchid Eater"
+    },
+    {
+      "authors": [
+        "Allan Cole",
+        "Chris Bunch"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.21",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Warrior's Tale"
+    },
+    {
+      "authors": [
+        "Susan Dexter"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.22",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Wind-Witch"
+    },
+    {
+      "authors": [
+        "Connie Willis"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.23",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Uncharted Territory"
+    },
+    {
+      "authors": [
+        "James Patrick Kelly"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1995",
+      "category": "Books and Series",
+      "position": "1995.24",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Wildlife"
+    },
+    {
+      "authors": [
+        "Suzy McKee Charnas"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Motherlines"
+    },
+    {
+      "authors": [
+        "Joanna Russ"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "The Female Man"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "The Left Hand of Darkness"
+    },
+    {
+      "authors": [
+        "Theodore Roszak"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "The Memoirs of Elizabeth Frankenstein"
+    },
+    {
+      "authors": [
+        "Elizabeth Hand"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Waking the Moon"
+    },
+    {
+      "authors": [
+        "Suzy McKee Charnas"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Walk to the End of the World"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Babel-17"
+    },
+    {
+      "authors": [
+        "Carol Emshwiller"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Carmen Dog"
+    },
+    {
+      "authors": [
+        "Vonda N. McIntyre"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Dreamsnake"
+    },
+    {
+      "authors": [
+        "Monique Wittig"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.04",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Les Guerilleres"
+    },
+    {
+      "authors": [
+        "Kit Reed"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.05",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Little Sisters of the Apocalypse"
+    },
+    {
+      "authors": [
+        "Naomi Mitchison"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.06",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Memoirs of a Spacewoman"
+    },
+    {
+      "authors": [
+        "Pamela Sargent"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.07",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "More Women of Wonder"
+    },
+    {
+      "authors": [
+        "Pamela Sargent"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.08",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "New Women of Wonder"
+    },
+    {
+      "authors": [
+        "Katharine Burdekin"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.09",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Swastika Night"
+    },
+    {
+      "authors": [
+        "Terri Windling"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.10",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Armless Maiden and Other Tales for Childhood's Survivors"
+    },
+    {
+      "authors": [
+        "Kate Wilhelm"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.11",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Clewiston Test"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.12",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Handmaid's Tale"
+    },
+    {
+      "authors": [
+        "Joanna Russ"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.13",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Two of Them"
+    },
+    {
+      "authors": [
+        "Iain M. Banks"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.14",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Wasp Factory"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.15",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Triton"
+    },
+    {
+      "authors": [
+        "Elizabeth A. Lynn"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.16",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Watchtower"
+    },
+    {
+      "authors": [
+        "Octavia E. Butler"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.17",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Wild Seed"
+    },
+    {
+      "authors": [
+        "Marge Piercy"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.18",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Woman on the Edge of Time"
+    },
+    {
+      "authors": [
+        "Pamela Sargent"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.19",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Women of Wonder"
+    },
+    {
+      "authors": [
+        "Julie Haydon"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.20",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Lines Upon the Skin"
+    },
+    {
+      "authors": [
+        "Stephanie A. Smith"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.21",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Other Nature"
+    },
+    {
+      "authors": [
+        "Melissa Scott"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.22",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Shadow Man"
+    },
+    {
+      "authors": [
+        "Pamela Sargent"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.23",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Women of Wonder: The Classic Years"
+    },
+    {
+      "authors": [
+        "Pamela Sargent"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1996",
+      "category": "Books and Series",
+      "position": "1996.24",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Women of Wonder: The Contemporary Years"
+    },
+    {
+      "authors": [
+        "Mary Doria Russell"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "The Sparrow"
+    },
+    {
+      "authors": [
+        "Alasdair Gray"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "A History Maker"
+    },
+    {
+      "authors": [
+        "Rachel Pollack"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Godmother Night"
+    },
+    {
+      "authors": [
+        "Sue Woolfe"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Leaning Towards Infinity"
+    },
+    {
+      "authors": [
+        "Pat Murphy"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.04",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Nadya: The Wolf Chronicles"
+    },
+    {
+      "authors": [
+        "Lisa Tuttle"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.05",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Pillow Friend"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.06",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Alias Grace"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.07",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Blue Mars"
+    },
+    {
+      "authors": [
+        "Sean Stewart"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.08",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Clouds End"
+    },
+    {
+      "authors": [
+        "Richard Calder"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.09",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Dead Things"
+    },
+    {
+      "authors": [
+        "Melanie Tem"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.10",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Desmodus"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.11",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Distress"
+    },
+    {
+      "authors": [
+        "Iain M. Banks"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.12",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Excession"
+    },
+    {
+      "authors": [
+        "Nancy Springer"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.13",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Fair Peril"
+    },
+    {
+      "authors": [
+        "Charles Oberndorf"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.14",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Foragers"
+    },
+    {
+      "authors": [
+        "Sheri S. Tepper"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.15",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Gibbon's Decline and Fall"
+    },
+    {
+      "authors": [
+        "Bruce Sterling"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.16",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Holy Fire"
+    },
+    {
+      "authors": [
+        "Jean Hegland"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.17",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Into the Forest"
+    },
+    {
+      "authors": [
+        "N. Lee Wood"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.18",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Looking for the Mahdi"
+    },
+    {
+      "authors": [
+        "Bradley Denton"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.19",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Lunatics"
+    },
+    {
+      "authors": [
+        "Jeanne Larson"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.20",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Manchu Palaces"
+    },
+    {
+      "authors": [
+        "Tess Williams"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.21",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Map of Power"
+    },
+    {
+      "authors": [
+        "Caitlin Sullivan",
+        "Kate Bornstein"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.22",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Nearly Roadkill"
+    },
+    {
+      "authors": [
+        "Tanya Huff"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.23",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "No Quarter"
+    },
+    {
+      "authors": [
+        "Kathy Acker"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.24",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Pussy, King of the Pirates"
+    },
+    {
+      "authors": [
+        "Elizabeth Moon"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.25",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Remnant Population"
+    },
+    {
+      "authors": [
+        "David Prill"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.26",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Serial Killer Days"
+    },
+    {
+      "authors": [
+        "Kathleen Ann Goonan"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.27",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Bones of Time"
+    },
+    {
+      "authors": [
+        "Mary Kay Zuravleff"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.28",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Frequency of Souls"
+    },
+    {
+      "authors": [
+        "Kim Antieau"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.29",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Jigsaw Woman"
+    },
+    {
+      "authors": [
+        "Laurell K. Hamilton"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.30",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Lunatic Caf\u00e9"
+    },
+    {
+      "authors": [
+        "Gill Alderman"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.31",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Memory Palace"
+    },
+    {
+      "authors": [
+        "Lucy Sussex"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.32",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Scarlet Rider"
+    },
+    {
+      "authors": [
+        "Bryan Talbot"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1997",
+      "category": "Books and Series",
+      "position": "1997.33",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Tale of One Bad Rat"
+    },
+    {
+      "authors": [
+        "Candas Jane Dorsey"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1998",
+      "category": "Books and Series",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Black Wine"
+    },
+    {
+      "authors": [
+        "Shani Mootoo"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1998",
+      "category": "Books and Series",
+      "position": "1998.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Cereus Blooms at Night"
+    },
+    {
+      "authors": [
+        "Emma Donoghue"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1998",
+      "category": "Books and Series",
+      "position": "1998.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Kissing the Witch: Old Tales in New Skins"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1998",
+      "category": "Books and Series",
+      "position": "1998.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Sacrifice of Fools"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1998",
+      "category": "Books and Series",
+      "position": "1998.04",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Signs of Life"
+    },
+    {
+      "authors": [
+        "Molly Gloss"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1998",
+      "category": "Books and Series",
+      "position": "1998.05",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Dazzle of Day"
+    },
+    {
+      "authors": [
+        "Vonda N. McIntyre"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1998",
+      "category": "Books and Series",
+      "position": "1998.06",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Moon and the Sun"
+    },
+    {
+      "authors": [
+        "Paul Witcover"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1998",
+      "category": "Books and Series",
+      "position": "1998.07",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Waking Beauty"
+    },
+    {
+      "authors": [
+        "Karen Joy Fowler"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Black Glass"
+    },
+    {
+      "authors": [
+        "Nalo Hopkinson"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Brown Girl in the Ring"
+    },
+    {
+      "authors": [
+        "Elizabeth A. Lynn"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Dragon's Winter"
+    },
+    {
+      "authors": [
+        "Phyllis Gotlieb"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.04",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Flesh and Gold"
+    },
+    {
+      "authors": [
+        "Sara Paretsky"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.05",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Ghost Country"
+    },
+    {
+      "authors": [
+        "Carolyn Ives Gilman"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.06",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Halfway Human"
+    },
+    {
+      "authors": [
+        "Severna Park"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.07",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Hand of Prophecy"
+    },
+    {
+      "authors": [
+        "Maureen F. McHugh"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.08",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Mission Child"
+    },
+    {
+      "authors": [
+        "Sean Stewart"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.09",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Mockingbird"
+    },
+    {
+      "authors": [
+        "Octavia E. Butler"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.10",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Parable of the Talents"
+    },
+    {
+      "authors": [
+        "Sarah Zettel"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.11",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Playing God"
+    },
+    {
+      "authors": [
+        "Stella Duffy"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.12",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Singling Out the Couples"
+    },
+    {
+      "authors": [
+        "Joan Slonczewski"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.13",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Children Star"
+    },
+    {
+      "authors": [
+        "Maggie Gee"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.14",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Ice People"
+    },
+    {
+      "authors": [
+        "Kit Reed"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.15",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Weird Women, Wired Women"
+    },
+    {
+      "authors": [
+        "Mary Doria Russell"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.16",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Children of God"
+    },
+    {
+      "authors": [
+        "James Alan Gardner"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.17",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Commitment Hour"
+    },
+    {
+      "authors": [
+        "Stephen Leigh"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.18",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Dark Waters Embrace"
+    },
+    {
+      "authors": [
+        "Jonathan Coe"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.19",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "House of Sleep"
+    },
+    {
+      "authors": [
+        "Melissa Lucashenko"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.20",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Killing Darcy"
+    },
+    {
+      "authors": [
+        "Delia Marshall Turner"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.21",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Nameless Magery"
+    },
+    {
+      "authors": [
+        "Marie Darrieusecq"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.22",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Pig Tales"
+    },
+    {
+      "authors": [
+        "Mary Daly"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.23",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Quintessence: Realizing The Archaic Future"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.24",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Sirens and Other Daemon Lovers"
+    },
+    {
+      "authors": [
+        "Sheri S. Tepper"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.25",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Six Moon Dance"
+    },
+    {
+      "authors": [
+        "Lawrence Schimel"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.26",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Drag Queen of Elfland: Short Stories"
+    },
+    {
+      "authors": [
+        "Rita Donovan"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "1999",
+      "category": "Books and Series",
+      "position": "1999.27",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Plague Saint"
+    },
+    {
+      "authors": [
+        "Suzy McKee Charnas"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2000",
+      "category": "Books and Series",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "The Conqueror's Child"
+    },
+    {
+      "authors": [
+        "Judy Budnitz"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2000",
+      "category": "Books and Series",
+      "position": "2000.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "If I Told You Once"
+    },
+    {
+      "authors": [
+        "David Morse"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2000",
+      "category": "Books and Series",
+      "position": "2000.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Iron Bridge"
+    },
+    {
+      "authors": [
+        "Yumiko Kurahashi"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2000",
+      "category": "Books and Series",
+      "position": "2000.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Woman with the Flying Head : And Other Stories"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2000",
+      "category": "Books and Series",
+      "position": "2000.04",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "A Civil Campaign"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2000",
+      "category": "Books and Series",
+      "position": "2000.05",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Silver Birch, Blood Moon"
+    },
+    {
+      "authors": [
+        "Sheri S. Tepper"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2000",
+      "category": "Books and Series",
+      "position": "2000.06",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Singer from the Sea"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2000",
+      "category": "Books and Series",
+      "position": "2000.07",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Teranesia"
+    },
+    {
+      "authors": [
+        "L. A. Taylor"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2000",
+      "category": "Books and Series",
+      "position": "2000.08",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Fathergod Experiment"
+    },
+    {
+      "authors": [
+        "Stephen Leigh"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2000",
+      "category": "Books and Series",
+      "position": "2000.09",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Speaking Stones"
+    },
+    {
+      "authors": [
+        "Louise Marley"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2000",
+      "category": "Books and Series",
+      "position": "2000.10",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Terrorists of Irustan"
+    },
+    {
+      "authors": [
+        "Elizabeth Knox"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2000",
+      "category": "Books and Series",
+      "position": "2000.11",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Vintner's Luck"
+    },
+    {
+      "authors": [
+        "Molly Gloss"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2001",
+      "category": "Books and Series",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Wild Life"
+    },
+    {
+      "authors": [
+        "Mary Gentle"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2001",
+      "category": "Books and Series",
+      "position": "2001.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Ash: A Secret History"
+    },
+    {
+      "authors": [
+        "Nalo Hopkinson"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2001",
+      "category": "Books and Series",
+      "position": "2001.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Midnight Robber"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2001",
+      "category": "Books and Series",
+      "position": "2001.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Perdido Street Station"
+    },
+    {
+      "authors": [
+        "Tess Williams"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2001",
+      "category": "Books and Series",
+      "position": "2001.04",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Sea as Mirror"
+    },
+    {
+      "authors": [
+        "Severna Park"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2001",
+      "category": "Books and Series",
+      "position": "2001.05",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Annunciate"
+    },
+    {
+      "authors": [
+        "David Ebershoff"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2001",
+      "category": "Books and Series",
+      "position": "2001.06",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Danish Girl"
+    },
+    {
+      "authors": [
+        "Hiromi Goto"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2002",
+      "category": "Books and Series",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "The Kappa Child"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2002",
+      "category": "Books and Series",
+      "position": "2002.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Dark Light"
+    },
+    {
+      "authors": [
+        "Joan Givner"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2002",
+      "category": "Books and Series",
+      "position": "2002.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Half Known Lives"
+    },
+    {
+      "authors": [
+        "Sheri S. Tepper"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2002",
+      "category": "Books and Series",
+      "position": "2002.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Fresco"
+    },
+    {
+      "authors": [
+        "Hugh Nissenson"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2002",
+      "category": "Books and Series",
+      "position": "2002.04",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Song of the Earth"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2003",
+      "category": "Books and Series",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Light"
+    },
+    {
+      "authors": [
+        "John Clute"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2003",
+      "category": "Books and Series",
+      "position": "2003.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Appleseed"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2003",
+      "category": "Books and Series",
+      "position": "2003.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Conjunctions 39: The New Wave Fabulists"
+    },
+    {
+      "authors": [
+        "Larissa Lai"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2003",
+      "category": "Books and Series",
+      "position": "2003.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Salt Fish Girl"
+    },
+    {
+      "authors": [
+        "Shelley Jackson"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2003",
+      "category": "Books and Series",
+      "position": "2003.04",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Melancholy of Anatomy"
+    },
+    {
+      "authors": [
+        "Matt Ruff"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2004",
+      "category": "Books and Series",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Set This House In Order: A Romance Of Souls"
+    },
+    {
+      "authors": [
+        "Nina Kiriki Hoffman"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2004",
+      "category": "Books and Series",
+      "position": "2004.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "A Fistful of Sky"
+    },
+    {
+      "authors": [
+        "Kim Antieau"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2004",
+      "category": "Books and Series",
+      "position": "2004.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Coyote Cowgirl"
+    },
+    {
+      "authors": [
+        "Kij Johnson"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2004",
+      "category": "Books and Series",
+      "position": "2004.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Fudoki"
+    },
+    {
+      "authors": [
+        "Tricia Sullivan"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2004",
+      "category": "Books and Series",
+      "position": "2004.04",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Maul"
+    },
+    {
+      "authors": [
+        "Joe Haldeman"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Camouflage"
+    },
+    {
+      "authors": [
+        "Johanna Sinisalo"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Not Before Sundown"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Life"
+    },
+    {
+      "authors": [
+        "A. S. Byatt"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Little Black Book of Stories"
+    },
+    {
+      "authors": [
+        "L. Timmel Duchamp"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Love's Body, Dancing in Time"
+    },
+    {
+      "authors": [
+        "Eileen Gunn"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.04",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Stable Strategies and Others"
+    },
+    {
+      "authors": [
+        "Nancy Farmer"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.05",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Sea of Trolls"
+    },
+    {
+      "authors": [
+        "Marie Jakober"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.06",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Even the Stones"
+    },
+    {
+      "authors": [
+        "Hiromi Goto"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.07",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Hopeful Monsters"
+    },
+    {
+      "authors": [
+        "Anne Harris"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.08",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Inventing Memory"
+    },
+    {
+      "authors": [
+        "N. Lee Wood"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.09",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Master of None"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.10",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Monstrous Regiment"
+    },
+    {
+      "authors": [
+        "Elizabeth Hand"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.11",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Mortal Love"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.12",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "River of Gods"
+    },
+    {
+      "authors": [
+        "Kat Meads"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.13",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Sleep"
+    },
+    {
+      "authors": [
+        "Peter Verhelst"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.14",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Tonguecat"
+    },
+    {
+      "authors": [
+        "Victoria Elisabeth Garcia"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.15",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Unspeakable Vitrine"
+    },
+    {
+      "authors": [
+        "Will Roscoe"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.16",
+      "result": "special-mention",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Changing Ones"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2005",
+      "category": "Books and Series",
+      "position": "2005.17",
+      "result": "special-mention",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Stars In My Pocket Like Grains of Sand"
+    },
+    {
+      "authors": [
+        "Geoff Ryman"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Air"
+    },
+    {
+      "authors": [
+        "Wen Spencer"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.01",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "A Brother's Price"
+    },
+    {
+      "authors": [
+        "Wesley Stace"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.02",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Misfortune"
+    },
+    {
+      "authors": [
+        "Mark W. Tiedemann"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.03",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Remains"
+    },
+    {
+      "authors": [
+        "Aimee Bender"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.04",
+      "result": "short-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Willful Creatures"
+    },
+    {
+      "authors": [
+        "L. Timmel Duchamp"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.05",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Alanya to Alanya"
+    },
+    {
+      "authors": [
+        "Julie Anne Peters"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.06",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Luna"
+    },
+    {
+      "authors": [
+        "Gabrielle Zevin"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.07",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Margarettown"
+    },
+    {
+      "authors": [
+        "Sarah Monette"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.08",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Melusine"
+    },
+    {
+      "authors": [
+        "Carol Emshwiller"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.09",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Mister Boots"
+    },
+    {
+      "authors": [
+        "Nalo Hopkinson",
+        "Geoff Ryman"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.10",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Tesseracts Nine"
+    },
+    {
+      "authors": [
+        "Helen Oyeyemi"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.11",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Icarus Girl"
+    },
+    {
+      "authors": [
+        "Adam Gopnik"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.12",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The King in the Window"
+    },
+    {
+      "authors": [
+        "Ronlyn Domingue"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.13",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Mercy of Thin Air"
+    },
+    {
+      "authors": [
+        "L. Timmel Duchamp"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.14",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Red Rose Rages"
+    },
+    {
+      "authors": [
+        "Janine Cross"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.15",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Touched by Venom"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.16",
+      "result": "long-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Uglies"
+    },
+    {
+      "authors": [
+        "Ka-Ping Yee"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.17",
+      "result": "special-mention",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Regender"
+    },
+    {
+      "authors": [
+        "Nisi Shawl",
+        "Cynthia Ward"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2006",
+      "category": "Books and Series",
+      "position": "2006.18",
+      "result": "special-mention",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Writing the Other"
+    },
+    {
+      "authors": [
+        "Shelley Jackson"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2007",
+      "category": "Books and Series",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Half Life"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2007",
+      "category": "Books and Series",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "The Orphan's Tales: In the Night Garden"
+    },
+    {
+      "authors": [
+        "Betsy James"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2007",
+      "category": "Books and Series",
+      "position": "2007.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Listening at the Gate"
+    },
+    {
+      "authors": [
+        "Karen Traviss"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2007",
+      "category": "Books and Series",
+      "position": "2007.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Matriarch"
+    },
+    {
+      "authors": [
+        "Andrea Hairston"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2007",
+      "category": "Books and Series",
+      "position": "2007.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Mindscape"
+    },
+    {
+      "authors": [
+        "Karen Russell"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2007",
+      "category": "Books and Series",
+      "position": "2007.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "St. Lucy's Home for Girls Raised by Wolves"
+    },
+    {
+      "authors": [
+        "James Morrow"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2007",
+      "category": "Books and Series",
+      "position": "2007.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Last Witchfinder"
+    },
+    {
+      "authors": [
+        "Ellen Kushner"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2007",
+      "category": "Books and Series",
+      "position": "2007.06",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Privilege of the Sword"
+    },
+    {
+      "authors": [
+        "Mark von Schlegell"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2007",
+      "category": "Books and Series",
+      "position": "2007.07",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Venusia"
+    },
+    {
+      "authors": [
+        "Julie Phillips"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2007",
+      "category": "Books and Series",
+      "position": "2007.08",
+      "result": "special-mention",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "James Tiptree, Jr.: The Double Life of Alice B. Sheldon"
+    },
+    {
+      "authors": [
+        "Sarah Hall"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2008",
+      "category": "Books and Series",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "The Carhullan Army"
+    },
+    {
+      "authors": [
+        "Karen Miller"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2008",
+      "category": "Books and Series",
+      "position": "2008.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Empress of Mijak and The Riven Kingdom"
+    },
+    {
+      "authors": [
+        "Ysabeau S. Wilce"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2008",
+      "category": "Books and Series",
+      "position": "2008.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Flora Segunda"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2008",
+      "category": "Books and Series",
+      "position": "2008.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Glasshouse"
+    },
+    {
+      "authors": [
+        "Theodora Goss",
+        "Delia Sherman"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2008",
+      "category": "Books and Series",
+      "position": "2008.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Interfictions: An Anthology of Interstitial Writing"
+    },
+    {
+      "authors": [
+        "Sheri S. Tepper"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2008",
+      "category": "Books and Series",
+      "position": "2008.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Margarets"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2008",
+      "category": "Books and Series",
+      "position": "2008.06",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Shadow Speaker"
+    },
+    {
+      "authors": [
+        "Laurie J. Marks"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2008",
+      "category": "Books and Series",
+      "position": "2008.07",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Water Logic"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2008",
+      "category": "Books and Series",
+      "position": "2008.08",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Y: The Last Man"
+    },
+    {
+      "authors": [
+        "Nisi Shawl"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2009",
+      "category": "Books and Series",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Filter House"
+    },
+    {
+      "authors": [
+        "Patrick Ness"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2009",
+      "category": "Books and Series",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "The Knife of Never Letting Go"
+    },
+    {
+      "authors": [
+        "Paul Park"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2009",
+      "category": "Books and Series",
+      "position": "2009.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "A Princess of Roumania; The Tourmaline; The White Tyger; The Hidden World"
+    },
+    {
+      "authors": [
+        "Ysabeau S. Wilce"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2009",
+      "category": "Books and Series",
+      "position": "2009.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Flora's Dare"
+    },
+    {
+      "authors": [
+        "Ali Smith"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2009",
+      "category": "Books and Series",
+      "position": "2009.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Girl Meets Boy"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2009",
+      "category": "Books and Series",
+      "position": "2009.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Lavinia"
+    },
+    {
+      "authors": [
+        "John Ajvide Lindqvist"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2009",
+      "category": "Books and Series",
+      "position": "2009.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Let the Right One In"
+    },
+    {
+      "authors": [
+        "Gregory Frost"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2009",
+      "category": "Books and Series",
+      "position": "2009.06",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Shadowbridge/Lord Tophet"
+    },
+    {
+      "authors": [
+        "Margo Lanagan"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2009",
+      "category": "Books and Series",
+      "position": "2009.07",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Tender Morsels"
+    },
+    {
+      "authors": [
+        "Ekaterina Sedia"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2009",
+      "category": "Books and Series",
+      "position": "2009.08",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Alchemy of Stone"
+    },
+    {
+      "authors": [
+        "Jenny Davidson"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2009",
+      "category": "Books and Series",
+      "position": "2009.09",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Explosionist"
+    },
+    {
+      "authors": [
+        "Christopher Barzak"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2009",
+      "category": "Books and Series",
+      "position": "2009.10",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Love We Share Without Knowing"
+    },
+    {
+      "authors": [
+        "Alison M. Goodman"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2009",
+      "category": "Books and Series",
+      "position": "2009.11",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Two Pearls of Wisdom"
+    },
+    {
+      "authors": [
+        "Greer Gilman"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2010",
+      "category": "Books and Series",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Cloud & Ashes: Three Winter's Tales"
+    },
+    {
+      "authors": [
+        "Fumi Yoshinaga"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2010",
+      "category": "Books and Series",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Ooku: The Inner Chambers, Volumes 1 & 2"
+    },
+    {
+      "authors": [
+        "Vandana Singh"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2010",
+      "category": "Books and Series",
+      "position": "2010.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Distances"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2010",
+      "category": "Books and Series",
+      "position": "2010.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Lifelode"
+    },
+    {
+      "authors": [
+        "L. Timmel Duchamp"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2010",
+      "category": "Books and Series",
+      "position": "2010.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Marq'ssan Cycle"
+    },
+    {
+      "authors": [
+        "Dubravka Ugresic"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2011",
+      "category": "Books and Series",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Baba Yaga Laid an Egg"
+    },
+    {
+      "authors": [
+        "Kari Sperring"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2011",
+      "category": "Books and Series",
+      "position": "2011.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Living with Ghosts"
+    },
+    {
+      "authors": [
+        "Amanda Downum"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2011",
+      "category": "Books and Series",
+      "position": "2011.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Bone Palace"
+    },
+    {
+      "authors": [
+        "Jillian Wise"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2011",
+      "category": "Books and Series",
+      "position": "2011.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Colony"
+    },
+    {
+      "authors": [
+        "N. K. Jemisin"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2011",
+      "category": "Books and Series",
+      "position": "2011.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Hundred Thousand Kingdoms"
+    },
+    {
+      "authors": [
+        "Helen Merrick"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2011",
+      "category": "Books and Series",
+      "position": "2011.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Secret Feminist Cabal: A Cultural History of Science Fiction Feminisms"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2011",
+      "category": "Books and Series",
+      "position": "2011.06",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Who Fears Death"
+    },
+    {
+      "authors": [
+        "Andrea Hairston"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2012",
+      "category": "Books and Series",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Redwood and Wildfire"
+    },
+    {
+      "authors": [
+        "Libba Bray"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2012",
+      "category": "Books and Series",
+      "position": "2012.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Beauty Queens"
+    },
+    {
+      "authors": [
+        "Kameron Hurley"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2012",
+      "category": "Books and Series",
+      "position": "2012.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "God's War"
+    },
+    {
+      "authors": [
+        "Kim Westwood"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2012",
+      "category": "Books and Series",
+      "position": "2012.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Courier's New Bicycle"
+    },
+    {
+      "authors": [
+        "Delia Sherman"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2012",
+      "category": "Books and Series",
+      "position": "2012.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Freedom Maze"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2012",
+      "category": "Books and Series",
+      "position": "2012.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Universe of Things"
+    },
+    {
+      "authors": [
+        "Kiini Ibura Salaam"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2013",
+      "category": "Books and Series",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Ancient, Ancient"
+    },
+    {
+      "authors": [
+        "Caitl\u00edn R. Kiernan"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2013",
+      "category": "Books and Series",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "The Drowning Girl"
+    },
+    {
+      "authors": [
+        "Kim Stanley Robinson"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2013",
+      "category": "Books and Series",
+      "position": "2013.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "2312"
+    },
+    {
+      "authors": [
+        "Ankaret Wells"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2013",
+      "category": "Books and Series",
+      "position": "2013.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Firebrand"
+    },
+    {
+      "authors": [
+        "Karin Tidbeck"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2013",
+      "category": "Books and Series",
+      "position": "2013.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Jagannath: Stories"
+    },
+    {
+      "authors": [
+        "Elizabeth Bear"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2013",
+      "category": "Books and Series",
+      "position": "2013.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Range of Ghosts"
+    },
+    {
+      "authors": [
+        "Roz Kaveney"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2013",
+      "category": "Books and Series",
+      "position": "2013.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Rituals"
+    },
+    {
+      "authors": [
+        "M. J. Locke"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2013",
+      "category": "Books and Series",
+      "position": "2013.06",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Up Against It"
+    },
+    {
+      "authors": [
+        "N. A. Sulway"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2014",
+      "category": "Books and Series",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Rupetta"
+    },
+    {
+      "authors": [
+        "Sarah McCarry"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2014",
+      "category": "Books and Series",
+      "position": "2014.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "All Our Pretty Songs"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2014",
+      "category": "Books and Series",
+      "position": "2014.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Ancillary Justice"
+    },
+    {
+      "authors": [
+        "Eleanor Arnason"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2014",
+      "category": "Books and Series",
+      "position": "2014.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Big Mama Stories"
+    },
+    {
+      "authors": [
+        "Janelle Mon\u00e1e"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2014",
+      "category": "Books and Series",
+      "position": "2014.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Electric Lady"
+    },
+    {
+      "authors": [
+        "Nicola Griffith"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2014",
+      "category": "Books and Series",
+      "position": "2014.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Hild"
+    },
+    {
+      "authors": [
+        "S. M. Wheeler"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2014",
+      "category": "Books and Series",
+      "position": "2014.06",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Sea Change"
+    },
+    {
+      "authors": [
+        "Bennett Madison"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2014",
+      "category": "Books and Series",
+      "position": "2014.07",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "September Girls"
+    },
+    {
+      "authors": [
+        "Helene Wecker"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2014",
+      "category": "Books and Series",
+      "position": "2014.08",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Golem and the Jinni"
+    },
+    {
+      "authors": [
+        "Alaya Dawn Johnson"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2014",
+      "category": "Books and Series",
+      "position": "2014.09",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Summer Prince"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2015",
+      "category": "Books and Series",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "My Real Children"
+    },
+    {
+      "authors": [
+        "Monica Byrne"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2015",
+      "category": "Books and Series",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "The Girl in the Road"
+    },
+    {
+      "authors": [
+        "Jacqueline Koyanagi"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2015",
+      "category": "Books and Series",
+      "position": "2015.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Ascension"
+    },
+    {
+      "authors": [
+        "Jennifer Marie Brissett"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2015",
+      "category": "Books and Series",
+      "position": "2015.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Elysium"
+    },
+    {
+      "authors": [
+        "Alisa Krasnostein",
+        "Julia Rios"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2015",
+      "category": "Books and Series",
+      "position": "2015.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Kaleidoscope"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2015",
+      "category": "Books and Series",
+      "position": "2015.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Lagoon"
+    },
+    {
+      "authors": [
+        "Emmi It\u00e4ranta"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2015",
+      "category": "Books and Series",
+      "position": "2015.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Memory of Water"
+    },
+    {
+      "authors": [
+        "Aliya Whiteley"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2015",
+      "category": "Books and Series",
+      "position": "2015.06",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Beauty"
+    },
+    {
+      "authors": [
+        "Pat Schmatz"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2016",
+      "category": "Books and Series",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Lizard Radio"
+    },
+    {
+      "authors": [
+        "Alex Marshall"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2016",
+      "category": "Books and Series",
+      "position": "2016.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "A Crown for Cold Silver"
+    },
+    {
+      "authors": [
+        "Ian Sales"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2016",
+      "category": "Books and Series",
+      "position": "2016.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "All That Outer Space Allows"
+    },
+    {
+      "authors": [
+        "Sf\u00e9 Monster",
+        "Taneka Stotts"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2016",
+      "category": "Books and Series",
+      "position": "2016.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Beyond: The Queer Sci-Fi and Fantasy Comic Anthology"
+    },
+    {
+      "authors": [
+        "Matt Fraction",
+        "Christian Ward"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2016",
+      "category": "Books and Series",
+      "position": "2016.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "ODY-C, Volume 1: Off to Far Ithicaa"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2016",
+      "category": "Books and Series",
+      "position": "2016.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Radiance"
+    },
+    {
+      "authors": [
+        "Rebecca Sugar"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2016",
+      "category": "Books and Series",
+      "position": "2016.06",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Steven Universe"
+    },
+    {
+      "authors": [
+        "Carola Dibbell"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2016",
+      "category": "Books and Series",
+      "position": "2016.07",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Only Ones"
+    },
+    {
+      "authors": [
+        "Anna-Marie McLemore"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2017",
+      "category": "Books and Series",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "When the Moon Was Ours"
+    },
+    {
+      "authors": [
+        "Mishell Baker"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2017",
+      "category": "Books and Series",
+      "position": "2017.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Borderline"
+    },
+    {
+      "authors": [
+        "Nisi Shawl"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2017",
+      "category": "Books and Series",
+      "position": "2017.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Everfair"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2017",
+      "category": "Books and Series",
+      "position": "2017.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Every Heart a Doorway"
+    },
+    {
+      "authors": [
+        "Eleanor Arnason"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2017",
+      "category": "Books and Series",
+      "position": "2017.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Hwarhath Stories"
+    },
+    {
+      "authors": [
+        "Johanna Sinisalo"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2017",
+      "category": "Books and Series",
+      "position": "2017.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Core of the Sun"
+    },
+    {
+      "authors": [
+        "Ada Palmer"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2017",
+      "category": "Books and Series",
+      "position": "2017.06",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Too Like the Lightning"
+    },
+    {
+      "authors": [
+        "Andrea Hairston"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2017",
+      "category": "Books and Series",
+      "position": "2017.07",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Will Do Magic for Small Change"
+    },
+    {
+      "authors": [
+        "Virginia Bergin"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2018",
+      "category": "Books and Series",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award"
+      },
+      "title": "Who Runs the World?"
+    },
+    {
+      "authors": [
+        "Maggie Shen King"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2018",
+      "category": "Books and Series",
+      "position": "2018.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "An Excess Male"
+    },
+    {
+      "authors": [
+        "Rivers Solomon"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2018",
+      "category": "Books and Series",
+      "position": "2018.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "An Unkindness of Ghosts"
+    },
+    {
+      "authors": [
+        "April Daniels"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2018",
+      "category": "Books and Series",
+      "position": "2018.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Dreadnought and Sovereign"
+    },
+    {
+      "authors": [
+        "Carmen Maria Machado"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2018",
+      "category": "Books and Series",
+      "position": "2018.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Her Body and Other Parties"
+    },
+    {
+      "authors": [
+        "JY Yang"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2018",
+      "category": "Books and Series",
+      "position": "2018.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Black Tides of Heaven and The Red Threads of Fortune"
+    },
+    {
+      "authors": [
+        "Indra Das"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2018",
+      "category": "Books and Series",
+      "position": "2018.06",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Devourers"
+    },
+    {
+      "authors": [
+        "A. C. Buchanan"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2019",
+      "category": "Books and Series",
+      "position": "2019.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Capricious Magazine: The Gender Diverse Pronouns Issue"
+    },
+    {
+      "authors": [
+        "L. Timmel Duchamp"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2019",
+      "category": "Books and Series",
+      "position": "2019.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Chercher La Femme"
+    },
+    {
+      "authors": [
+        "Janelle Mon\u00e1e"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2019",
+      "category": "Books and Series",
+      "position": "2019.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Dirty Computer"
+    },
+    {
+      "authors": [
+        "Keffy R. M. Kehrli"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2019",
+      "category": "Books and Series",
+      "position": "2019.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "GlitterShip Year Two"
+    },
+    {
+      "authors": [
+        "Maria Turschaninoff"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2019",
+      "category": "Books and Series",
+      "position": "2019.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Maresi: The Red Abbey Chronicles"
+    },
+    {
+      "authors": [
+        "Joamette Gil"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2019",
+      "category": "Books and Series",
+      "position": "2019.06",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Power & Magic: The Queer Witch Comics Anthology"
+    },
+    {
+      "authors": [
+        "Amber Dawn"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2019",
+      "category": "Books and Series",
+      "position": "2019.07",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "Sodom Road Exit"
+    },
+    {
+      "authors": [
+        "Larissa Lai"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2019",
+      "category": "Books and Series",
+      "position": "2019.08",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/James_Tiptree_Jr_Memorial_Award_All_Nominees"
+      },
+      "title": "The Tiger Flu"
+    },
+    {
+      "authors": [
+        "Akwaeke Emezi"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2020",
+      "category": "Books and Series",
+      "position": "2020",
+      "result": "winner",
+      "title": "Freshwater"
+    },
+    {
+      "authors": [
+        "Kameron Hurley"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2020",
+      "category": "Books and Series",
+      "position": "2020.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "Meet Me in the Future"
+    },
+    {
+      "authors": [
+        "Akwaeke Emezi"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2020",
+      "category": "Books and Series",
+      "position": "2020.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "Pet"
+    },
+    {
+      "authors": [
+        "Meg Elison"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2020",
+      "category": "Books and Series",
+      "position": "2020.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "The Book of Flora"
+    },
+    {
+      "authors": [
+        "Mary Robinette Kowal"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2020",
+      "category": "Books and Series",
+      "position": "2020.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "The Calculating Stars"
+    },
+    {
+      "authors": [
+        "Rivers Solomon"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2020",
+      "category": "Books and Series",
+      "position": "2020.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "The Deep"
+    },
+    {
+      "authors": [
+        "Laurie J. Marks"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2020",
+      "category": "Books and Series",
+      "position": "2020.06",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "The Elemental Logic series"
+    },
+    {
+      "authors": [
+        "Yukiko Motoya"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2020",
+      "category": "Books and Series",
+      "position": "2020.07",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "The Lonesome Bodybuilder"
+    },
+    {
+      "authors": [
+        "Anya Johanna DeNiro"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2021",
+      "category": "Books and Series",
+      "position": "2021.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "City of a Thousand Feelings"
+    },
+    {
+      "authors": [
+        "Sim Kern"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2021",
+      "category": "Books and Series",
+      "position": "2021.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "Depart, Depart"
+    },
+    {
+      "authors": [
+        "R. B. Lemberg"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2021",
+      "category": "Books and Series",
+      "position": "2021.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "The Four Profound Weaves"
+    },
+    {
+      "authors": [
+        "Maggie Tokuda-Hall"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2021",
+      "category": "Books and Series",
+      "position": "2021.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "The Mermaid, the Witch, and the Sea"
+    },
+    {
+      "authors": [
+        "Chana Porter"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2021",
+      "category": "Books and Series",
+      "position": "2021.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "The Seep"
+    },
+    {
+      "authors": [
+        "Ryka Aoki"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2022",
+      "category": "Books and Series",
+      "position": "2022",
+      "result": "winner",
+      "title": "Light from Uncommon Stars"
+    },
+    {
+      "authors": [
+        "Rivers Solomon"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2022",
+      "category": "Books and Series",
+      "position": "2022",
+      "result": "winner",
+      "title": "Sorrowland"
+    },
+    {
+      "authors": [
+        "Callum Angus"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2022",
+      "category": "Books and Series",
+      "position": "2022.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "A Natural History of Transition"
+    },
+    {
+      "authors": [
+        "K-Ming Chang"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2022",
+      "category": "Books and Series",
+      "position": "2022.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "Bestiary"
+    },
+    {
+      "authors": [
+        "Aiden Thomas"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2022",
+      "category": "Books and Series",
+      "position": "2022.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "Cemetery Boys"
+    },
+    {
+      "authors": [
+        "Claire Oshetsky"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2022",
+      "category": "Books and Series",
+      "position": "2022.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "Chouette"
+    },
+    {
+      "authors": [
+        "Eugen Bacon"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2022",
+      "category": "Books and Series",
+      "position": "2022.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "Danged Black Thing"
+    },
+    {
+      "authors": [
+        "Anna-Marie McLemore"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2022",
+      "category": "Books and Series",
+      "position": "2022.06",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "Deep and Darkest Red"
+    },
+    {
+      "authors": [
+        "Shelley Parker-Chan"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2022",
+      "category": "Books and Series",
+      "position": "2022.07",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "She Who Became the Sun"
+    },
+    {
+      "authors": [
+        "Monica Byrne"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2022",
+      "category": "Books and Series",
+      "position": "2022.08",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "The Actual Star"
+    },
+    {
+      "authors": [
+        "Benjamin Rosenbaum"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2022",
+      "category": "Books and Series",
+      "position": "2022.09",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "The Unraveling"
+    },
+    {
+      "authors": [
+        "Emet North"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2025",
+      "category": "Books and Series",
+      "position": "2025",
+      "result": "winner",
+      "title": "In Universes"
+    },
+    {
+      "authors": [
+        "Vajra Chandrasekera"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2025",
+      "category": "Books and Series",
+      "position": "2025",
+      "result": "winner",
+      "title": "Rakesfall"
+    },
+    {
+      "authors": [
+        "Dolki Min"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2025",
+      "category": "Books and Series",
+      "position": "2025",
+      "result": "winner",
+      "title": "Walking Practice"
+    },
+    {
+      "authors": [
+        "Kailee Pedersen"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2025",
+      "category": "Books and Series",
+      "position": "2025.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "Sacrificial Animals"
+    },
+    {
+      "authors": [
+        "Margaret Killjoy"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2025",
+      "category": "Books and Series",
+      "position": "2025.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "The Sapling Cage"
+    },
+    {
+      "authors": [
+        "Courtney Pauroso"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2025",
+      "category": "Books and Series",
+      "position": "2025.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "Vanessa 5000"
+    },
+    {
+      "authors": [
+        "Silvia Park"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2026",
+      "category": "Books and Series",
+      "position": "2026",
+      "result": "winner",
+      "title": "Luminous"
+    },
+    {
+      "authors": [
+        "K. O'Neill"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2026",
+      "category": "Books and Series",
+      "position": "2026.01",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "A Song for You and I"
+    },
+    {
+      "authors": [
+        "Roque Raquel Salas Rivera"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2026",
+      "category": "Books and Series",
+      "position": "2026.02",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "Algarab\u00eda"
+    },
+    {
+      "authors": [
+        "Isaac R. Fellman"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2026",
+      "category": "Books and Series",
+      "position": "2026.03",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "Notes from a Regicide"
+    },
+    {
+      "authors": [
+        "Jessy Randall"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2026",
+      "category": "Books and Series",
+      "position": "2026.04",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "The Path of Most Resistance: Poems on Women in Science"
+    },
+    {
+      "authors": [
+        "Syr Hayati Beker"
+      ],
+      "award": "Otherwise/Tiptree Award",
+      "award_year": "2026",
+      "category": "Books and Series",
+      "position": "2026.05",
+      "result": "honor-list",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Otherwise_Award_All_Nominees"
+      },
+      "title": "What a Fish Looks Like"
+    }
+  ],
+  "fetched_at": "2026-07-23T20:35:37Z",
+  "list_id": "otherwise_tiptree_books_and_series",
+  "list_name": "Otherwise/Tiptree - Books and Series",
+  "match_series": false,
+  "notes": [],
+  "parser": "otherwise_tiptree_books_and_series",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Otherwise/Tiptree - Books and Series",
+    "source_id": "otherwise_tiptree_books_and_series",
+    "url": "https://www.sfadb.com/Otherwise_Award"
+  }
+}

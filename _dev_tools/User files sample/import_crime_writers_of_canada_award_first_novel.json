@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 38,
-    "last_entry_key": "the berry pickers|amanda peters",
-    "last_position": "2024",
+    "entry_count": 172,
+    "last_entry_key": "we were the bullfighters|marianne k miller",
+    "last_position": "2025.01",
     "source_revision": null
   },
   "entries": [
@@ -30,6 +30,28 @@
     },
     {
       "authors": [
+        "S.W. Mayse"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1988",
+      "category": "First Novel",
+      "position": "1988.01",
+      "result": "nominee",
+      "title": "Merlin's Web"
+    },
+    {
+      "authors": [
+        "Peter Robinson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1988",
+      "category": "First Novel",
+      "position": "1988.02",
+      "result": "nominee",
+      "title": "Gallows View"
+    },
+    {
+      "authors": [
         "John Brady"
       ],
       "award": "Crime Writers of Canada Award",
@@ -38,6 +60,39 @@
       "position": "1989",
       "result": "winner",
       "title": "A Stone of the Heart"
+    },
+    {
+      "authors": [
+        "Elisabeth Bowers"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1989",
+      "category": "First Novel",
+      "position": "1989.01",
+      "result": "nominee",
+      "title": "Ladies' Night"
+    },
+    {
+      "authors": [
+        "Brendan Howley"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1989",
+      "category": "First Novel",
+      "position": "1989.02",
+      "result": "nominee",
+      "title": "Stalking Horse"
+    },
+    {
+      "authors": [
+        "Scott Young"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1989",
+      "category": "First Novel",
+      "position": "1989.03",
+      "result": "nominee",
+      "title": "Murder in a Cold Climate"
     },
     {
       "authors": [
@@ -52,6 +107,28 @@
     },
     {
       "authors": [
+        "Maynard Collins"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1990",
+      "category": "First Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "title": "Death on 30 Beat"
+    },
+    {
+      "authors": [
+        "Keith McKinnon"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1990",
+      "category": "First Novel",
+      "position": "1990.02",
+      "result": "nominee",
+      "title": "Rempal Inquest, The"
+    },
+    {
+      "authors": [
         "Carsten Stroud"
       ],
       "award": "Crime Writers of Canada Award",
@@ -60,6 +137,28 @@
       "position": "1991",
       "result": "winner",
       "title": "Sniper's Moon"
+    },
+    {
+      "authors": [
+        "James M. Burke"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1991",
+      "category": "First Novel",
+      "position": "1991.01",
+      "result": "nominee",
+      "title": "Fatal Choices"
+    },
+    {
+      "authors": [
+        "David Laing Dawson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1991",
+      "category": "First Novel",
+      "position": "1991.02",
+      "result": "nominee",
+      "title": "Last Rights"
     },
     {
       "authors": [
@@ -74,6 +173,28 @@
     },
     {
       "authors": [
+        "David Parry"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1992",
+      "category": "First Novel",
+      "position": "1992.01",
+      "result": "nominee",
+      "title": "The Jacamar Nest"
+    },
+    {
+      "authors": [
+        "Leslie Elizabeth Watts"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1992",
+      "category": "First Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "title": "The chocolate box: An Edna Heathcott mystery"
+    },
+    {
+      "authors": [
         "Sean Stewart"
       ],
       "award": "Crime Writers of Canada Award",
@@ -82,6 +203,39 @@
       "position": "1993",
       "result": "winner",
       "title": "Passion Play"
+    },
+    {
+      "authors": [
+        "Roy French"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1993",
+      "category": "First Novel",
+      "position": "1993.01",
+      "result": "nominee",
+      "title": "A sense of honour"
+    },
+    {
+      "authors": [
+        "Margaret Haffner"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1993",
+      "category": "First Novel",
+      "position": "1993.02",
+      "result": "nominee",
+      "title": "A Murder of Crows"
+    },
+    {
+      "authors": [
+        "Betsy Struthers"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1993",
+      "category": "First Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "title": "Found: A Body"
     },
     {
       "authors": [
@@ -96,6 +250,50 @@
     },
     {
       "authors": [
+        "Bevan Amberhill"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1994",
+      "category": "First Novel",
+      "position": "1994.01",
+      "result": "nominee",
+      "title": "The Bloody Man: A Jean-Claude Keyes Mystery"
+    },
+    {
+      "authors": [
+        "Jane Bow"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1994",
+      "category": "First Novel",
+      "position": "1994.02",
+      "result": "nominee",
+      "title": "Dead and Living: A Novel"
+    },
+    {
+      "authors": [
+        "J. Stuart Langford"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1994",
+      "category": "First Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "title": "Deadlock"
+    },
+    {
+      "authors": [
+        "Caroline Woodward"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1994",
+      "category": "First Novel",
+      "position": "1994.04",
+      "result": "nominee",
+      "title": "Alaska Highway Two-Step"
+    },
+    {
+      "authors": [
         "Sparkle Hayter"
       ],
       "award": "Crime Writers of Canada Award",
@@ -103,7 +301,29 @@
       "category": "First Novel",
       "position": "1995",
       "result": "winner",
-      "title": "What's A Girl Gotta Do?"
+      "title": "What's A Girl Gotta Do"
+    },
+    {
+      "authors": [
+        "Suzanne North"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1995",
+      "category": "First Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "title": "Healthy Wealthy & Dead"
+    },
+    {
+      "authors": [
+        "Michelle Spring"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1995",
+      "category": "First Novel",
+      "position": "1995.02",
+      "result": "nominee",
+      "title": "Every Breath You Take"
     },
     {
       "authors": [
@@ -118,6 +338,50 @@
     },
     {
       "authors": [
+        "D. H. Toole"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1996",
+      "category": "First Novel",
+      "position": "1996",
+      "result": "winner",
+      "title": "Moonlit Days and Nights"
+    },
+    {
+      "authors": [
+        "Meredith Andrew"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1996",
+      "category": "First Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "title": "Deadly by Nature"
+    },
+    {
+      "authors": [
+        "Terry Carroll"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1996",
+      "category": "First Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "title": "No Blood Relative"
+    },
+    {
+      "authors": [
+        "Harry Currie"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1996",
+      "category": "First Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "title": "Debut for a Spy"
+    },
+    {
+      "authors": [
         "C. C. Benison"
       ],
       "award": "Crime Writers of Canada Award",
@@ -125,7 +389,40 @@
       "category": "First Novel",
       "position": "1997",
       "result": "winner",
-      "title": "Death At Buckingham Palace"
+      "title": "Death at Buckingham Palace"
+    },
+    {
+      "authors": [
+        "Anne Mary Dooley"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1997",
+      "category": "First Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "title": "Plane Death"
+    },
+    {
+      "authors": [
+        "Nancy Richler"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1997",
+      "category": "First Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "title": "Throwaway Angels"
+    },
+    {
+      "authors": [
+        "Richard J. Thomas"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1997",
+      "category": "First Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "title": "Gas Head Willy"
     },
     {
       "authors": [
@@ -136,7 +433,62 @@
       "category": "First Novel",
       "position": "1998",
       "result": "winner",
-      "title": "D\u00e9ja Dead"
+      "title": "D\u00e9j\u00e0 Dead"
+    },
+    {
+      "authors": [
+        "Jim Christy"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1998",
+      "category": "First Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "title": "Shanghai Alley"
+    },
+    {
+      "authors": [
+        "Lyn Hamilton"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1998",
+      "category": "First Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "title": "The Xibalba Murders"
+    },
+    {
+      "authors": [
+        "Maureen Jennings"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1998",
+      "category": "First Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "title": "Except the Dying"
+    },
+    {
+      "authors": [
+        "Allan Levine"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1998",
+      "category": "First Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "title": "The Blood Libel"
+    },
+    {
+      "authors": [
+        "John Simpson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1998",
+      "category": "First Novel",
+      "position": "1998.05",
+      "result": "nominee",
+      "title": "Undercut"
     },
     {
       "authors": [
@@ -151,6 +503,50 @@
     },
     {
       "authors": [
+        "Peter Clement"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "First Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "title": "Lethal Practice"
+    },
+    {
+      "authors": [
+        "Karen Dudley"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "First Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "title": "Hoot to Kill"
+    },
+    {
+      "authors": [
+        "H Mel Malton"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "First Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "title": "Down in the Dumps"
+    },
+    {
+      "authors": [
+        "Kerri Sakamoto"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "First Novel",
+      "position": "1999.04",
+      "result": "nominee",
+      "title": "The Electrical Field"
+    },
+    {
+      "authors": [
         "Andrew Pyper"
       ],
       "award": "Crime Writers of Canada Award",
@@ -159,6 +555,50 @@
       "position": "2000",
       "result": "winner",
       "title": "Lost Girls"
+    },
+    {
+      "authors": [
+        "Peter Hogg"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "First Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "Crimes of War"
+    },
+    {
+      "authors": [
+        "Karen Irving"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "First Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "Pluto Rising"
+    },
+    {
+      "authors": [
+        "Mary Jane Maffini"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "First Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "Speak Ill of the Dead"
+    },
+    {
+      "authors": [
+        "Garrett Wilson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "First Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "title": "Guilty Addictions: A Political Mystery"
     },
     {
       "authors": [
@@ -173,6 +613,50 @@
     },
     {
       "authors": [
+        "Eileen Coughlan"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2001",
+      "category": "First Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "title": "Dying by Degrees: An Emily Goodstriker Mystery"
+    },
+    {
+      "authors": [
+        "Rick Mofina"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2001",
+      "category": "First Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "title": "If Angels Fall"
+    },
+    {
+      "authors": [
+        "Sylvia Maultash Warsh"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2001",
+      "category": "First Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "title": "To Die in Spring: A Rebecca Temple Mystery"
+    },
+    {
+      "authors": [
+        "Alan Watt"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2001",
+      "category": "First Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "title": "Diamond Dogs"
+    },
+    {
+      "authors": [
         "Jon Redfern"
       ],
       "award": "Crime Writers of Canada Award",
@@ -181,6 +665,50 @@
       "position": "2002",
       "result": "winner",
       "title": "The Boy Must Die"
+    },
+    {
+      "authors": [
+        "T. F. Banks"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "First Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "The Thief-Taker"
+    },
+    {
+      "authors": [
+        "J. D. Carpenter"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "First Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "The Devil In Me"
+    },
+    {
+      "authors": [
+        "James Hawkins"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "First Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "title": "Missing: Presumed Dead"
+    },
+    {
+      "authors": [
+        "Cathy Vasas-Brown"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "First Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "title": "Every Wickedness"
     },
     {
       "authors": [
@@ -195,6 +723,50 @@
     },
     {
       "authors": [
+        "Alvin Abram"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2003",
+      "category": "First Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "Unlikely Victims"
+    },
+    {
+      "authors": [
+        "Thomas Rendell Curran"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2003",
+      "category": "First Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "Undertow"
+    },
+    {
+      "authors": [
+        "John F. Parker"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2003",
+      "category": "First Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "Come Clean"
+    },
+    {
+      "authors": [
+        "Jonathon Platz"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2003",
+      "category": "First Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "title": "Work of Idle Hands"
+    },
+    {
+      "authors": [
         "Jan Rehner"
       ],
       "award": "Crime Writers of Canada Award",
@@ -203,6 +775,50 @@
       "position": "2004",
       "result": "winner",
       "title": "Just Murder"
+    },
+    {
+      "authors": [
+        "Anthony Bidulka"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "First Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "Amuse Bouche"
+    },
+    {
+      "authors": [
+        "Michael Johansen"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "First Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "Confession in Moscow"
+    },
+    {
+      "authors": [
+        "Michael E. Rose"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "First Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "The Mazovia Legacy"
+    },
+    {
+      "authors": [
+        "Barbara J. Stewart"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "First Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "title": "The Sleeping Boy"
     },
     {
       "authors": [
@@ -217,6 +833,50 @@
     },
     {
       "authors": [
+        "Mel Bradshaw"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2005",
+      "category": "First Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "Death in the Age of Steam: A Mystery"
+    },
+    {
+      "authors": [
+        "Rick Gadziola"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2005",
+      "category": "First Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "Raw Deal: A Jake Morgan Mystery"
+    },
+    {
+      "authors": [
+        "Linda L. Richards"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2005",
+      "category": "First Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "Mad Money"
+    },
+    {
+      "authors": [
+        "Mark Sinnett"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2005",
+      "category": "First Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "The Border Guards"
+    },
+    {
+      "authors": [
         "Louise Penny"
       ],
       "award": "Crime Writers of Canada Award",
@@ -225,6 +885,50 @@
       "position": "2006",
       "result": "winner",
       "title": "Still Life"
+    },
+    {
+      "authors": [
+        "Rob Harasymchuk"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "The Joining of Dingo Radish"
+    },
+    {
+      "authors": [
+        "Mike Harrison"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "All Shook Up"
+    },
+    {
+      "authors": [
+        "Illona Haus"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "Blue Mercy"
+    },
+    {
+      "authors": [
+        "Ilona Van Mil"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "Sugarmilk Falls"
     },
     {
       "authors": [
@@ -239,6 +943,50 @@
     },
     {
       "authors": [
+        "Glen Bonham"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2007",
+      "category": "First Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "The Elvis Interviews"
+    },
+    {
+      "authors": [
+        "Stephen Kimber"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2007",
+      "category": "First Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "Reparations"
+    },
+    {
+      "authors": [
+        "Grant Mccrea"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2007",
+      "category": "First Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "Dead Money"
+    },
+    {
+      "authors": [
+        "David Russell"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2007",
+      "category": "First Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "Deadly Lessons"
+    },
+    {
+      "authors": [
         "Liam Durcan"
       ],
       "award": "Crime Writers of Canada Award",
@@ -247,6 +995,61 @@
       "position": "2008",
       "result": "winner",
       "title": "Garcia's Heart"
+    },
+    {
+      "authors": [
+        "Claire Cameron"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "The Line Painter"
+    },
+    {
+      "authors": [
+        "Sean Chercover"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Big City, Bad Blood"
+    },
+    {
+      "authors": [
+        "Susan Parisi"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "Blood of Dreams"
+    },
+    {
+      "authors": [
+        "Sharon Rowse"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "The Silk Train Murder"
+    },
+    {
+      "authors": [
+        "Marc Strange"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008.05",
+      "result": "nominee",
+      "title": "Sucker Punch: A Joe Grundy Mystery"
     },
     {
       "authors": [
@@ -261,6 +1064,50 @@
     },
     {
       "authors": [
+        "Nadine Doolittle"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "First Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "Iced Under"
+    },
+    {
+      "authors": [
+        "John C. Goodman"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "First Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Talking To Wendigo"
+    },
+    {
+      "authors": [
+        "April Lindgren"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "First Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "Headline Murder"
+    },
+    {
+      "authors": [
+        "Phyllis Smallman"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "First Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "Margarita Nights"
+    },
+    {
+      "authors": [
         "Alan Bradley"
       ],
       "award": "Crime Writers of Canada Award",
@@ -269,6 +1116,50 @@
       "position": "2010",
       "result": "winner",
       "title": "The Sweetness at the Bottom of the Pie"
+    },
+    {
+      "authors": [
+        "Elizabeth J. Duncan"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "First Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "The Cold Light of Mourning"
+    },
+    {
+      "authors": [
+        "C. B. Forrest"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "First Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "The Weight of Stones"
+    },
+    {
+      "authors": [
+        "Eugene Meese"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "First Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "A Magpie's Smile"
+    },
+    {
+      "authors": [
+        "Dennis Richard Murphy"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "First Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "Darkness at the Stroke of Noon"
     },
     {
       "authors": [
@@ -283,6 +1174,50 @@
     },
     {
       "authors": [
+        "Hilary Davidson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "First Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "The Damage Done"
+    },
+    {
+      "authors": [
+        "Michael McKinley"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "First Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "The Penalty Killing: A Martin Carter Mystery"
+    },
+    {
+      "authors": [
+        "Nicholas Ruddock"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "First Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "The Parabolist: A Novel"
+    },
+    {
+      "authors": [
+        "Chevy Stevens"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "First Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "Still Missing"
+    },
+    {
+      "authors": [
         "Ian Hamilton"
       ],
       "award": "Crime Writers of Canada Award",
@@ -290,7 +1225,51 @@
       "category": "First Novel",
       "position": "2012",
       "result": "winner",
-      "title": "Water Rat of Wanchai"
+      "title": "The Water Rat of Wanchai"
+    },
+    {
+      "authors": [
+        "Norm Foster"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2012",
+      "category": "First Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Watching Jeopardy"
+    },
+    {
+      "authors": [
+        "Fraser Nixon"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2012",
+      "category": "First Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "The Man Who Killed"
+    },
+    {
+      "authors": [
+        "Sean Slater"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2012",
+      "category": "First Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "The Survivor"
+    },
+    {
+      "authors": [
+        "Roger White"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2012",
+      "category": "First Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "Tight corner a capital crime"
     },
     {
       "authors": [
@@ -305,6 +1284,50 @@
     },
     {
       "authors": [
+        "Peggy Blair"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "First Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "The Beggar's Opera"
+    },
+    {
+      "authors": [
+        "Deryn Collier"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "First Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Confined Space"
+    },
+    {
+      "authors": [
+        "Peter Kirby"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "First Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "The Dead of Winter"
+    },
+    {
+      "authors": [
+        "Chris Laing"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "First Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "A Private Man"
+    },
+    {
+      "authors": [
         "J. Kent Messum"
       ],
       "award": "Crime Writers of Canada Award",
@@ -313,6 +1336,50 @@
       "position": "2014",
       "result": "winner",
       "title": "Bait"
+    },
+    {
+      "authors": [
+        "E. R. Brown"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2014",
+      "category": "First Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Almost Criminal"
+    },
+    {
+      "authors": [
+        "A. S. A. Harrison"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2014",
+      "category": "First Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "The Silent Wife"
+    },
+    {
+      "authors": [
+        "Axel Howerton"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2014",
+      "category": "First Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "Hot Sinatra"
+    },
+    {
+      "authors": [
+        "SG Wong"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2014",
+      "category": "First Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "Die On Your Feet: a Lola Starke novel"
     },
     {
       "authors": [
@@ -327,6 +1394,50 @@
     },
     {
       "authors": [
+        "Janet Brons"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "First Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "A Quiet Kill"
+    },
+    {
+      "authors": [
+        "M.H. Callway"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "First Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "Windigo Fire"
+    },
+    {
+      "authors": [
+        "Eve McBride"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "First Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "No Worst, There Is None"
+    },
+    {
+      "authors": [
+        "Sam Wiebe"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "First Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "Last of the Independents: Vancouver Noir"
+    },
+    {
+      "authors": [
         "Ausma Zehanat Khan"
       ],
       "award": "Crime Writers of Canada Award",
@@ -334,7 +1445,51 @@
       "category": "First Novel",
       "position": "2016",
       "result": "winner",
-      "title": "Unquiet Dead"
+      "title": "The Unquiet Dead"
+    },
+    {
+      "authors": [
+        "J. Mark Collins"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "First Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Hard Drive"
+    },
+    {
+      "authors": [
+        "David Hood"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "First Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "What Kills Good Men"
+    },
+    {
+      "authors": [
+        "Alexis Koetting"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "First Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Encore"
+    },
+    {
+      "authors": [
+        "Brian R Lindsay"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "First Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "Old Bones"
     },
     {
       "authors": [
@@ -349,6 +1504,50 @@
     },
     {
       "authors": [
+        "Ryan Aldred"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Rum Luck"
+    },
+    {
+      "authors": [
+        "RM Greenaway"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "Cold Girl"
+    },
+    {
+      "authors": [
+        "Mark Lisac"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Where the Bodies Lie"
+    },
+    {
+      "authors": [
+        "Amy Stuart"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Still Mine"
+    },
+    {
+      "authors": [
         "Dave Butler"
       ],
       "award": "Crime Writers of Canada Award",
@@ -356,11 +1555,55 @@
       "category": "First Novel",
       "position": "2018",
       "result": "winner",
-      "title": "Full Curl"
+      "title": "Full Curl: A Jenny Willson Mystery"
     },
     {
       "authors": [
-        "A.J. Devlin"
+        "Sally Hill Brouard"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Puzzle of Pieces"
+    },
+    {
+      "authors": [
+        "Ron Corbett"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Ragged Lake"
+    },
+    {
+      "authors": [
+        "Sky Curtis"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "Flush: A Robin MacFarland Mystery"
+    },
+    {
+      "authors": [
+        "Roz Nay"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "Our Little Secret: A Novel"
+    },
+    {
+      "authors": [
+        "A. J. Devlin"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2019",
@@ -368,6 +1611,50 @@
       "position": "2019",
       "result": "winner",
       "title": "Cobra Clutch"
+    },
+    {
+      "authors": [
+        "Helen C. Escott"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2019",
+      "category": "First Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Operation Wormwood"
+    },
+    {
+      "authors": [
+        "Beverley Mclachlin"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2019",
+      "category": "First Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Full Disclosure"
+    },
+    {
+      "authors": [
+        "Bill Prentice"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2019",
+      "category": "First Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Why Was Rachel Murdered?"
+    },
+    {
+      "authors": [
+        "Nathan Ripley"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2019",
+      "category": "First Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "Find You in the Dark: A Novel"
     },
     {
       "authors": [
@@ -382,6 +1669,17 @@
     },
     {
       "authors": [
+        "Nicole Bross"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2020",
+      "category": "First Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "Past Presence"
+    },
+    {
+      "authors": [
         "Guglielmo D'Izzia"
       ],
       "award": "Crime Writers of Canada Award",
@@ -390,6 +1688,50 @@
       "position": "2021",
       "result": "winner",
       "title": "The Transaction"
+    },
+    {
+      "authors": [
+        "Raye Anderson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "And We Shall Have Snow"
+    },
+    {
+      "authors": [
+        "Chris Patrick Carolan"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "The Nightshade Cabal: Victorian Gaslamp with a Technomancer Twist"
+    },
+    {
+      "authors": [
+        "Russell Fralich"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "True Patriots"
+    },
+    {
+      "authors": [
+        "Emily Hepditch"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "The Woman in the Attic"
     },
     {
       "authors": [
@@ -404,6 +1746,50 @@
     },
     {
       "authors": [
+        "Fiona King Foster"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "The Captive"
+    },
+    {
+      "authors": [
+        "Byron TD Smith"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Windfall: A Henry Lysyk Mystery"
+    },
+    {
+      "authors": [
+        "Katherine Walker"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "All Is Well"
+    },
+    {
+      "authors": [
+        "David Whitton"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Seven Down"
+    },
+    {
+      "authors": [
         "Sam Shelstad"
       ],
       "award": "Crime Writers of Canada Award",
@@ -415,6 +1801,17 @@
     },
     {
       "authors": [
+        "M.Z. Urlocker"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2023",
+      "category": "First Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "The Man from Mittelwerk"
+    },
+    {
+      "authors": [
         "Amanda Peters"
       ],
       "award": "Crime Writers of Canada Award",
@@ -423,20 +1820,96 @@
       "position": "2024",
       "result": "winner",
       "title": "The Berry Pickers"
+    },
+    {
+      "authors": [
+        "Jann Arden"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "The Bittlemores"
+    },
+    {
+      "authors": [
+        "Lisa Brideau"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Adrift: A Novel"
+    },
+    {
+      "authors": [
+        "Adam Frost"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "The Damned Lovely"
+    },
+    {
+      "authors": [
+        "Charlotte Morganti"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "THE END GAME: A private investigator mystery"
+    },
+    {
+      "authors": [
+        "Steve Urszenyi"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "title": "Perfect Shot"
+    },
+    {
+      "authors": [
+        "Ashley Tate"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "Twenty-Seven Minutes"
+    },
+    {
+      "authors": [
+        "Marianne K. Miller"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "We Were the Bullfighters"
     }
   ],
-  "fetched_at": "2026-07-16T12:49:09Z",
+  "fetched_at": "2026-11-16T06:30:31Z",
   "list_id": "crime_writers_of_canada_award_first_novel",
   "list_name": "Crime Writers of Canada Award - First Novel",
   "match_series": false,
-  "notes": [
-    "LibraryThing failed: HTTP Error 403: Forbidden"
-  ],
+  "notes": [],
   "parser": "crime_writers_of_canada_award_first_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Crime Writers of Canada Award - First Novel",
     "source_id": "crime_writers_of_canada_award_first_novel",
-    "url": "https://en.wikipedia.org/wiki/Crime_Writers_of_Canada_Awards_of_Excellence"
+    "url": "https://www.librarything.com/award/1612/Crime-Writers-of-Canada-Awards-of-Excellence"
   }
 }

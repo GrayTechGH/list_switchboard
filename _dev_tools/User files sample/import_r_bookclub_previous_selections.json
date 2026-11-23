@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 937,
-    "last_entry_key": "the tapestry of fate|shannon chakraborty",
-    "last_position": "937",
+    "entry_count": 1001,
+    "last_entry_key": "the great change|joe abercrombie",
+    "last_position": "1001",
     "source_revision": null
   },
   "entries": [
@@ -19814,7 +19814,7 @@
       "credit_role": "author",
       "position": "915",
       "raw_author_credit": "Joe Abercrombie",
-      "raw_selection_label": "The Big Summer Read",
+      "raw_selection_label": "Big Summer Read",
       "selection_month": "6",
       "selection_type": "discussion_selection",
       "selection_url": "https://www.reddit.com/r/bookclub/comments/1tnd7sr/schedule_big_summer_read_the_devils_by_joe/",
@@ -19825,7 +19825,7 @@
         "url": "https://www.reddit.com/r/bookclub/comments/1tnd7sr/schedule_big_summer_read_the_devils_by_joe/"
       },
       "source_record_id": "reddit:1tnd7sr",
-      "theme_or_track": "The Big Summer Read",
+      "theme_or_track": "Big Summer Read",
       "title": "The Devils"
     },
     {
@@ -20190,18 +20190,19 @@
       ],
       "club_name": "r/bookclub",
       "credit_role": "author",
-      "linked_book_url": "https://www.reddit.com/r/bookclub/wiki/previous/schedule will be linked later",
       "position": "932",
       "raw_author_credit": "David Szalay",
       "raw_selection_label": "Discovery Read",
       "selection_month": "7",
       "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1uuaul7/schedule_discovery_read_flesh_by_david_szalay/",
       "selection_year": "2026",
       "source": {
         "name": "r/bookclub",
         "source_id": "r_bookclub_previous_selections",
-        "url": ""
+        "url": "https://www.reddit.com/r/bookclub/comments/1uuaul7/schedule_discovery_read_flesh_by_david_szalay/"
       },
+      "source_record_id": "reddit:1uuaul7",
       "theme_or_track": "Discovery Read",
       "title": "Flesh"
     },
@@ -20314,14 +20315,1431 @@
       "source_record_id": "reddit:1ue79et",
       "theme_or_track": "Bonus Read",
       "title": "The Tapestry of Fate"
+    },
+    {
+      "authors": [
+        "Toshikazu Kawaguchi"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "938",
+      "raw_author_credit": "Toshikazu Kawaguchi",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "7",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1uunrbi/schedule_bonus_book_before_i_knew_i_loved_you/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1uunrbi/schedule_bonus_book_before_i_knew_i_loved_you/"
+      },
+      "source_record_id": "reddit:1uunrbi",
+      "theme_or_track": "Bonus Read",
+      "title": "Before I Knew I Loved You"
+    },
+    {
+      "authors": [
+        "Madeleine L'Engle"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "939",
+      "raw_author_credit": "Madeleine L'Engle",
+      "raw_selection_label": "Young Adult",
+      "selection_month": "8",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1v6boj7/schedule_ya_a_wrinkle_in_time_by_madeline_lengle/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1v6boj7/schedule_ya_a_wrinkle_in_time_by_madeline_lengle/"
+      },
+      "source_record_id": "reddit:1v6boj7",
+      "theme_or_track": "Young Adult",
+      "title": "A Wrinkle in Time"
+    },
+    {
+      "authors": [
+        "Caro Claire Burke"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "940",
+      "raw_author_credit": "Caro Claire Burke",
+      "raw_selection_label": "Any",
+      "selection_month": "8",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1v6eij9/schedule_yesteryear_by_caro_claire_burke/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1v6eij9/schedule_yesteryear_by_caro_claire_burke/"
+      },
+      "source_record_id": "reddit:1v6eij9",
+      "theme_or_track": "Any",
+      "title": "Yesteryear"
+    },
+    {
+      "authors": [
+        "Fauziya Kassindja"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "941",
+      "raw_author_credit": "Fauziya Kassindja",
+      "raw_selection_label": "Read the World - Togo",
+      "selection_month": "8",
+      "selection_type": "global_read",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1usfp60/schedule_read_the_world_togo_do_they_hear_you/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1usfp60/schedule_read_the_world_togo_do_they_hear_you/"
+      },
+      "source_record_id": "reddit:1usfp60",
+      "theme_or_track": "Read the World - Togo",
+      "title": "Do They Hear You When You Cry"
+    },
+    {
+      "authors": [
+        "Patrick Radden Keefe"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "942",
+      "raw_author_credit": "Patrick Radden Keefe",
+      "raw_selection_label": "Quarterly Non-Fiction",
+      "selection_month": "8",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1uvf1u2/schedule_quarterly_nonfiction_london_falling_by/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1uvf1u2/schedule_quarterly_nonfiction_london_falling_by/"
+      },
+      "source_record_id": "reddit:1uvf1u2",
+      "theme_or_track": "Quarterly Non-Fiction",
+      "title": "London Falling: A Mysterious Death in a Gilded City and a Family's Search for Truth"
+    },
+    {
+      "authors": [
+        "Philip K. Dick"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "943",
+      "raw_author_credit": "Philip K. Dick",
+      "raw_selection_label": "Discovery Read",
+      "selection_month": "8",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vovqal/schedule_discovery_read_do_androids_dream_of/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vovqal/schedule_discovery_read_do_androids_dream_of/"
+      },
+      "source_record_id": "reddit:1vovqal",
+      "theme_or_track": "Discovery Read",
+      "title": "Do Androids Dream of Electric Sheep"
+    },
+    {
+      "authors": [
+        "Olga Tokarczuk"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "944",
+      "raw_author_credit": "Olga Tokarczuk",
+      "raw_selection_label": "Mod Pick",
+      "selection_month": "8",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1v04e5n/schedule_mod_pick_the_books_of_jacob_by_olga/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1v04e5n/schedule_mod_pick_the_books_of_jacob_by_olga/"
+      },
+      "source_record_id": "reddit:1v04e5n",
+      "theme_or_track": "Mod Pick",
+      "title": "The Books of Jacob"
+    },
+    {
+      "authors": [
+        "Cho Nam-Joo"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "945",
+      "raw_author_credit": "Cho Nam-Joo",
+      "raw_selection_label": "Runner-Up Read meets Read the World",
+      "selection_month": "8",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1ve0vej/schedule_runner_up_read_read_the_world_kim/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1ve0vej/schedule_runner_up_read_read_the_world_kim/"
+      },
+      "source_record_id": "reddit:1ve0vej",
+      "theme_or_track": "Runner-Up Read meets Read the World",
+      "title": "Kim Jiyoung, Born 1982"
+    },
+    {
+      "authors": [
+        "Ransom Riggs"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "946",
+      "raw_author_credit": "Ransom Riggs",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "8",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1v0b7mn/schedule_bonus_book_library_of_souls_by_ransom/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1v0b7mn/schedule_bonus_book_library_of_souls_by_ransom/"
+      },
+      "source_record_id": "reddit:1v0b7mn",
+      "theme_or_track": "Bonus Read",
+      "title": "Library of Souls"
+    },
+    {
+      "authors": [
+        "Virgil"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "947",
+      "raw_author_credit": "Virgil",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "8",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1v1nhlv/schedule_the_aeneid_by_virgil/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1v1nhlv/schedule_the_aeneid_by_virgil/"
+      },
+      "source_record_id": "reddit:1v1nhlv",
+      "theme_or_track": "Bonus Read",
+      "title": "The Aeneid"
+    },
+    {
+      "authors": [
+        "Ryan Cahill"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "948",
+      "raw_author_credit": "Ryan Cahill",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "8",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1v1v4pd/schedule_bonus_book_of_empires_and_dust_the_bound/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1v1v4pd/schedule_bonus_book_of_empires_and_dust_the_bound/"
+      },
+      "source_record_id": "reddit:1v1v4pd",
+      "theme_or_track": "Bonus Read",
+      "title": "Of Empires and Dust"
+    },
+    {
+      "authors": [
+        "Matt Dinniman"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "949",
+      "raw_author_credit": "Matt Dinniman",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "8",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1v4pdtn/schedule_a_parade_of_horribles_by_matt_dinniman/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1v4pdtn/schedule_a_parade_of_horribles_by_matt_dinniman/"
+      },
+      "source_record_id": "reddit:1v4pdtn",
+      "theme_or_track": "Bonus Read",
+      "title": "A Parade of Horribles"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "950",
+      "raw_author_credit": "Terry Pratchett",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "8",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1v5ag2p/schedule_bonus_book_equal_rites_by_terry/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1v5ag2p/schedule_bonus_book_equal_rites_by_terry/"
+      },
+      "source_record_id": "reddit:1v5ag2p",
+      "theme_or_track": "Bonus Read",
+      "title": "Equal Rites"
+    },
+    {
+      "authors": [
+        "Yukito Ayatsuji"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "951",
+      "raw_author_credit": "Yukito Ayatsuji",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "8",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1v5kld4/schedule_the_clock_house_murders_by_yukito/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1v5kld4/schedule_the_clock_house_murders_by_yukito/"
+      },
+      "source_record_id": "reddit:1v5kld4",
+      "theme_or_track": "Bonus Read",
+      "title": "The Clock House Murders"
+    },
+    {
+      "authors": [
+        "Ursula K. LeGuin"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "952",
+      "raw_author_credit": "Ursula K. LeGuin",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "8",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vpz0er/schedule_bonus_book_city_of_illusions_by_ursula_k/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vpz0er/schedule_bonus_book_city_of_illusions_by_ursula_k/"
+      },
+      "source_record_id": "reddit:1vpz0er",
+      "theme_or_track": "Bonus Read",
+      "title": "City of Illusions"
+    },
+    {
+      "authors": [
+        "R.F. Kuang"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "953",
+      "raw_author_credit": "R.F. Kuang",
+      "raw_selection_label": "Big Fall Read",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vx731p/schedule_big_fall_read_katabasis_by_rf_kuang/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vx731p/schedule_big_fall_read_katabasis_by_rf_kuang/"
+      },
+      "source_record_id": "reddit:1vx731p",
+      "theme_or_track": "Big Fall Read",
+      "title": "Katabasis"
+    },
+    {
+      "authors": [
+        "Robert Louis Stevenson"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "event_group_id": "rbc:1vu72qe",
+      "position": "954",
+      "raw_author_credit": "Robert Louis Stevenson",
+      "raw_selection_label": "Gutenberg Novella Double Up",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vu72qe/schedule_gutenberg_novella_the_strange_case_of_dr/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vu72qe/schedule_gutenberg_novella_the_strange_case_of_dr/"
+      },
+      "source_record_id": "reddit:1vu72qe:1",
+      "theme_or_track": "Gutenberg Novella Double Up",
+      "title": "The Strange Case of Dr. Jekyll and Mr. Hyde"
+    },
+    {
+      "authors": [
+        "L.M. Montgomery"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "event_group_id": "rbc:1vu72qe",
+      "position": "955",
+      "raw_author_credit": "L.M. Montgomery",
+      "raw_selection_label": "Gutenberg Novella Double Up",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vw8fl8/schedule_gutenberg_novella_the_blue_castle_by_l_m/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vw8fl8/schedule_gutenberg_novella_the_blue_castle_by_l_m/"
+      },
+      "source_record_id": "reddit:1vw8fl8:2",
+      "theme_or_track": "Gutenberg Novella Double Up",
+      "title": "The Blue Castle"
+    },
+    {
+      "authors": [
+        "Kevin Jared Hosein"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "956",
+      "raw_author_credit": "Kevin Jared Hosein",
+      "raw_selection_label": "Read the World - Trinidad and Tobago",
+      "selection_month": "9",
+      "selection_type": "global_read",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vl2m43/schedule_read_the_world_trinidad_and_tobago/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vl2m43/schedule_read_the_world_trinidad_and_tobago/"
+      },
+      "source_record_id": "reddit:1vl2m43",
+      "theme_or_track": "Read the World - Trinidad and Tobago",
+      "title": "Hungry Ghosts"
+    },
+    {
+      "authors": [
+        "Tan Twan Eng"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "event_group_id": "rbc:1w6yi43",
+      "position": "957",
+      "raw_author_credit": "Tan Twan Eng",
+      "raw_selection_label": "Read the World - Malaysia",
+      "selection_month": "9",
+      "selection_type": "global_read",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1w6yi43/schedule_read_the_world_malaysia_the_house_of/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1w6yi43/schedule_read_the_world_malaysia_the_house_of/"
+      },
+      "source_record_id": "reddit:1w6yi43:1",
+      "theme_or_track": "Read the World - Malaysia",
+      "title": "The House of Doors"
+    },
+    {
+      "authors": [
+        "W. Somerset Maugham"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "event_group_id": "rbc:1w6yi43",
+      "position": "958",
+      "raw_author_credit": "W. Somerset Maugham",
+      "raw_selection_label": "Read the World - Malaysia",
+      "selection_month": "9",
+      "selection_type": "global_read",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1w6yi43/schedule_read_the_world_malaysia_the_house_of/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1w6yi43/schedule_read_the_world_malaysia_the_house_of/"
+      },
+      "source_record_id": "reddit:1w6yi43:2",
+      "theme_or_track": "Read the World - Malaysia",
+      "title": "The Letter"
+    },
+    {
+      "authors": [
+        "Han Kang"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "959",
+      "raw_author_credit": "Han Kang",
+      "raw_selection_label": "Evergreen",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vq7wap/schedule_evergreen_the_vegetarian_by_han_kang/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vq7wap/schedule_evergreen_the_vegetarian_by_han_kang/"
+      },
+      "source_record_id": "reddit:1vq7wap",
+      "theme_or_track": "Evergreen",
+      "title": "The Vegetarian"
+    },
+    {
+      "authors": [
+        "Jorge Luis Borges"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "960",
+      "raw_author_credit": "Jorge Luis Borges",
+      "raw_selection_label": "Evergreen",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vui3f3/schedule_evergreen_ficciones_by_jorge_luis_borges/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vui3f3/schedule_evergreen_ficciones_by_jorge_luis_borges/"
+      },
+      "source_record_id": "reddit:1vui3f3",
+      "theme_or_track": "Evergreen",
+      "title": "Ficciones"
+    },
+    {
+      "authors": [
+        "Jos\u00e9 Saramago"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "961",
+      "raw_author_credit": "Jos\u00e9 Saramago",
+      "raw_selection_label": "Discovery Read",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wgcrk7/schedule_discovery_read_death_with_interruptions/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wgcrk7/schedule_discovery_read_death_with_interruptions/"
+      },
+      "source_record_id": "reddit:1wgcrk7",
+      "theme_or_track": "Discovery Read",
+      "title": "Death with Interruptions"
+    },
+    {
+      "authors": [
+        "Wilkie Collins"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "962",
+      "raw_author_credit": "Wilkie Collins",
+      "raw_selection_label": "Runner-Up Read",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vtm21a/schedule_runner_up_read_the_moonstone_by_wilkie/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vtm21a/schedule_runner_up_read_the_moonstone_by_wilkie/"
+      },
+      "source_record_id": "reddit:1vtm21a",
+      "theme_or_track": "Runner-Up Read",
+      "title": "The Moonstone"
+    },
+    {
+      "authors": [
+        "Banine"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "963",
+      "raw_author_credit": "Banine",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vlhck3/schedule_bonus_book_parisian_days_by_banine/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vlhck3/schedule_bonus_book_parisian_days_by_banine/"
+      },
+      "source_record_id": "reddit:1vlhck3",
+      "theme_or_track": "Bonus Read",
+      "title": "Parisian Days"
+    },
+    {
+      "authors": [
+        "Katee Robert"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "964",
+      "raw_author_credit": "Katee Robert",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vpbz7n/schedule_shattered_gods_by_katee_robert_book_10/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vpbz7n/schedule_shattered_gods_by_katee_robert_book_10/"
+      },
+      "source_record_id": "reddit:1vpbz7n",
+      "theme_or_track": "Bonus Read",
+      "title": "Shattered Gods"
+    },
+    {
+      "authors": [
+        "Samantha Shannon"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "965",
+      "raw_author_credit": "Samantha Shannon",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vq8mx5/schedule_bonus_book_among_the_burning_flowers_by/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vq8mx5/schedule_bonus_book_among_the_burning_flowers_by/"
+      },
+      "source_record_id": "reddit:1vq8mx5",
+      "theme_or_track": "Bonus Read",
+      "title": "Among the Burning Flowers"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "966",
+      "raw_author_credit": "Arthur C. Clarke",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1warlb7/schedule_bonus_book_2010_odyssey_two_by_arthur_c/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1warlb7/schedule_bonus_book_2010_odyssey_two_by_arthur_c/"
+      },
+      "source_record_id": "reddit:1warlb7",
+      "theme_or_track": "Bonus Read",
+      "title": "2010: Odyssey Two"
+    },
+    {
+      "authors": [
+        "Agatha Christie"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "967",
+      "raw_author_credit": "Agatha Christie",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vwe87i/schedule_year_of_poirot_the_mysterious_affair_at/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vwe87i/schedule_year_of_poirot_the_mysterious_affair_at/"
+      },
+      "source_record_id": "reddit:1vwe87i",
+      "theme_or_track": "Bonus Read",
+      "title": "The Mysterious Affair at Styles"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "968",
+      "raw_author_credit": "Martha Wells",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vwoezb/schedule_bonus_book_platform_decay_by_martha/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vwoezb/schedule_bonus_book_platform_decay_by_martha/"
+      },
+      "source_record_id": "reddit:1vwoezb",
+      "theme_or_track": "Bonus Read",
+      "title": "Platform Decay"
+    },
+    {
+      "authors": [
+        "C.M. Nascosta"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "969",
+      "raw_author_credit": "C.M. Nascosta",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vwslv3/schedule_bonus_book_sweet_berries_by_cm_nascosta/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vwslv3/schedule_bonus_book_sweet_berries_by_cm_nascosta/"
+      },
+      "source_record_id": "reddit:1vwslv3",
+      "theme_or_track": "Bonus Read",
+      "title": "Sweet Berries"
+    },
+    {
+      "authors": [
+        "Joe Abercrombie"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "970",
+      "raw_author_credit": "Joe Abercrombie",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "9",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1vu11m9/schedule_bonus_book_the_trouble_with_peace_by_joe/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1vu11m9/schedule_bonus_book_the_trouble_with_peace_by_joe/"
+      },
+      "source_record_id": "reddit:1vu11m9",
+      "theme_or_track": "Bonus Read",
+      "title": "The Trouble With Peace"
+    },
+    {
+      "authors": [
+        "Christopher Buehlman"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "971",
+      "raw_author_credit": "Christopher Buehlman",
+      "raw_selection_label": "Horror",
+      "selection_month": "10",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wnycd0/schedule_horror_between_two_fires_by_christopher/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wnycd0/schedule_horror_between_two_fires_by_christopher/"
+      },
+      "source_record_id": "reddit:1wnycd0",
+      "theme_or_track": "Horror",
+      "title": "Between Two Fires"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "972",
+      "raw_author_credit": "Margaret Atwood",
+      "raw_selection_label": "Female Author",
+      "selection_month": "10",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wlwjq8/schedule_female_author_the_penelopiad_by_margaret/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wlwjq8/schedule_female_author_the_penelopiad_by_margaret/"
+      },
+      "source_record_id": "reddit:1wlwjq8",
+      "theme_or_track": "Female Author",
+      "title": "The Penelopiad"
+    },
+    {
+      "authors": [
+        "Tove Jansson"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "event_group_id": "rbc:1wt0mhe",
+      "position": "973",
+      "raw_author_credit": "Tove Jansson",
+      "raw_selection_label": "Read the World - Finland",
+      "selection_month": "10",
+      "selection_type": "global_read",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wt0mhe/schedule_read_the_world_finland_the_summer_book/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wt0mhe/schedule_read_the_world_finland_the_summer_book/"
+      },
+      "source_record_id": "reddit:1wt0mhe:1",
+      "theme_or_track": "Read the World - Finland",
+      "title": "The Summer Book"
+    },
+    {
+      "authors": [
+        "Juhani Karila"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "event_group_id": "rbc:1wt0mhe",
+      "position": "974",
+      "raw_author_credit": "Juhani Karila",
+      "raw_selection_label": "Read the World - Finland",
+      "selection_month": "10",
+      "selection_type": "global_read",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wt0mhe/schedule_read_the_world_finland_the_summer_book/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wt0mhe/schedule_read_the_world_finland_the_summer_book/"
+      },
+      "source_record_id": "reddit:1wt0mhe:2",
+      "theme_or_track": "Read the World - Finland",
+      "title": "Summer Fishing in Lapland"
+    },
+    {
+      "authors": [
+        "Michael Chabon"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "975",
+      "raw_author_credit": "Michael Chabon",
+      "raw_selection_label": "Evergreen",
+      "selection_month": "10",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wfcgiq/schedule_evergreen_the_amazing_adventures_of/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wfcgiq/schedule_evergreen_the_amazing_adventures_of/"
+      },
+      "source_record_id": "reddit:1wfcgiq",
+      "theme_or_track": "Evergreen",
+      "title": "The Amazing Adventures of Kavalier & Clay"
+    },
+    {
+      "authors": [
+        "Olivia Atwater"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "976",
+      "raw_author_credit": "Olivia Atwater",
+      "raw_selection_label": "Discovery Read",
+      "selection_month": "10",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1x41fzt/schedule_discovery_read_small_miracles_by_olivia/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1x41fzt/schedule_discovery_read_small_miracles_by_olivia/"
+      },
+      "source_record_id": "reddit:1x41fzt",
+      "theme_or_track": "Discovery Read",
+      "title": "Small Miracles"
+    },
+    {
+      "authors": [
+        "Viktor E. Frankl"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "977",
+      "raw_author_credit": "Viktor E. Frankl",
+      "raw_selection_label": "Quarterly Non-Fiction",
+      "selection_month": "10",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1x675cw/schedule_quarterly_nonfiction_mans_search_for/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1x675cw/schedule_quarterly_nonfiction_mans_search_for/"
+      },
+      "source_record_id": "reddit:1x675cw",
+      "theme_or_track": "Quarterly Non-Fiction",
+      "title": "Man's Search for Meaning"
+    },
+    {
+      "authors": [
+        "Shami Stovall"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "978",
+      "raw_author_credit": "Shami Stovall",
+      "raw_selection_label": "Mod Pick",
+      "selection_month": "10",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wtusp2/schedule_mod_pick_knightmare_arcanist_by_shami/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wtusp2/schedule_mod_pick_knightmare_arcanist_by_shami/"
+      },
+      "source_record_id": "reddit:1wtusp2",
+      "theme_or_track": "Mod Pick",
+      "title": "Knightmare Arcanist"
+    },
+    {
+      "authors": [
+        "Morgan Stang"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "979",
+      "raw_author_credit": "Morgan Stang",
+      "raw_selection_label": "Runner-Up Read",
+      "selection_month": "10",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wti0ub/schedule_runnerup_read_murder_at_spindle_manor_by/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wti0ub/schedule_runnerup_read_murder_at_spindle_manor_by/"
+      },
+      "source_record_id": "reddit:1wti0ub",
+      "theme_or_track": "Runner-Up Read",
+      "title": "Murder at Spindle Manor"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "980",
+      "raw_author_credit": "Terry Pratchett",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "10",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wgztii/schedule_bonus_book_mort_by_terry_pratchett/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wgztii/schedule_bonus_book_mort_by_terry_pratchett/"
+      },
+      "source_record_id": "reddit:1wgztii",
+      "theme_or_track": "Bonus Read",
+      "title": "Mort"
+    },
+    {
+      "authors": [
+        "Robin Hobb"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "981",
+      "raw_author_credit": "Robin Hobb",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "10",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wh1g40/schedule_bonus_read_dragon_keeper_by_robin_hobb/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wh1g40/schedule_bonus_read_dragon_keeper_by_robin_hobb/"
+      },
+      "source_record_id": "reddit:1wh1g40",
+      "theme_or_track": "Bonus Read",
+      "title": "Dragon Keeper"
+    },
+    {
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "982",
+      "raw_author_credit": "Isaac Asimov",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "10",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wh4qzf/schedule_bonus_book_the_end_of_eternity_by_isaac/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wh4qzf/schedule_bonus_book_the_end_of_eternity_by_isaac/"
+      },
+      "source_record_id": "reddit:1wh4qzf",
+      "theme_or_track": "Bonus Read",
+      "title": "The End of Eternity"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "983",
+      "raw_author_credit": "Robert Jackson Bennett",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "10",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wjp6a3/schedule_bonus_books_the_lions_tusk_a_trade_of/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wjp6a3/schedule_bonus_books_the_lions_tusk_a_trade_of/"
+      },
+      "source_record_id": "reddit:1wjp6a3",
+      "theme_or_track": "Bonus Read",
+      "title": "A Trade of Blood"
+    },
+    {
+      "authors": [
+        "Euripides"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "984",
+      "raw_author_credit": "Euripides",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "10",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wtdkcg/updated_schedule_the_bacchae_by_euripides/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wtdkcg/updated_schedule_the_bacchae_by_euripides/"
+      },
+      "source_record_id": "reddit:1wtdkcg",
+      "theme_or_track": "Bonus Read",
+      "title": "The Bacchae"
+    },
+    {
+      "authors": [
+        "Colson Whitehead"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "985",
+      "raw_author_credit": "Colson Whitehead",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "10",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wl7iap/schedule_bonus_book_cool_machine_by_colson/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wl7iap/schedule_bonus_book_cool_machine_by_colson/"
+      },
+      "source_record_id": "reddit:1wl7iap",
+      "theme_or_track": "Bonus Read",
+      "title": "Cool Machine"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "986",
+      "raw_author_credit": "Nnedi Okorafor",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "10",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1wn8exp/schedule_bonus_book_akata_warrior_by_nnedi/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1wn8exp/schedule_bonus_book_akata_warrior_by_nnedi/"
+      },
+      "source_record_id": "reddit:1wn8exp",
+      "theme_or_track": "Bonus Read",
+      "title": "Akata Warrior"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "987",
+      "raw_author_credit": "Stephen Graham Jones",
+      "raw_selection_label": "Indigenous",
+      "selection_month": "11",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1xeoo05/schedule_indigenous_author_the_only_good_indians/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1xeoo05/schedule_indigenous_author_the_only_good_indians/"
+      },
+      "source_record_id": "reddit:1xeoo05",
+      "theme_or_track": "Indigenous",
+      "title": "The Only Good Indians"
+    },
+    {
+      "authors": [
+        "Max Brooks"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "988",
+      "raw_author_credit": "Max Brooks",
+      "raw_selection_label": "Any",
+      "selection_month": "11",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1xfhn6l/schedule_any_world_war_z_by_max_brooks/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1xfhn6l/schedule_any_world_war_z_by_max_brooks/"
+      },
+      "source_record_id": "reddit:1xfhn6l",
+      "theme_or_track": "Any",
+      "title": "World War Z: An Oral History of the Zombie War"
+    },
+    {
+      "authors": [
+        "Lana Basta\u0161i\u0107"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "event_group_id": "rbc:2026:11:read-the-world-bosnia-and-herzegovina:3",
+      "linked_book_url": "https://www.reddit.com/r/bookclub/wiki/previous/schedule will be linked later",
+      "position": "989",
+      "raw_author_credit": "Lana Basta\u0161i\u0107",
+      "raw_selection_label": "Read the World - Bosnia and Herzegovina",
+      "selection_month": "11",
+      "selection_type": "global_read",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": ""
+      },
+      "theme_or_track": "Read the World - Bosnia and Herzegovina",
+      "title": "Catch the Rabbit"
+    },
+    {
+      "authors": [
+        "Zlata Filipovi\u0107"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "event_group_id": "rbc:2026:11:read-the-world-bosnia-and-herzegovina:3",
+      "linked_book_url": "https://www.reddit.com/r/bookclub/wiki/previous/schedule will be linked later",
+      "position": "990",
+      "raw_author_credit": "Zlata Filipovi\u0107",
+      "raw_selection_label": "Read the World - Bosnia and Herzegovina",
+      "selection_month": "11",
+      "selection_type": "global_read",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": ""
+      },
+      "theme_or_track": "Read the World - Bosnia and Herzegovina",
+      "title": "Zlata's Diary: A Child's Life in Wartime Sarajevo"
+    },
+    {
+      "authors": [
+        "Ian McEwan"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "linked_book_url": "https://www.reddit.com/r/bookclub/wiki/previous/schedule will be linked later",
+      "position": "991",
+      "raw_author_credit": "Ian McEwan",
+      "raw_selection_label": "Evergreen",
+      "selection_month": "11",
+      "selection_type": "discussion_selection",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": ""
+      },
+      "theme_or_track": "Evergreen",
+      "title": "Atonement"
+    },
+    {
+      "authors": [
+        "Steven L. Peck"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "992",
+      "raw_author_credit": "Steven L. Peck",
+      "raw_selection_label": "Mod Pick",
+      "selection_month": "11",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1xet8y8/schedule_mod_pick_a_short_stay_in_hell_by_steven/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1xet8y8/schedule_mod_pick_a_short_stay_in_hell_by_steven/"
+      },
+      "source_record_id": "reddit:1xet8y8",
+      "theme_or_track": "Mod Pick",
+      "title": "A Short Stay in Hell"
+    },
+    {
+      "authors": [
+        "Travis Baldree"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "linked_book_url": "https://www.reddit.com/r/bookclub/wiki/previous/schedule will be linked later",
+      "position": "993",
+      "raw_author_credit": "Travis Baldree",
+      "raw_selection_label": "Mod Pick",
+      "selection_month": "11",
+      "selection_type": "discussion_selection",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": ""
+      },
+      "theme_or_track": "Mod Pick",
+      "title": "Legends & Lattes"
+    },
+    {
+      "authors": [
+        "Anthony Bourdain"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "994",
+      "raw_author_credit": "Anthony Bourdain",
+      "raw_selection_label": "Runner-Up Read",
+      "selection_month": "11",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1xetx4c/schedule_runner_up_read_kitchen_confidential_by/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1xetx4c/schedule_runner_up_read_kitchen_confidential_by/"
+      },
+      "source_record_id": "reddit:1xetx4c",
+      "theme_or_track": "Runner-Up Read",
+      "title": "Kitchen Confidential"
+    },
+    {
+      "authors": [
+        "Tatiana de Rosnay"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "event_group_id": "rbc:1xcfxi5",
+      "position": "995",
+      "raw_author_credit": "Tatiana de Rosnay",
+      "raw_selection_label": "Author Profile - Daphne du Maurier",
+      "selection_month": "11",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1xcfxi5/schedule_20th_century_author_profile_daphne_du/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1xcfxi5/schedule_20th_century_author_profile_daphne_du/"
+      },
+      "source_record_id": "reddit:1xcfxi5:1",
+      "theme_or_track": "Author Profile - Daphne du Maurier",
+      "title": "Manderley Forever"
+    },
+    {
+      "authors": [
+        "Daphne du Maurier"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "event_group_id": "rbc:1xcfxi5",
+      "position": "996",
+      "raw_author_credit": "Daphne du Maurier",
+      "raw_selection_label": "Author Profile - Daphne du Maurier",
+      "selection_month": "11",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1xcfxi5/schedule_20th_century_author_profile_daphne_du/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1xcfxi5/schedule_20th_century_author_profile_daphne_du/"
+      },
+      "source_record_id": "reddit:1xcfxi5:2",
+      "theme_or_track": "Author Profile - Daphne du Maurier",
+      "title": "My Cousin Rachel"
+    },
+    {
+      "authors": [
+        "Shannon Chakraborty"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "997",
+      "raw_author_credit": "Shannon Chakraborty",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "11",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1x8npkc/schedule_the_kingdom_of_copper_the_daevabad/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1x8npkc/schedule_the_kingdom_of_copper_the_daevabad/"
+      },
+      "source_record_id": "reddit:1x8npkc",
+      "theme_or_track": "Bonus Read",
+      "title": "The Kingdom of Copper"
+    },
+    {
+      "authors": [
+        "James Joyce"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "998",
+      "raw_author_credit": "James Joyce",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "11",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1xbocf6/schedule_dubliners_by_james_joyce/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1xbocf6/schedule_dubliners_by_james_joyce/"
+      },
+      "source_record_id": "reddit:1xbocf6",
+      "theme_or_track": "Bonus Read",
+      "title": "Dubliners"
+    },
+    {
+      "authors": [
+        "Agatha Christie"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "999",
+      "raw_author_credit": "Agatha Christie",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "11",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1xbti5w/schedule_year_of_poirot_death_in_the_clouds_by/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1xbti5w/schedule_year_of_poirot_death_in_the_clouds_by/"
+      },
+      "source_record_id": "reddit:1xbti5w",
+      "theme_or_track": "Bonus Read",
+      "title": "Death in the Clouds"
+    },
+    {
+      "authors": [
+        "Aeschylus"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "1000",
+      "raw_author_credit": "Aeschylus",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "11",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1xdt67i/schedule_bonus_book_the_oresteia_by_aeschylus/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1xdt67i/schedule_bonus_book_the_oresteia_by_aeschylus/"
+      },
+      "source_record_id": "reddit:1xdt67i",
+      "theme_or_track": "Bonus Read",
+      "title": "The Oresteia"
+    },
+    {
+      "authors": [
+        "Joe Abercrombie"
+      ],
+      "club_name": "r/bookclub",
+      "credit_role": "author",
+      "position": "1001",
+      "raw_author_credit": "Joe Abercrombie",
+      "raw_selection_label": "Bonus Read",
+      "selection_month": "11",
+      "selection_type": "discussion_selection",
+      "selection_url": "https://www.reddit.com/r/bookclub/comments/1xeoswx/schedule_bonus_book_the_wisdom_of_crowds_by_joe/",
+      "selection_year": "2026",
+      "source": {
+        "name": "r/bookclub",
+        "source_id": "r_bookclub_previous_selections",
+        "url": "https://www.reddit.com/r/bookclub/comments/1xeoswx/schedule_bonus_book_the_wisdom_of_crowds_by_joe/"
+      },
+      "source_record_id": "reddit:1xeoswx",
+      "theme_or_track": "Bonus Read",
+      "title": "The Great Change"
     }
   ],
-  "fetched_at": "2026-07-15T05:05:45Z",
+  "fetched_at": "2026-11-14T11:17:24Z",
   "list_id": "r_bookclub_previous_selections",
   "list_name": "r/bookclub",
   "match_series": false,
-  "notes": [],
+  "notes": [
+    "November 2026 2026: Unparsed selection row: Discovery Read: TBD"
+  ],
   "parser": "r_bookclub_previous_selections",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "r/bookclub",

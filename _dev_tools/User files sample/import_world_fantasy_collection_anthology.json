@@ -1,0 +1,712 @@
+{
+  "append_state": {
+    "entry_count": 43,
+    "last_entry_key": "night visions 3|george r r martin",
+    "last_position": "1987.06",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Kirby McCauley"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1977",
+      "category": "Collection/Anthology",
+      "position": "1977",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1977"
+      },
+      "title": "Frights"
+    },
+    {
+      "authors": [
+        "Edward Bryant"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1977",
+      "category": "Collection/Anthology",
+      "position": "1977.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1977"
+      },
+      "title": "Cinnabar"
+    },
+    {
+      "authors": [
+        "Lin Carter"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1977",
+      "category": "Collection/Anthology",
+      "position": "1977.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1977"
+      },
+      "title": "Flashing Swords #3: Warriors and Wizards"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1977",
+      "category": "Collection/Anthology",
+      "position": "1977.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1977"
+      },
+      "title": "The Height of the Scream"
+    },
+    {
+      "authors": [
+        "Ray Bradbury"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1977",
+      "category": "Collection/Anthology",
+      "position": "1977.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1977"
+      },
+      "title": "Long After Midnight"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1977",
+      "category": "Collection/Anthology",
+      "position": "1977.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1977"
+      },
+      "title": "Superhorror"
+    },
+    {
+      "authors": [
+        "Hugh B. Cave"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1978",
+      "category": "Collection/Anthology",
+      "position": "1978",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1978"
+      },
+      "title": "Murgunstrumm and Others"
+    },
+    {
+      "authors": [
+        "Robert Bloch"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1978",
+      "category": "Collection/Anthology",
+      "position": "1978.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1978"
+      },
+      "title": "Cold Chills"
+    },
+    {
+      "authors": [
+        "Fritz Leiber"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1978",
+      "category": "Collection/Anthology",
+      "position": "1978.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1978"
+      },
+      "title": "Swords and Ice Magic"
+    },
+    {
+      "authors": [
+        "Stuart David Schiff"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1978",
+      "category": "Collection/Anthology",
+      "position": "1978.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1978"
+      },
+      "title": "Whispers"
+    },
+    {
+      "authors": [
+        "Gerald W. Page"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1978",
+      "category": "Collection/Anthology",
+      "position": "1978.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1978"
+      },
+      "title": "The Year's Best Horror Stories: Series V"
+    },
+    {
+      "authors": [
+        "Charles L. Grant"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1979",
+      "category": "Collection/Anthology",
+      "position": "1979",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1979"
+      },
+      "title": "Shadows"
+    },
+    {
+      "authors": [
+        "Fritz Leiber"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1979",
+      "category": "Collection/Anthology",
+      "position": "1979.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1979"
+      },
+      "title": "Heroes and Horrors"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1979",
+      "category": "Collection/Anthology",
+      "position": "1979.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1979"
+      },
+      "title": "Night Shift"
+    },
+    {
+      "authors": [
+        "Karl Edward Wagner"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1979",
+      "category": "Collection/Anthology",
+      "position": "1979.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1979"
+      },
+      "title": "Night Winds"
+    },
+    {
+      "authors": [
+        "Avram Davidson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1979",
+      "category": "Collection/Anthology",
+      "position": "1979.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1979"
+      },
+      "title": "The Redward Edward Papers"
+    },
+    {
+      "authors": [
+        "Gerald W. Page"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1979",
+      "category": "Collection/Anthology",
+      "position": "1979.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1979"
+      },
+      "title": "The Year's Best Horror Stories: Series VI"
+    },
+    {
+      "authors": [
+        "Robertson Davies"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1984",
+      "category": "Collection/Anthology",
+      "position": "1984",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1984"
+      },
+      "title": "High Spirits"
+    },
+    {
+      "authors": [
+        "Charles L. Grant"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1984",
+      "category": "Collection/Anthology",
+      "position": "1984.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1984"
+      },
+      "title": "The Dodd, Mead Gallery of Horror"
+    },
+    {
+      "authors": [
+        "Tanith Lee"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1984",
+      "category": "Collection/Anthology",
+      "position": "1984.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1984"
+      },
+      "title": "Red as Blood"
+    },
+    {
+      "authors": [
+        "Charles L. Grant"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1984",
+      "category": "Collection/Anthology",
+      "position": "1984.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1984"
+      },
+      "title": "Shadows 6"
+    },
+    {
+      "authors": [
+        "Jane Yolen"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1984",
+      "category": "Collection/Anthology",
+      "position": "1984.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1984"
+      },
+      "title": "Tales of Wonder"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1985",
+      "category": "Collection/Anthology",
+      "position": "1985",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1985"
+      },
+      "title": "Clive Barker's Books of Blood, Vols. I-III"
+    },
+    {
+      "authors": [
+        "Parke Godwin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1985",
+      "category": "Collection/Anthology",
+      "position": "1985.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1985"
+      },
+      "title": "The Fire When It Comes"
+    },
+    {
+      "authors": [
+        "J. N. Williamson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1985",
+      "category": "Collection/Anthology",
+      "position": "1985.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1985"
+      },
+      "title": "Masques"
+    },
+    {
+      "authors": [
+        "Alan Ryan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1985",
+      "category": "Collection/Anthology",
+      "position": "1985.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1985"
+      },
+      "title": "Night Visions 1"
+    },
+    {
+      "authors": [
+        "Garry Kilworth"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1985",
+      "category": "Collection/Anthology",
+      "position": "1985.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1985"
+      },
+      "title": "The Songbirds of Pain"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1985",
+      "category": "Collection/Anthology",
+      "position": "1985.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1985"
+      },
+      "title": "Viriconium Nights"
+    },
+    {
+      "authors": [
+        "Robin McKinley"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1986",
+      "category": "Collection/Anthology",
+      "position": "1986",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1986"
+      },
+      "title": "Imaginary Lands"
+    },
+    {
+      "authors": [
+        "Angela Carter"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1986",
+      "category": "Collection/Anthology",
+      "position": "1986.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1986"
+      },
+      "title": "Black Venus"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1986",
+      "category": "Collection/Anthology",
+      "position": "1986.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1986"
+      },
+      "title": "Clive Barker's Books of Blood, Vols. IV-VI"
+    },
+    {
+      "authors": [
+        "Jane Yolen"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1986",
+      "category": "Collection/Anthology",
+      "position": "1986.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1986"
+      },
+      "title": "Dragonfield and Other Stories"
+    },
+    {
+      "authors": [
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1986",
+      "category": "Collection/Anthology",
+      "position": "1986.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1986"
+      },
+      "title": "Faery!"
+    },
+    {
+      "authors": [
+        "Charles L. Grant"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1986",
+      "category": "Collection/Anthology",
+      "position": "1986.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1986"
+      },
+      "title": "Night Visions 2"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1986",
+      "category": "Collection/Anthology",
+      "position": "1986.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1986"
+      },
+      "title": "Skeleton Crew"
+    },
+    {
+      "authors": [
+        "Stuart David Schiff"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1986",
+      "category": "Collection/Anthology",
+      "position": "1986.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1986"
+      },
+      "title": "Whispers V"
+    },
+    {
+      "authors": [
+        "James Tiptree, Jr."
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1987",
+      "category": "Collection/Anthology",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1987"
+      },
+      "title": "Tales of the Quintana Roo"
+    },
+    {
+      "authors": [
+        "Douglas E. Winter"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1987",
+      "category": "Collection/Anthology",
+      "position": "1987.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1987"
+      },
+      "title": "Black Wine"
+    },
+    {
+      "authors": [
+        "Dennis Etchison"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1987",
+      "category": "Collection/Anthology",
+      "position": "1987.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1987"
+      },
+      "title": "Cutting Edge"
+    },
+    {
+      "authors": [
+        "Tanith Lee"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1987",
+      "category": "Collection/Anthology",
+      "position": "1987.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1987"
+      },
+      "title": "Dreams of Dark and Light"
+    },
+    {
+      "authors": [
+        "Will Shetterly",
+        "Emma Bull"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1987",
+      "category": "Collection/Anthology",
+      "position": "1987.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1987"
+      },
+      "title": "Liavek: The Players of Luck"
+    },
+    {
+      "authors": [
+        "Jane Yolen"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1987",
+      "category": "Collection/Anthology",
+      "position": "1987.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1987"
+      },
+      "title": "Merlin's Booke"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1987",
+      "category": "Collection/Anthology",
+      "position": "1987.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1987"
+      },
+      "title": "Night Visions 3"
+    }
+  ],
+  "fetched_at": "2026-07-24T11:33:54Z",
+  "list_id": "world_fantasy_collection_anthology",
+  "list_name": "World Fantasy - Collection/Anthology",
+  "match_series": false,
+  "notes": [],
+  "parser": "world_fantasy_collection_anthology",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "World Fantasy - Collection/Anthology",
+    "source_id": "world_fantasy_collection_anthology",
+    "url": "https://www.sfadb.com/World_Fantasy_Awards"
+  }
+}

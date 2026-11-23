@@ -1,0 +1,98 @@
+{
+  "append_state": {
+    "entry_count": 4,
+    "last_entry_key": "devil within|stephanie phillips\u001fmaan house",
+    "last_position": "2020.03",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "_source_order": 0,
+      "authors": [
+        "Carmen Maria Machado",
+        "DaNi"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Low, Low Woods"
+    },
+    {
+      "_source_order": 0,
+      "authors": [
+        "Marjorie M. Liu",
+        "Sana Takeda"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=3"
+      },
+      "title": "Monstress, Volume 5: Warchild"
+    },
+    {
+      "_source_order": 1,
+      "authors": [
+        "Alex de Campi",
+        "Erica Henderson"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=3"
+      },
+      "title": "Dracula, Motherf**ker!"
+    },
+    {
+      "_source_order": 2,
+      "authors": [
+        "Stephanie Phillips",
+        "Maan House"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=3"
+      },
+      "title": "Devil Within"
+    }
+  ],
+  "fetched_at": "2026-11-14T23:08:25Z",
+  "list_id": "ladies_of_horror_fiction_graphic_novel",
+  "list_name": "Ladies of Horror Fiction - Graphic Novel (discontinued)",
+  "match_series": false,
+  "notes": [
+    "Ladies of Horror Fiction uses Goodreads as the primary source and a narrow File 770 2021 winner correction.",
+    "Shortlisted rows are Goodreads nominee rows where present, not guaranteed complete official shortlists.",
+    "Goodreads is the V1 primary source for LOHF winners and nominees.",
+    "Goodreads nominee rows are imported as shortlisted rows; this is not an official consolidated shortlist archive.",
+    "The 2021 awards were the final LOHF award cycle and were announced in 2022; no later award rows are expected.",
+    "No Goodreads LOHF rows were parsed for Graphic Novel.",
+    "File 770 2021 LOHF winner mirror is used only to promote or append winner rows; it is not a shortlist source."
+  ],
+  "parser": "ladies_of_horror_fiction_graphic_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Ladies of Horror Fiction - Graphic Novel (discontinued)",
+    "source_id": "ladies_of_horror_fiction_graphic_novel",
+    "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award"
+  }
+}

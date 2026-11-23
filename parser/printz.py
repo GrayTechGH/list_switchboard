@@ -23,12 +23,16 @@ try:
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.parser.yalsa_base import read_yalsa_sources
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError,CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .yalsa_base import read_yalsa_sources
+  from errors import ImportCancelledError,CamoufoxRequiredError
 
 
 AWARD_NAME = 'Michael L. Printz Award'
@@ -61,11 +65,22 @@ def yma_awards_url(year):
 class PrintzAwardParser(AwardParserBase):
 
   AWARD_NAME = AWARD_NAME
+  CURRENT_URL = CURRENT_URL
+  CURRENT_FETCH_MESSAGE = 'Fetching current Printz Award page'
+  CURRENT_FAILED_LABEL = 'Current Printz Award page'
+  SUPPLEMENT_FETCH_LABEL = 'ALA Youth Media Awards'
+  SUPPLEMENT_FAILED_LABEL = 'ALA Youth Media Awards page'
+  NO_ENTRIES_MESSAGE = 'No Michael L. Printz Award entries found on official ALA/YALSA pages.'
+  FINAL_NOTE = ('Printz Honor Books are imported as shortlisted entries; '
+    'the award does not publish public pre-award shortlists.')
 
   def parse(
       self, html, base_url=HISTORY_URL, name=AWARD_NAME, fetch_url=None,
       current_year=None, current_page=None, supplement_pages=(),
-      log=None, progress=None):
+      log=None, progress=None,cached_parsed=None,incremental_update=False):
+    if fetch_url is not None and current_page is None and not supplement_pages:
+      return read_yalsa_sources(self,html,base_url,name,fetch_url,int(current_year or date.today().year),
+        cached_parsed,incremental_update,log,progress)
     rows = self.history_rows(html, base_url)
     notes = []
     max_history_year = max((int(row['award_year']) for row in rows), default=None)
@@ -78,6 +93,8 @@ class PrintzAwardParser(AwardParserBase):
         if progress is not None:
           progress(1, 1, 'Fetching current Printz Award page')
         rows.extend(self.current_page_rows(fetch_url(CURRENT_URL), CURRENT_URL))
+      except (ImportCancelledError,CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'Current Printz Award page could not be fetched: {CURRENT_URL}: {err}')
         if log is not None:
@@ -95,6 +112,8 @@ class PrintzAwardParser(AwardParserBase):
           if progress is not None:
             progress(index, total, f'Fetching {year} ALA Youth Media Awards')
           rows.extend(self.yma_page_rows(fetch_url(url), url))
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
         except Exception as err:
           notes.append(f'ALA Youth Media Awards page could not be fetched: {url}: {err}')
           if log is not None:

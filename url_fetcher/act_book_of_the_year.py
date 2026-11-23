@@ -6,6 +6,16 @@ from .generic import (
   UrlFetcherError,
   UrlFetcherGeneric,
 )
+from .act_book_transport import ACTOfficialFetchPolicy
+
+try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
+  from calibre_plugins.list_switchboard.parser.act_book_sources import soup_for
+  from calibre_plugins.list_switchboard.parser.act_book_updates import fetch_act_official, restore_official, with_supplement_state
+except ImportError:
+  from errors import ImportCancelledError, CamoufoxRequiredError
+  from parser.act_book_sources import soup_for
+  from parser.act_book_updates import fetch_act_official, restore_official, with_supplement_state
 
 
 OFFICIAL_URL = (
@@ -16,6 +26,7 @@ WIKIPEDIA_URL = 'https://en.wikipedia.org/wiki/ACT_Book_of_the_Year_Award'
 
 class UrlFetcherACTBookOfTheYearAward(UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   URL = OFFICIAL_URL
   WIKIPEDIA_URL = WIKIPEDIA_URL
   FETCH_URLS = ()
@@ -24,6 +35,10 @@ class UrlFetcherACTBookOfTheYearAward(UrlFetcherGeneric):
   options = {'match_series': False}
   source_id = 'act_book_of_the_year_award'
   NAME = 'ACT Book of the Year Award'
+  FIRST_YEAR = 1993
+
+  def create_parser(self):
+    return self.create_official_parser()
 
   def create_official_parser(self):
     try:
@@ -56,6 +71,7 @@ class UrlFetcherACTBookOfTheYearAward(UrlFetcherGeneric):
       force_fallback_level=0, disable_fallbacks=False, source_choice=None,
       cached_parsed=None, incremental_update=False):
     fetcher_fetch_url = lambda target_url: self.fetch_url(fetch_url, target_url)
+    policy = ACTOfficialFetchPolicy(fetch_url, fetcher_fetch_url, log)
     source_choice = 'automatic' if source_choice is None else source_choice
     force_fallback_level = int(force_fallback_level or 0)
     if force_fallback_level > 0 and source_choice == 'automatic' and not disable_fallbacks:
@@ -69,16 +85,22 @@ class UrlFetcherACTBookOfTheYearAward(UrlFetcherGeneric):
 
     official_error = None
     try:
+      automatic = source_choice == 'automatic' and not disable_fallbacks
+      official_cache = restore_official(self, cached_parsed, incremental_update) if automatic else cached_parsed
       official = self.fetch_parse_official(
-        fetcher_fetch_url, before_fetch, after_fetch, before_parse)
+        policy.fetch, before_fetch, after_fetch, before_parse,
+        official_cache, incremental_update)
       if source_choice in {0, '0'} or disable_fallbacks:
         if official.get('entries'):
           return self.with_match_series(official)
         raise UrlFetcherError('Libraries ACT parsed result did not contain usable entries.')
       if official.get('entries'):
-        return self.with_match_series(self.supplement_official_winners(
-          official, fetcher_fetch_url, before_fetch, after_fetch, before_parse, log))
+        supplemented = self.supplement_official_winners(
+          official, fetcher_fetch_url, before_fetch, after_fetch, before_parse, log)
+        return self.with_match_series(with_supplement_state(self, official, supplemented))
       official_error = 'Libraries ACT parsed result did not contain usable entries.'
+    except (ImportCancelledError, CamoufoxRequiredError):
+      raise
     except Exception as err:
       official_error = str(err) or err.__class__.__name__
       if source_choice in {0, '0'} or disable_fallbacks:
@@ -93,13 +115,16 @@ class UrlFetcherACTBookOfTheYearAward(UrlFetcherGeneric):
       wikipedia['notes'] = [f'Libraries ACT failed: {official_error}'] + list(
         wikipedia.get('notes', ()))
       return wikipedia
+    except (ImportCancelledError, CamoufoxRequiredError):
+      raise
     except Exception as err:
       wikipedia_error = str(err) or err.__class__.__name__
       raise UrlFetcherError(
         'Could not fetch or parse the imported list.\n\nTried:\n- '
         f'Libraries ACT failed: {official_error}\n- Wikipedia failed: {wikipedia_error}')
 
-  def fetch_parse_official(self, fetch_url, before_fetch, after_fetch, before_parse):
+  def fetch_parse_official(self, fetch_url, before_fetch, after_fetch, before_parse,
+      cached_parsed=None, incremental_update=False):
     if before_fetch is not None:
       before_fetch(self.URL)
     html = fetch_url(self.URL)
@@ -107,11 +132,10 @@ class UrlFetcherACTBookOfTheYearAward(UrlFetcherGeneric):
       after_fetch(self.URL, html)
     if before_parse is not None:
       before_parse(self.URL)
-    parsed = self.create_official_parser().parse(
-      html,
-      self.URL,
-      self.NAME,
-      fetch_url=fetch_url)
+    if soup_for(html).find(id='main') is not None:
+      parsed = fetch_act_official(self, self.parser(), html, fetch_url, cached_parsed, incremental_update)
+    else:
+      parsed = self.parser().parse(html, self.URL, self.NAME, fetch_url=fetch_url)
     if not parsed.get('entries'):
       raise ValueError('parsed result did not contain usable entries')
     return self.with_match_series(parsed)
@@ -137,6 +161,8 @@ class UrlFetcherACTBookOfTheYearAward(UrlFetcherGeneric):
     try:
       wikipedia = self.fetch_parse_wikipedia(
         fetch_url, before_fetch, after_fetch, before_parse)
+    except (ImportCancelledError, CamoufoxRequiredError):
+      raise
     except Exception as err:
       note = f'Wikipedia winner supplement failed: {err}'
       official['notes'] = list(official.get('notes', ())) + [note]

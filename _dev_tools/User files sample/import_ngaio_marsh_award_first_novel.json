@@ -1,0 +1,551 @@
+{
+  "append_state": {
+    "entry_count": 48,
+    "last_entry_key": "kiss of death|stephen tester",
+    "last_position": "2025.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Ray Berard"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2016",
+      "category": "First Novel",
+      "position": "2016",
+      "result": "winner",
+      "title": "Inside the Black Horse"
+    },
+    {
+      "authors": [
+        "John Daniell"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2016",
+      "category": "First Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "The Fixer"
+    },
+    {
+      "authors": [
+        "Jen Shieff"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2016",
+      "category": "First Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "The Gentlemen\u2019s Club"
+    },
+    {
+      "authors": [
+        "Jane Woodham"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2016",
+      "category": "First Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Twister"
+    },
+    {
+      "authors": [
+        "Finn Bell"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017",
+      "result": "winner",
+      "title": "Dead Lemons"
+    },
+    {
+      "authors": [
+        "Jonothan Cullinane"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Red Herring"
+    },
+    {
+      "authors": [
+        "Gordon Ell"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "The Ice Shroud"
+    },
+    {
+      "authors": [
+        "Simon Wyatt"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "The Student Body"
+    },
+    {
+      "authors": [
+        "Sue Younger"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2017",
+      "category": "First Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Days Are Like Grass"
+    },
+    {
+      "authors": [
+        "Jennifer Lane"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "All Our Secrets"
+    },
+    {
+      "authors": [
+        "Carolyn Hawes"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "The Floating Basin"
+    },
+    {
+      "authors": [
+        "Helen Vivienne Fletcher"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Broken Silence"
+    },
+    {
+      "authors": [
+        "Nathan Blackwell"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "The Sound of Her Voice"
+    },
+    {
+      "authors": [
+        "Nikki Crutchley"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2018",
+      "category": "First Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "Nothing Bad Happens Here"
+    },
+    {
+      "authors": [
+        "J. P. Pomare"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2019",
+      "category": "First Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "Call Me Evie"
+    },
+    {
+      "authors": [
+        "Andrea Jacka"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2019",
+      "category": "First Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "One for Another"
+    },
+    {
+      "authors": [
+        "Kelly Lyndon"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2019",
+      "category": "First Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Crystal Reign"
+    },
+    {
+      "authors": [
+        "R. W. R. McDonald"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2020",
+      "category": "First Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Nancys"
+    },
+    {
+      "authors": [
+        "Christina O\u2019Reilly"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2020",
+      "category": "First Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "Into the Void"
+    },
+    {
+      "authors": [
+        "Stephen Johnson"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2020",
+      "category": "First Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Tugga\u2019s Mob"
+    },
+    {
+      "authors": [
+        "Becky Manawatu"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2020",
+      "category": "First Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "Au\u0113"
+    },
+    {
+      "authors": [
+        "Chris Stuart"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "For Reasons of Their Own"
+    },
+    {
+      "authors": [
+        "Rose Carlyle"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "The Girl in the Mirror"
+    },
+    {
+      "authors": [
+        "Kim Hunt"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "The Beautiful Dead"
+    },
+    {
+      "authors": [
+        "Karina Kilmore"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Where the Truth Lies"
+    },
+    {
+      "authors": [
+        "Alan Titchall"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2021",
+      "category": "First Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "While the Fantail Lives"
+    },
+    {
+      "authors": [
+        "Jacqueline Bublitz"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "Before You Knew My Name"
+    },
+    {
+      "authors": [
+        "Suzanne Frankham"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Shadow Over Edmund Street"
+    },
+    {
+      "authors": [
+        "Angelique Kasmara"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Isobar Precinct"
+    },
+    {
+      "authors": [
+        "Mark Wightman"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Waking the Tiger"
+    },
+    {
+      "authors": [
+        "Matt Zwartz"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2022",
+      "category": "First Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Small Mouth Demon"
+    },
+    {
+      "authors": [
+        "Michael Bennett"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2023",
+      "category": "First Novel",
+      "position": "2023",
+      "result": "winner",
+      "title": "Better the Blood"
+    },
+    {
+      "authors": [
+        "Tom Baragwanath"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2023",
+      "category": "First Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Paper Cage"
+    },
+    {
+      "authors": [
+        "Riley Chance"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2023",
+      "category": "First Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "Surveillance"
+    },
+    {
+      "authors": [
+        "Simon Lendrum"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2023",
+      "category": "First Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "The Slow Roll"
+    },
+    {
+      "authors": [
+        "Alistair Luke"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2023",
+      "category": "First Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "One Heart One Spade"
+    },
+    {
+      "authors": [
+        "Bede Scott"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2023",
+      "category": "First Novel",
+      "position": "2023.05",
+      "result": "nominee",
+      "title": "Too Far From Antibes"
+    },
+    {
+      "authors": [
+        "Claire Baylis"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "Dice"
+    },
+    {
+      "authors": [
+        "Nick Davies"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "El Flamingo"
+    },
+    {
+      "authors": [
+        "Jill Johnson"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Devil's Breath"
+    },
+    {
+      "authors": [
+        "Cristian Kelly"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "A Better Class of Criminal"
+    },
+    {
+      "authors": [
+        "Simon Rowe"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "First Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Mama Suzuki : Private Eye"
+    },
+    {
+      "authors": [
+        "Wendy Parkins"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "The Defiance of Frances Dickinson"
+    },
+    {
+      "authors": [
+        "Marie Connolly"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Dark Sky"
+    },
+    {
+      "authors": [
+        "Syd Knight"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "Lie Down with Dogs"
+    },
+    {
+      "authors": [
+        "William McCartney"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "A Fly Under the Radar"
+    },
+    {
+      "authors": [
+        "Gavin Strawhan"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "The Call"
+    },
+    {
+      "authors": [
+        "Stephen Tester"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2025",
+      "category": "First Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "title": "Kiss of Death"
+    }
+  ],
+  "fetched_at": "2026-07-19T06:59:10Z",
+  "list_id": "ngaio_marsh_award_first_novel",
+  "list_name": "Ngaio Marsh Award - First Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "ngaio_marsh_award_first_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Ngaio Marsh Award - First Novel",
+    "source_id": "ngaio_marsh_award_first_novel",
+    "url": "https://en.wikipedia.org/wiki/Ngaio_Marsh_Awards"
+  }
+}

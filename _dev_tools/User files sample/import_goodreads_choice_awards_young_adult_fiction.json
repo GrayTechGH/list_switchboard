@@ -1,0 +1,5108 @@
+{
+  "append_state": {
+    "entry_count": 299,
+    "last_entry_key": "wish you were her|elle mcnicoll",
+    "last_position": "2025.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Gayle Forman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Where She Went",
+      "votes": "4221"
+    },
+    {
+      "authors": [
+        "Stephanie Perkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Lola and the Boy Next Door",
+      "votes": "3352"
+    },
+    {
+      "authors": [
+        "Sarah Dessen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "What Happened to Goodbye",
+      "votes": "3181"
+    },
+    {
+      "authors": [
+        "Libba Bray"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Beauty Queens",
+      "votes": "2941"
+    },
+    {
+      "authors": [
+        "Simone Elkeles"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Chain Reaction",
+      "votes": "2657"
+    },
+    {
+      "authors": [
+        "Ruta Sepetys"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Between Shades of Gray",
+      "votes": "2337"
+    },
+    {
+      "authors": [
+        "Maureen Johnson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "The Last Little Blue Envelope",
+      "votes": "2325"
+    },
+    {
+      "authors": [
+        "Lauren Myracle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Shine",
+      "votes": "2295"
+    },
+    {
+      "authors": [
+        "Ally Carter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Uncommon Criminals",
+      "votes": "2254"
+    },
+    {
+      "authors": [
+        "Sara Shepard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Twisted",
+      "votes": "1700"
+    },
+    {
+      "authors": [
+        "Ellen Hopkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Perfect",
+      "votes": "890"
+    },
+    {
+      "authors": [
+        "Jenny Han"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "We'll Always Have Summer",
+      "votes": "753"
+    },
+    {
+      "authors": [
+        "Jamie McGuire"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Beautiful Disaster",
+      "votes": "486"
+    },
+    {
+      "authors": [
+        "Jennifer Echols"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Love Story",
+      "votes": "410"
+    },
+    {
+      "authors": [
+        "Katie Klein"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Cross My Heart",
+      "votes": "262"
+    },
+    {
+      "authors": [
+        "E. Lockhart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Real Live Boyfriends",
+      "votes": "258"
+    },
+    {
+      "authors": [
+        "Heather Cocks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Spoiled",
+      "votes": "231"
+    },
+    {
+      "authors": [
+        "Wendelin Van Draanen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "The Running Dream",
+      "votes": "176"
+    },
+    {
+      "authors": [
+        "Rebecca Donovan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Reason to Breathe",
+      "votes": "130"
+    },
+    {
+      "authors": [
+        "Jessica Park"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Young Adult Fiction",
+      "position": "2011.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2011"
+      },
+      "title": "Flat-Out Love",
+      "votes": "125"
+    },
+    {
+      "authors": [
+        "John Green"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "The Fault in Our Stars",
+      "votes": "37438"
+    },
+    {
+      "authors": [
+        "Tammara Webber"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "Easy",
+      "votes": "8890"
+    },
+    {
+      "authors": [
+        "Colleen Hoover"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "Slammed",
+      "votes": "6495"
+    },
+    {
+      "authors": [
+        "Ally Carter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "Out of Sight, Out of Time",
+      "votes": "5620"
+    },
+    {
+      "authors": [
+        "Katie McGarry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "Pushing the Limits",
+      "votes": "4013"
+    },
+    {
+      "authors": [
+        "Elizabeth Wein"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "Code Name Verity",
+      "votes": "3513"
+    },
+    {
+      "authors": [
+        "Jennifer E. Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "The Statistical Probability of Love at First Sight",
+      "votes": "3061"
+    },
+    {
+      "authors": [
+        "Huntley Fitzpatrick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "My Life Next Door",
+      "votes": "2388"
+    },
+    {
+      "authors": [
+        "Kirsty Moseley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "The Boy Who Sneaks in My Bedroom Window",
+      "votes": "2274"
+    },
+    {
+      "authors": [
+        "Miranda Kenneally"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "Catching Jordan",
+      "votes": "1417"
+    },
+    {
+      "authors": [
+        "Nicole Williams"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "Crash",
+      "votes": "1285"
+    },
+    {
+      "authors": [
+        "Abbi Glines"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "The Vincent Brothers",
+      "votes": "967"
+    },
+    {
+      "authors": [
+        "Patricia McCormick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "Never Fall Down",
+      "votes": "775"
+    },
+    {
+      "authors": [
+        "Abbi Glines"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "Because of Low",
+      "votes": "766"
+    },
+    {
+      "authors": [
+        "Katja Millay"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "The Sea of Tranquility",
+      "votes": "650"
+    },
+    {
+      "authors": [
+        "Barry Lyga"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "I Hunt Killers",
+      "votes": "379"
+    },
+    {
+      "authors": [
+        "Ellen Hopkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "Tilt",
+      "votes": "276"
+    },
+    {
+      "authors": [
+        "Emily M. Danforth"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "The Miseducation of Cameron Post",
+      "votes": "196"
+    },
+    {
+      "authors": [
+        "Trish Doller"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Young Adult Fiction",
+      "position": "2012.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2012"
+      },
+      "title": "Something like Normal",
+      "votes": "161"
+    },
+    {
+      "authors": [
+        "Rainbow Rowell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "Eleanor & Park",
+      "votes": "21818"
+    },
+    {
+      "authors": [
+        "Rainbow Rowell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "Fangirl",
+      "votes": "17124"
+    },
+    {
+      "authors": [
+        "Katie McGarry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "Dare You To",
+      "votes": "16230"
+    },
+    {
+      "authors": [
+        "Ally Carter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "United We Spy",
+      "votes": "7640"
+    },
+    {
+      "authors": [
+        "Sarah Dessen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "The Moon and More",
+      "votes": "7482"
+    },
+    {
+      "authors": [
+        "Gayle Forman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "Just One Day",
+      "votes": "7109"
+    },
+    {
+      "authors": [
+        "David Levithan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "Two Boys Kissing",
+      "votes": "7003"
+    },
+    {
+      "authors": [
+        "Ruta Sepetys"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "Out of the Easy",
+      "votes": "5867"
+    },
+    {
+      "authors": [
+        "Sara Shepard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "Ali's Pretty Little Lies",
+      "votes": "5632"
+    },
+    {
+      "authors": [
+        "Ally Carter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "Perfect Scoundrels",
+      "votes": "5538"
+    },
+    {
+      "authors": [
+        "Emily Murdoch"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "If You Find Me",
+      "votes": "2565"
+    },
+    {
+      "authors": [
+        "Jennifer E. Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "This Is What Happy Looks Like",
+      "votes": "2236"
+    },
+    {
+      "authors": [
+        "Kasie West"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "The Distance Between Us",
+      "votes": "2066"
+    },
+    {
+      "authors": [
+        "Barry Lyga"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "Game",
+      "votes": "1828"
+    },
+    {
+      "authors": [
+        "Elizabeth Wein"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "Rose Under Fire",
+      "votes": "1511"
+    },
+    {
+      "authors": [
+        "Simone Elkeles"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "Wild Cards",
+      "votes": "869"
+    },
+    {
+      "authors": [
+        "Matthew Quick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "Forgive Me, Leonard Peacock",
+      "votes": "587"
+    },
+    {
+      "authors": [
+        "Robyn Schneider"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "The Beginning of Everything",
+      "votes": "435"
+    },
+    {
+      "authors": [
+        "Trish Doller"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "Where the Stars Still Shine",
+      "votes": "326"
+    },
+    {
+      "authors": [
+        "Jessi Kirby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Young Adult Fiction",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2013"
+      },
+      "title": "Golden",
+      "votes": "324"
+    },
+    {
+      "authors": [
+        "E. Lockhart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "We Were Liars",
+      "votes": "33943"
+    },
+    {
+      "authors": [
+        "Stephanie Perkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "Isla and the Happily Ever After",
+      "votes": "20352"
+    },
+    {
+      "authors": [
+        "Lauren Oliver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "Panic",
+      "votes": "16713"
+    },
+    {
+      "authors": [
+        "Jenny Han"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "To All the Boys I've Loved Before",
+      "votes": "14638"
+    },
+    {
+      "authors": [
+        "Katie McGarry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "Take Me On",
+      "votes": "13660"
+    },
+    {
+      "authors": [
+        "Ava Dellaira"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "Love Letters to the Dead",
+      "votes": "13510"
+    },
+    {
+      "authors": [
+        "Jennifer L. Armentrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "Don't Look Back",
+      "votes": "12635"
+    },
+    {
+      "authors": [
+        "Laurie Halse Anderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "The Impossible Knife of Memory",
+      "votes": "10011"
+    },
+    {
+      "authors": [
+        "Jandy Nelson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "I'll Give You the Sun",
+      "votes": "9958"
+    },
+    {
+      "authors": [
+        "Morgan Matson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "Since You've Been Gone",
+      "votes": "9314"
+    },
+    {
+      "authors": [
+        "Jessica Park"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "Flat-Out Celeste",
+      "votes": "4997"
+    },
+    {
+      "authors": [
+        "Ali Novak"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "My Life with the Walter Boys",
+      "votes": "3981"
+    },
+    {
+      "authors": [
+        "Elizabeth Eulberg"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "Better Off Friends",
+      "votes": "3858"
+    },
+    {
+      "authors": [
+        "Kasie West"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "On the Fence",
+      "votes": "3173"
+    },
+    {
+      "authors": [
+        "Robin Talley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "Lies We Tell Ourselves",
+      "votes": "2435"
+    },
+    {
+      "authors": [
+        "Jennifer E. Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "The Geography of You and Me",
+      "votes": "1952"
+    },
+    {
+      "authors": [
+        "Amber L. Johnson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "Puddle Jumping",
+      "votes": "1439"
+    },
+    {
+      "authors": [
+        "Ellen Hopkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "Rumble",
+      "votes": "1140"
+    },
+    {
+      "authors": [
+        "Amy Zhang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "Falling into Place",
+      "votes": "953"
+    },
+    {
+      "authors": [
+        "Nina LaCour"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Young Adult Fiction",
+      "position": "2014.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2014"
+      },
+      "title": "Everything Leads to You",
+      "votes": "806"
+    },
+    {
+      "authors": [
+        "Jennifer Niven"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "All the Bright Places",
+      "votes": "31978"
+    },
+    {
+      "authors": [
+        "Jenny Han"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "P.S. I Still Love You",
+      "votes": "26274"
+    },
+    {
+      "authors": [
+        "Sarah Dessen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "Saint Anything",
+      "votes": "16217"
+    },
+    {
+      "authors": [
+        "Gayle Forman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "I Was Here",
+      "votes": "16186"
+    },
+    {
+      "authors": [
+        "Becky Albertalli"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "Simon vs. the Homo Sapiens Agenda",
+      "votes": "15100"
+    },
+    {
+      "authors": [
+        "Nicola Yoon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "Everything, Everything",
+      "votes": "11542"
+    },
+    {
+      "authors": [
+        "Sophie Kinsella"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "Finding Audrey",
+      "votes": "10109"
+    },
+    {
+      "authors": [
+        "Katie McGarry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "Nowhere But Here",
+      "votes": "8493"
+    },
+    {
+      "authors": [
+        "Ginger Scott"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "Wild Reckless",
+      "votes": "7977"
+    },
+    {
+      "authors": [
+        "David Arnold"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "Mosquitoland",
+      "votes": "7498"
+    },
+    {
+      "authors": [
+        "Jasmine Warga"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "My Heart and Other Black Holes",
+      "votes": "3764"
+    },
+    {
+      "authors": [
+        "Francesca Zappia"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "Made You Up",
+      "votes": "3653"
+    },
+    {
+      "authors": [
+        "Abbi Glines"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "Until Friday Night",
+      "votes": "3009"
+    },
+    {
+      "authors": [
+        "Heather Demetrios"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "I'll Meet You There",
+      "votes": "2972"
+    },
+    {
+      "authors": [
+        "Tamara Ireland Stone"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "Every Last Word",
+      "votes": "2907"
+    },
+    {
+      "authors": [
+        "Cynthia Hand"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "The Last Time We Say Goodbye",
+      "votes": "2701"
+    },
+    {
+      "authors": [
+        "Adam Silvera"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "More Happy Than Not",
+      "votes": "2537"
+    },
+    {
+      "authors": [
+        "Julie Murphy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "Dumplin",
+      "votes": "2471"
+    },
+    {
+      "authors": [
+        "Kasie West"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "The Fill-In Boyfriend",
+      "votes": "1983"
+    },
+    {
+      "authors": [
+        "Courtney Summers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Young Adult Fiction",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2015"
+      },
+      "title": "All the Rage",
+      "votes": "1446"
+    },
+    {
+      "authors": [
+        "Ruta Sepetys"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "Salt to the Sea",
+      "votes": "29122"
+    },
+    {
+      "authors": [
+        "Jennifer L. Armentrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "The Problem with Forever",
+      "votes": "20168"
+    },
+    {
+      "authors": [
+        "Nicola Yoon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "The Sun Is Also a Star",
+      "votes": "16780"
+    },
+    {
+      "authors": [
+        "Tillie Cole"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "A Thousand Boy Kisses",
+      "votes": "16261"
+    },
+    {
+      "authors": [
+        "Morgan Matson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "The Unexpected Everything",
+      "votes": "16209"
+    },
+    {
+      "authors": [
+        "Marieke Nijkamp"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "This Is Where It Ends",
+      "votes": "15983"
+    },
+    {
+      "authors": [
+        "Kasie West"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "P.S. I Like You",
+      "votes": "13754"
+    },
+    {
+      "authors": [
+        "Brittany Cavallaro"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "A Study in Charlotte",
+      "votes": "11144"
+    },
+    {
+      "authors": [
+        "Jennifer Niven"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "Holding Up the Universe",
+      "votes": "8857"
+    },
+    {
+      "authors": [
+        "Meredith Russo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "If I Was Your Girl",
+      "votes": "8066"
+    },
+    {
+      "authors": [
+        "Jeff Zentner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "The Serpent King",
+      "votes": "4956"
+    },
+    {
+      "authors": [
+        "Amber Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "The Way I Used to Be",
+      "votes": "3885"
+    },
+    {
+      "authors": [
+        "Jeff Garvin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "Symptoms of Being Human",
+      "votes": "3872"
+    },
+    {
+      "authors": [
+        "Jenna Evans Welch"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "Love & Gelato",
+      "votes": "3628"
+    },
+    {
+      "authors": [
+        "Julie Buxbaum"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "Tell Me Three Things",
+      "votes": "3519"
+    },
+    {
+      "authors": [
+        "Katie McGarry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "Walk the Edge",
+      "votes": "3470"
+    },
+    {
+      "authors": [
+        "Emery Lord"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "When We Collided",
+      "votes": "3193"
+    },
+    {
+      "authors": [
+        "Mindy McGinnis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "The Female of the Species",
+      "votes": "1747"
+    },
+    {
+      "authors": [
+        "C.L. Stone"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "First Kiss",
+      "votes": "1426"
+    },
+    {
+      "authors": [
+        "Catherine Doyle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Young Adult Fiction",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2016"
+      },
+      "title": "Inferno",
+      "votes": "715"
+    },
+    {
+      "authors": [
+        "Angie Thomas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "The Hate U Give",
+      "votes": "59571"
+    },
+    {
+      "authors": [
+        "John Green"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "Turtles All the Way Down",
+      "votes": "52517"
+    },
+    {
+      "authors": [
+        "Karen M. McManus"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "One of Us Is Lying",
+      "votes": "21394"
+    },
+    {
+      "authors": [
+        "Mackenzi Lee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "The Gentleman's Guide to Vice and Virtue",
+      "votes": "20990"
+    },
+    {
+      "authors": [
+        "Jenny Han"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "Always and Forever, Lara Jean",
+      "votes": "19487"
+    },
+    {
+      "authors": [
+        "Ashley Poston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "Geekerella",
+      "votes": "15150"
+    },
+    {
+      "authors": [
+        "Francesca Zappia"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "Eliza and Her Monsters",
+      "votes": "12173"
+    },
+    {
+      "authors": [
+        "Sarah Dessen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "Once and for All",
+      "votes": "11334"
+    },
+    {
+      "authors": [
+        "Sandhya Menon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "When Dimple Met Rishi",
+      "votes": "9036"
+    },
+    {
+      "authors": [
+        "Kasie West"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "By Your Side",
+      "votes": "8395"
+    },
+    {
+      "authors": [
+        "Becky Albertalli"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "The Upside of Unrequited",
+      "votes": "4248"
+    },
+    {
+      "authors": [
+        "Adam Silvera"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "History Is All You Left Me",
+      "votes": "4161"
+    },
+    {
+      "authors": [
+        "Benjamin Alire S\u00e1enz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "The Inexplicable Logic of My Life",
+      "votes": "4142"
+    },
+    {
+      "authors": [
+        "Robin Roe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "A List of Cages",
+      "votes": "2895"
+    },
+    {
+      "authors": [
+        "Adam Silvera"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "They Both Die at the End",
+      "votes": "2398"
+    },
+    {
+      "authors": [
+        "Chris Colfer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "Stranger Than Fanfiction",
+      "votes": "1855"
+    },
+    {
+      "authors": [
+        "Nina LaCour"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "We Are Okay",
+      "votes": "1604"
+    },
+    {
+      "authors": [
+        "Jeff Zentner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "Goodbye Days",
+      "votes": "1433"
+    },
+    {
+      "authors": [
+        "Christina Lauren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "Autoboyography",
+      "votes": "1286"
+    },
+    {
+      "authors": [
+        "Jennifer Mathieu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Young Adult Fiction",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2017"
+      },
+      "title": "Moxie",
+      "votes": "1053"
+    },
+    {
+      "authors": [
+        "Becky Albertalli"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "Leah on the Offbeat",
+      "votes": "24880"
+    },
+    {
+      "authors": [
+        "Courtney Summers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "Sadie",
+      "votes": "21528"
+    },
+    {
+      "authors": [
+        "Becky Albertalli"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "What If It's Us",
+      "votes": "19464"
+    },
+    {
+      "authors": [
+        "Jamie McGuire"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "All the Little Lights",
+      "votes": "18186"
+    },
+    {
+      "authors": [
+        "Mackenzi Lee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "The Lady's Guide to Petticoats and Piracy",
+      "votes": "17769"
+    },
+    {
+      "authors": [
+        "Emily X.R. Pan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "The Astonishing Color of After",
+      "votes": "17685"
+    },
+    {
+      "authors": [
+        "Morgan Matson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "Save the Date",
+      "votes": "14860"
+    },
+    {
+      "authors": [
+        "Maureen Johnson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "Truly, Devious",
+      "votes": "13684"
+    },
+    {
+      "authors": [
+        "Julie Murphy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "Puddin",
+      "votes": "13410"
+    },
+    {
+      "authors": [
+        "Mary H.K. Choi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "Emergency Contact",
+      "votes": "9891"
+    },
+    {
+      "authors": [
+        "Kasie West"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "Love, Life, and the List",
+      "votes": "4758"
+    },
+    {
+      "authors": [
+        "Claire Kann"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "Let's Talk About Love",
+      "votes": "4376"
+    },
+    {
+      "authors": [
+        "Jenn Bennett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "Starry Eyes",
+      "votes": "4140"
+    },
+    {
+      "authors": [
+        "Kara Thomas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "The Cheerleaders",
+      "votes": "3897"
+    },
+    {
+      "authors": [
+        "Brittany Cavallaro"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "The Case for Jamie",
+      "votes": "3664"
+    },
+    {
+      "authors": [
+        "Samira Ahmed"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "Love, Hate & Other Filters",
+      "votes": "3637"
+    },
+    {
+      "authors": [
+        "Tahereh Mafi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "A Very Large Expanse of Sea",
+      "votes": "3454"
+    },
+    {
+      "authors": [
+        "Jay Coles"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "Tyler Johnson Was Here",
+      "votes": "2345"
+    },
+    {
+      "authors": [
+        "Alice Oseman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "I Was Born for This",
+      "votes": "2210"
+    },
+    {
+      "authors": [
+        "Sarina Bowen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Young Adult Fiction",
+      "position": "2018.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2018"
+      },
+      "title": "The Accidentals",
+      "votes": "1738"
+    },
+    {
+      "authors": [
+        "Rachael Lippincott"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "Five Feet Apart",
+      "votes": "36232"
+    },
+    {
+      "authors": [
+        "Angie Thomas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "On the Come Up",
+      "votes": "34932"
+    },
+    {
+      "authors": [
+        "Elizabeth Acevedo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "With the Fire on High",
+      "votes": "23010"
+    },
+    {
+      "authors": [
+        "Karen M. McManus"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "Two Can Keep a Secret",
+      "votes": "21419"
+    },
+    {
+      "authors": [
+        "Ruta Sepetys"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "The Fountains of Silence",
+      "votes": "20415"
+    },
+    {
+      "authors": [
+        "Christine Riccio"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "Again, But Better",
+      "votes": "20395"
+    },
+    {
+      "authors": [
+        "Mason Deaver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "I Wish You All the Best",
+      "votes": "16048"
+    },
+    {
+      "authors": [
+        "Maureen Johnson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "The Vanishing Stair",
+      "votes": "15030"
+    },
+    {
+      "authors": [
+        "Katharine McGee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "American Royals",
+      "votes": "14322"
+    },
+    {
+      "authors": [
+        "Sarah Dessen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "The Rest of the Story",
+      "votes": "11979"
+    },
+    {
+      "authors": [
+        "Kerri Maniscalco"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "Capturing the Devil",
+      "votes": "5815"
+    },
+    {
+      "authors": [
+        "Samira Ahmed"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "Internment",
+      "votes": "4874"
+    },
+    {
+      "authors": [
+        "Ashley Poston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "The Princess and the Fangirl",
+      "votes": "4657"
+    },
+    {
+      "authors": [
+        "David Yoon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "Frankly in Love",
+      "votes": "4538"
+    },
+    {
+      "authors": [
+        "Jenn Bennett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "Serious Moonlight",
+      "votes": "3060"
+    },
+    {
+      "authors": [
+        "Justin A. Reynolds"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "Opposite of Always",
+      "votes": "2876"
+    },
+    {
+      "authors": [
+        "Kim Liggett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "The Grace Year",
+      "votes": "1958"
+    },
+    {
+      "authors": [
+        "Julie Berry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "Lovely War",
+      "votes": "1707"
+    },
+    {
+      "authors": [
+        "S.K. Ali"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "Love from A to Z",
+      "votes": "1464"
+    },
+    {
+      "authors": [
+        "Meredith Russo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Young Adult Fiction",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2019"
+      },
+      "title": "Birthday",
+      "votes": "1264"
+    },
+    {
+      "authors": [
+        "Elizabeth Acevedo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "Clap When You Land",
+      "votes": "39335"
+    },
+    {
+      "authors": [
+        "Holly Jackson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "A Good Girl's Guide to Murder",
+      "votes": "36285"
+    },
+    {
+      "authors": [
+        "Karen M. McManus"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "One of Us Is Next",
+      "votes": "34540"
+    },
+    {
+      "authors": [
+        "Kacen Callender"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "Felix Ever After",
+      "votes": "24077"
+    },
+    {
+      "authors": [
+        "Leah Johnson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "You Should See Me in a Crown",
+      "votes": "22779"
+    },
+    {
+      "authors": [
+        "Jennifer Lynn Barnes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "The Inheritance Games",
+      "votes": "20639"
+    },
+    {
+      "authors": [
+        "Maureen Johnson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "The Hand on the Wall",
+      "votes": "18985"
+    },
+    {
+      "authors": [
+        "Katharine McGee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "Majesty",
+      "votes": "18887"
+    },
+    {
+      "authors": [
+        "Emma Lord"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "Tweet Cute",
+      "votes": "18184"
+    },
+    {
+      "authors": [
+        "Phil Stamper"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "The Gravity of Us",
+      "votes": "15185"
+    },
+    {
+      "authors": [
+        "Tiffany D. Jackson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "Grown",
+      "votes": "6837"
+    },
+    {
+      "authors": [
+        "Becky Albertalli"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "Yes No Maybe So",
+      "votes": "6494"
+    },
+    {
+      "authors": [
+        "Adiba Jaigirdar"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "The Henna Wars",
+      "votes": "4547"
+    },
+    {
+      "authors": [
+        "Sophie Gonzales"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "Only Mostly Devastated",
+      "votes": "3998"
+    },
+    {
+      "authors": [
+        "Ibi Zoboi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "Punching the Air",
+      "votes": "3956"
+    },
+    {
+      "authors": [
+        "Kim Johnson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "This Is My America",
+      "votes": "1913"
+    },
+    {
+      "authors": [
+        "Rachel Lynn Solomon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "Today Tonight Tomorrow",
+      "votes": "1251"
+    },
+    {
+      "authors": [
+        "Adib Khorram"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "Darius the Great Deserves Better",
+      "votes": "1007"
+    },
+    {
+      "authors": [
+        "Yamile Saied M\u00e9ndez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "Furia",
+      "votes": "953"
+    },
+    {
+      "authors": [
+        "Heather Buchta"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Young Adult Fiction",
+      "position": "2020.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020"
+      },
+      "title": "Beyond the Break",
+      "votes": "771"
+    },
+    {
+      "authors": [
+        "Angeline Boulley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "Firekeeper's Daughter",
+      "votes": "35648"
+    },
+    {
+      "authors": [
+        "Jennifer Lynn Barnes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "The Hawthorne Legacy",
+      "votes": "33974"
+    },
+    {
+      "authors": [
+        "Faridah \u00c0b\u00edk\u00e9-\u00cdy\u00edm\u00edd\u00e9"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "Ace of Spades",
+      "votes": "33442"
+    },
+    {
+      "authors": [
+        "Benjamin Alire S\u00e1enz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "Aristotle and Dante Dive into the Waters of the World",
+      "votes": "32298"
+    },
+    {
+      "authors": [
+        "Angie Thomas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "Concrete Rose",
+      "votes": "24346"
+    },
+    {
+      "authors": [
+        "Holly Jackson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "As Good As Dead",
+      "votes": "23624"
+    },
+    {
+      "authors": [
+        "Karen M. McManus"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "The Cousins",
+      "votes": "22394"
+    },
+    {
+      "authors": [
+        "Malinda Lo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "Last Night at the Telegraph Club",
+      "votes": "18241"
+    },
+    {
+      "authors": [
+        "Nicola Yoon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "Instructions for Dancing",
+      "votes": "17685"
+    },
+    {
+      "authors": [
+        "Maureen Johnson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "The Box in the Woods",
+      "votes": "13148"
+    },
+    {
+      "authors": [
+        "Emiko Jean"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "Tokyo Ever After",
+      "votes": "5526"
+    },
+    {
+      "authors": [
+        "Kelly Quindlen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "She Drives Me Crazy",
+      "votes": "4966"
+    },
+    {
+      "authors": [
+        "Loan Le"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "A Pho Love Story",
+      "votes": "4463"
+    },
+    {
+      "authors": [
+        "Mary H.K. Choi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "Yolk",
+      "votes": "4463"
+    },
+    {
+      "authors": [
+        "Emma Lord"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "You Have a Match",
+      "votes": "4143"
+    },
+    {
+      "authors": [
+        "Adiba Jaigirdar"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "Hani and Ishu's Guide to Fake Dating",
+      "votes": "3769"
+    },
+    {
+      "authors": [
+        "Tess Sharpe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "The Girls I've Been",
+      "votes": "3584"
+    },
+    {
+      "authors": [
+        "Sophie Gonzales"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "Perfect on Paper",
+      "votes": "3290"
+    },
+    {
+      "authors": [
+        "Tashie Bhuiyan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "Counting Down with You",
+      "votes": "3071"
+    },
+    {
+      "authors": [
+        "Courtney Summers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Young Adult Fiction",
+      "position": "2021.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2021"
+      },
+      "title": "The Project",
+      "votes": "2478"
+    },
+    {
+      "authors": [
+        "Jennifer Lynn Barnes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "The Final Gambit",
+      "votes": "72606"
+    },
+    {
+      "authors": [
+        "Alice Oseman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "Loveless",
+      "votes": "41878"
+    },
+    {
+      "authors": [
+        "Casey McQuiston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "I Kissed Shara Wheeler",
+      "votes": "30724"
+    },
+    {
+      "authors": [
+        "Adam Silvera"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "The First to Die at the End",
+      "votes": "28871"
+    },
+    {
+      "authors": [
+        "Ruta Sepetys"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "I Must Betray You",
+      "votes": "26919"
+    },
+    {
+      "authors": [
+        "Dana Schwartz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "Anatomy",
+      "votes": "26504"
+    },
+    {
+      "authors": [
+        "Sabaa Tahir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "All My Rage",
+      "votes": "23683"
+    },
+    {
+      "authors": [
+        "Lancali"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "I Fell in Love With Hope",
+      "votes": "22486"
+    },
+    {
+      "authors": [
+        "E. Lockhart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "Family of Liars",
+      "votes": "22296"
+    },
+    {
+      "authors": [
+        "Sonora Reyes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "The Lesbiana's Guide to Catholic School",
+      "votes": "17123"
+    },
+    {
+      "authors": [
+        "Zoulfa Katouh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "As Long as the Lemon Trees Grow",
+      "votes": "5750"
+    },
+    {
+      "authors": [
+        "Tiffany D. Jackson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "The Weight of Blood",
+      "votes": "5448"
+    },
+    {
+      "authors": [
+        "Karen M. McManus"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "You'll Be the Death of Me",
+      "votes": "5344"
+    },
+    {
+      "authors": [
+        "Rachael Lippincott"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "She Gets the Girl",
+      "votes": "5274"
+    },
+    {
+      "authors": [
+        "Andrew Joseph White"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "Hell Followed With Us",
+      "votes": "4337"
+    },
+    {
+      "authors": [
+        "Rachel Lynn Solomon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "See You Yesterday",
+      "votes": "4275"
+    },
+    {
+      "authors": [
+        "Alexene Farol Follmuth"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "My Mechanical Romance",
+      "votes": "3892"
+    },
+    {
+      "authors": [
+        "Karen M. McManus"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "Nothing More to Tell",
+      "votes": "3830"
+    },
+    {
+      "authors": [
+        "Racquel Marie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "Ophelia After All",
+      "votes": "2165"
+    },
+    {
+      "authors": [
+        "Tashie Bhuiyan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Young Adult Fiction",
+      "position": "2022.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2022"
+      },
+      "title": "A Show for Two",
+      "votes": "1272"
+    },
+    {
+      "authors": [
+        "Ali Hazelwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "Check & Mate",
+      "votes": "68736"
+    },
+    {
+      "authors": [
+        "Jennifer Lynn Barnes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "The Brothers Hawthorne",
+      "votes": "65748"
+    },
+    {
+      "authors": [
+        "Holly Jackson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "Five Survive",
+      "votes": "57736"
+    },
+    {
+      "authors": [
+        "Karen M. McManus"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "One of Us Is Back",
+      "votes": "28037"
+    },
+    {
+      "authors": [
+        "Dana Schwartz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "Immortality",
+      "votes": "23765"
+    },
+    {
+      "authors": [
+        "Talia Hibbert"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "Highly Suspicious and Unfairly Cute",
+      "votes": "22755"
+    },
+    {
+      "authors": [
+        "Angeline Boulley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "Warrior Girl Unearthed",
+      "votes": "20401"
+    },
+    {
+      "authors": [
+        "Becky Albertalli"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "Imogen, Obviously",
+      "votes": "17288"
+    },
+    {
+      "authors": [
+        "Krystal Marquis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "The Davenports",
+      "votes": "15401"
+    },
+    {
+      "authors": [
+        "Katharine McGee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "Reign",
+      "votes": "12821"
+    },
+    {
+      "authors": [
+        "Jas Hammonds"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "We Deserve Monuments",
+      "votes": "5943"
+    },
+    {
+      "authors": [
+        "Maureen Johnson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "Nine Liars",
+      "votes": "5728"
+    },
+    {
+      "authors": [
+        "Sophie Gonzales"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "Never Ever Getting Back Together",
+      "votes": "4661"
+    },
+    {
+      "authors": [
+        "Rachael Lippincott"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "Pride and Prejudice and Pittsburgh",
+      "votes": "3968"
+    },
+    {
+      "authors": [
+        "K.L. Walther"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "What Happens After Midnight",
+      "votes": "3794"
+    },
+    {
+      "authors": [
+        "Skyla Arndt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "Together We Rot",
+      "votes": "3682"
+    },
+    {
+      "authors": [
+        "Ann Liang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "This Time It's Real",
+      "votes": "3435"
+    },
+    {
+      "authors": [
+        "Kayvion Lewis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "Thieves' Gambit",
+      "votes": "2804"
+    },
+    {
+      "authors": [
+        "Alyson Derrick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "Forget Me Not",
+      "votes": "2719"
+    },
+    {
+      "authors": [
+        "Lauren Mu\u00f1oz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Young Adult Fiction",
+      "position": "2023.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2023"
+      },
+      "title": "Suddenly a Murder",
+      "votes": "1861"
+    },
+    {
+      "authors": [
+        "Alice Oseman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "Heartstopper: Volume Five",
+      "votes": "81335"
+    },
+    {
+      "authors": [
+        "Holly Jackson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "The Reappearance of Rachel Price",
+      "votes": "56071"
+    },
+    {
+      "authors": [
+        "Lynn Painter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "Nothing Like the Movies",
+      "votes": "38241"
+    },
+    {
+      "authors": [
+        "Jennifer Lynn Barnes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "The Grandest Game",
+      "votes": "34710"
+    },
+    {
+      "authors": [
+        "Laura Nowlin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "If Only I Had Told Her",
+      "votes": "28990"
+    },
+    {
+      "authors": [
+        "Lynn Painter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "Betting on You",
+      "votes": "25253"
+    },
+    {
+      "authors": [
+        "Faridah \u00c0b\u00edk\u00e9-\u00cdy\u00edm\u00edd\u00e9"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "Where Sleeping Girls Lie",
+      "votes": "24048"
+    },
+    {
+      "authors": [
+        "Megan Lally"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "That's Not My Name",
+      "votes": "21617"
+    },
+    {
+      "authors": [
+        "Tillie Cole"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "A Thousand Broken Pieces",
+      "votes": "21254"
+    },
+    {
+      "authors": [
+        "Lex Croucher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "Gwen & Art Are Not in Love",
+      "votes": "17830"
+    },
+    {
+      "authors": [
+        "Kristy Boyce"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "Dungeons and Drama",
+      "votes": "7510"
+    },
+    {
+      "authors": [
+        "Ann Liang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "I Hope This Doesn't Find You",
+      "votes": "7381"
+    },
+    {
+      "authors": [
+        "June Hur"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "A Crane Among Wolves",
+      "votes": "6249"
+    },
+    {
+      "authors": [
+        "Gabe Cole Novoa"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "Most Ardently",
+      "votes": "5615"
+    },
+    {
+      "authors": [
+        "K. Ancrum"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "Icarus",
+      "votes": "4111"
+    },
+    {
+      "authors": [
+        "Maureen Johnson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "Death at Morning House",
+      "votes": "3894"
+    },
+    {
+      "authors": [
+        "Jandy Nelson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "When the World Tips Over",
+      "votes": "3028"
+    },
+    {
+      "authors": [
+        "Trinity Nguyen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "A B\u00e1nh M\u00ec for Two",
+      "votes": "2610"
+    },
+    {
+      "authors": [
+        "Diana Urban"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "Under the Surface",
+      "votes": "1616"
+    },
+    {
+      "authors": [
+        "Jas Hammonds"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Young Adult Fiction",
+      "position": "2024.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2024"
+      },
+      "title": "Thirsty",
+      "votes": "946"
+    },
+    {
+      "authors": [
+        "Lynn Painter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "Fake Skating",
+      "votes": "46319"
+    },
+    {
+      "authors": [
+        "Jennifer Lynn Barnes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "Glorious Rivals",
+      "votes": "33821"
+    },
+    {
+      "authors": [
+        "Kristy Boyce"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "Dating and Dragons",
+      "votes": "28917"
+    },
+    {
+      "authors": [
+        "Misty Wilson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "Falling Like Leaves",
+      "votes": "28799"
+    },
+    {
+      "authors": [
+        "E. Lockhart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "We Fell Apart",
+      "votes": "28784"
+    },
+    {
+      "authors": [
+        "Adam Silvera"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "The Survivor Wants to Die at the End",
+      "votes": "23177"
+    },
+    {
+      "authors": [
+        "Ann Liang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "I Am Not Jessica Chen",
+      "votes": "22758"
+    },
+    {
+      "authors": [
+        "Sophie Gonzales"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "Nobody in Particular",
+      "votes": "20022"
+    },
+    {
+      "authors": [
+        "Dustin Thao"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "You've Found Oliver",
+      "votes": "16127"
+    },
+    {
+      "authors": [
+        "Julie Soto"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "The Thrashers",
+      "votes": "16025"
+    },
+    {
+      "authors": [
+        "Angeline Boulley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "Sisters in the Wind",
+      "votes": "7056"
+    },
+    {
+      "authors": [
+        "Page Powars"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "And They Were Roommates",
+      "votes": "6459"
+    },
+    {
+      "authors": [
+        "Libba Bray"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "Under the Same Stars",
+      "votes": "6337"
+    },
+    {
+      "authors": [
+        "Xan Kaur"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "When Devils Sing",
+      "votes": "5432"
+    },
+    {
+      "authors": [
+        "Tiffany D. Jackson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "The Scammer",
+      "votes": "5187"
+    },
+    {
+      "authors": [
+        "Tia Williams"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "Audre & Bash Are Just Friends",
+      "votes": "3873"
+    },
+    {
+      "authors": [
+        "K.L. Walther"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "A First Time for Everything",
+      "votes": "3703"
+    },
+    {
+      "authors": [
+        "Channelle Desamours"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "Needy Little Things",
+      "votes": "3143"
+    },
+    {
+      "authors": [
+        "Jenna Voris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "Say a Little Prayer",
+      "votes": "2691"
+    },
+    {
+      "authors": [
+        "Elle McNicoll"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Young Adult Fiction",
+      "position": "2025.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-ya-fiction-books-2025"
+      },
+      "title": "Wish You Were Her",
+      "votes": "1953"
+    }
+  ],
+  "fetched_at": "2026-07-28T04:39:59Z",
+  "list_id": "goodreads_choice_awards_young_adult_fiction",
+  "list_name": "Goodreads Choice Awards - Young Adult Fiction",
+  "match_series": false,
+  "notes": [
+    "Goodreads contributor enrichment stopped after an access challenge; 20 newest-year rows retained ballot credits."
+  ],
+  "parser": "goodreads_choice_awards_young_adult_fiction",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Young Adult Fiction",
+    "source_id": "goodreads_choice_awards_young_adult_fiction",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

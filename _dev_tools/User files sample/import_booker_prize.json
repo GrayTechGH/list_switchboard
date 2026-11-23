@@ -1,0 +1,3754 @@
+{
+  "append_state": {
+    "entry_count": 339,
+    "last_entry_key": "the land in winter|andrew miller",
+    "last_position": "2025.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "P. H. Newby"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1969",
+      "category": "Fiction",
+      "position": "1969",
+      "result": "winner",
+      "title": "Something to Answer For"
+    },
+    {
+      "authors": [
+        "Barry England"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1969",
+      "category": "Fiction",
+      "position": "1969.01",
+      "result": "shortlisted",
+      "title": "Figures in a Landscape"
+    },
+    {
+      "authors": [
+        "Nicholas Mosley"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1969",
+      "category": "Fiction",
+      "position": "1969.02",
+      "result": "shortlisted",
+      "title": "Impossible Object"
+    },
+    {
+      "authors": [
+        "Iris Murdoch"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1969",
+      "category": "Fiction",
+      "position": "1969.03",
+      "result": "shortlisted",
+      "title": "The Nice and the Good"
+    },
+    {
+      "authors": [
+        "Muriel Spark"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1969",
+      "category": "Fiction",
+      "position": "1969.04",
+      "result": "shortlisted",
+      "title": "The Public Image"
+    },
+    {
+      "authors": [
+        "Gordon Williams"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1969",
+      "category": "Fiction",
+      "position": "1969.05",
+      "result": "shortlisted",
+      "title": "From Scenes like These"
+    },
+    {
+      "authors": [
+        "Bernice Rubens"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1970",
+      "category": "Fiction",
+      "position": "1970",
+      "result": "winner",
+      "title": "The Elected Member"
+    },
+    {
+      "authors": [
+        "J. G. Farrell"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1970",
+      "category": "Fiction",
+      "position": "1970",
+      "result": "winner",
+      "title": "Troubles"
+    },
+    {
+      "authors": [
+        "A. L. Barker"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1970",
+      "category": "Fiction",
+      "position": "1970.01",
+      "result": "shortlisted",
+      "title": "John Brown's Body"
+    },
+    {
+      "authors": [
+        "Elizabeth Bowen"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1970",
+      "category": "Fiction",
+      "position": "1970.02",
+      "result": "shortlisted",
+      "title": "Eva Trout"
+    },
+    {
+      "authors": [
+        "Iris Murdoch"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1970",
+      "category": "Fiction",
+      "position": "1970.03",
+      "result": "shortlisted",
+      "title": "Bruno's Dream"
+    },
+    {
+      "authors": [
+        "William Trevor"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1970",
+      "category": "Fiction",
+      "position": "1970.04",
+      "result": "shortlisted",
+      "title": "Mrs. Eckdorf in O'Neill's Hotel"
+    },
+    {
+      "authors": [
+        "Terence Wheeler"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1970",
+      "category": "Fiction",
+      "position": "1970.05",
+      "result": "shortlisted",
+      "title": "The Conjunction"
+    },
+    {
+      "authors": [
+        "Nina Bawden"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1970",
+      "category": "Fiction",
+      "position": "1970.06",
+      "result": "shortlisted",
+      "title": "The Birds on the Trees"
+    },
+    {
+      "authors": [
+        "Shirley Hazzard"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1970",
+      "category": "Fiction",
+      "position": "1970.07",
+      "result": "shortlisted",
+      "title": "The Bay of Noon"
+    },
+    {
+      "authors": [
+        "Mary Renault"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1970",
+      "category": "Fiction",
+      "position": "1970.08",
+      "result": "shortlisted",
+      "title": "Fire from Heaven"
+    },
+    {
+      "authors": [
+        "Muriel Spark"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1970",
+      "category": "Fiction",
+      "position": "1970.09",
+      "result": "shortlisted",
+      "title": "The Driver's Seat"
+    },
+    {
+      "authors": [
+        "Patrick White"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1970",
+      "category": "Fiction",
+      "position": "1970.10",
+      "result": "shortlisted",
+      "title": "The Vivisector"
+    },
+    {
+      "authors": [
+        "V. S. Naipaul"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1971",
+      "category": "Fiction",
+      "position": "1971",
+      "result": "winner",
+      "title": "In a Free State"
+    },
+    {
+      "authors": [
+        "Thomas Kilroy"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1971",
+      "category": "Fiction",
+      "position": "1971.01",
+      "result": "shortlisted",
+      "title": "The Big Chapel"
+    },
+    {
+      "authors": [
+        "Doris Lessing"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1971",
+      "category": "Fiction",
+      "position": "1971.02",
+      "result": "shortlisted",
+      "title": "Briefing for a Descent into Hell"
+    },
+    {
+      "authors": [
+        "Mordecai Richler"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1971",
+      "category": "Fiction",
+      "position": "1971.03",
+      "result": "shortlisted",
+      "title": "St. Urbain's Horseman"
+    },
+    {
+      "authors": [
+        "Derek Robinson"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1971",
+      "category": "Fiction",
+      "position": "1971.04",
+      "result": "shortlisted",
+      "title": "Goshawk Squadron"
+    },
+    {
+      "authors": [
+        "Elizabeth Taylor"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1971",
+      "category": "Fiction",
+      "position": "1971.05",
+      "result": "shortlisted",
+      "title": "Mrs. Palfrey at the Claremont"
+    },
+    {
+      "authors": [
+        "John Berger"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1972",
+      "category": "Fiction",
+      "position": "1972",
+      "result": "winner",
+      "title": "G."
+    },
+    {
+      "authors": [
+        "Susan Hill"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1972",
+      "category": "Fiction",
+      "position": "1972.01",
+      "result": "shortlisted",
+      "title": "The Bird of Night"
+    },
+    {
+      "authors": [
+        "Thomas Keneally"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1972",
+      "category": "Fiction",
+      "position": "1972.02",
+      "result": "shortlisted",
+      "title": "The Chant of Jimmie Blacksmith"
+    },
+    {
+      "authors": [
+        "David Storey"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1972",
+      "category": "Fiction",
+      "position": "1972.03",
+      "result": "shortlisted",
+      "title": "Pasmore"
+    },
+    {
+      "authors": [
+        "J. G. Farrell"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1973",
+      "category": "Fiction",
+      "position": "1973",
+      "result": "winner",
+      "title": "The Siege of Krishnapur"
+    },
+    {
+      "authors": [
+        "Beryl Bainbridge"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1973",
+      "category": "Fiction",
+      "position": "1973.01",
+      "result": "shortlisted",
+      "title": "The Dressmaker"
+    },
+    {
+      "authors": [
+        "Elizabeth Mavor"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1973",
+      "category": "Fiction",
+      "position": "1973.02",
+      "result": "shortlisted",
+      "title": "A Green Equinox"
+    },
+    {
+      "authors": [
+        "Iris Murdoch"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1973",
+      "category": "Fiction",
+      "position": "1973.03",
+      "result": "shortlisted",
+      "title": "The Black Prince"
+    },
+    {
+      "authors": [
+        "Nadine Gordimer"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1974",
+      "category": "Fiction",
+      "position": "1974",
+      "result": "winner",
+      "title": "The Conservationist"
+    },
+    {
+      "authors": [
+        "Stanley Middleton"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1974",
+      "category": "Fiction",
+      "position": "1974",
+      "result": "winner",
+      "title": "Holiday"
+    },
+    {
+      "authors": [
+        "Kingsley Amis"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1974",
+      "category": "Fiction",
+      "position": "1974.01",
+      "result": "shortlisted",
+      "title": "Ending Up"
+    },
+    {
+      "authors": [
+        "Beryl Bainbridge"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1974",
+      "category": "Fiction",
+      "position": "1974.02",
+      "result": "shortlisted",
+      "title": "The Bottle Factory Outing"
+    },
+    {
+      "authors": [
+        "C. P. Snow"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1974",
+      "category": "Fiction",
+      "position": "1974.03",
+      "result": "shortlisted",
+      "title": "In Their Wisdom"
+    },
+    {
+      "authors": [
+        "Ruth Prawer Jhabvala"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1975",
+      "category": "Fiction",
+      "position": "1975",
+      "result": "winner",
+      "title": "Heat and Dust"
+    },
+    {
+      "authors": [
+        "Thomas Keneally"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1975",
+      "category": "Fiction",
+      "position": "1975.01",
+      "result": "shortlisted",
+      "title": "Gossip from the Forest"
+    },
+    {
+      "authors": [
+        "David Storey"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1976",
+      "category": "Fiction",
+      "position": "1976",
+      "result": "winner",
+      "title": "Saville"
+    },
+    {
+      "authors": [
+        "Andr\u00e9 Brink"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1976",
+      "category": "Fiction",
+      "position": "1976.01",
+      "result": "shortlisted",
+      "title": "An Instant in the Wind"
+    },
+    {
+      "authors": [
+        "R. C. Hutchinson"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1976",
+      "category": "Fiction",
+      "position": "1976.02",
+      "result": "shortlisted",
+      "title": "Rising"
+    },
+    {
+      "authors": [
+        "Brian Moore"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1976",
+      "category": "Fiction",
+      "position": "1976.03",
+      "result": "shortlisted",
+      "title": "The Doctor's Wife"
+    },
+    {
+      "authors": [
+        "Julian Rathbone"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1976",
+      "category": "Fiction",
+      "position": "1976.04",
+      "result": "shortlisted",
+      "title": "King Fisher Lives"
+    },
+    {
+      "authors": [
+        "William Trevor"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1976",
+      "category": "Fiction",
+      "position": "1976.05",
+      "result": "shortlisted",
+      "title": "The Children of Dynmouth"
+    },
+    {
+      "authors": [
+        "Paul Scott"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1977",
+      "category": "Fiction",
+      "position": "1977",
+      "result": "winner",
+      "title": "Staying On"
+    },
+    {
+      "authors": [
+        "Paul Bailey"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1977",
+      "category": "Fiction",
+      "position": "1977.01",
+      "result": "shortlisted",
+      "title": "Peter Smart's Confessions"
+    },
+    {
+      "authors": [
+        "Caroline Blackwood"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1977",
+      "category": "Fiction",
+      "position": "1977.02",
+      "result": "shortlisted",
+      "title": "Great Granny Webster"
+    },
+    {
+      "authors": [
+        "Jennifer Johnston"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1977",
+      "category": "Fiction",
+      "position": "1977.03",
+      "result": "shortlisted",
+      "title": "Shadows on Our Skin"
+    },
+    {
+      "authors": [
+        "Penelope Lively"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1977",
+      "category": "Fiction",
+      "position": "1977.04",
+      "result": "shortlisted",
+      "title": "The Road to Lichfield"
+    },
+    {
+      "authors": [
+        "Barbara Pym"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1977",
+      "category": "Fiction",
+      "position": "1977.05",
+      "result": "shortlisted",
+      "title": "Quartet in Autumn"
+    },
+    {
+      "authors": [
+        "Iris Murdoch"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1978",
+      "category": "Fiction",
+      "position": "1978",
+      "result": "winner",
+      "title": "The Sea, the Sea"
+    },
+    {
+      "authors": [
+        "Kingsley Amis"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1978",
+      "category": "Fiction",
+      "position": "1978.01",
+      "result": "shortlisted",
+      "title": "Jake's Thing"
+    },
+    {
+      "authors": [
+        "Andr\u00e9 Brink"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1978",
+      "category": "Fiction",
+      "position": "1978.02",
+      "result": "shortlisted",
+      "title": "Rumours of Rain"
+    },
+    {
+      "authors": [
+        "Penelope Fitzgerald"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1978",
+      "category": "Fiction",
+      "position": "1978.03",
+      "result": "shortlisted",
+      "title": "The Bookshop"
+    },
+    {
+      "authors": [
+        "Jane Gardam"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1978",
+      "category": "Fiction",
+      "position": "1978.04",
+      "result": "shortlisted",
+      "title": "God on the Rocks"
+    },
+    {
+      "authors": [
+        "Bernice Rubens"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1978",
+      "category": "Fiction",
+      "position": "1978.05",
+      "result": "shortlisted",
+      "title": "A Five-Year Sentence"
+    },
+    {
+      "authors": [
+        "Penelope Fitzgerald"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1979",
+      "category": "Fiction",
+      "position": "1979",
+      "result": "winner",
+      "title": "Offshore"
+    },
+    {
+      "authors": [
+        "Thomas Keneally"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1979",
+      "category": "Fiction",
+      "position": "1979.01",
+      "result": "shortlisted",
+      "title": "Confederates"
+    },
+    {
+      "authors": [
+        "V. S. Naipaul"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1979",
+      "category": "Fiction",
+      "position": "1979.02",
+      "result": "shortlisted",
+      "title": "A Bend in the River"
+    },
+    {
+      "authors": [
+        "Julian Rathbone"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1979",
+      "category": "Fiction",
+      "position": "1979.03",
+      "result": "shortlisted",
+      "title": "Joseph"
+    },
+    {
+      "authors": [
+        "Fay Weldon"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1979",
+      "category": "Fiction",
+      "position": "1979.04",
+      "result": "shortlisted",
+      "title": "Praxis"
+    },
+    {
+      "authors": [
+        "William Golding"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1980",
+      "category": "Fiction",
+      "position": "1980",
+      "result": "winner",
+      "title": "Rites of Passage"
+    },
+    {
+      "authors": [
+        "Anthony Burgess"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1980",
+      "category": "Fiction",
+      "position": "1980.01",
+      "result": "shortlisted",
+      "title": "Earthly Powers"
+    },
+    {
+      "authors": [
+        "J. L. Carr"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1980",
+      "category": "Fiction",
+      "position": "1980.02",
+      "result": "shortlisted",
+      "title": "A Month in the Country"
+    },
+    {
+      "authors": [
+        "Anita Desai"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1980",
+      "category": "Fiction",
+      "position": "1980.03",
+      "result": "shortlisted",
+      "title": "Clear Light of Day"
+    },
+    {
+      "authors": [
+        "Alice Munro"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1980",
+      "category": "Fiction",
+      "position": "1980.04",
+      "result": "shortlisted",
+      "title": "The Beggar Maid"
+    },
+    {
+      "authors": [
+        "Julia O'Faolain"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1980",
+      "category": "Fiction",
+      "position": "1980.05",
+      "result": "shortlisted",
+      "title": "No Country for Young Men"
+    },
+    {
+      "authors": [
+        "Barry Unsworth"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1980",
+      "category": "Fiction",
+      "position": "1980.06",
+      "result": "shortlisted",
+      "title": "Pascali's Island"
+    },
+    {
+      "authors": [
+        "Salman Rushdie"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1981",
+      "category": "Fiction",
+      "position": "1981",
+      "result": "winner",
+      "title": "Midnight's Children"
+    },
+    {
+      "authors": [
+        "Molly Keane"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1981",
+      "category": "Fiction",
+      "position": "1981.01",
+      "result": "shortlisted",
+      "title": "Good Behaviour"
+    },
+    {
+      "authors": [
+        "Doris Lessing"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1981",
+      "category": "Fiction",
+      "position": "1981.02",
+      "result": "shortlisted",
+      "title": "The Sirian Experiments"
+    },
+    {
+      "authors": [
+        "Ian McEwan"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1981",
+      "category": "Fiction",
+      "position": "1981.03",
+      "result": "shortlisted",
+      "title": "The Comfort of Strangers"
+    },
+    {
+      "authors": [
+        "Ann Schlee"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1981",
+      "category": "Fiction",
+      "position": "1981.04",
+      "result": "shortlisted",
+      "title": "Rhine Journey"
+    },
+    {
+      "authors": [
+        "Muriel Spark"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1981",
+      "category": "Fiction",
+      "position": "1981.05",
+      "result": "shortlisted",
+      "title": "Loitering with Intent"
+    },
+    {
+      "authors": [
+        "D. M. Thomas"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1981",
+      "category": "Fiction",
+      "position": "1981.06",
+      "result": "shortlisted",
+      "title": "The White Hotel"
+    },
+    {
+      "authors": [
+        "Thomas Keneally"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1982",
+      "category": "Fiction",
+      "position": "1982",
+      "result": "winner",
+      "title": "Schindler's Ark"
+    },
+    {
+      "authors": [
+        "John Arden"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1982",
+      "category": "Fiction",
+      "position": "1982.01",
+      "result": "shortlisted",
+      "title": "Silence among the Weapons"
+    },
+    {
+      "authors": [
+        "William Boyd"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1982",
+      "category": "Fiction",
+      "position": "1982.02",
+      "result": "shortlisted",
+      "title": "An Ice-Cream War"
+    },
+    {
+      "authors": [
+        "Lawrence Durrell"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1982",
+      "category": "Fiction",
+      "position": "1982.03",
+      "result": "shortlisted",
+      "title": "Constance or Solitary Practices"
+    },
+    {
+      "authors": [
+        "Alice Thomas Ellis"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1982",
+      "category": "Fiction",
+      "position": "1982.04",
+      "result": "shortlisted",
+      "title": "The 27th Kingdom"
+    },
+    {
+      "authors": [
+        "Timothy Mo"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1982",
+      "category": "Fiction",
+      "position": "1982.05",
+      "result": "shortlisted",
+      "title": "Sour Sweet"
+    },
+    {
+      "authors": [
+        "J. M. Coetzee"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1983",
+      "category": "Fiction",
+      "position": "1983",
+      "result": "winner",
+      "title": "Life and Times of Michael K"
+    },
+    {
+      "authors": [
+        "Malcolm Bradbury"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1983",
+      "category": "Fiction",
+      "position": "1983.01",
+      "result": "shortlisted",
+      "title": "Rates of Exchange"
+    },
+    {
+      "authors": [
+        "John Fuller"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1983",
+      "category": "Fiction",
+      "position": "1983.02",
+      "result": "shortlisted",
+      "title": "Flying to Nowhere"
+    },
+    {
+      "authors": [
+        "Anita Mason"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1983",
+      "category": "Fiction",
+      "position": "1983.03",
+      "result": "shortlisted",
+      "title": "The Illusionist"
+    },
+    {
+      "authors": [
+        "Salman Rushdie"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1983",
+      "category": "Fiction",
+      "position": "1983.04",
+      "result": "shortlisted",
+      "title": "Shame"
+    },
+    {
+      "authors": [
+        "Graham Swift"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1983",
+      "category": "Fiction",
+      "position": "1983.05",
+      "result": "shortlisted",
+      "title": "Waterland"
+    },
+    {
+      "authors": [
+        "Anita Brookner"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1984",
+      "category": "Fiction",
+      "position": "1984",
+      "result": "winner",
+      "title": "Hotel du Lac"
+    },
+    {
+      "authors": [
+        "J. G. Ballard"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1984",
+      "category": "Fiction",
+      "position": "1984.01",
+      "result": "shortlisted",
+      "title": "Empire of the Sun"
+    },
+    {
+      "authors": [
+        "Julian Barnes"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1984",
+      "category": "Fiction",
+      "position": "1984.02",
+      "result": "shortlisted",
+      "title": "Flaubert's Parrot"
+    },
+    {
+      "authors": [
+        "Anita Desai"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1984",
+      "category": "Fiction",
+      "position": "1984.03",
+      "result": "shortlisted",
+      "title": "In Custody"
+    },
+    {
+      "authors": [
+        "Penelope Lively"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1984",
+      "category": "Fiction",
+      "position": "1984.04",
+      "result": "shortlisted",
+      "title": "According to Mark"
+    },
+    {
+      "authors": [
+        "David Lodge"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1984",
+      "category": "Fiction",
+      "position": "1984.05",
+      "result": "shortlisted",
+      "title": "Small World"
+    },
+    {
+      "authors": [
+        "Keri Hulme"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1985",
+      "category": "Fiction",
+      "position": "1985",
+      "result": "winner",
+      "title": "The Bone People"
+    },
+    {
+      "authors": [
+        "Peter Carey"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1985",
+      "category": "Fiction",
+      "position": "1985.01",
+      "result": "shortlisted",
+      "title": "Illywhacker"
+    },
+    {
+      "authors": [
+        "J. L. Carr"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1985",
+      "category": "Fiction",
+      "position": "1985.02",
+      "result": "shortlisted",
+      "title": "The Battle of Pollocks Crossing"
+    },
+    {
+      "authors": [
+        "Doris Lessing"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1985",
+      "category": "Fiction",
+      "position": "1985.03",
+      "result": "shortlisted",
+      "title": "The Good Terrorist"
+    },
+    {
+      "authors": [
+        "Jan Morris"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1985",
+      "category": "Fiction",
+      "position": "1985.04",
+      "result": "shortlisted",
+      "title": "Last Letters from Hav"
+    },
+    {
+      "authors": [
+        "Iris Murdoch"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1985",
+      "category": "Fiction",
+      "position": "1985.05",
+      "result": "shortlisted",
+      "title": "The Good Apprentice"
+    },
+    {
+      "authors": [
+        "Kingsley Amis"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1986",
+      "category": "Fiction",
+      "position": "1986",
+      "result": "winner",
+      "title": "The Old Devils"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1986",
+      "category": "Fiction",
+      "position": "1986.01",
+      "result": "shortlisted",
+      "title": "The Handmaid's Tale"
+    },
+    {
+      "authors": [
+        "Paul Bailey"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1986",
+      "category": "Fiction",
+      "position": "1986.02",
+      "result": "shortlisted",
+      "title": "Gabriel's Lament"
+    },
+    {
+      "authors": [
+        "Robertson Davies"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1986",
+      "category": "Fiction",
+      "position": "1986.03",
+      "result": "shortlisted",
+      "title": "What's Bred in the Bone"
+    },
+    {
+      "authors": [
+        "Kazuo Ishiguro"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1986",
+      "category": "Fiction",
+      "position": "1986.04",
+      "result": "shortlisted",
+      "title": "An Artist of the Floating World"
+    },
+    {
+      "authors": [
+        "Timothy Mo"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1986",
+      "category": "Fiction",
+      "position": "1986.05",
+      "result": "shortlisted",
+      "title": "An Insular Possession"
+    },
+    {
+      "authors": [
+        "Penelope Lively"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1987",
+      "category": "Fiction",
+      "position": "1987",
+      "result": "winner",
+      "title": "Moon Tiger"
+    },
+    {
+      "authors": [
+        "Chinua Achebe"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1987",
+      "category": "Fiction",
+      "position": "1987.01",
+      "result": "shortlisted",
+      "title": "Anthills of the Savannah"
+    },
+    {
+      "authors": [
+        "Peter Ackroyd"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1987",
+      "category": "Fiction",
+      "position": "1987.02",
+      "result": "shortlisted",
+      "title": "Chatterton"
+    },
+    {
+      "authors": [
+        "Nina Bawden"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1987",
+      "category": "Fiction",
+      "position": "1987.03",
+      "result": "shortlisted",
+      "title": "Circles of Deceit"
+    },
+    {
+      "authors": [
+        "Brian Moore"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1987",
+      "category": "Fiction",
+      "position": "1987.04",
+      "result": "shortlisted",
+      "title": "The Colour of Blood"
+    },
+    {
+      "authors": [
+        "Iris Murdoch"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1987",
+      "category": "Fiction",
+      "position": "1987.05",
+      "result": "shortlisted",
+      "title": "The Book and the Brotherhood"
+    },
+    {
+      "authors": [
+        "Peter Carey"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1988",
+      "category": "Fiction",
+      "position": "1988",
+      "result": "winner",
+      "title": "Oscar and Lucinda"
+    },
+    {
+      "authors": [
+        "Bruce Chatwin"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1988",
+      "category": "Fiction",
+      "position": "1988.01",
+      "result": "shortlisted",
+      "title": "Utz"
+    },
+    {
+      "authors": [
+        "Penelope Fitzgerald"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1988",
+      "category": "Fiction",
+      "position": "1988.02",
+      "result": "shortlisted",
+      "title": "The Beginning of Spring"
+    },
+    {
+      "authors": [
+        "David Lodge"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1988",
+      "category": "Fiction",
+      "position": "1988.03",
+      "result": "shortlisted",
+      "title": "Nice Work"
+    },
+    {
+      "authors": [
+        "Salman Rushdie"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1988",
+      "category": "Fiction",
+      "position": "1988.04",
+      "result": "shortlisted",
+      "title": "The Satanic Verses"
+    },
+    {
+      "authors": [
+        "Marina Warner"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1988",
+      "category": "Fiction",
+      "position": "1988.05",
+      "result": "shortlisted",
+      "title": "The Lost Father"
+    },
+    {
+      "authors": [
+        "Kazuo Ishiguro"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1989",
+      "category": "Fiction",
+      "position": "1989",
+      "result": "winner",
+      "title": "The Remains of the Day"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1989",
+      "category": "Fiction",
+      "position": "1989.01",
+      "result": "shortlisted",
+      "title": "Cat's Eye"
+    },
+    {
+      "authors": [
+        "John Banville"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1989",
+      "category": "Fiction",
+      "position": "1989.02",
+      "result": "shortlisted",
+      "title": "The Book of Evidence"
+    },
+    {
+      "authors": [
+        "Sybille Bedford"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1989",
+      "category": "Fiction",
+      "position": "1989.03",
+      "result": "shortlisted",
+      "title": "Jigsaw"
+    },
+    {
+      "authors": [
+        "James Kelman"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1989",
+      "category": "Fiction",
+      "position": "1989.04",
+      "result": "shortlisted",
+      "title": "A Disaffection"
+    },
+    {
+      "authors": [
+        "Rose Tremain"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1989",
+      "category": "Fiction",
+      "position": "1989.05",
+      "result": "shortlisted",
+      "title": "Restoration"
+    },
+    {
+      "authors": [
+        "A. S. Byatt"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1990",
+      "category": "Fiction",
+      "position": "1990",
+      "result": "winner",
+      "title": "Possession: A Romance"
+    },
+    {
+      "authors": [
+        "Beryl Bainbridge"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1990",
+      "category": "Fiction",
+      "position": "1990.01",
+      "result": "shortlisted",
+      "title": "An Awfully Big Adventure"
+    },
+    {
+      "authors": [
+        "Penelope Fitzgerald"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1990",
+      "category": "Fiction",
+      "position": "1990.02",
+      "result": "shortlisted",
+      "title": "The Gate of Angels"
+    },
+    {
+      "authors": [
+        "John McGahern"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1990",
+      "category": "Fiction",
+      "position": "1990.03",
+      "result": "shortlisted",
+      "title": "Amongst Women"
+    },
+    {
+      "authors": [
+        "Brian Moore"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1990",
+      "category": "Fiction",
+      "position": "1990.04",
+      "result": "shortlisted",
+      "title": "Lies of Silence"
+    },
+    {
+      "authors": [
+        "Mordecai Richler"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1990",
+      "category": "Fiction",
+      "position": "1990.05",
+      "result": "shortlisted",
+      "title": "Solomon Gursky Was Here"
+    },
+    {
+      "authors": [
+        "Ben Okri"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1991",
+      "category": "Fiction",
+      "position": "1991",
+      "result": "winner",
+      "title": "The Famished Road"
+    },
+    {
+      "authors": [
+        "Martin Amis"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1991",
+      "category": "Fiction",
+      "position": "1991.01",
+      "result": "shortlisted",
+      "title": "Time's Arrow"
+    },
+    {
+      "authors": [
+        "Roddy Doyle"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1991",
+      "category": "Fiction",
+      "position": "1991.02",
+      "result": "shortlisted",
+      "title": "The Van"
+    },
+    {
+      "authors": [
+        "Rohinton Mistry"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1991",
+      "category": "Fiction",
+      "position": "1991.03",
+      "result": "shortlisted",
+      "title": "Such a Long Journey"
+    },
+    {
+      "authors": [
+        "Timothy Mo"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1991",
+      "category": "Fiction",
+      "position": "1991.04",
+      "result": "shortlisted",
+      "title": "The Redundancy of Courage"
+    },
+    {
+      "authors": [
+        "William Trevor"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1991",
+      "category": "Fiction",
+      "position": "1991.05",
+      "result": "shortlisted",
+      "title": "Reading Turgenev"
+    },
+    {
+      "authors": [
+        "Michael Ondaatje"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1992",
+      "category": "Fiction",
+      "position": "1992",
+      "result": "winner",
+      "title": "The English Patient"
+    },
+    {
+      "authors": [
+        "Barry Unsworth"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1992",
+      "category": "Fiction",
+      "position": "1992",
+      "result": "winner",
+      "title": "Sacred Hunger"
+    },
+    {
+      "authors": [
+        "Christopher Hope"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1992",
+      "category": "Fiction",
+      "position": "1992.01",
+      "result": "shortlisted",
+      "title": "Serenity House"
+    },
+    {
+      "authors": [
+        "Patrick McCabe"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1992",
+      "category": "Fiction",
+      "position": "1992.02",
+      "result": "shortlisted",
+      "title": "The Butcher Boy"
+    },
+    {
+      "authors": [
+        "Ian McEwan"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1992",
+      "category": "Fiction",
+      "position": "1992.03",
+      "result": "shortlisted",
+      "title": "Black Dogs"
+    },
+    {
+      "authors": [
+        "Mich\u00e8le Roberts"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1992",
+      "category": "Fiction",
+      "position": "1992.04",
+      "result": "shortlisted",
+      "title": "Daughters of the House"
+    },
+    {
+      "authors": [
+        "Roddy Doyle"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1993",
+      "category": "Fiction",
+      "position": "1993",
+      "result": "winner",
+      "title": "Paddy Clarke Ha Ha Ha"
+    },
+    {
+      "authors": [
+        "Tibor Fischer"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1993",
+      "category": "Fiction",
+      "position": "1993.01",
+      "result": "shortlisted",
+      "title": "Under the Frog"
+    },
+    {
+      "authors": [
+        "Michael Ignatieff"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1993",
+      "category": "Fiction",
+      "position": "1993.02",
+      "result": "shortlisted",
+      "title": "Scar Tissue"
+    },
+    {
+      "authors": [
+        "David Malouf"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1993",
+      "category": "Fiction",
+      "position": "1993.03",
+      "result": "shortlisted",
+      "title": "Remembering Babylon"
+    },
+    {
+      "authors": [
+        "Caryl Phillips"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1993",
+      "category": "Fiction",
+      "position": "1993.04",
+      "result": "shortlisted",
+      "title": "Crossing the River"
+    },
+    {
+      "authors": [
+        "Carol Shields"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1993",
+      "category": "Fiction",
+      "position": "1993.05",
+      "result": "shortlisted",
+      "title": "The Stone Diaries"
+    },
+    {
+      "authors": [
+        "James Kelman"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1994",
+      "category": "Fiction",
+      "position": "1994",
+      "result": "winner",
+      "title": "How Late It Was, How Late"
+    },
+    {
+      "authors": [
+        "Romesh Gunesekera"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1994",
+      "category": "Fiction",
+      "position": "1994.01",
+      "result": "shortlisted",
+      "title": "Reef"
+    },
+    {
+      "authors": [
+        "Abdulrazak Gurnah"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1994",
+      "category": "Fiction",
+      "position": "1994.02",
+      "result": "shortlisted",
+      "title": "Paradise"
+    },
+    {
+      "authors": [
+        "Alan Hollinghurst"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1994",
+      "category": "Fiction",
+      "position": "1994.03",
+      "result": "shortlisted",
+      "title": "The Folding Star"
+    },
+    {
+      "authors": [
+        "George Mackay Brown"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1994",
+      "category": "Fiction",
+      "position": "1994.04",
+      "result": "shortlisted",
+      "title": "Beside the Ocean of Time"
+    },
+    {
+      "authors": [
+        "Jill Paton Walsh"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1994",
+      "category": "Fiction",
+      "position": "1994.05",
+      "result": "shortlisted",
+      "title": "Knowledge of Angels"
+    },
+    {
+      "authors": [
+        "Pat Barker"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1995",
+      "category": "Fiction",
+      "position": "1995",
+      "result": "winner",
+      "title": "The Ghost Road"
+    },
+    {
+      "authors": [
+        "Justin Cartwright"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1995",
+      "category": "Fiction",
+      "position": "1995.01",
+      "result": "shortlisted",
+      "title": "In Every Face I Meet"
+    },
+    {
+      "authors": [
+        "Salman Rushdie"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1995",
+      "category": "Fiction",
+      "position": "1995.02",
+      "result": "shortlisted",
+      "title": "The Moor's Last Sigh"
+    },
+    {
+      "authors": [
+        "Barry Unsworth"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1995",
+      "category": "Fiction",
+      "position": "1995.03",
+      "result": "shortlisted",
+      "title": "Morality Play"
+    },
+    {
+      "authors": [
+        "Tim Winton"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1995",
+      "category": "Fiction",
+      "position": "1995.04",
+      "result": "shortlisted",
+      "title": "The Riders"
+    },
+    {
+      "authors": [
+        "Graham Swift"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1996",
+      "category": "Fiction",
+      "position": "1996",
+      "result": "winner",
+      "title": "Last Orders"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1996",
+      "category": "Fiction",
+      "position": "1996.01",
+      "result": "shortlisted",
+      "title": "Alias Grace"
+    },
+    {
+      "authors": [
+        "Beryl Bainbridge"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1996",
+      "category": "Fiction",
+      "position": "1996.02",
+      "result": "shortlisted",
+      "title": "Every Man for Himself"
+    },
+    {
+      "authors": [
+        "Seamus Deane"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1996",
+      "category": "Fiction",
+      "position": "1996.03",
+      "result": "shortlisted",
+      "title": "Reading in the Dark"
+    },
+    {
+      "authors": [
+        "Shena Mackay"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1996",
+      "category": "Fiction",
+      "position": "1996.04",
+      "result": "shortlisted",
+      "title": "The Orchard on Fire"
+    },
+    {
+      "authors": [
+        "Rohinton Mistry"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1996",
+      "category": "Fiction",
+      "position": "1996.05",
+      "result": "shortlisted",
+      "title": "A Fine Balance"
+    },
+    {
+      "authors": [
+        "Arundhati Roy"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1997",
+      "category": "Fiction",
+      "position": "1997",
+      "result": "winner",
+      "title": "The God of Small Things"
+    },
+    {
+      "authors": [
+        "Jim Crace"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1997",
+      "category": "Fiction",
+      "position": "1997.01",
+      "result": "shortlisted",
+      "title": "Quarantine"
+    },
+    {
+      "authors": [
+        "Mick Jackson"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1997",
+      "category": "Fiction",
+      "position": "1997.02",
+      "result": "shortlisted",
+      "title": "The Underground Man"
+    },
+    {
+      "authors": [
+        "Bernard MacLaverty"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1997",
+      "category": "Fiction",
+      "position": "1997.03",
+      "result": "shortlisted",
+      "title": "Grace Notes"
+    },
+    {
+      "authors": [
+        "Tim Parks"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1997",
+      "category": "Fiction",
+      "position": "1997.04",
+      "result": "shortlisted",
+      "title": "Europa"
+    },
+    {
+      "authors": [
+        "Madeleine St John"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1997",
+      "category": "Fiction",
+      "position": "1997.05",
+      "result": "shortlisted",
+      "title": "The Essence of the Thing"
+    },
+    {
+      "authors": [
+        "Ian McEwan"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1998",
+      "category": "Fiction",
+      "position": "1998",
+      "result": "winner",
+      "title": "Amsterdam"
+    },
+    {
+      "authors": [
+        "Beryl Bainbridge"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1998",
+      "category": "Fiction",
+      "position": "1998.01",
+      "result": "shortlisted",
+      "title": "Master Georgie"
+    },
+    {
+      "authors": [
+        "Julian Barnes"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1998",
+      "category": "Fiction",
+      "position": "1998.02",
+      "result": "shortlisted",
+      "title": "England, England"
+    },
+    {
+      "authors": [
+        "Martin Booth"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1998",
+      "category": "Fiction",
+      "position": "1998.03",
+      "result": "shortlisted",
+      "title": "The Industry of Souls"
+    },
+    {
+      "authors": [
+        "Patrick McCabe"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1998",
+      "category": "Fiction",
+      "position": "1998.04",
+      "result": "shortlisted",
+      "title": "Breakfast on Pluto"
+    },
+    {
+      "authors": [
+        "Magnus Mills"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1998",
+      "category": "Fiction",
+      "position": "1998.05",
+      "result": "shortlisted",
+      "title": "The Restraint of Beasts"
+    },
+    {
+      "authors": [
+        "J. M. Coetzee"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1999",
+      "category": "Fiction",
+      "position": "1999",
+      "result": "winner",
+      "title": "Disgrace"
+    },
+    {
+      "authors": [
+        "Anita Desai"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1999",
+      "category": "Fiction",
+      "position": "1999.01",
+      "result": "shortlisted",
+      "title": "Fasting, Feasting"
+    },
+    {
+      "authors": [
+        "Michael Frayn"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1999",
+      "category": "Fiction",
+      "position": "1999.02",
+      "result": "shortlisted",
+      "title": "Headlong"
+    },
+    {
+      "authors": [
+        "Andrew O'Hagan"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1999",
+      "category": "Fiction",
+      "position": "1999.03",
+      "result": "shortlisted",
+      "title": "Our Fathers"
+    },
+    {
+      "authors": [
+        "Ahdaf Soueif"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1999",
+      "category": "Fiction",
+      "position": "1999.04",
+      "result": "shortlisted",
+      "title": "The Map of Love"
+    },
+    {
+      "authors": [
+        "Colm T\u00f3ib\u00edn"
+      ],
+      "award": "Booker Prize",
+      "award_year": "1999",
+      "category": "Fiction",
+      "position": "1999.05",
+      "result": "shortlisted",
+      "title": "The Blackwater Lightship"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2000",
+      "category": "Fiction",
+      "position": "2000",
+      "result": "winner",
+      "title": "The Blind Assassin"
+    },
+    {
+      "authors": [
+        "Trezza Azzopardi"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2000",
+      "category": "Fiction",
+      "position": "2000.01",
+      "result": "shortlisted",
+      "title": "The Hiding Place"
+    },
+    {
+      "authors": [
+        "Michael Collins"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2000",
+      "category": "Fiction",
+      "position": "2000.02",
+      "result": "shortlisted",
+      "title": "The Keepers of Truth"
+    },
+    {
+      "authors": [
+        "Kazuo Ishiguro"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2000",
+      "category": "Fiction",
+      "position": "2000.03",
+      "result": "shortlisted",
+      "title": "When We Were Orphans"
+    },
+    {
+      "authors": [
+        "Matthew Kneale"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2000",
+      "category": "Fiction",
+      "position": "2000.04",
+      "result": "shortlisted",
+      "title": "English Passengers"
+    },
+    {
+      "authors": [
+        "Brian O'Doherty"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2000",
+      "category": "Fiction",
+      "position": "2000.05",
+      "result": "shortlisted",
+      "title": "The Deposition of Father McGreevy"
+    },
+    {
+      "authors": [
+        "Peter Carey"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2001",
+      "category": "Fiction",
+      "position": "2001",
+      "result": "winner",
+      "title": "True History of the Kelly Gang"
+    },
+    {
+      "authors": [
+        "Ian McEwan"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2001",
+      "category": "Fiction",
+      "position": "2001.01",
+      "result": "shortlisted",
+      "title": "Atonement"
+    },
+    {
+      "authors": [
+        "Andrew Miller"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2001",
+      "category": "Fiction",
+      "position": "2001.02",
+      "result": "shortlisted",
+      "title": "Oxygen"
+    },
+    {
+      "authors": [
+        "David Mitchell"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2001",
+      "category": "Fiction",
+      "position": "2001.03",
+      "result": "shortlisted",
+      "title": "number9dream"
+    },
+    {
+      "authors": [
+        "Rachel Seiffert"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2001",
+      "category": "Fiction",
+      "position": "2001.04",
+      "result": "shortlisted",
+      "title": "The Dark Room"
+    },
+    {
+      "authors": [
+        "Ali Smith"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2001",
+      "category": "Fiction",
+      "position": "2001.05",
+      "result": "shortlisted",
+      "title": "Hotel World"
+    },
+    {
+      "authors": [
+        "Yann Martel"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2002",
+      "category": "Fiction",
+      "position": "2002",
+      "result": "winner",
+      "title": "Life of Pi"
+    },
+    {
+      "authors": [
+        "Rohinton Mistry"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2002",
+      "category": "Fiction",
+      "position": "2002.01",
+      "result": "shortlisted",
+      "title": "Family Matters"
+    },
+    {
+      "authors": [
+        "Carol Shields"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2002",
+      "category": "Fiction",
+      "position": "2002.02",
+      "result": "shortlisted",
+      "title": "Unless"
+    },
+    {
+      "authors": [
+        "William Trevor"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2002",
+      "category": "Fiction",
+      "position": "2002.03",
+      "result": "shortlisted",
+      "title": "The Story of Lucy Gault"
+    },
+    {
+      "authors": [
+        "Sarah Waters"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2002",
+      "category": "Fiction",
+      "position": "2002.04",
+      "result": "shortlisted",
+      "title": "Fingersmith"
+    },
+    {
+      "authors": [
+        "Tim Winton"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2002",
+      "category": "Fiction",
+      "position": "2002.05",
+      "result": "shortlisted",
+      "title": "Dirt Music"
+    },
+    {
+      "authors": [
+        "DBC Pierre"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2003",
+      "category": "Fiction",
+      "position": "2003",
+      "result": "winner",
+      "title": "Vernon God Little"
+    },
+    {
+      "authors": [
+        "Monica Ali"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2003",
+      "category": "Fiction",
+      "position": "2003.01",
+      "result": "shortlisted",
+      "title": "Brick Lane"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2003",
+      "category": "Fiction",
+      "position": "2003.02",
+      "result": "shortlisted",
+      "title": "Oryx and Crake"
+    },
+    {
+      "authors": [
+        "Damon Galgut"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2003",
+      "category": "Fiction",
+      "position": "2003.03",
+      "result": "shortlisted",
+      "title": "The Good Doctor"
+    },
+    {
+      "authors": [
+        "Zo\u00eb Heller"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2003",
+      "category": "Fiction",
+      "position": "2003.04",
+      "result": "shortlisted",
+      "title": "Notes on a Scandal"
+    },
+    {
+      "authors": [
+        "Clare Morrall"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2003",
+      "category": "Fiction",
+      "position": "2003.05",
+      "result": "shortlisted",
+      "title": "Astonishing Splashes of Colour"
+    },
+    {
+      "authors": [
+        "Alan Hollinghurst"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2004",
+      "category": "Fiction",
+      "position": "2004",
+      "result": "winner",
+      "title": "The Line of Beauty"
+    },
+    {
+      "authors": [
+        "Achmat Dangor"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2004",
+      "category": "Fiction",
+      "position": "2004.01",
+      "result": "shortlisted",
+      "title": "Bitter Fruit"
+    },
+    {
+      "authors": [
+        "Sarah Hall"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2004",
+      "category": "Fiction",
+      "position": "2004.02",
+      "result": "shortlisted",
+      "title": "The Electric Michelangelo"
+    },
+    {
+      "authors": [
+        "David Mitchell"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2004",
+      "category": "Fiction",
+      "position": "2004.03",
+      "result": "shortlisted",
+      "title": "Cloud Atlas"
+    },
+    {
+      "authors": [
+        "Colm T\u00f3ib\u00edn"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2004",
+      "category": "Fiction",
+      "position": "2004.04",
+      "result": "shortlisted",
+      "title": "The Master"
+    },
+    {
+      "authors": [
+        "Gerard Woodward"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2004",
+      "category": "Fiction",
+      "position": "2004.05",
+      "result": "shortlisted",
+      "title": "I'll Go to Bed at Noon"
+    },
+    {
+      "authors": [
+        "John Banville"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2005",
+      "category": "Fiction",
+      "position": "2005",
+      "result": "winner",
+      "title": "The Sea"
+    },
+    {
+      "authors": [
+        "Julian Barnes"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2005",
+      "category": "Fiction",
+      "position": "2005.01",
+      "result": "shortlisted",
+      "title": "Arthur and George"
+    },
+    {
+      "authors": [
+        "Sebastian Barry"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2005",
+      "category": "Fiction",
+      "position": "2005.02",
+      "result": "shortlisted",
+      "title": "A Long Long Way"
+    },
+    {
+      "authors": [
+        "Kazuo Ishiguro"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2005",
+      "category": "Fiction",
+      "position": "2005.03",
+      "result": "shortlisted",
+      "title": "Never Let Me Go"
+    },
+    {
+      "authors": [
+        "Ali Smith"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2005",
+      "category": "Fiction",
+      "position": "2005.04",
+      "result": "shortlisted",
+      "title": "The Accidental"
+    },
+    {
+      "authors": [
+        "Zadie Smith"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2005",
+      "category": "Fiction",
+      "position": "2005.05",
+      "result": "shortlisted",
+      "title": "On Beauty"
+    },
+    {
+      "authors": [
+        "Kiran Desai"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2006",
+      "category": "Fiction",
+      "position": "2006",
+      "result": "winner",
+      "title": "The Inheritance of Loss"
+    },
+    {
+      "authors": [
+        "Kate Grenville"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2006",
+      "category": "Fiction",
+      "position": "2006.01",
+      "result": "shortlisted",
+      "title": "The Secret River"
+    },
+    {
+      "authors": [
+        "M. J. Hyland"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2006",
+      "category": "Fiction",
+      "position": "2006.02",
+      "result": "shortlisted",
+      "title": "Carry Me Down"
+    },
+    {
+      "authors": [
+        "Hisham Matar"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2006",
+      "category": "Fiction",
+      "position": "2006.03",
+      "result": "shortlisted",
+      "title": "In the Country of Men"
+    },
+    {
+      "authors": [
+        "Edward St Aubyn"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2006",
+      "category": "Fiction",
+      "position": "2006.04",
+      "result": "shortlisted",
+      "title": "Mother's Milk"
+    },
+    {
+      "authors": [
+        "Sarah Waters"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2006",
+      "category": "Fiction",
+      "position": "2006.05",
+      "result": "shortlisted",
+      "title": "The Night Watch"
+    },
+    {
+      "authors": [
+        "Anne Enright"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2007",
+      "category": "Fiction",
+      "position": "2007",
+      "result": "winner",
+      "title": "The Gathering"
+    },
+    {
+      "authors": [
+        "Nicola Barker"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2007",
+      "category": "Fiction",
+      "position": "2007.01",
+      "result": "shortlisted",
+      "title": "Darkmans"
+    },
+    {
+      "authors": [
+        "Mohsin Hamid"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2007",
+      "category": "Fiction",
+      "position": "2007.02",
+      "result": "shortlisted",
+      "title": "The Reluctant Fundamentalist"
+    },
+    {
+      "authors": [
+        "Lloyd Jones"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2007",
+      "category": "Fiction",
+      "position": "2007.03",
+      "result": "shortlisted",
+      "title": "Mister Pip"
+    },
+    {
+      "authors": [
+        "Ian McEwan"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2007",
+      "category": "Fiction",
+      "position": "2007.04",
+      "result": "shortlisted",
+      "title": "On Chesil Beach"
+    },
+    {
+      "authors": [
+        "Indra Sinha"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2007",
+      "category": "Fiction",
+      "position": "2007.05",
+      "result": "shortlisted",
+      "title": "Animal's People"
+    },
+    {
+      "authors": [
+        "Aravind Adiga"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2008",
+      "category": "Fiction",
+      "position": "2008",
+      "result": "winner",
+      "title": "The White Tiger"
+    },
+    {
+      "authors": [
+        "Sebastian Barry"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2008",
+      "category": "Fiction",
+      "position": "2008.01",
+      "result": "shortlisted",
+      "title": "The Secret Scripture"
+    },
+    {
+      "authors": [
+        "Amitav Ghosh"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2008",
+      "category": "Fiction",
+      "position": "2008.02",
+      "result": "shortlisted",
+      "title": "Sea of Poppies"
+    },
+    {
+      "authors": [
+        "Linda Grant"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2008",
+      "category": "Fiction",
+      "position": "2008.03",
+      "result": "shortlisted",
+      "title": "The Clothes on Their Backs"
+    },
+    {
+      "authors": [
+        "Philip Hensher"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2008",
+      "category": "Fiction",
+      "position": "2008.04",
+      "result": "shortlisted",
+      "title": "The Northern Clemency"
+    },
+    {
+      "authors": [
+        "Steve Toltz"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2008",
+      "category": "Fiction",
+      "position": "2008.05",
+      "result": "shortlisted",
+      "title": "A Fraction of the Whole"
+    },
+    {
+      "authors": [
+        "Hilary Mantel"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2009",
+      "category": "Fiction",
+      "position": "2009",
+      "result": "winner",
+      "title": "Wolf Hall"
+    },
+    {
+      "authors": [
+        "A. S. Byatt"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2009",
+      "category": "Fiction",
+      "position": "2009.01",
+      "result": "shortlisted",
+      "title": "The Children's Book"
+    },
+    {
+      "authors": [
+        "J. M. Coetzee"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2009",
+      "category": "Fiction",
+      "position": "2009.02",
+      "result": "shortlisted",
+      "title": "Summertime"
+    },
+    {
+      "authors": [
+        "Adam Foulds"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2009",
+      "category": "Fiction",
+      "position": "2009.03",
+      "result": "shortlisted",
+      "title": "The Quickening Maze"
+    },
+    {
+      "authors": [
+        "Simon Mawer"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2009",
+      "category": "Fiction",
+      "position": "2009.04",
+      "result": "shortlisted",
+      "title": "The Glass Room"
+    },
+    {
+      "authors": [
+        "Sarah Waters"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2009",
+      "category": "Fiction",
+      "position": "2009.05",
+      "result": "shortlisted",
+      "title": "The Little Stranger"
+    },
+    {
+      "authors": [
+        "Howard Jacobson"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2010",
+      "category": "Fiction",
+      "position": "2010",
+      "result": "winner",
+      "title": "The Finkler Question"
+    },
+    {
+      "authors": [
+        "Peter Carey"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2010",
+      "category": "Fiction",
+      "position": "2010.01",
+      "result": "shortlisted",
+      "title": "Parrot and Olivier in America"
+    },
+    {
+      "authors": [
+        "Emma Donoghue"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2010",
+      "category": "Fiction",
+      "position": "2010.02",
+      "result": "shortlisted",
+      "title": "Room"
+    },
+    {
+      "authors": [
+        "Damon Galgut"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2010",
+      "category": "Fiction",
+      "position": "2010.03",
+      "result": "shortlisted",
+      "title": "In a Strange Room"
+    },
+    {
+      "authors": [
+        "Andrea Levy"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2010",
+      "category": "Fiction",
+      "position": "2010.04",
+      "result": "shortlisted",
+      "title": "The Long Song"
+    },
+    {
+      "authors": [
+        "Tom McCarthy"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2010",
+      "category": "Fiction",
+      "position": "2010.05",
+      "result": "shortlisted",
+      "title": "C"
+    },
+    {
+      "authors": [
+        "Julian Barnes"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2011",
+      "category": "Fiction",
+      "position": "2011",
+      "result": "winner",
+      "title": "The Sense of an Ending"
+    },
+    {
+      "authors": [
+        "Carol Birch"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2011",
+      "category": "Fiction",
+      "position": "2011.01",
+      "result": "shortlisted",
+      "title": "Jamrach's Menagerie"
+    },
+    {
+      "authors": [
+        "Patrick deWitt"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2011",
+      "category": "Fiction",
+      "position": "2011.02",
+      "result": "shortlisted",
+      "title": "The Sisters Brothers"
+    },
+    {
+      "authors": [
+        "Esi Edugyan"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2011",
+      "category": "Fiction",
+      "position": "2011.03",
+      "result": "shortlisted",
+      "title": "Half-Blood Blues"
+    },
+    {
+      "authors": [
+        "Stephen Kelman"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2011",
+      "category": "Fiction",
+      "position": "2011.04",
+      "result": "shortlisted",
+      "title": "Pigeon English"
+    },
+    {
+      "authors": [
+        "A D Miller"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2011",
+      "category": "Fiction",
+      "position": "2011.05",
+      "result": "shortlisted",
+      "title": "Snowdrops"
+    },
+    {
+      "authors": [
+        "Hilary Mantel"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2012",
+      "category": "Fiction",
+      "position": "2012",
+      "result": "winner",
+      "title": "Bring Up the Bodies"
+    },
+    {
+      "authors": [
+        "Deborah Levy"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2012",
+      "category": "Fiction",
+      "position": "2012.01",
+      "result": "shortlisted",
+      "title": "Swimming Home"
+    },
+    {
+      "authors": [
+        "Alison Moore"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2012",
+      "category": "Fiction",
+      "position": "2012.02",
+      "result": "shortlisted",
+      "title": "The Lighthouse"
+    },
+    {
+      "authors": [
+        "Will Self"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2012",
+      "category": "Fiction",
+      "position": "2012.03",
+      "result": "shortlisted",
+      "title": "Umbrella"
+    },
+    {
+      "authors": [
+        "Tan Twan Eng"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2012",
+      "category": "Fiction",
+      "position": "2012.04",
+      "result": "shortlisted",
+      "title": "The Garden of Evening Mists"
+    },
+    {
+      "authors": [
+        "Jeet Thayil"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2012",
+      "category": "Fiction",
+      "position": "2012.05",
+      "result": "shortlisted",
+      "title": "Narcopolis"
+    },
+    {
+      "authors": [
+        "Eleanor Catton"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2013",
+      "category": "Fiction",
+      "position": "2013",
+      "result": "winner",
+      "title": "The Luminaries"
+    },
+    {
+      "authors": [
+        "NoViolet Bulawayo"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2013",
+      "category": "Fiction",
+      "position": "2013.01",
+      "result": "shortlisted",
+      "title": "We Need New Names"
+    },
+    {
+      "authors": [
+        "Jim Crace"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2013",
+      "category": "Fiction",
+      "position": "2013.02",
+      "result": "shortlisted",
+      "title": "Harvest"
+    },
+    {
+      "authors": [
+        "Jhumpa Lahiri"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2013",
+      "category": "Fiction",
+      "position": "2013.03",
+      "result": "shortlisted",
+      "title": "The Lowland"
+    },
+    {
+      "authors": [
+        "Ruth Ozeki"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2013",
+      "category": "Fiction",
+      "position": "2013.04",
+      "result": "shortlisted",
+      "title": "A Tale for the Time Being"
+    },
+    {
+      "authors": [
+        "Colm T\u00f3ib\u00edn"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2013",
+      "category": "Fiction",
+      "position": "2013.05",
+      "result": "shortlisted",
+      "title": "The Testament of Mary"
+    },
+    {
+      "authors": [
+        "Richard Flanagan"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2014",
+      "category": "Fiction",
+      "position": "2014",
+      "result": "winner",
+      "title": "The Narrow Road to the Deep North"
+    },
+    {
+      "authors": [
+        "Joshua Ferris"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2014",
+      "category": "Fiction",
+      "position": "2014.01",
+      "result": "shortlisted",
+      "title": "To Rise Again at a Decent Hour"
+    },
+    {
+      "authors": [
+        "Karen Joy Fowler"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2014",
+      "category": "Fiction",
+      "position": "2014.02",
+      "result": "shortlisted",
+      "title": "We Are All Completely Beside Ourselves"
+    },
+    {
+      "authors": [
+        "Howard Jacobson"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2014",
+      "category": "Fiction",
+      "position": "2014.03",
+      "result": "shortlisted",
+      "title": "J"
+    },
+    {
+      "authors": [
+        "Neel Mukherjee"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2014",
+      "category": "Fiction",
+      "position": "2014.04",
+      "result": "shortlisted",
+      "title": "The Lives of Others"
+    },
+    {
+      "authors": [
+        "Ali Smith"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2014",
+      "category": "Fiction",
+      "position": "2014.05",
+      "result": "shortlisted",
+      "title": "How to Be Both"
+    },
+    {
+      "authors": [
+        "Marlon James"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2015",
+      "category": "Fiction",
+      "position": "2015",
+      "result": "winner",
+      "title": "A Brief History of Seven Killings"
+    },
+    {
+      "authors": [
+        "Tom McCarthy"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2015",
+      "category": "Fiction",
+      "position": "2015.01",
+      "result": "shortlisted",
+      "title": "Satin Island"
+    },
+    {
+      "authors": [
+        "Chigozie Obioma"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2015",
+      "category": "Fiction",
+      "position": "2015.02",
+      "result": "shortlisted",
+      "title": "The Fishermen"
+    },
+    {
+      "authors": [
+        "Sunjeev Sahota"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2015",
+      "category": "Fiction",
+      "position": "2015.03",
+      "result": "shortlisted",
+      "title": "The Year of the Runaways"
+    },
+    {
+      "authors": [
+        "Anne Tyler"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2015",
+      "category": "Fiction",
+      "position": "2015.04",
+      "result": "shortlisted",
+      "title": "A Spool of Blue Thread"
+    },
+    {
+      "authors": [
+        "Hanya Yanagihara"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2015",
+      "category": "Fiction",
+      "position": "2015.05",
+      "result": "shortlisted",
+      "title": "A Little Life"
+    },
+    {
+      "authors": [
+        "Paul Beatty"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2016",
+      "category": "Fiction",
+      "position": "2016",
+      "result": "winner",
+      "title": "The Sellout"
+    },
+    {
+      "authors": [
+        "Deborah Levy"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2016",
+      "category": "Fiction",
+      "position": "2016.01",
+      "result": "shortlisted",
+      "title": "Hot Milk"
+    },
+    {
+      "authors": [
+        "Graeme Macrae Burnet"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2016",
+      "category": "Fiction",
+      "position": "2016.02",
+      "result": "shortlisted",
+      "title": "His Bloody Project"
+    },
+    {
+      "authors": [
+        "Ottessa Moshfegh"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2016",
+      "category": "Fiction",
+      "position": "2016.03",
+      "result": "shortlisted",
+      "title": "Eileen"
+    },
+    {
+      "authors": [
+        "David Szalay"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2016",
+      "category": "Fiction",
+      "position": "2016.04",
+      "result": "shortlisted",
+      "title": "All That Man Is"
+    },
+    {
+      "authors": [
+        "Madeleine Thien"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2016",
+      "category": "Fiction",
+      "position": "2016.05",
+      "result": "shortlisted",
+      "title": "Do Not Say We Have Nothing"
+    },
+    {
+      "authors": [
+        "George Saunders"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2017",
+      "category": "Fiction",
+      "position": "2017",
+      "result": "winner",
+      "title": "Lincoln in the Bardo"
+    },
+    {
+      "authors": [
+        "Paul Auster"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2017",
+      "category": "Fiction",
+      "position": "2017.01",
+      "result": "shortlisted",
+      "title": "4 3 2 1"
+    },
+    {
+      "authors": [
+        "Emily Fridlund"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2017",
+      "category": "Fiction",
+      "position": "2017.02",
+      "result": "shortlisted",
+      "title": "History of Wolves"
+    },
+    {
+      "authors": [
+        "Mohsin Hamid"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2017",
+      "category": "Fiction",
+      "position": "2017.03",
+      "result": "shortlisted",
+      "title": "Exit West"
+    },
+    {
+      "authors": [
+        "Fiona Mozley"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2017",
+      "category": "Fiction",
+      "position": "2017.04",
+      "result": "shortlisted",
+      "title": "Elmet"
+    },
+    {
+      "authors": [
+        "Ali Smith"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2017",
+      "category": "Fiction",
+      "position": "2017.05",
+      "result": "shortlisted",
+      "title": "Autumn"
+    },
+    {
+      "authors": [
+        "Anna Burns"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2018",
+      "category": "Fiction",
+      "position": "2018",
+      "result": "winner",
+      "title": "Milkman"
+    },
+    {
+      "authors": [
+        "Esi Edugyan"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2018",
+      "category": "Fiction",
+      "position": "2018.01",
+      "result": "shortlisted",
+      "title": "Washington Black"
+    },
+    {
+      "authors": [
+        "Daisy Johnson"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2018",
+      "category": "Fiction",
+      "position": "2018.02",
+      "result": "shortlisted",
+      "title": "Everything Under"
+    },
+    {
+      "authors": [
+        "Rachel Kushner"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2018",
+      "category": "Fiction",
+      "position": "2018.03",
+      "result": "shortlisted",
+      "title": "The Mars Room"
+    },
+    {
+      "authors": [
+        "Richard Powers"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2018",
+      "category": "Fiction",
+      "position": "2018.04",
+      "result": "shortlisted",
+      "title": "The Overstory"
+    },
+    {
+      "authors": [
+        "Robin Robertson"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2018",
+      "category": "Fiction",
+      "position": "2018.05",
+      "result": "shortlisted",
+      "title": "The Long Take"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2019",
+      "category": "Fiction",
+      "position": "2019",
+      "result": "winner",
+      "title": "The Testaments"
+    },
+    {
+      "authors": [
+        "Bernardine Evaristo"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2019",
+      "category": "Fiction",
+      "position": "2019",
+      "result": "winner",
+      "title": "Girl, Woman, Other"
+    },
+    {
+      "authors": [
+        "Lucy Ellmann"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2019",
+      "category": "Fiction",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "title": "Ducks, Newburyport"
+    },
+    {
+      "authors": [
+        "Chigozie Obioma"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2019",
+      "category": "Fiction",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "title": "An Orchestra of Minorities"
+    },
+    {
+      "authors": [
+        "Salman Rushdie"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2019",
+      "category": "Fiction",
+      "position": "2019.03",
+      "result": "shortlisted",
+      "title": "Quichotte"
+    },
+    {
+      "authors": [
+        "Elif Shafak"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2019",
+      "category": "Fiction",
+      "position": "2019.04",
+      "result": "shortlisted",
+      "title": "10 Minutes 38 Seconds in This Strange World"
+    },
+    {
+      "authors": [
+        "Douglas Stuart"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2020",
+      "category": "Fiction",
+      "position": "2020",
+      "result": "winner",
+      "title": "Shuggie Bain"
+    },
+    {
+      "authors": [
+        "Diane Cook"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2020",
+      "category": "Fiction",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "title": "The New Wilderness"
+    },
+    {
+      "authors": [
+        "Tsitsi Dangarembga"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2020",
+      "category": "Fiction",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "title": "This Mournable Body"
+    },
+    {
+      "authors": [
+        "Avni Doshi"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2020",
+      "category": "Fiction",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "title": "Burnt Sugar"
+    },
+    {
+      "authors": [
+        "Maaza Mengiste"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2020",
+      "category": "Fiction",
+      "position": "2020.04",
+      "result": "shortlisted",
+      "title": "The Shadow King"
+    },
+    {
+      "authors": [
+        "Brandon Taylor"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2020",
+      "category": "Fiction",
+      "position": "2020.05",
+      "result": "shortlisted",
+      "title": "Real Life"
+    },
+    {
+      "authors": [
+        "Damon Galgut"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2021",
+      "category": "Fiction",
+      "position": "2021",
+      "result": "winner",
+      "title": "The Promise"
+    },
+    {
+      "authors": [
+        "Anuk Arudpragasam"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2021",
+      "category": "Fiction",
+      "position": "2021.01",
+      "result": "shortlisted",
+      "title": "A Passage North"
+    },
+    {
+      "authors": [
+        "Patricia Lockwood"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2021",
+      "category": "Fiction",
+      "position": "2021.02",
+      "result": "shortlisted",
+      "title": "No One Is Talking about This"
+    },
+    {
+      "authors": [
+        "Nadifa Mohamed"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2021",
+      "category": "Fiction",
+      "position": "2021.03",
+      "result": "shortlisted",
+      "title": "The Fortune Men"
+    },
+    {
+      "authors": [
+        "Richard Powers"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2021",
+      "category": "Fiction",
+      "position": "2021.04",
+      "result": "shortlisted",
+      "title": "Bewilderment"
+    },
+    {
+      "authors": [
+        "Maggie Shipstead"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2021",
+      "category": "Fiction",
+      "position": "2021.05",
+      "result": "shortlisted",
+      "title": "Great Circle"
+    },
+    {
+      "authors": [
+        "Shehan Karunatilaka"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2022",
+      "category": "Fiction",
+      "position": "2022",
+      "result": "winner",
+      "title": "The Seven Moons of Maali Almeida"
+    },
+    {
+      "authors": [
+        "NoViolet Bulawayo"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2022",
+      "category": "Fiction",
+      "position": "2022.01",
+      "result": "shortlisted",
+      "title": "Glory"
+    },
+    {
+      "authors": [
+        "Percival Everett"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2022",
+      "category": "Fiction",
+      "position": "2022.02",
+      "result": "shortlisted",
+      "title": "The Trees"
+    },
+    {
+      "authors": [
+        "Alan Garner"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2022",
+      "category": "Fiction",
+      "position": "2022.03",
+      "result": "shortlisted",
+      "title": "Treacle Walker"
+    },
+    {
+      "authors": [
+        "Claire Keegan"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2022",
+      "category": "Fiction",
+      "position": "2022.04",
+      "result": "shortlisted",
+      "title": "Small Things like These"
+    },
+    {
+      "authors": [
+        "Elizabeth Strout"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2022",
+      "category": "Fiction",
+      "position": "2022.05",
+      "result": "shortlisted",
+      "title": "Oh William!"
+    },
+    {
+      "authors": [
+        "Paul Lynch"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2023",
+      "category": "Fiction",
+      "position": "2023",
+      "result": "winner",
+      "title": "Prophet Song"
+    },
+    {
+      "authors": [
+        "Sarah Bernstein"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2023",
+      "category": "Fiction",
+      "position": "2023.01",
+      "result": "shortlisted",
+      "title": "Study for Obedience"
+    },
+    {
+      "authors": [
+        "Jonathan Escoffery"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2023",
+      "category": "Fiction",
+      "position": "2023.02",
+      "result": "shortlisted",
+      "title": "If I Survive You"
+    },
+    {
+      "authors": [
+        "Paul Harding"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2023",
+      "category": "Fiction",
+      "position": "2023.03",
+      "result": "shortlisted",
+      "title": "This Other Eden"
+    },
+    {
+      "authors": [
+        "Paul Murray"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2023",
+      "category": "Fiction",
+      "position": "2023.04",
+      "result": "shortlisted",
+      "title": "The Bee Sting"
+    },
+    {
+      "authors": [
+        "Chetna Maroo"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2023",
+      "category": "Fiction",
+      "position": "2023.05",
+      "result": "shortlisted",
+      "title": "Western Lane"
+    },
+    {
+      "authors": [
+        "Samantha Harvey"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2024",
+      "category": "Fiction",
+      "position": "2024",
+      "result": "winner",
+      "title": "Orbital"
+    },
+    {
+      "authors": [
+        "Percival Everett"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2024",
+      "category": "Fiction",
+      "position": "2024.01",
+      "result": "shortlisted",
+      "title": "James"
+    },
+    {
+      "authors": [
+        "Rachel Kushner"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2024",
+      "category": "Fiction",
+      "position": "2024.02",
+      "result": "shortlisted",
+      "title": "Creation Lake"
+    },
+    {
+      "authors": [
+        "Anne Michaels"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2024",
+      "category": "Fiction",
+      "position": "2024.03",
+      "result": "shortlisted",
+      "title": "Held"
+    },
+    {
+      "authors": [
+        "Yael van der Wouden"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2024",
+      "category": "Fiction",
+      "position": "2024.04",
+      "result": "shortlisted",
+      "title": "The Safekeep"
+    },
+    {
+      "authors": [
+        "Charlotte Wood"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2024",
+      "category": "Fiction",
+      "position": "2024.05",
+      "result": "shortlisted",
+      "title": "Stone Yard Devotional"
+    },
+    {
+      "authors": [
+        "David Szalay"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2025",
+      "category": "Fiction",
+      "position": "2025",
+      "result": "winner",
+      "title": "Flesh"
+    },
+    {
+      "authors": [
+        "Susan Choi"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2025",
+      "category": "Fiction",
+      "position": "2025.01",
+      "result": "shortlisted",
+      "title": "Flashlight"
+    },
+    {
+      "authors": [
+        "Kiran Desai"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2025",
+      "category": "Fiction",
+      "position": "2025.02",
+      "result": "shortlisted",
+      "title": "The Loneliness of Sonia and Sunny"
+    },
+    {
+      "authors": [
+        "Katie Kitamura"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2025",
+      "category": "Fiction",
+      "position": "2025.03",
+      "result": "shortlisted",
+      "title": "Audition"
+    },
+    {
+      "authors": [
+        "Ben Markovits"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2025",
+      "category": "Fiction",
+      "position": "2025.04",
+      "result": "shortlisted",
+      "title": "The Rest of Our Lives"
+    },
+    {
+      "authors": [
+        "Andrew Miller"
+      ],
+      "award": "Booker Prize",
+      "award_year": "2025",
+      "category": "Fiction",
+      "position": "2025.05",
+      "result": "shortlisted",
+      "title": "The Land in Winter"
+    }
+  ],
+  "fetched_at": "2026-07-30T00:31:08Z",
+  "list_id": "booker_prize",
+  "list_name": "Booker Prize",
+  "match_series": false,
+  "notes": [
+    "Official Booker failed: HTTP Error 403: Forbidden"
+  ],
+  "parser": "booker_prize",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Booker Prize",
+    "source_id": "booker_prize",
+    "url": "https://en.wikipedia.org/wiki/List_of_winners_and_nominated_authors_of_the_Booker_Prize"
+  }
+}

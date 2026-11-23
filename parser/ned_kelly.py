@@ -30,18 +30,36 @@ class NedKellyLibraryThingParser(LibraryThingAwardParserBase):
 
   AWARD_NAME = AWARD_NAME
 
-  def result_from_heading(self, heading):
-    text = normalize_heading(heading.get_text(' ', strip=True))
-    if text.startswith('winner'):
-      return 'winner'
-    if text.startswith('shortlist') or text.startswith('finalist'):
-      return 'nominee'
-    return None
-
 
 class NedKellyWikipediaParser(WikipediaAwardTableParserBase):
+  """Merge summary winners with available category-specific shortlist tables.
+
+  Maintenance notes:
+  - Category and decade headings can have the same HTML heading level.
+  - Detailed tables inherit years, results, and references through rowspans;
+    expand the whole grid before locating author, title, and result cells.
+  - Missing shortlist years remain winner-only; never infer extra finalists.
+  """
 
   AWARD_NAME = AWARD_NAME
+
+  # These exact summary/detail pairs describe one winner, not additional ties.
+  # Keep the existing summary spelling only while both source values agree.
+  SUMMARY_WINNER_VARIANTS = (
+    ('2021', 'Best Debut Crime Novel',
+      ('The Second Son', 'Loraine Peck'), ('The Second Son', 'Lorraine Peck')),
+    ('2011', 'Best True Crime',
+      ('Abandoned - The Sad Death of Dianne Brimble', 'Geesche Jacobsen'),
+      ('Abandoned: The Sad Death of Dianne Brimble', 'Geesche Jacobson')),
+    ('2012', 'Best True Crime',
+      ("Sins of the Father: The Untold Story Behind Schapelle Corby's Ill-Fated Drug Run", 'Eamonn Duff'),
+      ('Sins of the Father', 'Eamonn Duff')),
+    ('2021', 'Best True Crime',
+      ('Stalking Claremont', 'Bret Christian'),
+      ('Stalking Claremont: Inside the hunt for a serial killer', 'Bret Christian')),
+    ('2021', 'Best International Crime Novel',
+      ('We Begin at the End', 'Chris Whittaker'), ('We Begin at the End', 'Chris Whitaker')),
+  )
 
   def clean_author(self, value):
     """Split bounded Wikipedia coauthor credits into schema author values."""
@@ -70,20 +88,64 @@ class NedKellyWikipediaParser(WikipediaAwardTableParserBase):
   def parse(self, html, base_url, name, category, category_aliases=()):
     root = self.html_root(html)
     detailed_rows = []
-    for _heading, table in self.tables_under_category_headings(
-        root, category, category_aliases, match='exact'):
-      detailed_rows.extend(self._table_rows_standard(
-        table,
-        self.header_map(table),
-        base_url,
-        category,
-        category_aliases,
-        {'winner', 'shortlisted'}))
-      break
+    for table in self._shortlist_tables(root, category, category_aliases):
+      detailed_rows.extend(self._shortlist_table_rows(table, base_url, category))
     summary_rows = self._summary_rows(root, base_url, category, category_aliases)
     rows = self._merge_rows(summary_rows, detailed_rows)
     entries = self.entries_from_rows(self.dedupe_rows(rows))
     return self.parsed_result(name, base_url, entries)
+
+  def _shortlist_tables(self, root, category, category_aliases):
+    accepted = {
+      normalize_heading(value) for value in (category, *category_aliases)
+    }
+    in_category = False
+    for node in root.xpath('//h2|//h3|//h4|//h5|//h6|//table'):
+      if node.tag != 'table':
+        heading = normalize_heading(self.clean_cell_text(node))
+        if heading in accepted:
+          in_category = True
+        elif not re.fullmatch(r'(?:19|20)\d0s', heading):
+          in_category = False
+      elif in_category and self.has_required_columns(self.header_map(node)):
+        yield node
+
+  def _shortlist_table_rows(self, table, base_url, category):
+    header_map = self.header_map(table)
+    rows = []
+    current_year = None
+    current_result_by_year = {}
+    for cells in self._table_grid(table):
+      if (len(cells) <= max(header_map.values()) or
+          self.row_matches_header(cells, header_map)):
+        continue
+      year = self.year_from_text(
+        self.clean_cell_text(cells[header_map['year']])) or current_year
+      if year is None:
+        continue
+      current_year = year
+      result_cell = cells[header_map['result']] if 'result' in header_map else None
+      result = self.result_from_cell(result_cell)
+      if (result is None and
+          (result_cell is None or not self.clean_cell_text(result_cell))):
+        result = current_result_by_year.get(year)
+        if result != 'shortlisted':
+          result = None
+      current_result_by_year[year] = result
+      if result not in {'winner', 'shortlisted', 'nominee'}:
+        continue
+      title = self.clean_title(self.clean_cell_text(cells[header_map['title']]))
+      author = self.clean_author(self.clean_cell_text(cells[header_map['author']]))
+      if title and author:
+        rows.append({
+          'award_year': str(year),
+          'title': title,
+          'author': author,
+          'result': result,
+          'source_url': base_url,
+          'category': category,
+        })
+    return rows
 
   def _summary_rows(self, root, base_url, category, category_aliases):
     target = normalize_heading(category)
@@ -129,7 +191,7 @@ class NedKellyWikipediaParser(WikipediaAwardTableParserBase):
     return rows
 
   def _table_grid(self, table):
-    """Expand summary-table rowspans so continuation winners keep their year."""
+    """Expand inherited cells before resolving year, work, and result columns."""
     grid = []
     rowspans = {}
     for tr in self.all_rows(table):
@@ -210,7 +272,24 @@ class NedKellyWikipediaParser(WikipediaAwardTableParserBase):
   def _merge_rows(self, summary_rows, detailed_rows):
     # Detailed shortlist tables are sparse even within years they cover. Keep
     # summary winners and let the normal work-identity dedupe remove overlaps.
-    return list(summary_rows) + list(detailed_rows)
+    def winner_key(year, category, work):
+      return (str(year), *(normalize_heading(value) for value in (category, *work)))
+
+    summary_keys = {
+      winner_key(row['award_year'], row['category'], (row['title'], row['author']))
+      for row in summary_rows if row['result'] == 'winner'
+    }
+    duplicate_variants = {
+      winner_key(year, category, detailed)
+      for year, category, summary, detailed in self.SUMMARY_WINNER_VARIANTS
+      if winner_key(year, category, summary) in summary_keys
+    }
+    return list(summary_rows) + [
+      row for row in detailed_rows
+      if row['result'] != 'winner' or winner_key(
+        row['award_year'], row['category'], (row['title'], row['author']))
+        not in duplicate_variants
+    ]
 
 
 def parse_ned_kelly_librarything(html, base_url, name, category, category_aliases=()):

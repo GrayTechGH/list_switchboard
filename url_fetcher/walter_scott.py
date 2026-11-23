@@ -22,7 +22,21 @@ OFFICIAL_URL = (
 WIKIPEDIA_URL = 'https://en.wikipedia.org/wiki/Walter_Scott_Prize'
 
 
+class WalterScottOfficialAttempt(SourceAttempt):
+
+  def execute(self,fetch_url,log=None,progress=None,before_fetch=None,after_fetch=None,before_parse=None):
+    if self.parser.reusable_history(self.url,**self.incremental_context) is None:
+      return super().execute(fetch_url,log,progress,before_fetch,after_fetch,before_parse)
+    if before_parse is not None:
+      before_parse(self.url)
+    parsed=self.parse(None,fetch_url,log,progress)
+    if not self.is_usable(parsed):
+      raise ValueError('Parsed Walter Scott update had no usable entries.')
+    return parsed
+
+
 class UrlFetcherWalterScottPrize(UrlFetcherGeneric):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_LITERARY_GENERAL_FICTION,
@@ -51,13 +65,11 @@ class UrlFetcherWalterScottPrize(UrlFetcherGeneric):
 
   def source_attempts(self):
     return (
-      SourceAttempt(
+      WalterScottOfficialAttempt(
         'Walter Scott',
         self.URL,
-        lambda html, url, fetch_url=None, log=None, progress=None: (
-          self.create_official_parser().parse(
-            html, url, self.NAME, fetch_url=fetch_url, log=log, progress=progress)),
-        source_rank=0,
+        self.create_official_parser(),
+        source_rank=0,supports_incremental=True,
         max_response_bytes=32 * 1024 * 1024),
       SourceAttempt(
         'Wikipedia',
@@ -73,7 +85,8 @@ class UrlFetcherWalterScottPrize(UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None,incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -85,7 +98,7 @@ class UrlFetcherWalterScottPrize(UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice,cached_parsed=cached_parsed,incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 

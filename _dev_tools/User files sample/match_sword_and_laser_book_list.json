@@ -610,7 +610,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-11T01:00:43Z"
+      "unmatched_at": "2026-11-08T19:26:50Z"
     },
     {
       "entry_key": "rivers of london midnight riot|ben aaronovitch",
@@ -624,7 +624,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-11T01:00:43Z"
+      "unmatched_at": "2026-11-08T19:26:50Z"
     },
     {
       "entry_key": "the bloodprint|alix e harrow",
@@ -788,7 +788,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-11T01:00:43Z"
+      "unmatched_at": "2026-11-08T19:26:50Z"
     },
     {
       "entry_key": "elric of melnibon|michael moorcock",
@@ -827,7 +827,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-11T01:00:43Z"
+      "unmatched_at": "2026-11-08T19:26:50Z"
     },
     {
       "entry_key": "the girl who could move shit with her mind|jackson ford",
@@ -991,7 +991,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-11T01:00:43Z"
+      "unmatched_at": "2026-11-08T19:26:50Z"
     },
     {
       "entry_key": "trail of lightning|r f kuang",
@@ -1005,7 +1005,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-11T01:00:43Z"
+      "unmatched_at": "2026-11-08T19:26:50Z"
     },
     {
       "entry_key": "the ten thousand doors of january|asuma zehanat khan",
@@ -1019,7 +1019,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-11T01:00:43Z"
+      "unmatched_at": "2026-11-08T19:26:50Z"
     },
     {
       "entry_key": "emily wilde s encyclopedia of faeries|heather fawcett",
@@ -1033,7 +1033,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-11T01:00:43Z"
+      "unmatched_at": "2026-11-08T19:26:50Z"
     },
     {
       "entry_key": "cordelia s honor|lois mcmaster bujold",
@@ -1047,7 +1047,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-11T01:00:43Z"
+      "unmatched_at": "2026-11-08T19:26:50Z"
     },
     {
       "entry_key": "dungeon crawler carl|matt dinnaman",
@@ -1061,7 +1061,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-11T01:00:43Z"
+      "unmatched_at": "2026-11-08T19:26:50Z"
     },
     {
       "entry_key": "the raven scholar|antonio hodgson",
@@ -1075,7 +1075,7 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-11T01:00:43Z"
+      "unmatched_at": "2026-11-08T19:26:50Z"
     },
     {
       "entry_key": "lord foul s bane|stephen donaldson",
@@ -1089,9 +1089,493 @@
       "previous_matched_book_ids": [],
       "previous_matched_books": [],
       "unmatched": true,
-      "unmatched_at": "2026-07-11T01:00:43Z"
+      "unmatched_at": "2026-11-08T19:26:50Z"
+    },
+    {
+      "entry_key": "memoirs found in a bathtub|stanislaw lem",
+      "imported_author": [
+        "Stanislaw Lem"
+      ],
+      "imported_title": "Memoirs Found in a Bathtub",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Stanis\u0142aw Lem",
+        "Christine Rose",
+        "Adele Kandel"
+      ],
+      "matched_book_id": 33958,
+      "matched_book_ids": [
+        33958
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Stanis\u0142aw Lem",
+            "Christine Rose",
+            "Adele Kandel"
+          ],
+          "matched_book_id": 33958,
+          "matched_title": "Memoirs Found in a Bathtub"
+        }
+      ],
+      "matched_title": "Memoirs Found in a Bathtub"
+    },
+    {
+      "entry_key": "dune|frank herbert",
+      "imported_author": [
+        "Frank Herbert"
+      ],
+      "imported_title": "Dune",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Frank Herbert"
+      ],
+      "matched_book_id": 23621,
+      "matched_book_ids": [
+        23621
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Frank Herbert"
+          ],
+          "matched_book_id": 23621,
+          "matched_title": "Dune"
+        }
+      ],
+      "matched_title": "Dune"
+    },
+    {
+      "entry_key": "good omens|neil gaiman\u001fterry pratchett",
+      "imported_author": [
+        "Neil Gaiman",
+        "Terry Pratchett"
+      ],
+      "imported_title": "Good Omens",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Terry Pratchett",
+        "Neil Gaiman"
+      ],
+      "matched_book_id": 18702,
+      "matched_book_ids": [
+        18702
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Terry Pratchett",
+            "Neil Gaiman"
+          ],
+          "matched_book_id": 18702,
+          "matched_title": "Good Omens"
+        }
+      ],
+      "matched_title": "Good Omens"
+    },
+    {
+      "entry_key": "good omens|terry pratchett\u001fneil gaiman",
+      "ignored": true,
+      "imported_author": [
+        "Terry Pratchett",
+        "Neil Gaiman"
+      ],
+      "imported_title": "Good Omens",
+      "previous_match_source": "never matched",
+      "previous_matched_book_id": null,
+      "previous_matched_book_ids": [],
+      "previous_matched_books": [],
+      "unmatched": true,
+      "unmatched_at": "2026-11-08T19:26:50Z"
+    },
+    {
+      "entry_key": "the einstein intersection|samuel r delaney",
+      "imported_author": [
+        "Samuel R. Delaney"
+      ],
+      "imported_title": "The Einstein Intersection",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Samuel R. Delany",
+        "Neil Gaiman"
+      ],
+      "matched_book_id": 18665,
+      "matched_book_ids": [
+        18665
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Samuel R. Delany",
+            "Neil Gaiman"
+          ],
+          "matched_book_id": 18665,
+          "matched_title": "Einstein Intersection"
+        }
+      ],
+      "matched_title": "Einstein Intersection"
+    },
+    {
+      "entry_key": "the long earth|terry pratchett and stephen baxter",
+      "imported_author": [
+        "Terry Pratchett and Stephen Baxter"
+      ],
+      "imported_title": "The Long Earth",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Stephen Baxter",
+        "Terry Pratchett"
+      ],
+      "matched_book_id": 23638,
+      "matched_book_ids": [
+        23638
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Stephen Baxter",
+            "Terry Pratchett"
+          ],
+          "matched_book_id": 23638,
+          "matched_title": "The Long Earth"
+        }
+      ],
+      "matched_title": "The Long Earth"
+    },
+    {
+      "entry_key": "house of suns|alistair reynolds",
+      "imported_author": [
+        "Alistair Reynolds"
+      ],
+      "imported_title": "House of Suns",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Alastair Reynolds"
+      ],
+      "matched_book_id": 33760,
+      "matched_book_ids": [
+        33760
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Alastair Reynolds"
+          ],
+          "matched_book_id": 33760,
+          "matched_title": "House of Suns"
+        }
+      ],
+      "matched_title": "House of Suns"
+    },
+    {
+      "entry_key": "futuristic violence and fancy suits|david wong aka jason pargin",
+      "imported_author": [
+        "David Wong (AKA Jason Pargin)"
+      ],
+      "imported_title": "Futuristic Violence and Fancy Suits",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "David Wong"
+      ],
+      "matched_book_id": 18526,
+      "matched_book_ids": [
+        18526
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "David Wong"
+          ],
+          "matched_book_id": 18526,
+          "matched_title": "Futuristic Violence and Fancy Suits"
+        }
+      ],
+      "matched_title": "Futuristic Violence and Fancy Suits"
+    },
+    {
+      "entry_key": "swords and deviltry|fritz leiber",
+      "imported_author": [
+        "Fritz Leiber"
+      ],
+      "imported_title": "Swords and Deviltry",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Fritz Leiber"
+      ],
+      "matched_book_id": 279,
+      "matched_book_ids": [
+        279
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Fritz Leiber"
+          ],
+          "matched_book_id": 279,
+          "matched_title": "Swords and Deviltry"
+        }
+      ],
+      "matched_title": "Swords and Deviltry"
+    },
+    {
+      "entry_key": "frankenstein or the modern prometheus|mary wollstonecraft shelley",
+      "imported_author": [
+        "Mary Wollstonecraft Shelley"
+      ],
+      "imported_title": "Frankenstein, or the Modern Prometheus",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Mary Wollstonecraft Shelley"
+      ],
+      "matched_book_id": 18507,
+      "matched_book_ids": [
+        18507
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Mary Wollstonecraft Shelley"
+          ],
+          "matched_book_id": 18507,
+          "matched_title": "Frankenstein"
+        }
+      ],
+      "matched_title": "Frankenstein"
+    },
+    {
+      "entry_key": "oryx and crake|margaret atwood",
+      "imported_author": [
+        "Margaret Atwood"
+      ],
+      "imported_title": "Oryx and Crake",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Margaret Atwood"
+      ],
+      "matched_book_id": 16921,
+      "matched_book_ids": [
+        16921,
+        40162
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Margaret Atwood"
+          ],
+          "matched_book_id": 16921,
+          "matched_title": "The MaddAddam Trilogy: Oryx and Crake; The Year of the Flood; MaddAddam"
+        },
+        {
+          "matched_authors": [
+            "Margaret Atwood"
+          ],
+          "matched_book_id": 40162,
+          "matched_title": "Oryx and Crake"
+        }
+      ],
+      "matched_title": "Oryx and Crake"
+    },
+    {
+      "entry_key": "this is how you lose the time war|amal el mohtar max gladstone",
+      "imported_author": [
+        "Amal El-Mohtar Max Gladstone"
+      ],
+      "imported_title": "This is How You Lose the Time War",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Amal El-Mohtar",
+        "Max Gladstone"
+      ],
+      "matched_book_id": 17376,
+      "matched_book_ids": [
+        17376
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Amal El-Mohtar",
+            "Max Gladstone"
+          ],
+          "matched_book_id": 17376,
+          "matched_title": "This Is How You Lose the Time War"
+        }
+      ],
+      "matched_title": "This Is How You Lose the Time War"
+    },
+    {
+      "entry_key": "the land founding|aleron kong",
+      "imported_author": [
+        "Aleron Kong"
+      ],
+      "imported_title": "The Land: Founding",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Aleron Kong"
+      ],
+      "matched_book_id": 32473,
+      "matched_book_ids": [
+        32473
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Aleron Kong"
+          ],
+          "matched_book_id": 32473,
+          "matched_title": "The Land: Founding"
+        }
+      ],
+      "matched_title": "The Land: Founding"
+    },
+    {
+      "entry_key": "the future of another timeline|analee newitz",
+      "imported_author": [
+        "Analee Newitz"
+      ],
+      "imported_title": "The Future of Another Timeline",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Annalee Newitz"
+      ],
+      "matched_book_id": 19910,
+      "matched_book_ids": [
+        19910
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Annalee Newitz"
+          ],
+          "matched_book_id": 19910,
+          "matched_title": "The Future of Another Timeline"
+        }
+      ],
+      "matched_title": "The Future of Another Timeline"
+    },
+    {
+      "entry_key": "magician apprentice|raymond e feist",
+      "imported_author": [
+        "Raymond E. Feist"
+      ],
+      "imported_title": "Magician: Apprentice",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Raymond E. Feist"
+      ],
+      "matched_book_id": 31302,
+      "matched_book_ids": [
+        31302
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Raymond E. Feist"
+          ],
+          "matched_book_id": 31302,
+          "matched_title": "Magician: Apprentice"
+        }
+      ],
+      "matched_title": "Magician: Apprentice"
+    },
+    {
+      "entry_key": "she who became the sun|shelley parker chan",
+      "imported_author": [
+        "Shelley Parker-Chan"
+      ],
+      "imported_title": "She Who Became the Sun",
+      "previous_match_source": "automatic",
+      "previous_matched_book_id": 27903,
+      "previous_matched_book_ids": [
+        27903
+      ],
+      "previous_matched_books": [
+        {
+          "matched_authors": [
+            "Shelley Parker-Chan"
+          ],
+          "matched_book_id": 27903,
+          "matched_title": "She Who Became the Sun"
+        }
+      ],
+      "unmatched": true,
+      "unmatched_at": "2026-11-08T19:26:50Z"
+    },
+    {
+      "entry_key": "she who became the sun|shelly parker chan",
+      "imported_author": [
+        "Shelly Parker-Chan"
+      ],
+      "imported_title": "She Who Became the Sun",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Shelley Parker-Chan"
+      ],
+      "matched_book_id": 27903,
+      "matched_book_ids": [
+        27903
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Shelley Parker-Chan"
+          ],
+          "matched_book_id": 27903,
+          "matched_title": "She Who Became the Sun"
+        }
+      ],
+      "matched_title": "She Who Became the Sun"
+    },
+    {
+      "entry_key": "he who fights with monsters|shirtaloon",
+      "imported_author": [
+        "Shirtaloon"
+      ],
+      "imported_title": "He Who Fights With Monsters",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Shirtaloon"
+      ],
+      "matched_book_id": 38177,
+      "matched_book_ids": [
+        38177
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Shirtaloon"
+          ],
+          "matched_book_id": 38177,
+          "matched_title": "He Who Fights With Monsters 4"
+        }
+      ],
+      "matched_title": "He Who Fights With Monsters 4"
+    },
+    {
+      "entry_key": "unsouled|will wright",
+      "imported_author": [
+        "Will Wright"
+      ],
+      "imported_title": "Unsouled",
+      "matched_at": "2026-07-18T19:07:32Z",
+      "matched_authors": [
+        "Will Wight"
+      ],
+      "matched_book_id": 30410,
+      "matched_book_ids": [
+        30410
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Will Wight"
+          ],
+          "matched_book_id": 30410,
+          "matched_title": "Unsouled"
+        }
+      ],
+      "matched_title": "Unsouled"
     }
   ],
-  "saved_at": "2026-07-11T01:00:43Z",
+  "saved_at": "2026-11-08T19:26:50Z",
   "schema_version": 2
 }

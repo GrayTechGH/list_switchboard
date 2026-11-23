@@ -2076,12 +2076,13 @@
       "title": "Voices of the Elysian Fields"
     }
   ],
-  "fetched_at": "2026-07-18T02:40:33Z",
+  "fetched_at": "2026-11-16T00:54:22Z",
   "list_id": "agatha_award_first_novel",
   "list_name": "Agatha Award - Best First Novel",
   "match_series": false,
   "notes": [],
   "parser": "agatha_award_first_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Agatha Award - Best First Novel",

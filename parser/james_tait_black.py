@@ -12,6 +12,8 @@ Maintenance notes:
 """
 
 import re
+import json
+import datetime
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
@@ -20,24 +22,38 @@ try:
   from calibre_plugins.list_switchboard.parser.award_base import ( # type: ignore
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
+    split_title_author_byline,
   )
+  from calibre_plugins.list_switchboard.parser.base import author_list
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError,CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
+    split_title_author_byline,
   )
+  from .base import author_list
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from errors import ImportCancelledError,CamoufoxRequiredError
 
 
 AWARD_NAME = 'James Tait Black Prize'
 FICTION_URL = 'https://james-tait-black.ed.ac.uk/winners/fiction'
 BIOGRAPHY_URL = 'https://james-tait-black.ed.ac.uk/winners/biography'
 SHORTLIST_URL_2026 = 'https://james-tait-black.ed.ac.uk/indie-talent-shines-on-book-prize-shortlist'
+SHORTLIST_URL_2024 = 'https://www.ed.ac.uk/news/2024/love-and-loss-illuminates-book-prize-shortlist'
 
 
 def _category_key(value):
   return normalize_heading(value).replace('non fiction', 'nonfiction')
+
+
+def work_identity(row):
+  return (str(row['award_year']), normalize_heading(row['title']),
+    tuple(sorted(normalize_heading(a) for a in author_list(row.get('authors', row.get('author', ''))))))
 
 
 class JamesTaitBlackOfficialParser(AwardParserBase):
@@ -53,32 +69,91 @@ class JamesTaitBlackOfficialParser(AwardParserBase):
 
   def parse(
       self, html, base_url, name, fetch_url=None, shortlist_urls=(),
-      shortlist_pages=(), log=None, progress=None):
+      shortlist_pages=(), log=None, progress=None,cached_parsed=None,incremental_update=False,
+      shortlist_specs=None):
     rows, notes = self.winner_rows(html, base_url)
+    shortlist_specs = shortlist_specs or {}
+    cache=ParsedUnitCache('james-tait-closed-shortlists-v2',json.dumps([
+      base_url,name,self.category,self.shortlist_heading_aliases,shortlist_urls,shortlist_specs], sort_keys=True),cached_parsed,incremental_update)
+    winners_complete = bool(rows) and not notes
+    if not winners_complete:
+      try:
+        previous = restore_source_rows(cache.previous('winners'),
+          (cache.old_units.get('winners') or {}).get('metadata') or {})
+      except (ValueError, TypeError):
+        previous = []
+      if previous:
+        rows = previous
+        notes.append('James Tait Black winner archive was incomplete; retained the complete cached archive pending retry.')
+    units={'winners':(list(rows),None,winners_complete)}
+    winners={int(row['award_year']) for row in rows}
+    latest=max(winners,default=0)
+    archive_rows = list(rows)
 
     pages = list(shortlist_pages or ())
     if fetch_url is not None:
       total = len(shortlist_urls or ())
       for index, url in enumerate(shortlist_urls or (), 1):
+        old=cache.old_units.get(url) or {}
+        previous=[]
+        try:
+          previous=restore_source_rows(cache.previous(url),old.get('metadata') or {})
+        except (ValueError,TypeError):
+          pass
+        years={int(row['award_year']) for row in previous}
+        required_winners = {work_identity(row) for row in archive_rows if int(row['award_year']) in years}
+        prior_works = {work_identity(row) for row in previous}
+        spec = shortlist_specs.get(url, {})
+        expected_count = (spec.get('counts') or {}).get(self.category)
+        if (winners_complete and old.get('complete') is True and old.get('revision')==url and len(years)==1 and
+            years.issubset(winners) and max(years)<min(latest,datetime.datetime.now().year) and
+            required_winners and required_winners.issubset(prior_works) and
+            (not expected_count or len(prior_works) == expected_count) and
+            (not spec.get('year') or years == {spec['year']})):
+          rows.extend(previous)
+          units[url]=(previous,url,True)
+          continue
         try:
           if progress is not None:
             progress(index, total, f'Fetching {name} shortlist page {index} of {total}')
-          pages.append((url, fetch_url(url)))
+          source_rows=self.shortlist_rows(fetch_url(url),url)
+          if not source_rows:
+            raise ValueError('Official shortlist post had no usable category entries.')
+          if expected_count and len({work_identity(row) for row in source_rows}) != expected_count:
+            raise ValueError('Official shortlist post did not expose its complete configured category roster.')
+          if spec.get('year') and {int(row['award_year']) for row in source_rows} != {spec['year']}:
+            raise ValueError('Official shortlist post has a conflicting publication year.')
+          rows.extend(source_rows)
+          units[url]=(source_rows,url,True)
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
         except Exception as err:
+          rows.extend(previous)
+          units[url]=(previous,url,False)
           notes.append(f'{name} shortlist page could not be fetched: {url}: {err}')
           if log is not None:
             log(f'{name} shortlist page failed: {url}: {err}')
 
     for url, page_html in pages:
-      rows.extend(self.shortlist_rows(page_html, url))
+      source_rows=self.shortlist_rows(page_html,url)
+      rows.extend(source_rows)
+      units[url]=(source_rows,url,bool(source_rows))
 
     rows = self.dedupe_rows(rows)
     entries = self.entries_from_rows(rows)
-    return self.parsed_result(
+    entries=sorted(entries,key=lambda item:position_sort_key(item.get('position','')))
+    for url,(source_rows,revision,complete) in units.items():
+      projected,metadata=project_source_rows(source_rows,entries,
+        work_identity)
+      cache.put(url,projected,revision=revision,complete=complete,metadata=metadata)
+    parsed=self.parsed_result(
       name,
       base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      entries,
       notes=notes)
+    parsed['incremental_state']=cache.state(entries)
+    parsed['incremental_state']['discovery']={'refresh_units':['winners']}
+    return parsed
 
   def winner_rows(self, html, base_url):
     soup = BeautifulSoup(html, 'html.parser')
@@ -104,6 +179,8 @@ class JamesTaitBlackOfficialParser(AwardParserBase):
     work_text = re.sub(r'\s*\(\s*winner\s*\)\s*$', '', work_text, flags=re.I).strip()
     joint_label = bool(re.match(r'^joint award\s*:', work_text, re.I))
     work_text = re.sub(r'^joint award\s*:\s*', '', work_text, flags=re.I).strip()
+    if year==2002 and work_text=='Jenny Uglow The Lunar Men: The Friends Who Made the Future 1730-1810 (Faber)':
+      work_text=work_text.replace('Jenny Uglow ','Jenny Uglow - ',1)
 
     rows = []
     for segment in self.split_joint_segments(work_text, joint_label):
@@ -152,6 +229,7 @@ class JamesTaitBlackOfficialParser(AwardParserBase):
 
   def shortlist_rows(self, html, page_url):
     soup = BeautifulSoup(html, 'html.parser')
+    soup = soup.find('main') or soup
     article_year = self.article_year(soup, page_url)
     if article_year is None:
       return []
@@ -162,6 +240,10 @@ class JamesTaitBlackOfficialParser(AwardParserBase):
         continue
       for node in self.section_nodes(heading):
         if getattr(node, 'name', None) != 'p':
+          continue
+        declared = self.declared_shortlist_rows(self.clean_text(node), award_year, page_url)
+        if declared is not None:
+          rows.extend(declared)
           continue
         parsed = self.parse_shortlist_paragraph(self.clean_text(node))
         if parsed is None:
@@ -175,6 +257,28 @@ class JamesTaitBlackOfficialParser(AwardParserBase):
           'source_url': self.first_link_url(node, page_url) or page_url,
           'category': self.category,
         })
+    return rows
+
+  def declared_shortlist_rows(self, text, award_year, page_url):
+    """Read the official 2024 paragraph's explicit semicolon-delimited roster."""
+    match = re.match(r'^The\s+(four|six|\d+)\s+(novels|biographies)\s+shortlisted\b.*?\bare:\s*(.+)$', text, re.I)
+    if match is None:
+      return None
+    declared = {'four': 4, 'six': 6}.get(match[1].casefold())
+    if declared is None:
+      declared = int(match[1])
+    rows = []
+    for fragment in match[3].split(';'):
+      fragment = re.sub(r'^\s*and\s+', '', fragment.strip(), flags=re.I).rstrip('.')
+      fragment = re.sub(r',?\s+translated by\s+.+$', '', fragment, flags=re.I)
+      title, author = split_title_author_byline(strip_publication_notes(fragment))
+      if not title or not author:
+        raise ValueError('Official James Tait Black declared roster has an incomplete book byline.')
+      rows.append({'award_year': str(award_year), 'title': self.clean_title(title),
+        'author': self.clean_author(author), 'result': RESULT_SHORTLISTED,
+        'source_url': page_url, 'category': self.category})
+    if len({work_identity(row) for row in rows}) != declared:
+      raise ValueError('Official James Tait Black declared roster is incomplete.')
     return rows
 
   def parse_shortlist_paragraph(self, text):
@@ -216,6 +320,11 @@ class JamesTaitBlackOfficialParser(AwardParserBase):
 
   def article_year(self, soup, page_url):
     for text_node in soup.find_all(string=re.compile(r'This article was published', re.I)):
+      date=text_node.parent.find('time')
+      if date:
+        year=self.year_from_text(date.get('datetime') or self.clean_text(date))
+        if year is not None:
+          return year
       year = self.year_from_text(str(text_node))
       if year is not None:
         return year

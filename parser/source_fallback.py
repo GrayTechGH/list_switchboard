@@ -11,6 +11,8 @@ Maintenance notes:
   attempt as notes when partial results are still useful.
 """
 
+from copy import copy
+
 
 try:
   from calibre_plugins.list_switchboard.parser.base import parsed_source
@@ -35,7 +37,7 @@ class SourceAttempt:
 
   def __init__(
       self, label, url, parser, source_rank=0, usability_check=None,
-      user_agent=None, max_response_bytes=None):
+      user_agent=None, max_response_bytes=None, supports_incremental=False):
     self.label = label
     self.url = url
     self.parser = parser
@@ -43,6 +45,8 @@ class SourceAttempt:
     self.usability_check = usability_check
     self.user_agent = user_agent
     self.max_response_bytes = max_response_bytes
+    self.supports_incremental = bool(supports_incremental)
+    self.incremental_context = {}
 
   def execute(
       self, fetch_url, log=None, progress=None, before_fetch=None,
@@ -65,9 +69,11 @@ class SourceAttempt:
     fetch_url = self.fetch_url(fetch_url)
     if hasattr(parser, 'parse'):
       return parser.parse(
-        html, self.url, fetch_url=fetch_url, log=log, progress=progress)
+        html, self.url, fetch_url=fetch_url, log=log, progress=progress,
+        **self.incremental_context)
     return parser(
-      html, self.url, fetch_url=fetch_url, log=log, progress=progress)
+      html, self.url, fetch_url=fetch_url, log=log, progress=progress,
+      **self.incremental_context)
 
   def fetch_url(self, fetch_url):
     if fetch_url is None or (not self.user_agent and not self.max_response_bytes):
@@ -135,7 +141,8 @@ class SourceFallbackRunner:
   def run(
       self, fetch_url, log=None, progress=None, before_fetch=None,
       after_fetch=None, before_parse=None, force_fallback_level=0,
-      disable_fallbacks=False, source_choice=None):
+      disable_fallbacks=False, source_choice=None, cached_parsed=None,
+      incremental_update=False):
     failures = []
     force_fallback_level = int(force_fallback_level or 0)
     attempts = self.attempts
@@ -171,6 +178,12 @@ class SourceFallbackRunner:
           f'No source fallback attempt exists for forced level {force_fallback_level}.')
     for attempt in attempts:
       try:
+        if getattr(attempt, 'supports_incremental', False):
+          # Keep execute() compatible with transport-aware/custom subclasses.
+          # Parser-specific source keys still decide whether this cache fits.
+          attempt = copy(attempt)
+          attempt.incremental_context = {
+            'cached_parsed': cached_parsed, 'incremental_update': bool(incremental_update)}
         parsed = attempt.execute(
           fetch_url, log=log, progress=progress, before_fetch=before_fetch,
           after_fetch=after_fetch, before_parse=before_parse)

@@ -25,12 +25,14 @@ try:
     normalize_heading, normalize_line, split_title_author, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, split_title_author, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 AWARD_NAME = 'Center for Fiction First Novel Prize'
@@ -77,12 +79,12 @@ class CenterForFictionFirstNovelMixin(AwardParserBase):
   def clean_title(self, value):
     value = strip_publication_notes(normalize_line(_normalized_text(value)))
     value = re.sub(r'^\s*\d+\s*[\.)]\s*', '', value)
-    value = re.sub(r'^\s*(?:title|book|novel|work)\s*:?\s*', '', value, flags=re.I)
+    value = re.sub(r'^\s*(?:title|book|novel|work)\s*:\s*', '', value, flags=re.I)
     return value.strip(' "\'\u2018\u2019\u201c\u201d,')
 
   def clean_author(self, value):
     value = strip_publication_notes(normalize_line(_normalized_text(value)))
-    value = re.sub(r'^\s*(?:by|author|authors|writer|writers)\s*:?\s*', '', value, flags=re.I)
+    value = re.sub(r'^\s*(?:by|authors?|writers?)(?:\s*:\s*|\s+)', '', value, flags=re.I)
     value = re.sub(r'\s+published\s+by\s+.+$', '', value, flags=re.I).strip()
     value = re.sub(r'\s+publisher\s*:?\s+.+$', '', value, flags=re.I).strip()
     return value.strip(' "\'\u2018\u2019\u201c\u201d,')
@@ -137,7 +139,7 @@ class CenterForFictionFirstNovelMixin(AwardParserBase):
   def parse_text_entry(self, text):
     text = normalize_line(_normalized_text(text))
     text = re.sub(
-      r'^\s*(?:winner|shortlist(?:ed)?|longlist(?:ed)?|finalist)\s*:?\s*',
+      r'^\s*(?:winner|shortlist(?:ed)?|longlist(?:ed)?|finalist)\s*:\s*',
       '', text, flags=re.I)
     if not text or self.result_from_text(text) == 'longlisted':
       return '', ''
@@ -288,6 +290,8 @@ class CenterForFictionFirstNovelOfficialParser(CenterForFictionFirstNovelMixin):
           if progress is not None:
             progress(index, total, f'Fetching {name} year {index} of {total}')
           rows.extend(self.parse_page_rows(fetch_url(url), url, fallback_year=year))
+        except (ImportCancelledError, CamoufoxRequiredError):
+          raise
         except Exception as err:
           notes.append(f'{name} year could not be fetched: {url}: {err}')
           if log is not None:
@@ -295,13 +299,13 @@ class CenterForFictionFirstNovelOfficialParser(CenterForFictionFirstNovelMixin):
     return self.parsed_from_rows(rows, name, base_url, notes=notes)
 
   def year_links(self, html, base_url):
-    soup = BeautifulSoup(html, 'html.parser')
+    try:
+      from calibre_plugins.list_switchboard.parser.center_for_fiction_sources import discover_links
+    except ImportError:
+      from .center_for_fiction_sources import discover_links
     links = {}
-    for link in soup.find_all('a', href=True):
-      url = urljoin(base_url, link['href'])
-      year = self.year_from_url(url)
-      if year is not None and 'first-novel-prize' in url:
-        links.setdefault(year, url)
+    for year, url in discover_links(html, base_url, validate=False):
+      links.setdefault(year, url)
     return tuple((year, links[year]) for year in sorted(links))
 
   def flush_pending(self, rows, year, title, author, result, source_url):
@@ -311,6 +315,8 @@ class CenterForFictionFirstNovelOfficialParser(CenterForFictionFirstNovelMixin):
 
   def parse_page_rows(self, html, base_url, fallback_year=None):
     soup = BeautifulSoup(html, 'html.parser')
+    if soup.select_one('article.editorial .featured-books'):
+      return self.read_official_source(html, base_url)['rows']
     root = soup.find('main') or soup.find('article') or soup.body or soup
     year = (
       self.year_from_url(base_url) or
@@ -375,6 +381,13 @@ class CenterForFictionFirstNovelOfficialParser(CenterForFictionFirstNovelMixin):
         if title and author:
           self.flush_pending(rows, year, title, author, current_result, self.first_link_url(node, base_url) or base_url)
     return rows
+
+  def read_official_source(self, html, base_url):
+    try:
+      from calibre_plugins.list_switchboard.parser.center_for_fiction_sources import read_source
+    except ImportError:
+      from .center_for_fiction_sources import read_source
+    return read_source(self, html, base_url)
 
 
 class CenterForFictionFirstNovelWikipediaParser(CenterForFictionFirstNovelMixin):

@@ -1,0 +1,3709 @@
+{
+  "append_state": {
+    "entry_count": 230,
+    "last_entry_key": "one step at a time|rick danforth",
+    "last_position": "2026.08",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Christopher Priest"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1980",
+      "category": "Shorter Fiction",
+      "position": "1980",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1980"
+      },
+      "title": "Palely Loitering"
+    },
+    {
+      "authors": [
+        "Jack Dann"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1980",
+      "category": "Shorter Fiction",
+      "position": "1980.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1980"
+      },
+      "title": "Camps"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1980",
+      "category": "Shorter Fiction",
+      "position": "1980.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1980"
+      },
+      "title": "Crossing Into Cambodia"
+    },
+    {
+      "authors": [
+        "Bill Pronzini",
+        "Barry N. Malzberg"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1980",
+      "category": "Shorter Fiction",
+      "position": "1980.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1980"
+      },
+      "title": "Prose Bowl"
+    },
+    {
+      "authors": [
+        "David Langford"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1980",
+      "category": "Shorter Fiction",
+      "position": "1980.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1980"
+      },
+      "title": "Sex Pirates of the Blood Asteroid"
+    },
+    {
+      "authors": [
+        "Thomas M. Disch"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1981",
+      "category": "Shorter Fiction",
+      "position": "1981",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1981"
+      },
+      "title": "The Brave Little Toaster"
+    },
+    {
+      "authors": [
+        "R. M. Lamming"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1981",
+      "category": "Shorter Fiction",
+      "position": "1981.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1981"
+      },
+      "title": "The Ink Imp"
+    },
+    {
+      "authors": [
+        "Keith Roberts"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1981",
+      "category": "Shorter Fiction",
+      "position": "1981.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1981"
+      },
+      "title": "The Lordly Ones"
+    },
+    {
+      "authors": [
+        "Philip K. Dick"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1981",
+      "category": "Shorter Fiction",
+      "position": "1981.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1981"
+      },
+      "title": "Rautavaara's Case"
+    },
+    {
+      "authors": [
+        "Richard Cowper"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1981",
+      "category": "Shorter Fiction",
+      "position": "1981.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1981"
+      },
+      "title": "The Web of the Magi"
+    },
+    {
+      "authors": [
+        "Ian Watson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1981",
+      "category": "Shorter Fiction",
+      "position": "1981.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1981"
+      },
+      "title": "The World Science Fiction Convention of 2080"
+    },
+    {
+      "authors": [
+        "Robert Holdstock"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1982",
+      "category": "Shorter Fiction",
+      "position": "1982",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1982"
+      },
+      "title": "Mythago Wood"
+    },
+    {
+      "authors": [
+        "Ian Watson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1982",
+      "category": "Shorter Fiction",
+      "position": "1982.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1982"
+      },
+      "title": "A Cage for Death"
+    },
+    {
+      "authors": [
+        "Keith Roberts"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1982",
+      "category": "Shorter Fiction",
+      "position": "1982.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1982"
+      },
+      "title": "The Checkout"
+    },
+    {
+      "authors": [
+        "Edward Shaver"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1982",
+      "category": "Shorter Fiction",
+      "position": "1982.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1982"
+      },
+      "title": "The Killing Thought"
+    },
+    {
+      "authors": [
+        "Lisa Tuttle"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1982",
+      "category": "Shorter Fiction",
+      "position": "1982.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1982"
+      },
+      "title": "Treading the Maze"
+    },
+    {
+      "authors": [
+        "Keith Roberts"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1983",
+      "category": "Shorter Fiction",
+      "position": "1983",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1983"
+      },
+      "title": "Kitemaster"
+    },
+    {
+      "authors": [
+        "Garry Kilworth"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1983",
+      "category": "Shorter Fiction",
+      "position": "1983.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1983"
+      },
+      "title": "The Dissemblers"
+    },
+    {
+      "authors": [
+        "J. G. Ballard"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1983",
+      "category": "Shorter Fiction",
+      "position": "1983.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1983"
+      },
+      "title": "Myths of the Near Future"
+    },
+    {
+      "authors": [
+        "Angela Carter"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1983",
+      "category": "Shorter Fiction",
+      "position": "1983.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1983"
+      },
+      "title": "Overture from a Midsummer Night's Dream"
+    },
+    {
+      "authors": [
+        "Andrew Weiner"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1983",
+      "category": "Shorter Fiction",
+      "position": "1983.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1983"
+      },
+      "title": "The Third Test"
+    },
+    {
+      "authors": [
+        "Edwards Malcolm"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1984",
+      "category": "Shorter Fiction",
+      "position": "1984",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1984"
+      },
+      "title": "After Images"
+    },
+    {
+      "authors": [
+        "John Sladek"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1984",
+      "category": "Shorter Fiction",
+      "position": "1984.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1984"
+      },
+      "title": "Calling All Gumdrops!"
+    },
+    {
+      "authors": [
+        "Scott Bradfield"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1984",
+      "category": "Shorter Fiction",
+      "position": "1984.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1984"
+      },
+      "title": "The Flash Kid"
+    },
+    {
+      "authors": [
+        "John Crowley"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1984",
+      "category": "Shorter Fiction",
+      "position": "1984.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1984"
+      },
+      "title": "Novelty"
+    },
+    {
+      "authors": [
+        "Richard Cowper"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1984",
+      "category": "Shorter Fiction",
+      "position": "1984.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1984"
+      },
+      "title": "The Tithonian Factor"
+    },
+    {
+      "authors": [
+        "Geoff Ryman"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1985",
+      "category": "Shorter Fiction",
+      "position": "1985",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1985"
+      },
+      "title": "The Unconquered Country"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1985",
+      "category": "Shorter Fiction",
+      "position": "1985.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1985"
+      },
+      "title": "The Man Who Painted the Dragon Griaule"
+    },
+    {
+      "authors": [
+        "J. G. Ballard"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1985",
+      "category": "Shorter Fiction",
+      "position": "1985.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1985"
+      },
+      "title": "The Object of the Attack"
+    },
+    {
+      "authors": [
+        "Garry Kilworth"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1985",
+      "category": "Shorter Fiction",
+      "position": "1985.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1985"
+      },
+      "title": "Spiral Winds"
+    },
+    {
+      "authors": [
+        "Scott Bradfield"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1985",
+      "category": "Shorter Fiction",
+      "position": "1985.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1985"
+      },
+      "title": "Unmistakably the Finest"
+    },
+    {
+      "authors": [
+        "David Langford"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1986",
+      "category": "Shorter Fiction",
+      "position": "1986",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1986"
+      },
+      "title": "Cube Root"
+    },
+    {
+      "authors": [
+        "Keith Roberts"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1986",
+      "category": "Shorter Fiction",
+      "position": "1986.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1986"
+      },
+      "title": "Kitemistress"
+    },
+    {
+      "authors": [
+        "Geoff Ryman"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1986",
+      "category": "Shorter Fiction",
+      "position": "1986.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1986"
+      },
+      "title": "O Happy Day!"
+    },
+    {
+      "authors": [
+        "Ian Watson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1986",
+      "category": "Shorter Fiction",
+      "position": "1986.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1986"
+      },
+      "title": "The People on the Precipice"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1986",
+      "category": "Shorter Fiction",
+      "position": "1986.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1986"
+      },
+      "title": "A Young Man's Journey to Viriconium"
+    },
+    {
+      "authors": [
+        "Geoff Ryman"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1988",
+      "category": "Shorter Fiction",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1988"
+      },
+      "title": "Love Sickness"
+    },
+    {
+      "authors": [
+        "Bob Shaw"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1989",
+      "category": "Shorter Fiction",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1989"
+      },
+      "title": "Dark Night in Toyland"
+    },
+    {
+      "authors": [
+        "Lisa Tuttle"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1990",
+      "category": "Shorter Fiction",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1990"
+      },
+      "title": "In Translation"
+    },
+    {
+      "authors": [
+        "Christopher Evans"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1990",
+      "category": "Shorter Fiction",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1990"
+      },
+      "title": "The Bridge"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1990",
+      "category": "Shorter Fiction",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1990"
+      },
+      "title": "Gardenias"
+    },
+    {
+      "authors": [
+        "Mary Gentle"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1990",
+      "category": "Shorter Fiction",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1990"
+      },
+      "title": "The Knot Garden"
+    },
+    {
+      "authors": [
+        "Ian Lee"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1990",
+      "category": "Shorter Fiction",
+      "position": "1990.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1990"
+      },
+      "title": "Once Upon a Time in the Park"
+    },
+    {
+      "authors": [
+        "Barrington J. Bayley"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1990",
+      "category": "Shorter Fiction",
+      "position": "1990.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1990"
+      },
+      "title": "Tommy Atkins"
+    },
+    {
+      "authors": [
+        "Kim Newman"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1991",
+      "category": "Shorter Fiction",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1991"
+      },
+      "title": "The Original Dr. Shade"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1991",
+      "category": "Shorter Fiction",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1991"
+      },
+      "title": "Axiomatic"
+    },
+    {
+      "authors": [
+        "Eric Brown"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1991",
+      "category": "Shorter Fiction",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1991"
+      },
+      "title": "The Death of Cassandra Quebec"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1991",
+      "category": "Shorter Fiction",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1991"
+      },
+      "title": "Learning to Be Me"
+    },
+    {
+      "authors": [
+        "Eric Brown"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1991",
+      "category": "Shorter Fiction",
+      "position": "1991.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1991"
+      },
+      "title": "The Phargean Effect"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1991",
+      "category": "Shorter Fiction",
+      "position": "1991.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1991"
+      },
+      "title": "Winning"
+    },
+    {
+      "authors": [
+        "Molly Brown"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1992",
+      "category": "Shorter Fiction",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1992"
+      },
+      "title": "Bad Timing"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1992",
+      "category": "Shorter Fiction",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1992"
+      },
+      "title": "Floating Dogs"
+    },
+    {
+      "authors": [
+        "Colin Greenland"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1992",
+      "category": "Shorter Fiction",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1992"
+      },
+      "title": "Nothing Special"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1993",
+      "category": "Shorter Fiction",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1993"
+      },
+      "title": "Innocents"
+    },
+    {
+      "authors": [
+        "Ian Watson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1993",
+      "category": "Shorter Fiction",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1993"
+      },
+      "title": "The Coming of Vertumnus"
+    },
+    {
+      "authors": [
+        "Storm Constantine"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1993",
+      "category": "Shorter Fiction",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1993"
+      },
+      "title": "Priest of Hands"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1993",
+      "category": "Shorter Fiction",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1993"
+      },
+      "title": "Reification Highway"
+    },
+    {
+      "authors": [
+        "Ian R. MacLeod"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1993",
+      "category": "Shorter Fiction",
+      "position": "1993.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1993"
+      },
+      "title": "Returning"
+    },
+    {
+      "authors": [
+        "Garry Kilworth"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1993",
+      "category": "Shorter Fiction",
+      "position": "1993.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1993"
+      },
+      "title": "The Sculptor"
+    },
+    {
+      "authors": [
+        "Robert Holdstock",
+        "Garry Kilworth"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1994",
+      "category": "Shorter Fiction",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1994"
+      },
+      "title": "The Ragthorn"
+    },
+    {
+      "authors": [
+        "Astrid Julian"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1994",
+      "category": "Shorter Fiction",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1994"
+      },
+      "title": "Irene's Song"
+    },
+    {
+      "authors": [
+        "Molly Brown"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1994",
+      "category": "Shorter Fiction",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1994"
+      },
+      "title": "No Better Than Anyone Else"
+    },
+    {
+      "authors": [
+        "Peter F. Hamilton"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1994",
+      "category": "Shorter Fiction",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1994"
+      },
+      "title": "Spare Capacity"
+    },
+    {
+      "authors": [
+        "Nicola Griffith"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1994",
+      "category": "Shorter Fiction",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1994"
+      },
+      "title": "Touching Fire"
+    },
+    {
+      "authors": [
+        "Chris Beckett"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1994",
+      "category": "Shorter Fiction",
+      "position": "1994.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1994"
+      },
+      "title": "The Welfare Man"
+    },
+    {
+      "authors": [
+        "Paul Di Filippo"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1995",
+      "category": "Shorter Fiction",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1995"
+      },
+      "title": "The Double Felix"
+    },
+    {
+      "authors": [
+        "Katharine Kerr"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1995",
+      "category": "Shorter Fiction",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1995"
+      },
+      "title": "Asylum"
+    },
+    {
+      "authors": [
+        "Brian Stableford"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1995",
+      "category": "Shorter Fiction",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1995"
+      },
+      "title": "Les Fleurs du Mal"
+    },
+    {
+      "authors": [
+        "Paul Di Filippo"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1995",
+      "category": "Shorter Fiction",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1995"
+      },
+      "title": "Mudpuppy goes to Town"
+    },
+    {
+      "authors": [
+        "John Meaney"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1995",
+      "category": "Shorter Fiction",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1995"
+      },
+      "title": "Sharp Tang"
+    },
+    {
+      "authors": [
+        "Brian Stableford"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1996",
+      "category": "Shorter Fiction",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1996"
+      },
+      "title": "The Hunger and Ecstasy of Vampires"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1996",
+      "category": "Shorter Fiction",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1996"
+      },
+      "title": "The Ant-Men of Tibet"
+    },
+    {
+      "authors": [
+        "Eugene Byrne"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1996",
+      "category": "Shorter Fiction",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1996"
+      },
+      "title": "Bagged 'n' Tagged"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1996",
+      "category": "Shorter Fiction",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1996"
+      },
+      "title": "Frooks"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1996",
+      "category": "Shorter Fiction",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1996"
+      },
+      "title": "Mister Volition"
+    },
+    {
+      "authors": [
+        "Kathleen Ann Goonan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1996",
+      "category": "Shorter Fiction",
+      "position": "1996.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1996"
+      },
+      "title": "Sunflowers"
+    },
+    {
+      "authors": [
+        "Geoff Ryman"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1996",
+      "category": "Shorter Fiction",
+      "position": "1996.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1996"
+      },
+      "title": "Warmth"
+    },
+    {
+      "authors": [
+        "Barrington J. Bayley"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1997",
+      "category": "Shorter Fiction",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1997"
+      },
+      "title": "A Crab Must Try"
+    },
+    {
+      "authors": [
+        "Molly Brown"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1997",
+      "category": "Shorter Fiction",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1997"
+      },
+      "title": "Community Service"
+    },
+    {
+      "authors": [
+        "J. G. Ballard"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1997",
+      "category": "Shorter Fiction",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1997"
+      },
+      "title": "The Dying Fall"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1997",
+      "category": "Shorter Fiction",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1997"
+      },
+      "title": "The East"
+    },
+    {
+      "authors": [
+        "Mary A. Turzillo"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1997",
+      "category": "Shorter Fiction",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1997"
+      },
+      "title": "Eat or be Eaten: A Love Story"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1998",
+      "category": "Shorter Fiction",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1998"
+      },
+      "title": "War Birds"
+    },
+    {
+      "authors": [
+        "Pat Cadigan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1998",
+      "category": "Shorter Fiction",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1998"
+      },
+      "title": "The Emperor's New Reality"
+    },
+    {
+      "authors": [
+        "Richard Kadrey"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1998",
+      "category": "Shorter Fiction",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1998"
+      },
+      "title": "The First Man Not to Land on the Moon"
+    },
+    {
+      "authors": [
+        "Paul Kincaid"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1998",
+      "category": "Shorter Fiction",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1998"
+      },
+      "title": "Last Day of the Carnival -- 36 Exposures"
+    },
+    {
+      "authors": [
+        "Eugene Byrne"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1998",
+      "category": "Shorter Fiction",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1998"
+      },
+      "title": "ThigMOO"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1999",
+      "category": "Shorter Fiction",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1999"
+      },
+      "title": "La Cenerentola"
+    },
+    {
+      "authors": [
+        "Mary Soon Lee"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1999",
+      "category": "Shorter Fiction",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1999"
+      },
+      "title": "The Day Before They Came"
+    },
+    {
+      "authors": [
+        "Thomas M. Disch"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1999",
+      "category": "Shorter Fiction",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1999"
+      },
+      "title": "The First Annual Performance Arts Festival at the Slaughter Rock Battlefield"
+    },
+    {
+      "authors": [
+        "Timons Esaias"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1999",
+      "category": "Shorter Fiction",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1999"
+      },
+      "title": "Shift Change"
+    },
+    {
+      "authors": [
+        "Eric Brown"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "1999",
+      "category": "Shorter Fiction",
+      "position": "1999.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_1999"
+      },
+      "title": "Vulpheous"
+    },
+    {
+      "authors": [
+        "Eric Brown"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2000",
+      "category": "Shorter Fiction",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2000"
+      },
+      "title": "Hunting the Slarque"
+    },
+    {
+      "authors": [
+        "Tony Ballantyne"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2000",
+      "category": "Shorter Fiction",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2000"
+      },
+      "title": "Gorillagram"
+    },
+    {
+      "authors": [
+        "Stephen Dedman"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2000",
+      "category": "Shorter Fiction",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2000"
+      },
+      "title": "The Lady Macbeth Blues"
+    },
+    {
+      "authors": [
+        "Richard Calder"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2000",
+      "category": "Shorter Fiction",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2000"
+      },
+      "title": "Malignos"
+    },
+    {
+      "authors": [
+        "Maya Kaathryn Bohnhoff"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2000",
+      "category": "Shorter Fiction",
+      "position": "2000.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2000"
+      },
+      "title": "White Dog"
+    },
+    {
+      "authors": [
+        "Peter F. Hamilton"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2001",
+      "category": "Shorter Fiction",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2001"
+      },
+      "title": "The Suspect Genome"
+    },
+    {
+      "authors": [
+        "Liz Williams"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2001",
+      "category": "Shorter Fiction",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2001"
+      },
+      "title": "Adventures in the Ghost Trade"
+    },
+    {
+      "authors": [
+        "Eric Brown"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2001",
+      "category": "Shorter Fiction",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2001"
+      },
+      "title": "Destiny on Tartarus"
+    },
+    {
+      "authors": [
+        "Paul Di Filippo"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2001",
+      "category": "Shorter Fiction",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2001"
+      },
+      "title": "Singing Each to Each"
+    },
+    {
+      "authors": [
+        "Tanith Lee"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2001",
+      "category": "Shorter Fiction",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2001"
+      },
+      "title": "La Vampiresse"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Shorter Fiction",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2003"
+      },
+      "title": "Coraline"
+    },
+    {
+      "authors": [
+        "Michael Swanwick"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Shorter Fiction",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2003"
+      },
+      "title": "Five British Dinosaurs"
+    },
+    {
+      "authors": [
+        "Paul Park"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Shorter Fiction",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2003"
+      },
+      "title": "If Lions Could Speak: Imaging the Alien"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Shorter Fiction",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2003"
+      },
+      "title": "Router"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Shorter Fiction",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2003"
+      },
+      "title": "Singleton"
+    },
+    {
+      "authors": [
+        "Sean McMullen"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2003",
+      "category": "Shorter Fiction",
+      "position": "2003.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2003"
+      },
+      "title": "Voice of Steel"
+    },
+    {
+      "authors": [
+        "Neil Gaiman",
+        "Dave McKean"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Shorter Fiction",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2004"
+      },
+      "title": "The Wolves in the Walls"
+    },
+    {
+      "authors": [
+        "Geoff Ryman"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Shorter Fiction",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2004"
+      },
+      "title": "Birth Days"
+    },
+    {
+      "authors": [
+        "Terry Bisson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Shorter Fiction",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2004"
+      },
+      "title": "Dear Abbey"
+    },
+    {
+      "authors": [
+        "John Meaney"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Shorter Fiction",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2004"
+      },
+      "title": "Entangled Eyes Are Smiling"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2004",
+      "category": "Shorter Fiction",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2004"
+      },
+      "title": "Nightfall"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2005",
+      "category": "Shorter Fiction",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2005"
+      },
+      "title": "Mayflower II"
+    },
+    {
+      "authors": [
+        "Vandana Singh"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2005",
+      "category": "Shorter Fiction",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2005"
+      },
+      "title": "Delhi"
+    },
+    {
+      "authors": [
+        "Kelly Link"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2005",
+      "category": "Shorter Fiction",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2005"
+      },
+      "title": "The Faery Handbag"
+    },
+    {
+      "authors": [
+        "Jon Courtenay Grimwood"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2005",
+      "category": "Shorter Fiction",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2005"
+      },
+      "title": "Point of No Return"
+    },
+    {
+      "authors": [
+        "Howard Waldrop"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2005",
+      "category": "Shorter Fiction",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2005"
+      },
+      "title": "The Wolf-Man of Alcatraz"
+    },
+    {
+      "authors": [
+        "Kelly Link"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2006",
+      "category": "Shorter Fiction",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2006"
+      },
+      "title": "Magic for Beginners"
+    },
+    {
+      "authors": [
+        "Michael Bishop"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2006",
+      "category": "Shorter Fiction",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2006"
+      },
+      "title": "Bears Discover Smut"
+    },
+    {
+      "authors": [
+        "Nina Allan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2006",
+      "category": "Shorter Fiction",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2006"
+      },
+      "title": "Bird Songs at Eventide"
+    },
+    {
+      "authors": [
+        "Rudy Rucker"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2006",
+      "category": "Shorter Fiction",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2006"
+      },
+      "title": "Guadalupe and Hieronymus Bosch"
+    },
+    {
+      "authors": [
+        "Cory Doctorow"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2006",
+      "category": "Shorter Fiction",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2006"
+      },
+      "title": "I, Robot"
+    },
+    {
+      "authors": [
+        "Edward Morries"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2006",
+      "category": "Shorter Fiction",
+      "position": "2006.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2006"
+      },
+      "title": "Imagine"
+    },
+    {
+      "authors": [
+        "Will McIntosh"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2006",
+      "category": "Shorter Fiction",
+      "position": "2006.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2006"
+      },
+      "title": "Soft Apocalypse"
+    },
+    {
+      "authors": [
+        "Elizabeth Bear"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2006",
+      "category": "Shorter Fiction",
+      "position": "2006.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2006"
+      },
+      "title": "Two Dreams on Trains"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Shorter Fiction",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2007"
+      },
+      "title": "The Djinn's Wife"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Shorter Fiction",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2007"
+      },
+      "title": "The Highway Men"
+    },
+    {
+      "authors": [
+        "Benjamin Rosenbaum"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Shorter Fiction",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2007"
+      },
+      "title": "The House Beyond Your Sky"
+    },
+    {
+      "authors": [
+        "Margo Lanagan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Shorter Fiction",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2007"
+      },
+      "title": "The Point of Roses"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Shorter Fiction",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2007"
+      },
+      "title": "Signal to Noise"
+    },
+    {
+      "authors": [
+        "Elizabeth Bear"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2007",
+      "category": "Shorter Fiction",
+      "position": "2007.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2007"
+      },
+      "title": "Sounding"
+    },
+    {
+      "authors": [
+        "Ken MacLeod"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2008",
+      "category": "Shorter Fiction",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2008"
+      },
+      "title": "Lighting Out"
+    },
+    {
+      "authors": [
+        "Ian Whates"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2008",
+      "category": "Shorter Fiction",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2008"
+      },
+      "title": "The Gift of Joy"
+    },
+    {
+      "authors": [
+        "Ted Chiang"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2008",
+      "category": "Shorter Fiction",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2008"
+      },
+      "title": "The Merchant and the Alchemist's Gate"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2008",
+      "category": "Shorter Fiction",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2008"
+      },
+      "title": "The Sledge-Maker's Daughter"
+    },
+    {
+      "authors": [
+        "Chaz Brenchley"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2008",
+      "category": "Shorter Fiction",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2008"
+      },
+      "title": "Terminal"
+    },
+    {
+      "authors": [
+        "Ted Chiang"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2009",
+      "category": "Shorter Fiction",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2009"
+      },
+      "title": "Exhalation"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2009",
+      "category": "Shorter Fiction",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2009"
+      },
+      "title": "Crystal Nights"
+    },
+    {
+      "authors": [
+        "M. Rickert"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2009",
+      "category": "Shorter Fiction",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2009"
+      },
+      "title": "Evidence of Love in a Case of Abandonment"
+    },
+    {
+      "authors": [
+        "Paul McAuley"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2009",
+      "category": "Shorter Fiction",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2009"
+      },
+      "title": "Little Lost Robot"
+    },
+    {
+      "authors": [
+        "Ian Watson",
+        "Roberto Quaglia"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2010",
+      "category": "Shorter Fiction",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2010"
+      },
+      "title": "The Beloved Time of Their Lives"
+    },
+    {
+      "authors": [
+        "Ian Whates"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2010",
+      "category": "Shorter Fiction",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2010"
+      },
+      "title": "The Assistant"
+    },
+    {
+      "authors": [
+        "Kim Lakin-Smith"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2010",
+      "category": "Shorter Fiction",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2010"
+      },
+      "title": "Johnnie and Emmie-Lou Get Married"
+    },
+    {
+      "authors": [
+        "Dave Hutchinson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2010",
+      "category": "Shorter Fiction",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2010"
+      },
+      "title": "The Push"
+    },
+    {
+      "authors": [
+        "Eugie Foster"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2010",
+      "category": "Shorter Fiction",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2010"
+      },
+      "title": "Sinner, Baker, Fabulist, Priest; Red Mask, Black Mask, Gentleman, Beast"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2010",
+      "category": "Shorter Fiction",
+      "position": "2010.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2010"
+      },
+      "title": "Vishnu at the Cat Circus"
+    },
+    {
+      "authors": [
+        "Aliette de Bodard"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2011",
+      "category": "Shorter Fiction",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2011"
+      },
+      "title": "The Shipmaker"
+    },
+    {
+      "authors": [
+        "Neil Williamson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2011",
+      "category": "Shorter Fiction",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2011"
+      },
+      "title": "Arrhythmia"
+    },
+    {
+      "authors": [
+        "Nina Allan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2011",
+      "category": "Shorter Fiction",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2011"
+      },
+      "title": "Flying in the Face of God"
+    },
+    {
+      "authors": [
+        "Peter Watts"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2011",
+      "category": "Shorter Fiction",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2011"
+      },
+      "title": "The Things"
+    },
+    {
+      "authors": [
+        "Paul Cornell"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Shorter Fiction",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2012"
+      },
+      "title": "The Copenhagen Interpretation"
+    },
+    {
+      "authors": [
+        "Kameron Hurley"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Shorter Fiction",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2012"
+      },
+      "title": "Afterbirth"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Shorter Fiction",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2012"
+      },
+      "title": "Covehithe"
+    },
+    {
+      "authors": [
+        "Al Robertson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Shorter Fiction",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2012"
+      },
+      "title": "Of Dawn"
+    },
+    {
+      "authors": [
+        "Nina Allan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2012",
+      "category": "Shorter Fiction",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2012"
+      },
+      "title": "The Silver Wind"
+    },
+    {
+      "authors": [
+        "Ian Sales"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Shorter Fiction",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2013"
+      },
+      "title": "Adrift on the Sea of Rains"
+    },
+    {
+      "authors": [
+        "Chris Butler"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Shorter Fiction",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2013"
+      },
+      "title": "The Flight of the Ravens"
+    },
+    {
+      "authors": [
+        "Aliette de Bodard"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Shorter Fiction",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2013"
+      },
+      "title": "Immersion"
+    },
+    {
+      "authors": [
+        "Tim Maughan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Shorter Fiction",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2013"
+      },
+      "title": "Limited Edition"
+    },
+    {
+      "authors": [
+        "Rochita Loenen-Ruiz"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Shorter Fiction",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2013"
+      },
+      "title": "Song of the Body Cartographer"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2013",
+      "category": "Shorter Fiction",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2013"
+      },
+      "title": "Three Moments of an Explosion"
+    },
+    {
+      "authors": [
+        "Nina Allan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2014",
+      "category": "Shorter Fiction",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2014"
+      },
+      "title": "Spin"
+    },
+    {
+      "authors": [
+        "Tori Truslow"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2014",
+      "category": "Shorter Fiction",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2014"
+      },
+      "title": "Boat in Shadows, Crossing"
+    },
+    {
+      "authors": [
+        "E. J. Swift"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2014",
+      "category": "Shorter Fiction",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2014"
+      },
+      "title": "Saga's Children"
+    },
+    {
+      "authors": [
+        "Sofia Samatar"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2014",
+      "category": "Shorter Fiction",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2014"
+      },
+      "title": "Selkie Stories are for Losers"
+    },
+    {
+      "authors": [
+        "Ruth E. J. Booth"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Shorter Fiction",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2015"
+      },
+      "title": "The Honey Trap"
+    },
+    {
+      "authors": [
+        "Octavia Cade"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Shorter Fiction",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2015"
+      },
+      "title": "The Mussel Eater"
+    },
+    {
+      "authors": [
+        "Benjanun Sriduangkaew"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2015",
+      "category": "Shorter Fiction",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2015"
+      },
+      "title": "Scale-Bright"
+    },
+    {
+      "authors": [
+        "Anne Charnock"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2018",
+      "category": "Shorter Fiction",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2018"
+      },
+      "title": "The Enclave"
+    },
+    {
+      "authors": [
+        "Geoff Nelder"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2018",
+      "category": "Shorter Fiction",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2018"
+      },
+      "title": "Angular Size"
+    },
+    {
+      "authors": [
+        "Tade Thompson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2018",
+      "category": "Shorter Fiction",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2018"
+      },
+      "title": "The Murders of Molly Southbourne"
+    },
+    {
+      "authors": [
+        "Elaine Cuyegkeng"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2018",
+      "category": "Shorter Fiction",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2018"
+      },
+      "title": "These Constellations Will Be Yours"
+    },
+    {
+      "authors": [
+        "Greg Egan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2018",
+      "category": "Shorter Fiction",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2018"
+      },
+      "title": "Uncanny Valley"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Shorter Fiction",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2019"
+      },
+      "title": "Time Was"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Shorter Fiction",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2019"
+      },
+      "title": "Exit Strategy"
+    },
+    {
+      "authors": [
+        "Nina Allan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Shorter Fiction",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2019"
+      },
+      "title": "The Gift of Angels: an introduction"
+    },
+    {
+      "authors": [
+        "Marian Womack"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Shorter Fiction",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2019"
+      },
+      "title": "Kingfisher"
+    },
+    {
+      "authors": [
+        "Hal Duncan"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Shorter Fiction",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2019"
+      },
+      "title": "The Land of Somewhere Safe"
+    },
+    {
+      "authors": [
+        "Liz Williams"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Shorter Fiction",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2019"
+      },
+      "title": "Phosphorus"
+    },
+    {
+      "authors": [
+        "Malcolm Devlin"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2019",
+      "category": "Shorter Fiction",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2019"
+      },
+      "title": "The Purpose of the Dodo is to be Extinct"
+    },
+    {
+      "authors": [
+        "Amal El-Mohtar",
+        "Max Gladstone"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Shorter Fiction",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2020"
+      },
+      "title": "This Is How You Lose the Time War"
+    },
+    {
+      "authors": [
+        "Ian Whates"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Shorter Fiction",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2020"
+      },
+      "title": "For Your Own Good"
+    },
+    {
+      "authors": [
+        "Fiona Moore"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Shorter Fiction",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2020"
+      },
+      "title": "Jolene"
+    },
+    {
+      "authors": [
+        "Gareth L. Powell"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Shorter Fiction",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2020"
+      },
+      "title": "Ragged Alice"
+    },
+    {
+      "authors": [
+        "Tade Thompson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Shorter Fiction",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2020"
+      },
+      "title": "The Survival of Molly Southbourne"
+    },
+    {
+      "authors": [
+        "Becky Chambers"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2020",
+      "category": "Shorter Fiction",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2020"
+      },
+      "title": "To Be Taught, If Fortunate"
+    },
+    {
+      "authors": [
+        "Ida Keogh"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Shorter Fiction",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2021"
+      },
+      "title": "Infinite Tea in the Demara Caf\u00e9"
+    },
+    {
+      "authors": [
+        "Anne Charnock"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Shorter Fiction",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2021"
+      },
+      "title": "All I Asked For"
+    },
+    {
+      "authors": [
+        "Oghenechovwe Donald Ekpeki"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Shorter Fiction",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2021"
+      },
+      "title": "Ife-Iyoku, the Tale of Imadeyunuagbon"
+    },
+    {
+      "authors": [
+        "Tobi Ogundiran"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Shorter Fiction",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2021"
+      },
+      "title": "Isn't Your Daughter Such a Doll"
+    },
+    {
+      "authors": [
+        "Eugen Bacon"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Shorter Fiction",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2021"
+      },
+      "title": "Ivory's Story"
+    },
+    {
+      "authors": [
+        "Dilman Dila"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2021",
+      "category": "Shorter Fiction",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2021"
+      },
+      "title": "Red_Bati"
+    },
+    {
+      "authors": [
+        "Aliette de Bodard"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Shorter Fiction",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2022"
+      },
+      "title": "Fireheart Tiger"
+    },
+    {
+      "authors": [
+        "Peter F. Hamilton",
+        "Gareth L. Powell"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Shorter Fiction",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2022"
+      },
+      "title": "Light Chaser"
+    },
+    {
+      "authors": [
+        "Oghenechovwe Donald Ekpeki"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Shorter Fiction",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2022"
+      },
+      "title": "O2 Arena"
+    },
+    {
+      "authors": [
+        "Fiona Moore"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2022",
+      "category": "Shorter Fiction",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2022"
+      },
+      "title": "Things Can Only Get Better"
+    },
+    {
+      "authors": [
+        "Aliette de Bodard"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Shorter Fiction",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2023"
+      },
+      "title": "Of Charms, Ghosts and Grievances"
+    },
+    {
+      "authors": [
+        "Or Luca"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Shorter Fiction",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2023"
+      },
+      "title": "Luca"
+    },
+    {
+      "authors": [
+        "Neil Williamson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Shorter Fiction",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2023"
+      },
+      "title": "A Moment of Zugzwang"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Shorter Fiction",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2023"
+      },
+      "title": "Ogres"
+    },
+    {
+      "authors": [
+        "Rick Danforth"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2023",
+      "category": "Shorter Fiction",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2023"
+      },
+      "title": "Seller's Remorse"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Shorter Fiction",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "And Put Away Childish Things"
+    },
+    {
+      "authors": [
+        "P. Dj\u00e8l\u00ed Clark"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Shorter Fiction",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "How to Raise a Kraken in Your Bathtub"
+    },
+    {
+      "authors": [
+        "Eugen Bacon"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Shorter Fiction",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "Broken Paradise"
+    },
+    {
+      "authors": [
+        "Allen Stroud"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Shorter Fiction",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "Europa"
+    },
+    {
+      "authors": [
+        "Ai Jiang"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Shorter Fiction",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "I Am AI"
+    },
+    {
+      "authors": [
+        "Kari Sperring"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Shorter Fiction",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "Knotted Thorn"
+    },
+    {
+      "authors": [
+        "Jendia Gammon"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Shorter Fiction",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "Copper"
+    },
+    {
+      "authors": [
+        "Suyi Davies Okungbowa"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Shorter Fiction",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "Lady Koi Koi: A Book Report"
+    },
+    {
+      "authors": [
+        "Neil Williamson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Shorter Fiction",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "A Little Seasoning"
+    },
+    {
+      "authors": [
+        "Fiona Moore"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2024",
+      "category": "Shorter Fiction",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2024"
+      },
+      "title": "The Spoil Heap"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Shorter Fiction",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2025"
+      },
+      "title": "Saturation Point"
+    },
+    {
+      "authors": [
+        "Isabel J. Kim"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Shorter Fiction",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2025"
+      },
+      "title": "Why Don't We Just Kill the Kid in the Omelas Hole"
+    },
+    {
+      "authors": [
+        "Neil Williamson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Shorter Fiction",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2025"
+      },
+      "title": "Charlie Says"
+    },
+    {
+      "authors": [
+        "Aliette de Bodard"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Shorter Fiction",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2025"
+      },
+      "title": "Navigational Entanglements"
+    },
+    {
+      "authors": [
+        "Fiona Moore"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Shorter Fiction",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2025"
+      },
+      "title": "What Happened at the Pony Club"
+    },
+    {
+      "authors": [
+        "Aliya Whiteley"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Shorter Fiction",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2025"
+      },
+      "title": "Intrinsic \u2013 Extrinsic \u2013 Terrific"
+    },
+    {
+      "authors": [
+        "Fiona Moore"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Shorter Fiction",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2025"
+      },
+      "title": "The Portmeirion Road"
+    },
+    {
+      "authors": [
+        "Wole Talabi"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2025",
+      "category": "Shorter Fiction",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2025"
+      },
+      "title": "Unquiet on the Eastern Front"
+    },
+    {
+      "authors": [
+        "Tade Thompson"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Shorter Fiction",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "The Apologists"
+    },
+    {
+      "authors": [
+        "E. M. Faulds"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Shorter Fiction",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "Godzilla as a Young Man Named Mike"
+    },
+    {
+      "authors": [
+        "Teika Marija Smits"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Shorter Fiction",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "The Art of Time Travel"
+    },
+    {
+      "authors": [
+        "C\u00e9cile Cristofari"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Shorter Fiction",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "Cities Are Forests Waiting to Happen"
+    },
+    {
+      "authors": [
+        "Wole Talabi"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Shorter Fiction",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "Descent"
+    },
+    {
+      "authors": [
+        "Amal El-Mohtar"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Shorter Fiction",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "The River Has Roots"
+    },
+    {
+      "authors": [
+        "Emma Burnett"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Shorter Fiction",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "25 Peppercorns"
+    },
+    {
+      "authors": [
+        "Eugenia Triantafyllou"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Shorter Fiction",
+      "position": "2026.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "The Life and Times of Alavira the Great as Written by Titos Pavlou and Reviewed by Two Lifelong Friends"
+    },
+    {
+      "authors": [
+        "A. J. Van Belle"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Shorter Fiction",
+      "position": "2026.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "Of Seagrass Fins and Slippery Fingers"
+    },
+    {
+      "authors": [
+        "Rick Danforth"
+      ],
+      "award": "British Science Fiction Association Award",
+      "award_year": "2026",
+      "category": "Shorter Fiction",
+      "position": "2026.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_SF_Association_Awards_2026"
+      },
+      "title": "One Step at a Time"
+    }
+  ],
+  "fetched_at": "2026-07-22T01:06:02Z",
+  "list_id": "bsfa_shorter_fiction",
+  "list_name": "BSFA - Shorter Fiction",
+  "match_series": false,
+  "notes": [],
+  "parser": "bsfa_shorter_fiction",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "BSFA - Shorter Fiction",
+    "source_id": "bsfa_shorter_fiction",
+    "url": "https://www.sfadb.com/British_SF_Association_Awards"
+  }
+}

@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 7,
-    "last_entry_key": "big city bad blood|sean chercover",
-    "last_position": "2008",
+    "entry_count": 32,
+    "last_entry_key": "mr clarinet|nick stone",
+    "last_position": "2008.04",
     "source_revision": null
   },
   "entries": [
@@ -19,6 +19,28 @@
     },
     {
       "authors": [
+        "Robert Reuland"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2002",
+      "category": "First Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "Hollowpoint"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2002",
+      "category": "First Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "Blindsighted"
+    },
+    {
+      "authors": [
         "Eddie Muller"
       ],
       "award": "Gumshoe Award",
@@ -30,19 +52,91 @@
     },
     {
       "authors": [
-        "P.J. Tracy"
+        "Barry Eisler"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2003",
+      "category": "First Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "Rain Fall"
+    },
+    {
+      "authors": [
+        "Jonathon King"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2003",
+      "category": "First Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "The Blue Edge of Midnight"
+    },
+    {
+      "authors": [
+        "David Rosenfelt"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2003",
+      "category": "First Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "Open and Shut"
+    },
+    {
+      "authors": [
+        "Julia Spencer-Fleming"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2003",
+      "category": "First Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "title": "In the Bleak Midwinter"
+    },
+    {
+      "authors": [
+        "P. J. Tracy"
       ],
       "award": "Gumshoe Award",
       "award_year": "2004",
       "category": "First Novel",
       "position": "2004",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Monkeewrench"
-      },
       "title": "Monkeewrench"
+    },
+    {
+      "authors": [
+        "Maggie Estep"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2004",
+      "category": "First Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "Hex"
+    },
+    {
+      "authors": [
+        "Elaine Flinn"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2004",
+      "category": "First Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "Dealing in Murder"
+    },
+    {
+      "authors": [
+        "Louise Welsh"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2004",
+      "category": "First Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "The Cutting Room"
     },
     {
       "authors": [
@@ -53,7 +147,51 @@
       "category": "First Novel",
       "position": "2005",
       "result": "winner",
-      "title": "Misdemeanor Man"
+      "title": "Misdemeanor Man: A Novel"
+    },
+    {
+      "authors": [
+        "Raelynn Hillhouse"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "First Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "Rift Zone"
+    },
+    {
+      "authors": [
+        "Charlie Huston"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "First Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "Caught Stealing"
+    },
+    {
+      "authors": [
+        "J.A. Konrath"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "First Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "Whiskey Sour"
+    },
+    {
+      "authors": [
+        "Harley Jane Kozak"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "First Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "Dating Dead Men"
     },
     {
       "authors": [
@@ -68,6 +206,50 @@
     },
     {
       "authors": [
+        "Mark Gimenez"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "The Color of Law"
+    },
+    {
+      "authors": [
+        "Chris Grabenstein"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "Tilt-a-Whirl"
+    },
+    {
+      "authors": [
+        "Karen E. Olson"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "Sacred Cows"
+    },
+    {
+      "authors": [
+        "David Terrenoire"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "First Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "Beneath a Panamanian Moon"
+    },
+    {
+      "authors": [
         "John Hart"
       ],
       "award": "Gumshoe Award",
@@ -79,6 +261,50 @@
     },
     {
       "authors": [
+        "Dave Case"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "First Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "Out of Cabrini: A Macbeth Novel"
+    },
+    {
+      "authors": [
+        "James Church"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "First Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "A Corpse in the Koryo"
+    },
+    {
+      "authors": [
+        "Thomas Lakeman"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "First Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "The Shadow Catchers"
+    },
+    {
+      "authors": [
+        "Cornelia Read"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "First Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "A Field of Darkness"
+    },
+    {
+      "authors": [
         "Sean Chercover"
       ],
       "award": "Gumshoe Award",
@@ -87,20 +313,63 @@
       "position": "2008",
       "result": "winner",
       "title": "Big City, Bad Blood"
+    },
+    {
+      "authors": [
+        "Phillip Hawley Jr"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Stigma"
+    },
+    {
+      "authors": [
+        "Lisa Lutz"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "The Spellman Files"
+    },
+    {
+      "authors": [
+        "Craig McDonald"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "Head Games"
+    },
+    {
+      "authors": [
+        "Nick Stone"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2008",
+      "category": "First Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "Mr. Clarinet"
     }
   ],
-  "fetched_at": "2026-07-17T06:43:50Z",
+  "fetched_at": "2026-11-16T07:13:16Z",
   "list_id": "gumshoe_award_first_novel",
   "list_name": "Gumshoe Award - First Novel (discontinued)",
   "match_series": false,
-  "notes": [
-    "LibraryThing failed: HTTP Error 403: Forbidden"
-  ],
+  "notes": [],
   "parser": "gumshoe_award_first_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Gumshoe Award - First Novel (discontinued)",
     "source_id": "gumshoe_award_first_novel",
-    "url": "https://en.wikipedia.org/wiki/Gumshoe_Awards"
+    "url": "https://www.librarything.com/award/1785/Gumshoe-Award"
   }
 }

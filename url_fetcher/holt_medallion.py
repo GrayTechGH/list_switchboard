@@ -10,6 +10,7 @@ from .generic import (
 
 class UrlFetcherHOLTMedallion(UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'holt_medallion'
   NAME = 'HOLT Medallion'
   URL = 'https://virginiaromancewriters.com/holt-medallion/'
@@ -26,5 +27,6 @@ class UrlFetcherHOLTMedallion(UrlFetcherGeneric):
       from parser.holt_medallion import HOLTMedallionParser
     return HOLTMedallionParser()
 
-  def parse(self, html, fetch_url=None, **_kwargs):
-    return self.parser().parse(html, self.URL, self.NAME, fetch_url=fetch_url)
+  def parse(self, html, fetch_url=None,cached_parsed=None,incremental_update=False, **_kwargs):
+    return self.parser().parse(html, self.URL, self.NAME, fetch_url=fetch_url,
+      cached_parsed=cached_parsed,incremental_update=incremental_update)

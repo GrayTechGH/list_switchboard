@@ -26,7 +26,7 @@ try:
     entry_source_object, imported_entry, ListParserBase, parsed_source)
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
   from calibre_plugins.list_switchboard.parser.sfadb_base import (
-    SFADBParser, StandardItemMixin, normalize_line,
+    SFADBParser, StandardItemMixin, normalize_line, normalize_heading, html_root, node_text,
   )
 except ImportError:
   from .award_base import (
@@ -36,7 +36,7 @@ except ImportError:
   from .base import entry_source_object, imported_entry, ListParserBase, parsed_source
   from .generic import position_sort_key
   from .sfadb_base import (
-    SFADBParser, StandardItemMixin, normalize_line,
+    SFADBParser, StandardItemMixin, normalize_line, normalize_heading, html_root, node_text,
   )
 
 
@@ -127,6 +127,43 @@ class NebulaComicsSFADBParser(NebulaSFADBCategoryParser):
     }
 
 
+class NebulaAndreNortonSFADBParser(NebulaSFADBCategoryParser):
+  """Read either a named category block or bounded Winner/Finalists blocks.
+
+  SFADB now embeds the separate Andre Norton award within Nebula year pages.
+  Its outer award marker scopes the following result blocks; the next award
+  marker must stop traversal before Grand Master and other SFWA recipients.
+  """
+
+  def parse_year(self, html, source_url, year, category, category_aliases):
+    root = html_root(html)
+    aliases = {normalize_heading(alias) for alias in category_aliases}
+    markers = root.xpath('//div[contains(concat(" ", normalize-space(@class), " "), " category ")'
+      ' and not(ancestor::div[contains(concat(" ", normalize-space(@class), " "), " categoryblock ")])]')
+    for marker in markers:
+      if normalize_heading(node_text(marker)) not in aliases:
+        continue
+      rows = []
+      for sibling in marker.itersiblings():
+        classes = (sibling.get('class') or '').split()
+        if 'category' in classes:
+          break
+        if 'categoryblock' not in classes:
+          continue
+        headings = sibling.xpath('./div[contains(concat(" ", normalize-space(@class), " "), " category ")]')
+        heading = normalize_heading(node_text(headings[0])) if headings else ''
+        result = {'winner': 'winner', 'finalists': 'nominee'}.get(heading)
+        if result is None:
+          continue
+        for item in sibling.xpath('.//li'):
+          parsed = self.parse_item_node(item)
+          if parsed is not None:
+            parsed['result'] = result
+            rows.append(self.build_award_entry(parsed, source_url, year, category))
+      return self.assign_year_positions(rows, year)
+    return super().parse_year(html, source_url, year, category, category_aliases)
+
+
 class NebulaAndreNortonParser(AwardParserBase):
   """
   Parses the official SFWA Andre Norton category pages, with SFADB fallback.
@@ -143,9 +180,11 @@ class NebulaAndreNortonParser(AwardParserBase):
   CATEGORY = ANDRE_NORTON_CATEGORY_NAME
   CATEGORY_ALIASES = ANDRE_NORTON_CATEGORY_ALIASES
 
-  def parse(self, first_page_html, base_url, fetch_url=None, log=None, progress=None):
+  def parse(self, first_page_html, base_url, fetch_url=None, log=None, progress=None,
+            cached_parsed=None, incremental_update=False):
     if 'sfadb' in first_page_html.lower() or 'sfadb.com' in base_url.lower():
-      return self.parse_sfadb(first_page_html, base_url, fetch_url, log, progress)
+      return self.parse_sfadb(first_page_html, base_url, fetch_url, log, progress,
+        cached_parsed=cached_parsed, incremental_update=incremental_update)
     return self.parse_official(first_page_html, base_url, fetch_url, log, progress)
 
   def parse_official(self, first_page_html, base_url, fetch_url=None, log=None, progress=None):
@@ -183,8 +222,9 @@ class NebulaAndreNortonParser(AwardParserBase):
       sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       notes)
 
-  def parse_sfadb(self, html, base_url, fetch_url=None, log=None, progress=None):
-    parsed = NebulaSFADBCategoryParser().parse(
+  def parse_sfadb(self, html, base_url, fetch_url=None, log=None, progress=None,
+                  cached_parsed=None, incremental_update=False):
+    parsed = NebulaAndreNortonSFADBParser().parse(
       html,
       base_url,
       self.NAME,
@@ -192,7 +232,8 @@ class NebulaAndreNortonParser(AwardParserBase):
       self.CATEGORY_ALIASES,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=cached_parsed,
+      incremental_update=incremental_update, enable_incremental=True)
     parsed['notes'] = [ANDRE_NORTON_SHORTLIST_NOTE] + list(parsed.get('notes', ()))
     for entry in parsed.get('entries', ()):
       entry['award'] = self.AWARD_NAME
@@ -218,9 +259,11 @@ class NebulaAwardsNovelParser(ListParserBase):
   CATEGORY_ALIASES = ('best novel', 'novel')
   SFADB_PARSER_CLASS = NebulaSFADBCategoryParser
 
-  def parse(self, first_page_html, base_url, fetch_url=None, log=None, progress=None):
+  def parse(self, first_page_html, base_url, fetch_url=None, log=None, progress=None,
+            cached_parsed=None, incremental_update=False):
     if 'sfadb' in first_page_html.lower() or 'sfadb.com' in base_url.lower():
-      return self.parse_sfadb(first_page_html, base_url, fetch_url, log, progress)
+      return self.parse_sfadb(first_page_html, base_url, fetch_url, log, progress,
+        cached_parsed=cached_parsed, incremental_update=incremental_update)
     return self.parse_official(first_page_html, base_url, fetch_url, log, progress)
 
   def parse_official(self, first_page_html, base_url, fetch_url=None, log=None, progress=None):
@@ -257,10 +300,12 @@ class NebulaAwardsNovelParser(ListParserBase):
       'match_series': False,
     }
 
-  def parse_sfadb(self, html, base_url, fetch_url, log=None, progress=None):
+  def parse_sfadb(self, html, base_url, fetch_url, log=None, progress=None,
+                  cached_parsed=None, incremental_update=False):
     return self.SFADB_PARSER_CLASS().parse(
       html, base_url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES,
-      fetch_url=fetch_url, log=log, progress=progress)
+      fetch_url=fetch_url, log=log, progress=progress, cached_parsed=cached_parsed,
+      incremental_update=incremental_update, enable_incremental=True)
 
   def parse_item(self, line):
     """

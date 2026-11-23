@@ -46,6 +46,7 @@ class UrlFetcherEdgar(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
   LIBRARYTHING_URL = LIBRARYTHING_EDGAR_URL
   LIBRARYTHING_AWARD_NAME = 'Edgar Award'
   AWARD_NAME = 'Edgar Award'
+  ENABLE_OFFICIAL_INCREMENTAL = False
 
   def create_parser(self):
     try:
@@ -58,7 +59,8 @@ class UrlFetcherEdgar(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None, incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -70,7 +72,8 @@ class UrlFetcherEdgar(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice, cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
@@ -81,15 +84,16 @@ class UrlFetcherEdgar(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
         'Official Edgar',
         self.URL,
         lambda html, url, **kwargs: official_parser.parse(
-          html, url, self.NAME, self.CATEGORY, **kwargs),
-        source_rank=0),
+          html, url, self.NAME, self.CATEGORY,
+          enable_incremental=self.ENABLE_OFFICIAL_INCREMENTAL, **kwargs),
+        source_rank=0, supports_incremental=self.ENABLE_OFFICIAL_INCREMENTAL),
       self.librarything_attempt(source_rank=1),
     )
 
   def source_choices(self):
     return SourceFallbackRunner(self.source_attempts()).source_choices()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -97,10 +101,14 @@ class UrlFetcherEdgar(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
       self.CATEGORY,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False),
+      enable_incremental=self.ENABLE_OFFICIAL_INCREMENTAL)
 
 
 class UrlFetcherEdgarNovel(UrlFetcherEdgar):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_OFFICIAL_INCREMENTAL = True
   source_id = 'edgar_award_novel'
   NAME = 'Edgar Award - Novel'
   URL = 'https://edgarawards.com/category-list-best-novel/'
@@ -109,6 +117,8 @@ class UrlFetcherEdgarNovel(UrlFetcherEdgar):
 
 
 class UrlFetcherEdgarFirstNovel(UrlFetcherEdgar):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_OFFICIAL_INCREMENTAL = True
   source_id = 'edgar_award_first_novel'
   NAME = 'Edgar Award - First Novel'
   URL = 'https://edgarawards.com/category-list-best-first-novel/'
@@ -117,6 +127,8 @@ class UrlFetcherEdgarFirstNovel(UrlFetcherEdgar):
 
 
 class UrlFetcherEdgarPaperbackOriginal(UrlFetcherEdgar):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_OFFICIAL_INCREMENTAL = True
   source_id = 'edgar_award_paperback_original'
   NAME = 'Edgar Award - Paperback Original'
   URL = 'https://edgarawards.com/category-list-best-paperback-original/'
@@ -129,6 +141,8 @@ class UrlFetcherEdgarPaperbackOriginal(UrlFetcherEdgar):
 
 
 class UrlFetcherEdgarFactCrime(UrlFetcherEdgar):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_OFFICIAL_INCREMENTAL = True
   source_id = 'edgar_award_fact_crime'
   NAME = 'Edgar Award - Fact Crime'
   FILTER_CATEGORIES = EDGAR_NONFICTION_CATEGORIES
@@ -138,6 +152,8 @@ class UrlFetcherEdgarFactCrime(UrlFetcherEdgar):
 
 
 class UrlFetcherEdgarCriticalBiographicalWork(UrlFetcherEdgar):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_OFFICIAL_INCREMENTAL = True
   source_id = 'edgar_award_critical_biographical_work'
   NAME = 'Edgar Award - Critical/Biographical Work'
   FILTER_CATEGORIES = EDGAR_NONFICTION_CATEGORIES
@@ -152,6 +168,8 @@ class UrlFetcherEdgarCriticalBiographicalWork(UrlFetcherEdgar):
 
 
 class UrlFetcherEdgarJuvenile(UrlFetcherEdgar):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_OFFICIAL_INCREMENTAL = True
   source_id = 'edgar_award_juvenile'
   NAME = 'Edgar Award - Juvenile'
   FILTER_CATEGORIES = EDGAR_YA_CATEGORIES
@@ -161,6 +179,8 @@ class UrlFetcherEdgarJuvenile(UrlFetcherEdgar):
 
 
 class UrlFetcherEdgarYoungAdult(UrlFetcherEdgar):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_OFFICIAL_INCREMENTAL = True
   source_id = 'edgar_award_young_adult'
   NAME = 'Edgar Award - Young Adult'
   FILTER_CATEGORIES = EDGAR_YA_CATEGORIES
@@ -174,6 +194,8 @@ class UrlFetcherEdgarYoungAdult(UrlFetcherEdgar):
 
 
 class UrlFetcherEdgarMaryHigginsClarkAward(UrlFetcherEdgar):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_OFFICIAL_INCREMENTAL = True
   source_id = 'edgar_award_mary_higgins_clark_award'
   NAME = 'Edgar Award - Mary Higgins Clark Award'
   URL = 'https://edgarawards.com/category-list-mary-higgins-clark-award/'

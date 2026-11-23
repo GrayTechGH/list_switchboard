@@ -17,7 +17,7 @@ except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
 
 
-OFFICIAL_URL = 'https://www.bookcritics.org/past-awards/'
+OFFICIAL_URL = 'https://www.bookcritics.org/awards/past/'
 
 WIKIPEDIA_URLS = {
   'fiction': 'https://en.wikipedia.org/wiki/National_Book_Critics_Circle_Award_for_Fiction',
@@ -75,10 +75,10 @@ class UrlFetcherNationalBookCriticsCircleAward(UrlFetcherGeneric):
       SourceAttempt(
         'NBCC',
         self.URL,
-        lambda html, url, fetch_url=None, log=None, progress=None: (
+        lambda html, url, fetch_url=None, log=None, progress=None,**kwargs: (
           self.create_official_parser().parse(
-            html, url, self.NAME, fetch_url=fetch_url, log=log, progress=progress)),
-        source_rank=0),
+            html, url, self.NAME, fetch_url=fetch_url, log=log, progress=progress,**kwargs)),
+        source_rank=0,supports_incremental=True),
       SourceAttempt(
         'Wikipedia',
         self.WIKIPEDIA_URL,
@@ -93,7 +93,8 @@ class UrlFetcherNationalBookCriticsCircleAward(UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None,incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -105,7 +106,7 @@ class UrlFetcherNationalBookCriticsCircleAward(UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice,cached_parsed=cached_parsed,incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
@@ -116,6 +117,7 @@ class UrlFetcherNationalBookCriticsCircleAward(UrlFetcherGeneric):
 
 class UrlFetcherNationalBookCriticsCircleFiction(
     UrlFetcherNationalBookCriticsCircleAward):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_LITERARY_GENERAL_FICTION,
@@ -130,6 +132,7 @@ class UrlFetcherNationalBookCriticsCircleFiction(
 
 class UrlFetcherNationalBookCriticsCircleNonfiction(
     UrlFetcherNationalBookCriticsCircleAward):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_NONFICTION,
@@ -138,12 +141,13 @@ class UrlFetcherNationalBookCriticsCircleNonfiction(
   source_id = 'national_book_critics_circle_nonfiction'
   NAME = 'National Book Critics Circle Award - Nonfiction'
   CATEGORY = 'Nonfiction'
-  CATEGORY_ALIASES = ('Nonfiction', 'Non-fiction')
+  CATEGORY_ALIASES = ('Nonfiction', 'Non-fiction', 'General Nonfiction')
   WIKIPEDIA_KEY = 'nonfiction'
 
 
 class UrlFetcherNationalBookCriticsCircleBiography(
     UrlFetcherNationalBookCriticsCircleAward):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_NONFICTION,
@@ -158,6 +162,7 @@ class UrlFetcherNationalBookCriticsCircleBiography(
 
 class UrlFetcherNationalBookCriticsCircleMemoirAutobiography(
     UrlFetcherNationalBookCriticsCircleAward):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_NONFICTION,
@@ -168,6 +173,7 @@ class UrlFetcherNationalBookCriticsCircleMemoirAutobiography(
   CATEGORY = 'Memoir/Autobiography'
   CATEGORY_ALIASES = (
     'Memoir/Autobiography',
+    'Autobiography/Memoir',
     'Memoir and Autobiography',
     'Memoir & Autobiography',
     'Autobiography',
@@ -178,6 +184,7 @@ class UrlFetcherNationalBookCriticsCircleMemoirAutobiography(
 
 class UrlFetcherNationalBookCriticsCirclePoetry(
     UrlFetcherNationalBookCriticsCircleAward):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (CATEGORY_REGIONAL_NATIONAL_AWARDS,)
   source_id = 'national_book_critics_circle_poetry'
@@ -189,6 +196,7 @@ class UrlFetcherNationalBookCriticsCirclePoetry(
 
 class UrlFetcherNationalBookCriticsCircleCriticism(
     UrlFetcherNationalBookCriticsCircleAward):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_NONFICTION,
@@ -203,6 +211,7 @@ class UrlFetcherNationalBookCriticsCircleCriticism(
 
 class UrlFetcherNationalBookCriticsCircleJohnLeonard(
     UrlFetcherNationalBookCriticsCircleAward):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (CATEGORY_REGIONAL_NATIONAL_AWARDS,)
   source_id = 'national_book_critics_circle_john_leonard'
@@ -219,6 +228,7 @@ class UrlFetcherNationalBookCriticsCircleJohnLeonard(
 
 class UrlFetcherNationalBookCriticsCircleGreggBarriosTranslation(
     UrlFetcherNationalBookCriticsCircleAward):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (CATEGORY_REGIONAL_NATIONAL_AWARDS,)
   source_id = 'national_book_critics_circle_gregg_barrios_translation'

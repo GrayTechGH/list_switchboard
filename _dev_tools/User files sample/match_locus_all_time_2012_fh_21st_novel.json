@@ -1,6 +1,32 @@
 {
   "list_id": "locus_all_time_2012_fh_21st_novel",
-  "matches": [],
-  "saved_at": "2026-07-11T00:43:44Z",
+  "matches": [
+    {
+      "entry_key": "mistborn|brandon sanderson",
+      "imported_author": [
+        "Brandon Sanderson"
+      ],
+      "imported_title": "Mistborn",
+      "matched_at": "2026-07-23T05:17:06Z",
+      "matched_authors": [
+        "Brandon Sanderson"
+      ],
+      "matched_book_id": 15514,
+      "matched_book_ids": [
+        15514
+      ],
+      "matched_books": [
+        {
+          "matched_authors": [
+            "Brandon Sanderson"
+          ],
+          "matched_book_id": 15514,
+          "matched_title": "Mistborn"
+        }
+      ],
+      "matched_title": "Mistborn"
+    }
+  ],
+  "saved_at": "2026-07-23T05:17:06Z",
   "schema_version": 2
 }

@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 347,
-    "last_entry_key": "where the axe is buried|ray nayler",
-    "last_position": "347",
+    "entry_count": 357,
+    "last_entry_key": "mal goes to war|edward ashton",
+    "last_position": "357",
     "source_revision": null
   },
   "entries": [
@@ -394,6 +394,7 @@
       "event_date": "2014-03-01",
       "event_group_id": "dragons-jetpacks:2014-03-01:sci-fi",
       "position": "15",
+      "raw_title": "Leviathan Wakes (The Expanse, #1)",
       "selection_month": "3",
       "selection_type": "group_read",
       "selection_year": "2014",
@@ -2161,7 +2162,7 @@
       "event_date": "2016-10-01",
       "event_group_id": "dragons-jetpacks:2016-10-01:sci-fi",
       "position": "81",
-      "raw_title": "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
+      "raw_title": "The Hitchhiker's Guide to the Galaxy (The Hitchhiker's Guide to the Galaxy, #1)",
       "selection_month": "10",
       "selection_type": "group_read",
       "selection_year": "2016",
@@ -2672,7 +2673,6 @@
       "event_date": "2017-05-01",
       "event_group_id": "dragons-jetpacks:2017-05-01:fantasy",
       "position": "100",
-      "raw_title": "American Gods (American Gods, #1)",
       "selection_month": "5",
       "selection_type": "group_read",
       "selection_year": "2017",
@@ -4903,7 +4903,7 @@
       "event_date": "2020-05-01",
       "event_group_id": "dragons-jetpacks:2020-05-01:fantasy",
       "position": "183",
-      "raw_title": "Ninth House (Alex Stern, #1)",
+      "raw_title": "Ninth House (Ninth House Trilogy, #1)",
       "selection_month": "5",
       "selection_type": "group_read",
       "selection_year": "2020",
@@ -6282,9 +6282,9 @@
       "title": "Elder Race"
     },
     {
-      "author_url": "https://www.goodreads.com/author/show/6520115.Gareth_Ryder_Hanrahan",
+      "author_url": "https://www.goodreads.com/author/show/6520115.Gareth_Hanrahan",
       "authors": [
-        "Gareth Ryder-Hanrahan"
+        "Gareth Hanrahan"
       ],
       "book_url": "https://www.goodreads.com/book/show/39836383-the-gutter-prayer",
       "discussion_end_date": "2022-07-31",
@@ -6977,9 +6977,9 @@
       "title": "Acorna: The Unicorn Girl"
     },
     {
-      "author_url": "https://www.goodreads.com/author/show/22491259.Shannon_Chakraborty",
+      "author_url": "https://www.goodreads.com/author/show/16002992.S_A_Chakraborty",
       "authors": [
-        "Shannon Chakraborty"
+        "S.A. Chakraborty"
       ],
       "book_url": "https://www.goodreads.com/book/show/61294937-the-adventures-of-amina-al-sirafi",
       "discussion_end_date": "2023-06-30",
@@ -7920,7 +7920,7 @@
       "event_date": "2024-10-01",
       "event_group_id": "dragons-jetpacks:2024-10-01:fantasy",
       "position": "296",
-      "raw_title": "The Tainted Cup (Shadow of the Leviathan, #1)",
+      "raw_title": "The Tainted Cup (Ana and Din Mysteries, #1)",
       "selection_month": "10",
       "selection_type": "group_read",
       "selection_year": "2024",
@@ -8212,7 +8212,7 @@
       "event_date": "2025-02-01",
       "event_group_id": "dragons-jetpacks:2025-02-01:fantasy",
       "position": "307",
-      "raw_title": "A Language of Dragons (A Language of Dragons, #1)",
+      "raw_title": "A Language of Dragons (A Language of Dragons #1)",
       "selection_month": "2",
       "selection_type": "group_read",
       "selection_year": "2025",
@@ -9288,14 +9288,279 @@
       "source_record_id": "goodreads-group-book:3845300",
       "theme_or_track": "sci-fi",
       "title": "Where the Axe Is Buried"
+    },
+    {
+      "author_url": "https://www.goodreads.com/author/show/5105382.Suzanne_Palmer",
+      "authors": [
+        "Suzanne Palmer"
+      ],
+      "book_url": "https://www.goodreads.com/book/show/239433306-ode-to-the-half-broken",
+      "discussion_end_date": "2026-08-31",
+      "discussion_start_date": "2026-08-01",
+      "event_date": "2026-08-01",
+      "event_group_id": "dragons-jetpacks:2026-08-01:sci-fi",
+      "position": "348",
+      "selection_month": "8",
+      "selection_type": "group_read",
+      "selection_year": "2026",
+      "shelf_labels": [
+        "sci-fi"
+      ],
+      "source": {
+        "name": "Dragons & Jetpacks",
+        "source_id": "dragons_and_jetpacks",
+        "url": "https://www.goodreads.com/group/show_book/106876-dragons-jetpacks?group_book_id=3857339"
+      },
+      "source_record_id": "goodreads-group-book:3857339",
+      "theme_or_track": "sci-fi",
+      "title": "Ode to the Half-Broken"
+    },
+    {
+      "author_url": "https://www.goodreads.com/author/show/2916869.Robert_Jackson_Bennett",
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "book_url": "https://www.goodreads.com/book/show/213618143-a-drop-of-corruption",
+      "discussion_end_date": "2026-08-31",
+      "discussion_start_date": "2026-08-01",
+      "event_date": "2026-08-01",
+      "event_group_id": "dragons-jetpacks:2026-08-01:fantasy",
+      "position": "349",
+      "raw_title": "A Drop of Corruption (Ana and Din Mysteries, #2)",
+      "selection_month": "8",
+      "selection_type": "group_read",
+      "selection_year": "2026",
+      "shelf_labels": [
+        "fantasy"
+      ],
+      "source": {
+        "name": "Dragons & Jetpacks",
+        "source_id": "dragons_and_jetpacks",
+        "url": "https://www.goodreads.com/group/show_book/106876-dragons-jetpacks?group_book_id=3857341"
+      },
+      "source_record_id": "goodreads-group-book:3857341",
+      "theme_or_track": "fantasy",
+      "title": "A Drop of Corruption"
+    },
+    {
+      "author_url": "https://www.goodreads.com/author/show/134408.Peter_Heller",
+      "authors": [
+        "Peter Heller"
+      ],
+      "book_url": "https://www.goodreads.com/book/show/13330761-the-dog-stars",
+      "discussion_end_date": "2026-09-30",
+      "discussion_start_date": "2026-09-01",
+      "event_date": "2026-09-01",
+      "event_group_id": "dragons-jetpacks:2026-09-01:sci-fi",
+      "position": "350",
+      "selection_month": "9",
+      "selection_type": "group_read",
+      "selection_year": "2026",
+      "shelf_labels": [
+        "sci-fi"
+      ],
+      "source": {
+        "name": "Dragons & Jetpacks",
+        "source_id": "dragons_and_jetpacks",
+        "url": "https://www.goodreads.com/group/show_book/106876-dragons-jetpacks?group_book_id=3872287"
+      },
+      "source_record_id": "goodreads-group-book:3872287",
+      "theme_or_track": "sci-fi",
+      "title": "The Dog Stars"
+    },
+    {
+      "author_url": "https://www.goodreads.com/author/show/13922215.Katherine_Arden",
+      "authors": [
+        "Katherine Arden"
+      ],
+      "book_url": "https://www.goodreads.com/book/show/241125269-the-unicorn-hunters",
+      "discussion_end_date": "2026-09-30",
+      "discussion_start_date": "2026-09-01",
+      "event_date": "2026-09-01",
+      "event_group_id": "dragons-jetpacks:2026-09-01:fantasy",
+      "position": "351",
+      "selection_month": "9",
+      "selection_type": "group_read",
+      "selection_year": "2026",
+      "shelf_labels": [
+        "fantasy"
+      ],
+      "source": {
+        "name": "Dragons & Jetpacks",
+        "source_id": "dragons_and_jetpacks",
+        "url": "https://www.goodreads.com/group/show_book/106876-dragons-jetpacks?group_book_id=3872288"
+      },
+      "source_record_id": "goodreads-group-book:3872288",
+      "theme_or_track": "fantasy",
+      "title": "The Unicorn Hunters"
+    },
+    {
+      "author_url": "https://www.goodreads.com/author/show/445303.Maria_V_Snyder",
+      "authors": [
+        "Maria V. Snyder"
+      ],
+      "book_url": "https://www.goodreads.com/book/show/60510.Poison_Study",
+      "discussion_end_date": "2026-10-31",
+      "discussion_start_date": "2026-09-01",
+      "event_date": "2026-09-01",
+      "event_group_id": "dragons-jetpacks:2026-09-01:mod-special",
+      "position": "352",
+      "raw_title": "Poison Study (Study, #1)",
+      "selection_month": "9",
+      "selection_type": "mod_pick",
+      "selection_year": "2026",
+      "shelf_labels": [
+        "mod-special"
+      ],
+      "source": {
+        "name": "Dragons & Jetpacks",
+        "source_id": "dragons_and_jetpacks",
+        "url": "https://www.goodreads.com/group/show_book/106876-dragons-jetpacks?group_book_id=3872289"
+      },
+      "source_record_id": "goodreads-group-book:3872289",
+      "theme_or_track": "mod-special",
+      "title": "Poison Study"
+    },
+    {
+      "author_url": "https://www.goodreads.com/author/show/6520115.Gareth_Hanrahan",
+      "authors": [
+        "Gareth Hanrahan"
+      ],
+      "book_url": "https://www.goodreads.com/book/show/244670911-the-dungeon-book",
+      "discussion_end_date": "2026-10-31",
+      "discussion_start_date": "2026-10-01",
+      "event_date": "2026-10-01",
+      "event_group_id": "dragons-jetpacks:2026-10-01:fantasy",
+      "position": "353",
+      "selection_month": "10",
+      "selection_type": "group_read",
+      "selection_year": "2026",
+      "shelf_labels": [
+        "fantasy"
+      ],
+      "source": {
+        "name": "Dragons & Jetpacks",
+        "source_id": "dragons_and_jetpacks",
+        "url": "https://www.goodreads.com/group/show_book/106876-dragons-jetpacks?group_book_id=3885358"
+      },
+      "source_record_id": "goodreads-group-book:3885358",
+      "theme_or_track": "fantasy",
+      "title": "The Dungeon Book"
+    },
+    {
+      "author_url": "https://www.goodreads.com/author/show/8427407.James_Islington",
+      "authors": [
+        "James Islington"
+      ],
+      "book_url": "https://www.goodreads.com/book/show/247756858-scion",
+      "discussion_end_date": "2026-10-31",
+      "discussion_start_date": "2026-10-01",
+      "event_date": "2026-10-01",
+      "event_group_id": "dragons-jetpacks:2026-10-01:sci-fi",
+      "position": "354",
+      "raw_title": "Scion (Scion, #1)",
+      "selection_month": "10",
+      "selection_type": "group_read",
+      "selection_year": "2026",
+      "shelf_labels": [
+        "sci-fi"
+      ],
+      "source": {
+        "name": "Dragons & Jetpacks",
+        "source_id": "dragons_and_jetpacks",
+        "url": "https://www.goodreads.com/group/show_book/106876-dragons-jetpacks?group_book_id=3885359"
+      },
+      "source_record_id": "goodreads-group-book:3885359",
+      "theme_or_track": "sci-fi",
+      "title": "Scion"
+    },
+    {
+      "author_url": "https://www.goodreads.com/author/show/7182576.Antonia_Hodgson",
+      "authors": [
+        "Antonia Hodgson"
+      ],
+      "book_url": "https://www.goodreads.com/book/show/212174157-the-raven-scholar",
+      "discussion_end_date": "2026-11-30",
+      "discussion_start_date": "2026-11-01",
+      "event_date": "2026-11-01",
+      "event_group_id": "dragons-jetpacks:2026-11-01:fantasy",
+      "position": "355",
+      "raw_title": "The Raven Scholar (Eternal Path Trilogy, #1)",
+      "selection_month": "11",
+      "selection_type": "group_read",
+      "selection_year": "2026",
+      "shelf_labels": [
+        "fantasy"
+      ],
+      "source": {
+        "name": "Dragons & Jetpacks",
+        "source_id": "dragons_and_jetpacks",
+        "url": "https://www.goodreads.com/group/show_book/106876-dragons-jetpacks?group_book_id=3897817"
+      },
+      "source_record_id": "goodreads-group-book:3897817",
+      "theme_or_track": "fantasy",
+      "title": "The Raven Scholar"
+    },
+    {
+      "author_url": "https://www.goodreads.com/author/show/7705004.Fonda_Lee",
+      "authors": [
+        "Fonda Lee"
+      ],
+      "book_url": "https://www.goodreads.com/book/show/123163998-the-last-contract-of-isako",
+      "discussion_end_date": "2026-11-30",
+      "discussion_start_date": "2026-11-01",
+      "event_date": "2026-11-01",
+      "event_group_id": "dragons-jetpacks:2026-11-01:sci-fi",
+      "position": "356",
+      "selection_month": "11",
+      "selection_type": "group_read",
+      "selection_year": "2026",
+      "shelf_labels": [
+        "sci-fi"
+      ],
+      "source": {
+        "name": "Dragons & Jetpacks",
+        "source_id": "dragons_and_jetpacks",
+        "url": "https://www.goodreads.com/group/show_book/106876-dragons-jetpacks?group_book_id=3897820"
+      },
+      "source_record_id": "goodreads-group-book:3897820",
+      "theme_or_track": "sci-fi",
+      "title": "The Last Contract of Isako"
+    },
+    {
+      "author_url": "https://www.goodreads.com/author/show/10864410.Edward_Ashton",
+      "authors": [
+        "Edward Ashton"
+      ],
+      "book_url": "https://www.goodreads.com/book/show/127280451-mal-goes-to-war",
+      "discussion_end_date": "2026-12-31",
+      "discussion_start_date": "2026-11-01",
+      "event_date": "2026-11-01",
+      "event_group_id": "dragons-jetpacks:2026-11-01:mod-special",
+      "position": "357",
+      "selection_month": "11",
+      "selection_type": "mod_pick",
+      "selection_year": "2026",
+      "shelf_labels": [
+        "mod-special"
+      ],
+      "source": {
+        "name": "Dragons & Jetpacks",
+        "source_id": "dragons_and_jetpacks",
+        "url": "https://www.goodreads.com/group/show_book/106876-dragons-jetpacks?group_book_id=3897823"
+      },
+      "source_record_id": "goodreads-group-book:3897823",
+      "theme_or_track": "mod-special",
+      "title": "Mal Goes to War"
     }
   ],
-  "fetched_at": "2026-07-18T02:32:06Z",
+  "fetched_at": "2026-11-14T11:32:44Z",
   "list_id": "dragons_and_jetpacks",
   "list_name": "Dragons & Jetpacks",
   "match_series": false,
   "notes": [],
   "parser": "dragons_and_jetpacks",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Dragons & Jetpacks",

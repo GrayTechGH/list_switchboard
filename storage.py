@@ -778,12 +778,16 @@ class StorageMixin:
           used_entry_keys.add(key)
     return entries_by_book, used_entry_keys
 
-  def saved_match_entry_for_book(
+  def saved_match_choice_for_book(
       self, book_id, position, entries, db, match_series=True, book_series=None):
-    """Infer only from work identity; any weaker association needs a choice."""
+    """Return (entry, explicitly chosen), inferring only from work identity.
+
+    Accepted chooser results must be persisted even when the broader direct
+    matcher finds candidates that Import List Review cannot reproduce.
+    """
     if not entries:
       self.debug_storage_save_match_skipped(book_id, 'no cached entry at active position', position)
-      return None
+      return None, False
     title = db.field_for('title', book_id, default_value='') or ''
     authors = db.field_for('authors', book_id, default_value=[]) or []
     matches = [
@@ -792,7 +796,7 @@ class StorageMixin:
       and self.author_matches(authors, imported_author_search_text(entry))
     ]
     if len(matches) == 1:
-      return matches[0]
+      return matches[0], False
     series_matches = []
     if match_series:
       series_matches = [
@@ -801,14 +805,15 @@ class StorageMixin:
         and self.author_matches(authors, imported_author_search_text(entry))
       ]
       if len(series_matches) == 1:
-        return series_matches[0]
+        return series_matches[0], False
     author_matches = [
       entry for entry in entries
       if self.author_matches(authors, imported_author_search_text(entry))
     ]
     candidates = matches or series_matches or author_matches or entries
-    return self.choose_saved_match_entry(
+    entry = self.choose_saved_match_entry(
       book_id, position, candidates, db, book_series=book_series)
+    return entry, entry is not None
 
   def entry_matches_book_series(self, entry, book_series):
     entry_keys = set(match_keys(entry.get('title', '')))
@@ -982,10 +987,12 @@ class StorageMixin:
             if entry_key(candidate) not in used_entry_keys
           ]
           candidate_entries = position_entries if len(position_entries) > 1 else available_position_entries
-          entry = self.saved_match_entry_for_book(
+          entry, explicitly_chosen = self.saved_match_choice_for_book(
             book_id, position, candidate_entries, db,
             match_series=cache.get('match_series', True),
             book_series=series.get(book_id, []))
+          if explicitly_chosen:
+            explicit_entry_keys.add(entry_key(entry))
           selected_entries = [entry] if entry else []
         if not selected_entries:
           continue

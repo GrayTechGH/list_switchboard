@@ -37,9 +37,9 @@ from urllib.parse import unquote, urljoin, urlparse
 from bs4 import BeautifulSoup
 
 try:
-  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
-  from errors import ImportCancelledError
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import ( # type: ignore
@@ -234,7 +234,12 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
       self, html, base_url=CHOICE_AWARDS_URL, name=AWARD_NAME,
       fetch_url=None, log=None, progress=None, overview_pages=None,
       category_pages=None, sleep=None, validate_pages=None,
-      enrich_contributors=None):
+      enrich_contributors=None, cached_parsed=None, incremental_update=False):
+    if fetch_url is not None and overview_pages is None and category_pages is None:
+      from .goodreads_choice_updates import parse_choice_units
+      return parse_choice_units(
+        self, html, base_url, name, fetch_url, log, progress, sleep,
+        cached_parsed, incremental_update, enrich_contributors is not False)
     notes = []
     rows = []
     if validate_pages is None:
@@ -297,7 +302,7 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
           progress(index, total, f'Fetching Goodreads Choice Awards {year}')
         page_html = html if self.same_url(url, base_url) else fetch_url(url)
         pages.append((url, page_html))
-      except ImportCancelledError:
+      except (ImportCancelledError, CamoufoxRequiredError):
         raise
       except Exception as err:
         notes.append(f'Goodreads Choice Awards overview could not be fetched: {url}: {err}')
@@ -338,7 +343,7 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
           fallback_category=link['category'],
           notes=notes,
           validate=True))
-      except ImportCancelledError:
+      except (ImportCancelledError, CamoufoxRequiredError):
         raise
       except Exception as err:
         notes.append(
@@ -419,27 +424,42 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
     nodes = list(soup.descendants)
     winner_marker = self.first_marker_index(nodes, r'\bwinner\b')
     nominee_marker = self.first_marker_index(nodes, r'\ball nominees\b')
-    if validate and (winner_marker is None or nominee_marker is None):
+    voting_round = next((normalize_heading(self.clean_text(node)) for node in soup.find_all(['h1', 'h2', 'h3'])
+      if normalize_heading(self.clean_text(node)) in (
+        'opening round nominees', 'semifinal round nominees', 'final round nominees')), '')
+    if winner_marker is not None and nominee_marker is not None:
+      voting_round = ''
+    if validate and not voting_round and (winner_marker is None or nominee_marker is None):
       self.reject_page(
         notes,
         page_url,
         'required WINNER and All Nominees markers were not both present')
       return []
-    rows = self.book_rows_from_cards(soup, page_url, year, page_category)
+    rows = self.book_rows_from_cards(soup, page_url, year, page_category, voting_round=voting_round)
     rows = self.dedupe_rows(rows)
+    if voting_round:
+      # Voting pages shuffle cards. Their display order is not an award rank.
+      rows.sort(key=lambda row: (normalize_heading(row['title']), self.goodreads_book_id(row.get('_book_url', ''))))
+      for index, row in enumerate(rows):
+        row['_source_order'] = index
     if not validate:
       return rows
     winners = [
       row for row in rows
       if row.get('result') == RESULT_WINNER
     ]
-    if len(winners) != 1:
+    if (voting_round and winners) or (not voting_round and len(winners) != 1):
       self.reject_page(
         notes,
         page_url,
         f'expected exactly one explicit winner but parsed {len(winners)}')
       return []
     minimum, maximum = self.expected_row_count_bounds(year)
+    expected = self.voting_round_count(soup, voting_round) if voting_round else None
+    if expected is not None and len(rows) != expected:
+      self.reject_page(notes, page_url,
+        f'parsed {len(rows)} unique books; the voting-round rules specify {expected}')
+      return []
     has_rules_boundary = self.first_marker_index(
       nodes, r'\brules?\s*(?:&|and)?\s*eligibility\b') is not None
     if (
@@ -451,6 +471,21 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
         f'parsed {len(rows)} unique books; expected {minimum}-{maximum}')
       return []
     return rows
+
+  def voting_round_count(self, soup, voting_round):
+    prefix = voting_round.replace(' nominees', '')
+    for heading in soup.find_all(['h2', 'h3']):
+      label = normalize_heading(self.clean_text(heading))
+      if not label.startswith(prefix) or 'nominees' in label:
+        continue
+      paragraph = heading.find_next_sibling('p')
+      if paragraph is None:
+        continue
+      text = normalize_heading(self.clean_text(paragraph))
+      match = re.search(r'\b(?:there are|top)\s+(\d+)\s+books\b', text)
+      if match:
+        return int(match.group(1))
+    return None
 
   def reject_page(self, notes, page_url, reason):
     notes.append(
@@ -478,15 +513,19 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
     title_text = clean_category_text(raw_title)
     return title_text if title_text and self.category_matches(title_text) else ''
 
-  def book_rows_from_cards(self, soup, page_url, year, category):
+  def book_rows_from_cards(self, soup, page_url, year, category, voting_round=''):
     nodes = list(soup.descendants)
     nominee_marker = self.first_marker_index(nodes, r'\ball nominees\b')
     winner_marker = self.first_marker_index(nodes, r'\bwinner\b')
+    round_marker = next((self.node_index(nodes, heading) for heading in soup.find_all(['h1', 'h2', 'h3'])
+      if normalize_heading(self.clean_text(heading)) == voting_round), None) if voting_round else None
     end_marker = self.first_marker_index(
       nodes, r'\brules?\s*(?:&|and)?\s*eligibility\b')
     if end_marker is None:
       end_marker = len(nodes)
     start_markers = [
+      marker for marker in (round_marker,) if marker is not None
+    ] if voting_round else [
       marker for marker in (winner_marker, nominee_marker)
       if marker is not None
     ]
@@ -494,7 +533,7 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
     rows = []
     for image in soup.find_all(['img']):
       node_index = self.node_index(nodes, image)
-      card = self.card_for_image(image)
+      card = (image.find_parent(class_='answerWrapper') or image.parent) if voting_round else self.card_for_image(image)
       explicit_winner = self.card_has_winner_label(card)
       if (
           (start_marker is not None
@@ -502,13 +541,13 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
            and not explicit_winner)
           or node_index >= end_marker):
         continue
-      parsed = self.book_from_image(image, page_url)
+      parsed = self.book_from_image(image, page_url, card=card)
       if parsed is None:
         continue
       votes = self.votes_near_node(image)
-      if not votes:
+      if not votes and not voting_round:
         continue
-      result = self.result_for_card(card, node_index, winner_marker, nominee_marker, rows)
+      result = RESULT_NOMINEE if voting_round else self.result_for_card(card, node_index, winner_marker, nominee_marker, rows)
       rows.append(self.row(
         year,
         parsed['title'],
@@ -561,11 +600,11 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
       return RESULT_WINNER
     return RESULT_NOMINEE
 
-  def book_from_image(self, image, page_url):
+  def book_from_image(self, image, page_url, card=None):
     alt_title, alt_author = self.title_author_from_alt(image.get('alt') or '')
     if not alt_title or not alt_author:
       return None
-    card = self.card_for_image(image)
+    card = card if card is not None else self.card_for_image(image)
     title = self.clean_title(alt_title)
     authors = self.clean_authors(alt_author)
     book_url = self.link_for_node(image, page_url)
@@ -984,7 +1023,7 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
 
   def enrich_latest_contributors(
       self, rows, fetch_url, notes, sleep=None, progress=None,
-      corrected_book_ids=None, latest_published_year=None):
+      corrected_book_ids=None, latest_published_year=None, contributor_cache=None):
     corrected_book_ids = set(corrected_book_ids or ())
     row_years = [
       int(row['award_year'])
@@ -1028,6 +1067,17 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
           total,
           f'Checking Goodreads contributors {index} of {total}')
       try:
+        cached = (contributor_cache or {}).get(book_id) or {}
+        if not isinstance(cached, dict):
+          cached = {}
+        if (cached.get('url') == row['_book_url']
+            and cached.get('title') == normalize_heading(row['title'])
+            and isinstance(cached.get('authors'), list)
+            and cached['authors']
+            and all(isinstance(author, str) and author.strip() for author in cached['authors'])):
+          row['authors'] = self.merge_authors(row.get('authors') or (), cached['authors'])
+          successful += 1
+          continue
         if book_id not in detail_cache:
           if request_count and sleep is not None:
             sleep(DETAIL_REQUEST_DELAY_SECONDS)
@@ -1038,10 +1088,14 @@ class GoodreadsChoiceAwardsParser(AwardParserBase):
             break
           detail_cache[book_id] = self.detail_contributors(page_html)
         detail_authors = detail_cache[book_id]
+        if contributor_cache is not None and detail_authors:
+          contributor_cache[book_id] = {
+            'url': row['_book_url'], 'title': normalize_heading(row['title']),
+            'authors': list(detail_authors)}
         successful += 1
         row['authors'] = self.merge_authors(
           row.get('authors') or (), detail_authors)
-      except ImportCancelledError:
+      except (ImportCancelledError, CamoufoxRequiredError):
         raise
       except Exception as err:
         if self.is_access_challenge_error(err):

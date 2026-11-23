@@ -20,6 +20,7 @@ SPECULATIVE_REGIONAL_CATEGORIES = (
 
 class UrlFetcherDitmar(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
+  ENABLE_SFADB_INCREMENTAL = True
   FILTER_CATEGORIES = SPECULATIVE_REGIONAL_CATEGORIES
   URL = DITMAR_AWARDS_URL
   FETCH_URLS = (DITMAR_AWARDS_URL,)
@@ -40,7 +41,7 @@ class UrlFetcherDitmar(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
     return DitmarParser()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -49,10 +50,13 @@ class UrlFetcherDitmar(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
       category_aliases=self.CATEGORY_ALIASES,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False),
+      enable_incremental=True)
 
 
 class UrlFetcherDitmarNovel(UrlFetcherDitmar):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   source_id = 'ditmar_novel'
   NAME = 'Ditmar - Novel'
@@ -77,6 +81,7 @@ class UrlFetcherDitmarNovel(UrlFetcherDitmar):
 
 
 class UrlFetcherDitmarNovellaNovelette(UrlFetcherDitmar):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   source_id = 'ditmar_novella_novelette'
   NAME = 'Ditmar - Novella/Novelette'
@@ -91,6 +96,7 @@ class UrlFetcherDitmarNovellaNovelette(UrlFetcherDitmar):
 
 
 class UrlFetcherDitmarCollectedWork(UrlFetcherDitmar):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   source_id = 'ditmar_collected_work'
   NAME = 'Ditmar - Collected Work'

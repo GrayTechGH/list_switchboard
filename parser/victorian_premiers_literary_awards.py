@@ -14,7 +14,7 @@ Maintenance notes:
 
 import json
 import re
-from urllib.parse import urljoin
+from urllib.parse import urljoin,urlsplit
 
 from bs4 import BeautifulSoup
 
@@ -24,12 +24,14 @@ try:
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.parser.annual_updates import read_annual_pages
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .annual_updates import read_annual_pages
 
 
 AWARD_NAME = "Victorian Premier's Literary Awards"
@@ -72,6 +74,8 @@ CORE_CATEGORY_KEYS = {
   'prize for writing for young adults',
   'john marsden prize for writing for young adults',
   'writing for young adults',
+  'young adults',
+  'young adult',
   'prize for children s literature',
   'children s literature',
   'prize for indigenous writing',
@@ -115,7 +119,24 @@ class VictorianPremiersLiteraryAwardsOfficialParser(AwardParserBase):
 
   def parse(
       self, html, base_url=OFFICIAL_URL, name=AWARD_NAME, fetch_url=None,
-      log=None, progress=None):
+      log=None, progress=None,cached_parsed=None,incremental_update=False):
+    links=self.archive_links(html,base_url)
+    if links and fetch_url is not None:
+      def read(page,url):
+        soup=BeautifulSoup(page,'html.parser')
+        heading=soup.find('h1')
+        year=self.year_from_text(url)
+        if heading and self.year_from_text(self.clean_text(heading)) not in (None,year):
+          raise ValueError('Wheeler Centre annual page identified another year.')
+        rows=self.dedupe_rows(self.page_rows(page,url))
+        return {'entries':self.entries_from_rows(rows),'notes':[]}
+      result=read_annual_pages(json.dumps([base_url,name,self.category,self.category_aliases]),
+        [(url,self.year_from_text(url)) for url in links],fetch_url,read,
+        cached_parsed=cached_parsed,incremental_update=incremental_update,
+        validate_empty=self.valid_empty_year,progress=progress,allow_partial=True,
+        failure_note=lambda url,year,err:f'{name} archive page could not be fetched: {url}: {err}')
+      result.update(name=name,source=self.parsed_result(name,base_url,[])['source'])
+      return result
     pages = [(base_url, html)]
     notes = []
     archive_links = self.archive_links(html, base_url)
@@ -159,17 +180,98 @@ class VictorianPremiersLiteraryAwardsOfficialParser(AwardParserBase):
         continue
       if 'past awards' not in key and f'{year} victorian premier' not in key:
         continue
-      links[year] = urljoin(base_url, href)
+      url=urljoin(base_url,href)
+      if urlsplit(url).netloc==urlsplit(base_url).netloc:
+        links[year] = url
     return tuple(url for _year, url in sorted(links.items()))
 
   def page_rows(self, html, page_url):
     soup = BeautifulSoup(html, 'html.parser')
     page_year = self.year_from_text(page_url) or self.year_from_text(self.clean_text(soup.find('title')))
+    if soup.select_one('main .component') is not None:
+      return self.structured_rows(soup,page_url,page_year)
     lines = self.dom_lines(soup, page_url)
     rows = self.rows_from_lines(lines, page_url, page_year=page_year)
     if rows:
       return rows
     return self.rows_from_lines(self.next_data_lines(soup), page_url, page_year=page_year)
+
+  def stage(self,text):
+    key=normalize_heading(text)
+    key=re.sub(r'^20\d{2}\s+','',key)
+    key=re.sub(r'^the\s+','',key)
+    if key.startswith('winners of ') or key in ('winner','winners'):
+      return RESULT_WINNER
+    if key in ('shortlist','shortlisted'):
+      return RESULT_SHORTLISTED
+    return None
+
+  def structured_rows(self,soup,page_url,year):
+    if year is None:
+      return []
+    root=soup.find('main')
+    rows=[]
+    result,category=None,None
+    for node in root.find_all(['h2','h3','h4','p']):
+      if node.find_parent(['nav','header','footer']):
+        continue
+      text=self.clean_text(node)
+      key=_category_key(text)
+      if node.name in ('h2','h3','h4'):
+        stage=self.stage(text)
+        if stage:
+          result,category=stage,None
+          continue
+        if 'content-heading' in (node.get('class') or []):
+          wrapper=node.parent
+          description=wrapper.select_one('.content-description')
+          if not description or result is None:
+            continue
+          lines=[normalize_line(line) for line in description.get_text('\n',strip=True).splitlines() if normalize_line(line)]
+          if result==RESULT_WINNER:
+            if key not in self.category_keys or len(lines)<2:
+              continue
+            title,author=lines[:2]
+          else:
+            if category!=self.category or not lines:
+              continue
+            title,author=text,lines[0]
+          rows.append(self.row(year,self.clean_title(title),self.clean_author(author),result,
+            self.first_link_url(wrapper,page_url) or page_url))
+          continue
+        if key in self.category_keys or key in CORE_CATEGORY_KEYS or key in SKIP_CATEGORY_KEYS:
+          category=self.category if key in self.category_keys else None
+          if node.name=='h2':
+            result=RESULT_SHORTLISTED
+          continue
+        if node.name=='h2':
+          result,category=None,None
+        continue
+      if node.find_parent(class_='content-description'):
+        continue
+      if result is None:
+        continue
+      inline=node.find('strong',recursive=False)
+      inline_category=_category_key(self.clean_text(inline)) if inline else None
+      if inline_category in CORE_CATEGORY_KEYS or inline_category in SKIP_CATEGORY_KEYS:
+        if inline_category not in self.category_keys:
+          continue
+        text=normalize_line(text[len(self.clean_text(inline)):])
+      elif category!=self.category:
+        continue
+      title,author=self.parse_title_author_line(text)
+      if title and author:
+        rows.append(self.row(year,title,author,result,self.first_link_url(node,page_url) or page_url))
+    return rows
+
+  def valid_empty_year(self,html,url,year):
+    soup=BeautifulSoup(html,'html.parser')
+    root=soup.find('main')
+    heading=root.find('h1') if root else None
+    if not heading or self.year_from_text(self.clean_text(heading))!=year:
+      return False
+    labels=[_category_key(self.clean_text(node)) for node in root.find_all(['h2','h3','h4','strong'])]
+    return bool(set(labels)&CORE_CATEGORY_KEYS) and not bool(set(labels)&self.category_keys)
 
   def dom_lines(self, soup, page_url):
     root = soup.find('main') or soup.body or soup

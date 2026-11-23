@@ -14,6 +14,7 @@ Maintenance notes:
 """
 
 from datetime import date
+import json
 import re
 from urllib.parse import urljoin
 
@@ -22,17 +23,23 @@ from bs4 import BeautifulSoup
 try:
   from calibre_plugins.list_switchboard.parser.award_base import ( # type: ignore
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, strip_publication_notes,
+    normalize_heading, normalize_line, strip_publication_notes,split_title_author_byline,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
   from calibre_plugins.list_switchboard.parser.pdf_text import extract_pdf_text # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from calibre_plugins.list_switchboard.parser.yalsa_base import yalsa_heading_years
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError,CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, strip_publication_notes,
+    normalize_heading, normalize_line, strip_publication_notes,split_title_author_byline,
   )
   from .generic import position_sort_key
   from .pdf_text import extract_pdf_text
+  from .incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from .yalsa_base import yalsa_heading_years
+  from errors import ImportCancelledError,CamoufoxRequiredError
 
 
 AWARD_NAME = 'John Newbery Medal'
@@ -73,7 +80,10 @@ class NewberyMedalParser(AwardParserBase):
   def parse(
       self, source, base_url=ALSC_URL, name=AWARD_NAME, fetch_url=None,
       current_year=None, pdf_page=None, supplement_pages=(), log=None,
-      progress=None):
+      progress=None,cached_parsed=None,incremental_update=False):
+    if fetch_url is not None and pdf_page is None and not supplement_pages and self.looks_like_landing_page(source,base_url):
+      return self.parse_live_sources(source,base_url,name,fetch_url,int(current_year or date.today().year),
+        cached_parsed,incremental_update,log,progress)
     notes = []
     rows = []
     pdf_source = pdf_page
@@ -86,6 +96,8 @@ class NewberyMedalParser(AwardParserBase):
           if progress is not None:
             progress(1, 1, 'Fetching Newbery complete PDF list')
           pdf_source = fetch_url(pdf_url)
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
         except Exception as err:
           notes.append(f'Newbery complete PDF could not be fetched: {pdf_url}: {err}')
           if log is not None:
@@ -115,6 +127,8 @@ class NewberyMedalParser(AwardParserBase):
           if progress is not None:
             progress(index, total, f'Fetching {year} ALA Youth Media Awards')
           rows.extend(self.yma_page_rows(fetch_url(url), url))
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
         except Exception as err:
           notes.append(f'ALA Youth Media Awards page could not be fetched: {url}: {err}')
           if log is not None:
@@ -134,8 +148,92 @@ class NewberyMedalParser(AwardParserBase):
       sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       notes=notes)
 
+  def complete_pdf_rows(self,rows):
+    winners={}
+    for row in rows:
+      if not row.get('title') or not row.get('author') or '\ufffd' in row['title']+row['author']:
+        return False
+      if row.get('result')==RESULT_WINNER:
+        year=int(row['award_year']);winners[year]=winners.get(year,0)+1
+    return bool(winners) and min(winners)==1922 and all(winners.get(year)==1 for year in range(1922,max(winners)+1))
+
+  def parse_live_sources(self,html,base_url,name,fetch_url,current_year,cached_parsed,incremental_update,log,progress):
+    cache=ParsedUnitCache('newbery-complete-pdf-v1',json.dumps([base_url,name,type(self).__name__,PDF_URL]),cached_parsed,incremental_update)
+    notes=[]
+    def previous(key):
+      try:return restore_source_rows(cache.previous(key),(cache.old_units.get(key) or {}).get('metadata') or {})
+      except (ValueError,TypeError):return []
+    discovered=self.pdf_url_from_landing_page(html,base_url)
+    pdf_url=discovered or PDF_URL
+    old=cache.old_units.get('pdf') or {}
+    prior=previous('pdf')
+    last=max((int(r['award_year']) for r in prior),default=0)
+    if (discovered and old.get('complete') is True and old.get('revision')==pdf_url and
+        last>=current_year and self.complete_pdf_rows(prior)):
+      pdf_rows,complete=prior,True
+    else:
+      pdf_rows,complete=prior,False
+      try:
+        if progress is not None:progress(1,1,'Fetching Newbery complete PDF list')
+        found=self.pdf_rows(fetch_url(pdf_url),pdf_url)
+        complete=bool(discovered) and self.complete_pdf_rows(found)
+        if not found:raise ValueError('Official Newbery PDF did not expose usable records.')
+        if complete or not prior:pdf_rows=found
+        if not complete:notes.append('Newbery complete PDF coverage could not be certified from 1922 through its latest winner; retained cached history where available.')
+      except (ImportCancelledError,CamoufoxRequiredError):
+        raise
+      except Exception as err:
+        notes.append(f'Newbery complete PDF could not be fetched: {pdf_url}: {err}')
+        if log is not None:log(notes[-1])
+    if not discovered:notes.append('Official Newbery landing did not expose its complete-list PDF link.')
+    units={'pdf':(pdf_rows,pdf_url,complete)}
+    rows=list(pdf_rows)
+    last=max((int(r['award_year']) for r in pdf_rows),default=0)
+    for year in range(last+1,current_year+1) if last else ():
+      key=str(year);url=yma_awards_url(year);old=cache.old_units.get(key) or {};prior=previous(key)
+      if old.get('complete') is True and old.get('revision')==url and year<current_year and any(r['result']==RESULT_WINNER for r in prior):
+        source_rows,done=prior,True
+      else:
+        source_rows,done=prior,False
+        try:
+          payload=fetch_url(url)
+          heading_years=yalsa_heading_years(payload)
+          if heading_years and heading_years!={year}:raise ValueError('Official YMA heading identifies another award year.')
+          found=self.yma_page_rows(payload,url)
+          if not found or any(r['award_year']!=key for r in found):raise ValueError('Official YMA page did not expose a usable Newbery snapshot.')
+          source_rows,done=found,True
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
+        except Exception as err:notes.append(f'ALA Youth Media Awards page could not be fetched: {url}: {err}')
+      units[key]=(source_rows,url,done);rows.extend(source_rows)
+    entries=sorted(self.entries_from_rows(self.dedupe_rows(rows)),key=lambda item:position_sort_key(item.get('position','')))
+    if not entries:raise ValueError('No John Newbery Medal entries found on official ALSC/ALA sources.')
+    for key,(source_rows,revision,done) in units.items():
+      projected,metadata=project_source_rows(source_rows,entries,lambda r:(str(r['award_year']),normalize_heading(r['title'])))
+      cache.put(key,projected,revision=revision,complete=done,metadata=metadata)
+    notes.extend(['Newbery Honor Books are imported as shortlisted entries; the award does not publish public pre-award shortlists for this import scope.',
+      'Historical runners-up are treated as Honor Books, following official ALSC terminology.'])
+    parsed=self.parsed_result(name,base_url,entries,notes=notes)
+    parsed['incremental_state']=cache.state(entries)
+    return parsed
+
   def pdf_rows(self, pdf_or_text, source_url=PDF_URL):
-    return self.rows_from_text(extract_pdf_text(pdf_or_text), source_url)
+    if (isinstance(pdf_or_text,bytes) and pdf_or_text.startswith(b'%PDF-')) or str(pdf_or_text).startswith('%PDF-'):
+      try:
+        from calibre.ebooks.pdf.pdftohtml import PDFTOTEXT,creationflags
+      except ImportError:
+        pass
+      else:
+        import subprocess
+        import tempfile
+        from pathlib import Path
+        data=pdf_or_text if isinstance(pdf_or_text,bytes) else pdf_or_text.encode('latin-1')
+        with tempfile.TemporaryDirectory(prefix='list-switchboard-newbery-pdf-') as folder:
+          pdf=Path(folder)/'history.pdf';pdf.write_bytes(data)
+          result=subprocess.run([PDFTOTEXT,'-layout','-enc','UTF-8',str(pdf),'-'],
+            stdout=subprocess.PIPE,stderr=subprocess.PIPE,check=True,creationflags=creationflags,timeout=45)
+          return self.rows_from_text(result.stdout.decode('utf-8'),source_url)
+    return self.rows_from_text(extract_pdf_text(pdf_or_text),source_url)
 
   def rows_from_text(self, text, source_url):
     rows = []
@@ -195,9 +293,14 @@ class NewberyMedalParser(AwardParserBase):
     return year, result, normalize_line(match.group(3))
 
   def consume_entry_line(self, rows, pending, line, year, result, source_url):
+    # A byline may wrap before its author or publisher is complete. Flush only
+    # after the publisher closes, another entry starts, or the stage changes.
+    starts_entry=(not CREATOR_PREFIX_RE.match(line) and self.title_author_from_text(line) is not None)
+    if pending and starts_entry and self.row_from_text(pending,year,result,source_url) is not None:
+      pending=self.flush_pending(rows,pending,year,result,source_url)
     pending = normalize_line(f'{pending} {line}' if pending else line)
     parsed = self.row_from_text(pending, year, result, source_url)
-    if parsed is None:
+    if parsed is None or '(' not in pending or not pending.endswith(')'):
       return pending
     rows.append(parsed)
     return ''
@@ -235,11 +338,17 @@ class NewberyMedalParser(AwardParserBase):
 
     match = re.match(
       r'^(.+?)\s*,?\s+(?:written and illustrated by|illustrated and written by|'
-      r'written by|illustrated by|retold by|adapted by|by)\s+(.+)$',
+      r'written by|illustrated by|retold by|adapted by)\s+(.+)$',
       value,
       re.I)
     if match is not None:
       return self.clean_title(match.group(1)), self.clean_author(match.group(2))
+
+    role=re.search(r',\s*(?:illus\.|illustrated)\s+by\s+',value,re.I)
+    primary=value[:role.start()] if role else value
+    title,author=split_title_author_byline(primary)
+    if title and author:
+      return self.clean_title(title),self.clean_author(author+(value[role.start():] if role else ''))
 
     dash_match = re.match(r'^(.+?)\s+[\u2013\u2014-]\s+(.+)$', value)
     if dash_match is not None:
@@ -262,6 +371,7 @@ class NewberyMedalParser(AwardParserBase):
     value = PUBLISHER_RE.sub('', value)
     value = CREATOR_PREFIX_RE.sub('', value)
     value = strip_publication_notes(value)
+    value = re.sub(r'\s*\([^)]*$', '', value)
     value = re.sub(r'\.\s+The book is published by .+$', '', value, flags=re.I)
     value = re.sub(r'\s+and\s+$', '', value, flags=re.I)
     return normalize_line(value).strip(' "\'\u2018\u2019\u201c\u201d,.;:')

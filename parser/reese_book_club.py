@@ -21,11 +21,12 @@ from .book_club_base import (
   parse_year, text_blocks,
 )
 from .base import parsed_source
+from .incremental import ParsedUnitCache, position_independent_fingerprint
 
 try:
-  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
-  from errors import ImportCancelledError
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 # The redesigned archive collapses these early YA taxonomies into the same
@@ -49,28 +50,70 @@ class ReeseBookClubParser(BookClubParserBase):
   DEFAULT_SELECTION_TYPE = 'monthly_pick'
 
   def parse(
-      self, html, base_url, name=None, scope=None, fetch_url=None, **_kwargs):
+      self, html, base_url, name=None, scope=None, fetch_url=None,
+      cached_parsed=None, incremental_update=False, **_kwargs):
     scope = scope or self.DEFAULT_SCOPE
     notes = []
     soup = BeautifulSoup(html or '<html></html>', 'html.parser')
+    units = ParsedUnitCache('reese-posts-v1', [base_url, scope],
+      cached_parsed, incremental_update)
     pages = [(base_url, soup)]
+    discovery = {}
     if self.looks_like_wordpress_archive(soup):
-      pages.extend(self.fetch_archive_pages(soup, base_url, fetch_url, notes))
+      details = self.popup_details(pages)
+      root_ids = {self.post_id(card) for card in soup.select('li.wp-block-post.book')}
+      old_discovery = units.old_discovery
+      # Live root popups advertise the entire post catalog, including books on
+      # later pages. Missing/changed IDs invalidate the pagination shortcut.
+      can_reuse = (bool(units.old_units) and old_discovery.get('popup_catalog_complete') is True
+        and set(units.old_units).issubset(details))
+      old_rows = []
+      if can_reuse:
+        for key, detail in details.items():
+          if key in root_ids:
+            continue
+          reused = units.reuse(key, self.detail_revision(detail))
+          if reused is None:
+            can_reuse = False
+            break
+          old_rows.extend(reused)
+      if not can_reuse:
+        units.units.clear()
+        pages.extend(self.fetch_archive_pages(soup, base_url, fetch_url, notes))
+        old_rows = []
       entries = self.entries_from_wordpress_archive(
-        pages, base_url, scope, fetch_url, notes)
+        pages, base_url, scope, fetch_url, notes, units)
+      entries.extend(old_rows)
+      for key, detail in details.items():
+        if key not in units.units and key in units.old_units:
+          entries.extend(units.failed(key, self.detail_revision(detail)))
+      discovery = {'popup_catalog_complete': set(units.units) == set(details),
+        'refresh_units': sorted(root_ids)}
     else:
       entries = self.entries_from_soup(soup, base_url, scope)
+    if incremental_update and (cached_parsed or {}).get('entries') and not entries:
+      raise ValueError('Reese did not expose usable selections; saved history was not replaced.')
     entries = sorted(entries, key=self.entry_sort_key)
     for position, entry in enumerate(entries, 1):
       entry['position'] = str(position)
     notes.extend(self.notes_for_entries(entries))
-    return {
+    parsed = {
       'name': name or self.CLUB_NAME,
       'source': parsed_source(name or self.CLUB_NAME, base_url),
       'entries': entries,
       'notes': notes,
       'match_series': False,
     }
+    if units.units:
+      parsed['incremental_state'] = units.state(entries,
+        identity=position_independent_fingerprint)
+      parsed['incremental_state']['discovery'] = discovery
+    if incremental_update:
+      parsed['incremental_update'] = True
+    return parsed
+
+  def detail_revision(self, detail):
+    return [detail.get('title') or '', detail.get('authors') or []]
 
   def looks_like_wordpress_archive(self, soup):
     return bool(
@@ -93,7 +136,7 @@ class ReeseBookClubParser(BookClubParserBase):
       seen.add(url)
       try:
         page_html = fetch_url(url)
-      except ImportCancelledError:
+      except (ImportCancelledError, CamoufoxRequiredError):
         raise
       except Exception as err:
         notes.append(f"Reese's Book Club archive page could not be fetched: {err}")
@@ -102,7 +145,7 @@ class ReeseBookClubParser(BookClubParserBase):
     return pages
 
   def entries_from_wordpress_archive(
-      self, pages, base_url, scope, fetch_url, notes):
+      self, pages, base_url, scope, fetch_url, notes, units=None):
     details = self.popup_details(pages)
     entries = []
     seen_posts = set()
@@ -114,6 +157,7 @@ class ReeseBookClubParser(BookClubParserBase):
           continue
         seen_posts.add(post_id)
         detail = details.get(post_id, {})
+        revision = self.detail_revision(detail)
         title = detail.get('title') or self.card_title(card)
         authors = detail.get('authors') or []
         entry_url = self.card_url(card, base_url)
@@ -124,6 +168,8 @@ class ReeseBookClubParser(BookClubParserBase):
           title = title or detail_title
           authors = authors or detail_authors
         if not title or not authors or not label:
+          if units is not None:
+            entries.extend(units.failed(post_id, revision))
           continue
         entry = self.build_entry({
           'title': title,
@@ -135,12 +181,16 @@ class ReeseBookClubParser(BookClubParserBase):
         }, f'{label} {title} by {" and ".join(authors)}', entry_url, scope,
           len(entries) + 1, base_url=base_url)
         if entry is None:
+          if units is not None:
+            units.put(post_id, [], revision)
           continue
         key = self.entry_key(entry)
         if key in seen_entries:
           continue
         seen_entries.add(key)
         entries.append(entry)
+        if units is not None:
+          units.put(post_id, [entry], revision)
     return entries
 
   def popup_details(self, pages):
@@ -181,7 +231,7 @@ class ReeseBookClubParser(BookClubParserBase):
   def featured_pick_details(self, url, fetch_url, notes):
     try:
       html = fetch_url(url)
-    except ImportCancelledError:
+    except (ImportCancelledError, CamoufoxRequiredError):
       raise
     except Exception as err:
       notes.append(f"Reese's current pick detail page could not be fetched: {err}")

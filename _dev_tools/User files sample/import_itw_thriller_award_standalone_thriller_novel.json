@@ -1,0 +1,133 @@
+{
+  "append_state": {
+    "entry_count": 10,
+    "last_entry_key": "so happy together|olivia worley",
+    "last_position": "2026.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Jason Rekulak"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Standalone Thriller Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "THE LAST ONE AT THE WEDDING"
+    },
+    {
+      "authors": [
+        "Kimberly Belle"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Standalone Thriller Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "THE PARIS WIDOW"
+    },
+    {
+      "authors": [
+        "Will Dean"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Standalone Thriller Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "THE CHAMBER"
+    },
+    {
+      "authors": [
+        "T.J. Newman"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Standalone Thriller Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "WORST CASE SCENARIO"
+    },
+    {
+      "authors": [
+        "Lisa Scottoline"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Standalone Thriller Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "THE TRUTH ABOUT THE DEVLINS"
+    },
+    {
+      "authors": [
+        "Megan Collins"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2026",
+      "category": "Best Standalone Thriller Novel",
+      "position": "2026",
+      "result": "winner",
+      "title": "CROSS MY HEART"
+    },
+    {
+      "authors": [
+        "Ruth Knafo Setton"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2026",
+      "category": "Best Standalone Thriller Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "ZIGZAG GIRL"
+    },
+    {
+      "authors": [
+        "Gilly Macmillan"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2026",
+      "category": "Best Standalone Thriller Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "THE BURNING LIBRARY"
+    },
+    {
+      "authors": [
+        "Sarah Pekkanen"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2026",
+      "category": "Best Standalone Thriller Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "THE LOCKED WARD"
+    },
+    {
+      "authors": [
+        "Olivia Worley"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2026",
+      "category": "Best Standalone Thriller Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "SO HAPPY TOGETHER"
+    }
+  ],
+  "fetched_at": "2026-11-16T00:13:46Z",
+  "list_id": "itw_thriller_award_standalone_thriller_novel",
+  "list_name": "ITW Thriller Award - Standalone Thriller Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "itw_thriller_award_standalone_thriller_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "ITW Thriller Award - Standalone Thriller Novel",
+    "source_id": "itw_thriller_award_standalone_thriller_novel",
+    "url": "https://thrillerwriters.org/past-nominees-and-winners"
+  }
+}

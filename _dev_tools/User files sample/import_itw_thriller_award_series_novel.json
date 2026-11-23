@@ -1,0 +1,145 @@
+{
+  "append_state": {
+    "entry_count": 11,
+    "last_entry_key": "terminal moonlight|vincent zandri",
+    "last_position": "2026.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "David Baldacci"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Series Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "TO DIE FOR"
+    },
+    {
+      "authors": [
+        "Eric Beetner"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Series Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "THE LAST FEW MILES OF ROAD"
+    },
+    {
+      "authors": [
+        "Ann Cleeves"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Series Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "THE DARK WIVES"
+    },
+    {
+      "authors": [
+        "Meg Gardiner"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Series Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "SHADOWHEART"
+    },
+    {
+      "authors": [
+        "Iris Johansen",
+        "Roy Johansen"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Series Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "FLASHBACK"
+    },
+    {
+      "authors": [
+        "Isabella Maldonado"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Series Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "title": "A FORGOTTEN KILL"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2026",
+      "category": "Best Series Novel",
+      "position": "2026",
+      "result": "winner",
+      "title": "THE BIG EMPTY"
+    },
+    {
+      "authors": [
+        "James Byrne"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2026",
+      "category": "Best Series Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "CHAIN REACTION"
+    },
+    {
+      "authors": [
+        "John McMahon"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2026",
+      "category": "Best Series Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "HEAD CASES: A NOVEL"
+    },
+    {
+      "authors": [
+        "Christopher Reich"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2026",
+      "category": "Best Series Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "THE TOURISTS"
+    },
+    {
+      "authors": [
+        "Vincent Zandri"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2026",
+      "category": "Best Series Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "TERMINAL MOONLIGHT"
+    }
+  ],
+  "fetched_at": "2026-11-16T00:29:54Z",
+  "list_id": "itw_thriller_award_series_novel",
+  "list_name": "ITW Thriller Award - Series Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "itw_thriller_award_series_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "ITW Thriller Award - Series Novel",
+    "source_id": "itw_thriller_award_series_novel",
+    "url": "https://thrillerwriters.org/past-nominees-and-winners"
+  }
+}

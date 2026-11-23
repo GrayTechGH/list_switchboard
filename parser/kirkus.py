@@ -67,6 +67,28 @@ class KirkusPrizeParser(AwardParserBase):
 
   def parse_rows(self, html, base_url, category, category_aliases):
     soup = BeautifulSoup(html or '', 'html.parser')
+    if soup.select_one('section.prize-winners,section.prize-finalists'):
+      rows=[]
+      expected_year=self.year_from_text(base_url)
+      dated=soup.find('h1',string=lambda t:t and self.year_from_text(t))
+      if dated and expected_year and self.year_from_text(self.node_text(dated))!=expected_year:
+        raise ValueError('Kirkus year page identifies another prize cycle.')
+      for card in soup.select('section.prize-winners .prize-winner'):
+        label=card.select_one('.prize-label')
+        if label and normalize_heading(self.node_text(label)) in category_aliases:
+          item=self.row_from_node(card,base_url,category,RESULT_WINNER)
+          if item:
+            rows.append(item)
+      for heading in soup.select('section.prize-finalists .prize-category'):
+        if normalize_heading(self.node_text(heading)) not in category_aliases:
+          continue
+        listing=heading.find_next_sibling(['ul','ol'])
+        if listing:
+          for card in listing.find_all('li',recursive=False):
+            item=self.row_from_node(card,base_url,category,RESULT_FINALIST)
+            if item:
+              rows.append(item)
+      return rows
     rows = []
     for heading in self.result_headings(soup):
       result = self.result_from_heading(self.node_text(heading))
@@ -75,6 +97,9 @@ class KirkusPrizeParser(AwardParserBase):
         node_category = self.category_from_heading(node, category_aliases)
         if node_category:
           current_category = node_category
+          continue
+        if self.is_other_category_heading(node,category_aliases):
+          current_category=''
           continue
         nested_rows, current_category = self.rows_from_node(
           node,
@@ -120,6 +145,8 @@ class KirkusPrizeParser(AwardParserBase):
     rows = []
     if self.is_heading_node(node):
       node_category = self.category_from_heading(node, category_aliases)
+      if self.is_other_category_heading(node,category_aliases):
+        return rows,''
       return rows, node_category or current_category
     for child in node.find_all(['h3', 'h4', 'h5', 'h6', 'strong', 'p', 'li', 'article', 'section', 'div'], recursive=False):
       child_category = self.category_from_heading(child, category_aliases)

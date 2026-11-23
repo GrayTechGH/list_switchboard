@@ -4,7 +4,7 @@ import sys
 import types
 from unittest.mock import patch
 
-from camoufox_transport import (
+from transport.camoufox import (
   CamoufoxChallengeError,
   CamoufoxFetchError,
   CamoufoxTransport,
@@ -107,7 +107,7 @@ class CamoufoxTransportTests(unittest.TestCase):
         transport.close()
 
   def test_shared_stage_migrates_pilot_settings_and_new_setting_wins(self):
-    from camoufox_transport import browser_fallback_level
+    from transport.camoufox import browser_fallback_level
     for previous, expected in (('automatic', 0), ('camoufox', 1), ('old', 2)):
       with self.subTest(previous=previous):
         prefs = {'debug_librarything_transport': previous}
@@ -154,7 +154,7 @@ class CamoufoxTransportTests(unittest.TestCase):
       browser_factory=factory,
       wait_callback=lambda _message: initializing.wait(1))
     try:
-      with patch('camoufox_transport.STARTUP_ALLOWANCE_SECONDS', -1):
+      with patch('transport.camoufox.STARTUP_ALLOWANCE_SECONDS', -1):
         with self.assertRaisesRegex(CamoufoxFetchError, 'browser startup exceeded'):
           transport.fetch('https://www.librarything.com/award/1', timeout=60)
     finally:
@@ -170,7 +170,7 @@ class CamoufoxTransportTests(unittest.TestCase):
     transport = CamoufoxTransport(wait_callback=lambda message: now.__setitem__(0, 76.0))
     transport.browser = browser
     try:
-      with patch('camoufox_transport.time.monotonic', side_effect=lambda: now[0]):
+      with patch('transport.camoufox.time.monotonic', side_effect=lambda: now[0]):
         with self.assertRaisesRegex(CamoufoxFetchError, 'request exceeded'):
           transport.fetch('https://www.isfdb.org/cgi-bin/ay.cgi?61+2021', timeout=60)
       self.assertTrue(transport.closed)
@@ -203,7 +203,7 @@ class CamoufoxTransportTests(unittest.TestCase):
         now[0] = 81.0
     transport = CamoufoxTransport(browser_factory=factory, wait_callback=wait, poll_interval=0.001)
     try:
-      with patch('camoufox_transport.time.monotonic', side_effect=lambda: now[0]):
+      with patch('transport.camoufox.time.monotonic', side_effect=lambda: now[0]):
         with self.assertRaisesRegex(CamoufoxFetchError, 'request exceeded'):
           transport.fetch('https://www.isfdb.org/cgi-bin/awardtype.cgi?61', timeout=60)
       self.assertTrue(any(message.startswith('Starting') for message in messages))
@@ -225,7 +225,7 @@ class CamoufoxTransportTests(unittest.TestCase):
     transport = CamoufoxTransport(wait_callback=wait, poll_interval=0.001)
     transport.browser = browser
     try:
-      with patch('camoufox_transport.time.monotonic', side_effect=lambda: now[0]):
+      with patch('transport.camoufox.time.monotonic', side_effect=lambda: now[0]):
         self.assertEqual('<html>recovered</html>', transport.fetch('https://www.isfdb.org/', timeout=60))
       self.assertEqual(60, browser.open_calls[0][1])
       self.assertFalse(transport.closed)
@@ -257,7 +257,7 @@ class CamoufoxTransportTests(unittest.TestCase):
       self.assertEqual(1, browser.shutdown_calls)
 
   def test_cloudflare_script_on_usable_award_page_is_not_a_challenge(self):
-    from camoufox_transport import is_challenge_payload
+    from transport.camoufox import is_challenge_payload
     html = '''<title>The Strand Critics Award | LibraryThing</title>
       <h2>Winner</h2><table><tr><th>Work</th><th>Year</th></tr>
       <tr><td><a href="/work/1">Book</a></td><td>2025</td></tr></table>
@@ -267,7 +267,7 @@ class CamoufoxTransportTests(unittest.TestCase):
     self.assertTrue(is_challenge_payload('<div class="cf-chl-test"></div>'))
 
   def test_capability_checks_version_before_optional_import(self):
-    import camoufox_transport as module
+    from transport import camoufox as module
     for version in ((6, 0, 0), (9, 15, 0)):
       with patch.object(module, 'calibre_version_tuple', return_value=version):
         self.assertFalse(module.camoufox_capability()[0])
@@ -304,7 +304,7 @@ class CamoufoxTransportTests(unittest.TestCase):
     transport = CamoufoxTransport(
       browser_factory=factory, wait_callback=cancel, poll_interval=0.001)
     try:
-      with patch('camoufox_transport.SHUTDOWN_JOIN_SECONDS', 0.01):
+      with patch('transport.camoufox.SHUTDOWN_JOIN_SECONDS', 0.01):
         with self.assertRaises(ImportCancelledError):
           transport.fetch('https://www.librarything.com/award/1')
       self.assertFalse(release.is_set())

@@ -1,0 +1,1687 @@
+{
+  "append_state": {
+    "entry_count": 104,
+    "last_entry_key": "this stays between us|margot mcgovern",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Terry Dowling"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_1996"
+      },
+      "title": "An Intimate Knowledge of the Night"
+    },
+    {
+      "authors": [
+        "David Brookes"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_1996"
+      },
+      "title": "The House of Balthus"
+    },
+    {
+      "authors": [
+        "Venero Armanno"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_1996"
+      },
+      "title": "My Beautiful Friend"
+    },
+    {
+      "authors": [
+        "Justine Ettler"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_1996"
+      },
+      "title": "The River Ophelia"
+    },
+    {
+      "authors": [
+        "Carmel Bird"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "1996",
+      "category": "Horror Novel",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_1996"
+      },
+      "title": "The White Garden"
+    },
+    {
+      "authors": [
+        "Kim Wilkins"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "1998",
+      "category": "Horror Novel",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_1998"
+      },
+      "title": "The Infernal"
+    },
+    {
+      "authors": [
+        "Stephen Dedman"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "1998",
+      "category": "Horror Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_1998"
+      },
+      "title": "The Art of Arrow Cutting"
+    },
+    {
+      "authors": [
+        "Richard Harland"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "1998",
+      "category": "Horror Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_1998"
+      },
+      "title": "The Dark Edge"
+    },
+    {
+      "authors": [
+        "Emma Tom"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "1998",
+      "category": "Horror Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_1998"
+      },
+      "title": "Dead Set"
+    },
+    {
+      "authors": [
+        "Christine Harris"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2000",
+      "category": "Horror Novel",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2000"
+      },
+      "title": "Foreign Devils"
+    },
+    {
+      "authors": [
+        "P. Scott-Bernard"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2000",
+      "category": "Horror Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2000"
+      },
+      "title": "Deadly Sister Love"
+    },
+    {
+      "authors": [
+        "Victor Kelleher"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2000",
+      "category": "Horror Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2000"
+      },
+      "title": "Into the Dark"
+    },
+    {
+      "authors": [
+        "Victor Kelleher"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2000",
+      "category": "Horror Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2000"
+      },
+      "title": "The Ivory Trail"
+    },
+    {
+      "authors": [
+        "Kim Wilkins"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2001",
+      "category": "Horror Novel",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2001"
+      },
+      "title": "The Resurrectionists"
+    },
+    {
+      "authors": [
+        "Terry Dowling"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2001",
+      "category": "Horror Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2001"
+      },
+      "title": "Blackwater Days"
+    },
+    {
+      "authors": [
+        "Kim Wilkins"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2002",
+      "category": "Horror Novel",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2002"
+      },
+      "title": "Angel of Ruin"
+    },
+    {
+      "authors": [
+        "Cameron Rogers"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2002",
+      "category": "Horror Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2002"
+      },
+      "title": "The Music of Razors"
+    },
+    {
+      "authors": [
+        "A. L. McCann"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2003",
+      "category": "Horror Novel",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2003"
+      },
+      "title": "The White Body of Evening"
+    },
+    {
+      "authors": [
+        "Louise Cusack"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2003",
+      "category": "Horror Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2003"
+      },
+      "title": "Daughter of the Dark"
+    },
+    {
+      "authors": [
+        "Alison Croggon"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2003",
+      "category": "Horror Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2003"
+      },
+      "title": "The Gift"
+    },
+    {
+      "authors": [
+        "Stephen Dedman"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2003",
+      "category": "Horror Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2003"
+      },
+      "title": "Shadows Bite"
+    },
+    {
+      "authors": [
+        "Victor Kelleher"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2004",
+      "category": "Horror Novel",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2004"
+      },
+      "title": "Born of the Sea"
+    },
+    {
+      "authors": [
+        "Kim Wilkins"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2004",
+      "category": "Horror Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2004"
+      },
+      "title": "The Autumn Castle"
+    },
+    {
+      "authors": [
+        "Anthony O'Neill"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2004",
+      "category": "Horror Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2004"
+      },
+      "title": "The Lamplighter"
+    },
+    {
+      "authors": [
+        "Richard Harland"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2005",
+      "category": "Horror Novel",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2005"
+      },
+      "title": "The Black Crusade"
+    },
+    {
+      "authors": [
+        "Josephine Pennicott"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2005",
+      "category": "Horror Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2005"
+      },
+      "title": "Fire in the Shell"
+    },
+    {
+      "authors": [
+        "Kim Wilkins"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2005",
+      "category": "Horror Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2005"
+      },
+      "title": "Giants of the Frost"
+    },
+    {
+      "authors": [
+        "Will Elliott"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2007",
+      "category": "Horror Novel",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2007"
+      },
+      "title": "The Pilo Family Circus"
+    },
+    {
+      "authors": [
+        "Edwina Grey"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2007",
+      "category": "Horror Novel",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2007"
+      },
+      "title": "Prismatic"
+    },
+    {
+      "authors": [
+        "Martin Livings"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2007",
+      "category": "Horror Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2007"
+      },
+      "title": "Carnies"
+    },
+    {
+      "authors": [
+        "Brett McBean"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2007",
+      "category": "Horror Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2007"
+      },
+      "title": "The Mother"
+    },
+    {
+      "authors": [
+        "Susan Parisi"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2008",
+      "category": "Horror Novel",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2008"
+      },
+      "title": "Blood of Dreams"
+    },
+    {
+      "authors": [
+        "John Harwood"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "Horror Novel",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2009"
+      },
+      "title": "The S\u00e9ance"
+    },
+    {
+      "authors": [
+        "Jack Dann"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "Horror Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2009"
+      },
+      "title": "The Economy of Light"
+    },
+    {
+      "authors": [
+        "Nick Gadd"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "Horror Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2009"
+      },
+      "title": "Ghostlines"
+    },
+    {
+      "authors": [
+        "Honey Brown"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Horror Novel",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "Red Queen"
+    },
+    {
+      "authors": [
+        "Stephen M. Irwin"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Horror Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "The Dead Path"
+    },
+    {
+      "authors": [
+        "Peter Ball"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Horror Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "Horn"
+    },
+    {
+      "authors": [
+        "Tracey O'Hara"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Horror Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "Night's Cold Kiss"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Horror Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "Slights"
+    },
+    {
+      "authors": [
+        "Kirstyn McDermott"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2011",
+      "category": "Horror Novel",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2011"
+      },
+      "title": "Madigan Mine"
+    },
+    {
+      "authors": [
+        "Jason Fischer"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2011",
+      "category": "Horror Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2011"
+      },
+      "title": "After the World: Gravesend"
+    },
+    {
+      "authors": [
+        "Trent Jamieson"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2011",
+      "category": "Horror Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2011"
+      },
+      "title": "Death Most Definite"
+    },
+    {
+      "authors": [
+        "Stephen M. Irwin"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "Horror Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2012"
+      },
+      "title": "The Broken Ones"
+    },
+    {
+      "authors": [
+        "Trent Jamieson"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "Horror Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2012"
+      },
+      "title": "The Business of Death"
+    },
+    {
+      "authors": [
+        "Kirstyn McDermott"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "Horror Novel",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2013"
+      },
+      "title": "Perfections"
+    },
+    {
+      "authors": [
+        "Jason Nahrung"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "Horror Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2013"
+      },
+      "title": "Blood and Dust"
+    },
+    {
+      "authors": [
+        "Jason Franks"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "Horror Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2013"
+      },
+      "title": "Bloody Waters"
+    },
+    {
+      "authors": [
+        "Jason Nahrung"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "Horror Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2013"
+      },
+      "title": "Salvage"
+    },
+    {
+      "authors": [
+        "Allyse Near"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Horror Novel",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "Fairytales for Wilde Girls"
+    },
+    {
+      "authors": [
+        "Greig Beck"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Horror Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "The First Bird"
+    },
+    {
+      "authors": [
+        "Lee Battersby"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Horror Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "The Marching Dead"
+    },
+    {
+      "authors": [
+        "Dirk Flinthart"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Horror Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "Path of Night"
+    },
+    {
+      "authors": [
+        "Justine Larbalestier"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "Horror Novel",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2015"
+      },
+      "title": "Razorhurst"
+    },
+    {
+      "authors": [
+        "Greig Beck"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "Horror Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2015"
+      },
+      "title": "Book of the Dead"
+    },
+    {
+      "authors": [
+        "Alan Baxter"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "Horror Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2015"
+      },
+      "title": "Obsidian"
+    },
+    {
+      "authors": [
+        "Trent Jamieson"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "Horror Novel",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2016"
+      },
+      "title": "Day Boy"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "Horror Novel",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2017"
+      },
+      "title": "The Grief Hole"
+    },
+    {
+      "authors": [
+        "Kenneth Cook"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "Horror Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2017"
+      },
+      "title": "Fear Is the Rider"
+    },
+    {
+      "authors": [
+        "Justine Larbalestier"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "Horror Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2017"
+      },
+      "title": "My Sister Rosa"
+    },
+    {
+      "authors": [
+        "Lois Murphy"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "Horror Novel",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2018"
+      },
+      "title": "Soon"
+    },
+    {
+      "authors": [
+        "J. S. Breukelaar"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "Horror Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2018"
+      },
+      "title": "Aletheia"
+    },
+    {
+      "authors": [
+        "Maria Lewis"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "Horror Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2018"
+      },
+      "title": "Who's Afraid Too?"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "Horror Novel",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2019"
+      },
+      "title": "Tide of Stone"
+    },
+    {
+      "authors": [
+        "Shirley Barrett"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "Horror Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2019"
+      },
+      "title": "The Bus on Thursday"
+    },
+    {
+      "authors": [
+        "Craig Cormick"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "Horror Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2019"
+      },
+      "title": "Years of the Wolf"
+    },
+    {
+      "authors": [
+        "Andrew McGahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2020"
+      },
+      "title": "The Rich Man's House"
+    },
+    {
+      "authors": [
+        "Deborah Sheldon"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2020"
+      },
+      "title": "Body Farm Z"
+    },
+    {
+      "authors": [
+        "Brian Craddock"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2020"
+      },
+      "title": "Chuwa: The Rat People of Lahore"
+    },
+    {
+      "authors": [
+        "Andrew Cull"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2020"
+      },
+      "title": "Remains"
+    },
+    {
+      "authors": [
+        "Simon Haynes"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "Horror Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2020"
+      },
+      "title": "A Riddle in Bronze"
+    },
+    {
+      "authors": [
+        "Ellie Marney"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "None Shall Sleep"
+    },
+    {
+      "authors": [
+        "Simon Haynes"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "An Enigma in Silver"
+    },
+    {
+      "authors": [
+        "Marty Young"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "Gutterbreed"
+    },
+    {
+      "authors": [
+        "Claire McKenna"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "Monstrous Heart"
+    },
+    {
+      "authors": [
+        "Daniel de Lorne"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Horror Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "Soul Survivor"
+    },
+    {
+      "authors": [
+        "Ben Pienaar"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2022"
+      },
+      "title": "Holly and the Nobodies"
+    },
+    {
+      "authors": [
+        "Jennifer Mills"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2022"
+      },
+      "title": "The Airways"
+    },
+    {
+      "authors": [
+        "J. S. Breukelaar"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2022"
+      },
+      "title": "The Bridge"
+    },
+    {
+      "authors": [
+        "Matthew R. Davis"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2022"
+      },
+      "title": "Midnight in the Chapel of Love"
+    },
+    {
+      "authors": [
+        "Jason Fischer"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "Horror Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2022"
+      },
+      "title": "Papa Lucy & The Boneman"
+    },
+    {
+      "authors": [
+        "Trent Jamieson"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "The Stone Road"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "Path of Thorns"
+    },
+    {
+      "authors": [
+        "Alan Baxter"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "Sallow Bend"
+    },
+    {
+      "authors": [
+        "Robert Hood"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "Scavengers"
+    },
+    {
+      "authors": [
+        "Kathryn Hore"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Horror Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "The Stranger"
+    },
+    {
+      "authors": [
+        "S. E. Tolsen"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "Bunny"
+    },
+    {
+      "authors": [
+        "Graham Akhurst"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "Borderland"
+    },
+    {
+      "authors": [
+        "Deborah Sheldon"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "Cretaceous Canyon"
+    },
+    {
+      "authors": [
+        "Maria Lewis"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "The Graveyard Shift"
+    },
+    {
+      "authors": [
+        "Ellie Marney"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "Some Shall Break"
+    },
+    {
+      "authors": [
+        "Katya de Becerra"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Horror Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "When Ghosts Call Us Home"
+    },
+    {
+      "authors": [
+        "Ben Pienaar"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "Carve Your Soul to Pieces"
+    },
+    {
+      "authors": [
+        "Deborah Sheldon"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "Bodily Harm"
+    },
+    {
+      "authors": [
+        "David-Jack Fletcher"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "The Count"
+    },
+    {
+      "authors": [
+        "Josh Kemp"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "Jasper Cliff"
+    },
+    {
+      "authors": [
+        "J. S. Breukelaar"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "Remedy"
+    },
+    {
+      "authors": [
+        "A. B. Finlayson"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Horror Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "Rock Zombie"
+    },
+    {
+      "authors": [
+        "Chris Flynn"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "Orpheus Nine"
+    },
+    {
+      "authors": [
+        "A. G. Slatter"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "The Crimson Road"
+    },
+    {
+      "authors": [
+        "Jessica Mansour-Nahra"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "The Farm"
+    },
+    {
+      "authors": [
+        "Deborah Sheldon"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "Nightmare Reef"
+    },
+    {
+      "authors": [
+        "A. Rushby"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "Slashed Beauties"
+    },
+    {
+      "authors": [
+        "Margot McGovern"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Horror Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "This Stays Between Us"
+    }
+  ],
+  "fetched_at": "2026-11-15T01:34:18Z",
+  "list_id": "aurealis_horror_novel",
+  "list_name": "Aurealis - Horror Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "aurealis_horror_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Aurealis - Horror Novel",
+    "source_id": "aurealis_horror_novel",
+    "url": "https://www.sfadb.com/Aurealis_Awards"
+  }
+}

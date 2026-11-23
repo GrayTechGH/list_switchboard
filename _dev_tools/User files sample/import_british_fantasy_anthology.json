@@ -1,0 +1,2400 @@
+{
+  "append_state": {
+    "entry_count": 153,
+    "last_entry_key": "this way lies madness|dave jeffery\u001flee murray",
+    "last_position": "2026.09",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Stephen Jones",
+        "David Sutton"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Anthology",
+      "position": "1999",
+      "result": "winner",
+      "title": "Dark Terrors 4: the Gollancz Book of Horror"
+    },
+    {
+      "authors": [
+        "Robert Silverberg",
+        "Grania Davis"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Anthology",
+      "position": "1999.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1999"
+      },
+      "title": "The Avram Davidson Treasury"
+    },
+    {
+      "authors": [
+        "Gahan Wilson"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Anthology",
+      "position": "1999.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1999"
+      },
+      "title": "The Cleft and other Odd Tales"
+    },
+    {
+      "authors": [
+        "Richard Ford"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Anthology",
+      "position": "1999.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1999"
+      },
+      "title": "The Granta Book of the American Long Story"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Anthology",
+      "position": "1999.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1999"
+      },
+      "title": "Legends"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer",
+        "Rose Secrest"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Anthology",
+      "position": "1999.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1999"
+      },
+      "title": "Leviathan, Volume Two"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Anthology",
+      "position": "1999.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1999"
+      },
+      "title": "The Mammoth Book of Best New Horror: Volume Nine"
+    },
+    {
+      "authors": [
+        "Steve Savile"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1999",
+      "category": "Anthology",
+      "position": "1999.07",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_1999"
+      },
+      "title": "Scaremongers 2: Redbrick Eden"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2000",
+      "category": "Anthology",
+      "position": "2000",
+      "result": "winner",
+      "title": "The Mammoth Book of Best New Horror 10"
+    },
+    {
+      "authors": [
+        "Al Sarrantonio"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2000",
+      "category": "Anthology",
+      "position": "2000.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2000"
+      },
+      "title": "999: New Stories of Horror and Suspense"
+    },
+    {
+      "authors": [
+        "John Pelan"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2000",
+      "category": "Anthology",
+      "position": "2000.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2000"
+      },
+      "title": "The Last Continent: New Tales of Zothique"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2000",
+      "category": "Anthology",
+      "position": "2000.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2000"
+      },
+      "title": "White of the Moon: New Tales of Madness and Dread"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2000",
+      "category": "Anthology",
+      "position": "2000.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2000"
+      },
+      "title": "The Year's Best Fantasy and Horror: Twelfth Annual Collection"
+    },
+    {
+      "authors": [
+        "Brian Willis"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2001",
+      "category": "Anthology",
+      "position": "2001",
+      "result": "winner",
+      "title": "Hideous Progeny: a Frankenstein Anthology"
+    },
+    {
+      "authors": [
+        "Stephen Jones",
+        "David Sutton"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2001",
+      "category": "Anthology",
+      "position": "2001.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2001"
+      },
+      "title": "Dark Terrors 5"
+    },
+    {
+      "authors": [
+        "M. P. N. Sims",
+        "L. H. Maynard",
+        "David Howe"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2001",
+      "category": "Anthology",
+      "position": "2001.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2001"
+      },
+      "title": "F20: One"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2001",
+      "category": "Anthology",
+      "position": "2001.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2001"
+      },
+      "title": "The Mammoth Book of Best New Horror: Volume Eleven"
+    },
+    {
+      "authors": [
+        "Mike Chinn"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2001",
+      "category": "Anthology",
+      "position": "2001.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2001"
+      },
+      "title": "Swords Against the Millennium"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2002",
+      "category": "Anthology",
+      "position": "2002",
+      "result": "winner",
+      "title": "The Mammoth Book of Best New Horror 12"
+    },
+    {
+      "authors": [
+        "Peter Crowther"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2002",
+      "category": "Anthology",
+      "position": "2002.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2002"
+      },
+      "title": "Futures"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2002",
+      "category": "Anthology",
+      "position": "2002.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2002"
+      },
+      "title": "The Mammoth Book of Vampire Stories by Women"
+    },
+    {
+      "authors": [
+        "David Sutton"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2002",
+      "category": "Anthology",
+      "position": "2002.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2002"
+      },
+      "title": "Phantoms of Venice"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2002",
+      "category": "Anthology",
+      "position": "2002.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2002"
+      },
+      "title": "The Year's Best Fantasy and Horror: Fourteenth Annual Collection"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2003",
+      "category": "Anthology",
+      "position": "2003",
+      "result": "winner",
+      "title": "Keep Out the Night"
+    },
+    {
+      "authors": [
+        "Frank M. Robinson",
+        "Robert Weinberg",
+        "Randy Broecker"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2003",
+      "category": "Anthology",
+      "position": "2003.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2003"
+      },
+      "title": "Art of Imagination: 20th Century Visions of Science Fiction, Horror, and Fantasy"
+    },
+    {
+      "authors": [
+        "Stephen Jones",
+        "David Sutton"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2003",
+      "category": "Anthology",
+      "position": "2003.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2003"
+      },
+      "title": "Dark Terrors 6"
+    },
+    {
+      "authors": [
+        "Robert Silverberg",
+        "Karen Haber"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2003",
+      "category": "Anthology",
+      "position": "2003.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2003"
+      },
+      "title": "Fantasy: The Best of 2001"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2003",
+      "category": "Anthology",
+      "position": "2003.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2003"
+      },
+      "title": "The Mammoth Book of Best New Horror: Volume Thirteen"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2003",
+      "category": "Anthology",
+      "position": "2003.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2003"
+      },
+      "title": "The Year's Best Fantasy and Horror: Fifteenth Annual Collection"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2004",
+      "category": "Anthology",
+      "position": "2004",
+      "result": "winner",
+      "title": "The Mammoth Book of Best New Horror 14"
+    },
+    {
+      "authors": [
+        "Joel Lane"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2004",
+      "category": "Anthology",
+      "position": "2004.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2004"
+      },
+      "title": "Beneath the Ground"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2004",
+      "category": "Anthology",
+      "position": "2004.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2004"
+      },
+      "title": "By Moonlight Only"
+    },
+    {
+      "authors": [
+        "Andy Cox"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2004",
+      "category": "Anthology",
+      "position": "2004.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2004"
+      },
+      "title": "Crimewave 7: The Last Sunset"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer",
+        "Mark Roberts"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2004",
+      "category": "Anthology",
+      "position": "2004.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2004"
+      },
+      "title": "The Thackery T. Lambshead Pocket Guide to Eccentric & Discredited Diseases"
+    },
+    {
+      "authors": [
+        "Andy W. Robertson"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2004",
+      "category": "Anthology",
+      "position": "2004.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2004"
+      },
+      "title": "William Hope Hodgson's Night Lands, Volume 1: Eternal Love"
+    },
+    {
+      "authors": [
+        "Andrew Hook"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2005",
+      "category": "Anthology",
+      "position": "2005",
+      "result": "winner",
+      "title": "The Alsiso Project"
+    },
+    {
+      "authors": [
+        "Barbara Roden",
+        "Christopher Roden"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2005",
+      "category": "Anthology",
+      "position": "2005.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2005"
+      },
+      "title": "Acquainted with the Night"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2005",
+      "category": "Anthology",
+      "position": "2005.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2005"
+      },
+      "title": "The Mammoth Book of Best New Horror: Volume Fifteen"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer",
+        "Mark Roberts"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2005",
+      "category": "Anthology",
+      "position": "2005.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2005"
+      },
+      "title": "The Thackery T. Lambshead Pocket Guide to Eccentric & Discredited Diseases"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Kelly Link",
+        "Gavin J. Grant"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2005",
+      "category": "Anthology",
+      "position": "2005.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2005"
+      },
+      "title": "The Year's Best Fantasy and Horror: Seventeenth Annual Collection"
+    },
+    {
+      "authors": [
+        "Allen Ashley"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2006",
+      "category": "Anthology",
+      "position": "2006",
+      "result": "winner",
+      "title": "The Elastic Book of Numbers"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2006",
+      "category": "Anthology",
+      "position": "2006.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2006"
+      },
+      "title": "Don't Turn Out the Light"
+    },
+    {
+      "authors": [
+        "Peter Crowther"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2006",
+      "category": "Anthology",
+      "position": "2006.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2006"
+      },
+      "title": "Fourbodings: A Quartet of Uneasy Tales from Four Members of the Macabre"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2006",
+      "category": "Anthology",
+      "position": "2006.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2006"
+      },
+      "title": "The Mammoth Book of Best New Horror: Volume Sixteen"
+    },
+    {
+      "authors": [
+        "Gary Fry"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2006",
+      "category": "Anthology",
+      "position": "2006.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2006"
+      },
+      "title": "Poe's Progeny"
+    },
+    {
+      "authors": [
+        "Gary Couzens"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2007",
+      "category": "Anthology",
+      "position": "2007",
+      "result": "winner",
+      "title": "Extended Play: The Elastic Book of Music"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2007",
+      "category": "Anthology",
+      "position": "2007.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2007"
+      },
+      "title": "The Mammoth Book of Best New Horror: Volume Seventeen"
+    },
+    {
+      "authors": [
+        "Alison L. R. Davies"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2007",
+      "category": "Anthology",
+      "position": "2007.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2007"
+      },
+      "title": "Shrouded by Darkness"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Gavin J. Grant",
+        "Kelly Link"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2007",
+      "category": "Anthology",
+      "position": "2007.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2007"
+      },
+      "title": "The Year's Best Fantasy and Horror 2006: Nineteenth Annual Collection"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2008",
+      "category": "Anthology",
+      "position": "2008",
+      "result": "winner",
+      "title": "The Mammoth Book of Best New Horror 18"
+    },
+    {
+      "authors": [
+        "Charles Black"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2008",
+      "category": "Anthology",
+      "position": "2008.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2008"
+      },
+      "title": "The Black Book of Horror"
+    },
+    {
+      "authors": [
+        "Ian Alexander Martin"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2008",
+      "category": "Anthology",
+      "position": "2008.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2008"
+      },
+      "title": "The First Humdrumming Book of Horror Stories"
+    },
+    {
+      "authors": [
+        "John Grant"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2008",
+      "category": "Anthology",
+      "position": "2008.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2008"
+      },
+      "title": "New Writings in the Fantastic"
+    },
+    {
+      "authors": [
+        "D. F. Lewis"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2008",
+      "category": "Anthology",
+      "position": "2008.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2008"
+      },
+      "title": "Zencore!"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2009",
+      "category": "Anthology",
+      "position": "2009",
+      "result": "winner",
+      "title": "The Mammoth Book of Best New Horror 19"
+    },
+    {
+      "authors": [
+        "DF Lewis"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2009",
+      "category": "Anthology",
+      "position": "2009.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2009"
+      },
+      "title": "Cone Zero"
+    },
+    {
+      "authors": [
+        "Ian Whates"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2009",
+      "category": "Anthology",
+      "position": "2009.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2009"
+      },
+      "title": "Myth-Understandings"
+    },
+    {
+      "authors": [
+        "Ian Alexander Martin"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2009",
+      "category": "Anthology",
+      "position": "2009.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2009"
+      },
+      "title": "The Second Humdrumming Book of Horror"
+    },
+    {
+      "authors": [
+        "Allen Ashley"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2009",
+      "category": "Anthology",
+      "position": "2009.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2009"
+      },
+      "title": "Subtle Edens"
+    },
+    {
+      "authors": [
+        "Gary McMahon"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2009",
+      "category": "Anthology",
+      "position": "2009.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2009"
+      },
+      "title": "We Fade To Grey"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010",
+      "result": "winner",
+      "title": "The Mammoth Book of Best New Horror 20"
+    },
+    {
+      "authors": [
+        "D. F. Lewis"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2010"
+      },
+      "title": "Cern Zoo: Nemonymous 9"
+    },
+    {
+      "authors": [
+        "Holly Stacey"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2010"
+      },
+      "title": "Dragontales: Short Stories of Flame, Tooth and Scale"
+    },
+    {
+      "authors": [
+        "Marie O'Regan",
+        "Paul Kane"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2010"
+      },
+      "title": "Hellbound Hearts"
+    },
+    {
+      "authors": [
+        "George R. R. Martin",
+        "Gardner Dozois"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2010"
+      },
+      "title": "Songs of the Dying Earth: Stories in Honor of Jack Vance"
+    },
+    {
+      "authors": [
+        "Johnny Mains"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011",
+      "result": "winner",
+      "title": "Back from the Dead: The Legacy of the Pan Book of Horror Stories"
+    },
+    {
+      "authors": [
+        "Jonathan Oliver"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2011"
+      },
+      "title": "The End of the Line"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2011"
+      },
+      "title": "The Mammoth Book of Best New Horror Volume 21"
+    },
+    {
+      "authors": [
+        "Allyson Bird",
+        "Joel Lane"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2011"
+      },
+      "title": "Never Again"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2011"
+      },
+      "title": "Zombie Apocalypse!"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer",
+        "Ann VanderMeer"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012",
+      "result": "winner",
+      "title": "The Weird"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2012"
+      },
+      "title": "A Book of Horrors"
+    },
+    {
+      "authors": [
+        "Conrad Williams"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2012"
+      },
+      "title": "Gutshot"
+    },
+    {
+      "authors": [
+        "Jonathan Oliver"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2012"
+      },
+      "title": "House of Fear"
+    },
+    {
+      "authors": [
+        "Jonathan Oliver"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013",
+      "result": "winner",
+      "title": "Magic: an Anthology of the Esoteric and Arcane"
+    },
+    {
+      "authors": [
+        "Marie O'Regan"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2013"
+      },
+      "title": "The Mammoth Book of Ghost Stories by Women"
+    },
+    {
+      "authors": [
+        "Paul Finch"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2013"
+      },
+      "title": "Terror Tales of the Cotswolds"
+    },
+    {
+      "authors": [
+        "Anne C. Perry",
+        "Jared Shurin"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2013"
+      },
+      "title": "A Town Called Pandemonium"
+    },
+    {
+      "authors": [
+        "Jonathan Oliver"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014",
+      "result": "winner",
+      "title": "End of the Road"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2014"
+      },
+      "title": "Fearie Tales"
+    },
+    {
+      "authors": [
+        "David Rix"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2014"
+      },
+      "title": "Rustblind and Silverbright"
+    },
+    {
+      "authors": [
+        "Mhairi Simpson"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2014"
+      },
+      "title": "Tales of Eve"
+    },
+    {
+      "authors": [
+        "Charles Black"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2014"
+      },
+      "title": "The Tenth Black Book of Horror"
+    },
+    {
+      "authors": [
+        "Christie Yant"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015",
+      "result": "winner",
+      "title": "Lightspeed: Women Destroy Science Fiction Special Issue"
+    },
+    {
+      "authors": [
+        "Jan Edwards",
+        "Jenny Barber"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2015"
+      },
+      "title": "The Alchemy Press Book of Urban Mythic 2"
+    },
+    {
+      "authors": [
+        "Joel Lane",
+        "Tom Johnstone"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2015"
+      },
+      "title": "Horror Uncut: Tales of Social Insecurity and Economic Unease"
+    },
+    {
+      "authors": [
+        "Mark Morris"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2015"
+      },
+      "title": "The Spectral Book of Horror Stories"
+    },
+    {
+      "authors": [
+        "Paul Finch"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2015"
+      },
+      "title": "Terror Tales of Wales"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016",
+      "result": "winner",
+      "title": "The Doll Collection"
+    },
+    {
+      "authors": [
+        "Mark Morris"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2016"
+      },
+      "title": "The 2nd Spectral Book of Horror Stories"
+    },
+    {
+      "authors": [
+        "Margr\u00e9t Helgad\u00f3ttir",
+        "Jo Thomas"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2016"
+      },
+      "title": "African Monsters"
+    },
+    {
+      "authors": [
+        "Simon Strantzas"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2016"
+      },
+      "title": "Aickman's Heirs"
+    },
+    {
+      "authors": [
+        "Johnny Mains"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2016"
+      },
+      "title": "Best British Horror 2015"
+    },
+    {
+      "authors": [
+        "Nalo Hopkinson",
+        "Kristine Ong Muslim"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017",
+      "result": "winner",
+      "title": "People of Colour Destroy Science Fiction"
+    },
+    {
+      "authors": [
+        "Margr\u00e9t Helgad\u00f3ttir"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2017"
+      },
+      "title": "Asian Monsters"
+    },
+    {
+      "authors": [
+        "Conrad Williams"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2017"
+      },
+      "title": "Dead Letters"
+    },
+    {
+      "authors": [
+        "Joanne Hall",
+        "Roz Clarke"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2017"
+      },
+      "title": "Fight Like a Girl"
+    },
+    {
+      "authors": [
+        "Peter Coleborn",
+        "Pauline E. Dungate"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2017"
+      },
+      "title": "Something Remains"
+    },
+    {
+      "authors": [
+        "Dominik Parisien",
+        "Navah Wolfe"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2017"
+      },
+      "title": "The Starlit Wood"
+    },
+    {
+      "authors": [
+        "Mark Morris"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018",
+      "result": "winner",
+      "title": "New Fears"
+    },
+    {
+      "authors": [
+        "George Sandison"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2018"
+      },
+      "title": "2084"
+    },
+    {
+      "authors": [
+        "Steve Shaw"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2018"
+      },
+      "title": "Dark Satanic Mills: Great British Horror 2"
+    },
+    {
+      "authors": [
+        "James Everington",
+        "Dan Howarth"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2018"
+      },
+      "title": "Imposter Syndrome"
+    },
+    {
+      "authors": [
+        "Margr\u00e9t Helgad\u00f3ttir"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2018"
+      },
+      "title": "Pacific Monsters"
+    },
+    {
+      "authors": [
+        "Robert Shearman",
+        "Michael Kelly"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019",
+      "result": "winner",
+      "title": "Year\u2019s Best Weird Fiction, Vol. 5"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2019"
+      },
+      "title": "The Devil and the Deep: Horror Stories of the Sea"
+    },
+    {
+      "authors": [
+        "Sarah Doyle",
+        "Allen Ashley"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2019"
+      },
+      "title": "Humanagerie"
+    },
+    {
+      "authors": [
+        "Mark Morris"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2019"
+      },
+      "title": "New Fears 2"
+    },
+    {
+      "authors": [
+        "Dan Coxon"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2019"
+      },
+      "title": "This Dreaming Isle"
+    },
+    {
+      "authors": [
+        "Nisi Shawl"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020",
+      "result": "winner",
+      "title": "New Suns: Original Speculative Fiction for People of Color"
+    },
+    {
+      "authors": [
+        "Ann VanderMeer",
+        "Jeff VanderMeer"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2020"
+      },
+      "title": "The Big Book of Classic Fantasy"
+    },
+    {
+      "authors": [
+        "David Gullen"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2020"
+      },
+      "title": "Once Upon a Parsec: The Book of Alien Fairy Tales"
+    },
+    {
+      "authors": [
+        "Jennifer Brozek"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2020"
+      },
+      "title": "A Secret Guide to Fighting Elder Gods"
+    },
+    {
+      "authors": [
+        "Marie O'Regan",
+        "Paul Kane"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2020"
+      },
+      "title": "Wonderland"
+    },
+    {
+      "authors": [
+        "Phil Sloman"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2020"
+      },
+      "title": "The Woods"
+    },
+    {
+      "authors": [
+        "Zelda Knight",
+        "Oghenechovwe Donald Ekpeki"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021",
+      "result": "winner",
+      "title": "Dominion: An Anthology of Speculative Fiction from Africa and the African Diaspora"
+    },
+    {
+      "authors": [
+        "Mark Morris"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2021"
+      },
+      "title": "After Sundown"
+    },
+    {
+      "authors": [
+        "Lee Murray",
+        "Geneve Flynn"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2021"
+      },
+      "title": "Black Cranes: Tales of Unquiet Women"
+    },
+    {
+      "authors": [
+        "Michael Kelly"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2021"
+      },
+      "title": "Shadows & Tall Trees 8"
+    },
+    {
+      "authors": [
+        "Xueting C. Ni"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022",
+      "result": "winner",
+      "title": "Sinopticon: A Celebration of Chinese Science Fiction"
+    },
+    {
+      "authors": [
+        "Sophie Essex"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2022"
+      },
+      "title": "Dreamland: Other Stories"
+    },
+    {
+      "authors": [
+        "Dan Coxon"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2022"
+      },
+      "title": "Out of the Darkness"
+    },
+    {
+      "authors": [
+        "Aaron J. French",
+        "Jess Landry"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2022"
+      },
+      "title": "There Is No Death, There Are No Dead"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2022"
+      },
+      "title": "When Things Get Dark: Stories Inspired by Shirley Jackson"
+    },
+    {
+      "authors": [
+        "Oghenechovwe Donald Ekpeki"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2022"
+      },
+      "title": "The Year's Best African Speculative Fiction"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023",
+      "result": "winner",
+      "title": "Someone in Time"
+    },
+    {
+      "authors": [
+        "Sheree Ren\u00e9e Thomas",
+        "Oghenechovwe Donald Ekpeki",
+        "Zelda Knight"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2023"
+      },
+      "title": "Africa Risen: A New Era of Speculative Fiction"
+    },
+    {
+      "authors": [
+        "Mae Murray"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2023"
+      },
+      "title": "The Book of Queer Saints"
+    },
+    {
+      "authors": [
+        "Steve J. Shaw"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2023"
+      },
+      "title": "Great British Horror 7: Major Arcana"
+    },
+    {
+      "authors": [
+        "Dan Coxon"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2023"
+      },
+      "title": "Isolation: The Horror Anthology"
+    },
+    {
+      "authors": [
+        "Lee C. Conley",
+        "H. L. Tinsley",
+        "J. E. Hannaford",
+        "David Green",
+        "Derek Power",
+        "C. Marry Hultman",
+        "Damien Larkin",
+        "C. F. Welburn"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2023"
+      },
+      "title": "Sky Breaker: Tales of the Wanderer"
+    },
+    {
+      "authors": [
+        "Jordan Peele"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2024",
+      "category": "Anthology",
+      "position": "2024",
+      "result": "winner",
+      "title": "Out There Screaming: An Anthology of New Black Horror"
+    },
+    {
+      "authors": [
+        "Sophie Essex"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2024",
+      "category": "Anthology",
+      "position": "2024.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2024"
+      },
+      "title": "At the Lighthouse"
+    },
+    {
+      "authors": [
+        "Steve J Shaw"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2024",
+      "category": "Anthology",
+      "position": "2024.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2024"
+      },
+      "title": "Great British Horror 8"
+    },
+    {
+      "authors": [
+        "Wole Talabi"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2024",
+      "category": "Anthology",
+      "position": "2024.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2024"
+      },
+      "title": "Mothersound: The Sau\u00fativerse Anthology"
+    },
+    {
+      "authors": [
+        "Shane Hawk",
+        "Theodore C. Van Alst, Jr."
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2024",
+      "category": "Anthology",
+      "position": "2024.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2024"
+      },
+      "title": "Never Whistle at Night"
+    },
+    {
+      "authors": [
+        "Marie O'Regan",
+        "Paul Kane"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2024",
+      "category": "Anthology",
+      "position": "2024.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2024"
+      },
+      "title": "The Other Side of Never: Dark Tales from the World of Peter & Wendy"
+    },
+    {
+      "authors": [
+        "Sofia Ajram"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025",
+      "result": "winner",
+      "title": "Bury Your Gays: An Anthology of Tragic Queer Horror"
+    },
+    {
+      "authors": [
+        "Roz Clarke",
+        "Joanne Hall"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2025"
+      },
+      "title": "Fight Like a Girl Vol. 2"
+    },
+    {
+      "authors": [
+        "Dan Coxon"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2025"
+      },
+      "title": "Heartwood: A Mythago Wood Anthology"
+    },
+    {
+      "authors": [
+        "Robert Berg",
+        "Trip Galey",
+        "C. L. McCartney"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2025"
+      },
+      "title": "I Want That Twink Obliterated!"
+    },
+    {
+      "authors": [
+        "Neil Williamson",
+        "Andrew J. Wilson"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2025"
+      },
+      "title": "Nova Scotia Vol. 2"
+    },
+    {
+      "authors": [
+        "Oghenechovwe Donald Ekpeki",
+        "Chinaza Eziaghighala"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2025"
+      },
+      "title": "The Year's Best African Speculative Fiction 2023"
+    },
+    {
+      "authors": [
+        "Kristy Park Kulski"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Anthology",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2026"
+      },
+      "title": "Silk & Sinew: A Collection of Folk Horror from the Asian Diaspora"
+    },
+    {
+      "authors": [
+        "Sophie Essex"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Anthology",
+      "position": "2026.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://britishfantasysociety.org/british-fantasy-awards-shortlists/"
+      },
+      "title": "At the Lighthouse"
+    },
+    {
+      "authors": [
+        "Wole Talabi"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Anthology",
+      "position": "2026.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://britishfantasysociety.org/british-fantasy-awards-shortlists/"
+      },
+      "title": "Mothersound: The Sau\u00c3\u00bativerse Anthology"
+    },
+    {
+      "authors": [
+        "Shane Hawk"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Anthology",
+      "position": "2026.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://britishfantasysociety.org/british-fantasy-awards-shortlists/"
+      },
+      "title": "Never Whistle at Night"
+    },
+    {
+      "authors": [
+        "Jordan Peele"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Anthology",
+      "position": "2026.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://britishfantasysociety.org/british-fantasy-awards-shortlists/"
+      },
+      "title": "Out There Screaming: An Anthology of New Black Horror"
+    },
+    {
+      "authors": [
+        "Steve J. Shaw"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Anthology",
+      "position": "2026.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://britishfantasysociety.org/british-fantasy-awards-shortlists/"
+      },
+      "title": "Something Peculiar: Great British Horror 8"
+    },
+    {
+      "authors": [
+        "Marie O'Regan",
+        "Paul Kane"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Anthology",
+      "position": "2026.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://britishfantasysociety.org/british-fantasy-awards-shortlists/"
+      },
+      "title": "The Other Side of Never: Dark Tales from the World of Peter & Wendy"
+    },
+    {
+      "authors": [
+        "Neil Williamson"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Anthology",
+      "position": "2026.07",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2026"
+      },
+      "title": "Blood in the Bricks"
+    },
+    {
+      "authors": [
+        "J. S. Fields",
+        "Heather Tracy",
+        "William C. Tracy"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Anthology",
+      "position": "2026.08",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2026"
+      },
+      "title": "Lesbians in Space: Where No Man Has Gone Before"
+    },
+    {
+      "authors": [
+        "Dave Jeffery",
+        "Lee Murray"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "2026",
+      "category": "Anthology",
+      "position": "2026.09",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/British_Fantasy_Awards_2026"
+      },
+      "title": "This Way Lies Madness"
+    }
+  ],
+  "fetched_at": "2026-11-15T00:29:43Z",
+  "list_id": "british_fantasy_anthology",
+  "list_name": "British Fantasy - Anthology",
+  "match_series": false,
+  "notes": [
+    "Official BFS winners archive is winner-only.",
+    "Official BFS shortlist coverage is current-cycle only; historical shortlist rows come from SFADB year pages.",
+    "SFADB winner rows were omitted where the authoritative official BFS archive already supplied that year and category winner."
+  ],
+  "parser": "british_fantasy_anthology",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "British Fantasy - Anthology",
+    "source_id": "british_fantasy_anthology",
+    "url": "https://britishfantasysociety.org/about-the-bfs/the-british-fantasy-awards/bfa-winners/"
+  }
+}

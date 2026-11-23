@@ -6,6 +6,7 @@ from .generic import (
   CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
   UrlFetcherGeneric,
 )
+from .cbca_transport import CBCAOfficialFetchPolicy
 
 try:
   from calibre_plugins.list_switchboard.parser.cbca_book_of_the_year import (
@@ -55,7 +56,21 @@ class UrlFetcherCBCABookOfTheYear(UrlFetcherGeneric):
       from parser.cbca_book_of_the_year import CBCABookOfTheYearParser
     return CBCABookOfTheYearParser(self.CATEGORY, self.CATEGORY_ALIASES)
 
+  def fetch_and_parse(self, fetch_url, *args, **kwargs):
+    policy = CBCAOfficialFetchPolicy(self, fetch_url, kwargs.get('log'))
+    return super().fetch_and_parse(policy.fetch, *args, **kwargs)
+
   def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
+    try:
+      from calibre_plugins.list_switchboard.parser.cbca_sources import soup_for
+      from calibre_plugins.list_switchboard.parser.cbca_updates import fetch_cbca
+    except ImportError:
+      from parser.cbca_sources import soup_for
+      from parser.cbca_updates import fetch_cbca
+    if fetch_url is not None and soup_for(html).find('details') is not None:
+      return fetch_cbca(self, self.parser(), html, fetch_url,
+        kwargs.get('cached_parsed'), kwargs.get('incremental_update', False),
+        kwargs.get('current_year'), progress)
     return self.parser().parse(
       html,
       self.URL,
@@ -68,6 +83,7 @@ class UrlFetcherCBCABookOfTheYear(UrlFetcherGeneric):
 
 class UrlFetcherCBCABookOfTheYearOlderReaders(UrlFetcherCBCABookOfTheYear):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'cbca_book_of_the_year_older_readers'
   NAME = 'CBCA Book of the Year - Older Readers'
   CATEGORY = CATEGORY_OLDER_READERS
@@ -82,6 +98,7 @@ class UrlFetcherCBCABookOfTheYearOlderReaders(UrlFetcherCBCABookOfTheYear):
 
 class UrlFetcherCBCABookOfTheYearYoungerReaders(UrlFetcherCBCABookOfTheYear):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'cbca_book_of_the_year_younger_readers'
   NAME = 'CBCA Book of the Year - Younger Readers'
   order = 265
@@ -95,6 +112,8 @@ class UrlFetcherCBCABookOfTheYearYoungerReaders(UrlFetcherCBCABookOfTheYear):
 
 
 class UrlFetcherCBCABookOfTheYearMiddleReaders(UrlFetcherCBCABookOfTheYear):
+
+  """Unregistered prototype; future implementation is tracked in local TASKS.md."""
 
   source_id = 'cbca_book_of_the_year_middle_readers'
   NAME = 'CBCA Book of the Year - Middle Readers'
@@ -110,6 +129,7 @@ class UrlFetcherCBCABookOfTheYearMiddleReaders(UrlFetcherCBCABookOfTheYear):
 
 class UrlFetcherCBCABookOfTheYearEarlyChildhood(UrlFetcherCBCABookOfTheYear):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'cbca_book_of_the_year_early_childhood'
   NAME = 'CBCA Book of the Year - Early Childhood'
   order = 267
@@ -124,6 +144,7 @@ class UrlFetcherCBCABookOfTheYearEarlyChildhood(UrlFetcherCBCABookOfTheYear):
 
 class UrlFetcherCBCABookOfTheYearPictureBook(UrlFetcherCBCABookOfTheYear):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'cbca_book_of_the_year_picture_book'
   NAME = 'CBCA Book of the Year - Picture Book'
   order = 268
@@ -137,6 +158,7 @@ class UrlFetcherCBCABookOfTheYearPictureBook(UrlFetcherCBCABookOfTheYear):
 
 class UrlFetcherCBCABookOfTheYearEvePownall(UrlFetcherCBCABookOfTheYear):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'cbca_book_of_the_year_eve_pownall'
   NAME = 'CBCA Book of the Year - Eve Pownall'
   order = 269
@@ -151,6 +173,7 @@ class UrlFetcherCBCABookOfTheYearEvePownall(UrlFetcherCBCABookOfTheYear):
 
 class UrlFetcherCBCABookOfTheYearNewIllustrator(UrlFetcherCBCABookOfTheYear):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'cbca_book_of_the_year_new_illustrator'
   NAME = 'CBCA Book of the Year - New Illustrator'
   order = 270

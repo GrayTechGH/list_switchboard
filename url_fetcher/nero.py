@@ -18,10 +18,10 @@ except ImportError:
 
 
 NERO_FINALISTS_URL = (
-  'https://wp.nerowolfe.org/htm/literary_awards/nero_award/Nero_Award_Finalists.htm'
+  'https://www.nerowolfe.org/htm/literary_awards/nero_award/Nero_Award_Finalists.htm'
 )
 NERO_WINNERS_URL = (
-  'https://wp.nerowolfe.org/htm/literary_awards/nero_award/awardees_chron.htm'
+  'https://www.nerowolfe.org/htm/literary_awards/nero_award/awardees_chron.htm'
 )
 LIBRARYTHING_NERO_URL = 'https://www.librarything.com/bookaward/Nero%2BAward'
 WIKIPEDIA_NERO_URL = 'https://en.wikipedia.org/wiki/Nero_Award'

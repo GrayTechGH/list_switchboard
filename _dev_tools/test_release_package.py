@@ -23,14 +23,23 @@ class ReleasePackageTests(unittest.TestCase):
 
     self.assertTrue(REQUIRED_MEMBERS <= members)
     self.assertTrue(RUNTIME_ROOT_FILES <= members)
+    self.assertIn('transport/__init__.py', members)
+    self.assertIn('transport/camoufox.py', members)
+    self.assertIn('transport/wayback.py', members)
+    self.assertTrue({
+      'camoufox_transport.py', 'goodreads.py', 'goodreads_recovery_transport.py',
+      'http_policy.py', 'sfadb_transport.py', 'wayback_policy.py',
+    }.isdisjoint(members))
     self.assertIn('url_fetcher/goodreads_choice_transport.py', members)
     self.assertIn('url_fetcher/dragons_and_jetpacks_transport.py', members)
     self.assertIn('url_fetcher/ladies_of_horror_fiction_transport.py', members)
     self.assertIn('url_fetcher/splatterpunk_transport.py', members)
     self.assertIn('url_fetcher/this_is_horror_transport.py', members)
-    self.assertIn('goodreads_recovery_transport.py', members)
-    self.assertIn('http_policy.py', members)
-    self.assertIn('sfadb_transport.py', members)
+    self.assertIn('goodreads/__init__.py', members)
+    self.assertIn('goodreads/lookup.py', members)
+    self.assertIn('goodreads/recovery_transport.py', members)
+    self.assertIn('transport/http.py', members)
+    self.assertIn('transport/sfadb.py', members)
     self.assertIn('url_fetcher/isfdb_transport.py', members)
     self.assertIn('url_fetcher/isfdb_originals.py', members)
     self.assertIn('parser/isfdb_title.py', members)

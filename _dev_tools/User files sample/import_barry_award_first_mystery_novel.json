@@ -2,7 +2,7 @@
   "append_state": {
     "entry_count": 173,
     "last_entry_key": "julie chan is dead|liann zhang",
-    "last_position": "2026.06",
+    "last_position": "2026.05",
     "source_revision": null
   },
   "entries": [
@@ -1847,6 +1847,17 @@
     },
     {
       "authors": [
+        "Zoe Rankin"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best First Mystery Novel",
+      "position": "2026",
+      "result": "winner",
+      "title": "The Vanishing Place"
+    },
+    {
+      "authors": [
         "Amran Gowani"
       ],
       "award": "Barry Award",
@@ -1880,23 +1891,12 @@
     },
     {
       "authors": [
-        "Zoe Rankin"
-      ],
-      "award": "Barry Award",
-      "award_year": "2026",
-      "category": "Best First Mystery Novel",
-      "position": "2026.04",
-      "result": "nominee",
-      "title": "The Vanishing Place"
-    },
-    {
-      "authors": [
         "Tanya Scott"
       ],
       "award": "Barry Award",
       "award_year": "2026",
       "category": "Best First Mystery Novel",
-      "position": "2026.05",
+      "position": "2026.04",
       "result": "nominee",
       "title": "Stillwater"
     },
@@ -1907,17 +1907,18 @@
       "award": "Barry Award",
       "award_year": "2026",
       "category": "Best First Mystery Novel",
-      "position": "2026.06",
+      "position": "2026.05",
       "result": "nominee",
       "title": "Julie Chan Is Dead"
     }
   ],
-  "fetched_at": "2026-07-18T02:36:30Z",
+  "fetched_at": "2026-11-16T02:34:35Z",
   "list_id": "barry_award_first_mystery_novel",
   "list_name": "Barry Award - First Mystery Novel",
   "match_series": false,
   "notes": [],
   "parser": "barry_award_first_mystery_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Barry Award - First Mystery Novel",

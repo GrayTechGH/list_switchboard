@@ -16,6 +16,7 @@ Maintenance notes:
 import re
 from urllib.parse import urljoin
 
+from bs4 import UnicodeDammit
 from lxml import html as lxml_html
 
 try:
@@ -25,6 +26,7 @@ try:
     strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER,
@@ -32,6 +34,7 @@ except ImportError:
     strip_publication_notes,
   )
   from .generic import position_sort_key
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 AWARD_NAME = 'Baillie Gifford Prize'
@@ -116,6 +119,8 @@ class BaillieGiffordPrizeParser(AwardParserBase):
     if fetch_url is not None and source_url:
       try:
         detail = self.parse_detail_page(fetch_url(source_url), source_url)
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(
           'Baillie Gifford detail page failed for %s: %s' % (
@@ -241,7 +246,11 @@ class BaillieGiffordPrizeParser(AwardParserBase):
 
 class BaillieGiffordWikipediaParser(AwardParserBase):
   """
-  Parse Baillie Gifford Prize Wikipedia result tables.
+  Parse Wikipedia winner/shortlist tables after expanding merged cells.
+
+  Year, result and reference cells can span different numbers of rows. Physical
+  row length cannot establish which column was omitted. Italic titles exclude
+  trailing biographical notes while retaining parentheses within a work title.
   """
 
   AWARD_NAME = AWARD_NAME
@@ -286,28 +295,29 @@ class BaillieGiffordWikipediaParser(AwardParserBase):
     rows = []
     current_year = None
     row_count_by_year = {}
-    for tr in table.xpath('.//tr'):
-      cells = tr.xpath('./td|./th')
+    for cells in self.table_grid(table):
       if not cells or self.row_matches_header(cells, header_map):
         continue
-      missing_year = self.row_omits_year(cells, header_map, current_year)
-      year_cell = self.cell_for_key(cells, header_map, 'year', False)
-      year = None if missing_year else self.year_from_text(self.clean_cell_text(year_cell))
+      year_cell = self.cell_for_key(cells, header_map, 'year')
+      year = self.year_from_text(self.clean_cell_text(year_cell))
       if year is None:
         year = current_year
       if year is None:
         continue
       current_year = year
-      title_cell = self.cell_for_key(cells, header_map, 'title', missing_year)
-      author_cell = self.cell_for_key(cells, header_map, 'author', missing_year)
-      if title_cell is None or author_cell is None:
+      title_cell = self.cell_for_key(cells, header_map, 'title')
+      author_cell = self.cell_for_key(cells, header_map, 'author')
+      if title_cell is None or author_cell is None or title_cell is author_cell:
         continue
-      title = self.clean_title(self.clean_cell_text(title_cell))
+      title = self.title_from_cell(title_cell)
       author = self.clean_author(self.clean_cell_text(author_cell))
       if not title or not author:
         continue
-      result = self.result_from_cell(self.cell_for_key(cells, header_map, 'result', missing_year))
+      result_cell = self.cell_for_key(cells, header_map, 'result')
+      result = self.result_from_cell(result_cell)
       if result is None:
+        if self.clean_cell_text(result_cell):
+          continue
         row_count = row_count_by_year.get(year, 0)
         result = RESULT_WINNER if row_count == 0 else RESULT_SHORTLISTED
       row_count_by_year[year] = row_count_by_year.get(year, 0) + 1
@@ -322,9 +332,9 @@ class BaillieGiffordWikipediaParser(AwardParserBase):
     return rows
 
   def header_map(self, table):
-    for tr in table.xpath('.//tr'):
+    for cells in self.table_grid(table):
       mapped = {}
-      for index, cell in enumerate(tr.xpath('./th|./td')):
+      for index, cell in enumerate(cells):
         key = self.HEADER_ALIASES.get(normalize_heading(self.clean_cell_text(cell)))
         if key is not None and key not in mapped:
           mapped[key] = index
@@ -343,18 +353,10 @@ class BaillieGiffordWikipediaParser(AwardParserBase):
         return False
     return True
 
-  def row_omits_year(self, cells, header_map, current_year):
-    if current_year is None or header_map.get('year') != 0:
-      return False
-    first_text = self.clean_cell_text(cells[0]) if cells else ''
-    return self.year_from_text(first_text) is None and len(cells) <= max(header_map.values())
-
-  def cell_for_key(self, cells, header_map, key, missing_year):
+  def cell_for_key(self, cells, header_map, key):
     index = header_map.get(key)
     if index is None:
       return None
-    if missing_year and index > header_map.get('year', -1):
-      index -= 1
     if index < 0 or index >= len(cells):
       return None
     return cells[index]
@@ -383,6 +385,17 @@ class BaillieGiffordWikipediaParser(AwardParserBase):
   def clean_title(self, value):
     return normalize_line(value).strip(' "\u201c\u201d,')
 
+  def title_from_cell(self, cell):
+    text = self.clean_cell_text(cell)
+    titles = cell.xpath('.//i|.//em')
+    if titles:
+      title = self.clean_cell_text(titles[0])
+      if title and text.startswith(title):
+        remainder = text[len(title):].strip()
+        if remainder.startswith('(') and remainder.endswith(')'):
+          text = title
+    return self.clean_title(text)
+
   def clean_author(self, value):
     return strip_publication_notes(normalize_line(value)).strip(' "\u201c\u201d,')
 
@@ -391,6 +404,8 @@ class BaillieGiffordWikipediaParser(AwardParserBase):
     return urljoin(base_url, hrefs[0]) if hrefs else ''
 
   def html_root(self, html):
+    if isinstance(html, bytes):
+      html = UnicodeDammit(html, is_html=True).unicode_markup
     return lxml_html.fromstring(html or '<html></html>')
 
   def year_from_text(self, value):

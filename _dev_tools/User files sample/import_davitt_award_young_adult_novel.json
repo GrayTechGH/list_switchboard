@@ -1,11 +1,22 @@
 {
   "append_state": {
-    "entry_count": 24,
-    "last_entry_key": "into the mouth of the wolf|erin gough",
-    "last_position": "2025",
+    "entry_count": 58,
+    "last_entry_key": "we saw what you started|carla salmon",
+    "last_position": "2026.03",
     "source_revision": null
   },
   "entries": [
+    {
+      "authors": [
+        "Caroline Shaw"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2001",
+      "category": "Young Adult Novel",
+      "position": "2001",
+      "result": "winner",
+      "title": "Eye to eye"
+    },
     {
       "authors": [
         "Kerry Greenwood"
@@ -26,23 +37,7 @@
       "category": "Young Adult Novel",
       "position": "2003",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Fireworks_and_Darkness"
-      },
       "title": "Fireworks and Darkness"
-    },
-    {
-      "authors": [
-        "Ruth Starke"
-      ],
-      "award": "Davitt Award",
-      "award_year": "2004",
-      "category": "Young Adult Novel",
-      "position": "2004",
-      "result": "winner",
-      "title": "Muck-Up Day"
     },
     {
       "authors": [
@@ -64,11 +59,6 @@
       "category": "Young Adult Novel",
       "position": "2006",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Evil_Genius_(novel)"
-      },
       "title": "Evil Genius"
     },
     {
@@ -80,7 +70,7 @@
       "category": "Young Adult Novel",
       "position": "2007",
       "result": "winner",
-      "title": "The Betrayal of Bindy Mackenzie"
+      "title": "The Murder of Bindy Mackenzie"
     },
     {
       "authors": [
@@ -102,11 +92,6 @@
       "category": "Young Adult Novel",
       "position": "2009",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Genius_Squad"
-      },
       "title": "Genius Squad"
     },
     {
@@ -118,11 +103,6 @@
       "category": "Young Adult Novel",
       "position": "2010",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Liar_(novel)"
-      },
       "title": "Liar"
     },
     {
@@ -160,6 +140,39 @@
     },
     {
       "authors": [
+        "Sonya Hartnett"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "The Children of the King"
+    },
+    {
+      "authors": [
+        "Sophie Masson"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Moonlight & Ashes"
+    },
+    {
+      "authors": [
+        "Jen Storer"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "Truly Tan"
+    },
+    {
+      "authors": [
         "Karen Foxlee"
       ],
       "award": "Davitt Award",
@@ -168,6 +181,50 @@
       "position": "2014",
       "result": "winner",
       "title": "The Midnight Dress"
+    },
+    {
+      "authors": [
+        "Simmone Howell"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Girl Defective"
+    },
+    {
+      "authors": [
+        "Kim Kane"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Cry Blue Murder"
+    },
+    {
+      "authors": [
+        "Ellie Marney"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "Every Breath"
+    },
+    {
+      "authors": [
+        "Felicity Pulman"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "A Ring Through Time"
     },
     {
       "authors": [
@@ -182,14 +239,69 @@
     },
     {
       "authors": [
-        "Fleur Ferris"
+        "Christine Bongers"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Intruder"
+    },
+    {
+      "authors": [
+        "Rebecca Lim"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "The Astrologer's Daughter"
+    },
+    {
+      "authors": [
+        "Pamela Rushby"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "The Ratcatcher's Daughter"
+    },
+    {
+      "authors": [
+        "Kathryn Barker"
       ],
       "award": "Davitt Award",
       "award_year": "2016",
       "category": "Young Adult Novel",
-      "position": "2016",
-      "result": "winner",
-      "title": "Risk"
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "In the Skin of a Monster"
+    },
+    {
+      "authors": [
+        "Ellie Marney"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2016",
+      "category": "Young Adult Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "Every Move"
+    },
+    {
+      "authors": [
+        "Maureen McCarthy"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2016",
+      "category": "Young Adult Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Stay With Me"
     },
     {
       "authors": [
@@ -200,7 +312,40 @@
       "category": "Young Adult Novel",
       "position": "2017",
       "result": "winner",
-      "title": "Frankie"
+      "title": "Frankie: A Novel"
+    },
+    {
+      "authors": [
+        "Megan Jacobson"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2017",
+      "category": "Young Adult Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Yellow"
+    },
+    {
+      "authors": [
+        "Nova Weetman"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2017",
+      "category": "Young Adult Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "Everything is changed"
+    },
+    {
+      "authors": [
+        "Sarah Epstein"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2018",
+      "category": "Young Adult Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "Small Spaces"
     },
     {
       "authors": [
@@ -215,14 +360,25 @@
     },
     {
       "authors": [
-        "Sarah Epstein"
+        "Ellie Marney"
       ],
       "award": "Davitt Award",
-      "award_year": "2019",
+      "award_year": "2018",
       "category": "Young Adult Novel",
-      "position": "2019",
-      "result": "winner",
-      "title": "Small Spaces"
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "No Limits"
+    },
+    {
+      "authors": [
+        "Sophie Masson"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2018",
+      "category": "Young Adult Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Jack Of Spades"
     },
     {
       "authors": [
@@ -237,6 +393,28 @@
     },
     {
       "authors": [
+        "Anna Morgan"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2020",
+      "category": "Young Adult Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "All That Impossible Space"
+    },
+    {
+      "authors": [
+        "Malla Nunn"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2020",
+      "category": "Young Adult Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "When the Ground Is Hard"
+    },
+    {
+      "authors": [
         "Christie Nieman"
       ],
       "award": "Davitt Award",
@@ -245,6 +423,50 @@
       "position": "2021",
       "result": "winner",
       "title": "Where We Begin"
+    },
+    {
+      "authors": [
+        "Davina Bell"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Young Adult Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "The End of the World Is Bigger than Love"
+    },
+    {
+      "authors": [
+        "Sarah Epstein"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Young Adult Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Deep Water"
+    },
+    {
+      "authors": [
+        "Ellie Marney"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Young Adult Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "None Shall Sleep"
+    },
+    {
+      "authors": [
+        "Lisa Walker"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Young Adult Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "The Girl with the Gold Bikini"
     },
     {
       "authors": [
@@ -259,6 +481,39 @@
     },
     {
       "authors": [
+        "Maree Kimberley"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Young Adult Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Dirt Circus League"
+    },
+    {
+      "authors": [
+        "Malla Nunn"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Young Adult Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Sugar Town Queens"
+    },
+    {
+      "authors": [
+        "Krystal Sutherland"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Young Adult Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "House of Hollow"
+    },
+    {
+      "authors": [
         "Fleur Ferris"
       ],
       "award": "Davitt Award",
@@ -270,6 +525,50 @@
     },
     {
       "authors": [
+        "Louise Bassett"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2023",
+      "category": "Young Adult Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "The Hidden Girl"
+    },
+    {
+      "authors": [
+        "Sarah Epstein"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2023",
+      "category": "Young Adult Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "Night Lights"
+    },
+    {
+      "authors": [
+        "Ellie Marney"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2023",
+      "category": "Young Adult Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "The Killing Code"
+    },
+    {
+      "authors": [
+        "Lian Tanner"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2023",
+      "category": "Young Adult Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Rita's Revenge"
+    },
+    {
+      "authors": [
         "Amy Doak"
       ],
       "award": "Davitt Award",
@@ -277,7 +576,18 @@
       "category": "Young Adult Novel",
       "position": "2024",
       "result": "winner",
-      "title": "Eleanor Jones Is Not a Murderer"
+      "title": "Eleanor Jones is Not a Murderer"
+    },
+    {
+      "authors": [
+        "Ellie Marney"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2024",
+      "category": "Young Adult Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Some Shall Break"
     },
     {
       "authors": [
@@ -289,20 +599,63 @@
       "position": "2025",
       "result": "winner",
       "title": "Into the Mouth of the Wolf"
+    },
+    {
+      "authors": [
+        "Jane Godwin"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2025",
+      "category": "Young Adult Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Look Me in the Eye"
+    },
+    {
+      "authors": [
+        "Amy Doak"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2026",
+      "category": "Young Adult Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "What Have They Done to Liza McLean?"
+    },
+    {
+      "authors": [
+        "Kate Emery"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2026",
+      "category": "Young Adult Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "A Murder Is Going Down"
+    },
+    {
+      "authors": [
+        "Carla Salmon"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2026",
+      "category": "Young Adult Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "We Saw What You Started"
     }
   ],
-  "fetched_at": "2026-07-16T16:08:41Z",
+  "fetched_at": "2026-11-16T06:49:22Z",
   "list_id": "davitt_award_young_adult_novel",
   "list_name": "Davitt Award - Young Adult Novel",
   "match_series": false,
-  "notes": [
-    "LibraryThing failed: HTTP Error 403: Forbidden"
-  ],
+  "notes": [],
   "parser": "davitt_award_young_adult_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Davitt Award - Young Adult Novel",
     "source_id": "davitt_award_young_adult_novel",
-    "url": "https://en.wikipedia.org/wiki/Davitt_Award"
+    "url": "https://www.librarything.com/award/2525/Davitt-Award"
   }
 }

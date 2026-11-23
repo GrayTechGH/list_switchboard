@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "recipes": {
+    "cbca_book_of_the_year_middle_readers": {
+      "deferred_at": "2026-11-18T17:55:07+00:00",
+      "reason": "User requested removal as an available list and a future TODO on 2026-11-18; implement after actual 2027-onward data and qualifying update savings exist.",
+      "task": "_docs/TASKS.md",
+      "implementation_record": {
+        "status": "awaiting_live_verification",
+        "registry_index_at_start": 379,
+        "name": "CBCA Book of the Year - Middle Readers",
+        "updated_at": "2026-11-18T17:26:57+00:00",
+        "history": [
+          {
+            "status": "awaiting_live_verification",
+            "reason": "Official CBCA baseline has unrecovered source access failures: HTTP Error 403: Forbidden. Partial/archive-only output cannot certify current-source updates. Implementation remains outstanding and support disabled.",
+            "at": "2026-11-17T18:20:49+00:00"
+          },
+          {
+            "status": "awaiting_live_verification",
+            "reason": "The shared official CBCA archive now opens through corrected browser fetching and advertises the complete-list PDF. This is landing-source access only: annual pages, category coverage, recipe-specific transport and update implementation still need verification; earlier legacy baseline failures remain unresolved. Support stays disabled.",
+            "at": "2026-11-17T19:07:23+00:00"
+          },
+          {
+            "status": "awaiting_live_verification",
+            "reason": "Modern archive/current readers and font-aware history/annual PDF readers repaired; combined gate 1566 passed, including 25 source regressions. Fresh official awards page explicitly starts Middle Readers in 2027 (shortlist scheduled 30 March 2027); all current official captures have zero Middle Readers books. No inherited other-category entries or live missing-entry/update proof can yet be certified. Candidate retained and support disabled; source orchestration/incremental implementation remains outstanding.",
+            "at": "2026-11-18T01:54:14+00:00"
+          },
+          {
+            "status": "awaiting_live_verification",
+            "reason": "The six established CBCA categories now have verified update implementations. Middle Readers starts in 2027 according to the fresh official awards page (shortlist scheduled 30 March 2027); current archive, annual and historical sources contain no Middle Readers works. No actual missing-book/update parity or request savings can yet be proved. Retain candidate Yes and disabled support; add category-specific historical-absence certification when first results are available, then perform independent live verification.",
+            "at": "2026-11-18T02:36:15+00:00"
+          },
+          {
+            "status": "awaiting_live_verification",
+            "reason": "Implemented a separate Middle Readers cache strategy bounded to its first award year, 2027. Annual units retain source projections, recover archive gaps from 2027 and exclude pre-category PDF/annual sources. Six future-year fixture checks prove missing-year recovery, repeated savings and failed-unit retention (18 synthetic books, 8 full / 6 missing-year update / 4 repeat callbacks); these are not live results. The official 2026 source still has no entries for this category, confirmed by isolated Calibre. Keep candidate Yes and support disabled until real results and qualifying request savings can be verified.",
+            "at": "2026-11-18T05:52:31+00:00"
+          },
+          {
+            "status": "awaiting_live_verification",
+            "reason": "Implemented a separate Middle Readers cache strategy bounded to its first award year, 2027. Annual units retain source projections, recover archive gaps from 2027 and exclude pre-category PDF/annual sources. Six future-year fixture checks prove missing-year recovery, repeated savings and failed-unit retention (18 synthetic books, 8 full / 6 missing-year update / 4 repeat callbacks); these are not live results. The official 2026 source still has no entries for this category, confirmed by isolated Calibre. Keep candidate Yes and support disabled until real results and qualifying request savings can be verified.",
+            "at": "2026-11-18T06:04:32+00:00"
+          },
+          {
+            "status": "awaiting_live_verification",
+            "reason": "Implemented a separate Middle Readers cache strategy bounded to its first award year, 2027. Annual units retain source projections, recover archive gaps from 2027 and exclude pre-category PDF/annual sources. Six future-year fixture checks prove missing-year recovery, repeated savings and failed-unit retention (18 synthetic books, 8 full / 6 missing-year update / 4 repeat callbacks); these are not live results. The official 2026 source still has no entries for this category, confirmed by isolated Calibre. Keep candidate Yes and support disabled until real results and qualifying request savings can be verified.",
+            "at": "2026-11-18T06:18:10+00:00"
+          },
+          {
+            "status": "awaiting_live_verification",
+            "reason": "Implemented a separate Middle Readers cache strategy bounded to its first award year, 2027. Annual units retain source projections, recover archive gaps from 2027 and exclude pre-category PDF/annual sources. Six future-year fixture checks prove missing-year recovery, repeated savings and failed-unit retention (18 synthetic books, 8 full / 6 missing-year update / 4 repeat callbacks); these are not live results. The official 2026 source still has no entries for this category, confirmed by isolated Calibre. Keep candidate Yes and support disabled until real results and qualifying request savings can be verified.",
+            "at": "2026-11-18T06:24:44+00:00"
+          },
+          {
+            "status": "awaiting_live_verification",
+            "reason": "Pre-2027 absence is an expected empty result with an explicit 2027-start note, not a failed 2026 import. Captured current archive replay fetches no irrelevant older PDF/year pages. The 2027-onward update strategy has seven focused fixtures; update support remains disabled until actual entries and measurable request savings can be verified. Candidate status remains Yes; this legitimate future-category absence is not a parser error.",
+            "at": "2026-11-18T07:28:26+00:00"
+          },
+          {
+            "status": "awaiting_live_verification",
+            "reason": "Final live source check on 2026-11-18 successfully fetched the official archive in one request. Parsed result is expected empty, explicitly certified as a category starting with the 2027 Awards; this is not a fetch/parsing failure. The verifier correctly refuses an empty list as evidence of real missing-entry recovery or request savings. Seven future-year regressions exercise the strategy, but actual usable entries and qualifying history/savings do not yet exist. Candidate remains Yes, support remains disabled, and the original queue membership is retained.",
+            "at": "2026-11-18T17:26:57+00:00"
+          }
+        ],
+        "reason": "Final live source check on 2026-11-18 successfully fetched the official archive in one request. Parsed result is expected empty, explicitly certified as a category starting with the 2027 Awards; this is not a fetch/parsing failure. The verifier correctly refuses an empty list as evidence of real missing-entry recovery or request savings. Seven future-year regressions exercise the strategy, but actual usable entries and qualifying history/savings do not yet exist. Candidate remains Yes, support remains disabled, and the original queue membership is retained.",
+        "source_paths": [
+          "Fresh official CBCA awards page and category-bounded archive/annual/history readers; Middle Readers introduced for 2027",
+          "https://cbca.org.au/awards/"
+        ],
+        "changed_code": [
+          "parser/cbca_sources.py",
+          "parser/cbca_2022.py",
+          "parser/cbca_updates.py",
+          "url_fetcher/cbca_book_of_the_year.py",
+          "url_fetcher/cbca_transport.py",
+          "_dev_tools/test_cbca_middle_updates.py"
+        ],
+        "evidence": [
+          "_dev_tools\\Scraps Cache\\update_implementation\\cbca-family-final\\cbca_book_of_the_year_older_readers\\full-0002.txt",
+          "_dev_tools\\Scraps Cache\\update_implementation\\cbca\\automated-final\\cbca_book_of_the_year_middle_readers.json",
+          "_docs/CBCA_UPDATE_SOURCE_REPAIR.md",
+          "_dev_tools\\Scraps Cache\\update_implementation\\remaining-candidates\\automated-final-2\\cbca_book_of_the_year_middle_readers.json",
+          "_dev_tools\\Scraps Cache\\update_implementation\\cbca-middle-nov18-live\\live.json",
+          "_dev_tools\\Scraps Cache\\update_implementation\\cbca-middle-nov18-live\\requests.json",
+          "_dev_tools\\Scraps Cache\\update_implementation\\remaining-candidates\\automated-final-3\\cbca_book_of_the_year_middle_readers.json",
+          "_dev_tools\\Scraps Cache\\update_implementation\\remaining-candidates\\automated-final-6\\cbca_book_of_the_year_middle_readers.json",
+          "_dev_tools\\Scraps Cache\\update_implementation\\remaining-candidates\\automated-final-7\\cbca_book_of_the_year_middle_readers.json",
+          "_dev_tools\\Scraps Cache\\update_implementation\\remaining-candidates\\user-clarified-final-3\\cbca_book_of_the_year_middle_readers.json",
+          "_dev_tools\\Scraps Cache\\update_implementation\\wayback-shared-spacing-final\\calibre-spacing.json",
+          "_dev_tools\\Scraps Cache\\update_implementation\\user-clarified-captures\\middle-2026.json",
+          "_dev_tools\\Scraps Cache\\update_implementation\\middle-readers-final-state\\full.json",
+          "_dev_tools\\Scraps Cache\\update_implementation\\middle-readers-final-state\\live.json",
+          "_dev_tools\\Scraps Cache\\update_implementation\\middle-readers-final-state\\requests.json"
+        ]
+      },
+      "candidate_record": {
+        "candidate": "Yes",
+        "reason": "Refresh archive and awards pages for new annual links and PDF revisions. Reuse complete historical PDF rows by reference/version and settled dated annual pages; fetch new/current/unsettled or failed annual sources. Preserve category-specific coverage notes, honors/shortlist semantics and discovery even for newer categories absent from older PDF history.",
+        "source_path": "CBCA archive/awards discovery, historical PDF and linked annual results: Middle Readers",
+        "evidence": [
+          "url_fetcher/cbca_book_of_the_year.py",
+          "parser/cbca_book_of_the_year.py"
+        ],
+        "discontinued": false,
+        "reviewed_at": "2026-11-16T08:29:03+00:00"
+      },
+      "manual_test_record": {
+        "source_id": "cbca_book_of_the_year_middle_readers",
+        "name": "CBCA Book of the Year - Middle Readers",
+        "automated_status": "passed",
+        "manual_status": "not_checked",
+        "notes": ""
+      }
+    }
+  }
+}

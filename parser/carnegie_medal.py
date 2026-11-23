@@ -14,6 +14,8 @@ Maintenance notes:
 """
 
 from datetime import date
+from copy import deepcopy
+import json
 import re
 
 from bs4 import BeautifulSoup
@@ -24,12 +26,16 @@ try:
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError,CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from errors import ImportCancelledError,CamoufoxRequiredError
 
 
 AWARD_NAME = 'Carnegie Medal for Writing'
@@ -79,7 +85,10 @@ class CarnegieMedalParser(AwardParserBase):
   def parse(
       self, html, base_url=WINNERS_URL, name=AWARD_NAME, fetch_url=None,
       current_year=None, shortlist_pages=(), winner_pages=(), supplement_pages=(),
-      log=None, progress=None):
+      log=None, progress=None,cached_parsed=None,incremental_update=False):
+    if fetch_url is not None and not (shortlist_pages or winner_pages or supplement_pages):
+      return self.parse_live_sources(html,base_url,name,fetch_url,int(current_year or date.today().year),
+        cached_parsed,incremental_update,log,progress)
     rows, notes = self.winner_archive_rows(html, base_url)
     current_year = int(current_year or date.today().year)
 
@@ -98,6 +107,8 @@ class CarnegieMedalParser(AwardParserBase):
           if progress is not None:
             progress(index, total, f'Fetching Carnegie Medal page {index} of {total}')
           rows.extend(parser_method(fetch_url(page_url), page_url))
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
         except Exception as err:
           notes.append(f'Carnegie Medal page could not be fetched: {page_url}: {err}')
           if log is not None:
@@ -117,6 +128,78 @@ class CarnegieMedalParser(AwardParserBase):
       sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
       notes=notes)
 
+  def parse_live_sources(self,html,base_url,name,fetch_url,current_year,cached_parsed,incremental_update,log,progress):
+    cache=ParsedUnitCache('carnegie-writing-shortlists-v1',json.dumps([
+      base_url,name,type(self).__name__]),cached_parsed,incremental_update)
+    notes=[]
+    def previous(key):
+      try:return restore_source_rows(cache.previous(key),(cache.old_units.get(key) or {}).get('metadata') or {})
+      except (ValueError,TypeError):return []
+    archive,source_notes=self.winner_archive_rows(html,base_url)
+    notes.extend(source_notes)
+    archive_complete=bool(archive)
+    if not archive_complete:
+      archive=previous('archive')
+      notes.append('Official Carnegie Writing archive did not expose usable winner rows; retained cached history.')
+    winners={str(r['award_year']):normalize_heading(r['title']) for r in archive if r['result']==RESULT_WINNER}
+    units={'archive':(archive,base_url,archive_complete)}
+    targets=[('2010-2015',SHORTLIST_ARCHIVE_2010_2015_URL)]+[(str(y),shortlist_archive_url(y)) for y in range(2016,current_year+1)]
+    rows=list(archive)
+    for index,(key,url) in enumerate(targets,1):
+      old=cache.old_units.get(key) or {}
+      prior=previous(key)
+      years={str(r['award_year']) for r in prior}
+      closed=(archive_complete and prior and years and max(map(int,years))<current_year and
+        all(year in winners and any(str(r['award_year'])==year and normalize_heading(r['title'])==winners[year] for r in prior) for year in years))
+      if old.get('complete') is True and old.get('revision')==url and closed:
+        source_rows,complete=prior,True
+      else:
+        source_rows,complete=prior,False
+        try:
+          if progress is not None:progress(index,len(targets),f'Fetching Carnegie Writing shortlist {key}')
+          found=self.shortlist_page_rows(fetch_url(url),url)
+          expected={str(y) for y in range(2010,2016)} if key=='2010-2015' else {key}
+          actual={str(r['award_year']) for r in found}
+          if not found or not actual.issubset(expected):
+            raise ValueError('Official Carnegie shortlist did not expose the requested award years.')
+          if actual!=expected:
+            if not prior:source_rows=found
+            raise ValueError('Official Carnegie shortlist did not expose all requested award years.')
+          source_rows,complete=found,True
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
+        except Exception as err:
+          notes.append(f'Carnegie Medal page could not be fetched: {url}: {err}')
+          if log is not None:log(notes[-1])
+      units[key]=(source_rows,url,complete)
+      rows.extend(source_rows)
+    current=units.get(str(current_year),([],None,False))
+    current_winner=winners.get(str(current_year))
+    if not (current[2] and current_winner and any(normalize_heading(r['title'])==current_winner for r in current[0])):
+      supplement=[]
+      fallback_targets=self.fetch_targets(current_year)[-4:]
+      for url,reader in fallback_targets:
+        try:
+          supplement.extend(reader(fetch_url(url),url))
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
+        except Exception as err:
+          notes.append(f'Carnegie Medal page could not be fetched: {url}: {err}')
+      rows.extend(supplement)
+      units['current-supplements']=(supplement,[u for u,_reader in fallback_targets],bool(supplement))
+    entries=sorted(self.entries_from_rows(self.dedupe_rows(rows)),key=lambda item:position_sort_key(item.get('position','')))
+    if not entries:raise ValueError('No Carnegie Medal for Writing entries found on official Carnegies pages.')
+    for key,(source_rows,revision,complete) in units.items():
+      projected,metadata=project_source_rows(source_rows,entries,
+        lambda row:(str(row['award_year']),normalize_heading(row['title'])))
+      cache.put(key,projected,revision=revision,complete=complete,metadata=metadata)
+    notes.extend(['Official Carnegie Medal for Writing shortlists are imported from 2010 onward; pre-2010 history is winner-only in this recipe.',
+      'Official nominated-title and longlist pages are public but excluded in V1.'])
+    parsed=self.parsed_result(name,base_url,entries,notes=notes)
+    parsed['incremental_state']=cache.state(entries)
+    parsed['incremental_state']['discovery']={'refresh_units':[str(current_year)]}
+    return parsed
+
   def fetch_targets(self, current_year):
     targets = [(SHORTLIST_ARCHIVE_2010_2015_URL, self.shortlist_page_rows)]
     for year in range(2016, current_year + 1):
@@ -130,6 +213,41 @@ class CarnegieMedalParser(AwardParserBase):
     return targets
 
   def winner_archive_rows(self, html, base_url=WINNERS_URL):
+    soup=BeautifulSoup(html or '','html.parser')
+    structured=[]
+    structured_notes=[]
+    for paragraph in soup.find_all('p'):
+      paragraph_text=normalize_line(paragraph.get_text(' ',strip=True))
+      if len(paragraph_text)<200 and WITHHELD_RE.search(paragraph_text):
+        structured_notes.extend(f'Carnegie Medal for Writing {year} was withheld on the official archive.' for year in YEAR_RE.findall(paragraph_text))
+      if re.match(r'^(?:19|20)\d{2}\b',paragraph.get_text(' ',strip=True)) is None:
+        continue
+      fragment=soup.new_tag('div')
+      parts=[]
+      for child in paragraph.children:
+        if getattr(child,'name',None)=='br':
+          parts.append(fragment);fragment=soup.new_tag('div')
+        else:fragment.append(deepcopy(child))
+      parts.append(fragment)
+      for part in parts:
+        text=normalize_line(part.get_text(' ',strip=True))
+        match=re.match(r'^((?:19|20)\d{2})\b\s*(.+)$',text)
+        if match is None:continue
+        year=int(match.group(1))
+        if WITHHELD_RE.search(text):
+          structured_notes.append(f'Carnegie Medal for Writing {year} was withheld on the official archive.')
+          continue
+        titles=part.find_all('em')
+        if not titles:continue
+        before=[]
+        for node in part.descendants:
+          if node is titles[0]:break
+          if not getattr(node,'name',None):before.append(str(node))
+        author=re.sub(r'^(?:19|20)\d{2}\s+','',normalize_line(''.join(before))).strip(' ,')
+        title=' '.join(t.get_text(' ',strip=True).strip(' ,') for t in titles)
+        row=self.build_row(year,title,author,RESULT_WINNER,base_url)
+        if row is not None:structured.append(row)
+    if structured:return structured,structured_notes
     rows = []
     notes = []
     current_year = None
@@ -177,13 +295,25 @@ class CarnegieMedalParser(AwardParserBase):
     year = self.year_from_url_or_text(base_url, html)
     if year is None or year < 2010:
       return []
+    soup=BeautifulSoup(html or '','html.parser')
+    heading=soup.find('h1')
+    if heading is not None and self.is_writing_shortlist_start(normalize_heading(heading.get_text(' ',strip=True))):
+      heading_year=YEAR_RE.search(heading.get_text(' ',strip=True))
+      if heading_year and int(heading_year.group())!=year:return []
+      cards=[]
+      for link in soup.select('p > a[href*="/books/"]'):
+        title=link.find('strong');credit=link.find('span')
+        if title is not None and credit is not None:
+          row=self.build_row(year,title.get_text(' ',strip=True),next(credit.stripped_strings,''),RESULT_SHORTLISTED,base_url)
+          if row is not None:cards.append(row)
+      if cards:return self.dedupe_rows(cards)
     lines = self.shortlist_section_lines(html, base_url)
     rows = []
     for line in lines:
       if self.is_shortlist_heading(line) or self.is_non_entry_line(line):
         continue
       row_year = year
-      year_match = YEAR_RE.search(line)
+      year_match = re.match(r'^((?:19|20)\d{2})\s+',line) if '2010-2015' in base_url else None
       if year_match is not None:
         row_year = int(year_match.group(1))
         line = normalize_line(line[:year_match.start()] + ' ' + line[year_match.end():])
@@ -198,6 +328,35 @@ class CarnegieMedalParser(AwardParserBase):
     year = self.year_from_url_or_text(base_url, html)
     if year is None:
       return []
+    soup=BeautifulSoup(html or '','html.parser')
+    if soup.find('h1') is not None:
+      winner_author=None
+      for paragraph in soup.find_all('p'):
+        match=re.match(r'^Carnegie Medal for Writing winner,\s*(.+?),\s*said',paragraph.get_text(' ',strip=True),re.I)
+        if match:winner_author=normalize_heading(match.group(1));break
+      structured=[]
+      for paragraph in soup.find_all('p'):
+        text=normalize_line(paragraph.get_text(' ',strip=True))
+        if re.match(r'^[A-Z][^,.]{1,70}\s+(?:has\s+)?won\s+(?:both\s+)?the Carnegie Medal for Writing\b',text):
+          row=self.winner_sentence_row(year,text,base_url)
+          if row is not None:structured.append(row)
+      for node in soup.find_all(['h2','h3','h4','p']):
+        if node.name!='p':continue
+        title=node.find('em')
+        if title is None:continue
+        text=normalize_line(node.get_text())
+        marked=normalize_line(title.get_text())
+        prefix=text.split(marked,1)[0] if marked in text else text
+        credit=text.split(marked,1)[-1] if marked in text else ''
+        author=re.match(r'^\s*by\s+(.+)$',credit,re.I)
+        if not author or normalize_heading(prefix) not in ('','congratulations to'):continue
+        author=self.clean_author(author.group(1).rstrip('!'))
+        boundary=node.find_previous(['h2','h3','h4'])
+        writing_section=boundary is not None and 'medal for writing' in normalize_heading(boundary.get_text(' ',strip=True)) and 'illustration' not in normalize_heading(boundary.get_text(' ',strip=True))
+        if (winner_author and normalize_heading(author)==winner_author) or writing_section:
+          row=self.build_row(year,marked,author,RESULT_WINNER,base_url)
+          if row is not None:structured.append(row)
+      return self.dedupe_rows(structured)
     rows = []
     for line in self.writing_winner_section_lines(html):
       if self.is_non_entry_line(line):
@@ -243,6 +402,10 @@ class CarnegieMedalParser(AwardParserBase):
     for line in lines:
       key = normalize_heading(line)
       year_match = YEAR_RE.search(line)
+      if year_match is not None and self.is_writing_shortlist_start(key):
+        current_year=int(year_match.group(1))
+        in_writing=True
+        continue
       if year_match is not None and key == year_match.group(1):
         current_year = int(year_match.group(1))
         in_writing = False
@@ -277,9 +440,6 @@ class CarnegieMedalParser(AwardParserBase):
     text = self.clean_entry_text(text)
     if not text:
       return None
-    year_match = YEAR_RE.search(text)
-    if year_match is not None:
-      text = normalize_line(text[:year_match.start()] + ' ' + text[year_match.end():])
     text = re.sub(r'^\s*(?:winner|shortlisted?|the shortlist(?:ed)? books?|writing)\s*:?\s*', '', text, flags=re.I)
     quoted = re.match(r'^[“"]([^”"]+)[”"]\s*(?:by|,?\s+by)\s+(.+)$', text, re.I)
     if quoted is not None:
@@ -351,9 +511,13 @@ class CarnegieMedalParser(AwardParserBase):
       removable.decompose()
     lines = []
     for node in soup.find_all(SEMANTIC_TAGS):
-      text = normalize_line(node.get_text(' ', strip=True))
-      if text:
-        lines.append(text)
+      copied=BeautifulSoup(str(node),'html.parser')
+      # Paragraphs hold whole annual rosters separated by br; inline emphasis
+      # still belongs to its title/byline rather than a separate source line.
+      for br in copied.find_all('br'):br.replace_with('__CARNEGIE_BREAK__')
+      for fragment in copied.get_text().split('__CARNEGIE_BREAK__'):
+        text=normalize_line(fragment)
+        if text:lines.append(text)
     if lines:
       return lines
     text = soup.get_text('\n')
@@ -367,7 +531,8 @@ class CarnegieMedalParser(AwardParserBase):
       or 'medal for writing shortlist' in key
       or key in {'cilip carnegie medal', 'carnegie medal'}
       or key.startswith('writing shortlist')
-      or key.startswith('the carnegie medal shortlist'))
+      or key.startswith('the carnegie medal shortlist')
+      or re.fullmatch(r'(?:\d{4} )?(?:cilip )?carnegie(?: medal)? shortlist',key) is not None)
 
   def is_next_non_writing_section(self, key):
     return (

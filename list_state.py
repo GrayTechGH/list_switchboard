@@ -25,10 +25,14 @@ from calibre_plugins.list_switchboard.config import prefs
 
 try:
   from calibre_plugins.list_switchboard.dialogs import (
-    ActiveAddMatchDialog, ChoiceDialog, StoredListsDialog,
+    ActiveAddMatchBatchDialog, ActiveAddMatchDialog, ActiveAddMatchRequest,
+    ChoiceDialog, StoredListsDialog,
   )
 except ImportError:
-  from dialogs import ActiveAddMatchDialog, ChoiceDialog, StoredListsDialog
+  from dialogs import (
+    ActiveAddMatchBatchDialog, ActiveAddMatchDialog, ActiveAddMatchRequest,
+    ChoiceDialog, StoredListsDialog,
+  )
 
 try:
   from calibre_plugins.list_switchboard.errors import DuplicateStoredListsError, ListSwitchboardError
@@ -399,7 +403,10 @@ class ListStateMixin:
     if not self.check_selected_book_limit(ids):
       return
     if prefs.get('include_calibre_series', False):
+      selected_count = len(set(ids))
       ids = self.selected_ids_with_series(ids)
+      if not self.check_selected_book_limit(ids, selected_count=selected_count):
+        return
     self.debug_active_add_timing(
       'selection and series expansion', started,
       books=len(ids), include_series=bool(prefs.get('include_calibre_series', False)))
@@ -416,7 +423,7 @@ class ListStateMixin:
       f'Add Selected timing: {stage} {perf_counter() - started:.3f}s'
       + (f' {details}' if details else ''), section='selection')
 
-  def check_selected_book_limit(self, ids):
+  def check_selected_book_limit(self, ids, selected_count=None):
     try:
       limit = int(prefs.get('max_selected_books', 20))
     except (TypeError, ValueError):
@@ -426,11 +433,16 @@ class ListStateMixin:
     count = len(set(ids))
     if count <= limit:
       return True
+    if selected_count is not None and count > selected_count:
+      message = (
+        f'Include series: {selected_count} selected, {count} total (maximum {limit}).')
+    else:
+      message = f'Selected: {count} books (maximum {limit}).'
     error_dialog(
       self.gui, 'Too many selected books',
-      f'This action includes {count} books; the maximum is {limit}.\n\n'
-      'Change "Maximum selected books" in List Switchboard > Maintenance > Configure.\n'
-      'Books added through Include series count toward this limit.', show=True)
+      message + '\n\n'
+      'Change "Maximum selected books" in:\n'
+      'List Switchboard > Maintenance > Configure', show=True)
     return False
 
   def selected_ids_with_series(self, ids=None):
@@ -528,24 +540,38 @@ class ListStateMixin:
     context = self.cached_active_add_context(active_updates, entries, cache, db)
     self.debug_active_add_timing('build cached match context', stage_started, entries=len(entries))
     stage_started = perf_counter()
-    updates = {}
-    index_updates = {}
-    added_ids_by_entry = {}
-    manual_entries = {}
+    choices = {}
+    review_requests = {}
     for book_id in active_updates:
       default_index = fallback_index_updates.get(book_id)
-      entry, index_value, save_manual = self.cached_active_match_for_book(
+      choice = self.cached_active_match_for_book(
         book_id, context, default_index, db,
         force_match_review=force_match_review,
-        active_list_name=active)
+        active_list_name=active,
+        has_pending_choices=bool(choices),
+        prepare_only=len(active_updates) > 1)
+      if isinstance(choice, ActiveAddMatchRequest):
+        review_requests[book_id] = choice
+        continue
+      entry, index_value, save_manual = choice
       if entry is None and index_value is None:
         self.debug_storage_cached_active_add_decision(
           book_id, 'cancelled cached Active List add')
         # Choices and overrides are staged until every book has been reviewed.
         raise ActiveAddCancelled()
+      choices[book_id] = choice
+    if review_requests:
+      choices = self.review_cached_active_add_choices(
+        active, active_updates, context, fallback_index_updates, choices, review_requests)
+    updates = {}
+    index_updates = {}
+    added_ids_by_entry = {}
+    manual_entries = {}
+    for book_id in active_updates:
+      entry, index_value, save_manual = choices[book_id]
       updates[book_id] = active_updates[book_id]
       if index_value is None:
-        index_value = default_index
+        index_value = fallback_index_updates.get(book_id)
       if index_value is not None:
         index_updates[book_id] = index_value
       if entry is not None:
@@ -569,6 +595,40 @@ class ListStateMixin:
           + added_ids[:-1]))
     self.debug_active_add_timing('save manual overrides', stage_started, entries=len(manual_entries))
     return updates, index_updates
+
+  def review_cached_active_add_choices(
+      self, active, active_updates, context, default_indexes, choices, requests):
+    """Review final per-book choices before deriving any saved-match writes."""
+    books = []
+    automatic_entries = {}
+    for book_id in active_updates:
+      request = requests.get(book_id)
+      choice = choices.get(book_id)
+      automatic_entry = request.automatic_entry if request is not None else choice[0]
+      automatic_entries[book_id] = automatic_entry
+      candidates = request.candidates if request is not None else self.cached_entry_candidates_for_book(
+        book_id, context, default_indexes.get(book_id))
+      if automatic_entry is not None and not any(
+          entry_key(entry) == entry_key(automatic_entry) for _score, entry in candidates):
+        candidates = [(0, automatic_entry)] + list(candidates)
+      books.append({
+        'book_id': book_id, 'title': context['titles'].get(book_id, ''),
+        'authors': self.display_authors(context['authors'].get(book_id, [])),
+        'entries': context['entries'],
+        'candidates': [entry for _score, entry in candidates],
+        'default_index': default_indexes.get(book_id),
+        'preferred_entry': request.preferred_entry if request is not None else automatic_entry,
+        'initial_show_all': request.initial_show_all if request is not None else False,
+        'choice': choice,
+      })
+    dialog = ActiveAddMatchBatchDialog(self.gui, books, active_list_name=active)
+    if dialog.exec() != QDialog.Accepted:
+      raise ActiveAddCancelled()
+    return {
+      book_id: self.normalized_active_add_choice(
+        dialog.choices[book_id], automatic_entries[book_id])
+      for book_id in active_updates
+    }
 
   def cached_active_add_existing_book_ids(self, active, entry, context, db):
     """Preserve current row membership when Add Selected creates an override.
@@ -764,7 +824,7 @@ class ListStateMixin:
 
   def cached_active_match_for_book(
       self, book_id, context, default_index, db, force_match_review=False,
-      active_list_name=None):
+      active_list_name=None, has_pending_choices=False, prepare_only=False):
     override_entry = self.saved_cached_entry_for_book(book_id, context)
     if override_entry is not None:
       self.debug_storage_cached_active_add_decision(
@@ -780,7 +840,8 @@ class ListStateMixin:
           initial_show_all=True,
           preferred_entry=override_entry,
           automatic_entry=override_entry,
-          active_list_name=active_list_name)
+          active_list_name=active_list_name,
+          has_pending_choices=has_pending_choices, prepare_only=prepare_only)
       return override_entry, self.entry_position_index_value(override_entry), False
 
     candidates = self.cached_entry_candidates_for_book(book_id, context, default_index)
@@ -804,14 +865,16 @@ class ListStateMixin:
           initial_show_all=True,
           preferred_entry=automatic_entry,
           automatic_entry=automatic_entry,
-          active_list_name=active_list_name)
+          active_list_name=active_list_name,
+          has_pending_choices=has_pending_choices, prepare_only=prepare_only)
       return automatic_entry, self.entry_position_index_value(automatic_entry), False
 
     self.debug_storage_cached_active_add_decision(
       book_id, 'needs chooser or manual index', index_value=default_index)
     return self.choose_active_add_match(
       book_id, context['entries'], candidates, default_index, db,
-      active_list_name=active_list_name)
+      active_list_name=active_list_name,
+      has_pending_choices=has_pending_choices, prepare_only=prepare_only)
 
   def saved_cached_entry_for_book(self, book_id, context):
     return context['override_entries_by_book'].get(book_id)
@@ -863,7 +926,7 @@ class ListStateMixin:
   def choose_active_add_match(
       self, book_id, entries, candidates, default_index, db,
       initial_show_all=False, preferred_entry=None, automatic_entry=None,
-      active_list_name=None):
+      active_list_name=None, has_pending_choices=False, prepare_only=False):
     chooser = getattr(self, '_active_add_match_chooser', None)
     if chooser is not None:
       try:
@@ -872,12 +935,17 @@ class ListStateMixin:
           initial_show_all=initial_show_all,
           preferred_entry=preferred_entry,
           automatic_entry=automatic_entry,
-          active_list_name=active_list_name)
+          active_list_name=active_list_name,
+          has_pending_choices=has_pending_choices)
       except TypeError as err:
         if 'unexpected keyword' not in str(err):
           raise
         result = chooser(book_id, entries, candidates, default_index, db)
       return self.normalized_active_add_choice(result, automatic_entry)
+    if prepare_only:
+      return ActiveAddMatchRequest(
+        book_id, entries, candidates, default_index, initial_show_all,
+        preferred_entry, automatic_entry)
     title = db.field_for('title', book_id, default_value='') or ''
     authors = db.field_for('authors', book_id, default_value=[]) or []
     if not isinstance(authors, (list, tuple)):
@@ -892,7 +960,8 @@ class ListStateMixin:
       '' if default_index is None else f'{default_index:g}',
       initial_show_all=initial_show_all,
       preferred_entry=preferred_entry,
-      active_list_name=active_list_name)
+      active_list_name=active_list_name,
+      has_pending_choices=has_pending_choices)
     self.debug_active_add_timing(
       'build match dialog', stage_started,
       entries=len(entries), candidates=len(candidates))

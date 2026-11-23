@@ -1,0 +1,151 @@
+{
+  "append_state": {
+    "entry_count": 8,
+    "last_entry_key": "the stoneshore register|g willow wilson",
+    "last_position": "2025.07",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Jessica Maison"
+      ],
+      "award": "Nebula Award",
+      "award_year": "2025",
+      "category": "Best Comic",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://nebulas.sfwa.org/nominated-work/mary-shelleys-school-for-monsters-the-killing-stone-by-jessica-maison-wicked-tree/"
+      },
+      "title": "Mary Shelley\u2019s School for Monsters: The Killing Stone"
+    },
+    {
+      "authors": [
+        "Kit Anderson"
+      ],
+      "award": "Nebula Award",
+      "award_year": "2025",
+      "category": "Best Comic",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://nebulas.sfwa.org/nominated-work/second-shift-by-kit-anderson-avery-hill/"
+      },
+      "title": "Second Shift"
+    },
+    {
+      "authors": [
+        "Amy Chu"
+      ],
+      "award": "Nebula Award",
+      "award_year": "2025",
+      "category": "Best Comic",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://nebulas.sfwa.org/nominated-work/carmilla-volume-3-the-eternal-by-amy-chu-berger/"
+      },
+      "title": "Carmilla Volume 3: The Eternal"
+    },
+    {
+      "authors": [
+        "Tom King"
+      ],
+      "award": "Nebula Award",
+      "award_year": "2025",
+      "category": "Best Comic",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://nebulas.sfwa.org/nominated-work/helen-of-wyndhorn-by-tom-king-dark-horse/"
+      },
+      "title": "Helen of Wyndhorn"
+    },
+    {
+      "authors": [
+        "Jeff Lemire"
+      ],
+      "award": "Nebula Award",
+      "award_year": "2025",
+      "category": "Best Comic",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://nebulas.sfwa.org/nominated-work/fishflies-by-jeff-lemire-image/"
+      },
+      "title": "Fishflies"
+    },
+    {
+      "authors": [
+        "Ariel Slamet Ries"
+      ],
+      "award": "Nebula Award",
+      "award_year": "2025",
+      "category": "Best Comic",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://nebulas.sfwa.org/nominated-work/strange-bedfellows-by-ariel-slamet-ries-harperalley/"
+      },
+      "title": "Strange Bedfellows"
+    },
+    {
+      "authors": [
+        "Jason Walz"
+      ],
+      "award": "Nebula Award",
+      "award_year": "2025",
+      "category": "Best Comic",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://nebulas.sfwa.org/nominated-work/the-flip-side-by-jason-walz-rocky-pond/"
+      },
+      "title": "The Flip Side"
+    },
+    {
+      "authors": [
+        "G. Willow Wilson"
+      ],
+      "award": "Nebula Award",
+      "award_year": "2025",
+      "category": "Best Comic",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://nebulas.sfwa.org/nominated-work/the-stoneshore-register-by-g-willow-wilson-berger/"
+      },
+      "title": "The Stoneshore Register"
+    }
+  ],
+  "fetched_at": "2026-07-23T18:41:32Z",
+  "list_id": "nebula_awards_comics",
+  "list_name": "Nebula Awards - Comics",
+  "match_series": false,
+  "notes": [],
+  "parser": "nebula_awards_comics",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Nebula Awards - Comics",
+    "source_id": "nebula_awards_comics",
+    "url": "https://nebulas.sfwa.org/award/best-comic/"
+  }
+}

@@ -2697,12 +2697,13 @@
       "title": "Slashed Beauties"
     }
   ],
-  "fetched_at": "2026-07-11T00:32:23Z",
+  "fetched_at": "2026-11-15T01:29:40Z",
   "list_id": "aurealis_fantasy_novel",
   "list_name": "Aurealis - Fantasy Novel",
   "match_series": false,
   "notes": [],
   "parser": "aurealis_fantasy_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Aurealis - Fantasy Novel",

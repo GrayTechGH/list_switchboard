@@ -1,0 +1,118 @@
+{
+  "append_state": {
+    "entry_count": 8,
+    "last_entry_key": "dark terrors 3 the gollancz book of horror|stephen jones\u001fdavid sutton",
+    "last_position": "1998",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Stephen Jones",
+        "Ramsey Campbell"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1991",
+      "category": "Anthology/Collection",
+      "position": "1991",
+      "result": "winner",
+      "title": "Best New Horror"
+    },
+    {
+      "authors": [
+        "Nicholas Royle"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1992",
+      "category": "Anthology/Collection",
+      "position": "1992",
+      "result": "winner",
+      "title": "Darklands"
+    },
+    {
+      "authors": [
+        "Nicholas Royle"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1993",
+      "category": "Anthology/Collection",
+      "position": "1993",
+      "result": "winner",
+      "title": "Darklands 2"
+    },
+    {
+      "authors": [
+        "David Sutton",
+        "Stephen Jones"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1994",
+      "category": "Anthology/Collection",
+      "position": "1994",
+      "result": "winner",
+      "title": "Dark Voices 5"
+    },
+    {
+      "authors": [
+        "Joel Lane"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1995",
+      "category": "Anthology/Collection",
+      "position": "1995",
+      "result": "winner",
+      "title": "The Earthwire"
+    },
+    {
+      "authors": [
+        "Andy Cox"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1996",
+      "category": "Anthology/Collection",
+      "position": "1996",
+      "result": "winner",
+      "title": "Last Rites and Resurrections: Stories from The Third Alternative"
+    },
+    {
+      "authors": [
+        "Thomas Ligotti"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1997",
+      "category": "Anthology/Collection",
+      "position": "1997",
+      "result": "winner",
+      "title": "The Nightmare Factory"
+    },
+    {
+      "authors": [
+        "Stephen Jones",
+        "David Sutton"
+      ],
+      "award": "British Fantasy Award",
+      "award_year": "1998",
+      "category": "Anthology/Collection",
+      "position": "1998",
+      "result": "winner",
+      "title": "Dark Terrors 3: the Gollancz Book of Horror"
+    }
+  ],
+  "fetched_at": "2026-11-15T00:29:14Z",
+  "list_id": "british_fantasy_anthology_collection",
+  "list_name": "British Fantasy - Anthology/Collection (discontinued)",
+  "match_series": false,
+  "notes": [
+    "Official BFS winners archive is winner-only.",
+    "Official BFS shortlist coverage is current-cycle only; historical shortlist rows come from SFADB year pages.",
+    "British Fantasy SFADB historical shortlist supplement failed: Import cancelled. No Active List metadata was changed."
+  ],
+  "parser": "british_fantasy_anthology_collection",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "British Fantasy - Anthology/Collection (discontinued)",
+    "source_id": "british_fantasy_anthology_collection",
+    "url": "https://britishfantasysociety.org/about-the-bfs/the-british-fantasy-awards/bfa-winners/"
+  }
+}

@@ -119,7 +119,7 @@ class MorrisAwardParser(YALSAOfficialAwardParserBase):
 
   def annual_page_rows(self, html, base_url):
     lines = self.text_lines(html)
-    year = self.year_from_url_or_lines(base_url, lines)
+    year = self.annual_page_year(html,base_url,lines)
     if year is None:
       return []
     rows = []

@@ -25,13 +25,15 @@ class ImportListCatalogTests(unittest.TestCase):
       output_path, count = write_catalog(
         Path(folder) / 'lists.csv',
         fetchers=fetchers,
-        progress_status_path=status_path)
+        progress_status_path=status_path,
+        audit_status_path=Path(folder) / 'audit.json')
       with output_path.open(encoding='utf-8-sig', newline='') as source:
         reader = csv.DictReader(source)
         rows = list(reader)
 
     self.assertEqual(list(FIELDNAMES), reader.fieldnames)
-    self.assertEqual('Manual Test', reader.fieldnames[-1])
+    self.assertEqual(
+      ['Manual Test', 'Update candidate', 'Updates'], reader.fieldnames[-3:])
     self.assertEqual(len(fetchers), count)
     self.assertEqual(len(fetchers), len(rows))
     self.assertEqual(
@@ -44,6 +46,12 @@ class ImportListCatalogTests(unittest.TestCase):
     self.assertEqual('passed', rows[0]['Manual Test'])
     self.assertTrue(all(
       row['Manual Test'] == 'not_checked' for row in rows[1:]))
+    self.assertTrue(all(row['Update candidate'] == '' for row in rows))
+    self.assertEqual({'Yes', 'No'}, {row['Updates'] for row in rows})
+    self.assertEqual(
+      {fetcher.source_id for fetcher in fetchers
+       if getattr(fetcher, 'SUPPORTS_INCREMENTAL_UPDATE', False)},
+      {row['source_id'] for row in rows if row['Updates'] == 'Yes'})
 
   def test_catalog_exposes_discontinued_and_matching_metadata(self):
     with tempfile.TemporaryDirectory() as folder:

@@ -778,12 +778,13 @@
       "title": "Fourth Day"
     }
   ],
-  "fetched_at": "2026-07-18T02:35:51Z",
+  "fetched_at": "2026-11-16T04:59:00Z",
   "list_id": "barry_award_british_crime_novel",
   "list_name": "Barry Award - British Crime Novel",
   "match_series": false,
   "notes": [],
   "parser": "barry_award_british_crime_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Barry Award - British Crime Novel",

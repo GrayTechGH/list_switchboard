@@ -13,20 +13,22 @@ Maintenance notes:
 """
 
 import re
+from copy import deepcopy
 from urllib.parse import urljoin
 
 from lxml import html as lxml_html
+from .pen_america_modern import read_modern_page
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
     AwardParserBase, RESULT_NOMINEE, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, strip_publication_notes,
+    normalize_heading, normalize_line, strip_publication_notes,strip_editor_marker,split_title_author,split_title_author_byline,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_NOMINEE, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, strip_publication_notes,
+    normalize_heading, normalize_line, strip_publication_notes,strip_editor_marker,split_title_author,split_title_author_byline,
   )
   from .generic import position_sort_key
 
@@ -51,6 +53,14 @@ class PENAmericaAwardParser(AwardParserBase):
 
   AWARD_NAME = 'PEN America Literary Awards'
 
+  def read_source(self,html,url,config,kind):
+    modern=read_modern_page(self,html,url,config,kind)
+    if modern is not None:return modern
+    root=self.html_root(html)
+    rows,notes=self.parse_page(root,url,config,kind)
+    if not rows:raise ValueError('PEN source did not expose a validated prize roster.')
+    return {'rows':rows,'notes':notes,'year':self.year_from_text(url),'category_absent':False,'modern':False}
+
   def parse(self, pages, base_url, name, config):
     if isinstance(pages, (str, bytes)):
       pages = ((base_url, pages, 'landing'),)
@@ -69,6 +79,8 @@ class PENAmericaAwardParser(AwardParserBase):
       notes)
 
   def parse_page(self, root, base_url, config, page_kind):
+    modern=read_modern_page(self,lxml_html.tostring(root,encoding='unicode'),base_url,config,page_kind)
+    if modern is not None:return modern['rows'],modern['notes']
     if page_kind == 'landing':
       return self.parse_landing(root, base_url, config)
     return self.parse_annual_post(root, base_url, config)
@@ -201,20 +213,39 @@ class PENAmericaAwardParser(AwardParserBase):
 
   def dedupe_rows(self, rows):
     deduped = []
-    seen = set()
+    seen = {}
     for row in rows:
       key = (
         row.get('award_year', ''),
         normalize_heading(row.get('category', '')),
-        row.get('result', ''),
         normalize_heading(row.get('title', '')),
         normalize_heading(row.get('author', '')),
       )
       if key in seen:
+        if row.get('result')==RESULT_WINNER and deduped[seen[key]].get('result')!=RESULT_WINNER:
+          deduped[seen[key]]=deepcopy(row)
         continue
-      seen.add(key)
-      deduped.append(row)
-    return deduped
+      seen[key]=len(deduped)
+      deduped.append(deepcopy(row))
+    removed=set()
+    # The landing history sometimes omits a subtitle present in annual posts.
+    # Require one unambiguous pair and a winner; distinct subtitled books stay.
+    for index,row in enumerate(deduped):
+      if index in removed or ':' in row['title']:continue
+      prefix=normalize_heading(row['title'])
+      group=[(i,other) for i,other in enumerate(deduped) if i not in removed and
+        other['award_year']==row['award_year'] and other['category']==row['category'] and
+        normalize_heading(other['author'])==normalize_heading(row['author']) and
+        normalize_heading(other['title'].split(':',1)[0])==prefix]
+      if len(group)!=2 or not any(':' in other['title'] for _i,other in group):continue
+      winners=[(i,other) for i,other in group if other['result']==RESULT_WINNER]
+      if not winners:continue
+      keep,winner=winners[0]
+      drop,alternate=next((i,other) for i,other in group if i!=keep)
+      aliases=list(winner.get('aliases') or [])
+      if alternate['title'] not in aliases:aliases.append(alternate['title'])
+      winner['aliases']=aliases;removed.add(drop)
+    return [row for index,row in enumerate(deduped) if index not in removed]
 
   def award_headings(self, root, config):
     aliases = [normalize_heading(alias) for alias in config.heading_aliases]
@@ -270,7 +301,7 @@ class PENAmericaAwardParser(AwardParserBase):
     text = strip_publication_notes(normalize_line(value))
     text = re.sub(r'\s+[–-]\s*(?:winner|finalist|finalists)$', '', text, flags=re.I)
     if re.search(r'\s+by\s+', text, re.I):
-      title, author = re.split(r'\s+by\s+', text, maxsplit=1, flags=re.I)
+      title, author = split_title_author_byline(text)
       return self.clean_title(title), self.clean_author(author)
     parts = [part.strip() for part in text.split(',') if part.strip()]
     if len(parts) < 2:
@@ -279,8 +310,7 @@ class PENAmericaAwardParser(AwardParserBase):
       author = parts[0]
       title = ', '.join(parts[1:])
     elif split_mode == 'title_author':
-      title = ', '.join(parts[:-1])
-      author = parts[-1]
+      title,author=split_title_author(text)
     else:
       title, author = self.auto_split_comma_parts(parts)
     return self.clean_title(title), self.clean_author(author)
@@ -316,10 +346,14 @@ class PENAmericaAwardParser(AwardParserBase):
   def clean_author(self, value):
     text = normalize_line(value)
     text = re.sub(r'^\s*by\s+', '', text, flags=re.I)
-    return strip_publication_notes(text).strip(' "\u201c\u201d,')
+    return strip_editor_marker(strip_publication_notes(text)).strip(' "\u201c\u201d,')
 
   def html_root(self, html):
-    return lxml_html.fromstring(html or '<html></html>')
+    root=lxml_html.fromstring(html or '<html></html>')
+    content=root.xpath('(//main|//article)[1]')
+    if content:root=deepcopy(content[0])
+    for node in root.xpath('.//nav|.//footer|.//script|.//style'):node.drop_tree()
+    return root
 
   def node_text(self, node):
     if node is None:

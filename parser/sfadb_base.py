@@ -24,17 +24,24 @@ Maintenance notes:
 - Subclasses that need extra parse_item arguments (books_only, skip_quoted)
   should bind those via instance attributes set in __init__ or class attributes,
   not by overriding the calling convention of parse_item().
+- Verified recipe wrappers opt into parsed year units with enable_incremental.
+  Source/category/parser configuration must remain scoped; wrappers with dynamic
+  parsing options must include them in the cache identity before opting in.
+  Latest/current and winnerless ballots refresh; malformed/failed units retain
+  their cached rows pending recovery. Other callers keep the original shape.
 """
 
 import re
+import datetime
+import json
 from urllib.parse import urljoin
 
 from lxml import html as lxml_html
 
 try:
-  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
-  from errors import ImportCancelledError
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import (
@@ -44,6 +51,7 @@ try:
     strip_tie_marker,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache
 except ImportError:
   from .award_base import (
     AwardParserBase, assign_positions, is_author_suffix, normalize_heading,
@@ -52,6 +60,7 @@ except ImportError:
     strip_tie_marker,
   )
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache
 
 
 YEAR_LINK = re.compile(r'^(19|20)\d{2}$')
@@ -90,26 +99,72 @@ class SFADBParser(AwardParserBase):
   RESULT_SECTIONS = {}
 
   def parse(self, overview_html, base_url, name, category, category_aliases,
-            fetch_url=None, log=None, progress=None):
+            fetch_url=None, log=None, progress=None, cached_parsed=None,
+            incremental_update=False, enable_incremental=False, configuration_key=None):
     root = html_root(overview_html)
     year_links = self.year_links(root, base_url)
+    # Recipes opt in after verifying their source shape and configured parser.
+    source_key = f'{base_url}|{type(self).__name__}|{name}|{category}|{tuple(category_aliases)}'
+    if configuration_key is not None:
+      source_key += '|' + json.dumps(configuration_key, sort_keys=True, separators=(',', ':'))
+    cache = ParsedUnitCache('sfadb-award-years-v1', source_key,
+      cached_parsed, incremental_update) if enable_incremental else None
+    if cache is not None and not year_links:
+      raise ValueError('SFADB overview did not expose award year links.')
+    current_year = datetime.datetime.now().year
+    latest_year = max((link['year'] for link in year_links), default=current_year)
     entries = []
     notes = []
     self._progress(progress, 0, len(year_links), f'Preparing {name} year pages...')
     for index, year_link in enumerate(year_links, start=1):
       year = year_link['year']
       url = year_link['url']
+      if (cache is not None and year < current_year and year < latest_year and
+          (cache.old_units.get(url) or {}).get('metadata', {}).get('settled') is True):
+        reused = cache.reuse(url, revision=year)
+        if reused is not None:
+          entries.extend(reused)
+          self._progress(progress, index, len(year_links),
+                         f'Reusing {self.AWARD_NAME} {year}...')
+          continue
       self._progress(progress, index, len(year_links),
                      f'Fetching {self.AWARD_NAME} {year}...')
       try:
         html = fetch_url(url) if fetch_url is not None else ''
-      except ImportCancelledError:
+      except (ImportCancelledError, CamoufoxRequiredError):
         raise
       except Exception as err:
         notes.append(f'{self.AWARD_NAME} {year} could not be fetched: {err}')
+        if cache is not None:
+          entries.extend(cache.failed(url, revision=year))
         self._log(log, 'fetch-failed', {'year': year, 'url': url, 'error': str(err)})
         continue
-      year_entries = self.parse_year(html, url, year, category, category_aliases)
+      try:
+        year_entries = self.parse_year(html, url, year, category, category_aliases)
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
+      except Exception as err:
+        if cache is None:
+          raise
+        entries.extend(cache.failed(url, revision=year))
+        notes.append(f'{self.AWARD_NAME} {year} could not be parsed: {err}')
+        continue
+      if cache is not None:
+        year_root = html_root(html)
+        titles = year_root.xpath('//title')
+        title = node_text(titles[0]) if titles else ''
+        titled_year = re.search(r'\b((?:19|20)\d{2})\b', title)
+        wrong_year = bool(re.match(r'^sfadb\s*:', title, re.I) and
+          titled_year and int(titled_year.group(1)) != year)
+        recognizable = bool(re.match(r'^sfadb\s*:', title, re.I) and
+          re.search(rf'\b{year}\b', title) and year_root.xpath(
+            '//div[contains(concat(" ", normalize-space(@class), " "), " categoryblock ")]'))
+        if wrong_year or (not year_entries and not recognizable):
+          entries.extend(cache.failed(url, revision=year))
+          notes.append(f'{self.AWARD_NAME} {year} did not expose a usable award page; retained cached entries.')
+          continue
+        cache.put(url, year_entries, revision=year,
+          metadata={'settled': self.unit_is_settled(html, year_entries, category, category_aliases)})
       if year_entries:
         entries.extend(year_entries)
         self._log(log, 'year-parsed',
@@ -117,11 +172,15 @@ class SFADBParser(AwardParserBase):
       else:
         self._log(log, 'year-skipped',
                   {'year': year, 'url': url, 'category': category})
-    return self.parsed_result(
+    entries = sorted(entries, key=lambda item: position_sort_key(item.get('position', '')))
+    parsed = self.parsed_result(
       name,
       base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      entries,
       notes)
+    if cache is not None:
+      parsed['incremental_state'] = cache.state(entries)
+    return parsed
 
   def year_links(self, root, base_url):
     links = []
@@ -167,6 +226,9 @@ class SFADBParser(AwardParserBase):
 
   def assign_year_positions(self, rows, year):
     return assign_positions(rows, year, tied_winners_share_position=True)
+
+  def unit_is_settled(self, _html, entries, _category, _aliases):
+    return not entries or any(entry.get('result') == 'winner' for entry in entries)
 
   def result_section_rows(self, root):
     """Read result-labelled sections; text fallback is for pages without blocks."""

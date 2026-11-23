@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 10,
-    "last_entry_key": "sheerwater|leah swann",
-    "last_position": "2021",
+    "entry_count": 58,
+    "last_entry_key": "what i would do to you|georgia harper",
+    "last_position": "2025",
     "source_revision": null
   },
   "entries": [
@@ -26,12 +26,7 @@
       "category": "Debut Fiction",
       "position": "2013",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Mad_Men,_Bad_Girls_and_the_Guerilla_Knitters_Institute"
-      },
-      "title": "Mad Men, Bad Girls and the Guerilla Knitters Institute"
+      "title": "Mad men, bad girls and the Guerilla Knitters Institute"
     },
     {
       "authors": [
@@ -42,12 +37,18 @@
       "category": "Debut Fiction",
       "position": "2014",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Burial_Rites"
-      },
       "title": "Burial Rites"
+    },
+    {
+      "authors": [
+        "Livia Day"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2014",
+      "category": "Debut Fiction",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "A Trifle Dead"
     },
     {
       "authors": [
@@ -62,19 +63,58 @@
     },
     {
       "authors": [
-        "Emma Viskic"
+        "Candice Fox"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2015",
+      "category": "Debut Fiction",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Hades"
+    },
+    {
+      "authors": [
+        "Anna George"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2015",
+      "category": "Debut Fiction",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "What came before"
+    },
+    {
+      "authors": [
+        "Rebecca Jessen"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2015",
+      "category": "Debut Fiction",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Gap"
+    },
+    {
+      "authors": [
+        "Sandi Wallace"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2015",
+      "category": "Debut Fiction",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "Tell Me Why"
+    },
+    {
+      "authors": [
+        "Fleur Ferris"
       ],
       "award": "Davitt Award",
       "award_year": "2016",
       "category": "Debut Fiction",
       "position": "2016",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Resurrection_Bay_(novel)"
-      },
-      "title": "Resurrection Bay"
+      "title": "Risk"
     },
     {
       "authors": [
@@ -89,6 +129,17 @@
     },
     {
       "authors": [
+        "Jane Harper"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2017",
+      "category": "Debut Fiction",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "The Dry"
+    },
+    {
+      "authors": [
         "Sarah Bailey"
       ],
       "award": "Davitt Award",
@@ -100,6 +151,50 @@
     },
     {
       "authors": [
+        "Megan Goldin"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2018",
+      "category": "Debut Fiction",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "The Girl in Kellers Way"
+    },
+    {
+      "authors": [
+        "Rebecca Johnson"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2018",
+      "category": "Debut Fiction",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Welcome to Willowvale"
+    },
+    {
+      "authors": [
+        "Sarah Schmidt"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2018",
+      "category": "Debut Fiction",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "See What I Have Done"
+    },
+    {
+      "authors": [
+        "Pip Smith"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2018",
+      "category": "Debut Fiction",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "Half Wild"
+    },
+    {
+      "authors": [
         "Bri Lee"
       ],
       "award": "Davitt Award",
@@ -107,11 +202,6 @@
       "category": "Debut Fiction",
       "position": "2019",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Eggshell_Skull"
-      },
       "title": "Eggshell Skull"
     },
     {
@@ -127,6 +217,94 @@
     },
     {
       "authors": [
+        "Melissa Ashley"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2020",
+      "category": "Debut Fiction",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "The Bee and the Orange Tree"
+    },
+    {
+      "authors": [
+        "Natalie Conyer"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2020",
+      "category": "Debut Fiction",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Present Tense: A Schalk Lourens Mystery"
+    },
+    {
+      "authors": [
+        "Adele Ferguson"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2020",
+      "category": "Debut Fiction",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "Banking Bad: How Corporate Greed and Broken Governance Failed Australia"
+    },
+    {
+      "authors": [
+        "Ginger Gorman"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2020",
+      "category": "Debut Fiction",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "Troll Hunting: Inside the World of Online Hate and its Human Fallout"
+    },
+    {
+      "authors": [
+        "Petronella McGovern"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2020",
+      "category": "Debut Fiction",
+      "position": "2020.05",
+      "result": "nominee",
+      "title": "Six Minutes"
+    },
+    {
+      "authors": [
+        "Leah Purcell"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2020",
+      "category": "Debut Fiction",
+      "position": "2020.06",
+      "result": "nominee",
+      "title": "The Drover's Wife"
+    },
+    {
+      "authors": [
+        "Carmel Reilly"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2020",
+      "category": "Debut Fiction",
+      "position": "2020.07",
+      "result": "nominee",
+      "title": "Life Before"
+    },
+    {
+      "authors": [
+        "Astrid Scholte"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2020",
+      "category": "Debut Fiction",
+      "position": "2020.08",
+      "result": "nominee",
+      "title": "Four Dead Queens"
+    },
+    {
+      "authors": [
         "Leah Swann"
       ],
       "award": "Davitt Award",
@@ -135,20 +313,349 @@
       "position": "2021",
       "result": "winner",
       "title": "Sheerwater"
+    },
+    {
+      "authors": [
+        "Sonya Bates"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Debut Fiction",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Inheritance of Secrets"
+    },
+    {
+      "authors": [
+        "Davina Bell"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Debut Fiction",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "The End of the World Is Bigger than Love"
+    },
+    {
+      "authors": [
+        "Melissa Davey"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Debut Fiction",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "The Case of George Pell: Reckoning With Child Sexual Abuse By Clergy"
+    },
+    {
+      "authors": [
+        "Anna Downes"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Debut Fiction",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "The Safe Place"
+    },
+    {
+      "authors": [
+        "Karina Kilmore"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Debut Fiction",
+      "position": "2021.05",
+      "result": "nominee",
+      "title": "Where the Truth Lies"
+    },
+    {
+      "authors": [
+        "Amelia Mellor"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Debut Fiction",
+      "position": "2021.06",
+      "result": "nominee",
+      "title": "The Grandest Bookshop in the World"
+    },
+    {
+      "authors": [
+        "Kate Mildenhall"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Debut Fiction",
+      "position": "2021.07",
+      "result": "nominee",
+      "title": "The Mother Fault"
+    },
+    {
+      "authors": [
+        "Julianne Negri"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Debut Fiction",
+      "position": "2021.08",
+      "result": "nominee",
+      "title": "The Secret Library of Hummingbird House"
+    },
+    {
+      "authors": [
+        "Lian Tanner"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Debut Fiction",
+      "position": "2021.09",
+      "result": "nominee",
+      "title": "A Clue for Clara"
+    },
+    {
+      "authors": [
+        "Lisa Walker"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Debut Fiction",
+      "position": "2021.10",
+      "result": "nominee",
+      "title": "The Girl with the Gold Bikini"
+    },
+    {
+      "authors": [
+        "Pip Williams"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2021",
+      "category": "Debut Fiction",
+      "position": "2021.11",
+      "result": "nominee",
+      "title": "The Dictionary of Lost Words"
+    },
+    {
+      "authors": [
+        "Jacqueline Bublitz"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Debut Fiction",
+      "position": "2022",
+      "result": "winner",
+      "title": "Before You Knew My Name"
+    },
+    {
+      "authors": [
+        "Suzanne Frankham"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Debut Fiction",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Shadow Over Edmund Street"
+    },
+    {
+      "authors": [
+        "Caroline Graham"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Debut Fiction",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Larrimah"
+    },
+    {
+      "authors": [
+        "Lily Malone"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Debut Fiction",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "The Waterhole"
+    },
+    {
+      "authors": [
+        "Clare Moleta"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Debut Fiction",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Unsheltered"
+    },
+    {
+      "authors": [
+        "Debra Oswald"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Debut Fiction",
+      "position": "2022.05",
+      "result": "nominee",
+      "title": "The Family Doctor"
+    },
+    {
+      "authors": [
+        "Loraine Peck"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Debut Fiction",
+      "position": "2022.06",
+      "result": "nominee",
+      "title": "The Second Son"
+    },
+    {
+      "authors": [
+        "Allie Reynolds"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Debut Fiction",
+      "position": "2022.07",
+      "result": "nominee",
+      "title": "Shiver"
+    },
+    {
+      "authors": [
+        "Dime Sheppard"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Debut Fiction",
+      "position": "2022.08",
+      "result": "nominee",
+      "title": "Crime Writer"
+    },
+    {
+      "authors": [
+        "Krystal Sutherland"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Debut Fiction",
+      "position": "2022.09",
+      "result": "nominee",
+      "title": "House of Hollow"
+    },
+    {
+      "authors": [
+        "Lyn Yeowart"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2022",
+      "category": "Debut Fiction",
+      "position": "2022.10",
+      "result": "nominee",
+      "title": "The Silent Listener"
+    },
+    {
+      "authors": [
+        "Hayley Scrivenor"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2023",
+      "category": "Debut Fiction",
+      "position": "2023",
+      "result": "winner",
+      "title": "Dirt Town"
+    },
+    {
+      "authors": [
+        "Maryrose Cuskelly"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2023",
+      "category": "Debut Fiction",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "The Cane"
+    },
+    {
+      "authors": [
+        "Tracey Lien"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2023",
+      "category": "Debut Fiction",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "All That's Left Unsaid"
+    },
+    {
+      "authors": [
+        "Dinuka McKenzie"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2023",
+      "category": "Debut Fiction",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "The Torrent"
+    },
+    {
+      "authors": [
+        "Vikki Petraitis"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2023",
+      "category": "Debut Fiction",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "The Unbelieved"
+    },
+    {
+      "authors": [
+        "Emma Styles"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2023",
+      "category": "Debut Fiction",
+      "position": "2023.05",
+      "result": "nominee",
+      "title": "No Country for Girls"
+    },
+    {
+      "authors": [
+        "Christine Keighery"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2024",
+      "category": "Debut Fiction",
+      "position": "2024",
+      "result": "winner",
+      "title": "The Half Brother"
+    },
+    {
+      "authors": [
+        "Georgia Harper"
+      ],
+      "award": "Davitt Award",
+      "award_year": "2025",
+      "category": "Debut Fiction",
+      "position": "2025",
+      "result": "winner",
+      "title": "What I Would Do to You"
     }
   ],
-  "fetched_at": "2026-07-16T16:08:03Z",
+  "fetched_at": "2026-11-16T06:41:29Z",
   "list_id": "davitt_award_debut_novel",
   "list_name": "Davitt Award - Debut Novel",
   "match_series": false,
-  "notes": [
-    "LibraryThing failed: HTTP Error 403: Forbidden"
-  ],
+  "notes": [],
   "parser": "davitt_award_debut_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Davitt Award - Debut Novel",
     "source_id": "davitt_award_debut_novel",
-    "url": "https://en.wikipedia.org/wiki/Davitt_Award"
+    "url": "https://www.librarything.com/award/2525/Davitt-Award"
   }
 }

@@ -2270,7 +2270,8 @@
     },
     {
       "authors": [
-        "Neal Stephenson"
+        "Neal Stephenson",
+        "Nicole Galland"
       ],
       "award": "Goodreads Choice Awards",
       "award_year": "2017",
@@ -2780,7 +2781,8 @@
     },
     {
       "authors": [
-        "Amal El-Mohtar"
+        "Amal El-Mohtar",
+        "Max Gladstone"
       ],
       "award": "Goodreads Choice Awards",
       "award_year": "2019",
@@ -5108,14 +5110,15 @@
       "votes": "2087"
     }
   ],
-  "fetched_at": "2026-07-18T02:04:24Z",
+  "fetched_at": "2026-07-28T04:29:22Z",
   "list_id": "goodreads_choice_awards_science_fiction",
   "list_name": "Goodreads Choice Awards - Science Fiction",
   "match_series": false,
   "notes": [
-    "Goodreads Choice Awards overview could not be fetched: https://www.goodreads.com/choiceawards/best-books-2026: HTTP Error 404: Not Found"
+    "Goodreads contributor enrichment could not check 19 newest-year rows; ballot credits were retained."
   ],
   "parser": "goodreads_choice_awards_science_fiction",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Goodreads Choice Awards - Science Fiction",

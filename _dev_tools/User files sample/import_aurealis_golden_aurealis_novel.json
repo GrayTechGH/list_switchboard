@@ -1,0 +1,87 @@
+{
+  "append_state": {
+    "entry_count": 4,
+    "last_entry_key": "the company of the dead|david kowalski",
+    "last_position": "2008",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Richard Harland"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2005",
+      "category": "Golden Aurealis - Novel",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2005"
+      },
+      "title": "The Black Crusade"
+    },
+    {
+      "authors": [
+        "Isobelle Carmody"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2006",
+      "category": "Golden Aurealis - Novel",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2006"
+      },
+      "title": "Alyzon Whitestarr"
+    },
+    {
+      "authors": [
+        "Will Elliott"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2007",
+      "category": "Golden Aurealis - Novel",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2007"
+      },
+      "title": "The Pilo Family Circus"
+    },
+    {
+      "authors": [
+        "David Kowalski"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2008",
+      "category": "Golden Aurealis - Novel",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2008"
+      },
+      "title": "The Company of the Dead"
+    }
+  ],
+  "fetched_at": "2026-11-15T01:28:50Z",
+  "list_id": "aurealis_golden_aurealis_novel",
+  "list_name": "Aurealis - Golden Aurealis Novel (discontinued)",
+  "match_series": false,
+  "notes": [],
+  "parser": "aurealis_golden_aurealis_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Aurealis - Golden Aurealis Novel (discontinued)",
+    "source_id": "aurealis_golden_aurealis_novel",
+    "url": "https://www.sfadb.com/Aurealis_Awards"
+  }
+}

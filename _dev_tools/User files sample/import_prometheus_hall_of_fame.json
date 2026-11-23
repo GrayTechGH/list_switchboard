@@ -1,0 +1,1005 @@
+{
+  "append_state": {
+    "entry_count": 61,
+    "last_entry_key": "that hideous strength|c s lewis",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Ayn Rand"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1983",
+      "category": "Hall of Fame",
+      "position": "1983",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1983"
+      },
+      "title": "Atlas Shrugged"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1983",
+      "category": "Hall of Fame",
+      "position": "1983",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1983"
+      },
+      "title": "The Moon Is a Harsh Mistress"
+    },
+    {
+      "authors": [
+        "Ray Bradbury"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1984",
+      "category": "Hall of Fame",
+      "position": "1984",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1984"
+      },
+      "title": "Fahrenheit 451"
+    },
+    {
+      "authors": [
+        "George Orwell"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1984",
+      "category": "Hall of Fame",
+      "position": "1984",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1984"
+      },
+      "title": "Nineteen Eighty-Four"
+    },
+    {
+      "authors": [
+        "Eric Frank Russell"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1985",
+      "category": "Hall of Fame",
+      "position": "1985",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1985"
+      },
+      "title": "The Great Explosion"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1985",
+      "category": "Hall of Fame",
+      "position": "1985",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1985"
+      },
+      "title": "Trader to the Stars"
+    },
+    {
+      "authors": [
+        "Robert Shea",
+        "Robert Anton Wilson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1986",
+      "category": "Hall of Fame",
+      "position": "1986",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1986"
+      },
+      "title": "The Illuminatus Trilogy"
+    },
+    {
+      "authors": [
+        "C. M. Kornbluth"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1986",
+      "category": "Hall of Fame",
+      "position": "1986",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1986"
+      },
+      "title": "The Syndic"
+    },
+    {
+      "authors": [
+        "Ayn Rand"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1987",
+      "category": "Hall of Fame",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1987"
+      },
+      "title": "Anthem"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1987",
+      "category": "Hall of Fame",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1987"
+      },
+      "title": "Stranger in a Strange Land"
+    },
+    {
+      "authors": [
+        "Alfred Bester"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1988",
+      "category": "Hall of Fame",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1988"
+      },
+      "title": "The Stars My Destination"
+    },
+    {
+      "authors": [
+        "J. Neil Schulman"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1989",
+      "category": "Hall of Fame",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1989"
+      },
+      "title": "Alongside Night"
+    },
+    {
+      "authors": [
+        "Ayn Rand"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1989",
+      "category": "Hall of Fame",
+      "position": "1989.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1989"
+      },
+      "title": "We the Living"
+    },
+    {
+      "authors": [
+        "F. Paul Wilson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1990",
+      "category": "Hall of Fame",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1990"
+      },
+      "title": "Healer"
+    },
+    {
+      "authors": [
+        "Ken Kesey"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1990",
+      "category": "Hall of Fame",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1990"
+      },
+      "title": "One Flew Over the Cuckoo's Nest"
+    },
+    {
+      "authors": [
+        "F. Paul Wilson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1991",
+      "category": "Hall of Fame",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1991"
+      },
+      "title": "An Enemy of the State"
+    },
+    {
+      "authors": [
+        "Ira Levin"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1992",
+      "category": "Hall of Fame",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1992"
+      },
+      "title": "This Perfect Day"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1993",
+      "category": "Hall of Fame",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1993"
+      },
+      "title": "The Dispossessed"
+    },
+    {
+      "authors": [
+        "Yevgeny Zamyatin"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1994",
+      "category": "Hall of Fame",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1994"
+      },
+      "title": "We"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1995",
+      "category": "Hall of Fame",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1995"
+      },
+      "title": "The Star Fox"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1996",
+      "category": "Hall of Fame",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1996"
+      },
+      "title": "Red Planet"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1997",
+      "category": "Hall of Fame",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1997"
+      },
+      "title": "Methuselah's Children"
+    },
+    {
+      "authors": [
+        "H. Beam Piper"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1997",
+      "category": "Hall of Fame",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1997"
+      },
+      "title": "Little Fuzzy"
+    },
+    {
+      "authors": [
+        "Larry Niven",
+        "Jerry Pournelle"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1997",
+      "category": "Hall of Fame",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1997"
+      },
+      "title": "Oath of Fealty"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1998",
+      "category": "Hall of Fame",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1998"
+      },
+      "title": "Time Enough for Love"
+    },
+    {
+      "authors": [
+        "Eric Frank Russell"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1998",
+      "category": "Hall of Fame",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1998"
+      },
+      "title": "Wasp"
+    },
+    {
+      "authors": [
+        "H. Beam Piper",
+        "John J. McGuire"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "1999",
+      "category": "Hall of Fame",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_1999"
+      },
+      "title": "A Planet for Texans"
+    },
+    {
+      "authors": [
+        "James P. Hogan"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2000",
+      "category": "Hall of Fame",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2000"
+      },
+      "title": "The Mirror Maze"
+    },
+    {
+      "authors": [
+        "Jerry Pournelle",
+        "John F. Carr"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2001",
+      "category": "Hall of Fame",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2001"
+      },
+      "title": "The Survival of Freedom"
+    },
+    {
+      "authors": [
+        "Melinda Snodgrass"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2001",
+      "category": "Hall of Fame",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2001"
+      },
+      "title": "Star Trek: The Next Generation : \u201cThe Measure of a Man"
+    },
+    {
+      "authors": [
+        "L. Neil Smith"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2001",
+      "category": "Hall of Fame",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2001"
+      },
+      "title": "The Wardove"
+    },
+    {
+      "authors": [
+        "writer and producer"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2002",
+      "category": "Hall of Fame",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2002"
+      },
+      "title": "The Prisoner , Patrick McGoohan"
+    },
+    {
+      "authors": [
+        "T. H. White"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2004",
+      "category": "Hall of Fame",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2004"
+      },
+      "title": "The Book of Merlyn"
+    },
+    {
+      "authors": [
+        "A. E. van Vogt"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2005",
+      "category": "Hall of Fame",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2005"
+      },
+      "title": "The Weapon Shops of Isher"
+    },
+    {
+      "authors": [
+        "Alan Moore",
+        "David Lloyd"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2006",
+      "category": "Hall of Fame",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2006"
+      },
+      "title": "V for Vendetta"
+    },
+    {
+      "authors": [
+        "Sinclair Lewis"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2007",
+      "category": "Hall of Fame",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2007"
+      },
+      "title": "It Can't Happen Here"
+    },
+    {
+      "authors": [
+        "Anthony Burgess"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2008",
+      "category": "Hall of Fame",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2008"
+      },
+      "title": "A Clockwork Orange"
+    },
+    {
+      "authors": [
+        "J. R. R. Tolkien"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2009",
+      "category": "Hall of Fame",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2009"
+      },
+      "title": "The Lord of the Rings"
+    },
+    {
+      "authors": [
+        "John C. Wright"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2009",
+      "category": "Hall of Fame",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2009"
+      },
+      "title": "The Golden Age"
+    },
+    {
+      "authors": [
+        "T. H. White"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2009",
+      "category": "Hall of Fame",
+      "position": "2009.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2009"
+      },
+      "title": "The Once and Future King"
+    },
+    {
+      "authors": [
+        "George Orwell"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2011",
+      "category": "Hall of Fame",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2011"
+      },
+      "title": "Animal Farm"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2013",
+      "category": "Hall of Fame",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2013"
+      },
+      "title": "Cryptonomicon"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2014",
+      "category": "Hall of Fame",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2014"
+      },
+      "title": "Falling Free"
+    },
+    {
+      "authors": [
+        "Donald Kingsbury"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2016",
+      "category": "Hall of Fame",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2016"
+      },
+      "title": "Courtship Rite"
+    },
+    {
+      "authors": [
+        "Lee Correy"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2016",
+      "category": "Hall of Fame",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2016"
+      },
+      "title": "Manna"
+    },
+    {
+      "authors": [
+        "Edgar Pangborn"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2016",
+      "category": "Hall of Fame",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2016"
+      },
+      "title": "A Mirror for Observers"
+    },
+    {
+      "authors": [
+        "Eric Kotani",
+        "John Maddox Roberts"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2018",
+      "category": "Hall of Fame",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2018"
+      },
+      "title": "The Island Worlds"
+    },
+    {
+      "authors": [
+        "Robert Anton Wilson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2019",
+      "category": "Hall of Fame",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2019"
+      },
+      "title": "Schr\u00f6dinger's Cat: The Universe Next Door"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2020",
+      "category": "Hall of Fame",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2020"
+      },
+      "title": "A Time of Changes"
+    },
+    {
+      "authors": [
+        "Jack Vance"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2021",
+      "category": "Hall of Fame",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2021"
+      },
+      "title": "Emphyrio"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2021",
+      "category": "Hall of Fame",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2021"
+      },
+      "title": "The Winter of the World"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2022",
+      "category": "Hall of Fame",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2022"
+      },
+      "title": "Citizen of the Galaxy"
+    },
+    {
+      "authors": [
+        "Barry B. Longyear"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2023",
+      "category": "Hall of Fame",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2023"
+      },
+      "title": "Circus World"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2024",
+      "category": "Hall of Fame",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2024"
+      },
+      "title": "The Truth"
+    },
+    {
+      "authors": [
+        "Harry Turtledove"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2024",
+      "category": "Hall of Fame",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2024"
+      },
+      "title": "Between the Rivers"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2025",
+      "category": "Hall of Fame",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2025"
+      },
+      "title": "Orion Shall Rise"
+    },
+    {
+      "authors": [
+        "Aldous Huxley"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2026",
+      "category": "Hall of Fame",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2026"
+      },
+      "title": "Brave New World"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2026",
+      "category": "Hall of Fame",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2026"
+      },
+      "title": "Salt"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2026",
+      "category": "Hall of Fame",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2026"
+      },
+      "title": "Singularity Sky"
+    },
+    {
+      "authors": [
+        "James Blish"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2026",
+      "category": "Hall of Fame",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2026"
+      },
+      "title": "The Star Dwellers"
+    },
+    {
+      "authors": [
+        "C. S. Lewis"
+      ],
+      "award": "Prometheus Award",
+      "award_year": "2026",
+      "category": "Hall of Fame",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Prometheus_Awards_2026"
+      },
+      "title": "That Hideous Strength"
+    }
+  ],
+  "fetched_at": "2026-07-23T21:35:43Z",
+  "list_id": "prometheus_hall_of_fame",
+  "list_name": "Prometheus - Hall of Fame",
+  "match_series": false,
+  "notes": [],
+  "parser": "prometheus_hall_of_fame",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Prometheus - Hall of Fame",
+    "source_id": "prometheus_hall_of_fame",
+    "url": "https://www.sfadb.com/Prometheus_Awards"
+  }
+}

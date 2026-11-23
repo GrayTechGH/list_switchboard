@@ -37,7 +37,7 @@ class UrlFetcherMythopoeic(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
     return MythopoeicParser()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -46,7 +46,9 @@ class UrlFetcherMythopoeic(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
       self.CATEGORY_ALIASES,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False),
+      enable_incremental=self.ENABLE_SFADB_INCREMENTAL)
 
 
 class UrlFetcherMythopoeicFantasy(UrlFetcherMythopoeic):
@@ -58,6 +60,8 @@ class UrlFetcherMythopoeicFantasy(UrlFetcherMythopoeic):
 
 
 class UrlFetcherMythopoeicAdultLiterature(UrlFetcherMythopoeic):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'mythopoeic_adult_literature'
   NAME = 'Mythopoeic - Adult Literature'
   FILTER_CATEGORIES = (CATEGORY_FANTASY,)
@@ -66,6 +70,8 @@ class UrlFetcherMythopoeicAdultLiterature(UrlFetcherMythopoeic):
 
 
 class UrlFetcherMythopoeicYoungAdultLiterature(UrlFetcherMythopoeic):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'mythopoeic_young_adult_literature'
   NAME = 'Mythopoeic - Young Adult Literature'
   FILTER_CATEGORIES = YOUNG_READER_FANTASY_CATEGORIES
@@ -74,6 +80,8 @@ class UrlFetcherMythopoeicYoungAdultLiterature(UrlFetcherMythopoeic):
 
 
 class UrlFetcherMythopoeicChildrensLiterature(UrlFetcherMythopoeic):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'mythopoeic_childrens_literature'
   NAME = "Mythopoeic - Children's Literature"
   FILTER_CATEGORIES = YOUNG_READER_FANTASY_CATEGORIES

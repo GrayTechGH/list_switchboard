@@ -1,0 +1,706 @@
+{
+  "append_state": {
+    "entry_count": 42,
+    "last_entry_key": "teleportasm|joshua millican",
+    "last_position": "2024.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Lisa Mannetti"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Novella",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-the-winners/"
+      },
+      "title": "The Box Jumper"
+    },
+    {
+      "authors": [
+        "Andrew David Barker"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Novella",
+      "position": "2015.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-the-winners/"
+      },
+      "title": "Dead Leaves"
+    },
+    {
+      "authors": [
+        "Mark Morris"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Novella",
+      "position": "2015.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-vote-now/"
+      },
+      "title": "Albion Fay"
+    },
+    {
+      "authors": [
+        "Tim Major"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Novella",
+      "position": "2015.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-vote-now/"
+      },
+      "title": "Carus & Mitch"
+    },
+    {
+      "authors": [
+        "Stephen Volk"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Novella",
+      "position": "2015.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-vote-now/"
+      },
+      "title": "Leytonstone"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Novella",
+      "position": "2015.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-vote-now/"
+      },
+      "title": "Of Sorrow and Such"
+    },
+    {
+      "authors": [
+        "Victor LaValle"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Novella",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-the-winners/"
+      },
+      "title": "The Ballad of Black Tom"
+    },
+    {
+      "authors": [
+        "Laird Barron"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Novella",
+      "position": "2016.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-the-winners/"
+      },
+      "title": "X's For Eyes"
+    },
+    {
+      "authors": [
+        "Mercedes M. Yardley",
+        "John Boden"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Novella",
+      "position": "2016.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-vote-now/"
+      },
+      "title": "Detritus in Love"
+    },
+    {
+      "authors": [
+        "Cassandra Khaw"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Novella",
+      "position": "2016.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-vote-now/"
+      },
+      "title": "Hammers on Bone"
+    },
+    {
+      "authors": [
+        "Scott Nicolay"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Novella",
+      "position": "2016.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-vote-now/"
+      },
+      "title": "Noctuidae"
+    },
+    {
+      "authors": [
+        "Brian Evenson"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Novella",
+      "position": "2016.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-vote-now/"
+      },
+      "title": "The Warren"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Novella",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-the-winners/"
+      },
+      "title": "Mapping The Interior"
+    },
+    {
+      "authors": [
+        "Caitlin R. Kiernan"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Novella",
+      "position": "2017.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-the-winners/"
+      },
+      "title": "Agents of Dreamland"
+    },
+    {
+      "authors": [
+        "Jeremy Robert Johnson"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Novella",
+      "position": "2017.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-vote-now/"
+      },
+      "title": "In the River"
+    },
+    {
+      "authors": [
+        "Jasper Bark"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Novella",
+      "position": "2017.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-vote-now/"
+      },
+      "title": "Quiet Places"
+    },
+    {
+      "authors": [
+        "Tade Thompson"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Novella",
+      "position": "2017.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-vote-now/"
+      },
+      "title": "The Murders of Molly Southbourne"
+    },
+    {
+      "authors": [
+        "Betty Rocksteady"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Novella",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-the-winners/"
+      },
+      "title": "The Writhing Skies"
+    },
+    {
+      "authors": [
+        "Nicholas Day"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Novella",
+      "position": "2018.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-the-winners/"
+      },
+      "title": "At The End of the Day I Burst Into Flames"
+    },
+    {
+      "authors": [
+        "Rich Hawkins"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Novella",
+      "position": "2018.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-vote-now/"
+      },
+      "title": "Maniac Gods"
+    },
+    {
+      "authors": [
+        "John Boden",
+        "Chad Lutzke"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Novella",
+      "position": "2018.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-vote-now/"
+      },
+      "title": "Out Behind the Barn"
+    },
+    {
+      "authors": [
+        "Jeremy C. Shipp"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Novella",
+      "position": "2018.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-vote-now/"
+      },
+      "title": "The Atrocities"
+    },
+    {
+      "authors": [
+        "Chad Lutzke"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Novella",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2019-the-winners/"
+      },
+      "title": "The Pale White"
+    },
+    {
+      "authors": [
+        "Nicole Cushing"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Novella",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2019-the-winners/"
+      },
+      "title": "The Half-Freaks"
+    },
+    {
+      "authors": [
+        "Gemma Amor"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Novella",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2019-vote-now/"
+      },
+      "title": "Dear Laura"
+    },
+    {
+      "authors": [
+        "James Newman",
+        "Mark Steensland"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Novella",
+      "position": "2019.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2019-vote-now/"
+      },
+      "title": "In The Scrape"
+    },
+    {
+      "authors": [
+        "Priya Sharma"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Novella",
+      "position": "2019.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2019-vote-now/"
+      },
+      "title": "Ormeshadow"
+    },
+    {
+      "authors": [
+        "Laurel Hightower"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Novella",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2020-the-winners/"
+      },
+      "title": "Crossroads"
+    },
+    {
+      "authors": [
+        "P. Dj\u00e8l\u00ed Clark"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Novella",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2020-the-winners/"
+      },
+      "title": "Ring Shout"
+    },
+    {
+      "authors": [
+        "Hailey Piper"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Novella",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2020-vote-now/"
+      },
+      "title": "The Worm and His Kings"
+    },
+    {
+      "authors": [
+        "Samantha Kolesnik"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Novella",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2020-vote-now/"
+      },
+      "title": "True Crime"
+    },
+    {
+      "authors": [
+        "Max Booth III"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Novella",
+      "position": "2020.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2020-vote-now/"
+      },
+      "title": "We Need to Do Something"
+    },
+    {
+      "authors": [
+        "Eric LaRocca"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2021-the-winners/"
+      },
+      "title": "Things Have Gotten Worse Since We Last Spoke"
+    },
+    {
+      "authors": [
+        "Cassandra Khaw"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2021-the-winners/"
+      },
+      "title": "Nothing But Blackened Teeth"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2021-vote-now/"
+      },
+      "title": "Comfort Me with Apples"
+    },
+    {
+      "authors": [
+        "V. Castro"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2021-vote-now/"
+      },
+      "title": "Goddess of Filth"
+    },
+    {
+      "authors": [
+        "Samantha Kolesnik"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2021-vote-now/"
+      },
+      "title": "Waif"
+    },
+    {
+      "authors": [
+        "Clay McLeod Chapman"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2024",
+      "category": "Novella",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2024-the-winners/"
+      },
+      "title": "Kill Your Darling"
+    },
+    {
+      "authors": [
+        "Sofia Ajram"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2024",
+      "category": "Novella",
+      "position": "2024.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2024-the-winners/"
+      },
+      "title": "Coup de Gr\u00e2ce"
+    },
+    {
+      "authors": [
+        "Nathan Ballingrud"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2024",
+      "category": "Novella",
+      "position": "2024.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2024-vote-now/"
+      },
+      "title": "Crypt of the Moon Spider"
+    },
+    {
+      "authors": [
+        "Nat Cassidy"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2024",
+      "category": "Novella",
+      "position": "2024.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2024-vote-now/"
+      },
+      "title": "Rest Stop"
+    },
+    {
+      "authors": [
+        "Joshua Millican"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2024",
+      "category": "Novella",
+      "position": "2024.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2024-vote-now/"
+      },
+      "title": "Teleportasm"
+    }
+  ],
+  "fetched_at": "2026-11-14T11:44:05Z",
+  "list_id": "this_is_horror_novella",
+  "list_name": "This Is Horror - Novella",
+  "match_series": false,
+  "notes": [
+    "Official ballot order is retained after winner and runner-up promotion.",
+    "The 2022 and 2023 cycles are explicit empty gaps pending official Legacy Awards shortlists or results.",
+    "No completed official 2025 ballot or result page is available.",
+    "Official This Is Horror ballot pages provide the complete historical nominee set for each available award cycle.",
+    "Official This Is Horror result pages identify the winner and runner-up within each complete official ballot.",
+    "Goodreads is checked as a paginated diagnostic supplement; official This Is Horror ballots remain authoritative.",
+    "Goodreads overlaps were excluded in favor of official ballot rows."
+  ],
+  "parser": "this_is_horror_novella",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "This Is Horror - Novella",
+    "source_id": "this_is_horror_novella",
+    "url": "https://www.thisishorror.co.uk/awards/"
+  }
+}

@@ -11,11 +11,11 @@ from calibre.gui2 import error_dialog
 from calibre.utils.config import JSONConfig
 
 try:
-  from calibre_plugins.list_switchboard.camoufox_transport import (
+  from calibre_plugins.list_switchboard.transport.camoufox import (
     MINIMUM_CAMOUFOX_VERSION, browser_fallback_level, calibre_version_tuple,
   )
 except ImportError:
-  from camoufox_transport import (
+  from transport.camoufox import (
     MINIMUM_CAMOUFOX_VERSION, browser_fallback_level, calibre_version_tuple,
   )
 

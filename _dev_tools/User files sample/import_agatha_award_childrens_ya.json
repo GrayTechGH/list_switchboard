@@ -832,12 +832,13 @@
       "title": "Risky Pursuit"
     }
   ],
-  "fetched_at": "2026-07-18T02:41:00Z",
+  "fetched_at": "2026-11-16T00:57:08Z",
   "list_id": "agatha_award_childrens_ya",
   "list_name": "Agatha Award - Children's/YA",
   "match_series": false,
   "notes": [],
   "parser": "agatha_award_childrens_ya",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Agatha Award - Children's/YA",

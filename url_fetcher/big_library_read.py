@@ -6,9 +6,9 @@
 from urllib.parse import urlparse
 
 try:
-  from calibre_plugins.list_switchboard.http_policy import random_user_agent
+  from calibre_plugins.list_switchboard.transport.http import random_user_agent
 except ImportError:
-  from http_policy import random_user_agent
+  from transport.http import random_user_agent
 
 
 try:
@@ -17,9 +17,9 @@ except ImportError:
   calibre_https_fetch = None
 
 try:
-  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
-  from errors import ImportCancelledError
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 from .generic import CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS, UrlFetcherGeneric
 
@@ -33,14 +33,14 @@ class PackagedHistoryFallbackMixin:
   def fetch_and_parse(self, *args, **kwargs):
     try:
       return super().fetch_and_parse(*args, **kwargs)
-    except ImportCancelledError:
+    except (ImportCancelledError,CamoufoxRequiredError):
       raise
     except Exception as err:
       recover_remote = getattr(self, 'recover_remote', None)
       if callable(recover_remote):
         try:
           return recover_remote(args, kwargs, err)
-        except ImportCancelledError:
+        except (ImportCancelledError,CamoufoxRequiredError):
           raise
         except Exception as recovery_err:
           err = recovery_err
@@ -86,6 +86,7 @@ class UrlFetcherLibbyReadsGlobal(PackagedHistoryFallbackMixin, UrlFetcherGeneric
   URL = 'https://www.libbylife.com/libby-reads'
   RESPONSE_MAX_BYTES = 10 * 1024 * 1024
   order = 56
+  SUPPORTS_INCREMENTAL_UPDATE = True
   FILTER_CATEGORIES = (CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,)
   options = {'match_series': False}
 
@@ -99,6 +100,8 @@ class UrlFetcherLibbyReadsGlobal(PackagedHistoryFallbackMixin, UrlFetcherGeneric
   def fetch_url(self, fetch_url, url):
     try:
       return super().fetch_url(fetch_url, url)
+    except (ImportCancelledError,CamoufoxRequiredError):
+      raise
     except Exception:
       host = (urlparse(url).hostname or '').casefold()
       if calibre_https_fetch is None or not (
@@ -120,6 +123,7 @@ class UrlFetcherLibbyReadsGlobal(PackagedHistoryFallbackMixin, UrlFetcherGeneric
         return payload.decode('utf-8', 'replace')
       return str(payload or '')
 
-  def parse(self, html, fetch_url=None, **_kwargs):
+  def parse(self, html, fetch_url=None, cached_parsed=None, incremental_update=False, **_kwargs):
     return self.parser().parse(
-      html, self.URL, self.NAME, fetch_url=fetch_url)
+      html, self.URL, self.NAME, fetch_url=fetch_url,
+      cached_parsed=cached_parsed,incremental_update=incremental_update)

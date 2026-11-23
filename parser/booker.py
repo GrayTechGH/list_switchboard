@@ -18,6 +18,11 @@ from urllib.parse import urljoin
 from lxml import html as lxml_html
 
 try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
+except ImportError:
+  from errors import ImportCancelledError, CamoufoxRequiredError
+
+try:
   from calibre_plugins.list_switchboard.parser.award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
@@ -80,8 +85,8 @@ class BookerPrizeOfficialParser(AwardParserBase):
   Parse one official Booker Library prize-year page.
 
   Invariants:
-  - Stage selection comes from the nearest preceding Winner/Shortlist/Longlist
-    heading, not from page-wide text.
+  - Modern results use labelled shortlist cards and year-specific winner
+    features. Legacy stages use the nearest preceding result heading.
   - Linked detail pages are optional cleanup only; year/result come from the
     prize-year page context.
   """
@@ -105,6 +110,13 @@ class BookerPrizeOfficialParser(AwardParserBase):
       notes=notes)
 
   def parse_rows(self, html, base_url, category, fetch_url, notes):
+    try:
+      from calibre_plugins.list_switchboard.parser.booker_modern import modern_rows
+    except ImportError:
+      from .booker_modern import modern_rows
+    modern = modern_rows(self, html, base_url, category, fetch_url, notes)
+    if modern is not None:
+      return modern
     root = self.html_root(html)
     year = self.year_from_url(base_url) or self.year_from_text(self.node_text(root))
     if year is None:
@@ -121,6 +133,8 @@ class BookerPrizeOfficialParser(AwardParserBase):
         try:
           detail_title, detail_author = self.title_author_from_detail(
             fetch_url(source_url))
+        except (ImportCancelledError, CamoufoxRequiredError):
+          raise
         except Exception as err:
           notes.append(
             'Official Booker detail page failed for %s: %s' % (
@@ -241,6 +255,16 @@ class BookerPrizeOfficialParser(AwardParserBase):
     return ''
 
   def title_author_from_detail(self, html):
+    try:
+      from calibre_plugins.list_switchboard.parser.booker_modern import soup_for, author_credit
+    except ImportError:
+      from .booker_modern import soup_for, author_credit
+    main = soup_for(html).find('main')
+    if main is not None:
+      heading = main.find('h1')
+      author = author_credit(main)
+      if heading and author:
+        return self.clean_title(heading.get_text(' ', strip=True)), self.clean_author(author)
     root = self.html_root(html)
     title_nodes = root.xpath('(//main//h1|//h1)[1]')
     title = self.node_text(title_nodes[0]) if title_nodes else ''

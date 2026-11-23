@@ -33,10 +33,12 @@ try:
   from calibre_plugins.list_switchboard.parser.base import (
     entry_source_object, imported_entry, parsed_source, ListParserBase)
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.sfadb_base import SFADBParser
 except ImportError:
   from .award_base import is_author_suffix, split_title_author
   from .base import entry_source_object, imported_entry, parsed_source, ListParserBase
   from .generic import position_sort_key
+  from .sfadb_base import SFADBParser
 
 
 LOCUS_AWARD = 'Locus Poll Award'
@@ -86,7 +88,14 @@ class LocusAnnualAwardsParser(ListParserBase):
   """
 
   def parse(self, overview_html, base_url, name, category, category_aliases,
-            fetch_url=None, log=None, progress=None):
+            fetch_url=None, log=None, progress=None, cached_parsed=None,
+            incremental_update=False, enable_incremental=False):
+    if enable_incremental:
+      return _LocusAnnualYearReader(self, log).parse(
+        overview_html, base_url, name, category, category_aliases,
+        fetch_url=fetch_url, log=log, progress=progress,
+        cached_parsed=cached_parsed, incremental_update=incremental_update,
+        enable_incremental=True)
     soup = BeautifulSoup(overview_html, 'html.parser')
     year_links = _locus_year_links(soup, base_url)
     entries = []
@@ -121,6 +130,23 @@ class LocusAnnualAwardsParser(ListParserBase):
   def parse_year(self, html, source_url, year, category, category_aliases, log=None):
     return _parse_annual_year(
       html, source_url, year, category, category_aliases, log=log)
+
+
+class _LocusAnnualYearReader(SFADBParser):
+  """Reuse the year lifecycle without changing Locus ranked-row interpretation."""
+
+  AWARD_NAME = LOCUS_AWARD
+  YEAR_PAGE_URL = YEAR_PAGE_URL
+
+  def __init__(self, parser, log):
+    self.parser, self.log = parser, log
+
+  def parse_year(self, html, source_url, year, category, category_aliases):
+    return self.parser.parse_year(html, source_url, year, category, category_aliases,
+      log=self.log)
+
+  def _log(self, log, label, data):
+    _log(log, label, data)
 
 
 class LocusAllTimeAwardsParser(ListParserBase):

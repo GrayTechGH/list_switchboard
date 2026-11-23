@@ -2,7 +2,7 @@
   "append_state": {
     "entry_count": 132,
     "last_entry_key": "the mailman|andrew welsh huggins",
-    "last_position": "2026.06",
+    "last_position": "2026.05",
     "source_revision": null
   },
   "entries": [
@@ -1394,6 +1394,17 @@
     },
     {
       "authors": [
+        "Mark Greaney"
+      ],
+      "award": "Barry Award",
+      "award_year": "2026",
+      "category": "Best Thriller",
+      "position": "2026",
+      "result": "winner",
+      "title": "Midnight Black"
+    },
+    {
+      "authors": [
         "Steve Cavanagh"
       ],
       "award": "Barry Award",
@@ -1416,23 +1427,12 @@
     },
     {
       "authors": [
-        "Mark Greaney"
-      ],
-      "award": "Barry Award",
-      "award_year": "2026",
-      "category": "Best Thriller",
-      "position": "2026.03",
-      "result": "nominee",
-      "title": "Midnight Black"
-    },
-    {
-      "authors": [
         "Mick Herron"
       ],
       "award": "Barry Award",
       "award_year": "2026",
       "category": "Best Thriller",
-      "position": "2026.04",
+      "position": "2026.03",
       "result": "nominee",
       "title": "Clown Town"
     },
@@ -1443,7 +1443,7 @@
       "award": "Barry Award",
       "award_year": "2026",
       "category": "Best Thriller",
-      "position": "2026.05",
+      "position": "2026.04",
       "result": "nominee",
       "title": "Head Cases"
     },
@@ -1454,17 +1454,18 @@
       "award": "Barry Award",
       "award_year": "2026",
       "category": "Best Thriller",
-      "position": "2026.06",
+      "position": "2026.05",
       "result": "nominee",
       "title": "The Mailman"
     }
   ],
-  "fetched_at": "2026-07-18T02:37:21Z",
+  "fetched_at": "2026-11-16T04:58:13Z",
   "list_id": "barry_award_thriller",
   "list_name": "Barry Award - Thriller",
   "match_series": false,
   "notes": [],
   "parser": "barry_award_thriller",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Barry Award - Thriller",

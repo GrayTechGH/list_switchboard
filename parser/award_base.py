@@ -272,6 +272,46 @@ class AwardParserBase(ListParserBase):
   AWARD_NAME = ''
   MATCH_SERIES = False
 
+  def table_grid(self, table):
+    """Expand lxml table cells so inherited year/result columns stay aligned."""
+    grid = []
+    rowspans = {}
+    for tr in table.xpath('.//tr'):
+      row = []
+      column = 0
+      for cell in tr.xpath('./td|./th'):
+        while column in rowspans:
+          span_cell, remaining = rowspans[column]
+          row.append(span_cell)
+          if remaining <= 1:
+            del rowspans[column]
+          else:
+            rowspans[column] = (span_cell, remaining - 1)
+          column += 1
+        for _index in range(self.span_value(cell, 'colspan')):
+          row.append(cell)
+          rowspan = self.span_value(cell, 'rowspan')
+          if rowspan > 1:
+            rowspans[column] = (cell, rowspan - 1)
+          column += 1
+      while column in rowspans:
+        span_cell, remaining = rowspans[column]
+        row.append(span_cell)
+        if remaining <= 1:
+          del rowspans[column]
+        else:
+          rowspans[column] = (span_cell, remaining - 1)
+        column += 1
+      if row:
+        grid.append(row)
+    return grid
+
+  def span_value(self, cell, attribute):
+    try:
+      return max(1, int(cell.get(attribute) or 1))
+    except (TypeError, ValueError):
+      return 1
+
   def build_award_entry(self, row, source_url, year, category, award=None):
     metadata = dict(row)
     title = metadata.pop('title', '')

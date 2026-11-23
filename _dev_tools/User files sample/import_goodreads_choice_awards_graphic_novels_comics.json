@@ -1,0 +1,4090 @@
+{
+  "append_state": {
+    "entry_count": 239,
+    "last_entry_key": "thieves|lucie bryon",
+    "last_position": "2022.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Richelle Mead",
+        "Emma Vieceli"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Vampire Academy",
+      "votes": "4898"
+    },
+    {
+      "authors": [
+        "Joss Whedon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Buffy the Vampire Slayer",
+      "votes": "3529"
+    },
+    {
+      "authors": [
+        "Robert Kirkman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "The Walking Dead, Vol. 14",
+      "votes": "2646"
+    },
+    {
+      "authors": [
+        "Young Kim"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Twilight",
+      "votes": "2410"
+    },
+    {
+      "authors": [
+        "Kate Beaton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Hark! A Vagrant",
+      "votes": "1975"
+    },
+    {
+      "authors": [
+        "Matthew Inman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "5 Very Good Reasons to Punch a Dolphin in the Mouth and Other Useful Gui",
+      "votes": "1950"
+    },
+    {
+      "authors": [
+        "Joshua Hale Fialkov"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "The Dark-Hunters, Vol. 4",
+      "votes": "1770"
+    },
+    {
+      "authors": [
+        "Vera Brosgol"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Anya's Ghost",
+      "votes": "1574"
+    },
+    {
+      "authors": [
+        "Craig Thompson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Habibi",
+      "votes": "1081"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Locke & Key, Vol. 4",
+      "votes": "978"
+    },
+    {
+      "authors": [
+        "Kim Harrison"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Blood Work",
+      "votes": "549"
+    },
+    {
+      "authors": [
+        "Bill Willingham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Fables, Vol. 15",
+      "votes": "523"
+    },
+    {
+      "authors": [
+        "F\u00e1bio Moon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Daytripper",
+      "votes": "342"
+    },
+    {
+      "authors": [
+        "Mike Carey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "The Unwritten, Vol. 3",
+      "votes": "289"
+    },
+    {
+      "authors": [
+        "Gene Luen Yang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Level Up",
+      "votes": "256"
+    },
+    {
+      "authors": [
+        "Brian Michael Bendis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Deadly Storm",
+      "votes": "244"
+    },
+    {
+      "authors": [
+        "Kazu Kibuishi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "The Last Council",
+      "votes": "166"
+    },
+    {
+      "authors": [
+        "Daniel Clowes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Mister Wonderful",
+      "votes": "117"
+    },
+    {
+      "authors": [
+        "Jason Aaron"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Scalped, Vol. 7",
+      "votes": "72"
+    },
+    {
+      "authors": [
+        "Ryan Colucci"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Graphic Novels & Comics",
+      "position": "2011.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2011"
+      },
+      "title": "Harbor Moon",
+      "votes": "43"
+    },
+    {
+      "authors": [
+        "Robert Kirkman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "The Walking Dead, Vol. 16: A Larger World",
+      "votes": "8614"
+    },
+    {
+      "authors": [
+        "Gene Luen Yang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Avatar",
+      "votes": "6937"
+    },
+    {
+      "authors": [
+        "Leigh Dragoon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Frostbite",
+      "votes": "6464"
+    },
+    {
+      "authors": [
+        "Derek Ruiz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Hush, Hush",
+      "votes": "4517"
+    },
+    {
+      "authors": [
+        "Scott Snyder"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Batman, Volume 1",
+      "votes": "3246"
+    },
+    {
+      "authors": [
+        "Karen Marie Moning"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Fever Moon",
+      "votes": "3075"
+    },
+    {
+      "authors": [
+        "Alison Bechdel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Are You My Mother?",
+      "votes": "3025"
+    },
+    {
+      "authors": [
+        "Gail Carriger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Soulless",
+      "votes": "2588"
+    },
+    {
+      "authors": [
+        "Jessica Anthony"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Chopsticks",
+      "votes": "2525"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Locke & Key, Vol. 5",
+      "votes": "2166"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Saga, Volume 1",
+      "votes": "1023"
+    },
+    {
+      "authors": [
+        "Chris Ware"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Building Stories",
+      "votes": "886"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "The Infernal Devices",
+      "votes": "868"
+    },
+    {
+      "authors": [
+        "Mike Carey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "The Unwritten, Vol. 5",
+      "votes": "747"
+    },
+    {
+      "authors": [
+        "Faith Erin Hicks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Friends With Boys",
+      "votes": "737"
+    },
+    {
+      "authors": [
+        "Hope Larson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "A Wrinkle in Time",
+      "votes": "573"
+    },
+    {
+      "authors": [
+        "Scott Snyder"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "American Vampire, Vol. 3",
+      "votes": "429"
+    },
+    {
+      "authors": [
+        "Bill Willingham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Fables, Vol. 17",
+      "votes": "279"
+    },
+    {
+      "authors": [
+        "Jason Aaron"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Scalped, Vol. 9",
+      "votes": "126"
+    },
+    {
+      "authors": [
+        "J.H. Williams III"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Graphic Novels & Comics",
+      "position": "2012.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2012"
+      },
+      "title": "Batwoman, Volume 1",
+      "votes": "122"
+    },
+    {
+      "authors": [
+        "Kami Garcia",
+        "Margaret Stohl"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Beautiful Creatures: The Manga",
+      "votes": "12209"
+    },
+    {
+      "authors": [
+        "Gene Luen Yang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Avatar",
+      "votes": "11412"
+    },
+    {
+      "authors": [
+        "Robert Kirkman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "The Walking Dead, Vol. 18",
+      "votes": "10299"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Saga, Volume 2",
+      "votes": "6633"
+    },
+    {
+      "authors": [
+        "Scott Snyder"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Batman, Volume 2",
+      "votes": "6299"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "The Infernal Devices",
+      "votes": "6076"
+    },
+    {
+      "authors": [
+        "Bill Willingham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Fables, Vol. 18",
+      "votes": "4796"
+    },
+    {
+      "authors": [
+        "Matt Fraction"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Hawkeye, Volume 1",
+      "votes": "4039"
+    },
+    {
+      "authors": [
+        "Nicole J. Georges"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Calling Dr. Laura",
+      "votes": "3171"
+    },
+    {
+      "authors": [
+        "Mark Millar"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Kick-Ass 2",
+      "votes": "3013"
+    },
+    {
+      "authors": [
+        "Brian Azzarello"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Wonder Woman, Volume 2",
+      "votes": "1597"
+    },
+    {
+      "authors": [
+        "Robert Venditti"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "The Titan's Curse",
+      "votes": "1428"
+    },
+    {
+      "authors": [
+        "Scott Snyder"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "American Vampire, Vol. 5",
+      "votes": "1350"
+    },
+    {
+      "authors": [
+        "Gene Luen Yang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Boxers & Saints",
+      "votes": "1185"
+    },
+    {
+      "authors": [
+        "Kelly Sue DeConnick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Captain Marvel, Vol. 1",
+      "votes": "1033"
+    },
+    {
+      "authors": [
+        "John Layman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Chew, Vol. 6",
+      "votes": "700"
+    },
+    {
+      "authors": [
+        "Jeff Lemire"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Sweet Tooth, Vol. 6",
+      "votes": "588"
+    },
+    {
+      "authors": [
+        "Audrey Niffenegger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Raven Girl",
+      "votes": "558"
+    },
+    {
+      "authors": [
+        "Robert Venditti"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "Blue Bloods",
+      "votes": "355"
+    },
+    {
+      "authors": [
+        "John Lewis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Graphic Novels & Comics",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2013"
+      },
+      "title": "March",
+      "votes": "168"
+    },
+    {
+      "authors": [
+        "Joss Whedon",
+        "F\u00e1bio Moon",
+        "Daniel Dos Santos"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Leaves on the Wind",
+      "votes": "21796"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Saga, Volume 3",
+      "votes": "17964"
+    },
+    {
+      "authors": [
+        "Gene Luen Yang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Avatar",
+      "votes": "17618"
+    },
+    {
+      "authors": [
+        "Scott Snyder"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Batman, Volume 4",
+      "votes": "11307"
+    },
+    {
+      "authors": [
+        "Hajime Isayama"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Attack on Titan",
+      "votes": "11129"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Locke & Key, Vol. 6",
+      "votes": "8990"
+    },
+    {
+      "authors": [
+        "Stacy King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Pride & Prejudice",
+      "votes": "8230"
+    },
+    {
+      "authors": [
+        "Roz Chast"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Can't We Talk about Something More Pleasant?",
+      "votes": "7439"
+    },
+    {
+      "authors": [
+        "Liz Prince"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Tomboy",
+      "votes": "7114"
+    },
+    {
+      "authors": [
+        "Matt Fraction"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Sex Criminals, Vol. 1",
+      "votes": "6431"
+    },
+    {
+      "authors": [
+        "Brian Azzarello"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Wonder Woman, Volume 4",
+      "votes": "3394"
+    },
+    {
+      "authors": [
+        "G. Willow Wilson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "No Normal",
+      "votes": "3176"
+    },
+    {
+      "authors": [
+        "E.M. Carroll"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Through the Woods",
+      "votes": "2545"
+    },
+    {
+      "authors": [
+        "Kurtis J. Wiebe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Rat Queens, Vol. 1",
+      "votes": "1774"
+    },
+    {
+      "authors": [
+        "Mariko Tamaki"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "This One Summer",
+      "votes": "1257"
+    },
+    {
+      "authors": [
+        "John Layman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Chew, Vol. 8",
+      "votes": "874"
+    },
+    {
+      "authors": [
+        "Cory Doctorow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "In Real Life",
+      "votes": "865"
+    },
+    {
+      "authors": [
+        "Gene Luen Yang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "The Shadow Hero",
+      "votes": "864"
+    },
+    {
+      "authors": [
+        "Kelly Sue DeConnick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Graphic Novels & Comics",
+      "position": "2014.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2014"
+      },
+      "title": "Pretty Deadly, Vol. 1",
+      "votes": "530"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "Saga, Volume 4",
+      "votes": "18578"
+    },
+    {
+      "authors": [
+        "N.D. Stevenson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "Nimona",
+      "votes": "17471"
+    },
+    {
+      "authors": [
+        "Hajime Isayama"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "Attack on Titan, Vol. 15",
+      "votes": "13751"
+    },
+    {
+      "authors": [
+        "G. Willow Wilson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "Generation Why",
+      "votes": "12029"
+    },
+    {
+      "authors": [
+        "Jason Aaron"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "Thor, Vol. 1",
+      "votes": "10046"
+    },
+    {
+      "authors": [
+        "N.D. Stevenson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "Lumberjanes, Vol. 1",
+      "votes": "8529"
+    },
+    {
+      "authors": [
+        "Stjepan \u0160eji\u0107"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "Sunstone, Vol. 1",
+      "votes": "7898"
+    },
+    {
+      "authors": [
+        "Kate Beaton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "Step Aside, Pops",
+      "votes": "7453"
+    },
+    {
+      "authors": [
+        "Sydney Padua"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "The Thrilling Adventures of Lovelace and Babbage",
+      "votes": "6050"
+    },
+    {
+      "authors": [
+        "Matt Fraction"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "Hawkeye, Volume 4",
+      "votes": "4555"
+    },
+    {
+      "authors": [
+        "Kurtis J. Wiebe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "Rat Queens, Vol. 2",
+      "votes": "2383"
+    },
+    {
+      "authors": [
+        "Matt Fraction"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "Sex Criminals, Vol. 2",
+      "votes": "2356"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "The Sandman",
+      "votes": "2001"
+    },
+    {
+      "authors": [
+        "Joe Sugg"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "Username",
+      "votes": "1980"
+    },
+    {
+      "authors": [
+        "Kieron Gillen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "The Wicked + The Divine, Vol. 2",
+      "votes": "1939"
+    },
+    {
+      "authors": [
+        "Philippa Rice"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "Soppy",
+      "votes": "1833"
+    },
+    {
+      "authors": [
+        "Ryan North"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "The Unbeatable Squirrel Girl, Vol. 1",
+      "votes": "1537"
+    },
+    {
+      "authors": [
+        "Victoria Jamieson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "Roller Girl",
+      "votes": "1238"
+    },
+    {
+      "authors": [
+        "John Lewis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "March",
+      "votes": "1229"
+    },
+    {
+      "authors": [
+        "Scott McCloud"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Graphic Novels & Comics",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2015"
+      },
+      "title": "The Sculptor",
+      "votes": "1001"
+    },
+    {
+      "authors": [
+        "Sarah Andersen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Adulthood Is a Myth",
+      "votes": "32937"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Saga, Volume 6",
+      "votes": "19323"
+    },
+    {
+      "authors": [
+        "Raina Telgemeier"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Ghosts",
+      "votes": "14203"
+    },
+    {
+      "authors": [
+        "G. Willow Wilson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Super Famous",
+      "votes": "13554"
+    },
+    {
+      "authors": [
+        "Ichigo Takano"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Orange",
+      "votes": "11898"
+    },
+    {
+      "authors": [
+        "Marjorie M. Liu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Monstress, Volume 1",
+      "votes": "10576"
+    },
+    {
+      "authors": [
+        "Paul Dini"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Dark Night",
+      "votes": "9899"
+    },
+    {
+      "authors": [
+        "N.D. Stevenson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Lumberjanes, Vol. 3",
+      "votes": "8909"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Paper Girls, Volume 1",
+      "votes": "8766"
+    },
+    {
+      "authors": [
+        "Ta-Nehisi Coates"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Black Panther (2016-2018) #1",
+      "votes": "5988"
+    },
+    {
+      "authors": [
+        "Geoff Johns"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "DC Universe",
+      "votes": "4392"
+    },
+    {
+      "authors": [
+        "Kurtis J. Wiebe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Rat Queens, Vol. 3",
+      "votes": "2475"
+    },
+    {
+      "authors": [
+        "Kieron Gillen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "The Wicked + The Divine, Vol. 3",
+      "votes": "2469"
+    },
+    {
+      "authors": [
+        "Tom Hart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Rosalie Lightning",
+      "votes": "1772"
+    },
+    {
+      "authors": [
+        "Tom King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "The Vision, Vol. 1",
+      "votes": "1542"
+    },
+    {
+      "authors": [
+        "Ray Friesen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Small Gods",
+      "votes": "1132"
+    },
+    {
+      "authors": [
+        "Lucy Knisley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Something New",
+      "votes": "1042"
+    },
+    {
+      "authors": [
+        "Daniel Clowes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "Patience",
+      "votes": "971"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "White Sand, Volume 1",
+      "votes": "828"
+    },
+    {
+      "authors": [
+        "John Lewis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Graphic Novels & Comics",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2016"
+      },
+      "title": "March",
+      "votes": "706"
+    },
+    {
+      "authors": [
+        "Sarah Andersen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "Big Mushy Happy Lump",
+      "votes": "26647"
+    },
+    {
+      "authors": [
+        "Greg Rucka"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "Wonder Woman, Vol. 1",
+      "votes": "22585"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "Saga, Volume 7",
+      "votes": "21597"
+    },
+    {
+      "authors": [
+        "Marissa Meyer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "Wires and Nerve",
+      "votes": "17871"
+    },
+    {
+      "authors": [
+        "Marjorie M. Liu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "Monstress, Volume 2",
+      "votes": "13846"
+    },
+    {
+      "authors": [
+        "Shannon Hale"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "Real Friends",
+      "votes": "10937"
+    },
+    {
+      "authors": [
+        "G. Willow Wilson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "Civil War II",
+      "votes": "10574"
+    },
+    {
+      "authors": [
+        "Jomny Sun"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "Everyone's a Aliebn When Ur a Aliebn Too",
+      "votes": "9627"
+    },
+    {
+      "authors": [
+        "Thi Bui"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "The Best We Could Do",
+      "votes": "8880"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "Paper Girls, Volume 2",
+      "votes": "8728"
+    },
+    {
+      "authors": [
+        "N.D. Stevenson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "Lumberjanes, Vol. 5",
+      "votes": "3679"
+    },
+    {
+      "authors": [
+        "Emil Ferris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "My Favorite Thing Is Monsters, Vol. 1",
+      "votes": "3064"
+    },
+    {
+      "authors": [
+        "Michael Dante DiMartino"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "The Legend of Korra",
+      "votes": "2633"
+    },
+    {
+      "authors": [
+        "Tom King"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "The Vision, Vol. 2",
+      "votes": "1669"
+    },
+    {
+      "authors": [
+        "Jonathan Hickman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "The Black Monday Murders, Vol. 1",
+      "votes": "1208"
+    },
+    {
+      "authors": [
+        "Jeff Lemire"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "Black Hammer, Vol. 1",
+      "votes": "891"
+    },
+    {
+      "authors": [
+        "Kelly Sue DeConnick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "Bitch Planet, Vol. 2",
+      "votes": "773"
+    },
+    {
+      "authors": [
+        "Kieron Gillen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "The Wicked + The Divine, Vol. 5",
+      "votes": "749"
+    },
+    {
+      "authors": [
+        "Joe Sugg"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "Username",
+      "votes": "674"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Graphic Novels & Comics",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2017"
+      },
+      "title": "Spill Zone",
+      "votes": "458"
+    },
+    {
+      "authors": [
+        "Sarah Andersen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Herding Cats",
+      "votes": "34322"
+    },
+    {
+      "authors": [
+        "Catana Chetwynd"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Little Moments of Love",
+      "votes": "27342"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Saga, Volume 8",
+      "votes": "25261"
+    },
+    {
+      "authors": [
+        "G. Willow Wilson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Mecca",
+      "votes": "18504"
+    },
+    {
+      "authors": [
+        "Jen Wang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "The Prince and the Dressmaker",
+      "votes": "15479"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Paper Girls, Volume 4",
+      "votes": "11927"
+    },
+    {
+      "authors": [
+        "Clint McElroy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "The Adventure Zone Vol.1",
+      "votes": "11536"
+    },
+    {
+      "authors": [
+        "P\u00e9n\u00e9lope Bagieu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Brazen",
+      "votes": "9325"
+    },
+    {
+      "authors": [
+        "C.S. Pacat"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Fence, Vol. 1",
+      "votes": "8664"
+    },
+    {
+      "authors": [
+        "Mari Andrew"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Am I There Yet? The Loop-de-Loop, Zigzagging Journey to Adult...",
+      "votes": "8429"
+    },
+    {
+      "authors": [
+        "Vera Brosgol"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Be Prepared",
+      "votes": "3584"
+    },
+    {
+      "authors": [
+        "Tee Franklin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Bingo Love",
+      "votes": "3395"
+    },
+    {
+      "authors": [
+        "Marissa Meyer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Gone Rogue",
+      "votes": "3196"
+    },
+    {
+      "authors": [
+        "Ngozi Ukazu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Check, Please! Book 1",
+      "votes": "2947"
+    },
+    {
+      "authors": [
+        "Nick Drnaso"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Sabrina",
+      "votes": "2891"
+    },
+    {
+      "authors": [
+        "Kieron Gillen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "The Wicked + The Divine, Vol. 6",
+      "votes": "2818"
+    },
+    {
+      "authors": [
+        "Marjorie M. Liu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Monstress, Volume 3",
+      "votes": "2397"
+    },
+    {
+      "authors": [
+        "Jarrett J. Krosoczka"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Hey, Kiddo",
+      "votes": "1567"
+    },
+    {
+      "authors": [
+        "Jeff Lemire"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Black Hammer, Vol. 2",
+      "votes": "1475"
+    },
+    {
+      "authors": [
+        "Saladin Ahmed"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Graphic Novels & Comics",
+      "position": "2018.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2018"
+      },
+      "title": "Black Bolt, Vol. 1",
+      "votes": "1459"
+    },
+    {
+      "authors": [
+        "Rainbow Rowell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Pumpkinheads",
+      "votes": "29624"
+    },
+    {
+      "authors": [
+        "Alice Oseman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Heartstopper",
+      "votes": "28460"
+    },
+    {
+      "authors": [
+        "Ren\u00e9e Nault"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "The Handmaid's Tale",
+      "votes": "23606"
+    },
+    {
+      "authors": [
+        "George Takei"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "They Called Us Enemy",
+      "votes": "19574"
+    },
+    {
+      "authors": [
+        "Debbie Tung"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Book Love",
+      "votes": "18200"
+    },
+    {
+      "authors": [
+        "Kami Garcia"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Teen Titans",
+      "votes": "17730"
+    },
+    {
+      "authors": [
+        "V.E. Schwab"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Shades of Magic Vol. 1",
+      "votes": "16832"
+    },
+    {
+      "authors": [
+        "Gerard Way"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "The Umbrella Academy, Vol. 3",
+      "votes": "14237"
+    },
+    {
+      "authors": [
+        "Suzanne Walker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Mooncakes",
+      "votes": "9005"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Paper Girls, Volume 5",
+      "votes": "8516"
+    },
+    {
+      "authors": [
+        "Lucy Knisley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Kid Gloves",
+      "votes": "4163"
+    },
+    {
+      "authors": [
+        "Kevin Panetta"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Bloom",
+      "votes": "4075"
+    },
+    {
+      "authors": [
+        "Mariko Tamaki"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Laura Dean Keeps Breaking Up with Me",
+      "votes": "4028"
+    },
+    {
+      "authors": [
+        "Mira Jacob"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Good Talk",
+      "votes": "3543"
+    },
+    {
+      "authors": [
+        "Lauren Myracle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Under the Moon",
+      "votes": "2954"
+    },
+    {
+      "authors": [
+        "Clint McElroy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "The Adventure Zone Vol. 2",
+      "votes": "2452"
+    },
+    {
+      "authors": [
+        "Marjorie M. Liu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Monstress, Volume 4",
+      "votes": "1939"
+    },
+    {
+      "authors": [
+        "C.S. Pacat"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Fence, Vol. 3",
+      "votes": "1370"
+    },
+    {
+      "authors": [
+        "Kieron Gillen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "The Wicked + The Divine, Vol. 9",
+      "votes": "1168"
+    },
+    {
+      "authors": [
+        "Kieron Gillen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Graphic Novels & Comics",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2019"
+      },
+      "title": "Die, Vol. 1",
+      "votes": "567"
+    },
+    {
+      "authors": [
+        "Alice Oseman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "Heartstopper: Volume Three",
+      "votes": "44384"
+    },
+    {
+      "authors": [
+        "Sarah Andersen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "Fangs",
+      "votes": "22329"
+    },
+    {
+      "authors": [
+        "Your Bookshelf by Grant Snider"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "I Will Judge You",
+      "votes": "22247"
+    },
+    {
+      "authors": [
+        "Sam Maggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "Fangirl, Vol. 1",
+      "votes": "20374"
+    },
+    {
+      "authors": [
+        "David Vandermeulen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "Sapiens",
+      "votes": "18629"
+    },
+    {
+      "authors": [
+        "Stjepan \u0160eji\u0107"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "Harleen",
+      "votes": "16518"
+    },
+    {
+      "authors": [
+        "Ngozi Ukazu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "Check, Please! Book 2",
+      "votes": "14318"
+    },
+    {
+      "authors": [
+        "Kami Garcia"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "Teen Titans",
+      "votes": "13736"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "Basketful of Heads",
+      "votes": "11236"
+    },
+    {
+      "authors": [
+        "Eleanor Crewes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "The Times I Knew I Was Gay",
+      "votes": "10850"
+    },
+    {
+      "authors": [
+        "Tyler Feder"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "Dancing at the Pity Party",
+      "votes": "4361"
+    },
+    {
+      "authors": [
+        "Robin Ha"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "Almost American Girl",
+      "votes": "4358"
+    },
+    {
+      "authors": [
+        "N.D. Stevenson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "The Fire Never Goes Out",
+      "votes": "2607"
+    },
+    {
+      "authors": [
+        "Omar Mohamed"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "When Stars Are Scattered",
+      "votes": "2457"
+    },
+    {
+      "authors": [
+        "Marjorie M. Liu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "Monstress, Volume 5",
+      "votes": "2264"
+    },
+    {
+      "authors": [
+        "Roxane Gay"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "The Sacrifice of Darkness",
+      "votes": "1925"
+    },
+    {
+      "authors": [
+        "Carmen Maria Machado"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "The Low, Low Woods",
+      "votes": "1670"
+    },
+    {
+      "authors": [
+        "C.S. Pacat"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "Fence, Vol. 4",
+      "votes": "1558"
+    },
+    {
+      "authors": [
+        "Clint McElroy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "The Adventure Zone Vol. 3",
+      "votes": "1528"
+    },
+    {
+      "authors": [
+        "Trung Le Nguyen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Graphic Novels & Comics",
+      "position": "2020.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2020"
+      },
+      "title": "The Magic Fish",
+      "votes": "885"
+    },
+    {
+      "authors": [
+        "Rachel Smythe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "Lore Olympus: Volume One",
+      "votes": "53686"
+    },
+    {
+      "authors": [
+        "Brian Herbert"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "Frank Herbert's Dune",
+      "votes": "28981"
+    },
+    {
+      "authors": [
+        "Faith Erin Hicks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "Toph Beifong's Metalbending Academy",
+      "votes": "18438"
+    },
+    {
+      "authors": [
+        "Lee Knox Ostertag"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "The Girl from the Sea",
+      "votes": "18269"
+    },
+    {
+      "authors": [
+        "V.E. Schwab"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "ExtraOrdinary",
+      "votes": "15445"
+    },
+    {
+      "authors": [
+        "Lize Meddings"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "The Sad Ghost Club",
+      "votes": "15153"
+    },
+    {
+      "authors": [
+        "Catana Chetwynd"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "In Love & Pajamas",
+      "votes": "13717"
+    },
+    {
+      "authors": [
+        "Kami Garcia"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "Teen Titans",
+      "votes": "11781"
+    },
+    {
+      "authors": [
+        "Clint McElroy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "The Adventure Zone Vol. 4",
+      "votes": "6225"
+    },
+    {
+      "authors": [
+        "Crystal Frasier"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "Cheer Up",
+      "votes": "6015"
+    },
+    {
+      "authors": [
+        "Margaret Kimball"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "And Now I Spill the Family Secrets",
+      "votes": "2472"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "Dark One",
+      "votes": "2471"
+    },
+    {
+      "authors": [
+        "Rebecca Hall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "Wake",
+      "votes": "2460"
+    },
+    {
+      "authors": [
+        "Andrew Donkin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "Between Shades of Gray",
+      "votes": "2402"
+    },
+    {
+      "authors": [
+        "Alison Bechdel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "The Secret to Superhuman Strength",
+      "votes": "2326"
+    },
+    {
+      "authors": [
+        "John Lewis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "Run",
+      "votes": "2207"
+    },
+    {
+      "authors": [
+        "Maggie Tokuda-Hall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "Squad",
+      "votes": "2121"
+    },
+    {
+      "authors": [
+        "Kristen Radtke"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "Seek You",
+      "votes": "1888"
+    },
+    {
+      "authors": [
+        "Kat Leyh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "Thirsty Mermaids",
+      "votes": "1301"
+    },
+    {
+      "authors": [
+        "Jordan Morris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Graphic Novels & Comics",
+      "position": "2021.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2021"
+      },
+      "title": "Bubble",
+      "votes": "1241"
+    },
+    {
+      "authors": [
+        "Alice Oseman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Heartstopper: Volume Four",
+      "votes": "138174"
+    },
+    {
+      "authors": [
+        "Rachel Smythe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Lore Olympus",
+      "votes": "51059"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Demon in the Wood",
+      "votes": "26096"
+    },
+    {
+      "authors": [
+        "Sarah Andersen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Oddball",
+      "votes": "16882"
+    },
+    {
+      "authors": [
+        "Brian K. Vaughan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Saga, Volume 10",
+      "votes": "14160"
+    },
+    {
+      "authors": [
+        "Jamila Rowser"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Wash Day Diaries",
+      "votes": "13911"
+    },
+    {
+      "authors": [
+        "Debbie Tung"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Everything Is OK",
+      "votes": "11968"
+    },
+    {
+      "authors": [
+        "Huda Fahmy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Huda F Are You?",
+      "votes": "10726"
+    },
+    {
+      "authors": [
+        "Kate Beaton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Ducks",
+      "votes": "8466"
+    },
+    {
+      "authors": [
+        "Sam Maggs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Fangirl, Vol. 2",
+      "votes": "8399"
+    },
+    {
+      "authors": [
+        "Danie Stirling"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Crumbs",
+      "votes": "2833"
+    },
+    {
+      "authors": [
+        "Koogi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Killing Stalking",
+      "votes": "2805"
+    },
+    {
+      "authors": [
+        "Kate Gavino"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "A Career in Books",
+      "votes": "2032"
+    },
+    {
+      "authors": [
+        "Ram V"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "The Many Deaths of Laila Starr",
+      "votes": "1980"
+    },
+    {
+      "authors": [
+        "Jarrett Melendez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Chef's Kiss",
+      "votes": "1977"
+    },
+    {
+      "authors": [
+        "Sara Alfageeh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Squire",
+      "votes": "1795"
+    },
+    {
+      "authors": [
+        "Lewis Hancox"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Welcome to St. Hell",
+      "votes": "1741"
+    },
+    {
+      "authors": [
+        "Malaka Gharib"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "It Won't Always Be Like This",
+      "votes": "1318"
+    },
+    {
+      "authors": [
+        "Laura Gao"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Messy Roots",
+      "votes": "966"
+    },
+    {
+      "authors": [
+        "Lucie Bryon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Graphic Novels & Comics",
+      "position": "2022.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-graphic-novels-comics-2022"
+      },
+      "title": "Thieves",
+      "votes": "879"
+    }
+  ],
+  "fetched_at": "2026-07-28T02:29:56Z",
+  "list_id": "goodreads_choice_awards_graphic_novels_comics",
+  "list_name": "Goodreads Choice Awards - Graphic Novels & Comics (discontinued)",
+  "match_series": false,
+  "notes": [],
+  "parser": "goodreads_choice_awards_graphic_novels_comics",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Graphic Novels & Comics (discontinued)",
+    "source_id": "goodreads_choice_awards_graphic_novels_comics",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

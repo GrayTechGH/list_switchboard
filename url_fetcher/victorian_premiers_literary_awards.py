@@ -37,13 +37,16 @@ class UrlFetcherVictorianPremiersLiteraryAwards(UrlFetcherGeneric):
     return VictorianPremiersLiteraryAwardsOfficialParser(
       self.CATEGORY, self.CATEGORY_ALIASES)
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None,
+      cached_parsed=None,incremental_update=False,**_kwargs):
     return self.create_parser().parse(
-      html, self.URL, self.NAME, fetch_url=fetch_url, log=log, progress=progress)
+      html, self.URL, self.NAME, fetch_url=fetch_url, log=log, progress=progress,
+      cached_parsed=cached_parsed,incremental_update=incremental_update)
 
 
 class UrlFetcherVictorianPremiersLiteraryAwardsFiction(
     UrlFetcherVictorianPremiersLiteraryAwards):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_LITERARY_GENERAL_FICTION,
@@ -57,6 +60,7 @@ class UrlFetcherVictorianPremiersLiteraryAwardsFiction(
 
 class UrlFetcherVictorianPremiersLiteraryAwardsNonfiction(
     UrlFetcherVictorianPremiersLiteraryAwards):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_NONFICTION,
@@ -75,6 +79,7 @@ class UrlFetcherVictorianPremiersLiteraryAwardsNonfiction(
 
 class UrlFetcherVictorianPremiersLiteraryAwardsWritingForYoungAdults(
     UrlFetcherVictorianPremiersLiteraryAwards):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
@@ -87,11 +92,14 @@ class UrlFetcherVictorianPremiersLiteraryAwardsWritingForYoungAdults(
     'Prize for Writing for Young Adults',
     'John Marsden Prize for Writing for Young Adults',
     'Writing for Young Adults',
+    'Young Adults',
+    'Young Adult',
   )
 
 
 class UrlFetcherVictorianPremiersLiteraryAwardsChildrensLiterature(
     UrlFetcherVictorianPremiersLiteraryAwards):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
@@ -108,6 +116,7 @@ class UrlFetcherVictorianPremiersLiteraryAwardsChildrensLiterature(
 
 class UrlFetcherVictorianPremiersLiteraryAwardsIndigenousWriting(
     UrlFetcherVictorianPremiersLiteraryAwards):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (CATEGORY_REGIONAL_NATIONAL_AWARDS,)
   source_id = 'victorian_premiers_literary_awards_indigenous_writing'

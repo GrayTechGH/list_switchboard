@@ -8,7 +8,7 @@ from _dev_tools.test_import_matching import dragons_jetpacks_page, dragons_jetpa
 class DragonsTransportTests(unittest.TestCase):
   def setUp(self):
     self.recipe = UrlFetcherDragonsJetpacks()
-    self.url = self.recipe.URL
+    self.url = self.recipe.primary_urls()[0]
     self.next = self.url + '&page=2'
     self.row1 = dragons_jetpacks_row('1', 'First', ['Writer, One'], ['group-read', 'fantasy'])
     self.row2 = dragons_jetpacks_row('2', 'Second', ['Writer, Two'], ['group-read', 'sci-fi'])

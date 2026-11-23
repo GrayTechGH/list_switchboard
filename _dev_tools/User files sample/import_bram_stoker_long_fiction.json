@@ -1,0 +1,2957 @@
+{
+  "append_state": {
+    "entry_count": 183,
+    "last_entry_key": "uncertain sons|thomas ha",
+    "last_position": "2025.03",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Alan Rodgers"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1987",
+      "category": "Long Fiction",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1988"
+      },
+      "title": "The Boy Who Came Back from the Dead"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1987",
+      "category": "Long Fiction",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1988"
+      },
+      "title": "The Pear-Shaped Man"
+    },
+    {
+      "authors": [
+        "David J. Schow"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1987",
+      "category": "Long Fiction",
+      "position": "1987.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1988"
+      },
+      "title": "Pamela's Get"
+    },
+    {
+      "authors": [
+        "S. P. Somtow"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1987",
+      "category": "Long Fiction",
+      "position": "1987.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1988"
+      },
+      "title": "Resurrec Tech"
+    },
+    {
+      "authors": [
+        "David Morrell"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1988",
+      "category": "Long Fiction",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1989"
+      },
+      "title": "Orange Is For Anguish, Blue Is for Insanity"
+    },
+    {
+      "authors": [
+        "Harlan Ellison"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1988",
+      "category": "Long Fiction",
+      "position": "1988.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1989"
+      },
+      "title": "The Function of Dream Sleep"
+    },
+    {
+      "authors": [
+        "John Farris"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1988",
+      "category": "Long Fiction",
+      "position": "1988.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1989"
+      },
+      "title": "Horrorshow"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1988",
+      "category": "Long Fiction",
+      "position": "1988.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1989"
+      },
+      "title": "The Juniper Tree"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1988",
+      "category": "Long Fiction",
+      "position": "1988.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1989"
+      },
+      "title": "The Night Flier"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1988",
+      "category": "Long Fiction",
+      "position": "1988.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1989"
+      },
+      "title": "The Skin Trade"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1989",
+      "category": "Long Fiction",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1990"
+      },
+      "title": "On the Far Side of the Cadillac Desert with Dead Folks"
+    },
+    {
+      "authors": [
+        "Karl Edward Wagner"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1989",
+      "category": "Long Fiction",
+      "position": "1989.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1990"
+      },
+      "title": "At First Just Ghostly"
+    },
+    {
+      "authors": [
+        "Chet Williamson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1989",
+      "category": "Long Fiction",
+      "position": "1989.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1990"
+      },
+      "title": "The Confessions of St. James"
+    },
+    {
+      "authors": [
+        "Kristine Kathryn Rusch"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1989",
+      "category": "Long Fiction",
+      "position": "1989.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1990"
+      },
+      "title": "Phantom"
+    },
+    {
+      "authors": [
+        "Elizabeth Massie"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1990",
+      "category": "Long Fiction",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1991"
+      },
+      "title": "Stephen"
+    },
+    {
+      "authors": [
+        "Michael Blumlein"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1990",
+      "category": "Long Fiction",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1991"
+      },
+      "title": "Bestseller"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1990",
+      "category": "Long Fiction",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1991"
+      },
+      "title": "Entropy's Bed at Midnight"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1990",
+      "category": "Long Fiction",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1991"
+      },
+      "title": "The Langoliers"
+    },
+    {
+      "authors": [
+        "F. Paul Wilson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1990",
+      "category": "Long Fiction",
+      "position": "1990.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1991"
+      },
+      "title": "Pelts"
+    },
+    {
+      "authors": [
+        "David Morrell"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1991",
+      "category": "Long Fiction",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1992"
+      },
+      "title": "The Beautiful Uncut Hair of Graves"
+    },
+    {
+      "authors": [
+        "Suzy McKee Charnas",
+        "Chelsea Quinn Yarbro"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1991",
+      "category": "Long Fiction",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1992"
+      },
+      "title": "Advocates"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1991",
+      "category": "Long Fiction",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1992"
+      },
+      "title": "Death Leaves an Echo"
+    },
+    {
+      "authors": [
+        "Edward Bryant"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1991",
+      "category": "Long Fiction",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1992"
+      },
+      "title": "Fetish"
+    },
+    {
+      "authors": [
+        "Stephen Gallagher"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1991",
+      "category": "Long Fiction",
+      "position": "1991.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1992"
+      },
+      "title": "Magpie"
+    },
+    {
+      "authors": [
+        "Stephen Bissette"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "Long Fiction",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "Aliens: Tribes"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "Long Fiction",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "The Events Concerning a Nude Fold-Out Found in a Harlequin Romance"
+    },
+    {
+      "authors": [
+        "Wayne Allen Sallee"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "Long Fiction",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "For You, the Living"
+    },
+    {
+      "authors": [
+        "David Morrell"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "Long Fiction",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "Nothing Will Hurt You"
+    },
+    {
+      "authors": [
+        "David Morrell"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1992",
+      "category": "Long Fiction",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1993"
+      },
+      "title": "The Shrine"
+    },
+    {
+      "authors": [
+        "Robert Bloch"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1994",
+      "category": "Long Fiction",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1995"
+      },
+      "title": "The Scent Of Vinegar"
+    },
+    {
+      "authors": [
+        "Brian Hodge"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1994",
+      "category": "Long Fiction",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1995"
+      },
+      "title": "The Alchemy Of The Throat"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1994",
+      "category": "Long Fiction",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1995"
+      },
+      "title": "Bubba Ho-Tep"
+    },
+    {
+      "authors": [
+        "William Trotter"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1994",
+      "category": "Long Fiction",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1995"
+      },
+      "title": "The Siren Of Swan Quarter"
+    },
+    {
+      "authors": [
+        "Charles L. Grant"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1994",
+      "category": "Long Fiction",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1995"
+      },
+      "title": "Sometimes, In The Rain"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1995",
+      "category": "Long Fiction",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1996"
+      },
+      "title": "Lunch at the Gotham Caf\u00e9"
+    },
+    {
+      "authors": [
+        "Adam-Troy Castro"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1995",
+      "category": "Long Fiction",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1996"
+      },
+      "title": "Baby Girl Diamond"
+    },
+    {
+      "authors": [
+        "Thomas F. Monteleone"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1995",
+      "category": "Long Fiction",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1996"
+      },
+      "title": "Looking for Mr. Flip"
+    },
+    {
+      "authors": [
+        "Wayne Allen Sallee"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1995",
+      "category": "Long Fiction",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1996"
+      },
+      "title": "Lover Doll"
+    },
+    {
+      "authors": [
+        "Thomas Ligotti"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1996",
+      "category": "Long Fiction",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1997"
+      },
+      "title": "The Red Tower"
+    },
+    {
+      "authors": [
+        "S. P. Somtow"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1996",
+      "category": "Long Fiction",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1997"
+      },
+      "title": "Brimstone and Salt"
+    },
+    {
+      "authors": [
+        "Jack Cady"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1996",
+      "category": "Long Fiction",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1997"
+      },
+      "title": "Kilroy Was Here"
+    },
+    {
+      "authors": [
+        "Nancy A. Collins"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1996",
+      "category": "Long Fiction",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1997"
+      },
+      "title": "The Thing from Lover's Lane"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "Long Fiction",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "The Big Blow"
+    },
+    {
+      "authors": [
+        "Kim Newman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "Long Fiction",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "Coppola's Dracula"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "Long Fiction",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "Everything's Eventual"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "Long Fiction",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "The Word"
+    },
+    {
+      "authors": [
+        "Douglas E. Winter"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1997",
+      "category": "Long Fiction",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1998"
+      },
+      "title": "The Zombies of Madison County"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "Long Fiction",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "Mr. Clubb and Mr. Cuff"
+    },
+    {
+      "authors": [
+        "Brian Hodge"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "Long Fiction",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "As Above, So Below"
+    },
+    {
+      "authors": [
+        "P. D. Cacek"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "Long Fiction",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "Leavings"
+    },
+    {
+      "authors": [
+        "John Shirley"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1998",
+      "category": "Long Fiction",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_1999"
+      },
+      "title": "What Would You Do For Love?"
+    },
+    {
+      "authors": [
+        "Brian A. Hopkins"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "Long Fiction",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "Five Days in April"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "Long Fiction",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "Mad Dog Summer"
+    },
+    {
+      "authors": [
+        "Charlee Jacob"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "Long Fiction",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "Dread in the Beast"
+    },
+    {
+      "authors": [
+        "Jack Ketchum"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "1999",
+      "category": "Long Fiction",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2000"
+      },
+      "title": "Right to Life"
+    },
+    {
+      "authors": [
+        "Steve Rasnic Tem",
+        "Melanie Tem"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "Long Fiction",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "The Man on the Ceiling"
+    },
+    {
+      "authors": [
+        "Lawrence P. Santoro"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "Long Fiction",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "God Screamed and Screamed, Then I Ate Him"
+    },
+    {
+      "authors": [
+        "Joyce Carol Oates"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "Long Fiction",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "In Shock"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2000",
+      "category": "Long Fiction",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2001"
+      },
+      "title": "Riding the Bullet"
+    },
+    {
+      "authors": [
+        "Steve Rasnic Tem"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "Long Fiction",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "In These Final Days of Sales"
+    },
+    {
+      "authors": [
+        "Nancy Etchemendy"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "Long Fiction",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "Demolition"
+    },
+    {
+      "authors": [
+        "Brian Keene"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "Long Fiction",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "Earthworm Gods"
+    },
+    {
+      "authors": [
+        "Harlan Ellison"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "Long Fiction",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "From A to Z, In the Sarsaparilla Alphabet"
+    },
+    {
+      "authors": [
+        "Nick Mamatas"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2001",
+      "category": "Long Fiction",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2002"
+      },
+      "title": "Northern Gothic"
+    },
+    {
+      "authors": [
+        "Brian A. Hopkins"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "Long Fiction",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "El Dia de los Muertos"
+    },
+    {
+      "authors": [
+        "Thomas Ligotti"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "Long Fiction",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "My Work Is Not Yet Done"
+    },
+    {
+      "authors": [
+        "Paul Finch"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "Long Fiction",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "Cape Wrath"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "Long Fiction",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "Coraline"
+    },
+    {
+      "authors": [
+        "David B. Silva"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2002",
+      "category": "Long Fiction",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2003"
+      },
+      "title": "The Origin"
+    },
+    {
+      "authors": [
+        "Jack Ketchum"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Long Fiction",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "Closing Time"
+    },
+    {
+      "authors": [
+        "Tom Piccirilli"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Long Fiction",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "Fuckin' Lie Down Already"
+    },
+    {
+      "authors": [
+        "Lucius Shepard"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Long Fiction",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "Louisiana Breakdown"
+    },
+    {
+      "authors": [
+        "Douglas Clegg"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Long Fiction",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "The Necromancer"
+    },
+    {
+      "authors": [
+        "David Niall Wilson"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2003",
+      "category": "Long Fiction",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2004"
+      },
+      "title": "Roll Them Bones"
+    },
+    {
+      "authors": [
+        "Kealan-Patrick Burke"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "Long Fiction",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "The Turtle Boy"
+    },
+    {
+      "authors": [
+        "Tim Lebbon"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "Long Fiction",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Dead Man's Hand"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "Long Fiction",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Lisey and the Madman"
+    },
+    {
+      "authors": [
+        "Barbara Roden"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "Long Fiction",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Northwest Passage"
+    },
+    {
+      "authors": [
+        "Andy Duncan"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2004",
+      "category": "Long Fiction",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2005"
+      },
+      "title": "Zora and the Zombie"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2005",
+      "category": "Long Fiction",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2006"
+      },
+      "title": "Best New Horror"
+    },
+    {
+      "authors": [
+        "Gary Braunbeck"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2005",
+      "category": "Long Fiction",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2006"
+      },
+      "title": "In the Midnight Museum"
+    },
+    {
+      "authors": [
+        "Kelly Link"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2005",
+      "category": "Long Fiction",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2006"
+      },
+      "title": "Some Zombie Contingency Plans"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2005",
+      "category": "Long Fiction",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2006"
+      },
+      "title": "The Things They Left Behind"
+    },
+    {
+      "authors": [
+        "Norman Partridge"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2006",
+      "category": "Long Fiction",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2007"
+      },
+      "title": "Dark Harvest"
+    },
+    {
+      "authors": [
+        "Christopher Golden",
+        "James A. Moore"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2006",
+      "category": "Long Fiction",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2007"
+      },
+      "title": "Bloodstained Oz"
+    },
+    {
+      "authors": [
+        "Kim Newman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2006",
+      "category": "Long Fiction",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2007"
+      },
+      "title": "Clubland Heroes"
+    },
+    {
+      "authors": [
+        "Laird Barron"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2006",
+      "category": "Long Fiction",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2007"
+      },
+      "title": "Hallucigenia"
+    },
+    {
+      "authors": [
+        "Fran Friel"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2006",
+      "category": "Long Fiction",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2007"
+      },
+      "title": "Mama's Boy"
+    },
+    {
+      "authors": [
+        "Gary Braunbeck"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2007",
+      "category": "Long Fiction",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2008"
+      },
+      "title": "Afterward, There Will Be a Hallway"
+    },
+    {
+      "authors": [
+        "Scott Edelman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2007",
+      "category": "Long Fiction",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2008"
+      },
+      "title": "Almost the Last Story by Almost the Last Man"
+    },
+    {
+      "authors": [
+        "Lee Thomas"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2007",
+      "category": "Long Fiction",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2008"
+      },
+      "title": "An Apiary of White Bees"
+    },
+    {
+      "authors": [
+        "Nicholas Kaufmann"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2007",
+      "category": "Long Fiction",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2008"
+      },
+      "title": "General Slocum's Gold"
+    },
+    {
+      "authors": [
+        "William Browning Spencer"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2007",
+      "category": "Long Fiction",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2008"
+      },
+      "title": "The Tenth Muse"
+    },
+    {
+      "authors": [
+        "John R. Little"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2008",
+      "category": "Long Fiction",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2009"
+      },
+      "title": "Miranda"
+    },
+    {
+      "authors": [
+        "Gene O'Neill"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2008",
+      "category": "Long Fiction",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2009"
+      },
+      "title": "The Confessions of St. Zach"
+    },
+    {
+      "authors": [
+        "Weston Ochse"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2008",
+      "category": "Long Fiction",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2009"
+      },
+      "title": "Redemption Roadshow"
+    },
+    {
+      "authors": [
+        "Adam-Troy Castro"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2008",
+      "category": "Long Fiction",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2009"
+      },
+      "title": "The Shallow End of the Pool"
+    },
+    {
+      "authors": [
+        "Lisa Morton"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2009",
+      "category": "Long Fiction",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2010"
+      },
+      "title": "The Lucid Dreaming"
+    },
+    {
+      "authors": [
+        "Gene O'Neill"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2009",
+      "category": "Long Fiction",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2010"
+      },
+      "title": "Doc Good's Traveling Show"
+    },
+    {
+      "authors": [
+        "Mort Castle"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2009",
+      "category": "Long Fiction",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2010"
+      },
+      "title": "Dreaming Robot Monster"
+    },
+    {
+      "authors": [
+        "Scott Edelman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2009",
+      "category": "Long Fiction",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2010"
+      },
+      "title": "The Hunger of Empty Vessels"
+    },
+    {
+      "authors": [
+        "Norman Prentiss"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2010",
+      "category": "Long Fiction",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2011"
+      },
+      "title": "Invisible Fences"
+    },
+    {
+      "authors": [
+        "Lisa Mannetti"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2010",
+      "category": "Long Fiction",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2011"
+      },
+      "title": "Dissolution"
+    },
+    {
+      "authors": [
+        "Kirstyn McDermott"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2010",
+      "category": "Long Fiction",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2011"
+      },
+      "title": "Monsters Among Us"
+    },
+    {
+      "authors": [
+        "Brian James Freeman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2010",
+      "category": "Long Fiction",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2011"
+      },
+      "title": "The Painted Darkness"
+    },
+    {
+      "authors": [
+        "Lisa Morton"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2010",
+      "category": "Long Fiction",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2011"
+      },
+      "title": "The Samhanach"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Long Fiction",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "The Ballad of Ballard and Sandrine"
+    },
+    {
+      "authors": [
+        "Michael Louis Calvillo"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Long Fiction",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "7Brains"
+    },
+    {
+      "authors": [
+        "Caitl\u00edn R. Kiernan"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Long Fiction",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "The Colliers' Venus (1893)"
+    },
+    {
+      "authors": [
+        "Brian Hodge"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Long Fiction",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Roots and All"
+    },
+    {
+      "authors": [
+        "Gene O'Neill"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Long Fiction",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Rusting Chickens"
+    },
+    {
+      "authors": [
+        "John R. Little"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2011",
+      "category": "Long Fiction",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2012"
+      },
+      "title": "Ursa Major"
+    },
+    {
+      "authors": [
+        "Gene O'Neill"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Long Fiction",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "The Blue Heron"
+    },
+    {
+      "authors": [
+        "Norman Prentiss"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Long Fiction",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "The Fleshless Man"
+    },
+    {
+      "authors": [
+        "Jack Ketchum",
+        "Lucky McKee"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Long Fiction",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "I'm Not Sam"
+    },
+    {
+      "authors": [
+        "Joe McKinney",
+        "Michael McCarty"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Long Fiction",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "Lost Girl of the Lake"
+    },
+    {
+      "authors": [
+        "Kealan Patrick Burke"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2012",
+      "category": "Long Fiction",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2013"
+      },
+      "title": "Thirty Miles South of Dry County"
+    },
+    {
+      "authors": [
+        "Gary Braunbeck"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Long Fiction",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "The Great Pity"
+    },
+    {
+      "authors": [
+        "Dale Bailey"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Long Fiction",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "The Bluehole"
+    },
+    {
+      "authors": [
+        "Rena Mason"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Long Fiction",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "East End Girls"
+    },
+    {
+      "authors": [
+        "Greg F. Gifune"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Long Fiction",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "House of Rain"
+    },
+    {
+      "authors": [
+        "Gregory Frost"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Long Fiction",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "No Others Are Genuine"
+    },
+    {
+      "authors": [
+        "Benjamin Kane Ethridge"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2013",
+      "category": "Long Fiction",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2014"
+      },
+      "title": "The Slaughter Man"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Long Fiction",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Fishing for Dinosaurs"
+    },
+    {
+      "authors": [
+        "Eric J. Guignard"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Long Fiction",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Dreams of a Little Suicide"
+    },
+    {
+      "authors": [
+        "Taylor Grant"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Long Fiction",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "The Infected"
+    },
+    {
+      "authors": [
+        "Joe McKinney"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Long Fiction",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Lost and Found"
+    },
+    {
+      "authors": [
+        "Jonathan Maberry"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2014",
+      "category": "Long Fiction",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2015"
+      },
+      "title": "Three Guys Walk Into a Bar"
+    },
+    {
+      "authors": [
+        "Mercedes M. Yardley"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Long Fiction",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Little Dead Red"
+    },
+    {
+      "authors": [
+        "Scott Edelman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Long Fiction",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Becoming Invisible, Becoming Seen"
+    },
+    {
+      "authors": [
+        "Lisa Mannetti"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Long Fiction",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "The Box Jumper"
+    },
+    {
+      "authors": [
+        "Gary A. Braunbeck"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Long Fiction",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Paper Cuts"
+    },
+    {
+      "authors": [
+        "Norman Partridge"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2015",
+      "category": "Long Fiction",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2016"
+      },
+      "title": "Special Collections"
+    },
+    {
+      "authors": [
+        "Tim Waggoner"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Long Fiction",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "The Winter Box"
+    },
+    {
+      "authors": [
+        "Victor LaValle"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Long Fiction",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "The Ballad of Black Tom"
+    },
+    {
+      "authors": [
+        "Josh Malerman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Long Fiction",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "The Jupiter Drop"
+    },
+    {
+      "authors": [
+        "Nicole Cushing"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Long Fiction",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "The Sadist's Bible"
+    },
+    {
+      "authors": [
+        "Scott Edelman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2016",
+      "category": "Long Fiction",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2017"
+      },
+      "title": "That Perilous Stuff"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Long Fiction",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "Mapping the Interior"
+    },
+    {
+      "authors": [
+        "Caitl\u00edn R. Kiernan"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Long Fiction",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "Agents of Dreamland"
+    },
+    {
+      "authors": [
+        "Scott Edelman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Long Fiction",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "Faking It Until Forever Comes"
+    },
+    {
+      "authors": [
+        "Tim Waggoner"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Long Fiction",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "A Kiss of Thorns"
+    },
+    {
+      "authors": [
+        "Lucy Taylor"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2017",
+      "category": "Long Fiction",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2018"
+      },
+      "title": "Sweetlings"
+    },
+    {
+      "authors": [
+        "Rena Mason"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Long Fiction",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "The Devil's Throat"
+    },
+    {
+      "authors": [
+        "Angela Yuriko Smith"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Long Fiction",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "Bitter Suites"
+    },
+    {
+      "authors": [
+        "Usman T. Malik"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Long Fiction",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "Dead Lovers on Each Blade, Hung"
+    },
+    {
+      "authors": [
+        "Michael Bailey"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Long Fiction",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "Our Children, Our Teachers"
+    },
+    {
+      "authors": [
+        "Joe Hill"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2018",
+      "category": "Long Fiction",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2019"
+      },
+      "title": "You Are Released"
+    },
+    {
+      "authors": [
+        "Victor LaValle"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Long Fiction",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "Up from Slavery"
+    },
+    {
+      "authors": [
+        "Anna Taborska"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Long Fiction",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "The Cat Sitter"
+    },
+    {
+      "authors": [
+        "Kaaron Warren"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Long Fiction",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "Into Bones Like Oil"
+    },
+    {
+      "authors": [
+        "Alessandro Manzetti"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Long Fiction",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "The Keeper of Chernobyl"
+    },
+    {
+      "authors": [
+        "Sara Tantlinger"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2019",
+      "category": "Long Fiction",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2020"
+      },
+      "title": "To Be Devoured"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Long Fiction",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "Night of the Mannequins"
+    },
+    {
+      "authors": [
+        "Gabino Iglesias"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Long Fiction",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "Beyond the Reef"
+    },
+    {
+      "authors": [
+        "Jess Landry"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Long Fiction",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "I Will Find You, Even in the Dark"
+    },
+    {
+      "authors": [
+        "Gwendolyn Kiste"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Long Fiction",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "The Invention of Ghosts"
+    },
+    {
+      "authors": [
+        "Sarah Pinsker"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2020",
+      "category": "Long Fiction",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2021"
+      },
+      "title": "Two Truths and a Lie"
+    },
+    {
+      "authors": [
+        "Jeff Strand"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Long Fiction",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Twentieth Anniversary Screening"
+    },
+    {
+      "authors": [
+        "V. Castro"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Long Fiction",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Goddess of Filth"
+    },
+    {
+      "authors": [
+        "Cassandra Khaw"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Long Fiction",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Nothing But Blackened Teeth"
+    },
+    {
+      "authors": [
+        "Hailey Piper"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Long Fiction",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Recitation of the First Feeding"
+    },
+    {
+      "authors": [
+        "Eric LaRocca"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2021",
+      "category": "Long Fiction",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2022"
+      },
+      "title": "Things Have Gotten Worse Since We Last Spoke"
+    },
+    {
+      "authors": [
+        "Alma Katsu"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Long Fiction",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "The Wehrwolf"
+    },
+    {
+      "authors": [
+        "Rebecca J. Allred",
+        "Gordon B. White"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Long Fiction",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "And in Her Smile, the World"
+    },
+    {
+      "authors": [
+        "Laurel Hightower"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Long Fiction",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "Below"
+    },
+    {
+      "authors": [
+        "EV Knight"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Long Fiction",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "Three Days in the Pink Tower"
+    },
+    {
+      "authors": [
+        "Christa Carmen"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2022",
+      "category": "Long Fiction",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2023"
+      },
+      "title": "Through the Looking Glass and Straight into Hell"
+    },
+    {
+      "authors": [
+        "Ai Jiang"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Long Fiction",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "Linghun"
+    },
+    {
+      "authors": [
+        "Lee Murray"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Long Fiction",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "Despatches"
+    },
+    {
+      "authors": [
+        "Tananarive Due"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Long Fiction",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "Rumpus Room"
+    },
+    {
+      "authors": [
+        "Cassandra Khaw"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Long Fiction",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "The Salt Grows Heavy"
+    },
+    {
+      "authors": [
+        "J. A. W. McCarthy"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2023",
+      "category": "Long Fiction",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2024"
+      },
+      "title": "Sleep Alone"
+    },
+    {
+      "authors": [
+        "Sofia Ajram"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Long Fiction",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "Coup de Gr\u00e2ce"
+    },
+    {
+      "authors": [
+        "Eric LaRocca"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Long Fiction",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "All the Parts of You That Won't Easily Burn"
+    },
+    {
+      "authors": [
+        "Eden Royce"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Long Fiction",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "Hollow Tongue"
+    },
+    {
+      "authors": [
+        "Clay McLeod Chapman"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Long Fiction",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "Kill Your Darling"
+    },
+    {
+      "authors": [
+        "Nat Cassidy"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2024",
+      "category": "Long Fiction",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2025"
+      },
+      "title": "Rest Stop"
+    },
+    {
+      "authors": [
+        "Nathan Ballingrud"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Long Fiction",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Cathedral of the Drowned"
+    },
+    {
+      "authors": [
+        "A. C. Wise"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Long Fiction",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Wolf Moon, Antler Moon"
+    },
+    {
+      "authors": [
+        "Sarah Langan"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Long Fiction",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Pam Kowolski is a Monster!"
+    },
+    {
+      "authors": [
+        "Sarah Langan"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Long Fiction",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Squid Teeth"
+    },
+    {
+      "authors": [
+        "Thomas Ha"
+      ],
+      "award": "Bram Stoker Award",
+      "award_year": "2025",
+      "category": "Long Fiction",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Bram_Stoker_Awards_2026"
+      },
+      "title": "Uncertain Sons"
+    }
+  ],
+  "fetched_at": "2026-07-27T22:10:54Z",
+  "list_id": "bram_stoker_long_fiction",
+  "list_name": "Bram Stoker - Long Fiction",
+  "match_series": false,
+  "notes": [],
+  "parser": "bram_stoker_long_fiction",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Bram Stoker - Long Fiction",
+    "source_id": "bram_stoker_long_fiction",
+    "url": "https://www.sfadb.com/Bram_Stoker_Awards"
+  }
+}

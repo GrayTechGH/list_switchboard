@@ -71,13 +71,13 @@ class UrlFetcherWomensPrize(UrlFetcherGeneric):
       SourceAttempt(
         'Official Women\'s Prize',
         self.URL,
-        lambda html, url, fetch_url=None, **_kwargs: self.parser().parse(
+        lambda html, url, fetch_url=None, **kwargs: self.parser().parse(
           html,
           url,
           self.NAME,
           self.CATEGORY,
-          fetch_url=fetch_url),
-        source_rank=0),
+          fetch_url=fetch_url,**kwargs),
+        source_rank=0,supports_incremental=True),
       SourceAttempt(
         'Wikipedia',
         self.WIKIPEDIA_URL,
@@ -95,7 +95,8 @@ class UrlFetcherWomensPrize(UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None,incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -107,7 +108,8 @@ class UrlFetcherWomensPrize(UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice,cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
@@ -116,6 +118,7 @@ class UrlFetcherWomensPrize(UrlFetcherGeneric):
 
 
 class UrlFetcherWomensPrizeNonFiction(UrlFetcherWomensPrize):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'womens_prize_nonfiction'
   NAME = 'Women\'s Prize for Non-Fiction'
   URL = WOMENS_PRIZE_NONFICTION_URL
@@ -134,6 +137,7 @@ class UrlFetcherWomensPrizeNonFiction(UrlFetcherWomensPrize):
 
 
 class UrlFetcherWomensPrizeFiction(UrlFetcherWomensPrize):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'womens_prize_fiction'
   NAME = 'Women\'s Prize for Fiction'
   URL = WOMENS_PRIZE_FICTION_URL

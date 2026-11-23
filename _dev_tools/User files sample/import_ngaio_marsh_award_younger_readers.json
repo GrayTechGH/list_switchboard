@@ -1,0 +1,122 @@
+{
+  "append_state": {
+    "entry_count": 9,
+    "last_entry_key": "nor east swell|aaron topp",
+    "last_position": "2024.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Brian Falkner"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2021",
+      "category": "Younger Readers",
+      "position": "2021",
+      "result": "winner",
+      "title": "Katipo Joe: Blitzkrieg"
+    },
+    {
+      "authors": [
+        "Des Hunt"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2021",
+      "category": "Younger Readers",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Red Edge"
+    },
+    {
+      "authors": [
+        "Eileen Merriman"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2021",
+      "category": "Younger Readers",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "A Trio of Sophies"
+    },
+    {
+      "authors": [
+        "Glenn Wood"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2021",
+      "category": "Younger Readers",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Deadhead"
+    },
+    {
+      "authors": [
+        "Jennifer Lane"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "Younger Readers",
+      "position": "2024",
+      "result": "winner",
+      "title": "Miracle"
+    },
+    {
+      "authors": [
+        "Susan Brocker"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "Younger Readers",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Caged"
+    },
+    {
+      "authors": [
+        "Brian Falkner"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "Younger Readers",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Katipo Joe: Wolf's Lair"
+    },
+    {
+      "authors": [
+        "Diane Robinson"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "Younger Readers",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "Nikolai's Quest"
+    },
+    {
+      "authors": [
+        "Aaron Topp"
+      ],
+      "award": "Ngaio Marsh Award",
+      "award_year": "2024",
+      "category": "Younger Readers",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Nor\u2019east Swell"
+    }
+  ],
+  "fetched_at": "2026-07-19T07:00:59Z",
+  "list_id": "ngaio_marsh_award_younger_readers",
+  "list_name": "Ngaio Marsh Award - Younger Readers",
+  "match_series": false,
+  "notes": [],
+  "parser": "ngaio_marsh_award_younger_readers",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Ngaio Marsh Award - Younger Readers",
+    "source_id": "ngaio_marsh_award_younger_readers",
+    "url": "https://en.wikipedia.org/wiki/Ngaio_Marsh_Awards"
+  }
+}

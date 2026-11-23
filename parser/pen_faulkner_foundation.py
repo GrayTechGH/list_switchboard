@@ -36,18 +36,24 @@ class PENFaulknerAwardParser(AwardParserBase):
   AWARD_NAME = 'PEN/Faulkner Award for Fiction'
   CATEGORY = 'Fiction'
 
-  def parse(self, pages, base_url, name=None, category=None):
+  def parse(self, pages, base_url, name=None, category=None, fetch_url=None):
+    try:
+      from calibre_plugins.list_switchboard.parser.pen_foundation_updates import (
+        announcement_rows, detail_row, history_sources)
+    except ImportError:
+      from .pen_foundation_updates import announcement_rows, detail_row, history_sources
     if isinstance(pages, (str, bytes)):
       pages = ((base_url, pages, 'history'),)
     rows = []
     for page_url, page_html, page_kind in pages:
-      root = self.html_root(page_html)
-      if page_kind == 'winner_post':
-        rows.extend(self.parse_current_winner_post(root, page_url))
-      elif page_kind == 'finalist_post':
-        rows.extend(self.parse_current_finalist_post(root, page_url))
+      if page_kind in ('winner_post', 'finalist_post', 'current'):
+        rows.extend(announcement_rows(page_html, page_url, page_kind, self))
       else:
-        rows.extend(self.parse_history(root, page_url))
+        history, links = history_sources(page_html, page_url, self)
+        rows.extend(history)
+        if links and fetch_url is None:
+          raise ValueError('Foundation cover-only history requires linked book details.')
+        rows.extend(detail_row(fetch_url(spec['url']), spec, self) for spec in links)
     entries = self.entries_from_rows(self.dedupe_rows(rows), category or self.CATEGORY)
     return self.parsed_result(
       name or self.AWARD_NAME,
@@ -186,14 +192,16 @@ class PENFaulknerAwardParser(AwardParserBase):
 
   def dedupe_rows(self, rows):
     deduped = []
-    seen = set()
+    seen = {}
     for row in rows:
       key = (
-        row['award_year'], row['result'],
+        row['award_year'],
         normalize_heading(row['title']), normalize_heading(row['author']))
       if key in seen:
+        if row['result'] == RESULT_WINNER and deduped[seen[key]]['result'] != RESULT_WINNER:
+          deduped[seen[key]] = row
         continue
-      seen.add(key)
+      seen[key] = len(deduped)
       deduped.append(row)
     return deduped
 
@@ -271,22 +279,6 @@ class PENHemingwayAwardParser(PENFaulknerAwardParser):
 
   AWARD_NAME = 'PEN/Hemingway Award for Debut Novel'
   CATEGORY = 'Debut Novel'
-
-  def parse(self, pages, base_url, name=None, category=None):
-    if isinstance(pages, (str, bytes)):
-      pages = ((base_url, pages, 'history'),)
-    rows = []
-    for page_url, page_html, page_kind in pages:
-      root = self.html_root(page_html)
-      if page_kind == 'current':
-        rows.extend(self.parse_current(root, page_url))
-      else:
-        rows.extend(self.parse_history(root, page_url))
-    entries = self.entries_from_rows(self.dedupe_rows(rows), category or self.CATEGORY)
-    return self.parsed_result(
-      name or self.AWARD_NAME,
-      base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))))
 
   def parse_current(self, root, base_url):
     rows = []

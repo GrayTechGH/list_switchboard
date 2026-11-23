@@ -8,6 +8,7 @@ from .generic import (
   UrlFetcherGeneric,
   parsed_source,
 )
+from .lukas_transport import LukasOfficialSourceAttempt
 
 try:
   from calibre_plugins.list_switchboard.parser.source_fallback import (
@@ -16,9 +17,11 @@ try:
   from calibre_plugins.list_switchboard.url_fetcher.librarything_fallback import (
     LibraryThingAwardFallbackMixin,
   )
+  from calibre_plugins.list_switchboard.parser.lukas_updates import fetch_lukas_official
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
   from url_fetcher.librarything_fallback import LibraryThingAwardFallbackMixin
+  from parser.lukas_updates import fetch_lukas_official
 
 
 LUKAS_URL = 'https://journalism.columbia.edu/lukas'
@@ -40,6 +43,7 @@ MARK_LYNTON_WIKIPEDIA_URL = (
 class UrlFetcherJAnthonyLukasBookPrize(
     LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'j_anthony_lukas_book_prize'
   NAME = 'J. Anthony Lukas Book Prize'
   URL = LUKAS_URL
@@ -80,17 +84,17 @@ class UrlFetcherJAnthonyLukasBookPrize(
       from parser.lukas import LukasOfficialParser, LukasWikipediaParser
 
     return (
-      SourceAttempt(
+      LukasOfficialSourceAttempt(self,
         'Official Columbia',
         self.URL,
-        lambda html, url, fetch_url=None, progress=None, **_kwargs:
+        lambda html, url, fetch_url=None, progress=None, cached_parsed=None,incremental_update=False, **_kwargs:
           self.parse_official_pages(
             html,
             url,
             fetch_url,
             LukasOfficialParser(),
-            progress=progress),
-        source_rank=0),
+            progress=progress,cached_parsed=cached_parsed,incremental_update=incremental_update),
+        source_rank=0,supports_incremental=True),
       self.librarything_attempt(source_rank=1),
       SourceAttempt(
         'Wikipedia',
@@ -106,7 +110,8 @@ class UrlFetcherJAnthonyLukasBookPrize(
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None,incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -118,20 +123,14 @@ class UrlFetcherJAnthonyLukasBookPrize(
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice,cached_parsed=cached_parsed,incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
-  def parse_official_pages(self, html, base_url, fetch_url, parser, progress=None):
-    pages = [(base_url, html)]
-    urls = (base_url,) + tuple(LUKAS_OFFICIAL_EXTRA_URLS)
-    if fetch_url is not None:
-      for index, url in enumerate(LUKAS_OFFICIAL_EXTRA_URLS, start=2):
-        pages.append((url, fetch_url(url)))
-        if progress is not None:
-          progress(index, len(urls), 'Fetched Lukas source %d of %d' % (
-            index, len(urls)))
-    parsed = parser.parse(pages, base_url, self.NAME, self.CATEGORY)
+  def parse_official_pages(self, html, base_url, fetch_url, parser, progress=None,
+      cached_parsed=None,incremental_update=False):
+    parsed=fetch_lukas_official(self,parser,html,base_url,fetch_url,LUKAS_OFFICIAL_EXTRA_URLS,
+      cached_parsed,incremental_update,progress)
     if not parsed.get('entries'):
       raise UrlFetcherError('Official Columbia produced no entries')
     parsed.setdefault('source', parsed_source(self.NAME, base_url, self.source_id))
@@ -144,6 +143,7 @@ class UrlFetcherJAnthonyLukasBookPrize(
 
 class UrlFetcherMarkLyntonHistoryPrize(UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'mark_lynton_history_prize'
   NAME = 'Mark Lynton History Prize'
   URL = LUKAS_URL
@@ -178,17 +178,17 @@ class UrlFetcherMarkLyntonHistoryPrize(UrlFetcherGeneric):
 
   def source_attempts(self):
     return (
-      SourceAttempt(
+      LukasOfficialSourceAttempt(self,
         'Official Columbia',
         self.URL,
-        lambda html, url, fetch_url=None, progress=None, **_kwargs:
+        lambda html, url, fetch_url=None, progress=None,cached_parsed=None,incremental_update=False, **_kwargs:
           self.parse_official_pages(
             html,
             url,
             fetch_url,
             self.parser(),
-            progress=progress),
-        source_rank=0),
+            progress=progress,cached_parsed=cached_parsed,incremental_update=incremental_update),
+        source_rank=0,supports_incremental=True),
       SourceAttempt(
         'Wikipedia',
         MARK_LYNTON_WIKIPEDIA_URL,
@@ -203,7 +203,8 @@ class UrlFetcherMarkLyntonHistoryPrize(UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None,incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -215,20 +216,14 @@ class UrlFetcherMarkLyntonHistoryPrize(UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice,cached_parsed=cached_parsed,incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 
-  def parse_official_pages(self, html, base_url, fetch_url, parser, progress=None):
-    pages = [(base_url, html)]
-    urls = (base_url,) + tuple(LUKAS_OFFICIAL_EXTRA_URLS)
-    if fetch_url is not None:
-      for index, url in enumerate(LUKAS_OFFICIAL_EXTRA_URLS, start=2):
-        pages.append((url, fetch_url(url)))
-        if progress is not None:
-          progress(index, len(urls), 'Fetched Lukas source %d of %d' % (
-            index, len(urls)))
-    parsed = parser.parse(pages, base_url, self.NAME, self.CATEGORY)
+  def parse_official_pages(self, html, base_url, fetch_url, parser, progress=None,
+      cached_parsed=None,incremental_update=False):
+    parsed=fetch_lukas_official(self,parser,html,base_url,fetch_url,LUKAS_OFFICIAL_EXTRA_URLS,
+      cached_parsed,incremental_update,progress)
     if not parsed.get('entries'):
       raise UrlFetcherError('Official Columbia produced no entries')
     parsed.setdefault('source', parsed_source(self.NAME, base_url, self.source_id))

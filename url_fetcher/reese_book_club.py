@@ -14,6 +14,7 @@ class UrlFetcherReeseBookClub(UrlFetcherGeneric):
   NAME = "Reese's Book Club"
   URL = 'https://reesesbookclub.com/our-picks/'
   order = 42
+  SUPPORTS_INCREMENTAL_UPDATE = True
   FILTER_CATEGORIES = (CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,)
   options = {'match_series': False}
 
@@ -26,7 +27,9 @@ class UrlFetcherReeseBookClub(UrlFetcherGeneric):
 
   def parse(self, html, **kwargs):
     return self.parser().parse(
-      html, self.URL, self.NAME, fetch_url=kwargs.get('fetch_url'))
+      html, self.URL, self.NAME, fetch_url=kwargs.get('fetch_url'),
+      cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False))
 
 
 class UrlFetcherReeseBookClubYA(UrlFetcherReeseBookClub):
@@ -34,6 +37,7 @@ class UrlFetcherReeseBookClubYA(UrlFetcherReeseBookClub):
   source_id = 'reese_book_club_ya'
   NAME = "Reese's Book Club - YA Picks"
   order = 43
+  SUPPORTS_INCREMENTAL_UPDATE = True
   FILTER_CATEGORIES = (
     CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
     CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,

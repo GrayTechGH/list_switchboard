@@ -11,6 +11,7 @@ except ImportError:
 
 class UrlFetcherCarnegieMedalForWriting(UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'carnegie_medal_for_writing'
   NAME = 'Carnegie Medal for Writing'
   URL = WINNERS_URL
@@ -32,5 +33,6 @@ class UrlFetcherCarnegieMedalForWriting(UrlFetcherGeneric):
       self.NAME,
       fetch_url=fetch_url,
       current_year=kwargs.get('current_year'),
+      cached_parsed=kwargs.get('cached_parsed'),incremental_update=kwargs.get('incremental_update',False),
       log=log,
       progress=progress)

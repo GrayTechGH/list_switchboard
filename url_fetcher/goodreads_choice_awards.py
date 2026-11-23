@@ -64,7 +64,7 @@ class UrlFetcherGoodreadsChoiceAwards(GoodreadsFetchPolicyMixin, UrlFetcherGener
 
   def parse(
       self, html, fetch_url=None, log=None, progress=None, sleep=None,
-      **_kwargs):
+      cached_parsed=None, incremental_update=False, **_kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -72,11 +72,14 @@ class UrlFetcherGoodreadsChoiceAwards(GoodreadsFetchPolicyMixin, UrlFetcherGener
       fetch_url=fetch_url,
       log=log,
       progress=progress,
-      sleep=sleep)
+      sleep=sleep,
+      cached_parsed=cached_parsed,
+      incremental_update=incremental_update)
 
 
 class UrlFetcherGoodreadsChoiceAwardsFiction(UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_fiction'
   NAME = 'Goodreads Choice Awards - Fiction'
   CATEGORY = 'Fiction'
@@ -86,6 +89,7 @@ class UrlFetcherGoodreadsChoiceAwardsFiction(UrlFetcherGoodreadsChoiceAwards):
 
 class UrlFetcherGoodreadsChoiceAwardsHistoricalFiction(UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_historical_fiction'
   NAME = 'Goodreads Choice Awards - Historical Fiction'
   CATEGORY = 'Historical Fiction'
@@ -95,6 +99,7 @@ class UrlFetcherGoodreadsChoiceAwardsHistoricalFiction(UrlFetcherGoodreadsChoice
 
 class UrlFetcherGoodreadsChoiceAwardsMysteryThriller(UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_mystery_thriller'
   NAME = 'Goodreads Choice Awards - Mystery & Thriller'
   CATEGORY = 'Mystery & Thriller'
@@ -104,6 +109,7 @@ class UrlFetcherGoodreadsChoiceAwardsMysteryThriller(UrlFetcherGoodreadsChoiceAw
 
 class UrlFetcherGoodreadsChoiceAwardsRomance(UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_romance'
   NAME = 'Goodreads Choice Awards - Romance'
   CATEGORY = 'Romance'
@@ -113,6 +119,7 @@ class UrlFetcherGoodreadsChoiceAwardsRomance(UrlFetcherGoodreadsChoiceAwards):
 
 class UrlFetcherGoodreadsChoiceAwardsRomantasy(UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_romantasy'
   NAME = 'Goodreads Choice Awards - Romantasy'
   CATEGORY = 'Romantasy'
@@ -122,6 +129,7 @@ class UrlFetcherGoodreadsChoiceAwardsRomantasy(UrlFetcherGoodreadsChoiceAwards):
 
 class UrlFetcherGoodreadsChoiceAwardsFantasy(UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_fantasy'
   NAME = 'Goodreads Choice Awards - Fantasy'
   CATEGORY = 'Fantasy'
@@ -131,6 +139,7 @@ class UrlFetcherGoodreadsChoiceAwardsFantasy(UrlFetcherGoodreadsChoiceAwards):
 
 class UrlFetcherGoodreadsChoiceAwardsScienceFiction(UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_science_fiction'
   NAME = 'Goodreads Choice Awards - Science Fiction'
   CATEGORY = 'Science Fiction'
@@ -140,6 +149,7 @@ class UrlFetcherGoodreadsChoiceAwardsScienceFiction(UrlFetcherGoodreadsChoiceAwa
 
 class UrlFetcherGoodreadsChoiceAwardsHorror(UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_horror'
   NAME = 'Goodreads Choice Awards - Horror'
   CATEGORY = 'Horror'
@@ -149,6 +159,7 @@ class UrlFetcherGoodreadsChoiceAwardsHorror(UrlFetcherGoodreadsChoiceAwards):
 
 class UrlFetcherGoodreadsChoiceAwardsDebutNovel(UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_debut_novel'
   NAME = 'Goodreads Choice Awards - Debut Novel'
   CATEGORY = 'Debut Novel'
@@ -162,6 +173,7 @@ class UrlFetcherGoodreadsChoiceAwardsDebutNovel(UrlFetcherGoodreadsChoiceAwards)
 
 class UrlFetcherGoodreadsChoiceAwardsAudiobook(UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_audiobook'
   NAME = 'Goodreads Choice Awards - Audiobook'
   CATEGORY = 'Audiobook'
@@ -171,6 +183,7 @@ class UrlFetcherGoodreadsChoiceAwardsAudiobook(UrlFetcherGoodreadsChoiceAwards):
 
 class UrlFetcherGoodreadsChoiceAwardsYoungAdultFiction(UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_young_adult_fiction'
   NAME = 'Goodreads Choice Awards - Young Adult Fiction'
   CATEGORY = 'Young Adult Fiction'
@@ -181,6 +194,7 @@ class UrlFetcherGoodreadsChoiceAwardsYoungAdultFiction(UrlFetcherGoodreadsChoice
 class UrlFetcherGoodreadsChoiceAwardsYoungAdultFantasyScienceFiction(
     UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_young_adult_fantasy_science_fiction'
   NAME = 'Goodreads Choice Awards - Young Adult Fantasy & Science Fiction'
   CATEGORY = 'Young Adult Fantasy & Science Fiction'
@@ -200,6 +214,7 @@ class UrlFetcherGoodreadsChoiceAwardsYoungAdultFantasyScienceFiction(
 
 class UrlFetcherGoodreadsChoiceAwardsNonfiction(UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_nonfiction'
   NAME = 'Goodreads Choice Awards - Nonfiction'
   CATEGORY = 'Nonfiction'
@@ -209,6 +224,7 @@ class UrlFetcherGoodreadsChoiceAwardsNonfiction(UrlFetcherGoodreadsChoiceAwards)
 
 class UrlFetcherGoodreadsChoiceAwardsMemoir(UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_memoir'
   NAME = 'Goodreads Choice Awards - Memoir'
   CATEGORY = 'Memoir'
@@ -218,6 +234,7 @@ class UrlFetcherGoodreadsChoiceAwardsMemoir(UrlFetcherGoodreadsChoiceAwards):
 
 class UrlFetcherGoodreadsChoiceAwardsHistoryBiography(UrlFetcherGoodreadsChoiceAwards):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'goodreads_choice_awards_history_biography'
   NAME = 'Goodreads Choice Awards - History & Biography'
   CATEGORY = 'History & Biography'

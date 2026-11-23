@@ -1,0 +1,287 @@
+{
+  "append_state": {
+    "entry_count": 16,
+    "last_entry_key": "transmuted|eve harms",
+    "last_position": "2021.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "_source_order": 2,
+      "authors": [
+        "Sara Tantlinger"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2019",
+      "category": "Novella",
+      "position": "2019",
+      "result": "winner",
+      "title": "To Be Devoured"
+    },
+    {
+      "_source_order": 0,
+      "authors": [
+        "C.V. Hunt"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2019",
+      "category": "Novella",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=3"
+      },
+      "title": "Halloween Fiend"
+    },
+    {
+      "_source_order": 0,
+      "authors": [
+        "Angela Archer"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2019",
+      "category": "Novella",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=4"
+      },
+      "title": "The Ladder Man"
+    },
+    {
+      "_source_order": 1,
+      "authors": [
+        "S.H. Cooper"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2019",
+      "category": "Novella",
+      "position": "2019.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=3"
+      },
+      "title": "The Festering Ones"
+    },
+    {
+      "_source_order": 1,
+      "authors": [
+        "Gemma Amor"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2019",
+      "category": "Novella",
+      "position": "2019.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=4"
+      },
+      "title": "Dear Laura"
+    },
+    {
+      "_source_order": 1,
+      "authors": [
+        "Mona Kabbani"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Novella",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Bell Chime"
+    },
+    {
+      "_source_order": 4,
+      "authors": [
+        "Hailey Piper"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Novella",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "The Worm and His Kings"
+    },
+    {
+      "_source_order": 5,
+      "authors": [
+        "Gwendolyn Kiste"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Novella",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "The Invention of Ghosts"
+    },
+    {
+      "_source_order": 6,
+      "authors": [
+        "Laurel Hightower"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Novella",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "Crossroads"
+    },
+    {
+      "_source_order": 7,
+      "authors": [
+        "Jessica Guess"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Novella",
+      "position": "2020.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "Cirque Berserk"
+    },
+    {
+      "_source_order": 8,
+      "authors": [
+        "April-Jane Rowan"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Novella",
+      "position": "2020.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "Beneath A Bethel"
+    },
+    {
+      "_source_order": 0,
+      "authors": [
+        "V. Castro"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021",
+      "result": "winner",
+      "title": "Goddess of Filth"
+    },
+    {
+      "_source_order": 0,
+      "authors": [
+        "T.C. Parker"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "Salvation Spring"
+    },
+    {
+      "_source_order": 1,
+      "authors": [
+        "Samantha Kolesnik"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "Waif"
+    },
+    {
+      "_source_order": 2,
+      "authors": [
+        "Shingai Njeri Kagunda"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "And This is How to Stay Alive"
+    },
+    {
+      "_source_order": 3,
+      "authors": [
+        "Eve Harms"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "Transmuted"
+    }
+  ],
+  "fetched_at": "2026-11-14T22:20:13Z",
+  "list_id": "ladies_of_horror_fiction_novella",
+  "list_name": "Ladies of Horror Fiction - Novella (discontinued)",
+  "match_series": false,
+  "notes": [
+    "Ladies of Horror Fiction uses Goodreads as the primary source and a narrow File 770 2021 winner correction.",
+    "Shortlisted rows are Goodreads nominee rows where present, not guaranteed complete official shortlists.",
+    "Goodreads is the V1 primary source for LOHF winners and nominees.",
+    "Goodreads nominee rows are imported as shortlisted rows; this is not an official consolidated shortlist archive.",
+    "The 2021 awards were the final LOHF award cycle and were announced in 2022; no later award rows are expected.",
+    "File 770 2021 LOHF winner mirror is used only to promote or append winner rows; it is not a shortlist source."
+  ],
+  "parser": "ladies_of_horror_fiction_novella",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Ladies of Horror Fiction - Novella (discontinued)",
+    "source_id": "ladies_of_horror_fiction_novella",
+    "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award"
+  }
+}

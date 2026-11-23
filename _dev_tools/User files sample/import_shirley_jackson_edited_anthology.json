@@ -1,0 +1,1631 @@
+{
+  "append_state": {
+    "entry_count": 98,
+    "last_entry_key": "were wolf short stories|catherine taylor\u001fnick wells\u001fgillian whitaker",
+    "last_position": "2026.03",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2008",
+      "category": "Edited Anthology",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2008"
+      },
+      "title": "Inferno"
+    },
+    {
+      "authors": [
+        "Barbara Roden",
+        "Christopher Roden"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2008",
+      "category": "Edited Anthology",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2008"
+      },
+      "title": "At Ease with the Dead"
+    },
+    {
+      "authors": [
+        "Del Howison",
+        "Jeff Gelb"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2008",
+      "category": "Edited Anthology",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2008"
+      },
+      "title": "Dark Delicacies 2: Fear"
+    },
+    {
+      "authors": [
+        "John Klima"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2008",
+      "category": "Edited Anthology",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2008"
+      },
+      "title": "Logorrhea"
+    },
+    {
+      "authors": [
+        "Jack Dann",
+        "Gardner Dozois"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2008",
+      "category": "Edited Anthology",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2008"
+      },
+      "title": "Wizards"
+    },
+    {
+      "authors": [
+        "Sarah Eyre",
+        "Ra Page"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2009",
+      "category": "Edited Anthology",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2009"
+      },
+      "title": "The New Uncanny"
+    },
+    {
+      "authors": [
+        "Tom English"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2009",
+      "category": "Edited Anthology",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2009"
+      },
+      "title": "Bound for Evil"
+    },
+    {
+      "authors": [
+        "Danel Olson"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2009",
+      "category": "Edited Anthology",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2009"
+      },
+      "title": "Exotic Gothic 2: New Tales of Taboo"
+    },
+    {
+      "authors": [
+        "Ann VanderMeer",
+        "Jeff VanderMeer"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2009",
+      "category": "Edited Anthology",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2009"
+      },
+      "title": "Fast Ships, Black Sails"
+    },
+    {
+      "authors": [
+        "Barbara Roden",
+        "Christopher Roden"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2009",
+      "category": "Edited Anthology",
+      "position": "2009.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2009"
+      },
+      "title": "Shades of Darkness"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2010",
+      "category": "Edited Anthology",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2010"
+      },
+      "title": "Poe"
+    },
+    {
+      "authors": [
+        "Michael Kelly"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2010",
+      "category": "Edited Anthology",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2010"
+      },
+      "title": "Apparitions"
+    },
+    {
+      "authors": [
+        "Christopher Golden",
+        "Tim Lebbon",
+        "James A. Moore"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2010",
+      "category": "Edited Anthology",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2010"
+      },
+      "title": "British Invasion"
+    },
+    {
+      "authors": [
+        "Danel Olson"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2010",
+      "category": "Edited Anthology",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2010"
+      },
+      "title": "Exotic Gothic 3"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2010",
+      "category": "Edited Anthology",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2010"
+      },
+      "title": "Lovecraft Unbound"
+    },
+    {
+      "authors": [
+        "Neil Gaiman",
+        "Al Sarrantonio"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2011",
+      "category": "Edited Anthology",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2011"
+      },
+      "title": "Stories: All-New Tales"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2011",
+      "category": "Edited Anthology",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2011"
+      },
+      "title": "Black Wings"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Nick Mamatas"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2011",
+      "category": "Edited Anthology",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2011"
+      },
+      "title": "Haunted Legends"
+    },
+    {
+      "authors": [
+        "Kate Bernheimer"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2011",
+      "category": "Edited Anthology",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2011"
+      },
+      "title": "My Mother, She Killed Me, My Father, He Ate Me"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan",
+        "Lou Anders"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2011",
+      "category": "Edited Anthology",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2011"
+      },
+      "title": "Swords & Dark Magic"
+    },
+    {
+      "authors": [
+        "Jack Dann",
+        "Nick Gevers"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2012",
+      "category": "Edited Anthology",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2012"
+      },
+      "title": "Ghosts by Gaslight"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2012",
+      "category": "Edited Anthology",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2012"
+      },
+      "title": "Blood and Other Cravings"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2012",
+      "category": "Edited Anthology",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2012"
+      },
+      "title": "A Book of Horrors"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2012",
+      "category": "Edited Anthology",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2012"
+      },
+      "title": "Supernatural Noir"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2012",
+      "category": "Edited Anthology",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2012"
+      },
+      "title": "Teeth: Vampire Tales"
+    },
+    {
+      "authors": [
+        "Ann VanderMeer",
+        "Jeff VanderMeer"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2012",
+      "category": "Edited Anthology",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2012"
+      },
+      "title": "The Thackery T. Lambshead Cabinet of Curiosities"
+    },
+    {
+      "authors": [
+        "Danel Olson"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2013",
+      "category": "Edited Anthology",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2013"
+      },
+      "title": "Exotic Gothic 4: Postscripts #28/29"
+    },
+    {
+      "authors": [
+        "Christopher Golden"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2013",
+      "category": "Edited Anthology",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2013"
+      },
+      "title": "21st Century Dead"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2013",
+      "category": "Edited Anthology",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2013"
+      },
+      "title": "Black Wings II"
+    },
+    {
+      "authors": [
+        "Greg Herren",
+        "J. M. Redmann"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2013",
+      "category": "Edited Anthology",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2013"
+      },
+      "title": "Night Shadows: Queer Horror"
+    },
+    {
+      "authors": [
+        "Sam Weller",
+        "Mort Castle"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2013",
+      "category": "Edited Anthology",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2013"
+      },
+      "title": "Shadow Show: All-New Stories in Celebration of Ray Bradbury"
+    },
+    {
+      "authors": [
+        "Joseph S. Pulver, Sr."
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2014",
+      "category": "Edited Anthology",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2014"
+      },
+      "title": "The Grimscribe's Puppets"
+    },
+    {
+      "authors": [
+        "Jared Shurin"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2014",
+      "category": "Edited Anthology",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2014"
+      },
+      "title": "The Book of the Dead"
+    },
+    {
+      "authors": [
+        "Jonathan Oliver"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2014",
+      "category": "Edited Anthology",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2014"
+      },
+      "title": "End of the Road"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2014",
+      "category": "Edited Anthology",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2014"
+      },
+      "title": "Queen Victoria's Book of Spells"
+    },
+    {
+      "authors": [
+        "Steve Berman"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2014",
+      "category": "Edited Anthology",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2014"
+      },
+      "title": "Where thy Dark Eye Glances: Queering Edgar Allan Poe"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2015",
+      "category": "Edited Anthology",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2015"
+      },
+      "title": "Fearful Symmetries"
+    },
+    {
+      "authors": [
+        "Ross E. Lockhart",
+        "Justin Steele"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2015",
+      "category": "Edited Anthology",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2015"
+      },
+      "title": "The Children of Old Leech"
+    },
+    {
+      "authors": [
+        "Jesse Bullington"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2015",
+      "category": "Edited Anthology",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2015"
+      },
+      "title": "Letters to Lovecraft"
+    },
+    {
+      "authors": [
+        "Michael Kelly"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2015",
+      "category": "Edited Anthology",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2015"
+      },
+      "title": "Shadows & Tall Trees 2014"
+    },
+    {
+      "authors": [
+        "Mark Morris"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2015",
+      "category": "Edited Anthology",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2015"
+      },
+      "title": "The Spectral Book of Horror Stories"
+    },
+    {
+      "authors": [
+        "Simon Strantzas"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2016",
+      "category": "Edited Anthology",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2016"
+      },
+      "title": "Aickman's Heirs"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2016",
+      "category": "Edited Anthology",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2016"
+      },
+      "title": "Black Wings IV"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2016",
+      "category": "Edited Anthology",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2016"
+      },
+      "title": "The Doll Collection"
+    },
+    {
+      "authors": [
+        "Richard Thomas"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2016",
+      "category": "Edited Anthology",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2016"
+      },
+      "title": "Exigencies"
+    },
+    {
+      "authors": [
+        "Christopher Golden"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2016",
+      "category": "Edited Anthology",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2016"
+      },
+      "title": "Seize the Night"
+    },
+    {
+      "authors": [
+        "Dominik Parisien",
+        "Navah Wolfe"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2017",
+      "category": "Edited Anthology",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2017"
+      },
+      "title": "The Starlit Wood"
+    },
+    {
+      "authors": [
+        "Mike Davis"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2017",
+      "category": "Edited Anthology",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2017"
+      },
+      "title": "Autumn Cthulhu"
+    },
+    {
+      "authors": [
+        "Joseph S. Pulver, Sr."
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2017",
+      "category": "Edited Anthology",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2017"
+      },
+      "title": "The Madness of Dr. Caligari"
+    },
+    {
+      "authors": [
+        "Kelsi Morris",
+        "Kaitlin Tremblay"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2017",
+      "category": "Edited Anthology",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2017"
+      },
+      "title": "Those Who Make Us: Canadian Creature, Myth, and Monster Stories"
+    },
+    {
+      "authors": [
+        "Kit Caless",
+        "Gary Budden"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2017",
+      "category": "Edited Anthology",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2017"
+      },
+      "title": "An Unreliable Guide to London"
+    },
+    {
+      "authors": [
+        "Michael Kelly"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2018",
+      "category": "Edited Anthology",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2018"
+      },
+      "title": "Shadows and Tall Trees Volume 7"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2018",
+      "category": "Edited Anthology",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2018"
+      },
+      "title": "Black Feathers: Dark Avian Tales"
+    },
+    {
+      "authors": [
+        "Mahvesh Murad",
+        "Jared Shurin"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2018",
+      "category": "Edited Anthology",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2018"
+      },
+      "title": "The Djinn Falls in Love and Other Stories"
+    },
+    {
+      "authors": [
+        "Justin Steele",
+        "Sam Cowan"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2018",
+      "category": "Edited Anthology",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2018"
+      },
+      "title": "Looming Low Volume 1"
+    },
+    {
+      "authors": [
+        "Ross E. Lockhart"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2018",
+      "category": "Edited Anthology",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2018"
+      },
+      "title": "Tales From a Talking Board"
+    },
+    {
+      "authors": [
+        "Dominik Parisien",
+        "Navah Wolfe"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2019",
+      "category": "Edited Anthology",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2019"
+      },
+      "title": "Robots vs Fairies"
+    },
+    {
+      "authors": [
+        "Michael Bailey",
+        "Lucy A. Snyder"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2019",
+      "category": "Edited Anthology",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2019"
+      },
+      "title": "Chiral Mad 4: An Anthology of Collaborations"
+    },
+    {
+      "authors": [
+        "The Silent Garden Collective"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2019",
+      "category": "Edited Anthology",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2019"
+      },
+      "title": "The Silent Garden: A Journal of Esoteric Fabulism"
+    },
+    {
+      "authors": [
+        "Dan Coxon"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2019",
+      "category": "Edited Anthology",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2019"
+      },
+      "title": "This Dreaming Isle"
+    },
+    {
+      "authors": [
+        "Lincoln Michel",
+        "Nadxieli Nieto"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2019",
+      "category": "Edited Anthology",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2019"
+      },
+      "title": "Tiny Crimes: Very Short Tales of Mystery and Murder"
+    },
+    {
+      "authors": [
+        "Christopher Golden",
+        "James A. Moore"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2020",
+      "category": "Edited Anthology",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2020"
+      },
+      "title": "The Twisted Book of Shadows"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2020",
+      "category": "Edited Anthology",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2020"
+      },
+      "title": "Echoes: The Saga Anthology of Ghost Stories"
+    },
+    {
+      "authors": [
+        "Dominik Parisien",
+        "Navah Wolfe"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2020",
+      "category": "Edited Anthology",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2020"
+      },
+      "title": "The Mythic Dream"
+    },
+    {
+      "authors": [
+        "Preston Grassmann"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2020",
+      "category": "Edited Anthology",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2020"
+      },
+      "title": "The Unquiet Dreamer: A Tribute to Harlan Ellison"
+    },
+    {
+      "authors": [
+        "Marie O'Regan",
+        "Paul Kane"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2020",
+      "category": "Edited Anthology",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2020"
+      },
+      "title": "Wonderland: An Anthology of Works Inspired by Alice's Adventures in Wonderland"
+    },
+    {
+      "authors": [
+        "Lee Murray",
+        "Geneve Flynn"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2021",
+      "category": "Edited Anthology",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2021"
+      },
+      "title": "Black Cranes: Tales of Unquiet Women"
+    },
+    {
+      "authors": [
+        "Mark Morris"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2021",
+      "category": "Edited Anthology",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2021"
+      },
+      "title": "After Sundown"
+    },
+    {
+      "authors": [
+        "Mark Matthews"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2021",
+      "category": "Edited Anthology",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2021"
+      },
+      "title": "Lullabies for Suffering: Tales of Addiction Horror"
+    },
+    {
+      "authors": [
+        "Doug Murano",
+        "Michael Bailey"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2021",
+      "category": "Edited Anthology",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2021"
+      },
+      "title": "Miscreations: Gods, Monstrosities & Other Horrors"
+    },
+    {
+      "authors": [
+        "Lenore Hart"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2021",
+      "category": "Edited Anthology",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2021"
+      },
+      "title": "The Night Bazaar Venice: Thirteen Tales of Forbidden Wishes and Dangerous Desires"
+    },
+    {
+      "authors": [
+        "Michael Kelly"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2021",
+      "category": "Edited Anthology",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2021"
+      },
+      "title": "Shadows & Tall Trees, Vol. 8"
+    },
+    {
+      "authors": [
+        "Lincoln Michel",
+        "Nadxieli Nieto"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2021",
+      "category": "Edited Anthology",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2021"
+      },
+      "title": "Tiny Nightmares"
+    },
+    {
+      "authors": [
+        "Eric J. Guignard"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2022",
+      "category": "Edited Anthology",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2022"
+      },
+      "title": "Professor Charlatan Bardot's Travel Anthology to the Most (Fictional) Haunted Buildings in the Weird, Wild World"
+    },
+    {
+      "authors": [
+        "dave ring"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2022",
+      "category": "Edited Anthology",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2022"
+      },
+      "title": "Unfettered Hexed: Queer Tales of Insatiable Darkness"
+    },
+    {
+      "authors": [
+        "Rebecca Brewer"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2022",
+      "category": "Edited Anthology",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2022"
+      },
+      "title": "Giving the Devil His Due: A Charity Anthology"
+    },
+    {
+      "authors": [
+        "Ken MacGregor"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2022",
+      "category": "Edited Anthology",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2022"
+      },
+      "title": "Stitched Lips: An Anthology of Horror from Silenced Voices"
+    },
+    {
+      "authors": [
+        "Jess Landry",
+        "Aaron J. French"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2022",
+      "category": "Edited Anthology",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2022"
+      },
+      "title": "There Is No Death, There Are No Dead"
+    },
+    {
+      "authors": [
+        "Doug Murano"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2023",
+      "category": "Edited Anthology",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2023"
+      },
+      "title": "The Hideous Book of Hidden Horrors"
+    },
+    {
+      "authors": [
+        "Michael Bailey"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2023",
+      "category": "Edited Anthology",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2023"
+      },
+      "title": "Chiral Mad 5"
+    },
+    {
+      "authors": [
+        "Vince A. Liaguno",
+        "Rena Mason"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2023",
+      "category": "Edited Anthology",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2023"
+      },
+      "title": "Other Terrors"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2023",
+      "category": "Edited Anthology",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2023"
+      },
+      "title": "Screams From the Dark: 29 Tales of Monsters and the Monstrous"
+    },
+    {
+      "authors": [
+        "Matt Blairstone",
+        "Alex Woodroe"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2023",
+      "category": "Edited Anthology",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2023"
+      },
+      "title": "Your Body is Not Your Body"
+    },
+    {
+      "authors": [
+        "Jolie Toomajan"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2024",
+      "category": "Edited Anthology",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2024"
+      },
+      "title": "Aseptic and Faintly Sadistic"
+    },
+    {
+      "authors": [
+        "John WM Thompson"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2024",
+      "category": "Edited Anthology",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2024"
+      },
+      "title": "Mooncalves"
+    },
+    {
+      "authors": [
+        "Shane Hawk",
+        "Theodore C. Van Alst, Jr."
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2024",
+      "category": "Edited Anthology",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2024"
+      },
+      "title": "Never Whistle at Night"
+    },
+    {
+      "authors": [
+        "Jordan Peele",
+        "John Joseph Adams"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2024",
+      "category": "Edited Anthology",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2024"
+      },
+      "title": "Out There Screaming: An Anthology of New Black Horror"
+    },
+    {
+      "authors": [
+        "James Aquilone"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2024",
+      "category": "Edited Anthology",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2024"
+      },
+      "title": "Shakespeare Unleashed"
+    },
+    {
+      "authors": [
+        "Nadia Bulkin",
+        "Julia Rios"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2025",
+      "category": "Edited Anthology",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2025"
+      },
+      "title": "Why Didn't You Just Leave"
+    },
+    {
+      "authors": [
+        "Sofia Ajram"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2025",
+      "category": "Edited Anthology",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2025"
+      },
+      "title": "Bury Your Gays: An Anthology of Tragic Queer Horror"
+    },
+    {
+      "authors": [
+        "dave ring"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2025",
+      "category": "Edited Anthology",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2025"
+      },
+      "title": "The Crawling Moon: Queer Tales of Inescapable Dread"
+    },
+    {
+      "authors": [
+        "Christa Carmen",
+        "L. E. Daniels"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2025",
+      "category": "Edited Anthology",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2025"
+      },
+      "title": "Monsters in the Mills"
+    },
+    {
+      "authors": [
+        "Terry J. Benton-Walker"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2025",
+      "category": "Edited Anthology",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2025"
+      },
+      "title": "The White Guy Dies First: 13 Scary Stories of Fear and Power"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2026",
+      "category": "Edited Anthology",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2026"
+      },
+      "title": "Night & Day"
+    },
+    {
+      "authors": [
+        "Dan Coxon"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2026",
+      "category": "Edited Anthology",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2026"
+      },
+      "title": "Unquiet Guests"
+    },
+    {
+      "authors": [
+        "Gemma Amor"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2026",
+      "category": "Edited Anthology",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2026"
+      },
+      "title": "Roots of My Fears"
+    },
+    {
+      "authors": [
+        "Kristy Park Kulski"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2026",
+      "category": "Edited Anthology",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2026"
+      },
+      "title": "Silk & Sinew: A Collection of Folk Horror from the Asian Diaspora"
+    },
+    {
+      "authors": [
+        "Catherine Taylor",
+        "Nick Wells",
+        "Gillian Whitaker"
+      ],
+      "award": "Shirley Jackson Award",
+      "award_year": "2026",
+      "category": "Edited Anthology",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Shirley_Jackson_Awards_2026"
+      },
+      "title": "Were Wolf Short Stories"
+    }
+  ],
+  "fetched_at": "2026-07-28T10:28:04Z",
+  "list_id": "shirley_jackson_edited_anthology",
+  "list_name": "Shirley Jackson - Edited Anthology",
+  "match_series": false,
+  "notes": [],
+  "parser": "shirley_jackson_edited_anthology",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Shirley Jackson - Edited Anthology",
+    "source_id": "shirley_jackson_edited_anthology",
+    "url": "https://www.sfadb.com/Shirley_Jackson_Awards"
+  }
+}

@@ -1,0 +1,1026 @@
+{
+  "append_state": {
+    "entry_count": 61,
+    "last_entry_key": "the bad book|john f d taff",
+    "last_position": "2021.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "David Dunwoody"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/features/this-is-horror-awards-2011-the-winners/anthology-of-the-year/"
+      },
+      "title": "Holiday of the Dead"
+    },
+    {
+      "authors": [
+        "Armand Rosamilia"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/features/this-is-horror-awards-2011-the-winners/anthology-of-the-year/"
+      },
+      "title": "Undead Tales"
+    },
+    {
+      "authors": [
+        "Jonathan Oliver"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2011/"
+      },
+      "title": "House of Fear"
+    },
+    {
+      "authors": [
+        "Ross Warren"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2011/"
+      },
+      "title": "Dark Minds"
+    },
+    {
+      "authors": [
+        "Peter Mark May"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2011/"
+      },
+      "title": "Alt-Dead: The Alternative Dead Anthology"
+    },
+    {
+      "authors": [
+        "Peter Mark May"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2011/"
+      },
+      "title": "Fogbound From 5"
+    },
+    {
+      "authors": [
+        "Adam Bradley"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.06",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2011/"
+      },
+      "title": "13: Tales of Dark Fiction"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.07",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2011/"
+      },
+      "title": "A Book of Horrors"
+    },
+    {
+      "authors": [
+        "John Prescott"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.08",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2011/"
+      },
+      "title": "The Spectrum Collection"
+    },
+    {
+      "authors": [
+        "Ann VanderMeer",
+        "Jeff VanderMeer"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/2012-winners/anthology-year/"
+      },
+      "title": "The Weird: A Compendium of Strange and Dark Stories"
+    },
+    {
+      "authors": [
+        "Michael Bailey"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/2012-winners/anthology-year/"
+      },
+      "title": "Chiral Mad"
+    },
+    {
+      "authors": [
+        "Paul Finch"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2012/"
+      },
+      "title": "Terror Tales of the Cotswolds"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2012/"
+      },
+      "title": "The Best Horror of the Year Volume 4"
+    },
+    {
+      "authors": [
+        "Paul Kane",
+        "Marie O'Regan"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2012/"
+      },
+      "title": "The Mammoth Book of Body Horror"
+    },
+    {
+      "authors": [
+        "Pela Via",
+        "Robb Olson",
+        "Livius Nedin"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/2013-winners/anthology-year-2/"
+      },
+      "title": "The Booked. Anthology"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/2013-winners/anthology-year-2/"
+      },
+      "title": "The Best Horror of the Year, Volume 5"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/horror-awards-2013/"
+      },
+      "title": "Hauntings"
+    },
+    {
+      "authors": [
+        "Cameron Pierce"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/horror-awards-2013/"
+      },
+      "title": "In Heaven, Everything is Fine: Fiction Inspired by David Lynch"
+    },
+    {
+      "authors": [
+        "Jonathan Oliver"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/horror-awards-2013/"
+      },
+      "title": "Magic: An Anthology of the Esoteric & Arcane"
+    },
+    {
+      "authors": [
+        "Chuck Palahniuk",
+        "Richard Thomas",
+        "Dennis Widmyer"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2014-winners/"
+      },
+      "title": "Burnt Tongues: An Anthology of Transgressive Short Stories"
+    },
+    {
+      "authors": [
+        "Richard Thomas"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2014-winners/"
+      },
+      "title": "The New Black"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2014-vote-now/"
+      },
+      "title": "The Cutting Room: Dark Reflections of the Silver Screen"
+    },
+    {
+      "authors": [
+        "Mark Morris"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2014-vote-now/"
+      },
+      "title": "The Spectral Book of Horror Stories"
+    },
+    {
+      "authors": [
+        "Laird Barron"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2014-vote-now/"
+      },
+      "title": "Year's Best Weird Fiction, Volume 1"
+    },
+    {
+      "authors": [
+        "Ross E. Lockhart"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-the-winners/"
+      },
+      "title": "Cthulhu Fhtagn!"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-the-winners/"
+      },
+      "title": "The Monstrous"
+    },
+    {
+      "authors": [
+        "Simon Strantzas"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-vote-now/"
+      },
+      "title": "Aickman's Heirs"
+    },
+    {
+      "authors": [
+        "H. L. Nelson",
+        "Joanne Merriam"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-vote-now/"
+      },
+      "title": "Choose Wisely: 35 Women Up To No Good"
+    },
+    {
+      "authors": [
+        "Richard Thomas"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-vote-now/"
+      },
+      "title": "Exigencies: A Neo-Noir Anthology"
+    },
+    {
+      "authors": [
+        "Nick Mamatas",
+        "Masumi Washington"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2015-vote-now/"
+      },
+      "title": "Hanzai Japan: Fantastical, Futuristic Stories of Crime From and About Japan"
+    },
+    {
+      "authors": [
+        "Mike Davis"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-the-winners/"
+      },
+      "title": "Autumn Cthulhu"
+    },
+    {
+      "authors": [
+        "Doug Murano",
+        "D. Alexander Ward"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-the-winners/"
+      },
+      "title": "Gutted: Beautiful Horror Stories"
+    },
+    {
+      "authors": [
+        "Ross E. Lockhart"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-vote-now/"
+      },
+      "title": "Eternal Frankenstein"
+    },
+    {
+      "authors": [
+        "Max Booth III",
+        "Lori Michelle"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-vote-now/"
+      },
+      "title": "Lost Signals"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-vote-now/"
+      },
+      "title": "Nightmares: A New Decade of Modern Horror"
+    },
+    {
+      "authors": [
+        "Anthony Rivera",
+        "Sharon Lawson"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2016-vote-now/"
+      },
+      "title": "Peel Back The Skin"
+    },
+    {
+      "authors": [
+        "Justin Steele",
+        "Sam Cowan"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-the-winners/"
+      },
+      "title": "Looming Low Volume I"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-the-winners/"
+      },
+      "title": "Black Feathers: Dark Avian Tales: An Anthology"
+    },
+    {
+      "authors": [
+        "Doug Murano"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-vote-now/"
+      },
+      "title": "Behold!: Oddities, Curiosities and Undefinable Wonders"
+    },
+    {
+      "authors": [
+        "Mark Morris"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-vote-now/"
+      },
+      "title": "New Fears"
+    },
+    {
+      "authors": [
+        "Alessandro Manzetti",
+        "Jodi Ren\u00e9e Lester"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2017-vote-now/"
+      },
+      "title": "The Beauty of Death 2 -Death By Water"
+    },
+    {
+      "authors": [
+        "Robert S. Wilson"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-the-winners/"
+      },
+      "title": "Ashes and Entropy"
+    },
+    {
+      "authors": [
+        "D. Alexander Ward"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-the-winners/"
+      },
+      "title": "Lost Highways"
+    },
+    {
+      "authors": [
+        "Marie O'Regan"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-vote-now/"
+      },
+      "title": "Phantoms: Haunting Tales from Masters of the Genre"
+    },
+    {
+      "authors": [
+        "Simon Dewar"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-vote-now/"
+      },
+      "title": "Suspended in Dusk II"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2018-vote-now/"
+      },
+      "title": "The Devil and the Deep: Horror Stories of the Sea"
+    },
+    {
+      "authors": [
+        "Robert S. Wilson"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2019-the-winners/"
+      },
+      "title": "Nox Pareidolia"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2019-the-winners/"
+      },
+      "title": "Echoes"
+    },
+    {
+      "authors": [
+        "Kenneth W. Cain"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2019-vote-now/"
+      },
+      "title": "Midnight in the Graveyard"
+    },
+    {
+      "authors": [
+        "Eric J. Guignard"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2019-vote-now/"
+      },
+      "title": "Pop The Clutch"
+    },
+    {
+      "authors": [
+        "Christopher Golden",
+        "James A. Moore"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2019-vote-now/"
+      },
+      "title": "The Twisted Book of Shadows"
+    },
+    {
+      "authors": [
+        "Doug Murano",
+        "Michael Bailey"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2020-the-winners/"
+      },
+      "title": "Miscreations: Gods, Monstrosities & Other Horrors"
+    },
+    {
+      "authors": [
+        "Samantha Kolesnik"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2020-the-winners/"
+      },
+      "title": "Worst Laid Plans: An Anthology of Vacation Horror"
+    },
+    {
+      "authors": [
+        "Zelda Knight",
+        "Ekpeki Oghenechovwe Donald"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2020-vote-now/"
+      },
+      "title": "Dominion: An Anthology of Speculative Fiction from Africa and the African Diaspora"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2020-vote-now/"
+      },
+      "title": "Final Cuts: New Tales of Hollywood Horror and Other Spectacles"
+    },
+    {
+      "authors": [
+        "Mark Matthews"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2020-vote-now/"
+      },
+      "title": "Lullabies for Suffering: Tales of Addiction Horror"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2021-the-winners/"
+      },
+      "title": "When Things Get Dark"
+    },
+    {
+      "authors": [
+        "Aaron J. French",
+        "Jess Landry"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/awards/this-is-horror-awards-2021-the-winners/"
+      },
+      "title": "There is No Death, There are No Dead"
+    },
+    {
+      "authors": [
+        "Max Booth III",
+        "Lori Michelle"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2021-vote-now/"
+      },
+      "title": "Lost Contact"
+    },
+    {
+      "authors": [
+        "Eric J. Guignard"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2021-vote-now/"
+      },
+      "title": "Professor Charlatan Bardot's Travel Anthology to the Most (Fictional) Haunted Buildings in the Weird, Wild World"
+    },
+    {
+      "authors": [
+        "John F.D. Taff"
+      ],
+      "award": "This Is Horror Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thisishorror.co.uk/this-is-horror-awards-2021-vote-now/"
+      },
+      "title": "The Bad Book"
+    }
+  ],
+  "fetched_at": "2026-11-14T11:54:34Z",
+  "list_id": "this_is_horror_anthology",
+  "list_name": "This Is Horror - Anthology (discontinued)",
+  "match_series": false,
+  "notes": [
+    "Official ballot order is retained after winner and runner-up promotion.",
+    "The 2022 and 2023 cycles are explicit empty gaps pending official Legacy Awards shortlists or results.",
+    "No completed official 2025 ballot or result page is available.",
+    "Official This Is Horror ballot pages provide the complete historical nominee set for each available award cycle.",
+    "Official This Is Horror result pages identify the winner and runner-up within each complete official ballot.",
+    "Goodreads is checked as a paginated diagnostic supplement; official This Is Horror ballots remain authoritative.",
+    "Goodreads overlaps were excluded in favor of official ballot rows.",
+    "This Is Horror - Anthology is discontinued after the 2021 cycle; the resumed 2024 awards did not include an anthology category."
+  ],
+  "parser": "this_is_horror_anthology",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "This Is Horror - Anthology (discontinued)",
+    "source_id": "this_is_horror_anthology",
+    "url": "https://www.thisishorror.co.uk/awards/"
+  }
+}

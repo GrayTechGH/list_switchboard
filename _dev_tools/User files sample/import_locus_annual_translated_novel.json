@@ -1,0 +1,194 @@
+{
+  "append_state": {
+    "entry_count": 10,
+    "last_entry_key": "the midnight shift|cheon seon ran\u001fgene png",
+    "last_position": "2026.09",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Solvej Balle",
+        "Sophia Hersi Smith",
+        "Jennifer Russell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "On the Calculation of Volume III"
+    },
+    {
+      "authors": [
+        "Bora Chung",
+        "Anton Hur"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Red Sword"
+    },
+    {
+      "authors": [
+        "Olga Ravn",
+        "Martin Aitken"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Wax Child"
+    },
+    {
+      "authors": [
+        "Augustina Bazterrica",
+        "Sarah Moses"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Unworthy"
+    },
+    {
+      "authors": [
+        "Jacek Dukaj",
+        "Ursula Phillips"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Ice"
+    },
+    {
+      "authors": [
+        "Sung-il Kim",
+        "Anton Hur"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Blood for the Undying Throne"
+    },
+    {
+      "authors": [
+        "Michel Nieva",
+        "Rahul Bery"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Dengue Boy"
+    },
+    {
+      "authors": [
+        "Bora Chung",
+        "Anton Hur"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Midnight Timetable"
+    },
+    {
+      "authors": [
+        "Sayaka Murata",
+        "Ginny Tapley Takemori"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Vanishing World"
+    },
+    {
+      "authors": [
+        "Cheon Seon-Ran",
+        "Gene Png"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Translated Novel",
+      "position": "2026.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Midnight Shift"
+    }
+  ],
+  "fetched_at": "2026-07-23T13:48:49Z",
+  "list_id": "locus_annual_translated_novel",
+  "list_name": "Locus - Annual Translated Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "locus_annual_translated_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Locus - Annual Translated Novel",
+    "source_id": "locus_annual_translated_novel",
+    "url": "https://www.sfadb.com/Locus_Awards"
+  }
+}

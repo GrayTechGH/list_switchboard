@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 31,
-    "last_entry_key": "funeral songs for dying girls|cherie dimaline",
-    "last_position": "2024",
+    "entry_count": 136,
+    "last_entry_key": "the dark won t wait|david a poulsen",
+    "last_position": "2025.02",
     "source_revision": null
   },
   "entries": [
@@ -59,7 +59,51 @@
       "category": "Juvenile or Young Adult",
       "position": "1998",
       "result": "winner",
-      "title": "The Body in the Basement"
+      "title": "Body in the Basement"
+    },
+    {
+      "authors": [
+        "Linda Bailey"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1998",
+      "category": "Juvenile or Young Adult",
+      "position": "1998.01",
+      "result": "nominee",
+      "title": "What's a Daring Detective Like Me Doing in the Doghouse?"
+    },
+    {
+      "authors": [
+        "Nicholas Boving"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1998",
+      "category": "Juvenile or Young Adult",
+      "position": "1998.02",
+      "result": "nominee",
+      "title": "Maxim Gunn and the Demon Plan"
+    },
+    {
+      "authors": [
+        "Roy MacGregor"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1998",
+      "category": "Juvenile or Young Adult",
+      "position": "1998.03",
+      "result": "nominee",
+      "title": "Terror in Florida"
+    },
+    {
+      "authors": [
+        "Cora Taylor"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1998",
+      "category": "Juvenile or Young Adult",
+      "position": "1998.04",
+      "result": "nominee",
+      "title": "Vanishing Act"
     },
     {
       "authors": [
@@ -70,7 +114,51 @@
       "category": "Juvenile or Young Adult",
       "position": "1999",
       "result": "winner",
-      "title": "Sins of the Father"
+      "title": "Sins of the father"
+    },
+    {
+      "authors": [
+        "Kim Askew"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "Juvenile or Young Adult",
+      "position": "1999.01",
+      "result": "nominee",
+      "title": "Surfers Of Snow"
+    },
+    {
+      "authors": [
+        "Sheila Dalton"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "Juvenile or Young Adult",
+      "position": "1999.02",
+      "result": "nominee",
+      "title": "Trial by Fire"
+    },
+    {
+      "authors": [
+        "Robert Sutherland"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "Juvenile or Young Adult",
+      "position": "1999.03",
+      "result": "nominee",
+      "title": "The Secret of Devil Lake"
+    },
+    {
+      "authors": [
+        "Mary Woodbury"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "1999",
+      "category": "Juvenile or Young Adult",
+      "position": "1999.04",
+      "result": "nominee",
+      "title": "The Intrepid Polly McDoodle"
     },
     {
       "authors": [
@@ -85,6 +173,39 @@
     },
     {
       "authors": [
+        "Mary Labatt"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "Juvenile or Young Adult",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "The Ghost of Captain Briggs"
+    },
+    {
+      "authors": [
+        "Sylvia McNicoll"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "Juvenile or Young Adult",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "Grave Secrets"
+    },
+    {
+      "authors": [
+        "Shane Peacock"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "Juvenile or Young Adult",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "Mystery Of Irelands Eye"
+    },
+    {
+      "authors": [
         "Tim Wynne-Jones"
       ],
       "award": "Crime Writers of Canada Award",
@@ -92,12 +213,51 @@
       "category": "Juvenile or Young Adult",
       "position": "2001",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/The_Boy_in_the_Burning_House"
-      },
       "title": "The Boy in the Burning House"
+    },
+    {
+      "authors": [
+        "Phil Campagna"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2001",
+      "category": "Juvenile or Young Adult",
+      "position": "2001.01",
+      "result": "nominee",
+      "title": "The Liberty Circle"
+    },
+    {
+      "authors": [
+        "James Heneghan"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2001",
+      "category": "Juvenile or Young Adult",
+      "position": "2001.02",
+      "result": "nominee",
+      "title": "The Grave"
+    },
+    {
+      "authors": [
+        "Monica Hughes"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2001",
+      "category": "Juvenile or Young Adult",
+      "position": "2001.03",
+      "result": "nominee",
+      "title": "Storm Warning"
+    },
+    {
+      "authors": [
+        "Janet McNaughton"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2001",
+      "category": "Juvenile or Young Adult",
+      "position": "2001.04",
+      "result": "nominee",
+      "title": "The Secret Under My Skin"
     },
     {
       "authors": [
@@ -112,6 +272,39 @@
     },
     {
       "authors": [
+        "Gary Barwin"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "Juvenile or Young Adult",
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "Seeing Stars"
+    },
+    {
+      "authors": [
+        "Norah McClintock"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "Juvenile or Young Adult",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "Body, Crime, Suspect : How a Murder Investigation Really Works"
+    },
+    {
+      "authors": [
+        "Shane Peacock"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "Juvenile or Young Adult",
+      "position": "2002.03",
+      "result": "nominee",
+      "title": "Bone beds of the Badlands"
+    },
+    {
+      "authors": [
         "Norah McClintock"
       ],
       "award": "Crime Writers of Canada Award",
@@ -120,6 +313,50 @@
       "position": "2003",
       "result": "winner",
       "title": "Break and Enter"
+    },
+    {
+      "authors": [
+        "Linda Bailey"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2003",
+      "category": "Juvenile or Young Adult",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "What's a Serious Detective Like Me Doing in Such a Silly Movie?"
+    },
+    {
+      "authors": [
+        "Monica Hughes"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2003",
+      "category": "Juvenile or Young Adult",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "The Maze"
+    },
+    {
+      "authors": [
+        "Valerie Sherrard"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2003",
+      "category": "Juvenile or Young Adult",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "Out of the Ashes"
+    },
+    {
+      "authors": [
+        "Eric Walters"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2003",
+      "category": "Juvenile or Young Adult",
+      "position": "2003.04",
+      "result": "nominee",
+      "title": "Camp X"
     },
     {
       "authors": [
@@ -134,6 +371,50 @@
     },
     {
       "authors": [
+        "Barbara Haworth-Attard"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "Juvenile or Young Adult",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "Theories of Relativity"
+    },
+    {
+      "authors": [
+        "Tanya Lloyd Kyi"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "Juvenile or Young Adult",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "Truth"
+    },
+    {
+      "authors": [
+        "Peggy Dymond Leavey"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "Juvenile or Young Adult",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "The Deep End Gang"
+    },
+    {
+      "authors": [
+        "Norah McClintock"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "Juvenile or Young Adult",
+      "position": "2004.04",
+      "result": "nominee",
+      "title": "No Escape: A Chloe and Levesque Mystery"
+    },
+    {
+      "authors": [
         "Carrie Mac"
       ],
       "award": "Crime Writers of Canada Award",
@@ -142,6 +423,50 @@
       "position": "2005",
       "result": "winner",
       "title": "The Beckoners"
+    },
+    {
+      "authors": [
+        "Susan Cliffe"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2005",
+      "category": "Juvenile or Young Adult",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "Thread Of Deceit"
+    },
+    {
+      "authors": [
+        "Katherine Holubitsky"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2005",
+      "category": "Juvenile or Young Adult",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "The Hippie House"
+    },
+    {
+      "authors": [
+        "Shelley Hrdlitschka"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2005",
+      "category": "Juvenile or Young Adult",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "Kat's Fall"
+    },
+    {
+      "authors": [
+        "Curtis Parkinson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2005",
+      "category": "Juvenile or Young Adult",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "Sea Chase"
     },
     {
       "authors": [
@@ -156,6 +481,50 @@
     },
     {
       "authors": [
+        "Sheldon Goldfarb"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2006",
+      "category": "Juvenile or Young Adult",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "Remember, Remember"
+    },
+    {
+      "authors": [
+        "Jacqueline Guest"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2006",
+      "category": "Juvenile or Young Adult",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "Wild Ride"
+    },
+    {
+      "authors": [
+        "Norah McClintock"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2006",
+      "category": "Juvenile or Young Adult",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "Not a Trace"
+    },
+    {
+      "authors": [
+        "Diane Tullson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2006",
+      "category": "Juvenile or Young Adult",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "Red Sea"
+    },
+    {
+      "authors": [
         "Sean Cullen"
       ],
       "award": "Crime Writers of Canada Award",
@@ -167,6 +536,50 @@
     },
     {
       "authors": [
+        "Marty Chan"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2007",
+      "category": "Juvenile or Young Adult",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "The Mystery Of the Graffiti Ghoul"
+    },
+    {
+      "authors": [
+        "L. M. Falcone"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2007",
+      "category": "Juvenile or Young Adult",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "The Devil, the Banshee and Me"
+    },
+    {
+      "authors": [
+        "Norah McClintock"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2007",
+      "category": "Juvenile or Young Adult",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "Tell"
+    },
+    {
+      "authors": [
+        "Monique Polak"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2007",
+      "category": "Juvenile or Young Adult",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "All In"
+    },
+    {
+      "authors": [
         "Shane Peacock"
       ],
       "award": "Crime Writers of Canada Award",
@@ -174,7 +587,51 @@
       "category": "Juvenile or Young Adult",
       "position": "2008",
       "result": "winner",
-      "title": "Eye of the Crow"
+      "title": "Eye Of The Crow"
+    },
+    {
+      "authors": [
+        "Anita Daher"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "Juvenile or Young Adult",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Racing for Diamonds"
+    },
+    {
+      "authors": [
+        "Anita Daher"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "Juvenile or Young Adult",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Spiders Song"
+    },
+    {
+      "authors": [
+        "Vicki Grant"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "Juvenile or Young Adult",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "I.D."
+    },
+    {
+      "authors": [
+        "Drew Hayden Taylor"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "Juvenile or Young Adult",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "The Night Wanderer"
     },
     {
       "authors": [
@@ -189,6 +646,50 @@
     },
     {
       "authors": [
+        "Vicki Grant"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "Juvenile or Young Adult",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "Res Judicata"
+    },
+    {
+      "authors": [
+        "Susan Juby"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "Juvenile or Young Adult",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Getting the Girl: A Guide to Private Investigation, Surveillance, and Cookery"
+    },
+    {
+      "authors": [
+        "Elizabeth MacLeod"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "Juvenile or Young Adult",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "Royal Murder: The Deadly Intrigue of Ten Sovereigns"
+    },
+    {
+      "authors": [
+        "Norah McClintock"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "Juvenile or Young Adult",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "Dead Silence"
+    },
+    {
+      "authors": [
         "Barbara Haworth-Attard"
       ],
       "award": "Crime Writers of Canada Award",
@@ -200,6 +701,50 @@
     },
     {
       "authors": [
+        "Vicki Grant"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "Juvenile or Young Adult",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "Not Suitable for Family Viewing"
+    },
+    {
+      "authors": [
+        "Norah McClintock"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "Juvenile or Young Adult",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "Homicide Related"
+    },
+    {
+      "authors": [
+        "Arthur Slade"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "Juvenile or Young Adult",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "The Hunchback Assignments"
+    },
+    {
+      "authors": [
+        "Tim Wynne-Jones"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "Juvenile or Young Adult",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "The Uninvited"
+    },
+    {
+      "authors": [
         "Alice Kuipers"
       ],
       "award": "Crime Writers of Canada Award",
@@ -207,7 +752,51 @@
       "category": "Juvenile or Young Adult",
       "position": "2011",
       "result": "winner",
-      "title": "The Worst Thing She Ever Did"
+      "title": "Lost for Words"
+    },
+    {
+      "authors": [
+        "Sheree Fitch"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "Juvenile or Young Adult",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Pluto's Ghost"
+    },
+    {
+      "authors": [
+        "Norah McClintock"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "Juvenile or Young Adult",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Victim Rights: A Ryan Dooley Mystery"
+    },
+    {
+      "authors": [
+        "Yvonne Prinz"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "Juvenile or Young Adult",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "The Vinyl Princess"
+    },
+    {
+      "authors": [
+        "Allan Stratton"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "Juvenile or Young Adult",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "Borderline"
     },
     {
       "authors": [
@@ -222,6 +811,50 @@
     },
     {
       "authors": [
+        "Becky Citra"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2012",
+      "category": "Juvenile or Young Adult",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Missing"
+    },
+    {
+      "authors": [
+        "Rob Mills"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2012",
+      "category": "Juvenile or Young Adult",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "Charlie's Key"
+    },
+    {
+      "authors": [
+        "Edeet Ravel"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2012",
+      "category": "Juvenile or Young Adult",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "Held"
+    },
+    {
+      "authors": [
+        "Arthur Slade"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2012",
+      "category": "Juvenile or Young Adult",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "Empire of Ruins"
+    },
+    {
+      "authors": [
         "Shane Peacock"
       ],
       "award": "Crime Writers of Canada Award",
@@ -233,6 +866,50 @@
     },
     {
       "authors": [
+        "Lisa Harrington"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "Juvenile or Young Adult",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "Live to Tell"
+    },
+    {
+      "authors": [
+        "Y.S. Lee"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "Juvenile or Young Adult",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "The Traitor and the Tunnel"
+    },
+    {
+      "authors": [
+        "Sylvia McNicoll"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "Juvenile or Young Adult",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "Crush. Candy. Corpse."
+    },
+    {
+      "authors": [
+        "Elizabeth Stewart"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "Juvenile or Young Adult",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "The Lynching of Louie Sam"
+    },
+    {
+      "authors": [
         "Elizabeth MacLeod"
       ],
       "award": "Crime Writers of Canada Award",
@@ -240,7 +917,29 @@
       "category": "Juvenile or Young Adult",
       "position": "2014",
       "result": "winner",
-      "title": "Bones Never Lie"
+      "title": "Bones Never Lie: How Forensics Helps Solve History's Mysteries"
+    },
+    {
+      "authors": [
+        "Karen Autio"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2014",
+      "category": "Juvenile or Young Adult",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Sabotage"
+    },
+    {
+      "authors": [
+        "Gail Gallant"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2014",
+      "category": "Juvenile or Young Adult",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Apparition"
     },
     {
       "authors": [
@@ -255,6 +954,50 @@
     },
     {
       "authors": [
+        "Michael Betcherman"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "Juvenile or Young Adult",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Face-off"
+    },
+    {
+      "authors": [
+        "S.J. Laidlaw"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "Juvenile or Young Adult",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "The Voice inside My Head"
+    },
+    {
+      "authors": [
+        "Norah McClintock"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "Juvenile or Young Adult",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "About That Night"
+    },
+    {
+      "authors": [
+        "Jeyn Roberts"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "Juvenile or Young Adult",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "The Bodies We Wear"
+    },
+    {
+      "authors": [
         "Stephanie Tromly"
       ],
       "award": "Crime Writers of Canada Award",
@@ -262,7 +1005,51 @@
       "category": "Juvenile or Young Adult",
       "position": "2016",
       "result": "winner",
-      "title": "Trouble Is a Friend of Mine"
+      "title": "Trouble is a Friend of Mine"
+    },
+    {
+      "authors": [
+        "Robert Hough"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "Juvenile or Young Adult",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "Diego's Crossing"
+    },
+    {
+      "authors": [
+        "Jeff Ross"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "Juvenile or Young Adult",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "Set You Free"
+    },
+    {
+      "authors": [
+        "Kevin Sands"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "Juvenile or Young Adult",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "The Blackthorn Key"
+    },
+    {
+      "authors": [
+        "Allan Stratton"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "Juvenile or Young Adult",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "The Dogs"
     },
     {
       "authors": [
@@ -273,7 +1060,51 @@
       "category": "Juvenile or Young Adult",
       "position": "2017",
       "result": "winner",
-      "title": "Masterminds"
+      "title": "Masterminds: Criminal Destiny"
+    },
+    {
+      "authors": [
+        "Norah McClintock"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "Juvenile or Young Adult",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Trial By Fire"
+    },
+    {
+      "authors": [
+        "John Moss"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "Juvenile or Young Adult",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "The Girl in a Coma"
+    },
+    {
+      "authors": [
+        "Caroline Pignat"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "Juvenile or Young Adult",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Shooter"
+    },
+    {
+      "authors": [
+        "Eva Wiseman"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "Juvenile or Young Adult",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "Another Me"
     },
     {
       "authors": [
@@ -284,7 +1115,51 @@
       "category": "Juvenile or Young Adult",
       "position": "2018",
       "result": "winner",
-      "title": "Chase: Get Ready to Run"
+      "title": "Chase"
+    },
+    {
+      "authors": [
+        "Kelley Armstrong"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "Juvenile or Young Adult",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Missing"
+    },
+    {
+      "authors": [
+        "Gillian Chan"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "Juvenile or Young Adult",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "The Disappearance"
+    },
+    {
+      "authors": [
+        "Donna Chubaty"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "Juvenile or Young Adult",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "Thistlewood"
+    },
+    {
+      "authors": [
+        "MacKenzie Common"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "Juvenile or Young Adult",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "The Lives of Desperate Girls"
     },
     {
       "authors": [
@@ -299,6 +1174,39 @@
     },
     {
       "authors": [
+        "Michelle Barker"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2019",
+      "category": "Juvenile or Young Adult",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "The House of One Thousand Eyes"
+    },
+    {
+      "authors": [
+        "Kevin Sands"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2019",
+      "category": "Juvenile or Young Adult",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "Call of the Wraith"
+    },
+    {
+      "authors": [
+        "Tim Wynne-Jones"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2019",
+      "category": "Juvenile or Young Adult",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "The Ruinous Sweep"
+    },
+    {
+      "authors": [
         "Tom Ryan"
       ],
       "award": "Crime Writers of Canada Award",
@@ -307,6 +1215,39 @@
       "position": "2020",
       "result": "winner",
       "title": "Keep This to Yourself"
+    },
+    {
+      "authors": [
+        "Liam O'Donnell"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2020",
+      "category": "Juvenile or Young Adult",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "Tank & Fizz: The Case of the Tentacle Terror"
+    },
+    {
+      "authors": [
+        "David A. Robertson"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2020",
+      "category": "Juvenile or Young Adult",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Ghosts"
+    },
+    {
+      "authors": [
+        "Jo Treggiari"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2020",
+      "category": "Juvenile or Young Adult",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "The Grey Sisters"
     },
     {
       "authors": [
@@ -321,6 +1262,50 @@
     },
     {
       "authors": [
+        "Janet Hill"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "Juvenile or Young Adult",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Lucy Crisp and the Vanishing House"
+    },
+    {
+      "authors": [
+        "Sheena Kamal"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "Juvenile or Young Adult",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Fight Like a Girl"
+    },
+    {
+      "authors": [
+        "Kelly Powell"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "Juvenile or Young Adult",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Magic Dark and Strange"
+    },
+    {
+      "authors": [
+        "Tom Ryan"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "Juvenile or Young Adult",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "I Hope You're Listening"
+    },
+    {
+      "authors": [
         "Kevin Sands"
       ],
       "award": "Crime Writers of Canada Award",
@@ -329,6 +1314,50 @@
       "position": "2022",
       "result": "winner",
       "title": "The Traitor's Blade"
+    },
+    {
+      "authors": [
+        "Karen Bass"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "Juvenile or Young Adult",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Blood Donor"
+    },
+    {
+      "authors": [
+        "Rachelle Delaney"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "Juvenile or Young Adult",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Alice Fleck's Recipes for Disaster"
+    },
+    {
+      "authors": [
+        "Cherie Dimaline"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "Juvenile or Young Adult",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Hunting by Stars"
+    },
+    {
+      "authors": [
+        "Jordyn Taylor"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "Juvenile or Young Adult",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Don't Breathe a Word"
     },
     {
       "authors": [
@@ -343,6 +1372,50 @@
     },
     {
       "authors": [
+        "Natasha Deen"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2023",
+      "category": "Juvenile or Young Adult",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Lark Steals the Show"
+    },
+    {
+      "authors": [
+        "Marthe Jocelyn"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2023",
+      "category": "Juvenile or Young Adult",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "The Seaside Corpse"
+    },
+    {
+      "authors": [
+        "H. N. Khan"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2023",
+      "category": "Juvenile or Young Adult",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "Wrong Side of the Court"
+    },
+    {
+      "authors": [
+        "Wesley King"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2023",
+      "category": "Juvenile or Young Adult",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Butt Sandwich & Tree"
+    },
+    {
+      "authors": [
         "Cherie Dimaline"
       ],
       "award": "Crime Writers of Canada Award",
@@ -351,20 +1424,96 @@
       "position": "2024",
       "result": "winner",
       "title": "Funeral Songs for Dying Girls"
+    },
+    {
+      "authors": [
+        "Kelley Armstrong"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "Juvenile or Young Adult",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Someone Is Always Watching"
+    },
+    {
+      "authors": [
+        "Rachelle Delaney"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "Juvenile or Young Adult",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "The Big Sting"
+    },
+    {
+      "authors": [
+        "Clara Kumagai"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "Juvenile or Young Adult",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "Catfish Rolling"
+    },
+    {
+      "authors": [
+        "Kevin Sands"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "Juvenile or Young Adult",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Champions of the Fox"
+    },
+    {
+      "authors": [
+        "Sigmund Brouwer"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "Juvenile or Young Adult",
+      "position": "2025",
+      "result": "winner",
+      "title": "Shock Wave"
+    },
+    {
+      "authors": [
+        "Meagan Mahoney"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "Juvenile or Young Adult",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "The Time Keeper"
+    },
+    {
+      "authors": [
+        "David A. Poulsen"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "Juvenile or Young Adult",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "The Dark Won't Wait"
     }
   ],
-  "fetched_at": "2026-07-15T22:04:17Z",
+  "fetched_at": "2026-11-16T06:34:42Z",
   "list_id": "crime_writers_of_canada_award_juvenile_young_adult",
   "list_name": "Crime Writers of Canada Award - Juvenile/Young Adult",
   "match_series": false,
-  "notes": [
-    "LibraryThing failed: HTTP Error 403: Forbidden"
-  ],
+  "notes": [],
   "parser": "crime_writers_of_canada_award_juvenile_young_adult",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Crime Writers of Canada Award - Juvenile/Young Adult",
     "source_id": "crime_writers_of_canada_award_juvenile_young_adult",
-    "url": "https://en.wikipedia.org/wiki/Crime_Writers_of_Canada_Awards_of_Excellence"
+    "url": "https://www.librarything.com/award/1612/Crime-Writers-of-Canada-Awards-of-Excellence"
   }
 }

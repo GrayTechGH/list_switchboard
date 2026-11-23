@@ -17,16 +17,17 @@ Maintenance notes:
   only when a shelf row has no explicit start date. Later live dates win.
 """
 
-from datetime import datetime
+from datetime import date, datetime
 import re
 from urllib.parse import parse_qs, urljoin, urlparse
 
 from bs4 import BeautifulSoup
+from .incremental import ParsedUnitCache, position_independent_fingerprint
 
 try:
-  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
-  from errors import ImportCancelledError
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import ( # type: ignore
@@ -133,8 +134,27 @@ class DragonsJetpacksParser(ListParserBase):
 
   def parse(
       self, html, base_url=SHELF_URL, name=NAME, fetch_url=None,
-      fetch_error=None, log=None, progress=None):
+      fetch_error=None, log=None, progress=None, cached_parsed=None,
+      incremental_update=False, today=None):
     page_url = self.validated_page_url(base_url)
+    units = ParsedUnitCache('dragons-group-books-v1',[base_url,'date-added-desc'],
+      cached_parsed,incremental_update)
+    today = today or date.today()
+    old_order = units.old_discovery.get('record_order') or []
+    old_order_valid = (isinstance(old_order,list) and bool(old_order) and
+      all(isinstance(key,str) and key.isdigit() for key in old_order) and
+      len(set(old_order))==len(old_order) and
+      all(int(left)>int(right) for left,right in zip(old_order,old_order[1:])) and
+      set(units.old_units).issubset(old_order))
+    old_order = old_order if old_order_valid else []
+    old_ids = set(old_order)
+    required = old_ids-set(units.old_units)
+    for key in old_order:
+      previous = units.previous(key)
+      if not previous or not self.settled_selection(previous[0],today):
+        required.add(key)
+    observed_order, observed_ids, bad_records, totals = [],set(),set(),set()
+    valid_totals = True
     seen_pages = set()
     seen_records = set()
     rows = []
@@ -153,6 +173,11 @@ class DragonsJetpacksParser(ListParserBase):
       seen_pages.add(page_key)
 
       soup, table, headers = self.require_real_shelf_page(html, page_url)
+      total_rows = self.advertised_total(soup)
+      if total_rows is not None:
+        totals.add(total_rows)
+      else:
+        valid_totals = False
       estimated_pages = max(
         estimated_pages, self.pagination_page_count(soup, page_url))
       progress_total = max(page_number, estimated_pages)
@@ -165,14 +190,19 @@ class DragonsJetpacksParser(ListParserBase):
       page_rows = table.find_all('tr', id=GROUP_BOOK_PATTERN)
       for row in page_rows:
         record_id = GROUP_BOOK_PATTERN.match(row.get('id', '')).group(1)
+        if record_id not in observed_ids:
+          observed_ids.add(record_id)
+          observed_order.append(record_id)
         if record_id in seen_records:
           continue
         try:
           parsed = self.parse_row(row, headers, page_url, record_id)
         except ValueError as err:
           notes.append(f'{NAME} skipped groupBook{record_id}: {err}')
+          bad_records.add(record_id)
           continue
         seen_records.add(record_id)
+        bad_records.discard(record_id)
         rows.append(parsed)
 
       if progress is not None:
@@ -184,6 +214,28 @@ class DragonsJetpacksParser(ListParserBase):
       next_url = self.next_page_url(soup, page_url)
       if not next_url:
         break
+      known_prefix = [key for key in observed_order if key in old_ids]
+      new_ids = [key for key in observed_order if key not in old_ids]
+      ordered = all(int(left)>int(right) for left,right in zip(observed_order,observed_order[1:]))
+      can_stop = (bool(old_order) and units.old_discovery.get('complete_snapshot') is True
+        and valid_totals and len(totals)==1 and total_rows==len(old_order)+len(new_ids)
+        and ordered and known_prefix==old_order[:len(known_prefix)] and bool(known_prefix)
+        and required.issubset(seen_records) and not bad_records
+        and all(units.old_units[key].get('complete') is True
+          for key in old_ids-seen_records))
+      if can_stop:
+        for key in old_order:
+          if key not in seen_records:
+            cached = units.reuse(key,'group-read-v1')
+            if not cached:
+              can_stop = False
+              break
+        if can_stop:
+          for key in old_order:
+            if key not in seen_records:
+              rows.extend(self.cached_row(entry,key) for entry in units.units[key]['entries'])
+          observed_order = new_ids + old_order
+          break
       if fetch_url is None:
         raise ValueError(f'{NAME} pagination requires a fetch callback.')
       if page_number >= MAX_PAGES:
@@ -197,7 +249,7 @@ class DragonsJetpacksParser(ListParserBase):
             f'Fetching {NAME} shelf page {page_number + 1} of '
             f'{progress_total} ({len(rows)} selections found)')
         html = fetch_url(next_url)
-      except ImportCancelledError:
+      except (ImportCancelledError,CamoufoxRequiredError):
         raise
       except Exception as err:
         if fetch_error is not None:
@@ -205,6 +257,8 @@ class DragonsJetpacksParser(ListParserBase):
         raise
       page_url = next_url
 
+    for key in bad_records-seen_records:
+      rows.extend(self.cached_row(entry,key) for entry in units.previous(key))
     if not rows:
       raise ValueError(f'No {NAME} group-read rows were parsed.')
     rows.sort(key=self.row_sort_key)
@@ -222,9 +276,51 @@ class DragonsJetpacksParser(ListParserBase):
     }
     if notes:
       parsed['notes'] = notes
+    for entry in entries:
+      key = entry['source_record_id'].rsplit(':',1)[-1]
+      units.put(key,[entry],'group-read-v1',complete=key not in bad_records)
+    snapshot_complete = (valid_totals and len(totals)==1 and len(observed_order)==len(entries)==next(iter(totals))
+      and not bad_records)
+    parsed['incremental_state'] = units.state(entries,identity=position_independent_fingerprint)
+    parsed['incremental_state']['discovery'] = {'record_order':observed_order,
+      'complete_snapshot':snapshot_complete,'refresh_units':[
+        entry['source_record_id'].rsplit(':',1)[-1] for entry in entries
+        if not self.settled_selection(entry,today)]}
+    if incremental_update:
+      parsed['incremental_update'] = True
     if log is not None:
       log(f'Parsed {len(entries)} {NAME} group-read selections from {page_number} page(s).')
     return parsed
+
+  def advertised_total(self,soup):
+    values = set()
+    for node in soup.select('span.smallText'):
+      match = re.fullmatch(r'Showing\s+[\d,]+\s*-\s*[\d,]+\s+of\s+([\d,]+)',
+        node.get_text(' ',strip=True),re.I)
+      if match:
+        values.add(int(match.group(1).replace(',','')))
+    return next(iter(values)) if len(values)==1 else None
+
+  def settled_selection(self,entry,today):
+    finished = entry.get('discussion_end_date')
+    if finished:
+      try:
+        return date.fromisoformat(finished)<today
+      except (TypeError,ValueError):
+        return False
+    if entry.get('discussion_start_date'):
+      return False
+    try:
+      year,month=int(entry.get('selection_year') or 0),int(entry.get('selection_month') or 0)
+      return 1<=month<=12 and year>0 and (year,month)<(today.year,today.month)
+    except (TypeError,ValueError):
+      return False
+
+  def cached_row(self,entry,record_id):
+    row = {key:value for key,value in entry.items() if key!='source'}
+    row['activity_url'] = entry['source']['url']
+    row['_group_book_id'] = int(record_id)
+    return row
 
   def require_real_shelf_page(self, html, page_url):
     self.validated_page_url(page_url)

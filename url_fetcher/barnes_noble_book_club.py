@@ -2,9 +2,9 @@
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
 try:
-  from calibre_plugins.list_switchboard.http_policy import random_user_agent
+  from calibre_plugins.list_switchboard.transport.http import random_user_agent
 except ImportError:
-  from http_policy import random_user_agent
+  from transport.http import random_user_agent
 
 from .generic import (
   CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS, UrlFetcherError, UrlFetcherGeneric,

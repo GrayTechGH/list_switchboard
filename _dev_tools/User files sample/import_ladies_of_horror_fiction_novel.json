@@ -1,0 +1,282 @@
+{
+  "append_state": {
+    "entry_count": 16,
+    "last_entry_key": "the queen of the cicadas|v castro",
+    "last_position": "2021.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "_source_order": 1,
+      "authors": [
+        "Mona Awad"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "Bunny"
+    },
+    {
+      "_source_order": 2,
+      "authors": [
+        "Sonora Taylor"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "Without Condition"
+    },
+    {
+      "_source_order": 0,
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=4"
+      },
+      "title": "The Twisted Ones"
+    },
+    {
+      "_source_order": 1,
+      "authors": [
+        "T.L. Bodine"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=4"
+      },
+      "title": "River of Souls"
+    },
+    {
+      "_source_order": 2,
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=4"
+      },
+      "title": "Ninth House"
+    },
+    {
+      "_source_order": 0,
+      "authors": [
+        "Agustina Bazterrica"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "Tender Is the Flesh"
+    },
+    {
+      "_source_order": 0,
+      "authors": [
+        "Simone St. James"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=3"
+      },
+      "title": "The Sun Down Motel"
+    },
+    {
+      "_source_order": 1,
+      "authors": [
+        "T.C. Parker"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=3"
+      },
+      "title": "Saltblood"
+    },
+    {
+      "_source_order": 2,
+      "authors": [
+        "Silvia Moreno-Garcia"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=3"
+      },
+      "title": "Mexican Gothic"
+    },
+    {
+      "_source_order": 3,
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=3"
+      },
+      "title": "The Hollow Places"
+    },
+    {
+      "_source_order": 4,
+      "authors": [
+        "Tiffany McDaniel"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.05",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=3"
+      },
+      "title": "Betty"
+    },
+    {
+      "_source_order": 0,
+      "authors": [
+        "Rachel Harrison"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://file770.com/2021-ladies-of-horror-fiction-awards/"
+      },
+      "title": "Cackle"
+    },
+    {
+      "_source_order": 0,
+      "authors": [
+        "C.J. Tudor"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "The Burning Girls"
+    },
+    {
+      "_source_order": 1,
+      "authors": [
+        "Sarah Langan"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "Good Neighbors"
+    },
+    {
+      "_source_order": 3,
+      "authors": [
+        "Catriona Ward"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.03",
+      "result": "shortlisted",
+      "title": "The Last House on Needless Street"
+    },
+    {
+      "_source_order": 3,
+      "authors": [
+        "V. Castro"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "The Queen of the Cicadas"
+    }
+  ],
+  "fetched_at": "2026-11-14T22:14:25Z",
+  "list_id": "ladies_of_horror_fiction_novel",
+  "list_name": "Ladies of Horror Fiction - Novel (discontinued)",
+  "match_series": false,
+  "notes": [
+    "Ladies of Horror Fiction uses Goodreads as the primary source and a narrow File 770 2021 winner correction.",
+    "Shortlisted rows are Goodreads nominee rows where present, not guaranteed complete official shortlists.",
+    "Goodreads is the V1 primary source for LOHF winners and nominees.",
+    "Goodreads nominee rows are imported as shortlisted rows; this is not an official consolidated shortlist archive.",
+    "The 2021 awards were the final LOHF award cycle and were announced in 2022; no later award rows are expected.",
+    "File 770 2021 LOHF winner mirror is used only to promote or append winner rows; it is not a shortlist source."
+  ],
+  "parser": "ladies_of_horror_fiction_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Ladies of Horror Fiction - Novel (discontinued)",
+    "source_id": "ladies_of_horror_fiction_novel",
+    "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award"
+  }
+}

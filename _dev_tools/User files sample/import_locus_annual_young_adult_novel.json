@@ -1,0 +1,4684 @@
+{
+  "append_state": {
+    "entry_count": 291,
+    "last_entry_key": "sky on fire|e k johnston",
+    "last_position": "2026.10",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Young Adult Novel",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Coraline"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Young Adult Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Abarat"
+    },
+    {
+      "authors": [
+        "Michael Chabon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Young Adult Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Summerland"
+    },
+    {
+      "authors": [
+        "Diane Duane"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Young Adult Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "A Wizard Alone"
+    },
+    {
+      "authors": [
+        "Nancy Farmer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Young Adult Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "The House of the Scorpion"
+    },
+    {
+      "authors": [
+        "Cornelia Funke"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Young Adult Novel",
+      "position": "2003.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "The Thief Lord"
+    },
+    {
+      "authors": [
+        "Tamora Pierce"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Young Adult Novel",
+      "position": "2003.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Protector of the Small: Lady Knight"
+    },
+    {
+      "authors": [
+        "Isabel Allende"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Young Adult Novel",
+      "position": "2003.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "City of the Beasts"
+    },
+    {
+      "authors": [
+        "Sean Williams"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Young Adult Novel",
+      "position": "2003.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "The Storm Weaver and the Sand"
+    },
+    {
+      "authors": [
+        "M. T. Anderson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Young Adult Novel",
+      "position": "2003.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Feed"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "The Wee Free Men"
+    },
+    {
+      "authors": [
+        "Garth Nix"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "Abhorsen"
+    },
+    {
+      "authors": [
+        "Diana Wynne Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "The Merlin Conspiracy"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "Swan Sister: Fairy Tales Retold"
+    },
+    {
+      "authors": [
+        "Nina Kiriki Hoffman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "A Stir of Bones"
+    },
+    {
+      "authors": [
+        "Cornelia Funke"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "Inkheart"
+    },
+    {
+      "authors": [
+        "Tamora Pierce"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "Trickster's Choice"
+    },
+    {
+      "authors": [
+        "Joan Aiken"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "Midwinter Nightingale"
+    },
+    {
+      "authors": [
+        "Jonathan Stroud"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "The Amulet of Samarkand"
+    },
+    {
+      "authors": [
+        "Sharyn November"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "Firebirds"
+    },
+    {
+      "authors": [
+        "Patrick Nielsen Hayden"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "New Skies"
+    },
+    {
+      "authors": [
+        "J. K. Rowling"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "Harry Potter and the Order of the Phoenix"
+    },
+    {
+      "authors": [
+        "Philip Reeve"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "Predator's Gold"
+    },
+    {
+      "authors": [
+        "Peter Dickinson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "The Tears of the Salamander"
+    },
+    {
+      "authors": [
+        "Mary Hoffman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2004",
+      "category": "Young Adult Novel",
+      "position": "2004.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2004"
+      },
+      "title": "Stravaganza: City of Stars"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "A Hat Full of Sky"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Gifts"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The Faery Reel: Tales from the Twilight Realm"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The Blue Girl"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Abarat: Days of Magic, Nights of War"
+    },
+    {
+      "authors": [
+        "Patrick Nielsen Hayden"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "New Magics"
+    },
+    {
+      "authors": [
+        "Nancy Farmer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The Sea of Trolls"
+    },
+    {
+      "authors": [
+        "Jonathan Stroud"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The Golem's Eye"
+    },
+    {
+      "authors": [
+        "Garth Nix"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The Keys to the Kingdom, Book 2: Grim Tuesday"
+    },
+    {
+      "authors": [
+        "Diana Wynne Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Unexpected Magic: Collected Stories"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Midnighters, Book One: The Secret Hour"
+    },
+    {
+      "authors": [
+        "Isabel Allende"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Kingdom of the Golden Dragon"
+    },
+    {
+      "authors": [
+        "Kenneth Oppel"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Airborn"
+    },
+    {
+      "authors": [
+        "Deborah Noyes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Gothic!: Ten Original Dark Tales"
+    },
+    {
+      "authors": [
+        "N. M. Browne"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Young Adult Novel",
+      "position": "2005.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Basilisk"
+    },
+    {
+      "authors": [
+        "Jane Yolen",
+        "Adam Stemple"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Young Adult Novel",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Pay the Piper"
+    },
+    {
+      "authors": [
+        "Carol Emshwiller"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Young Adult Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Mister Boots"
+    },
+    {
+      "authors": [
+        "Cornelia Funke"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Young Adult Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Inkspell"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Young Adult Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Valiant"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Young Adult Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Peeps"
+    },
+    {
+      "authors": [
+        "Jonathan Stroud"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Young Adult Novel",
+      "position": "2006.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Ptolemy's Gate"
+    },
+    {
+      "authors": [
+        "Diana Wynne Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Young Adult Novel",
+      "position": "2006.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Conrad's Fate"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Young Adult Novel",
+      "position": "2006.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "TWOC"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Young Adult Novel",
+      "position": "2006.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Midnighters, Book Two: Touching Darkness"
+    },
+    {
+      "authors": [
+        "Kenneth Oppel"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Young Adult Novel",
+      "position": "2006.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Skybreaker"
+    },
+    {
+      "authors": [
+        "Mary Hoffman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Young Adult Novel",
+      "position": "2006.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Stravaganza: City of Flowers"
+    },
+    {
+      "authors": [
+        "J. K. Rowling"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Young Adult Novel",
+      "position": "2006.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Harry Potter and the Half-Blood Prince"
+    },
+    {
+      "authors": [
+        "Kai Meyer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Young Adult Novel",
+      "position": "2006.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "The Flowering Queen"
+    },
+    {
+      "authors": [
+        "Chris Crutcher"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Young Adult Novel",
+      "position": "2006.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "The Sledding Hill"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Young Adult Novel",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Wintersmith"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Young Adult Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Voices"
+    },
+    {
+      "authors": [
+        "Justine Larbalestier"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Young Adult Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Magic Lessons"
+    },
+    {
+      "authors": [
+        "Nina Kiriki Hoffman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Young Adult Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Spirits That Walk in Shadow"
+    },
+    {
+      "authors": [
+        "Garth Nix"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Young Adult Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "The Keys to the Kingdom, Book 4: Sir Thursday"
+    },
+    {
+      "authors": [
+        "Diana Wynne Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Young Adult Novel",
+      "position": "2007.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "The Pinhoe Egg"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Young Adult Novel",
+      "position": "2007.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Specials"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Young Adult Novel",
+      "position": "2007.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Do the Creepy Thing"
+    },
+    {
+      "authors": [
+        "Philip Reeve"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Young Adult Novel",
+      "position": "2007.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "A Darkling Plain"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Young Adult Novel",
+      "position": "2007.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "The Last Days"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Young Adult Novel",
+      "position": "2007.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Midnighters, Book Three: Blue Noon"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Young Adult Novel",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Un Lun Dun"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Young Adult Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Powers"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Young Adult Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "The H-Bomb Girl"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Young Adult Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Extras"
+    },
+    {
+      "authors": [
+        "Justine Larbalestier"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Young Adult Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Magic's Child"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Young Adult Novel",
+      "position": "2008.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Ironside"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor-Mbachu"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Young Adult Novel",
+      "position": "2008.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "The Shadow Speaker"
+    },
+    {
+      "authors": [
+        "Kathleen Duey"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Young Adult Novel",
+      "position": "2008.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Skin Hunger"
+    },
+    {
+      "authors": [
+        "Shannon Hale"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Young Adult Novel",
+      "position": "2008.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Book of a Thousand Days"
+    },
+    {
+      "authors": [
+        "Frances Hardinge"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Young Adult Novel",
+      "position": "2008.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Verdigris Deep"
+    },
+    {
+      "authors": [
+        "Elizabeth Knox"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Young Adult Novel",
+      "position": "2008.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "The Dream Quake"
+    },
+    {
+      "authors": [
+        "J. K. Rowling"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Young Adult Novel",
+      "position": "2008.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Harry Potter and the Deathly Hallows"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2009",
+      "category": "Young Adult Novel",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2009"
+      },
+      "title": "The Graveyard Book"
+    },
+    {
+      "authors": [
+        "Cory Doctorow"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2009",
+      "category": "Young Adult Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2009"
+      },
+      "title": "Little Brother"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2009",
+      "category": "Young Adult Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2009"
+      },
+      "title": "Zoe's Tale"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2009",
+      "category": "Young Adult Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2009"
+      },
+      "title": "Nation"
+    },
+    {
+      "authors": [
+        "Margo Lanagan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2009",
+      "category": "Young Adult Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2009"
+      },
+      "title": "Tender Morsels"
+    },
+    {
+      "authors": [
+        "Justine Larbalestier"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2009",
+      "category": "Young Adult Novel",
+      "position": "2009.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2009"
+      },
+      "title": "How to Ditch Your Fairy"
+    },
+    {
+      "authors": [
+        "Robin McKinley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2009",
+      "category": "Young Adult Novel",
+      "position": "2009.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2009"
+      },
+      "title": "Chalice"
+    },
+    {
+      "authors": [
+        "Ysabeau S. Wilce"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2009",
+      "category": "Young Adult Novel",
+      "position": "2009.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2009"
+      },
+      "title": "Flora's Dare"
+    },
+    {
+      "authors": [
+        "Suzanne Collins"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2009",
+      "category": "Young Adult Novel",
+      "position": "2009.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2009"
+      },
+      "title": "The Hunger Games"
+    },
+    {
+      "authors": [
+        "Cassandra Clare"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2009",
+      "category": "Young Adult Novel",
+      "position": "2009.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2009"
+      },
+      "title": "City of Ashes"
+    },
+    {
+      "authors": [
+        "Patrick Ness"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2009",
+      "category": "Young Adult Novel",
+      "position": "2009.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2009"
+      },
+      "title": "The Knife of Never Letting Go"
+    },
+    {
+      "authors": [
+        "Alison Goodman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2009",
+      "category": "Young Adult Novel",
+      "position": "2009.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2009"
+      },
+      "title": "Eon: Dragoneye Reborn"
+    },
+    {
+      "authors": [
+        "Melissa Marr"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2009",
+      "category": "Young Adult Novel",
+      "position": "2009.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2009"
+      },
+      "title": "Ink Exchange"
+    },
+    {
+      "authors": [
+        "D. M. Cornish"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2009",
+      "category": "Young Adult Novel",
+      "position": "2009.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2009"
+      },
+      "title": "Monster Blood Tattoo, Book Two: Lamplighter"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2010",
+      "category": "Young Adult Novel",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2010"
+      },
+      "title": "Leviathan"
+    },
+    {
+      "authors": [
+        "Kage Baker"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2010",
+      "category": "Young Adult Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2010"
+      },
+      "title": "The Hotel Under the Sand"
+    },
+    {
+      "authors": [
+        "Justine Larbalestier"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2010",
+      "category": "Young Adult Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2010"
+      },
+      "title": "Liar"
+    },
+    {
+      "authors": [
+        "Suzanne Collins"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2010",
+      "category": "Young Adult Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2010"
+      },
+      "title": "Catching Fire"
+    },
+    {
+      "authors": [
+        "Libba Bray"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2010",
+      "category": "Young Adult Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2010"
+      },
+      "title": "Going Bovine"
+    },
+    {
+      "authors": [
+        "Jonathan Stroud"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2010",
+      "category": "Young Adult Novel",
+      "position": "2010.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2010"
+      },
+      "title": "Heroes of the Valley"
+    },
+    {
+      "authors": [
+        "Patrick Ness"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2010",
+      "category": "Young Adult Novel",
+      "position": "2010.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2010"
+      },
+      "title": "The Ask and the Answer"
+    },
+    {
+      "authors": [
+        "Kathleen Duey"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2010",
+      "category": "Young Adult Novel",
+      "position": "2010.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2010"
+      },
+      "title": "Sacred Scars"
+    },
+    {
+      "authors": [
+        "Frances Hardinge"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2010",
+      "category": "Young Adult Novel",
+      "position": "2010.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2010"
+      },
+      "title": "Gullstruck Island"
+    },
+    {
+      "authors": [
+        "Paolo Bacigalupi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Young Adult Novel",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Ship Breaker"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Young Adult Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "I Shall Wear Midnight"
+    },
+    {
+      "authors": [
+        "Suzanne Collins"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Young Adult Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Mockingjay"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Young Adult Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Behemoth"
+    },
+    {
+      "authors": [
+        "Diana Wynne Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Young Adult Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Enchanted Glass"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Young Adult Novel",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "White Cat"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Young Adult Novel",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Pathfinder"
+    },
+    {
+      "authors": [
+        "Nina Kiriki Hoffman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Young Adult Novel",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Tresholds"
+    },
+    {
+      "authors": [
+        "Kate Milford"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Young Adult Novel",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "The Boneshaker"
+    },
+    {
+      "authors": [
+        "Garth Nix"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Young Adult Novel",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "The Keys to the Kingdom, Book 7: Lord Sunday"
+    },
+    {
+      "authors": [
+        "Patrick Ness"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Young Adult Novel",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Monsters of Men"
+    },
+    {
+      "authors": [
+        "Greg van Eekhout"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Young Adult Novel",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Kid vs. Squid"
+    },
+    {
+      "authors": [
+        "D. M. Cornish"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Young Adult Novel",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Factotum"
+    },
+    {
+      "authors": [
+        "Philip Reeve"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Young Adult Novel",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Fever Crumb"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "The Girl Who Circumnavigated Fairyland in a Ship of Her Own Making"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Planesrunner"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Akata Witch"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Goliath"
+    },
+    {
+      "authors": [
+        "Ransom Riggs"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Miss Peregrine's Home for Peculiar Children"
+    },
+    {
+      "authors": [
+        "Delia Sherman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "The Freedom Maze"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Abarat: Absolute Midnight"
+    },
+    {
+      "authors": [
+        "Laini Taylor"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Daughter of Smoke & Bone"
+    },
+    {
+      "authors": [
+        "Patricia C. Wrede"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Across the Great Barrier"
+    },
+    {
+      "authors": [
+        "Patrick Ness"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "A Monster Calls"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Red Glove"
+    },
+    {
+      "authors": [
+        "Tamora Pierce"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Mastiff"
+    },
+    {
+      "authors": [
+        "Joan Slonczewski"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "The Highest Frontier"
+    },
+    {
+      "authors": [
+        "Malinda Lo"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Huntress"
+    },
+    {
+      "authors": [
+        "Libba Bray"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Beauty Queens"
+    },
+    {
+      "authors": [
+        "Greg van Eekhout"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "The Boy at the End of the World"
+    },
+    {
+      "authors": [
+        "Beth Revis"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Across the Universe"
+    },
+    {
+      "authors": [
+        "Philip Reeve"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Scrivener's Moon"
+    },
+    {
+      "authors": [
+        "Alison Goodman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Young Adult Novel",
+      "position": "2012.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Eona"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Railsea"
+    },
+    {
+      "authors": [
+        "Paolo Bacigalupi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "The Drowned Cities"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "The Girl Who Fell Beneath Fairyland and Led the Revels There"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Dodger"
+    },
+    {
+      "authors": [
+        "Cory Doctorow"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Pirate Cinema"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Be My Enemy"
+    },
+    {
+      "authors": [
+        "Margo Lanagan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Sea Hearts"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Black Heart"
+    },
+    {
+      "authors": [
+        "Elizabeth Hand"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Radiant Days"
+    },
+    {
+      "authors": [
+        "Allen Steele"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Apollo's Outcasts"
+    },
+    {
+      "authors": [
+        "James P. Blaylock"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Zeuglodon"
+    },
+    {
+      "authors": [
+        "Nalo Hopkinson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "The Chaos"
+    },
+    {
+      "authors": [
+        "Kristin Cashore"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Bitterblue"
+    },
+    {
+      "authors": [
+        "Libba Bray"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "The Diviners"
+    },
+    {
+      "authors": [
+        "Maggie Stiefvater"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "The Raven Boys"
+    },
+    {
+      "authors": [
+        "Laini Taylor"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Days of Blood & Starlight"
+    },
+    {
+      "authors": [
+        "Frances Hardinge"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "A Face Like Glass"
+    },
+    {
+      "authors": [
+        "Rae Carson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "The Crown of Embers"
+    },
+    {
+      "authors": [
+        "Justine Larbalestier",
+        "Sarah Rees Brennan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Team Human"
+    },
+    {
+      "authors": [
+        "Lois Lowry"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Son"
+    },
+    {
+      "authors": [
+        "David Levithan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Young Adult Novel",
+      "position": "2013.20",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Every Day"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "The Girl Who Soared Over Fairyland and Cut the Moon in Two"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "The Coldest Girl in Coldtown"
+    },
+    {
+      "authors": [
+        "Cory Doctorow"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Homeland"
+    },
+    {
+      "authors": [
+        "Paolo Bacigalupi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Zombie Baseball Beatdown"
+    },
+    {
+      "authors": [
+        "Alaya Dawn Johnson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "The Summer Prince"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Doll Bones"
+    },
+    {
+      "authors": [
+        "Maggie Stiefvater"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "The Dream Thieves"
+    },
+    {
+      "authors": [
+        "Gwenda Bond"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "The Woken Gods"
+    },
+    {
+      "authors": [
+        "Patrick Ness"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "More Than This"
+    },
+    {
+      "authors": [
+        "Karen Healey"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "When We Wake"
+    },
+    {
+      "authors": [
+        "Nancy Farmer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "The Lord of Opium"
+    },
+    {
+      "authors": [
+        "Elizabeth Knox"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Mortal Fire"
+    },
+    {
+      "authors": [
+        "Bennett Madison"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Young Adult Novel",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "September Girls"
+    },
+    {
+      "authors": [
+        "Joe Abercrombie"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Half a King"
+    },
+    {
+      "authors": [
+        "Paolo Bacigalupi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "The Doubt Factory"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Empress of the Sun"
+    },
+    {
+      "authors": [
+        "Garth Nix"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Clariel"
+    },
+    {
+      "authors": [
+        "Gail Carriger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Waistcoats & Weaponry"
+    },
+    {
+      "authors": [
+        "Karl Schroeder"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Lockstep"
+    },
+    {
+      "authors": [
+        "Steven Gould"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Exo"
+    },
+    {
+      "authors": [
+        "Emmi It\u00e4ranta"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Memory of Water"
+    },
+    {
+      "authors": [
+        "Gwenda Bond"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Girl on a Wire"
+    },
+    {
+      "authors": [
+        "Maggie Stiefvater"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Blue Lily, Lily Blue"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Afterworlds"
+    },
+    {
+      "authors": [
+        "Laini Taylor"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Dreams of Gods & Monsters"
+    },
+    {
+      "authors": [
+        "Alaya Dawn Johnson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Love is the Drug"
+    },
+    {
+      "authors": [
+        "Frances Hardinge"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Cuckoo Song"
+    },
+    {
+      "authors": [
+        "Rachel Pollack"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "The Child Eater"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "The Grasshopper's Child"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Ruin and Rising"
+    },
+    {
+      "authors": [
+        "Kate Milford"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Young Adult Novel",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Greenglass House"
+    },
+    {
+      "authors": [
+        "Terry Pratchett"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Young Adult Novel",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "The Shepherd's Crown"
+    },
+    {
+      "authors": [
+        "Joe Abercrombie"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Young Adult Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "Half a War"
+    },
+    {
+      "authors": [
+        "Joe Abercrombie"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Young Adult Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "Half the World"
+    },
+    {
+      "authors": [
+        "Daniel Jos\u00e9 Older"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Young Adult Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "Shadowshaper"
+    },
+    {
+      "authors": [
+        "Daryl Gregory"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Young Adult Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "Harrison Squared"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Young Adult Novel",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Revenger"
+    },
+    {
+      "authors": [
+        "Kelly Barnhill"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Young Adult Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "The Girl Who Drank the Moon"
+    },
+    {
+      "authors": [
+        "Delia Sherman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Young Adult Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "The Evil Wizard Smallbone"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Young Adult Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Crooked Kingdom"
+    },
+    {
+      "authors": [
+        "Garth Nix"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Young Adult Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Goldenhand"
+    },
+    {
+      "authors": [
+        "Kate Elliott"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Young Adult Novel",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Poisoned Blade"
+    },
+    {
+      "authors": [
+        "Victoria Schwab"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Young Adult Novel",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "This Savage Song"
+    },
+    {
+      "authors": [
+        "Gwenda Bond"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Young Adult Novel",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Lois Lane: Double Down"
+    },
+    {
+      "authors": [
+        "Susan Dennard"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Young Adult Novel",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Truthwitch"
+    },
+    {
+      "authors": [
+        "Will McIntosh"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Young Adult Novel",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Burning Midnight"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Young Adult Novel",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Akata Warrior"
+    },
+    {
+      "authors": [
+        "Philip Pullman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Young Adult Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "The Book of Dust: La Belle Sauvage"
+    },
+    {
+      "authors": [
+        "Paolo Bacigalupi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Young Adult Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Tool of War"
+    },
+    {
+      "authors": [
+        "Paul Cornell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Young Adult Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Chalk"
+    },
+    {
+      "authors": [
+        "Sarah Rees Brennan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Young Adult Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "In Other Lands"
+    },
+    {
+      "authors": [
+        "Kate Elliott"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Young Adult Novel",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Buried Heart"
+    },
+    {
+      "authors": [
+        "Daniel Jos\u00e9 Older"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Young Adult Novel",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Shadowhouse Fall"
+    },
+    {
+      "authors": [
+        "Stephanie Burgis"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Young Adult Novel",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "The Dragon with a Chocolate Heart"
+    },
+    {
+      "authors": [
+        "Frances Hardinge"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Young Adult Novel",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "A Skinful of Shadows"
+    },
+    {
+      "authors": [
+        "Garth Nix"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Young Adult Novel",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Frogkisser!"
+    },
+    {
+      "authors": [
+        "Justina Ireland"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Young Adult Novel",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Dread Nation"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Young Adult Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "The Cruel Prince"
+    },
+    {
+      "authors": [
+        "Jane Yolen"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Young Adult Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Mapping the Bones"
+    },
+    {
+      "authors": [
+        "Rachel Hartman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Young Adult Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Tess of the Road"
+    },
+    {
+      "authors": [
+        "Fonda Lee"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Young Adult Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Cross Fire"
+    },
+    {
+      "authors": [
+        "Christopher Barzak"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Young Adult Novel",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "The Gone Away Place"
+    },
+    {
+      "authors": [
+        "Dhonielle Clayton"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Young Adult Novel",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "The Belles"
+    },
+    {
+      "authors": [
+        "Cherie Priest",
+        "Tara O'Connor"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Young Adult Novel",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "The Agony House"
+    },
+    {
+      "authors": [
+        "John Schoffstall"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Young Adult Novel",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Half-Witch"
+    },
+    {
+      "authors": [
+        "Scott Westerfeld"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Young Adult Novel",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Impostors"
+    },
+    {
+      "authors": [
+        "Yoon Ha Lee"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Young Adult Novel",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Dragon Pearl"
+    },
+    {
+      "authors": [
+        "Naomi Kritzer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Young Adult Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Catfishing on CatNet"
+    },
+    {
+      "authors": [
+        "Alastair Reynolds"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Young Adult Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Shadow Captain"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Young Adult Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "The Wicked King"
+    },
+    {
+      "authors": [
+        "Philip Pullman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Young Adult Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "The Book of Dust: The Secret Commonwealth"
+    },
+    {
+      "authors": [
+        "Tochi Onyebuchi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Young Adult Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "War Girls"
+    },
+    {
+      "authors": [
+        "Garth Nix"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Young Adult Novel",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Angel Mage"
+    },
+    {
+      "authors": [
+        "Sam J. Miller"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Young Adult Novel",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Destroy All Monsters"
+    },
+    {
+      "authors": [
+        "Leigh Bardugo"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Young Adult Novel",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "King of Scars"
+    },
+    {
+      "authors": [
+        "Akwaeke Emezi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Young Adult Novel",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Pet"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Young Adult Novel",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "A Wizard's Guide to Defensive Baking"
+    },
+    {
+      "authors": [
+        "Rebecca Roanhorse"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Young Adult Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Race to the Sun"
+    },
+    {
+      "authors": [
+        "Tracy Deonn"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Young Adult Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Legendborn"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Young Adult Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "A Peculiar Peril"
+    },
+    {
+      "authors": [
+        "A. Deborah Baker"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Young Adult Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Over the Woodward Wall"
+    },
+    {
+      "authors": [
+        "Bethany C. Morrow"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Young Adult Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "A Song Below Water"
+    },
+    {
+      "authors": [
+        "Roshani Chokshi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Young Adult Novel",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "The Silvered Serpents"
+    },
+    {
+      "authors": [
+        "Justina Ireland"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Young Adult Novel",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Deathless Divide"
+    },
+    {
+      "authors": [
+        "Hannah Abigail Clarke"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Young Adult Novel",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "The Scapegracers"
+    },
+    {
+      "authors": [
+        "Daniel Jos\u00e9 Older"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Young Adult Novel",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Shadowshaper Legacy"
+    },
+    {
+      "authors": [
+        "Charlie Jane Anders"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Young Adult Novel",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Victories Greater Than Death"
+    },
+    {
+      "authors": [
+        "Naomi Kritzer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Young Adult Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Chaos on CatNet"
+    },
+    {
+      "authors": [
+        "Xiran Jay Zhao"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Young Adult Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Iron Widow"
+    },
+    {
+      "authors": [
+        "Darcie Little Badger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Young Adult Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "A Snake Falls to Earth"
+    },
+    {
+      "authors": [
+        "Jordan Ifueko"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Young Adult Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Redemptor"
+    },
+    {
+      "authors": [
+        "Garth Nix"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Young Adult Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Terciel & Elinor"
+    },
+    {
+      "authors": [
+        "Namina Forna"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Young Adult Novel",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "The Gilded Ones"
+    },
+    {
+      "authors": [
+        "Kalynn Bayron"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Young Adult Novel",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "This Poison Heart"
+    },
+    {
+      "authors": [
+        "Sarah Hollowell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Young Adult Novel",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "A Dark and Starless Forest"
+    },
+    {
+      "authors": [
+        "Akemi Dawn Bowman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Young Adult Novel",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "The Infinity Courts"
+    },
+    {
+      "authors": [
+        "Charlie Jane Anders"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Young Adult Novel",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Dreams Bigger Than Heartbreak"
+    },
+    {
+      "authors": [
+        "Tracy Deonn"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Young Adult Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Bloodmarked"
+    },
+    {
+      "authors": [
+        "Akwaeke Emezi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Young Adult Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Bitter"
+    },
+    {
+      "authors": [
+        "Frances Hardinge"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Young Adult Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Unraveller"
+    },
+    {
+      "authors": [
+        "Daniel Jos\u00e9 Older"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Young Adult Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Ballad & Dagger"
+    },
+    {
+      "authors": [
+        "Justina Ireland"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Young Adult Novel",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Rust in the Root"
+    },
+    {
+      "authors": [
+        "H. A. Clarke"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Young Adult Novel",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "The Scratch Daughters"
+    },
+    {
+      "authors": [
+        "Emily X. R. Pan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Young Adult Novel",
+      "position": "2023.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "An Arrow to the Moon"
+    },
+    {
+      "authors": [
+        "Anna-Marie McLemore"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Young Adult Novel",
+      "position": "2023.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Lakelore"
+    },
+    {
+      "authors": [
+        "Alechia Dow"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Young Adult Novel",
+      "position": "2023.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "The Kindred"
+    },
+    {
+      "authors": [
+        "Charlie Jane Anders"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Young Adult Novel",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Promises Stronger Than Darkness"
+    },
+    {
+      "authors": [
+        "Garth Nix"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Young Adult Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "The Sinister Booksellers of Bath"
+    },
+    {
+      "authors": [
+        "Alaya Dawn Johnson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Young Adult Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "The Library of Broken Worlds"
+    },
+    {
+      "authors": [
+        "Maggie Tokuda-Hall"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Young Adult Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "The Siren, the Song, and the Spy"
+    },
+    {
+      "authors": [
+        "Andrew Joseph White"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Young Adult Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "The Spirit Bares Its Teeth"
+    },
+    {
+      "authors": [
+        "Alex Brown"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Young Adult Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Damned If You Do"
+    },
+    {
+      "authors": [
+        "Rebecca Ross"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Young Adult Novel",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Divine Rivals"
+    },
+    {
+      "authors": [
+        "Lorraine Avila"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Young Adult Novel",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "The Making of Yolanda la Bruja"
+    },
+    {
+      "authors": [
+        "Mark Oshiro"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Young Adult Novel",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Into the Light"
+    },
+    {
+      "authors": [
+        "Alechia Dow"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Young Adult Novel",
+      "position": "2024.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "A Song of Salvation"
+    },
+    {
+      "authors": [
+        "Yoon Ha Lee"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Young Adult Novel",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Moonstorm"
+    },
+    {
+      "authors": [
+        "Darcie Little Badger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Young Adult Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Sheine Lende"
+    },
+    {
+      "authors": [
+        "Hafsah Faizal"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Young Adult Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "A Tempest of Tea"
+    },
+    {
+      "authors": [
+        "Jordan Ifueko"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Young Adult Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "The Maid and the Crocodile"
+    },
+    {
+      "authors": [
+        "Kalynn Bayron"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Young Adult Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Sleep Like Death"
+    },
+    {
+      "authors": [
+        "Andrew Joseph White"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Young Adult Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Compound Fracture"
+    },
+    {
+      "authors": [
+        "Alex Brown"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Young Adult Novel",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Rest in Peaches"
+    },
+    {
+      "authors": [
+        "Terry J. Brenton-Walker"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Young Adult Novel",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Blood Justice"
+    },
+    {
+      "authors": [
+        "Olivia Chadha"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Young Adult Novel",
+      "position": "2025.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Fall of the Iron Gods"
+    },
+    {
+      "authors": [
+        "H. A. Clarke"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Young Adult Novel",
+      "position": "2025.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "The Feast Makers"
+    },
+    {
+      "authors": [
+        "Yoon Ha Lee"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Young Adult Novel",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Starstrike"
+    },
+    {
+      "authors": [
+        "Ann Liang"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Young Adult Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "I Am Not Jessica Chen"
+    },
+    {
+      "authors": [
+        "Trang Thanh Tran"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Young Adult Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "They Bloom at Night"
+    },
+    {
+      "authors": [
+        "Rachel Hartman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Young Adult Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Among Ghosts"
+    },
+    {
+      "authors": [
+        "A. R. Capetta"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Young Adult Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Costumes for Time Travelers"
+    },
+    {
+      "authors": [
+        "Kalynn Bayron"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Young Adult Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Make Me a Monster"
+    },
+    {
+      "authors": [
+        "Susan Dennard"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Young Adult Novel",
+      "position": "2026.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Executioners Three"
+    },
+    {
+      "authors": [
+        "Amanda DeWitt"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Young Adult Novel",
+      "position": "2026.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Underwood Tapes"
+    },
+    {
+      "authors": [
+        "Samira Ahmed"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Young Adult Novel",
+      "position": "2026.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Singular Life of Aria Patel"
+    },
+    {
+      "authors": [
+        "Michael Stephens"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Young Adult Novel",
+      "position": "2026.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Last of the Elvis Ninja Robots"
+    },
+    {
+      "authors": [
+        "E. K. Johnston"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Young Adult Novel",
+      "position": "2026.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Sky on Fire"
+    }
+  ],
+  "fetched_at": "2026-07-23T13:51:13Z",
+  "list_id": "locus_annual_young_adult_novel",
+  "list_name": "Locus - Annual Young Adult Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "locus_annual_young_adult_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Locus - Annual Young Adult Novel",
+    "source_id": "locus_annual_young_adult_novel",
+    "url": "https://www.sfadb.com/Locus_Awards"
+  }
+}

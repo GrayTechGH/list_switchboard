@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 22,
-    "last_entry_key": "flots|patrick sen cal",
-    "last_position": "2022",
+    "entry_count": 77,
+    "last_entry_key": "fracture|johanne seymour",
+    "last_position": "2025.03",
     "source_revision": null
   },
   "entries": [
@@ -19,6 +19,39 @@
     },
     {
       "authors": [
+        "Chrystine Brouillet"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "French Crime Book",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "Les fianc\u00e9es de l'enfer"
+    },
+    {
+      "authors": [
+        "Gilles Ouimet"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "French Crime Book",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "Th\u00e9rapie mortelle"
+    },
+    {
+      "authors": [
+        "Stanley P\u00e9an"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2000",
+      "category": "French Crime Book",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "Le temps s'enfuit"
+    },
+    {
+      "authors": [
         "Norbert Spehner"
       ],
       "award": "Crime Writers of Canada Award",
@@ -26,18 +59,29 @@
       "category": "French Crime Book",
       "position": "2001",
       "result": "winner",
-      "title": "Le roman policier en Am\u00e9rique fran\u00e7aise"
+      "title": "Le Roman Policier en Am\u00e9rique Fran\u00e7aise"
     },
     {
       "authors": [
-        "Anne-Mich\u00e8le L\u00e9vesque"
+        "Michel Auger"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2002",
       "category": "French Crime Book",
-      "position": "2002",
-      "result": "winner",
-      "title": "Fleur invitait au troisi\u00e8me"
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "The Biker Who Shot Me: Recollections of a Crime Reporter"
+    },
+    {
+      "authors": [
+        "Michel Jobin"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2002",
+      "category": "French Crime Book",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "TRAJECTOIRE DU PION #47 -LA"
     },
     {
       "authors": [
@@ -48,7 +92,7 @@
       "category": "French Crime Book",
       "position": "2003",
       "result": "winner",
-      "title": "Le rouge ideal"
+      "title": "Le Rouge id\u00e9al"
     },
     {
       "authors": [
@@ -63,25 +107,69 @@
     },
     {
       "authors": [
-        "Ann Lamontagne"
+        "Marois Andre"
       ],
       "award": "Crime Writers of Canada Award",
-      "award_year": "2005",
+      "award_year": "2004",
       "category": "French Crime Book",
-      "position": "2005",
-      "result": "winner",
-      "title": "Les douze pierres"
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "Les Effets Sont Secondaires"
     },
     {
       "authors": [
-        "G\u00e9rard Galarneau"
+        "Chrystine Brouillet"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "French Crime Book",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "Ind\u00e9sirables"
+    },
+    {
+      "authors": [
+        "Maxime Houde"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "French Crime Book",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "SALAIRE DE LA HONTE #71 -LE"
+    },
+    {
+      "authors": [
+        "Maryse Rouy"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2004",
+      "category": "French Crime Book",
+      "position": "2004.04",
+      "result": "nominee",
+      "title": "Au nom de Compostelle : roman"
+    },
+    {
+      "authors": [
+        "Beno\u00eet Bouthillette"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2006",
       "category": "French Crime Book",
-      "position": "2006",
-      "result": "winner",
-      "title": "Motel Riviera"
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "La Trace de l Escargot"
+    },
+    {
+      "authors": [
+        "Jacques C\u00f4t\u00e9"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2006",
+      "category": "French Crime Book",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "La rive noire"
     },
     {
       "authors": [
@@ -92,7 +180,29 @@
       "category": "French Crime Book",
       "position": "2008",
       "result": "winner",
-      "title": "Tsiganes"
+      "title": "The Roma Plot"
+    },
+    {
+      "authors": [
+        "Johanne Seymour"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "French Crime Book",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Le Cercle des p\u00e9nitents"
+    },
+    {
+      "authors": [
+        "Norbert Spehner"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2008",
+      "category": "French Crime Book",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Sc\u00e8nes de crimes : Enqu\u00eates sur le roman policier contemporain"
     },
     {
       "authors": [
@@ -107,6 +217,39 @@
     },
     {
       "authors": [
+        "Andre Jacques"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "French Crime Book",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "La tendresse du serpent : roman policier"
+    },
+    {
+      "authors": [
+        "Houde Maxime"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "French Crime Book",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Le Poid des Illusions"
+    },
+    {
+      "authors": [
+        "Sylvain Meunier"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2009",
+      "category": "French Crime Book",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "L'homme qui d\u00e9testait le golf"
+    },
+    {
+      "authors": [
         "Jean Lemieux"
       ],
       "award": "Crime Writers of Canada Award",
@@ -114,7 +257,29 @@
       "category": "French Crime Book",
       "position": "2010",
       "result": "winner",
-      "title": "Le mort du chemin des Arsene"
+      "title": "Le mort du chemin des Ars\u00e8ne"
+    },
+    {
+      "authors": [
+        "Jean-Jacques Pelletier"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "French Crime Book",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "La faim de la terre, tome 1 et 2"
+    },
+    {
+      "authors": [
+        "Genevi\u00e8ve Lefebvre"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2010",
+      "category": "French Crime Book",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "Je compte les morts"
     },
     {
       "authors": [
@@ -129,6 +294,39 @@
     },
     {
       "authors": [
+        "Michel Ch\u00e2teauneuf"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "French Crime Book",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "La soci\u00e9t\u00e9 des p\u00e8res meurtriers"
+    },
+    {
+      "authors": [
+        "Jacques Savoie"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "French Crime Book",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Cinq secondes : roman"
+    },
+    {
+      "authors": [
+        "Johanne Seymour"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2011",
+      "category": "French Crime Book",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "Vanit\u00e9s"
+    },
+    {
+      "authors": [
         "Martin Michaud"
       ],
       "award": "Crime Writers of Canada Award",
@@ -140,6 +338,17 @@
     },
     {
       "authors": [
+        "DIANE VINCENT"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2012",
+      "category": "French Crime Book",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Pwazon"
+    },
+    {
+      "authors": [
         "Mario Bolduc"
       ],
       "award": "Crime Writers of Canada Award",
@@ -147,7 +356,51 @@
       "category": "French Crime Book",
       "position": "2013",
       "result": "winner",
-      "title": "La Nuit des albinos: Sur les traces de Max O'Brien"
+      "title": "Night of the Albinos"
+    },
+    {
+      "authors": [
+        "Andr\u00e9 Jacques"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "French Crime Book",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "De pierres et de sang"
+    },
+    {
+      "authors": [
+        "Jean Lemieux"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "French Crime Book",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "L'HOMME DU JEUDI"
+    },
+    {
+      "authors": [
+        "Martin Michaud"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "French Crime Book",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "Never Forget: A Victor Lessard Thriller"
+    },
+    {
+      "authors": [
+        "Richard Ste-Marie"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2013",
+      "category": "French Crime Book",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "L'inaveu"
     },
     {
       "authors": [
@@ -158,7 +411,29 @@
       "category": "French Crime Book",
       "position": "2014",
       "result": "winner",
-      "title": "L\u2019enfant promis"
+      "title": "Les Enqu\u00eates de Judith Allison l'Enfant Promis"
+    },
+    {
+      "authors": [
+        "Chrystine Brouillet"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2014",
+      "category": "French Crime Book",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Saccages"
+    },
+    {
+      "authors": [
+        "Jacques C\u00f4t\u00e9"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2014",
+      "category": "French Crime Book",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Et \u00e0 l'heure de votre mort"
     },
     {
       "authors": [
@@ -169,7 +444,40 @@
       "category": "French Crime Book",
       "position": "2015",
       "result": "winner",
-      "title": "Bondr\u00e9e"
+      "title": "Boundary: The Last Summer"
+    },
+    {
+      "authors": [
+        "Herv\u00e9 Gagnon"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "French Crime Book",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "Jack: Une enqu\u00eate de Joseph Laflamme"
+    },
+    {
+      "authors": [
+        "Maryse Rouy"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "French Crime Book",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "Les Chroniques de Gervais d'Anceny - tome 1 - Meurtre a l'H\u00f4tel Despr\u00e9aux"
+    },
+    {
+      "authors": [
+        "Richard Ste-Marie"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2015",
+      "category": "French Crime Book",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Repentir"
     },
     {
       "authors": [
@@ -180,18 +488,73 @@
       "category": "French Crime Book",
       "position": "2016",
       "result": "winner",
-      "title": "L'Affaire Myosotis"
+      "title": "L'AFFAIRE MYOSOTIS"
     },
     {
       "authors": [
-        "Marie-\u00c8ve Bourassa"
+        "Jean Lemieux"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "French Crime Book",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "LE MAUVAIS COTE DES CHOSES"
+    },
+    {
+      "authors": [
+        "Guillaume Morrissette"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2016",
+      "category": "French Crime Book",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "L'affaire M\u00e9lodie Cormier"
+    },
+    {
+      "authors": [
+        "Marie-Eve Bourassa"
       ],
       "award": "Crime Writers of Canada Award",
       "award_year": "2017",
       "category": "French Crime Book",
       "position": "2017",
       "result": "winner",
-      "title": "Red Light: Adieu, Mignonne"
+      "title": "Red Light V 01 Adieu, Mignonne"
+    },
+    {
+      "authors": [
+        "Chrystine Brouillet"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "French Crime Book",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Vrai ou faux"
+    },
+    {
+      "authors": [
+        "Guillaume Morrissette"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "French Crime Book",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "Terreur domestique Une enqu\u00eate de l'inspecteur H\u00e9roux"
+    },
+    {
+      "authors": [
+        "Johanne Seymour"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2017",
+      "category": "French Crime Book",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Rinzen et l'homme perdu (Expression Noire) (French"
     },
     {
       "authors": [
@@ -206,6 +569,39 @@
     },
     {
       "authors": [
+        "\u00c9ric Forbes"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "French Crime Book",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Amqui"
+    },
+    {
+      "authors": [
+        "Jean Lemieux"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "French Crime Book",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Les clefs du silence"
+    },
+    {
+      "authors": [
+        "Maryse Rouy"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2018",
+      "category": "French Crime Book",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "Les chroniques de Gervais d'Anceny : La mort en bleu pastel"
+    },
+    {
+      "authors": [
         "Herv\u00e9 Gagnon"
       ],
       "award": "Crime Writers of Canada Award",
@@ -213,7 +609,18 @@
       "category": "French Crime Book",
       "position": "2019",
       "result": "winner",
-      "title": "Adolphus \u2013 Une enqu\u00eate de Joseph Laflamme"
+      "title": "Une enqu\u00eate de Joseph Laflamme - Adolphus - Tome 6"
+    },
+    {
+      "authors": [
+        "Morrissette Guillaum"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2019",
+      "category": "French Crime Book",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "DEUX COUPS DE PIED DE TROP. UNE ENQUETE DE L'INSPECTEUR HEROUX"
     },
     {
       "authors": [
@@ -228,6 +635,39 @@
     },
     {
       "authors": [
+        "Louis Carmain"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2020",
+      "category": "French Crime Book",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "Les offrandes"
+    },
+    {
+      "authors": [
+        "Martin Michaud"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2020",
+      "category": "French Crime Book",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Ghetto X"
+    },
+    {
+      "authors": [
+        "Guillaume Morrissette"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2020",
+      "category": "French Crime Book",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "Le tribunal de la rue Quirion"
+    },
+    {
+      "authors": [
         "Roxanne Bouchard"
       ],
       "award": "Crime Writers of Canada Award",
@@ -235,7 +675,40 @@
       "category": "French Crime Book",
       "position": "2021",
       "result": "winner",
-      "title": "La mari\u00e9e de corail"
+      "title": "The Coral Bride"
+    },
+    {
+      "authors": [
+        "Guy Lalancette"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "French Crime Book",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Les cachettes"
+    },
+    {
+      "authors": [
+        "Jean Lemieux"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "French Crime Book",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Les Demoiselles de Havre-Aubert"
+    },
+    {
+      "authors": [
+        "Gauthier St\u00e9phanie"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2021",
+      "category": "French Crime Book",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Inacceptable"
     },
     {
       "authors": [
@@ -247,20 +720,151 @@
       "position": "2022",
       "result": "winner",
       "title": "Flots"
+    },
+    {
+      "authors": [
+        "Roxanne Bouchard"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "French Crime Book",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Whisper of The Seals"
+    },
+    {
+      "authors": [
+        "Marc-Andr\u00e9 Chabot"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "French Crime Book",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Dis-moi qui doit vivre..."
+    },
+    {
+      "authors": [
+        "Guillaume Morrissette"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "French Crime Book",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Conduite dangereuse"
+    },
+    {
+      "authors": [
+        "Richard Ste-Marie"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2022",
+      "category": "French Crime Book",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Stigmates"
+    },
+    {
+      "authors": [
+        "Andr\u00e9 Marois"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "French Crime Book",
+      "position": "2024",
+      "result": "winner",
+      "title": "La sainte paix"
+    },
+    {
+      "authors": [
+        "Chrystine Brouillet"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "French Crime Book",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Le mois des morts"
+    },
+    {
+      "authors": [
+        "Catherine Lafrance"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "French Crime Book",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Le dernier souffle est le plus lourd"
+    },
+    {
+      "authors": [
+        "Jean-Jacques Pelletier"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2024",
+      "category": "French Crime Book",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "Rien"
+    },
+    {
+      "authors": [
+        "Guillaume Morrissette"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "French Crime Book",
+      "position": "2025",
+      "result": "winner",
+      "title": "Une m\u00e9moire de lion"
+    },
+    {
+      "authors": [
+        "J.L. Blanchard"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "French Crime Book",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "La femme papillon"
+    },
+    {
+      "authors": [
+        "Ronald Lavall\u00e9e"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "French Crime Book",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "Le crime du gar\u00e7on exquis"
+    },
+    {
+      "authors": [
+        "Johanne Seymour"
+      ],
+      "award": "Crime Writers of Canada Award",
+      "award_year": "2025",
+      "category": "French Crime Book",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Fracture"
     }
   ],
-  "fetched_at": "2026-07-15T21:06:33Z",
+  "fetched_at": "2026-11-16T06:36:18Z",
   "list_id": "crime_writers_of_canada_award_french_language_crime_book",
   "list_name": "Crime Writers of Canada Award - French Language Crime Book",
   "match_series": false,
-  "notes": [
-    "LibraryThing failed: HTTP Error 403: Forbidden"
-  ],
+  "notes": [],
   "parser": "crime_writers_of_canada_award_french_language_crime_book",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Crime Writers of Canada Award - French Language Crime Book",
     "source_id": "crime_writers_of_canada_award_french_language_crime_book",
-    "url": "https://en.wikipedia.org/wiki/Crime_Writers_of_Canada_Awards_of_Excellence"
+    "url": "https://www.librarything.com/award/1612/Crime-Writers-of-Canada-Awards-of-Excellence"
   }
 }

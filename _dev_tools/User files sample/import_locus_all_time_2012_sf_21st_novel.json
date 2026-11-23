@@ -282,12 +282,13 @@
       "title": "Embassytown"
     }
   ],
-  "fetched_at": "2026-07-11T00:43:52Z",
+  "fetched_at": "2026-07-23T06:05:05Z",
   "list_id": "locus_all_time_2012_sf_21st_novel",
   "list_name": "Locus - All-Time 2012 21st Century SF Novel",
   "match_series": false,
   "notes": [],
   "parser": "locus_all_time_2012_sf_21st_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Locus - All-Time 2012 21st Century SF Novel",

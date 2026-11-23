@@ -2,7 +2,7 @@
   "append_state": {
     "entry_count": 56,
     "last_entry_key": "hollywood kills|adam meyer\u001falan orloff",
-    "last_position": "2026.05",
+    "last_position": "2026.04",
     "source_revision": null
   },
   "entries": [
@@ -580,6 +580,17 @@
     },
     {
       "authors": [
+        "Curtis Ippolito"
+      ],
+      "award": "Anthony Award",
+      "award_year": "2026",
+      "category": "Best Anthology/Collection",
+      "position": "2026",
+      "result": "winner",
+      "title": "On Fire and Under Water: A Climate Change Crime Fiction Anthology"
+    },
+    {
+      "authors": [
         "C.W. Blackwell"
       ],
       "award": "Anthony Award",
@@ -614,34 +625,24 @@
     },
     {
       "authors": [
-        "Curtis Ippolito"
-      ],
-      "award": "Anthony Award",
-      "award_year": "2026",
-      "category": "Best Anthology/Collection",
-      "position": "2026.04",
-      "result": "nominee",
-      "title": "On Fire and Under Water: A Climate Change Crime Fiction Anthology"
-    },
-    {
-      "authors": [
         "Adam Meyer",
         "Alan Orloff"
       ],
       "award": "Anthony Award",
       "award_year": "2026",
       "category": "Best Anthology/Collection",
-      "position": "2026.05",
+      "position": "2026.04",
       "result": "nominee",
       "title": "Hollywood Kills"
     }
   ],
-  "fetched_at": "2026-07-18T02:37:49Z",
+  "fetched_at": "2026-11-16T01:13:55Z",
   "list_id": "anthony_award_anthology_collection",
   "list_name": "Anthony Award - Anthology/Collection",
   "match_series": false,
   "notes": [],
   "parser": "anthony_award_anthology_collection",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Anthony Award - Anthology/Collection",

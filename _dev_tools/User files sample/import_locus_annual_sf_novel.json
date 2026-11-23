@@ -6605,6 +6605,7 @@
     },
     {
       "authors": [
+        "Larry Niven",
         "Jerry Pournelle",
         "Steven Barnes"
       ],
@@ -6618,7 +6619,7 @@
         "source_id": "",
         "url": "https://www.sfadb.com/Locus_Awards_1988"
       },
-      "title": "The Legacy of Heorot , Larry Niven"
+      "title": "The Legacy of Heorot"
     },
     {
       "authors": [
@@ -19537,12 +19538,13 @@
       "title": "Picks and Shovels"
     }
   ],
-  "fetched_at": "2026-07-11T00:45:50Z",
+  "fetched_at": "2026-07-23T08:04:06Z",
   "list_id": "locus_annual_sf_novel",
   "list_name": "Locus - Annual SF Novel",
   "match_series": false,
   "notes": [],
   "parser": "locus_annual_sf_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Locus - Annual SF Novel",

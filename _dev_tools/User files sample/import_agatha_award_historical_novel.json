@@ -832,12 +832,13 @@
       "title": "Murder at the Moulin Rouge"
     }
   ],
-  "fetched_at": "2026-07-18T02:41:27Z",
+  "fetched_at": "2026-11-16T00:55:36Z",
   "list_id": "agatha_award_historical_novel",
   "list_name": "Agatha Award - Historical Novel",
   "match_series": false,
   "notes": [],
   "parser": "agatha_award_historical_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Agatha Award - Historical Novel",

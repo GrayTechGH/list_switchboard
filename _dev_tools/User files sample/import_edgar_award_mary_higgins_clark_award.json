@@ -1443,12 +1443,13 @@
       "title": "Last Dance Before Dawn"
     }
   ],
-  "fetched_at": "2026-07-16T23:41:26Z",
+  "fetched_at": "2026-11-15T22:42:29Z",
   "list_id": "edgar_award_mary_higgins_clark_award",
   "list_name": "Edgar Award - Mary Higgins Clark Award",
   "match_series": false,
   "notes": [],
   "parser": "edgar_award_mary_higgins_clark_award",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Edgar Award - Mary Higgins Clark Award",

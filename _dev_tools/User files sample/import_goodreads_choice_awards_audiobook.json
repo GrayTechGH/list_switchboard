@@ -1,0 +1,705 @@
+{
+  "append_state": {
+    "entry_count": 40,
+    "last_entry_key": "the next conversation|jefferson fisher",
+    "last_position": "2025.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Emily Henry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "Funny Story",
+      "votes": "72571"
+    },
+    {
+      "authors": [
+        "Kristin Hannah"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "The Women",
+      "votes": "61305"
+    },
+    {
+      "authors": [
+        "Abby Jimenez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "Just for the Summer",
+      "votes": "54828"
+    },
+    {
+      "authors": [
+        "Amy Tintera"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "Listen for the Lie",
+      "votes": "36352"
+    },
+    {
+      "authors": [
+        "Joe White"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "1984",
+      "votes": "35733"
+    },
+    {
+      "authors": [
+        "T.J. Klune"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "Somewhere Beyond the Sea",
+      "votes": "30449"
+    },
+    {
+      "authors": [
+        "Ashley Elston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "First Lie Wins",
+      "votes": "26530"
+    },
+    {
+      "authors": [
+        "Percival Everett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "James",
+      "votes": "20610"
+    },
+    {
+      "authors": [
+        "Sharon McMahon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "The Small and the Mighty",
+      "votes": "18334"
+    },
+    {
+      "authors": [
+        "Richard Osman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "We Solve Murders",
+      "votes": "16739"
+    },
+    {
+      "authors": [
+        "Ina Garten"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "Be Ready When the Luck Happens",
+      "votes": "6540"
+    },
+    {
+      "authors": [
+        "Lisa Marie Presley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "From Here to the Great Unknown",
+      "votes": "6167"
+    },
+    {
+      "authors": [
+        "Jonathan Haidt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "The Anxious Generation",
+      "votes": "5792"
+    },
+    {
+      "authors": [
+        "Sally Rooney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "Intermezzo",
+      "votes": "5588"
+    },
+    {
+      "authors": [
+        "Whoopi Goldberg"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "Bits and Pieces",
+      "votes": "4123"
+    },
+    {
+      "authors": [
+        "Liane Moriarty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "Here One Moment",
+      "votes": "4101"
+    },
+    {
+      "authors": [
+        "Ramani Durvasula"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "It's Not You",
+      "votes": "3214"
+    },
+    {
+      "authors": [
+        "Liz Cheney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "Oath and Honor",
+      "votes": "3180"
+    },
+    {
+      "authors": [
+        "Cara Bastone"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "Maybe This Time",
+      "votes": "3174"
+    },
+    {
+      "authors": [
+        "Malcolm Gladwell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Audiobook",
+      "position": "2024.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2024"
+      },
+      "title": "Revenge of the Tipping Point",
+      "votes": "2422"
+    },
+    {
+      "authors": [
+        "Rebecca Yarros"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "Onyx Storm",
+      "votes": "107386"
+    },
+    {
+      "authors": [
+        "Taylor Jenkins Reid"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "Atmosphere",
+      "votes": "73916"
+    },
+    {
+      "authors": [
+        "J.K. Rowling"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "Harry Potter and the Sorcerer\u2019s Stone",
+      "votes": "63188"
+    },
+    {
+      "authors": [
+        "Emily Henry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "Great Big Beautiful Life",
+      "votes": "47862"
+    },
+    {
+      "authors": [
+        "Fredrik Backman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "My Friends",
+      "votes": "39179"
+    },
+    {
+      "authors": [
+        "Jane Austen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "Pride and Prejudice",
+      "votes": "36389"
+    },
+    {
+      "authors": [
+        "Brynne Weaver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "Tourist Season",
+      "votes": "28393"
+    },
+    {
+      "authors": [
+        "Mel Robbins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "The Let Them Theory",
+      "votes": "28302"
+    },
+    {
+      "authors": [
+        "SenLinYu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "Alchemised",
+      "votes": "27063"
+    },
+    {
+      "authors": [
+        "Clare Leslie Hall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "Broken Country",
+      "votes": "24155"
+    },
+    {
+      "authors": [
+        "Kamala Harris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "107 Days",
+      "votes": "11015"
+    },
+    {
+      "authors": [
+        "Joe Abercrombie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "The Devils",
+      "votes": "9281"
+    },
+    {
+      "authors": [
+        "Virginia Roberts Giuffre"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "Nobody's Girl",
+      "votes": "8281"
+    },
+    {
+      "authors": [
+        "Virginia Evans"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "The Correspondent",
+      "votes": "7777"
+    },
+    {
+      "authors": [
+        "S.A. Cosby"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "King of Ashes",
+      "votes": "7503"
+    },
+    {
+      "authors": [
+        "Karin Slaughter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "We Are All Guilty Here",
+      "votes": "6440"
+    },
+    {
+      "authors": [
+        "Christine Brown Woolley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "Sister Wife",
+      "votes": "4583"
+    },
+    {
+      "authors": [
+        "Jen Hatmaker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "Awake",
+      "votes": "3620"
+    },
+    {
+      "authors": [
+        "Tina Knowles"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "Matriarch",
+      "votes": "2101"
+    },
+    {
+      "authors": [
+        "Jefferson Fisher"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Audiobook",
+      "position": "2025.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-audio-books-2025"
+      },
+      "title": "The Next Conversation",
+      "votes": "1244"
+    }
+  ],
+  "fetched_at": "2026-07-28T03:36:20Z",
+  "list_id": "goodreads_choice_awards_audiobook",
+  "list_name": "Goodreads Choice Awards - Audiobook",
+  "match_series": false,
+  "notes": [
+    "Goodreads contributor enrichment stopped after an access challenge; 20 newest-year rows retained ballot credits."
+  ],
+  "parser": "goodreads_choice_awards_audiobook",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Audiobook",
+    "source_id": "goodreads_choice_awards_audiobook",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

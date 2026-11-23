@@ -35,7 +35,7 @@ class UrlFetcherWorldFantasy(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
     return WorldFantasyParser()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -44,10 +44,14 @@ class UrlFetcherWorldFantasy(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
       self.CATEGORY_ALIASES,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False),
+      enable_incremental=self.ENABLE_SFADB_INCREMENTAL)
 
 
 class UrlFetcherWorldFantasyNovel(UrlFetcherWorldFantasy):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'world_fantasy_novel'
   NAME = 'World Fantasy - Novel'
   CATEGORY = 'Novel'
@@ -57,6 +61,8 @@ class UrlFetcherWorldFantasyNovel(UrlFetcherWorldFantasy):
 
 
 class UrlFetcherWorldFantasyNovella(UrlFetcherWorldFantasy):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'world_fantasy_novella'
   NAME = 'World Fantasy - Novella'
   CATEGORY = 'Novella'
@@ -66,6 +72,8 @@ class UrlFetcherWorldFantasyNovella(UrlFetcherWorldFantasy):
 
 
 class UrlFetcherWorldFantasyAnthology(UrlFetcherWorldFantasy):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'world_fantasy_anthology'
   NAME = 'World Fantasy - Anthology'
   CATEGORY = 'Anthology'
@@ -75,6 +83,8 @@ class UrlFetcherWorldFantasyAnthology(UrlFetcherWorldFantasy):
 
 
 class UrlFetcherWorldFantasyCollection(UrlFetcherWorldFantasy):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'world_fantasy_collection'
   NAME = 'World Fantasy - Collection'
   CATEGORY = 'Collection'

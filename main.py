@@ -25,15 +25,24 @@ import time
 from urllib.error import URLError
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
+_STANDARD_URLOPEN = urlopen
 
 from bs4 import UnicodeDammit
 
 try:
-  from calibre_plugins.list_switchboard.http_policy import random_user_agent
-  from calibre_plugins.list_switchboard.sfadb_transport import is_sfadb_url, fetch_sfadb_url
+  from calibre_plugins.list_switchboard.transport.http import random_user_agent
+  from calibre_plugins.list_switchboard.transport.sfadb import is_sfadb_url, fetch_sfadb_url
+  from calibre_plugins.list_switchboard.transport.wayback import (
+    is_wayback_url, install_browser_pacing, wait_for_wayback, paced_urlopen,
+    note_wayback_error,
+  )
 except ImportError:
-  from http_policy import random_user_agent
-  from sfadb_transport import is_sfadb_url, fetch_sfadb_url
+  from transport.http import random_user_agent
+  from transport.sfadb import is_sfadb_url, fetch_sfadb_url
+  from transport.wayback import (
+    is_wayback_url, install_browser_pacing, wait_for_wayback, paced_urlopen,
+    note_wayback_error,
+  )
 
 from qt.core import QApplication, QDialog, QMessageBox
 
@@ -53,11 +62,11 @@ except ImportError:
   from errors import DuplicateStoredListsError, ImportCancelledError, ListSwitchboardError
 
 try:
-  from calibre_plugins.list_switchboard.goodreads import (
+  from calibre_plugins.list_switchboard.goodreads.lookup import (
     GOODREADS_LOOKUP_DELAY_SECONDS, GoodreadsMixin
   )
 except ImportError:
-  from goodreads import GOODREADS_LOOKUP_DELAY_SECONDS, GoodreadsMixin
+  from goodreads.lookup import GOODREADS_LOOKUP_DELAY_SECONDS, GoodreadsMixin
 
 try:
   from calibre_plugins.list_switchboard.import_flow import (
@@ -130,12 +139,12 @@ except ImportError:
   from dialogs import DebugDialog
 
 try:
-  from calibre_plugins.list_switchboard.camoufox_transport import (
+  from calibre_plugins.list_switchboard.transport.camoufox import (
     CamoufoxError, CamoufoxRequiredError, CamoufoxSkippedError,
     CamoufoxTransport, camoufox_capability, format_version, browser_fallback_level,
   )
 except ImportError:
-  from camoufox_transport import (
+  from transport.camoufox import (
     CamoufoxError, CamoufoxRequiredError, CamoufoxSkippedError,
     CamoufoxTransport, camoufox_capability, format_version, browser_fallback_level,
   )
@@ -198,6 +207,10 @@ def decode_url_response(response, max_bytes=DEFAULT_RESPONSE_MAX_BYTES):
 
 
 def decode_response_data(data, charset=None):
+  # PDF parsers reconstruct the original bytes from Latin-1. HTML charset
+  # detection can replace compressed-stream bytes and make that impossible.
+  if data.startswith(b'%PDF-'):
+    return data.decode('latin-1')
   known_encodings = (charset,) if charset else ()
   decoded = UnicodeDammit(
     data,
@@ -299,6 +312,8 @@ class ListSwitchboardCore(
     construction path calls those constructors.
   """
 
+  PACES_WAYBACK_REQUESTS = True
+
   def __init__(self, gui, do_user_config, plugin_base=None):
     self.gui = gui
     self.do_user_config = do_user_config
@@ -392,6 +407,8 @@ class ListSwitchboardCore(
       transport='default'):
     max_bytes = max_bytes or DEFAULT_RESPONSE_MAX_BYTES
     if transport == 'camoufox':
+      if is_wayback_url(url):
+        raise CamoufoxSkippedError('Wayback requests use the paced legacy transport.')
       return self.fetch_camoufox_url(
         url, max_bytes=max_bytes, timeout=timeout)
     if transport != 'default':
@@ -406,12 +423,19 @@ class ListSwitchboardCore(
     max_bytes = max_bytes or DEFAULT_RESPONSE_MAX_BYTES
     timeout = timeout or DEFAULT_REQUEST_TIMEOUT
     headers = self.fetch_headers(user_agent=user_agent)
+    pause = lambda seconds: self.sleep_with_events(seconds, 'Waiting before the next Internet Archive request...')
     if CalibreBrowser is not None:
+      paced = False
       try:
         browser = self.calibre_browser(headers)
+        paced = install_browser_pacing(browser, pause)
+        if not paced:
+          wait_for_wayback(url, pause)
         response = browser.open(url, timeout=timeout)
         return decode_url_response(response, max_bytes=max_bytes)
       except Exception as err:
+        if not paced:
+          note_wayback_error(url, err)
         if is_ssl_certificate_error(err):
           diagnostics = ssl_fetch_diagnostics(url, 'calibre browser', err)
           self.debug_log(f'SSL fetch diagnostics: {diagnostics}', section='fallback')
@@ -420,9 +444,16 @@ class ListSwitchboardCore(
     self.debug_fallback_urllib_fetch(url)
     request = Request(url, headers=headers)
     try:
-      with urlopen(request, timeout=timeout) as response:
+      if urlopen is _STANDARD_URLOPEN:
+        response = paced_urlopen(request, timeout, pause)
+      else:
+        wait_for_wayback(url, pause)
+        response = urlopen(request, timeout=timeout)
+      with response:
         return decode_url_response(response, max_bytes=max_bytes)
     except (URLError, ssl.SSLError) as err:
+      if urlopen is not _STANDARD_URLOPEN:
+        note_wayback_error(url, err)
       if is_ssl_certificate_error(err):
         diagnostics = ssl_fetch_diagnostics(url, 'urllib', err)
         self.debug_log(f'SSL fetch diagnostics: {diagnostics}', section='fallback')
@@ -457,11 +488,15 @@ class ListSwitchboardCore(
     isfdb = host == 'isfdb.org' or host.endswith('.isfdb.org')
     spsfc = host == 'spsfc.space' or host.endswith('.spsfc.space')
     sfadb = is_sfadb_url(url)
+    librarything = host == 'librarything.com' or host.endswith('.librarything.com')
     reddit_source = 'r/Fantasy' if urlparse(url).path.casefold().startswith('/r/fantasy/') else 'r/bookclub'
     source_name = ('SFADB' if sfadb else ('SPSFC' if spsfc else ('ISFDB' if isfdb else ('Goodreads' if goodreads else
-      (reddit_source if reddit else ('Pulitzer' if pulitzer else 'LibraryThing'))))))
+      (reddit_source if reddit else ('Pulitzer' if pulitzer else ('LibraryThing' if librarything else host)))))))
     excluded_domain = ('sfadb.com' if sfadb else ('spsfc.space' if spsfc else ('isfdb.org' if isfdb else ('goodreads.com' if goodreads else
-      ('reddit.com' if reddit else ('pulitzer.org' if pulitzer else 'librarything.com'))))))
+      ('reddit.com' if reddit else ('pulitzer.org' if pulitzer else ('librarything.com' if librarything else host)))))))
+    if host == 'britannica.com' or host.endswith('.britannica.com'):
+      source_name = 'Britannica'
+      excluded_domain = 'britannica.com'
     if not prefs.get(
         'camoufox_first_use_confirmed', False):
       confirmed = question_dialog(
@@ -486,7 +521,7 @@ class ListSwitchboardCore(
         log=self.debug_camoufox,
         source_name=source_name,
         warmup_excluded_domains=tuple(dict.fromkeys((excluded_domain, 'goodreads.com'))),
-        check_challenges=not (reddit or pulitzer or goodreads or isfdb or spsfc or sfadb),
+        check_challenges=librarything,
         wait_callback=lambda message: self.update_import_progress(
           message=message))
       self.camoufox_transport = transport
@@ -494,7 +529,9 @@ class ListSwitchboardCore(
     # Validation and progress wording belong to this request's site, not the
     # site which happened to construct the shared browser first.
     transport.source_name = source_name
-    transport.check_challenges = not (reddit or pulitzer or goodreads or isfdb or spsfc or sfadb)
+    # The background-script exception in this check knows LibraryThing tables.
+    # Other recipe policies validate their own usable pages and interstitials.
+    transport.check_challenges = librarything
     # Page timing is unknown; keep completed phase progress steady and use wait text.
     try:
       return transport.fetch(

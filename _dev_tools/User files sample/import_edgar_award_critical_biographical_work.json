@@ -3223,12 +3223,13 @@
       "title": "Criss-Cross: The Making of Hitchcock's Dazzling, Subversive Masterpiece Strangers on a Train"
     }
   ],
-  "fetched_at": "2026-07-16T23:31:22Z",
+  "fetched_at": "2026-11-15T22:36:26Z",
   "list_id": "edgar_award_critical_biographical_work",
   "list_name": "Edgar Award - Critical/Biographical Work",
   "match_series": false,
   "notes": [],
   "parser": "edgar_award_critical_biographical_work",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Edgar Award - Critical/Biographical Work",

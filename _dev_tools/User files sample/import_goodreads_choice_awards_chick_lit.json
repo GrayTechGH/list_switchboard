@@ -1,0 +1,24 @@
+{
+  "append_state": {
+    "entry_count": 0,
+    "last_entry_key": "",
+    "last_position": "",
+    "source_revision": null
+  },
+  "entries": [],
+  "fetched_at": "2026-07-28T00:53:44Z",
+  "list_id": "goodreads_choice_awards_chick_lit",
+  "list_name": "Goodreads Choice Awards - Chick Lit (discontinued)",
+  "match_series": false,
+  "notes": [
+    "No Goodreads Choice Awards rows were parsed for Chick Lit."
+  ],
+  "parser": "goodreads_choice_awards_chick_lit",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Chick Lit (discontinued)",
+    "source_id": "goodreads_choice_awards_chick_lit",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

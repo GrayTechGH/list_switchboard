@@ -871,12 +871,13 @@
       "title": "The Sinners All Bow: Two Authors, One Murder, and the Real Hester Prynne"
     }
   ],
-  "fetched_at": "2026-07-18T02:41:36Z",
+  "fetched_at": "2026-11-16T00:56:36Z",
   "list_id": "agatha_award_non_fiction",
   "list_name": "Agatha Award - Non-Fiction",
   "match_series": false,
   "notes": [],
   "parser": "agatha_award_non_fiction",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Agatha Award - Non-Fiction",

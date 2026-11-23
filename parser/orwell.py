@@ -13,9 +13,11 @@ Maintenance notes:
 """
 
 import re
+import json
+import datetime
 from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, UnicodeDammit
 from bs4.element import Tag
 from lxml import html as lxml_html
 
@@ -26,6 +28,8 @@ try:
     strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache, project_source_rows, restore_source_rows
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER,
@@ -33,6 +37,8 @@ except ImportError:
     strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache, project_source_rows, restore_source_rows
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 AWARD_NAME = 'Orwell Prize for Political Writing'
@@ -90,6 +96,9 @@ class OrwellOfficialParser(AwardParserBase):
 
   def parse_rows(self, html, base_url, category):
     soup = BeautifulSoup(html or '', 'html.parser')
+    modern = self.modern_rows(soup, base_url, category)
+    if modern is not None:
+      return modern
     rows = []
     rows.extend(self.detail_rows(soup, base_url, category))
     rows.extend(self.table_rows(lxml_html.fromstring(html or '<html></html>'), base_url, category))
@@ -107,6 +116,146 @@ class OrwellOfficialParser(AwardParserBase):
           if row is not None:
             rows.append(row)
     return rows
+
+  def modern_rows(self, soup, base_url, category):
+    description = soup.select_one('#mainItemDesc')
+    if description is not None:
+      heading = soup.select_one('h1.prize-title')
+      if heading is None or not self.is_political_writing_heading(self.node_text(heading)):
+        return []
+      year = self.year_from_text(self.node_text(heading))
+      title, author = description.find('h2'), description.select_one('.author')
+      if not year or title is None or author is None:
+        return []
+      publisher = description.select_one('.publishedBy')
+      return [{'award_year':str(year), 'title':self.clean_title(self.node_text(title)),
+        'author':self.clean_author(self.node_text(author)),
+        'result':self.result_from_heading(self.node_text(heading)) or RESULT_FINALIST,
+        'source_url':base_url, 'category':category,
+        'publisher':re.sub(r'^Published by:\s*','',self.node_text(publisher)) if publisher else ''}]
+    if soup.select_one('h3.award-title'):
+      return []
+    if soup.select_one('.article-header') is None:
+      return None
+    rows = []
+    for heading in soup.find_all(['h2','h3','p']):
+      if normalize_heading(self.node_text(heading)) not in (
+          'the orwell prize for political writing','political writing book prize'):
+        continue
+      column = heading.find_parent('div',class_='large-8')
+      dates = column.find('h2') if column else None
+      year = self.year_from_text(base_url) or self.year_from_text(self.node_text(dates))
+      if not year:
+        continue
+      result = RESULT_WINNER if 'winners' in base_url else RESULT_FINALIST
+      for node in heading.next_siblings:
+        if not isinstance(node,Tag):
+          continue
+        label = node.find('strong') if node.name=='p' else node
+        if label and self.node_text(node)==self.node_text(label) and self.is_peer_prize_heading(label):
+          break
+        if node.name=='blockquote':
+          continue
+        book_links = node.find_all('a',href=lambda href: href and '/political-writing/' in href)
+        if node.name=='p' and book_links:
+          for link in book_links:
+            title = self.node_text(link)
+            if not title:
+              continue
+            author = ''
+            for part in link.next_siblings:
+              if isinstance(part,Tag) and part.name in ('br','a','em','i'):
+                break
+              author += self.node_text(part) if isinstance(part,Tag) else str(part)
+            author = author.strip(' \t\r\n|,\u2013\u2014-')
+            if author:
+              rows.append({'award_year':str(year),'title':self.clean_title(title),
+                'author':self.clean_author(author),'result':result,
+                'source_url':urljoin(base_url,link['href']),'category':category})
+          continue
+        candidates = node.find_all('li',recursive=False) if node.name in ('ul','ol') else [node] if node.name=='h3' and result==RESULT_WINNER else []
+        for item in candidates:
+          title_node = item.find(['em','i'])
+          if title_node is None:
+            continue
+          title = self.node_text(title_node)
+          before,_title,after = self.node_text(item).partition(title)
+          author = after.strip(' \t\r\n,|\u2013\u2014-')
+          if not author or author.startswith('('):
+            author = before.strip(' \t\r\n,|\u2013\u2014-')
+          author = self.clean_author(author)
+          if author:
+            rows.append({'award_year':str(year),'title':self.clean_title(title),
+              'author':author,'result':result,
+              'source_url':self.first_link_url(item,base_url) or base_url,'category':category})
+    return rows
+
+  def parse_sources(self, html, base_url, name, category, extras, fetch_url,
+      cached_parsed=None, incremental_update=False, progress=None):
+    winners = self.overview_winners(html,base_url)
+    root_rows = self.parse_rows(html,base_url,category)
+    if not winners and not root_rows:
+      raise ValueError('Orwell overview did not expose Political Writing winners.')
+    cache = ParsedUnitCache('orwell-source-projections-v1',
+      json.dumps([base_url,name,category,extras,type(self).__name__]),cached_parsed,incremental_update)
+    snapshots = {base_url:(root_rows,True,None)}
+    notes = []
+    specs = [(url,self.year_from_text(url),False) for url in extras]
+    specs += [(item['url'],item['year'],True) for item in winners]
+    current_year = datetime.datetime.now().year
+    for index,(url,revision,winner) in enumerate(specs,1):
+      old = cache.old_units.get(url) or {}
+      try:
+        previous = restore_source_rows(cache.previous(url),old.get('metadata') or {})
+      except (ValueError,TypeError):
+        previous = None
+      if revision and revision < current_year and old.get('complete') is True and old.get('revision')==revision and previous:
+        snapshots[url] = (previous,True,revision)
+      else:
+        try:
+          rows = self.parse_rows(fetch_url(url),url,category)
+          if not rows or (revision and any(r['award_year']!=str(revision) for r in rows)):
+            raise ValueError('Orwell resource did not expose its expected award rows.')
+          if winner:
+            if len(rows)!=1:
+              raise ValueError('Orwell winner detail did not identify one work.')
+            rows = [dict(item,result=RESULT_WINNER) for item in rows]
+          snapshots[url] = (rows,True,revision)
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
+        except Exception as err:
+          if not cache.old_units:
+            raise
+          snapshots[url] = (previous or [],False,revision)
+          notes.append(f'Orwell resource could not be refreshed: {url}: {err}')
+      if progress:
+        progress(index,len(specs),f'Processed Orwell resource {index} of {len(specs)}...')
+    rows = [row for source,complete,revision in snapshots.values() for row in source]
+    entries = sorted(self.entries_from_rows(self.dedupe_rows(rows)),key=lambda e:position_sort_key(e.get('position','')))
+    for url,(rows,complete,revision) in snapshots.items():
+      projected,metadata = project_source_rows(rows,entries,
+        lambda r:(r['award_year'],normalize_heading(r['title'])))
+      cache.put(url,projected,revision=revision,complete=complete,metadata=metadata)
+    result = self.parsed_result(name,base_url,entries,notes)
+    result['incremental_state'] = cache.state(entries)
+    result['incremental_state']['discovery'] = {'refresh_units':[
+      url for url,revision,winner in specs if not winner and (not revision or revision>=current_year)]}
+    return result
+
+  def overview_winners(self, html, base_url):
+    soup = BeautifulSoup(html or '', 'html.parser')
+    for heading in soup.find_all('h3', class_='award-title'):
+      if not self.is_political_writing_heading(self.node_text(heading)):
+        continue
+      winners = []
+      for card in heading.parent.select('.owl-item'):
+        year_heading = card.find('h3')
+        link = year_heading.find('a', href=True) if year_heading else None
+        year_text = self.node_text(year_heading) if year_heading else ''
+        if link and re.fullmatch(r'(?:19|20)\d{2}', year_text):
+          winners.append({'url':urljoin(base_url,link['href']),'year':int(year_text)})
+      return winners
+    return []
 
   def detail_rows(self, soup, base_url, category):
     rows = []
@@ -320,31 +469,31 @@ class OrwellOfficialParser(AwardParserBase):
     rows = []
     current_year = None
     current_result_by_year = {}
-    for tr in table.xpath('.//tr'):
-      cells = tr.xpath('./td|./th')
+    for cells in self.table_grid(table):
       if not cells or self.row_matches_header(cells, header_map):
         continue
-      missing_year = self.row_omits_year(cells, header_map, current_year)
-      year_cell = self.cell_for_key(cells, header_map, 'year', False)
-      year = None if missing_year else self.year_from_text(self.clean_cell_text(year_cell))
+      year_cell = self.cell_for_key(cells, header_map, 'year')
+      year = self.year_from_text(self.clean_cell_text(year_cell))
       if year is None:
         year = current_year
       if year is None:
         continue
       current_year = year
-      title_cell = self.cell_for_key(cells, header_map, 'title', missing_year)
-      author_cell = self.cell_for_key(cells, header_map, 'author', missing_year)
-      if title_cell is None or author_cell is None:
+      title_cell = self.cell_for_key(cells, header_map, 'title')
+      author_cell = self.cell_for_key(cells, header_map, 'author')
+      if title_cell is None or author_cell is None or title_cell is author_cell:
         continue
-      result = self.result_from_cell(
-        self.cell_for_key(cells, header_map, 'result', missing_year))
+      result_cell = self.cell_for_key(cells, header_map, 'result')
+      result = self.result_from_cell(result_cell)
       if result is None:
+        if self.clean_cell_text(result_cell):
+          continue
         result = (
           RESULT_SHORTLISTED
           if current_result_by_year.get(year) == RESULT_SHORTLISTED
           else RESULT_WINNER)
       current_result_by_year[year] = result
-      title = self.clean_title(self.clean_cell_text(title_cell))
+      title = self.title_from_cell(title_cell)
       author = self.clean_author(self.clean_cell_text(author_cell))
       if not title or not author:
         continue
@@ -358,10 +507,13 @@ class OrwellOfficialParser(AwardParserBase):
       })
     return rows
 
+  def title_from_cell(self, cell):
+    return self.clean_title(self.clean_cell_text(cell))
+
   def header_map(self, table):
-    for tr in table.xpath('.//tr'):
+    for cells in self.table_grid(table):
       mapped = {}
-      for index, cell in enumerate(tr.xpath('./th|./td')):
+      for index, cell in enumerate(cells):
         key = HEADER_ALIASES.get(normalize_heading(self.clean_cell_text(cell)))
         if key is not None and key not in mapped:
           mapped[key] = index
@@ -380,18 +532,10 @@ class OrwellOfficialParser(AwardParserBase):
         return False
     return True
 
-  def row_omits_year(self, cells, header_map, current_year):
-    if current_year is None or header_map.get('year') != 0:
-      return False
-    first_text = self.clean_cell_text(cells[0]) if cells else ''
-    return self.year_from_text(first_text) is None and len(cells) <= max(header_map.values())
-
-  def cell_for_key(self, cells, header_map, key, missing_year):
+  def cell_for_key(self, cells, header_map, key):
     index = header_map.get(key)
     if index is None:
       return None
-    if missing_year and index > header_map.get('year', -1):
-      index -= 1
     if index < 0 or index >= len(cells):
       return None
     return cells[index]
@@ -444,7 +588,7 @@ class OrwellOfficialParser(AwardParserBase):
   def clean_author(self, value):
     text = normalize_line(value)
     text = re.sub(r'^\s*by\s+', '', text, flags=re.I)
-    text = re.sub(r'\s*,?\s*(?:translated|translation|edited|ed\.?|eds?\.?)\b.*$', '', text, flags=re.I)
+    text = re.sub(r'(?:\s*,\s*|\s+)(?:translated|translation|edited|ed\.?|eds?\.?)\b.*$', '', text, flags=re.I)
     return strip_publication_notes(text).strip(' "\u201c\u201d,')
 
   def strip_result_prefix(self, value):
@@ -541,9 +685,15 @@ class OrwellOfficialParser(AwardParserBase):
 
 
 class OrwellWikipediaParser(OrwellOfficialParser):
-  """Parse the bounded Political Writing table on Wikipedia's Orwell page."""
+  """Read 2019-onward Political Writing tables under bare or wrapped headings.
+
+  Table ownership follows the nearest document heading, including headings in
+  mw-heading wrappers and Parsoid sections. Adjacent prize headings end scope.
+  """
 
   def parse(self, html, base_url, name, category=CATEGORY):
+    if isinstance(html, bytes):
+      html = UnicodeDammit(html, is_html=True).unicode_markup
     root = lxml_html.fromstring(html or '<html></html>')
     rows = []
     for table in self.political_writing_tables(root):
@@ -557,14 +707,25 @@ class OrwellWikipediaParser(OrwellOfficialParser):
       sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))))
 
   def political_writing_tables(self, root):
-    for heading in root.xpath('//h2|//h3|//h4'):
-      text = normalize_heading(self.node_text_lxml(heading))
+    for table in root.xpath('//table'):
+      headings = table.xpath('preceding::*[self::h2 or self::h3 or self::h4][1]')
+      if not headings:
+        continue
+      text = normalize_heading(self.node_text_lxml(headings[0]))
       if 'political writing' not in text or '2019' not in text:
         continue
-      for sibling in heading.itersiblings():
-        if (sibling.tag or '').lower() in {'h2', 'h3', 'h4'}:
-          break
-        if (sibling.tag or '').lower() == 'table':
-          yield sibling
-        for table in sibling.xpath('.//table'):
-          yield table
+      yield table
+
+  def title_from_cell(self, cell):
+    text = self.clean_cell_text(cell)
+    titles = cell.xpath('.//i|.//em')
+    if titles:
+      title = self.clean_cell_text(titles[0])
+      if title and text.startswith(title):
+        remainder = text[len(title):].strip()
+        if remainder.startswith('(') and remainder.endswith(')'):
+          text = title
+    return normalize_line(text)
+
+  def clean_author(self, value):
+    return re.sub(r'\s+and\s+', ' & ', super().clean_author(value), flags=re.I)

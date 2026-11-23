@@ -18,6 +18,7 @@ Maintenance notes:
 
 import json
 import re
+import datetime
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -31,6 +32,8 @@ try:
   from calibre_plugins.list_switchboard.parser.base import author_list
   from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.incremental import (
+    ParsedUnitCache, project_source_rows, restore_source_rows)
 except ImportError:
   from .award_base import (
     AwardParserBase, normalize_heading, normalize_line, split_title_author_byline,
@@ -39,6 +42,7 @@ except ImportError:
   from .base import author_list
   from errors import ImportCancelledError, CamoufoxRequiredError
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache, project_source_rows, restore_source_rows
 
 
 AWARD_NAME = 'Self-Published Science Fiction Competition'
@@ -106,35 +110,80 @@ class SPSFCAwardsParser(AwardParserBase):
   AWARD_NAME = AWARD_NAME
 
   def parse(self, html, base_url, name,
-            fetch_url=None, source_pages=None, curated_rows=None, log=None, progress=None):
+            fetch_url=None, source_pages=None, curated_rows=None, log=None, progress=None,
+            cached_parsed=None, incremental_update=False):
     pages = tuple(source_pages if source_pages is not None else SPSFC_SOURCE_PAGES)
     rows = self.curated_result_rows(curated_rows)
+    cache = ParsedUnitCache('spsfc-source-projections-v1',
+      json.dumps([base_url, name, pages, rows], sort_keys=True), cached_parsed, incremental_update)
+    sources = [('@curated', list(rows), True, None)]
+    latest_year = max((int(page['award_year']) for page in pages), default=0)
+    settled = {row['competition'] for row in rows if row.get('result') == 'winner'}
+    for key, unit in cache.old_units.items():
+      if unit.get('complete') is not True:
+        continue
+      try:
+        original = restore_source_rows(cache.previous(key), unit.get('metadata') or {})
+      except (ValueError, TypeError):
+        continue
+      settled.update(row['competition'] for row in original if row.get('result') == 'winner')
     notes = []
     self._progress(progress, 0, len(pages), f'Preparing {name} source pages...')
     for index, page in enumerate(pages, start=1):
       url = page['url']
+      revision = dict(page)
+      old_unit = cache.old_units.get(url) or {}
+      try:
+        old_rows = restore_source_rows(cache.previous(url), old_unit.get('metadata') or {})
+      except (ValueError, TypeError):
+        old_rows = None
+      closed = (int(page['award_year']) < min(latest_year, datetime.datetime.now().year) and
+        page['competition'] in settled)
+      if (closed and old_unit.get('complete') is True and
+          old_unit.get('revision') == revision and old_rows):
+        rows = _merge_rows(rows, old_rows)
+        sources.append((url, old_rows, True, revision))
+        continue
       self._progress(progress, index, len(pages), f'Fetching {page["competition"]}...')
       try:
         page_html = html if _same_url(url, base_url) else fetch_url(url)
+        parsed_rows = self.parse_source_page(page_html, page)
       except (ImportCancelledError, CamoufoxRequiredError):
         raise
       except Exception as err:
         notes.append(f'{page["competition"]} source could not be fetched: {url}: {err}')
         self._log(log, 'fetch-failed', {'url': url, 'error': str(err)})
+        retained = old_rows or []
+        rows = _merge_rows(rows, retained)
+        sources.append((url, retained, False, revision))
         continue
-      parsed_rows = self.parse_source_page(page_html, page)
       if not parsed_rows:
         notes.append(f'{page["competition"]} source did not contain usable award entries: {url}')
+        parsed_rows = old_rows or []
+        complete = False
+      else:
+        complete = True
       rows = _merge_rows(rows, parsed_rows)
+      sources.append((url, parsed_rows, complete, revision))
       self._log(log, 'source-parsed', {
         'url': url, 'competition': page['competition'], 'entries': len(parsed_rows),
       })
     entries = self.entries_from_rows(rows)
-    return self.parsed_result(
+    entries = sorted(entries, key=lambda item: position_sort_key(item.get('position', '')))
+    # Rebuild original source projections after curated winner promotions and
+    # cross-source deduplication; cached finalists must retain their own result.
+    for url, source_rows, complete, revision in sources:
+      projected, metadata = project_source_rows(source_rows, entries,
+        lambda row: (str(row['award_year']), normalize_heading(row['title'])))
+      cache.put(url, projected, revision=revision, complete=complete, metadata=metadata)
+    result = self.parsed_result(
       name,
       base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      entries,
       notes)
+    result['incremental_state'] = cache.state(entries)
+    result['incremental_state']['discovery'] = {'refresh_units': [base_url]}
+    return result
 
   def parse_source_page(self, html, page):
     root = _html_root(html)

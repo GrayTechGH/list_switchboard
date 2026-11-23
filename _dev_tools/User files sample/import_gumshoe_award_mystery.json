@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 7,
-    "last_entry_key": "the tin roof blowdown|james lee burke",
-    "last_position": "2008",
+    "entry_count": 35,
+    "last_entry_key": "what the dead know|laura lippman",
+    "last_position": "2008.04",
     "source_revision": null
   },
   "entries": [
@@ -19,6 +19,50 @@
     },
     {
       "authors": [
+        "Joe Gores"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2002",
+      "category": "Mystery",
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "Cons, Scams & Grifts"
+    },
+    {
+      "authors": [
+        "T. Jefferson Parker"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2002",
+      "category": "Mystery",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "Silent Joe"
+    },
+    {
+      "authors": [
+        "George P. Pelecanos"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2002",
+      "category": "Mystery",
+      "position": "2002.03",
+      "result": "nominee",
+      "title": "Right as Rain"
+    },
+    {
+      "authors": [
+        "Thomas Perry"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2002",
+      "category": "Mystery",
+      "position": "2002.04",
+      "result": "nominee",
+      "title": "Death Benefits"
+    },
+    {
+      "authors": [
         "George P. Pelecanos"
       ],
       "award": "Gumshoe Award",
@@ -26,12 +70,51 @@
       "category": "Mystery",
       "position": "2003",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://en.wikipedia.org/wiki/Hell_to_Pay_(novel)"
-      },
       "title": "Hell to Pay"
+    },
+    {
+      "authors": [
+        "Ace Atkins"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2003",
+      "category": "Mystery",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "Dark End of the Street"
+    },
+    {
+      "authors": [
+        "Jan Burke"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2003",
+      "category": "Mystery",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "Nine"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2003",
+      "category": "Mystery",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "City of Bones"
+    },
+    {
+      "authors": [
+        "Jeffrey Deaver"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2003",
+      "category": "Mystery",
+      "position": "2003.04",
+      "result": "nominee",
+      "title": "The Stone Monkey"
     },
     {
       "authors": [
@@ -42,7 +125,51 @@
       "category": "Mystery",
       "position": "2004",
       "result": "winner",
-      "title": "Blood is the Sky"
+      "title": "Blood Is the Sky"
+    },
+    {
+      "authors": [
+        "Marshall Browne"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2004",
+      "category": "Mystery",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "The Eye of the Abyss"
+    },
+    {
+      "authors": [
+        "Lee Child"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2004",
+      "category": "Mystery",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "Persuader"
+    },
+    {
+      "authors": [
+        "Barry Eisler"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2004",
+      "category": "Mystery",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "A Lonely Resurrection"
+    },
+    {
+      "authors": [
+        "Jim Fusilli"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2004",
+      "category": "Mystery",
+      "position": "2004.04",
+      "result": "nominee",
+      "title": "Tribeca Blues"
     },
     {
       "authors": [
@@ -53,7 +180,51 @@
       "category": "Mystery",
       "position": "2005",
       "result": "winner",
-      "title": "Hard, Hard City"
+      "title": "Hard Hard City"
+    },
+    {
+      "authors": [
+        "Denise Hamilton"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "Mystery",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "Last Lullaby"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "Mystery",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "By a Spider's Thread"
+    },
+    {
+      "authors": [
+        "T. Jefferson Parker"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "Mystery",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "California Girl"
+    },
+    {
+      "authors": [
+        "S. J. Rozan"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2005",
+      "category": "Mystery",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "Absent Friends"
     },
     {
       "authors": [
@@ -64,7 +235,51 @@
       "category": "Mystery",
       "position": "2006",
       "result": "winner",
-      "title": "To the Power of the Three"
+      "title": "To the Power of Three"
+    },
+    {
+      "authors": [
+        "Jeffrey Cohen"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "Mystery",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "As Dog is My Witness"
+    },
+    {
+      "authors": [
+        "Reed Farrel Coleman"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "Mystery",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "The James Deans"
+    },
+    {
+      "authors": [
+        "Denise Hamilton"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "Mystery",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "Savage Garden: A Novel"
+    },
+    {
+      "authors": [
+        "Duane Swierczynski"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2006",
+      "category": "Mystery",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "The Wheelman"
     },
     {
       "authors": [
@@ -79,6 +294,50 @@
     },
     {
       "authors": [
+        "Ace Atkins"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "Mystery",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "White Shadow"
+    },
+    {
+      "authors": [
+        "Ariana Franklin"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "Mystery",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "City of Shadows"
+    },
+    {
+      "authors": [
+        "George Pelecanos"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "Mystery",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "The Night Gardener"
+    },
+    {
+      "authors": [
+        "Joseph Wambaugh"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2007",
+      "category": "Mystery",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "Hollywood Station"
+    },
+    {
+      "authors": [
         "James Lee Burke"
       ],
       "award": "Gumshoe Award",
@@ -87,20 +346,63 @@
       "position": "2008",
       "result": "winner",
       "title": "The Tin Roof Blowdown"
+    },
+    {
+      "authors": [
+        "John Connolly"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2008",
+      "category": "Mystery",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "The Unquiet"
+    },
+    {
+      "authors": [
+        "Ariana Franklin"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2008",
+      "category": "Mystery",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "Mistress of the Art of Death"
+    },
+    {
+      "authors": [
+        "Charlie Huston"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2008",
+      "category": "Mystery",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "The Shotgun Rule"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Gumshoe Award",
+      "award_year": "2008",
+      "category": "Mystery",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "What the Dead Know"
     }
   ],
-  "fetched_at": "2026-07-17T06:45:32Z",
+  "fetched_at": "2026-11-16T07:05:11Z",
   "list_id": "gumshoe_award_mystery",
   "list_name": "Gumshoe Award - Mystery (discontinued)",
   "match_series": false,
-  "notes": [
-    "LibraryThing failed: HTTP Error 403: Forbidden"
-  ],
+  "notes": [],
   "parser": "gumshoe_award_mystery",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Gumshoe Award - Mystery (discontinued)",
     "source_id": "gumshoe_award_mystery",
-    "url": "https://en.wikipedia.org/wiki/Gumshoe_Awards"
+    "url": "https://www.librarything.com/award/1785/Gumshoe-Award"
   }
 }

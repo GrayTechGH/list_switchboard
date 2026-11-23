@@ -10,6 +10,7 @@ class UrlFetcherOprahBookClub(UrlFetcherGeneric):
   NAME = "Oprah's Book Club"
   URL = 'https://www.oprahdaily.com/entertainment/books/g23067476/oprah-book-club-list/'
   order = 41
+  SUPPORTS_INCREMENTAL_UPDATE = True
   FILTER_CATEGORIES = (CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,)
   options = {'match_series': False}
 
@@ -20,5 +21,6 @@ class UrlFetcherOprahBookClub(UrlFetcherGeneric):
       from parser.oprah_book_club import OprahBookClubParser
     return OprahBookClubParser()
 
-  def parse(self, html, fetch_url=None, **_kwargs):
-    return self.parser().parse(html, self.URL, self.NAME, fetch_url=fetch_url)
+  def parse(self, html, fetch_url=None, cached_parsed=None, incremental_update=False, **_kwargs):
+    return self.parser().parse(html, self.URL, self.NAME, fetch_url=fetch_url,
+      cached_parsed=cached_parsed, incremental_update=incremental_update)

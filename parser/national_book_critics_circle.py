@@ -15,27 +15,35 @@ Maintenance notes:
 """
 
 import re
+import json
 import unicodedata
-from urllib.parse import urljoin
+from copy import deepcopy
+from urllib.parse import urljoin,urlsplit
 
 from bs4 import BeautifulSoup
 
 try:
   from calibre_plugins.list_switchboard.parser.award_base import ( # type: ignore
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, split_title_author, strip_publication_notes,
+    normalize_heading, normalize_line, split_title_author, strip_publication_notes,is_author_suffix,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.parser.annual_updates import read_annual_pages
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError,CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
-    normalize_heading, normalize_line, split_title_author, strip_publication_notes,
+    normalize_heading, normalize_line, split_title_author, strip_publication_notes,is_author_suffix,
   )
   from .generic import position_sort_key
+  from .annual_updates import read_annual_pages
+  from .incremental import ParsedUnitCache
+  from errors import ImportCancelledError,CamoufoxRequiredError
 
 
 AWARD_NAME = 'National Book Critics Circle Award'
-OFFICIAL_URL = 'https://www.bookcritics.org/past-awards/'
+OFFICIAL_URL = 'https://www.bookcritics.org/awards/past/'
 
 HEADER_ALIASES = {
   'award': 'category',
@@ -94,13 +102,14 @@ class NationalBookCriticsCircleMixin(AwardParserBase):
 
   def clean_title(self, value):
     value = strip_publication_notes(normalize_line(_normalized_text(value)))
-    value = re.sub(r'^\s*(?:title|book|work)\s*:?\s*', '', value, flags=re.I)
+    value = re.sub(r'^\s*(?:title|book|work)\s*:\s*', '', value, flags=re.I)
     return value.strip(' "\'\u2018\u2019\u201c\u201d,')
 
   def clean_author(self, value):
     value = strip_publication_notes(normalize_line(_normalized_text(value)))
-    value = re.sub(r'^\s*(?:by|author|authors|writer|writers)\s*:?\s*', '', value, flags=re.I)
+    value = re.sub(r'^\s*(?:by\s+|(?:authors?|writers?)\s*:\s*)', '', value, flags=re.I)
     value = re.sub(r'\s+translated\s+by\s+.+$', '', value, flags=re.I).strip()
+    value = re.sub(r',?\s+translat(?:ed|ion)\s+(?:from\b.+?\s+)?by\s+.+$', '', value, flags=re.I).strip()
     return value.strip(' "\'\u2018\u2019\u201c\u201d,')
 
   def category_matches(self, value):
@@ -176,7 +185,38 @@ class NationalBookCriticsCircleMixin(AwardParserBase):
     return '', ''
 
   def parse_node_entry(self, node, base_url):
+    marked=node.find(['em','i'])
+    if marked is not None:
+      before,after=[],[]
+      started=False
+      for text_node in node.find_all(string=True):
+        if text_node.find_parent(['script','style','figure']):
+          continue
+        if marked in text_node.parents:
+          started=True
+        (after if started else before).append(str(text_node))
+      author=normalize_line(''.join(before)).strip()
+      prefix=''
+      if author and not author.endswith(',') and ',' in author:
+        credit,fragment=author.rsplit(',',1)
+        if len(fragment.strip())==1:
+          author,prefix=credit,fragment.strip()
+      author=self.strip_entry_prefix(author.rstrip(', '))
+      title=prefix+normalize_line(''.join(after))
+      title=re.sub(r'\)\s*\.$',')',title)
+      title,author=self.clean_title(title),self.clean_author(author)
+      if title and author:
+        return title,author,base_url
     text = self.clean_text(node)
+    if node.name=='li' and node.find_parent(class_='content-regular') and ',' in text:
+      author,title=self.strip_entry_prefix(text).split(',',1)
+      if ',' in title:
+        suffix,remainder=title.split(',',1)
+        if is_author_suffix(suffix.strip()):
+          author,title=author+', '+suffix.strip(),remainder
+      title,author=self.clean_title(title),self.clean_author(author)
+      if title and author:
+        return title,author,base_url
     title = self.title_link_text(node)
     if title:
       remainder = normalize_line(text.replace(title, ' ', 1))
@@ -313,30 +353,92 @@ class NationalBookCriticsCircleOfficialParser(NationalBookCriticsCircleMixin):
 
   def parse(
       self, html, base_url=OFFICIAL_URL, name=AWARD_NAME, fetch_url=None,
-      log=None, progress=None):
+      log=None, progress=None,cached_parsed=None,incremental_update=False):
     rows = self.parse_page_rows(html, base_url)
     notes = []
     links = self.year_links(html, base_url)
     if fetch_url is not None and links:
-      total = len(links)
-      for index, (year, url) in enumerate(links, 1):
-        try:
-          if progress is not None:
-            progress(index, total, f'Fetching {name} archive page {index} of {total}')
-          rows.extend(self.parse_page_rows(fetch_url(url), url, fallback_year=year))
-        except Exception as err:
-          notes.append(f'{name} archive page could not be fetched: {url}: {err}')
-          if log is not None:
-            log(f'{name} archive page failed: {url}: {err}')
+      source_key=json.dumps([base_url,name,self.category,self.category_aliases])
+      cache=ParsedUnitCache('official-annual-pages-v1',source_key,cached_parsed,incremental_update)
+      prefetched,failed_discovery={},{}
+      # The public selector currently lags its latest annual page. Follow only
+      # explicit next-year navigation from its newest year, freshly each time.
+      if BeautifulSoup(html,'html.parser').select_one('#award-year-select'):
+        year,url=links[-1]
+        expanded=dict(links)
+        while True:
+          expanded[year]=url
+          try:
+            page=fetch_url(url)
+          except (ImportCancelledError,CamoufoxRequiredError):
+            raise
+          except Exception as err:
+            failed_discovery[url]=err
+            for old_url in cache.old_units:
+              old_year=self.year_from_url(old_url)
+              if old_year and old_year>year:
+                expanded[old_year]=old_url
+            break
+          prefetched[url]=page
+          soup=BeautifulSoup(page,'html.parser')
+          next_link=soup.select_one('.post-navigation a[rel~=next]')
+          next_url=urljoin(url,next_link['href']) if next_link else ''
+          next_year=self.year_from_url(next_url)
+          if next_year!=year+1 or urlsplit(next_url).netloc!=urlsplit(base_url).netloc:
+            break
+          year,url=next_year,next_url
+        links=tuple(sorted(expanded.items()))
+      def read(page,url):
+        year=self.year_from_url(url)
+        soup=BeautifulSoup(page,'html.parser')
+        label=soup.select_one('.award-finalists-inner > h2.entry-title')
+        if label and self.year_from_text(self.clean_text(label))!=year:
+          raise ValueError('Official NBCC page identified another award year.')
+        return self.parsed_from_rows(self.parse_page_rows(page,url,year),name,url)
+      def fetch_year(url):
+        if url in failed_discovery:
+          raise failed_discovery[url]
+        return prefetched[url] if url in prefetched else fetch_url(url)
+      refresh_cache=cached_parsed
+      if cache.old_units and (prefetched or failed_discovery):
+        refresh_cache=deepcopy(cached_parsed)
+        for url in set(prefetched)|set(failed_discovery):
+          if url in refresh_cache['incremental_state']['units']:
+            refresh_cache['incremental_state']['units'][url]['complete']=False
+      result=read_annual_pages(source_key,
+        [(url,year) for year,url in links],
+        fetch_year,read,
+        cached_parsed=refresh_cache,incremental_update=incremental_update,
+        validate_empty=self.valid_empty_year,progress=progress,allow_partial=True,
+        failure_note=lambda url,year,err:f'{name} archive page could not be fetched: {url}: {err}')
+      result.update(name=name,source=self.parsed_result(name,base_url,[])['source'])
+      return result
     parsed = self.parsed_from_rows(rows, name, base_url)
     parsed['notes'] = notes + parsed.get('notes', [])
     return parsed
 
+  def valid_empty_year(self,html,url,year):
+    soup=BeautifulSoup(html,'html.parser')
+    block=soup.select_one('.award-finalists-inner')
+    label=block.select_one('h2.entry-title') if block else None
+    if not label or self.year_from_text(self.clean_text(label))!=year:
+      return False
+    if not block.select_one('.content-regular, .award-year-list-wrapper'):
+      return False
+    for node in block.find_all(['h3','li']):
+      text=self.clean_text(node)
+      if ((node.name=='h3' and self.category_matches(text)) or
+          (node.name=='li' and ':' in text and self.category_matches(text.split(':',1)[0]))):
+        return False
+    return True
+
   def year_links(self, html, base_url):
     soup = BeautifulSoup(html, 'html.parser')
     links = {}
-    for link in soup.find_all('a', href=True):
-      url = urljoin(base_url, link['href'])
+    for link in soup.select('a[href], #award-year-select option[value]'):
+      url = urljoin(base_url, link.get('href') or link.get('value'))
+      if urlsplit(url).netloc!=urlsplit(base_url).netloc:
+        continue
       year = self.year_from_url(url)
       if year is not None:
         links.setdefault(year, url)
@@ -344,6 +446,23 @@ class NationalBookCriticsCircleOfficialParser(NationalBookCriticsCircleMixin):
 
   def parse_page_rows(self, html, base_url, fallback_year=None):
     soup = BeautifulSoup(html, 'html.parser')
+    modern=soup.select('.award-year-list')
+    if modern:
+      rows=[]
+      year=self.year_from_url(base_url) or fallback_year
+      for group in modern:
+        heading=group.find(['h2','h3'],recursive=False)
+        if not heading or not self.category_matches(self.clean_text(heading)):
+          continue
+        for item in group.find_all('li',recursive=False):
+          result=self.result_from_text(' '.join(item.get('class') or []))
+          if result not in {RESULT_WINNER,RESULT_SHORTLISTED}:
+            continue
+          title,author,source=self.parse_node_entry(item,base_url)
+          row=self.row(year,title,author,result,source)
+          if row:
+            rows.append(row)
+      return rows
     rows = []
     for table in soup.find_all('table'):
       rows.extend(self.table_rows(table, base_url, fallback_year))
@@ -369,16 +488,25 @@ class NationalBookCriticsCircleOfficialParser(NationalBookCriticsCircleMixin):
         if self.category_matches(text):
           current_category = True
           current_result = self.result_from_text(text)
+          if not current_result and node.find_parent(class_='content-regular'):
+            following=node.find_next_sibling(['h2','h3'])
+            next_text=self.clean_text(following)
+            candidates=node.find_next_sibling('ul')
+            if ((self.category_matches(next_text) and self.result_from_text(next_text)==RESULT_SHORTLISTED) or
+                (self.heading_category_key(text)=='john leonard' and candidates and
+                 len(candidates.find_all('li',recursive=False))==1)):
+              current_result=RESULT_WINNER
           continue
         result = self.result_from_text(text)
-        if result and current_category:
+        if result and not self.heading_category_key(text):
           current_result = result
           continue
         if node.name != 'h1':
           current_category = False
           current_result = ''
         continue
-      if not current_category or current_year is None:
+      inline_category=':' in text and self.category_matches(text.split(':',1)[0])
+      if (not current_category and not inline_category) or current_year is None:
         continue
       result = self.result_from_text(text) or current_result
       if result == 'longlisted':

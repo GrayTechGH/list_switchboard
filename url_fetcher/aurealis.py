@@ -67,6 +67,7 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
   ISFDB_CATEGORY_IDS = ()
   LIBRARYTHING_CATEGORY_ALIASES = ()
   USE_LIBRARYTHING_FALLBACK = True
+  ENABLE_SFADB_INCREMENTAL = False
 
   def create_parser(self):
     try:
@@ -115,7 +116,8 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None, incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -127,7 +129,8 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice, cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed['match_series'] = self.options.get('match_series', True)
     return parsed
 
@@ -137,7 +140,7 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
         'SFADB',
         self.URL,
         lambda html, _url, **kwargs: self.parse(html, **kwargs),
-        source_rank=0),
+        source_rank=0, supports_incremental=self.ENABLE_SFADB_INCREMENTAL),
     ]
     isfdb_urls = self.isfdb_urls()
     if isfdb_urls:
@@ -193,7 +196,7 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
     parsed['notes'] = notes
     return parsed
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -202,10 +205,16 @@ class UrlFetcherAurealis(LibraryThingAwardFallbackMixin, UrlFetcherGeneric):
       self.sfadb_aliases(),
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False),
+      enable_incremental=self.ENABLE_SFADB_INCREMENTAL,
+      configuration_key={'skip_quoted': self.SKIP_QUOTED,
+        'allowed_years': sorted(self.SFADB_YEARS), 'prefer_linked_credits': self.PREFER_LINKED_CREDITS})
 
 
 class UrlFetcherAurealisSFNovel(UrlFetcherAurealis):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'aurealis_sf_novel'
   NAME = 'Aurealis - SF Novel'
   FILTER_CATEGORIES = (CATEGORY_SCIENCE_FICTION, CATEGORY_REGIONAL_NATIONAL_AWARDS)
@@ -225,6 +234,8 @@ class UrlFetcherAurealisGoldenAurealisNovel(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisFantasyNovel(UrlFetcherAurealis):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'aurealis_fantasy_novel'
   NAME = 'Aurealis - Fantasy Novel'
   FILTER_CATEGORIES = (CATEGORY_FANTASY, CATEGORY_REGIONAL_NATIONAL_AWARDS)
@@ -234,6 +245,8 @@ class UrlFetcherAurealisFantasyNovel(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisHorrorNovel(UrlFetcherAurealis):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'aurealis_horror_novel'
   NAME = 'Aurealis - Horror Novel'
   FILTER_CATEGORIES = (CATEGORY_HORROR_DARK_FICTION, CATEGORY_REGIONAL_NATIONAL_AWARDS)
@@ -243,6 +256,8 @@ class UrlFetcherAurealisHorrorNovel(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisSFNovella(UrlFetcherAurealis):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'aurealis_sf_novella'
   NAME = 'Aurealis - SF Novella'
   FILTER_CATEGORIES = (CATEGORY_SCIENCE_FICTION, CATEGORY_REGIONAL_NATIONAL_AWARDS)
@@ -252,6 +267,8 @@ class UrlFetcherAurealisSFNovella(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisFantasyNovella(UrlFetcherAurealis):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'aurealis_fantasy_novella'
   NAME = 'Aurealis - Fantasy Novella'
   FILTER_CATEGORIES = (CATEGORY_FANTASY, CATEGORY_REGIONAL_NATIONAL_AWARDS)
@@ -261,6 +278,8 @@ class UrlFetcherAurealisFantasyNovella(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisHorrorNovella(UrlFetcherAurealis):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'aurealis_horror_novella'
   NAME = 'Aurealis - Horror Novella'
   FILTER_CATEGORIES = (CATEGORY_HORROR_DARK_FICTION, CATEGORY_REGIONAL_NATIONAL_AWARDS)
@@ -270,6 +289,8 @@ class UrlFetcherAurealisHorrorNovella(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisAnthology(UrlFetcherAurealis):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'aurealis_anthology'
   NAME = 'Aurealis - Anthology'
   FILTER_CATEGORIES = SPECULATIVE_REGIONAL_CATEGORIES
@@ -279,6 +300,8 @@ class UrlFetcherAurealisAnthology(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisCollection(UrlFetcherAurealis):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'aurealis_collection'
   NAME = 'Aurealis - Collection'
   FILTER_CATEGORIES = SPECULATIVE_REGIONAL_CATEGORIES
@@ -288,6 +311,8 @@ class UrlFetcherAurealisCollection(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisGraphicNovelIllustratedWork(UrlFetcherAurealis):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   PREFER_LINKED_CREDITS = True
   source_id = 'aurealis_graphic_novel_illustrated_work'
   NAME = 'Aurealis - Graphic Novel/Illustrated Work'
@@ -303,6 +328,8 @@ class UrlFetcherAurealisGraphicNovelIllustratedWork(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisYoungAdultNovel(UrlFetcherAurealis):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'aurealis_young_adult_novel'
   NAME = 'Aurealis - Young Adult Novel'
   FILTER_CATEGORIES = YOUNG_READER_SPECULATIVE_REGIONAL_CATEGORIES
@@ -312,6 +339,8 @@ class UrlFetcherAurealisYoungAdultNovel(UrlFetcherAurealis):
 
 
 class UrlFetcherAurealisChildrensFiction(UrlFetcherAurealis):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   PREFER_LINKED_CREDITS = True
   source_id = 'aurealis_childrens_fiction'
   NAME = "Aurealis - Children's Fiction"
@@ -403,6 +432,8 @@ class UrlFetcherAurealisChildrens812IllustratedWorkPictureBook(UrlFetcherAureali
 
 
 class UrlFetcherAurealisSaraDouglassBookSeries(UrlFetcherAurealis):
+  SUPPORTS_INCREMENTAL_UPDATE = True
+  ENABLE_SFADB_INCREMENTAL = True
   source_id = 'aurealis_sara_douglass_book_series_award'
   NAME = 'Aurealis - Sara Douglass Book Series Award'
   REQUIRES_SERIES_MATCHING = True

@@ -14,6 +14,7 @@ Maintenance notes:
 
 import json
 import re
+import hashlib
 from urllib.parse import parse_qs, urljoin, urlparse
 
 from bs4 import BeautifulSoup, UnicodeDammit
@@ -225,9 +226,41 @@ class SplatterpunkParser(AwardParserBase):
       raise ValueError(
         f'Splatterpunk official {page_name} source was not a valid WordPress page.')
 
-  def validate_official_current_result(self, parsed):
+    expected=OFFICIAL_PAST_WINNERS_URL if page_name=='past winners' else OFFICIAL_AWARDS_URL
+    if (len(items)!=1 or not isinstance(items[0],dict) or
+        (items[0].get('link') or '').rstrip('/')!=expected.rstrip('/')):
+      raise ValueError('Splatterpunk official REST response identified another page.')
+
+  def current_phase(self,source):
+    documents=self.official_current_documents(source)
+    if len(documents)!=1:
+      raise ValueError('Splatterpunk current source did not identify its own award page.')
+    html,title,_link=documents[0]
+    soup=BeautifulSoup(html,'html.parser')
+    year=self.award_year(html,title)
+    text=self.html_text(html)
+    # A nomination form and bare category headings are intake, not an empty
+    # finalist ballot. Any work paragraph inside a book category disallows it.
+    intake=bool(year and any(
+      re.search(r'\bseeking to nominate works for (?:the )?'+str(year)+r'\b',self.node_text(node),re.I)
+      and node.find('a',href=True) for node in soup.find_all('p')))
+    active=False
+    for node in self.semantic_nodes(html):
+      label=category_key(self.node_text(node))
+      if self.looks_like_category_heading(label):
+        active=label in OFFICIAL_CATEGORY_KEYS
+      elif node.name in ('h1','h2','h3','h4','h5','h6'):
+        active=False
+      elif active and node.name=='p' and label:
+        intake=False
+    revision=hashlib.sha256((title+' '+text).encode('utf-8')).hexdigest()
+    return {'year':year,'intake':intake,'revision':revision}
+
+  def validate_official_current_result(self, parsed, source=None):
     entries = parsed.get('entries', ()) if parsed else ()
     if not entries:
+      if source is not None and self.current_phase(source)['intake']:
+        return
       raise ValueError(
         'Splatterpunk official current page did not expose the configured category.')
     years = {entry.get('award_year') for entry in entries}

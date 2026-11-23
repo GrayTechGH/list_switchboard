@@ -1,0 +1,751 @@
+{
+  "append_state": {
+    "entry_count": 66,
+    "last_entry_key": "the nights are quiet in tehran|shida bazyar",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Han Kang"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2016",
+      "category": "Translated Fiction",
+      "position": "2016",
+      "result": "winner",
+      "title": "The Vegetarian"
+    },
+    {
+      "authors": [
+        "Jos\u00e9 Eduardo Agualusa"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2016",
+      "category": "Translated Fiction",
+      "position": "2016.01",
+      "result": "shortlisted",
+      "title": "A General Theory of Oblivion"
+    },
+    {
+      "authors": [
+        "Elena Ferrante"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2016",
+      "category": "Translated Fiction",
+      "position": "2016.02",
+      "result": "shortlisted",
+      "title": "The Story of the Lost Child"
+    },
+    {
+      "authors": [
+        "Orhan Pamuk"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2016",
+      "category": "Translated Fiction",
+      "position": "2016.03",
+      "result": "shortlisted",
+      "title": "A Strangeness in My Mind"
+    },
+    {
+      "authors": [
+        "Robert Seethaler"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2016",
+      "category": "Translated Fiction",
+      "position": "2016.04",
+      "result": "shortlisted",
+      "title": "A Whole Life"
+    },
+    {
+      "authors": [
+        "Yan Lianke"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2016",
+      "category": "Translated Fiction",
+      "position": "2016.05",
+      "result": "shortlisted",
+      "title": "The Four Books"
+    },
+    {
+      "authors": [
+        "David Grossman"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2017",
+      "category": "Translated Fiction",
+      "position": "2017",
+      "result": "winner",
+      "title": "A Horse Walks into a Bar"
+    },
+    {
+      "authors": [
+        "Mathias \u00c9nard"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2017",
+      "category": "Translated Fiction",
+      "position": "2017.01",
+      "result": "shortlisted",
+      "title": "Compass"
+    },
+    {
+      "authors": [
+        "Roy Jacobsen"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2017",
+      "category": "Translated Fiction",
+      "position": "2017.02",
+      "result": "shortlisted",
+      "title": "The Unseen"
+    },
+    {
+      "authors": [
+        "Dorthe Nors"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2017",
+      "category": "Translated Fiction",
+      "position": "2017.03",
+      "result": "shortlisted",
+      "title": "Mirror, Shoulder, Signal"
+    },
+    {
+      "authors": [
+        "Amos Oz"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2017",
+      "category": "Translated Fiction",
+      "position": "2017.04",
+      "result": "shortlisted",
+      "title": "Judas"
+    },
+    {
+      "authors": [
+        "Samanta Schweblin"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2017",
+      "category": "Translated Fiction",
+      "position": "2017.05",
+      "result": "shortlisted",
+      "title": "Fever Dream"
+    },
+    {
+      "authors": [
+        "Olga Tokarczuk"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2018",
+      "category": "Translated Fiction",
+      "position": "2018",
+      "result": "winner",
+      "title": "Flights"
+    },
+    {
+      "authors": [
+        "Virginie Despentes"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2018",
+      "category": "Translated Fiction",
+      "position": "2018.01",
+      "result": "shortlisted",
+      "title": "Vernon Subutex 1"
+    },
+    {
+      "authors": [
+        "Han Kang"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2018",
+      "category": "Translated Fiction",
+      "position": "2018.02",
+      "result": "shortlisted",
+      "title": "The White Book"
+    },
+    {
+      "authors": [
+        "L\u00e1szl\u00f3 Krasznahorkai"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2018",
+      "category": "Translated Fiction",
+      "position": "2018.03",
+      "result": "shortlisted",
+      "title": "The World Goes On"
+    },
+    {
+      "authors": [
+        "Antonio Mu\u00f1oz Molina"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2018",
+      "category": "Translated Fiction",
+      "position": "2018.04",
+      "result": "shortlisted",
+      "title": "Like a Fading Shadow"
+    },
+    {
+      "authors": [
+        "Ahmed Saadawi"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2018",
+      "category": "Translated Fiction",
+      "position": "2018.05",
+      "result": "shortlisted",
+      "title": "Frankenstein in Baghdad"
+    },
+    {
+      "authors": [
+        "Jokha Alharthi"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2019",
+      "category": "Translated Fiction",
+      "position": "2019",
+      "result": "winner",
+      "title": "Celestial Bodies"
+    },
+    {
+      "authors": [
+        "Annie Ernaux"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2019",
+      "category": "Translated Fiction",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "title": "The Years"
+    },
+    {
+      "authors": [
+        "Marion Poschmann"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2019",
+      "category": "Translated Fiction",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "title": "The Pine Islands"
+    },
+    {
+      "authors": [
+        "Olga Tokarczuk"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2019",
+      "category": "Translated Fiction",
+      "position": "2019.03",
+      "result": "shortlisted",
+      "title": "Drive Your Plow over the Bones of the Dead"
+    },
+    {
+      "authors": [
+        "Juan Gabriel V\u00e1squez"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2019",
+      "category": "Translated Fiction",
+      "position": "2019.04",
+      "result": "shortlisted",
+      "title": "The Shape of the Ruins"
+    },
+    {
+      "authors": [
+        "Alia Trabucco Zer\u00e1n"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2019",
+      "category": "Translated Fiction",
+      "position": "2019.05",
+      "result": "shortlisted",
+      "title": "The Remainder"
+    },
+    {
+      "authors": [
+        "Marieke Lucas Rijneveld"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2020",
+      "category": "Translated Fiction",
+      "position": "2020",
+      "result": "winner",
+      "title": "The Discomfort of Evening"
+    },
+    {
+      "authors": [
+        "Shokoofeh Azar"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2020",
+      "category": "Translated Fiction",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "title": "The Enlightenment of the Greengage Tree"
+    },
+    {
+      "authors": [
+        "Gabriela Cabez\u00f3n C\u00e1mara"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2020",
+      "category": "Translated Fiction",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "title": "The Adventures of China Iron"
+    },
+    {
+      "authors": [
+        "Daniel Kehlmann"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2020",
+      "category": "Translated Fiction",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "title": "Tyll"
+    },
+    {
+      "authors": [
+        "Fernanda Melchor"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2020",
+      "category": "Translated Fiction",
+      "position": "2020.04",
+      "result": "shortlisted",
+      "title": "Hurricane Season"
+    },
+    {
+      "authors": [
+        "Y\u014dko Ogawa"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2020",
+      "category": "Translated Fiction",
+      "position": "2020.05",
+      "result": "shortlisted",
+      "title": "The Memory Police"
+    },
+    {
+      "authors": [
+        "David Diop"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2021",
+      "category": "Translated Fiction",
+      "position": "2021",
+      "result": "winner",
+      "title": "At Night All Blood Is Black"
+    },
+    {
+      "authors": [
+        "Mariana Enr\u00edquez"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2021",
+      "category": "Translated Fiction",
+      "position": "2021.01",
+      "result": "shortlisted",
+      "title": "The Dangers of Smoking in Bed"
+    },
+    {
+      "authors": [
+        "Benjam\u00edn Labatut"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2021",
+      "category": "Translated Fiction",
+      "position": "2021.02",
+      "result": "shortlisted",
+      "title": "When We Cease to Understand the World"
+    },
+    {
+      "authors": [
+        "Olga Ravn"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2021",
+      "category": "Translated Fiction",
+      "position": "2021.03",
+      "result": "shortlisted",
+      "title": "The Employees"
+    },
+    {
+      "authors": [
+        "Maria Stepanova"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2021",
+      "category": "Translated Fiction",
+      "position": "2021.04",
+      "result": "shortlisted",
+      "title": "In Memory of Memory"
+    },
+    {
+      "authors": [
+        "\u00c9ric Vuillard"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2021",
+      "category": "Translated Fiction",
+      "position": "2021.05",
+      "result": "shortlisted",
+      "title": "The War of the Poor"
+    },
+    {
+      "authors": [
+        "Geetanjali Shree"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2022",
+      "category": "Translated Fiction",
+      "position": "2022",
+      "result": "winner",
+      "title": "Tomb of Sand"
+    },
+    {
+      "authors": [
+        "Bora Chung"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2022",
+      "category": "Translated Fiction",
+      "position": "2022.01",
+      "result": "shortlisted",
+      "title": "Cursed Bunny"
+    },
+    {
+      "authors": [
+        "Jon Fosse"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2022",
+      "category": "Translated Fiction",
+      "position": "2022.02",
+      "result": "shortlisted",
+      "title": "A New Name: Septology VI-VII"
+    },
+    {
+      "authors": [
+        "Mieko Kawakami"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2022",
+      "category": "Translated Fiction",
+      "position": "2022.03",
+      "result": "shortlisted",
+      "title": "Heaven"
+    },
+    {
+      "authors": [
+        "Claudia Pi\u00f1eiro"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2022",
+      "category": "Translated Fiction",
+      "position": "2022.04",
+      "result": "shortlisted",
+      "title": "Elena Knows"
+    },
+    {
+      "authors": [
+        "Olga Tokarczuk"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2022",
+      "category": "Translated Fiction",
+      "position": "2022.05",
+      "result": "shortlisted",
+      "title": "The Books of Jacob"
+    },
+    {
+      "authors": [
+        "Georgi Gospodinov"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2023",
+      "category": "Translated Fiction",
+      "position": "2023",
+      "result": "winner",
+      "title": "Time Shelter"
+    },
+    {
+      "authors": [
+        "Eva Baltasar"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2023",
+      "category": "Translated Fiction",
+      "position": "2023.01",
+      "result": "shortlisted",
+      "title": "Boulder"
+    },
+    {
+      "authors": [
+        "Cheon Myeong-kwan"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2023",
+      "category": "Translated Fiction",
+      "position": "2023.02",
+      "result": "shortlisted",
+      "title": "Whale"
+    },
+    {
+      "authors": [
+        "Maryse Cond\u00e9"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2023",
+      "category": "Translated Fiction",
+      "position": "2023.03",
+      "result": "shortlisted",
+      "title": "The Gospel According to the New World"
+    },
+    {
+      "authors": [
+        "GauZ'"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2023",
+      "category": "Translated Fiction",
+      "position": "2023.04",
+      "result": "shortlisted",
+      "title": "Standing Heavy"
+    },
+    {
+      "authors": [
+        "Guadalupe Nettel"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2023",
+      "category": "Translated Fiction",
+      "position": "2023.05",
+      "result": "shortlisted",
+      "title": "Still Born"
+    },
+    {
+      "authors": [
+        "Jenny Erpenbeck"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2024",
+      "category": "Translated Fiction",
+      "position": "2024",
+      "result": "winner",
+      "title": "Kairos"
+    },
+    {
+      "authors": [
+        "Selva Almada"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2024",
+      "category": "Translated Fiction",
+      "position": "2024.01",
+      "result": "shortlisted",
+      "title": "Not a River"
+    },
+    {
+      "authors": [
+        "Ia Genberg"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2024",
+      "category": "Translated Fiction",
+      "position": "2024.02",
+      "result": "shortlisted",
+      "title": "The Details"
+    },
+    {
+      "authors": [
+        "Hwang Sok-yong"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2024",
+      "category": "Translated Fiction",
+      "position": "2024.03",
+      "result": "shortlisted",
+      "title": "Mater 2-10"
+    },
+    {
+      "authors": [
+        "Jente Posthuma"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2024",
+      "category": "Translated Fiction",
+      "position": "2024.04",
+      "result": "shortlisted",
+      "title": "What I\u2019d Rather Not Think About"
+    },
+    {
+      "authors": [
+        "Itamar Vieira Junior"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2024",
+      "category": "Translated Fiction",
+      "position": "2024.05",
+      "result": "shortlisted",
+      "title": "Crooked Plow"
+    },
+    {
+      "authors": [
+        "Banu Mushtaq"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2025",
+      "category": "Translated Fiction",
+      "position": "2025",
+      "result": "winner",
+      "title": "Heart Lamp: Selected Stories"
+    },
+    {
+      "authors": [
+        "Anne Serre"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2025",
+      "category": "Translated Fiction",
+      "position": "2025.01",
+      "result": "shortlisted",
+      "title": "A Leopard-Skin Hat"
+    },
+    {
+      "authors": [
+        "Vincenzo Latronico"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2025",
+      "category": "Translated Fiction",
+      "position": "2025.02",
+      "result": "shortlisted",
+      "title": "Perfection"
+    },
+    {
+      "authors": [
+        "Hiromi Kawakami"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2025",
+      "category": "Translated Fiction",
+      "position": "2025.03",
+      "result": "shortlisted",
+      "title": "Under the Eye of the Big Bird"
+    },
+    {
+      "authors": [
+        "Vincent Delecroix"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2025",
+      "category": "Translated Fiction",
+      "position": "2025.04",
+      "result": "shortlisted",
+      "title": "Small Boat"
+    },
+    {
+      "authors": [
+        "Solvej Balle"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2025",
+      "category": "Translated Fiction",
+      "position": "2025.05",
+      "result": "shortlisted",
+      "title": "On the Calculation of Volume I"
+    },
+    {
+      "authors": [
+        "Y\u00e1ng Shu\u0101ng-z\u01d0"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2026",
+      "category": "Translated Fiction",
+      "position": "2026",
+      "result": "winner",
+      "title": "Taiwan Travelogue"
+    },
+    {
+      "authors": [
+        "Marie NDiaye"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2026",
+      "category": "Translated Fiction",
+      "position": "2026.01",
+      "result": "shortlisted",
+      "title": "The Witch"
+    },
+    {
+      "authors": [
+        "Ana Paula Maia"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2026",
+      "category": "Translated Fiction",
+      "position": "2026.02",
+      "result": "shortlisted",
+      "title": "On Earth As It Is Beneath"
+    },
+    {
+      "authors": [
+        "Daniel Kehlmann"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2026",
+      "category": "Translated Fiction",
+      "position": "2026.03",
+      "result": "shortlisted",
+      "title": "The Director"
+    },
+    {
+      "authors": [
+        "Rene Karabash"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2026",
+      "category": "Translated Fiction",
+      "position": "2026.04",
+      "result": "shortlisted",
+      "title": "She Who Remains"
+    },
+    {
+      "authors": [
+        "Shida Bazyar"
+      ],
+      "award": "International Booker Prize",
+      "award_year": "2026",
+      "category": "Translated Fiction",
+      "position": "2026.05",
+      "result": "shortlisted",
+      "title": "The Nights Are Quiet in Tehran"
+    }
+  ],
+  "fetched_at": "2026-07-30T00:32:43Z",
+  "list_id": "international_booker_prize",
+  "list_name": "International Booker Prize",
+  "match_series": false,
+  "notes": [
+    "Official Booker failed: HTTP Error 403: Forbidden"
+  ],
+  "parser": "international_booker_prize",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "International Booker Prize",
+    "source_id": "international_booker_prize",
+    "url": "https://en.wikipedia.org/wiki/International_Booker_Prize"
+  }
+}

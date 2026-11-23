@@ -1,0 +1,1269 @@
+{
+  "append_state": {
+    "entry_count": 81,
+    "last_entry_key": "sf|",
+    "last_position": "2024.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "\u77f3\u539f\u85e4\u592b"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1985",
+      "category": "Nonfiction",
+      "position": "1985",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?1946975"
+      },
+      "title": "\u5149\u4e16\u7d00\u306e\u4e16\u754c"
+    },
+    {
+      "authors": [
+        "\u4e2d\u5cf6\u6893",
+        "\u5927\u5bae\u4fe1\u5149",
+        "\u5c0f\u6ca2\u907c\u5b50",
+        "\u7b20\u4e95\u6f54",
+        "\u5dfd\u5b5d\u4e4b",
+        "\u6ce2\u6d25\u535a\u660e",
+        "\u6e0b\u8c37\u307e\u308a\u5b50"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1985",
+      "category": "Nonfiction",
+      "position": "1985.01",
+      "result": "nominee",
+      "title": "1984\u5e74\"\u306b\u8003\u3048\u308b"
+    },
+    {
+      "authors": [
+        "\u77f3\u4e0a\u4e09\u767b\u5fd7"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1985",
+      "category": "Nonfiction",
+      "position": "1985.02",
+      "result": "nominee",
+      "title": "\u3042\u308b\uff33\uff26\u6620\u753b\u8a55\u8ad6\u5bb6\u306e\u544a\u767d"
+    },
+    {
+      "authors": [
+        "\u4f0a\u85e4\u5178\u592b"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1985",
+      "category": "Nonfiction",
+      "position": "1985.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3682435"
+      },
+      "title": "\u4e16\u754c\u306eSF\u6587\u5b66\u7dcf\u89e3\u8aac"
+    },
+    {
+      "authors": [
+        "\u5357\u4f38\u574a"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1985",
+      "category": "Nonfiction",
+      "position": "1985.04",
+      "result": "nominee",
+      "title": "\u4f38\u574a\u306e\u30e4\u30bf\u30e9\u30cb\u30e5\u30fc\u30e2\u30f3"
+    },
+    {
+      "authors": [
+        "\u5927\u5bae\u4fe1\u5149"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1985",
+      "category": "Nonfiction",
+      "position": "1985.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3296006"
+      },
+      "title": "\u65e5\u672cSF\u5e74\u9451 1984\u5e74\u7248"
+    },
+    {
+      "authors": [
+        "\u30b8\u30e3\u30c3\u30af\u30fb\u30b5\u30c9\u30a5\u30fc\u30eb"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1985",
+      "category": "Nonfiction",
+      "position": "1985.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3682439"
+      },
+      "title": "\u73fe\u4ee3\uff33\uff26\u306e\u6b74\u53f2"
+    },
+    {
+      "authors": [
+        "\u5927\u5bae\u4fe1\u5149"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1985",
+      "category": "Nonfiction",
+      "position": "1985.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3456751"
+      },
+      "title": "SF\u306e\u5192\u967a"
+    },
+    {
+      "authors": [
+        "\u30a2\u30e1\u30ea\u30abSF\u4f5c\u5bb6\u5354\u4f1a"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1985",
+      "category": "Nonfiction",
+      "position": "1985.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3320257"
+      },
+      "title": "SF\u306e\u66f8\u304d\u65b9"
+    },
+    {
+      "authors": [
+        "\u6c60\u7530\u61b2\u7ae0"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1986",
+      "category": "Nonfiction",
+      "position": "1986",
+      "result": "winner",
+      "title": "\u65e5\u672c\u7279\u64ae\u6620\u753b\u53f2 SF\u30d2\u30fc\u30ed\u30fc\u5217\u4f1d"
+    },
+    {
+      "authors": [
+        "\u30a2\u30a4\u30b6\u30c3\u30af\u30fb\u30a2\u30b7\u30e2\u30d5"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1986",
+      "category": "Nonfiction",
+      "position": "1986.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3687303"
+      },
+      "title": "\u30a2\u30b7\u30e2\u30d5\u81ea\u4f1d1"
+    },
+    {
+      "authors": [
+        "\u30a2\u30a4\u30b6\u30c3\u30af\u30fb\u30a2\u30b7\u30e2\u30d5"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1986",
+      "category": "Nonfiction",
+      "position": "1986.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3687304"
+      },
+      "title": "\u30a2\u30b7\u30e2\u30d5\u81ea\u4f1d1"
+    },
+    {
+      "authors": [
+        "\u30a2\u30a4\u30b6\u30c3\u30af\u30fb\u30a2\u30b7\u30e2\u30d5"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1986",
+      "category": "Nonfiction",
+      "position": "1986.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3687307"
+      },
+      "title": "\u30a2\u30b7\u30e2\u30d5\u81ea\u4f1d2"
+    },
+    {
+      "authors": [
+        "\u30a2\u30a4\u30b6\u30c3\u30af\u30fb\u30a2\u30b7\u30e2\u30d5"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1986",
+      "category": "Nonfiction",
+      "position": "1986.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3687309"
+      },
+      "title": "\u30a2\u30b7\u30e2\u30d5\u81ea\u4f1d2"
+    },
+    {
+      "authors": [
+        "\u30c0\u30b0\u30e9\u30b9\u30fb\uff32\u30fb\u30db\u30d5\u30b9\u30bf\u30c3\u30bf\u30fc"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1986",
+      "category": "Nonfiction",
+      "position": "1986.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3687320"
+      },
+      "title": "\u30b2\u30fc\u30c7\u30eb\u3001\u30a8\u30c3\u30b7\u30e3\u30fc\u3001\u30d0\u30c3\u30cf \u3042\u308b\u3044\u306f\u4e0d\u601d\u8b70\u306e\u74b0"
+    },
+    {
+      "authors": [
+        "\u8352\u4fe3\u5b8f"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1986",
+      "category": "Nonfiction",
+      "position": "1986.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3687331"
+      },
+      "title": "\u30d1\u30e9\u30ce\u30a4\u30a2\u5275\u9020\u53f2"
+    },
+    {
+      "authors": [
+        "\u30b8\u30a7\u30fc\u30e0\u30b9\u6012\u3005\u5c71"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1986",
+      "category": "Nonfiction",
+      "position": "1986.07",
+      "result": "nominee",
+      "title": "\u30d3\u30ae\u30ca\u30fc\u306e\u305f\u3081\u306eSF\u590f\u671f\u96c6\u4e2d\u8b1b\u5ea7"
+    },
+    {
+      "authors": [
+        "\u30a2\u30fc\u30b7\u30e5\u30e9\u30fbK\u30fb\u30eb=\u30b0\u30a4\u30f3"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1986",
+      "category": "Nonfiction",
+      "position": "1986.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3687332"
+      },
+      "title": "\u591c\u306e\u8a00\u8449"
+    },
+    {
+      "authors": [
+        "\u5ddd\u53c8\u5343\u79cb"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1986",
+      "category": "Nonfiction",
+      "position": "1986.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3687341"
+      },
+      "title": "\u7a7a\u60f3\u79d1\u5b66\u5c0f\u8aac\u306e\u6642\u4ee3"
+    },
+    {
+      "authors": [
+        "\u5742\u6751\u5065"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1986",
+      "category": "Nonfiction",
+      "position": "1986.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3687311"
+      },
+      "title": "\u96fb\u8133\u90fd\u5e02 SF\u3068\u672a\u6765\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf"
+    },
+    {
+      "authors": [
+        "\u30c7\u30a4\u30f4\u30a3\u30c3\u30c9\u30fb\u30a6\u30a4\u30f3\u30b0\u30ed\u30fc\u30d6"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1986",
+      "category": "Nonfiction",
+      "position": "1986.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3687323"
+      },
+      "title": "SF\u30ac\u30a4\u30c9\u30de\u30c3\u30d7 \u5165\u9580\u30fb\u6b74\u53f2\u7de8"
+    },
+    {
+      "authors": [
+        "\u30d1\u30c8\u30ea\u30c3\u30af\u30fb\u30d1\u30ea\u30f3\u30c0\u30fc"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1986",
+      "category": "Nonfiction",
+      "position": "1986.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3687333"
+      },
+      "title": "SF\u30fb\u7a3c\u52d5\u3059\u308b\u767d\u663c\u5922"
+    },
+    {
+      "authors": [
+        "\u77f3\u539f\u85e4\u592b"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1987",
+      "category": "Nonfiction",
+      "position": "1987",
+      "result": "winner",
+      "title": "\u77f3\u539f\u535a\u58eb\u306eSF\u7814\u7a76\u5ba4"
+    },
+    {
+      "authors": [
+        "\u77e2\u91ce\u5fb9"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1988",
+      "category": "Nonfiction",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2198897"
+      },
+      "title": "\u30a6\u30a3\u30b6\u30fc\u30c9\u30ea\u30a3\u65e5\u8a18"
+    },
+    {
+      "authors": [
+        "\u91ce\u7530\u660c\u5b8f"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1989",
+      "category": "Nonfiction",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2198901"
+      },
+      "title": "\u30b9\u30da\u30fc\u30b9\u30fb\u30aa\u30da\u30e9\u306e\u66f8\u304d\u65b9\u2015\u5b87\u5b99SF\u5192\u967a\u5927\u6d3b\u5287\u3078\u306e\u8a66\u307f"
+    },
+    {
+      "authors": [
+        "\u30ed\u30d0\u30fc\u30c8 L. \u30d5\u30a9\u30ef\u30fc\u30c9"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1990",
+      "category": "Nonfiction",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2198906"
+      },
+      "title": "SF\u306f\u3069\u3053\u307e\u3067\u5b9f\u73fe\u3059\u308b\u304b\u2015\u91cd\u529b\u6ce2\u901a\u4fe1\u304b\u3089\u30d6\u30e9\u30c3\u30af\u30fb\u30db\u30fc\u30eb\u5de5\u5b66\u307e\u3067"
+    },
+    {
+      "authors": [
+        "\u65e9\u5ddd\u66f8\u623f\u7de8\u96c6\u90e8"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1991",
+      "category": "Nonfiction",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2198907"
+      },
+      "title": "SF\u30cf\u30f3\u30c9\u30d6\u30c3\u30af"
+    },
+    {
+      "authors": [
+        "NHK"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1992",
+      "category": "Nonfiction",
+      "position": "1992",
+      "result": "winner",
+      "title": "\u96fb\u5b50\u7acb\u56fd\u65e5\u672c\u306e\u81ea\u53d9\u4f1d"
+    },
+    {
+      "authors": [
+        "\u30c0\u30cb\u30a8\u30eb\u30fb\u30ad\u30a4\u30b9"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1993",
+      "category": "Nonfiction",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2178213"
+      },
+      "title": "24\u4eba\u306e\u30d3\u30ea\u30fc\u30fb\u30df\u30ea\u30ac\u30f3\u3008\u4e0a\u3009"
+    },
+    {
+      "authors": [
+        "\u30c0\u30cb\u30a8\u30eb\u30fb\u30ad\u30a4\u30b9"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1993",
+      "category": "Nonfiction",
+      "position": "1993.01",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2387855"
+      },
+      "title": "24\u4eba\u306e\u30d3\u30ea\u30fc\u30fb\u30df\u30ea\u30ac\u30f3\u3008\u4e0b\u3009"
+    },
+    {
+      "authors": [
+        "\u91ce\u7530\u660c\u5b8f"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1994",
+      "category": "Nonfiction",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2199998"
+      },
+      "title": "\u3084\u3055\u3057\u3044\u5b87\u5b99\u958b\u767a\u5165\u9580\u2015\u4e88\u5099\u77e5\u8b58\u4e0d\u8981! \u30b9\u30d7\u30fc\u30c8\u30cb\u30af\u304b\u3089\u5b87\u5b99\u30b9\u30c6\u30fc\u30b7\u30e7\u30f3\u69cb\u60f3\u307e\u3067"
+    },
+    {
+      "authors": [
+        "\u91ce\u7530\u660c\u5b8f"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1995",
+      "category": "Nonfiction",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2199999"
+      },
+      "title": "\u611b\u3057\u306e\u30ef\u30f3\u30c0\u30fc\u30e9\u30f3\u30c9\u2015\u30b9\u30da\u30fc\u30b9\u30fb\u30aa\u30da\u30e9\u306e\u8aad\u307f\u65b9"
+    },
+    {
+      "authors": [
+        "\u3068\u5b66\u4f1a"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1996",
+      "category": "Nonfiction",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2200000"
+      },
+      "title": "\u30c8\u30f3\u30c7\u30e2\u672c\u306e\u4e16\u754c"
+    },
+    {
+      "authors": [
+        "\u3068\u5b66\u4f1a"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1997",
+      "category": "Nonfiction",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2200418"
+      },
+      "title": "\u30c8\u30f3\u30c7\u30e2\u672c\u306e\u9006\u8972"
+    },
+    {
+      "authors": [
+        "\u672c\u7530\u6280\u7814\u5de5\u696d"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1998",
+      "category": "Nonfiction",
+      "position": "1998",
+      "result": "winner",
+      "title": "\u81ea\u7acb\u6b69\u884c\u4eba\u9593\u578b\u30ed\u30dc\u30c3\u30c8P2"
+    },
+    {
+      "authors": [
+        "\u91ce\u7530\u660c\u5b8f"
+      ],
+      "award": "Seiun Award",
+      "award_year": "1999",
+      "category": "Nonfiction",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2200683"
+      },
+      "title": "\u5b87\u5b99\u3092\u7a7a\u60f3\u3057\u3066\u304d\u305f\u4eba\u3005"
+    },
+    {
+      "authors": [
+        "\u9577\u8c37\u5ddd\u88d5\u4e00"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2001",
+      "category": "Nonfiction",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2200684"
+      },
+      "title": "\u3082\u3063\u3068\u3059\u3054\u3044\u79d1\u5b66\u3067\u5b88\u308a\u307e\u3059!"
+    },
+    {
+      "authors": [
+        "\u5897\u5c71\u4e45\u660e"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2002",
+      "category": "Nonfiction",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2209808"
+      },
+      "title": "NHK\u5c11\u5e74\u30c9\u30e9\u30de\u30b7\u30ea\u30fc\u30ba\u306e\u3059\u3079\u3066 1972-1983"
+    },
+    {
+      "authors": [
+        "\u7b39\u672c\u7950\u4e00"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2003",
+      "category": "Nonfiction",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2209809"
+      },
+      "title": "\u5b87\u5b99\u3078\u306e\u30d1\u30b9\u30dd\u30fc\u30c8\u2015\u30ed\u30b1\u30c3\u30c8\u6253\u3061\u4e0a\u3052\u53d6\u6750\u65e5\u8a181999\u20102001"
+    },
+    {
+      "authors": [
+        "\u7b39\u672c\u7950\u4e00"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2004",
+      "category": "Nonfiction",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2209810"
+      },
+      "title": "\u5b87\u5b99\u3078\u306e\u30d1\u30b9\u30dd\u30fc\u30c82\u2015M\u2010V&H\u20102A\u30ed\u30b1\u30c3\u30c8\u53d6\u6750\u65e5\u8a18"
+    },
+    {
+      "authors": [
+        "\u524d\u7530\u5efa\u8a2d\u5de5\u696d"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2005",
+      "category": "Nonfiction",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2209812"
+      },
+      "title": "\u524d\u7530\u5efa\u8a2d\u30d5\u30a1\u30f3\u30bf\u30b8\u30fc\u55b6\u696d\u90e8"
+    },
+    {
+      "authors": [
+        "\u543e\u59bb\u3072\u3067\u304a"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2006",
+      "category": "Nonfiction",
+      "position": "2006",
+      "result": "winner",
+      "title": "\u5931\u8e2a\u65e5\u8a18"
+    },
+    {
+      "authors": [
+        "\u7b39\u672c\u7950\u4e00"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2007",
+      "category": "Nonfiction",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2209811"
+      },
+      "title": "\u5b87\u5b99\u3078\u306e\u30d1\u30b9\u30dd\u30fc\u30c83\u2015\u5b87\u5b99\u958b\u767a\u73fe\u5834\u53d6\u6750\u65e5\u8a18"
+    },
+    {
+      "authors": [
+        "\u6700\u76f8\u8449\u6708"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2008",
+      "category": "Nonfiction",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2211016"
+      },
+      "title": "\u661f\u65b0\u4e00 \u4e00\u3007\u3007\u4e00\u8a71\u3092\u3064\u304f\u3063\u305f\u4eba"
+    },
+    {
+      "authors": [
+        "\u5c0f\u677e\u5de6\u4eac",
+        "\u65e5\u672cSF\u4f5c\u5bb6\u30af\u30e9\u30d6"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2009",
+      "category": "Nonfiction",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2211017"
+      },
+      "title": "\u4e16\u754c\u306eSF\u304c\u3084\u3063\u3066\u6765\u305f!! \u30cb\u30c3\u30dd\u30f3\u30b3\u30f3\u30fb\u30d5\u30a1\u30a4\u30eb2007"
+    },
+    {
+      "authors": [
+        "\u9577\u5c71\u9756\u751f"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2010",
+      "category": "Nonfiction",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2211041"
+      },
+      "title": "\u65e5\u672cSF\u7cbe\u795e\u53f2 \u5e55\u672b\u30fb\u660e\u6cbb\u304b\u3089\u6226\u5f8c\u307e\u3067"
+    },
+    {
+      "authors": [
+        "\u9e7f\u91ce\u53f8"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2011",
+      "category": "Nonfiction",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2211043"
+      },
+      "title": "\u30b5\u306f\u30b5\u30a4\u30a8\u30f3\u30b9\u306e\u30b5"
+    },
+    {
+      "authors": [
+        "\u7a74\u6ca2\u512a\u5b50"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2012",
+      "category": "Nonfiction",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2211116"
+      },
+      "title": "\u543e\u59bb\u3072\u3067\u304a\u7dcf\u7279\u96c6\u30fc\u5931\u8e2a\u305d\u3057\u3066\u3001\u4e0d\u6761\u7406\u30ca\u30f3\u30bb\u30f3\u30b9 \u30ae\u30e3\u30b0SF\u7f8e\u5c11\u5973"
+    },
+    {
+      "authors": [
+        "\u5f8c\u85e4\u771f\u5b5d"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2013",
+      "category": "Nonfiction",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2211125"
+      },
+      "title": "\u60c5\u5831\u51e6\u74062012\u5e7405\u6708\u53f7\u5225\u5237\u300c\u300a\u7279\u96c6\u300bCGM\u306e\u73fe\u5728\u3068\u672a\u6765: \u521d\u97f3\u30df\u30af\uff0c\u30cb\u30b3\u30cb\u30b3\u52d5\u753b\uff0c\u30d4\u30a2\u30d7\u30ed\u306e\u5207\u308a\u62d3\u3044\u305f\u4e16\u754c\u300d"
+    },
+    {
+      "authors": [
+        "\u3042\u3055\u308a\u3088\u3057\u3068\u304a"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2014",
+      "category": "Nonfiction",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2211130"
+      },
+      "title": "\u5b87\u5b99\u3078\u884c\u304d\u305f\u304f\u3066\u6db2\u4f53\u71c3\u6599\u30ed\u30b1\u30c3\u30c8\u3092DIY\u3057\u3066\u307f\u305f \u5b9f\u9332\u306a\u3064\u306e\u30ed\u30b1\u30c3\u30c8\u56e3"
+    },
+    {
+      "authors": [
+        "\u7267\u771e\u53f8",
+        "\u5927\u68ee\u671b"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2015",
+      "category": "Nonfiction",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2150611"
+      },
+      "title": "\u30b5\u30f3\u30ea\u30aaSF\u6587\u5eab\u7dcf\u89e3\u8aac"
+    },
+    {
+      "authors": [
+        "\u6c34\u7389\u87a2\u4e4b\u4e1e"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2016",
+      "category": "Nonfiction",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2211131"
+      },
+      "title": "SF\u307e\u306710000\u5149\u5e74"
+    },
+    {
+      "authors": [
+        "\u6c60\u6fa4\u6625\u83dc"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2017",
+      "category": "Nonfiction",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2425957"
+      },
+      "title": "SF\u306eS\u306f\u3001\u30b9\u30c6\u30ad\u306eS"
+    },
+    {
+      "authors": [
+        "\u304f\u3089\u308c"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2018",
+      "category": "Nonfiction",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2425963"
+      },
+      "title": "\u30a2\u30ea\u30a8\u30ca\u30af\u30ca\u30a4\u79d1\u5b66\u30ce\u6559\u79d1\u66f8 ~\u7a7a\u60f3\u8a2d\u5b9a\u3092\u8aad\u307f\u89e3\u304f31\u8b1b~"
+    },
+    {
+      "authors": [
+        "\u7b52\u4e95\u5eb7\u9686"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2019",
+      "category": "Nonfiction",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?2590489"
+      },
+      "title": "\u7b52\u4e95\u5eb7\u9686\u3001\u81ea\u4f5c\u3092\u8a9e\u308b"
+    },
+    {
+      "authors": [
+        "\u5bae\u5d0e\u54f2\u5f25"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Nonfiction",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3295256"
+      },
+      "title": "\u5c0f\u677e\u5de6\u4eac\u30b9\u30da\u30b7\u30e3\u30eb \u300c\u795e\u300d\u306a\u304d\u6642\u4ee3\u306e\u795e\u8a71"
+    },
+    {
+      "authors": [
+        "\u9ad8\u5cf6\u96c4\u54c9"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Nonfiction",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "\u30a2\u30cb\u30e1\u306eSF\u8003\u8a3c\u5bb6\u304c\u63cf\u304f\u672a\u6765\u306e\u30ab\u30bf\u30c1 21.5\u4e16\u7d00 \u50d5\u305f\u3061\u306f\u3069\u3046\u751f\u304d\u308b\u304b\uff1f"
+    },
+    {
+      "authors": [
+        "\u68ee\u702c\u7e5a"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Nonfiction",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3295259"
+      },
+      "title": "\u30b7\u30ca\u30ea\u30aa\u306e\u305f\u3081\u306eSF\u4e8b\u5178 \u77e5\u3063\u3066\u304a\u304d\u305f\u3044\u79d1\u5b66\u6280\u8853\u30fb\u5b87\u5b99\u30fb\u304a\u7d04\u675f120"
+    },
+    {
+      "authors": [
+        "\u6728\u6fa4\u4f50\u767b\u5fd7"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Nonfiction",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "\u30c0\u30fc\u30af\u30a6\u30a7\u30d6\u30fb\u30a2\u30f3\u30c0\u30fc\u30b0\u30e9\u30a6\u30f3\u30c9 \u793e\u4f1a\u79e9\u5e8f\u3092\u9038\u8131\u3059\u308b\u30cd\u30c3\u30c8\u6697\u90e8\u306e\u4f4f\u4eba\u305f\u3061"
+    },
+    {
+      "authors": [
+        "\u5186\u5802\u90fd\u53f8\u662d"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Nonfiction",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3295262"
+      },
+      "title": "\u30c7\u30a3\u30b9\u30c8\u30d4\u30a2\u30fb\u30d5\u30a3\u30af\u30b7\u30e7\u30f3\u8ad6 \u60aa\u5922\u306e\u73fe\u5b9f\u3068\u5bfe\u5cd9\u3059\u308b\u60f3\u50cf\u529b"
+    },
+    {
+      "authors": [
+        "\u30b8\u30a7\u30d5\u30fb\u30f4\u30a1\u30f3\u30c0\u30df\u30a2"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Nonfiction",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3295263"
+      },
+      "title": "\u30ef\u30f3\u30c0\u30fc\u30d6\u30c3\u30af \u56f3\u89e3 \u5947\u60f3\u5c0f\u8aac\u5275\u4f5c\u5168\u66f8"
+    },
+    {
+      "authors": [
+        "\u8c4a\u7530\u6709\u6052"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Nonfiction",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3295257"
+      },
+      "title": "\u65e5\u672cSF\u8a95\u751f \u7a7a\u60f3\u3068\u79d1\u5b66\u306e\u4f5c\u5bb6\u305f\u3061"
+    },
+    {
+      "authors": [
+        "\u7a32\u8449\u632f\u4e00\u90ce"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2020",
+      "category": "Nonfiction",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3295258"
+      },
+      "title": "\u9280\u6cb3\u5e1d\u56fd\u306f\u5fc5\u8981\u304b? \u30ed\u30dc\u30c3\u30c8\u3068\u4eba\u985e\u306e\u672a\u6765"
+    },
+    {
+      "authors": [
+        "\u702c\u540d\u79c0\u660e"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2021",
+      "category": "Nonfiction",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3632181"
+      },
+      "title": "\u300c\u30a2\u30fc\u30b5\u30fc\u30fb\uff23\u30fb\u30af\u30e9\u30fc\u30af\u300d\u30b9\u30da\u30b7\u30e3\u30eb2020\u5e743\u6708 \u305f\u3060\u306e\u300c\u7a7a\u60f3\u300d\u3067\u306f\u306a\u3044"
+    },
+    {
+      "authors": [
+        "\u5bae\u5d0e\u54f2\u5f25"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2021",
+      "category": "Nonfiction",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3632202"
+      },
+      "title": "\u3044\u307e\u3053\u305d\u300c\u5c0f\u677e\u5de6\u4eac\u300d\u3092\u8aad\u307f\u76f4\u3059"
+    },
+    {
+      "authors": [
+        "Gary Lachman"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2021",
+      "category": "Nonfiction",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "\u30c8\u30e9\u30f3\u30d7\u6642\u4ee3\u306e\u9b54\u8853\u3068\u30aa\u30ab\u30eb\u30c8\u30d1\u30ef\u30fc"
+    },
+    {
+      "authors": [
+        "\u8c4a\u7530\u6709\u6052"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2021",
+      "category": "Nonfiction",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "\u65e5\u672c\u30a2\u30cb\u30e1\u8a95\u751f"
+    },
+    {
+      "authors": [
+        "\u30a2\u30fc\u30b7\u30e5\u30e9\u30fbK\u30fb\u30eb=\u30b0\u30a6\u30a3\u30f3"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2021",
+      "category": "Nonfiction",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3632203"
+      },
+      "title": "\u6687\u306a\u3093\u304b\u306a\u3044\u308f \u5927\u5207\u306a\u3053\u3068\u3092\u8003\u3048\u308b\u306e\u306b\u5fd9\u3057\u304f\u3066"
+    },
+    {
+      "authors": [
+        "\u6797\u516c\u4ee3"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Nonfiction",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3634518"
+      },
+      "title": "\u308b\u308b\u3076\u5b87\u5b99"
+    },
+    {
+      "authors": [
+        "\u6238\u7530\u5c71\u548c\u4e45"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Nonfiction",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3634516"
+      },
+      "title": "\u30ec\u30a4\u30fb\u30d6\u30e9\u30c3\u30c9\u30d9\u30ea\u300e\u83ef\u6c0f451\u5ea6\u300f \u672c\u304c\u71c3\u3084\u3055\u308c\u308b\u793e\u4f1a"
+    },
+    {
+      "authors": [
+        "\u65b0\u4e95\u7d20\u5b50",
+        "\u9673\u6978\u5e06",
+        "\u30ad\u30e0\u30fb\u30c1\u30e7\u30e8\u30d7",
+        "\u85e4\u4e95\u592a\u6d0b",
+        "\u6a0b\u53e3\u606d\u4ecb",
+        "\u3044\u3068\u3046\u305b\u3044\u3053\u3046",
+        "\u5289\u6148\u6b23",
+        "\u5bae\u5d0e\u590f\u6b21\u7cfb",
+        "\u68ee\u6cc9\u5cb3\u571f",
+        "\u5927\u68ee\u671b",
+        "\u5c0f\u5ddd\u54f2",
+        "\u5927\u6a4b\u88d5\u4e4b",
+        "\u30b1\u30f3\u30fb\u30ea\u30e5\u30a6",
+        "\u9ad8\u5c71\u7fbd\u6839\u5b50",
+        "\u51b2\u65b9\u4e01"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Nonfiction",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3635669"
+      },
+      "title": "\u4e16\u754cSF\u4f5c\u5bb6\u4f1a\u8b70"
+    },
+    {
+      "authors": [
+        "\u6d45\u7fbd\u901a\u660e"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Nonfiction",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3635636"
+      },
+      "title": "\u661f\u65b0\u4e00\u306e\u601d\u60f3 \u4e88\u898b\u30fb\u51b7\u7b11\u30fb\u8ce2\u616e\u306e\u3072\u3068"
+    },
+    {
+      "authors": [
+        "\u9ad8\u6c34\u88d5\u4e00"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Nonfiction",
+      "position": "2022.05",
+      "result": "nominee",
+      "title": "\u7269\u7406\u5b66\u8005\u3001SF\u6620\u753b\u306b\u30cf\u30de\u308b"
+    },
+    {
+      "authors": [
+        "\u5bae\u672c\u9053\u4eba",
+        "\u96e3\u6ce2\u512a\u8f1d",
+        "\u5927\u6fa4\u535a\u9686"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Nonfiction",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3634517"
+      },
+      "title": "SF\u30d7\u30ed\u30c8\u30bf\u30a4\u30d4\u30f3\u30b0 SF\u304b\u3089\u30a4\u30ce\u30d9\u30fc\u30b7\u30e7\u30f3\u3092\u751f\u307f\u51fa\u3059\u65b0\u6226\u7565"
+    },
+    {
+      "authors": [
+        "\u798f\u4e95\u5065\u592a"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2022",
+      "category": "Nonfiction",
+      "position": "2022.07",
+      "result": "nominee",
+      "title": "SF\u30de\u30f3\u30ac\u5091\u4f5c\u9078"
+    },
+    {
+      "authors": [
+        "\u6771\u4eac\u5275\u5143\u793e\u7de8\u96c6\u90e8"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2024",
+      "category": "Nonfiction",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3631853"
+      },
+      "title": "\u5275\u5143SF\u6587\u5eab\u7dcf\u89e3\u8aac"
+    },
+    {
+      "authors": [
+        "\u30b0\u30ea\u30f3\u30fb\u30e2\u30fc\u30ac\u30f3"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2024",
+      "category": "Nonfiction",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3631894"
+      },
+      "title": "\u30b5\u30a4\u30a8\u30f3\u30b9\u30fb\u30d5\u30a3\u30af\u30b7\u30e7\u30f3\u5927\u5168 \u6620\u753b\u3001\u6587\u5b66\u3001\u82b8\u8853\u3067\u63cf\u304b\u308c\u305fSF\u306e\u4e16\u754c"
+    },
+    {
+      "authors": [
+        "\u6c60\u6fa4\u6625\u83dc"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2024",
+      "category": "Nonfiction",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3631892"
+      },
+      "title": "\u73fe\u4ee3SF\u5c0f\u8aac\u30ac\u30a4\u30c9\u30d6\u30c3\u30af \u53ef\u80fd\u6027\u306e\u6587\u5b66"
+    },
+    {
+      "authors": [
+        "\u30e9\u30a4\u30a2\u30f3\u30fb\u30ce\u30fc\u30b9"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2024",
+      "category": "Nonfiction",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3631916"
+      },
+      "title": "\u79d1\u5b66\u3067\u304b\u306a\u3048\u308b\u4e16\u754c\u5f81\u670d"
+    },
+    {
+      "authors": [
+        "\u6c34\u6728\u4e00\u90ce",
+        "\u3055\u3044\u3068\u3046\u3088\u3057\u3053"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2024",
+      "category": "Nonfiction",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3631933"
+      },
+      "title": "\u7a7a\u306b\u305d\u3073\u3048\u308b \u6c34\u6728\u4e00\u90ce\u30bd\u30f3\u30b0\u30d6\u30c3\u30af"
+    },
+    {
+      "authors": [
+        "\u51ac\u6728\u7cf8\u4e00"
+      ],
+      "award": "Seiun Award",
+      "award_year": "2024",
+      "category": "Nonfiction",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.isfdb.org/cgi-bin/title.cgi?3631951"
+      },
+      "title": "SF\u8d85\u5165\u9580 \u300c\u3053\u308c\u304b\u3089\u4f55\u304c\u8d77\u3053\u308b\u306e\u304b\u300d\u3092\u77e5\u308b\u305f\u3081\u306e\u6559\u990a"
+    }
+  ],
+  "fetched_at": "2026-11-15T21:51:46Z",
+  "list_id": "seiun_nonfiction",
+  "list_name": "Seiun - Nonfiction",
+  "match_series": false,
+  "notes": [],
+  "parser": "seiun_nonfiction",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Seiun - Nonfiction",
+    "source_id": "seiun_nonfiction",
+    "url": "https://www.isfdb.org/cgi-bin/award_category.cgi?638+1"
+  }
+}

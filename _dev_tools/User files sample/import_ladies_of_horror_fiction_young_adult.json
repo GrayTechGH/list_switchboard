@@ -1,0 +1,254 @@
+{
+  "append_state": {
+    "entry_count": 14,
+    "last_entry_key": "the dead and the dark|courtney gould",
+    "last_position": "2021.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "_source_order": 2,
+      "authors": [
+        "Rory Power"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2019",
+      "category": "Young Adult",
+      "position": "2019",
+      "result": "winner",
+      "title": "Wilder Girls"
+    },
+    {
+      "_source_order": 0,
+      "authors": [
+        "Kate Alice Marshall"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2019",
+      "category": "Young Adult",
+      "position": "2019.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=3"
+      },
+      "title": "Rules for Vanishing"
+    },
+    {
+      "_source_order": 1,
+      "authors": [
+        "Erin A. Craig"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2019",
+      "category": "Young Adult",
+      "position": "2019.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=3"
+      },
+      "title": "House of Salt and Sorrows"
+    },
+    {
+      "_source_order": 2,
+      "authors": [
+        "Ann D\u00e1vila Cardinal"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2019",
+      "category": "Young Adult",
+      "position": "2019.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=3"
+      },
+      "title": "Five Midnights"
+    },
+    {
+      "_source_order": 1,
+      "authors": [
+        "Lana Popovic"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Young Adult",
+      "position": "2020",
+      "result": "winner",
+      "title": "Blood Countess"
+    },
+    {
+      "_source_order": 4,
+      "authors": [
+        "Katrina Leno"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Young Adult",
+      "position": "2020.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "Horrid"
+    },
+    {
+      "_source_order": 5,
+      "authors": [
+        "Kat Ellis"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Young Adult",
+      "position": "2020.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "Harrow Lake"
+    },
+    {
+      "_source_order": 6,
+      "authors": [
+        "Justina Ireland"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Young Adult",
+      "position": "2020.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "Deathless Divide"
+    },
+    {
+      "_source_order": 7,
+      "authors": [
+        "Ann D\u00e1vila Cardinal"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2020",
+      "category": "Young Adult",
+      "position": "2020.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "Category Five"
+    },
+    {
+      "_source_order": 0,
+      "authors": [
+        "Jessica Lewis"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Young Adult",
+      "position": "2021",
+      "result": "winner",
+      "title": "Bad Witch Burning"
+    },
+    {
+      "_source_order": 0,
+      "authors": [
+        "Katy Michelle Quinn"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Young Adult",
+      "position": "2021.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "Girl in the Walls"
+    },
+    {
+      "_source_order": 1,
+      "authors": [
+        "Kate Alice Marshall"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Young Adult",
+      "position": "2021.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "Our Last Echoes"
+    },
+    {
+      "_source_order": 2,
+      "authors": [
+        "Tiffany D. Jackson"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Young Adult",
+      "position": "2021.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "White Smoke"
+    },
+    {
+      "_source_order": 3,
+      "authors": [
+        "Courtney Gould"
+      ],
+      "award": "Ladies of Horror Fiction Award",
+      "award_year": "2021",
+      "category": "Young Adult",
+      "position": "2021.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award?page=2"
+      },
+      "title": "The Dead and the Dark"
+    }
+  ],
+  "fetched_at": "2026-11-14T22:28:38Z",
+  "list_id": "ladies_of_horror_fiction_young_adult",
+  "list_name": "Ladies of Horror Fiction - Young Adult (discontinued)",
+  "match_series": false,
+  "notes": [
+    "Ladies of Horror Fiction uses Goodreads as the primary source and a narrow File 770 2021 winner correction.",
+    "Shortlisted rows are Goodreads nominee rows where present, not guaranteed complete official shortlists.",
+    "Goodreads is the V1 primary source for LOHF winners and nominees.",
+    "Goodreads nominee rows are imported as shortlisted rows; this is not an official consolidated shortlist archive.",
+    "The 2021 awards were the final LOHF award cycle and were announced in 2022; no later award rows are expected.",
+    "No Goodreads LOHF rows were parsed for Young Adult.",
+    "File 770 2021 LOHF winner mirror is used only to promote or append winner rows; it is not a shortlist source."
+  ],
+  "parser": "ladies_of_horror_fiction_young_adult",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Ladies of Horror Fiction - Young Adult (discontinued)",
+    "source_id": "ladies_of_horror_fiction_young_adult",
+    "url": "https://www.goodreads.com/award/show/35484-ladies-of-horror-fiction-award"
+  }
+}

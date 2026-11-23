@@ -1,0 +1,887 @@
+{
+  "append_state": {
+    "entry_count": 54,
+    "last_entry_key": "the burning kingdoms|tasha suri",
+    "last_position": "2025.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Series",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "The Vorkosigan Saga"
+    },
+    {
+      "authors": [
+        "James S.A. Corey"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Series",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "The Expanse"
+    },
+    {
+      "authors": [
+        "Naomi Novik"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Series",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "The Temeraire series"
+    },
+    {
+      "authors": [
+        "Max Gladstone"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Series",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "The Craft Sequence"
+    },
+    {
+      "authors": [
+        "Ben Aaronovitch"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Series",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "The Peter Grant / Rivers of London series"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2017",
+      "category": "Best Series",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      "title": "The October Daye Books"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Series",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "World of the Five Gods"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Series",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "InCryptid"
+    },
+    {
+      "authors": [
+        "Marie Brennan"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Series",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "The Memoirs of Lady Trent"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Series",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "The Books of the Raksura"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Series",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "The Stormlight Archive"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2018",
+      "category": "Best Series",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      "title": "The Divine Cities"
+    },
+    {
+      "authors": [
+        "Becky Chambers"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Series",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "Wayfarers"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Series",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "The Laundry Files"
+    },
+    {
+      "authors": [
+        "Yoon Ha Lee"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Series",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "Machineries of Empire"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Series",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "The October Daye Series"
+    },
+    {
+      "authors": [
+        "Aliette de Bodard"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Series",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "The Universe of Xuya"
+    },
+    {
+      "authors": [
+        "Malka Older"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2019",
+      "category": "Best Series",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      },
+      "title": "The Centenal Cycle"
+    },
+    {
+      "authors": [
+        "James S. A. Corey"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Series",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "The Expanse"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Series",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "InCryptid"
+    },
+    {
+      "authors": [
+        "Emma Newman"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Series",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "Planetfall series"
+    },
+    {
+      "authors": [
+        "Katherine Arden"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Series",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "Winternight Trilogy"
+    },
+    {
+      "authors": [
+        "Tade Thompson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Series",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "The Wormwood Trilogy"
+    },
+    {
+      "authors": [
+        "Ian McDonald"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2020",
+      "category": "Best Series",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      },
+      "title": "Luna"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Series",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "The Murderbot Diaries"
+    },
+    {
+      "authors": [
+        "Mary Robinette Kowal"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Series",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "The Lady Astronaut Universe"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Series",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "October Daye"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Series",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "The Interdependency"
+    },
+    {
+      "authors": [
+        "R.F. Kuang"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Series",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "The Poppy War"
+    },
+    {
+      "authors": [
+        "S.A. Chakraborty"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2021",
+      "category": "Best Series",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      },
+      "title": "The Daevabad Trilogy"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Series",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "Wayward Children"
+    },
+    {
+      "authors": [
+        "Fonda Lee"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Series",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "The Green Bone Saga"
+    },
+    {
+      "authors": [
+        "C. L. Polk"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Series",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "The Kingston Cycle"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Series",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "Merchant Princes"
+    },
+    {
+      "authors": [
+        "Ada Palmer"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Series",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "Terra Ignota"
+    },
+    {
+      "authors": [
+        "T. Kingfisher"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2022",
+      "category": "Best Series",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      "title": "The World of the White Rat"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Series",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Children of Time Series"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Series",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "The Founders Trilogy"
+    },
+    {
+      "authors": [
+        "Tamsyn Muir"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Series",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "The Locked Tomb"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Series",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "October Daye"
+    },
+    {
+      "authors": [
+        "Ben Aaronovitch"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Series",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "Rivers of London"
+    },
+    {
+      "authors": [
+        "Naomi Novik"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2023",
+      "category": "Best Series",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      "title": "The Scholomance"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Series",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "Imperial Radch"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Series",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "The Final Architecture"
+    },
+    {
+      "authors": [
+        "Freya Marske"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Series",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "The Last Binding"
+    },
+    {
+      "authors": [
+        "Charles Stross"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Series",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "The Laundry Files"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Series",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "October Daye"
+    },
+    {
+      "authors": [
+        "Aliette de Bodard"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2024",
+      "category": "Best Series",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      },
+      "title": "The Universe of Xuya"
+    },
+    {
+      "authors": [
+        "Rebecca Roanhorse"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Series",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "Between Earth and Sky"
+    },
+    {
+      "authors": [
+        "Seanan McGuire"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Series",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "InCryptid"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Series",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "Southern Reach"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Series",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "The Stormlight Archive"
+    },
+    {
+      "authors": [
+        "Adrian Tchaikovsky"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Series",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "The Tyrant Philosophers"
+    },
+    {
+      "authors": [
+        "Tasha Suri"
+      ],
+      "award": "Hugo Award",
+      "award_year": "2025",
+      "category": "Best Series",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      },
+      "title": "The Burning Kingdoms"
+    }
+  ],
+  "fetched_at": "2026-07-23T05:02:32Z",
+  "list_id": "hugo_awards_series",
+  "list_name": "Hugo Awards - Series",
+  "match_series": true,
+  "notes": [],
+  "parser": "hugo_awards_series",
+  "requires_series_matching": true,
+  "schema_version": 2,
+  "source": {
+    "name": "Hugo Awards - Series",
+    "source_id": "hugo_awards_series",
+    "url": "https://www.thehugoawards.org/hugo-history/"
+  }
+}

@@ -1,0 +1,837 @@
+{
+  "append_state": {
+    "entry_count": 74,
+    "last_entry_key": "the coldest case|tessa wegert",
+    "last_position": "2025.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Marcus Sakey"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2008",
+      "category": "Best Debut Mystery",
+      "position": "2008",
+      "result": "winner",
+      "title": "The Blade Itself"
+    },
+    {
+      "authors": [
+        "Gordon Campbell"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2008",
+      "category": "Best Debut Mystery",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Missing Witness"
+    },
+    {
+      "authors": [
+        "Tana French"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2008",
+      "category": "Best Debut Mystery",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "In the Woods"
+    },
+    {
+      "authors": [
+        "Jason Pinter"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2008",
+      "category": "Best Debut Mystery",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "The Mark"
+    },
+    {
+      "authors": [
+        "Dave White"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2008",
+      "category": "Best Debut Mystery",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "When One Man Dies"
+    },
+    {
+      "authors": [
+        "Tom Rob Smith"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2009",
+      "category": "Best Debut Mystery",
+      "position": "2009",
+      "result": "winner",
+      "title": "Child 44"
+    },
+    {
+      "authors": [
+        "Josh Bazell"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2010",
+      "category": "Best Debut Mystery",
+      "position": "2010",
+      "result": "winner",
+      "title": "Beat the Reaper: A Novel"
+    },
+    {
+      "authors": [
+        "Bryan Gruley"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2010",
+      "category": "Best Debut Mystery",
+      "position": "2010",
+      "result": "winner",
+      "title": "Starvation Lake"
+    },
+    {
+      "authors": [
+        "Jedediah Berry"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2010",
+      "category": "Best Debut Mystery",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "The Manual of Detection"
+    },
+    {
+      "authors": [
+        "Robert Goolrick"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2010",
+      "category": "Best Debut Mystery",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "A Reliable Wife"
+    },
+    {
+      "authors": [
+        "Attica Locke"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2010",
+      "category": "Best Debut Mystery",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "Black Water Rising"
+    },
+    {
+      "authors": [
+        "Paul Doiron"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2011",
+      "category": "Best Debut Mystery",
+      "position": "2011",
+      "result": "winner",
+      "title": "The Poacher's Son"
+    },
+    {
+      "authors": [
+        "Belinda Bauer"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2011",
+      "category": "Best Debut Mystery",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "Blacklands"
+    },
+    {
+      "authors": [
+        "Lisa Brackmann"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2011",
+      "category": "Best Debut Mystery",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Rock Paper Tiger"
+    },
+    {
+      "authors": [
+        "Graham Moore"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2011",
+      "category": "Best Debut Mystery",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "The Holmes Affair"
+    },
+    {
+      "authors": [
+        "James Thompson"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2011",
+      "category": "Best Debut Mystery",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "Snow Angels"
+    },
+    {
+      "authors": [
+        "Rosamund Lupton"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2012",
+      "category": "Best Debut Mystery",
+      "position": "2012",
+      "result": "winner",
+      "title": "Sister"
+    },
+    {
+      "authors": [
+        "Lene Kaaberb\u00f8l"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2012",
+      "category": "Best Debut Mystery",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "The Boy in the Suitcase"
+    },
+    {
+      "authors": [
+        "Erin Kelly"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2012",
+      "category": "Best Debut Mystery",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "The Poison Tree"
+    },
+    {
+      "authors": [
+        "Lars Kepler"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2012",
+      "category": "Best Debut Mystery",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "The Hypnotist"
+    },
+    {
+      "authors": [
+        "S. J. Watson"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2012",
+      "category": "Best Debut Mystery",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "Before I Go to Sleep"
+    },
+    {
+      "authors": [
+        "Matthew Quirk"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2013",
+      "category": "Best Debut Mystery",
+      "position": "2013",
+      "result": "winner",
+      "title": "The 500"
+    },
+    {
+      "authors": [
+        "Wiley Cash"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2013",
+      "category": "Best Debut Mystery",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "A Land More Kind than Home"
+    },
+    {
+      "authors": [
+        "Alex Grecian"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2013",
+      "category": "Best Debut Mystery",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "The Yard"
+    },
+    {
+      "authors": [
+        "Chris Pavone"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2013",
+      "category": "Best Debut Mystery",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "The Expats"
+    },
+    {
+      "authors": [
+        "Anthony Quinn"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2013",
+      "category": "Best Debut Mystery",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "Disappeared"
+    },
+    {
+      "authors": [
+        "Roger Hobbs"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2014",
+      "category": "Best Debut Mystery",
+      "position": "2014",
+      "result": "winner",
+      "title": "Ghostman"
+    },
+    {
+      "authors": [
+        "Paula Daly"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2014",
+      "category": "Best Debut Mystery",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "Just What Kind of Mother Are You?"
+    },
+    {
+      "authors": [
+        "Derek B. Miller"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2014",
+      "category": "Best Debut Mystery",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Norwegian by Night"
+    },
+    {
+      "authors": [
+        "Terry Shames"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2014",
+      "category": "Best Debut Mystery",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "A Killing at Cotton Hill"
+    },
+    {
+      "authors": [
+        "David Whellams"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2014",
+      "category": "Best Debut Mystery",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "Walking into the Ocean"
+    },
+    {
+      "authors": [
+        "Elizabeth Little"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2015",
+      "category": "Best Debut Mystery",
+      "position": "2015",
+      "result": "winner",
+      "title": "Dear Daughter"
+    },
+    {
+      "authors": [
+        "Glen Erik Hamilton"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2016",
+      "category": "Best Debut Mystery",
+      "position": "2016",
+      "result": "winner",
+      "title": "Past Crimes"
+    },
+    {
+      "authors": [
+        "Heather Young"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2017",
+      "category": "Best Debut Mystery",
+      "position": "2017",
+      "result": "winner",
+      "title": "The Lost Girls"
+    },
+    {
+      "authors": [
+        "Fiona Barton"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2017",
+      "category": "Best Debut Mystery",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "The Widow"
+    },
+    {
+      "authors": [
+        "Joe Ide"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2017",
+      "category": "Best Debut Mystery",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "IQ"
+    },
+    {
+      "authors": [
+        "Catherine Lowell"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2017",
+      "category": "Best Debut Mystery",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "The Madwoman Upstairs"
+    },
+    {
+      "authors": [
+        "Cuyler Overholt"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2017",
+      "category": "Best Debut Mystery",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "A Deadly Affection"
+    },
+    {
+      "authors": [
+        "Kevin Wolf"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2017",
+      "category": "Best Debut Mystery",
+      "position": "2017.05",
+      "result": "nominee",
+      "title": "The Homeplace"
+    },
+    {
+      "authors": [
+        "Sheena Kamal"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2018",
+      "category": "Best Debut Mystery",
+      "position": "2018",
+      "result": "winner",
+      "title": "The Lost Ones"
+    },
+    {
+      "authors": [
+        "C. J. Tudor"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2019",
+      "category": "Best Debut Mystery",
+      "position": "2019",
+      "result": "winner",
+      "title": "The Chalk Man"
+    },
+    {
+      "authors": [
+        "Angie Kim"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2020",
+      "category": "Best Debut Mystery",
+      "position": "2020",
+      "result": "winner",
+      "title": "Miracle Creek"
+    },
+    {
+      "authors": [
+        "Chris Hammer"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2020",
+      "category": "Best Debut Mystery",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "Scrublands"
+    },
+    {
+      "authors": [
+        "Tara Laskowski"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2020",
+      "category": "Best Debut Mystery",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "One Night Gone: A Novel"
+    },
+    {
+      "authors": [
+        "Alex Michaelides"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2020",
+      "category": "Best Debut Mystery",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "The Silent Patient"
+    },
+    {
+      "authors": [
+        "John Vercher"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2020",
+      "category": "Best Debut Mystery",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "Three-Fifths"
+    },
+    {
+      "authors": [
+        "Alyssa Cole"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2021",
+      "category": "Best Debut Mystery",
+      "position": "2021",
+      "result": "winner",
+      "title": "When No One Is Watching"
+    },
+    {
+      "authors": [
+        "Aravind Adiga"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2021",
+      "category": "Best Debut Mystery",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Amnesty"
+    },
+    {
+      "authors": [
+        "Rumaan Alam"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2021",
+      "category": "Best Debut Mystery",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Leave the World Behind"
+    },
+    {
+      "authors": [
+        "Cherie Dimaline"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2021",
+      "category": "Best Debut Mystery",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "Empire of Wild"
+    },
+    {
+      "authors": [
+        "Megha Majumdar"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2021",
+      "category": "Best Debut Mystery",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "A Burning"
+    },
+    {
+      "authors": [
+        "Chelsea G. Summers"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2021",
+      "category": "Best Debut Mystery",
+      "position": "2021.05",
+      "result": "nominee",
+      "title": "A Certain Hunger"
+    },
+    {
+      "authors": [
+        "Elisabeth Thomas"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2021",
+      "category": "Best Debut Mystery",
+      "position": "2021.06",
+      "result": "nominee",
+      "title": "Catherine House"
+    },
+    {
+      "authors": [
+        "Kotaro Isaka"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2022",
+      "category": "Best Debut Mystery",
+      "position": "2022",
+      "result": "winner",
+      "title": "Bullet Train"
+    },
+    {
+      "authors": [
+        "Alexandra Andrews"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2022",
+      "category": "Best Debut Mystery",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Who is Maud Dixon?"
+    },
+    {
+      "authors": [
+        "Zakiya Dalila Harris"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2022",
+      "category": "Best Debut Mystery",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "The Other Black Girl"
+    },
+    {
+      "authors": [
+        "Femi Kayode"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2022",
+      "category": "Best Debut Mystery",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Lightseekers"
+    },
+    {
+      "authors": [
+        "Silvia Moreno-Garcia"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2022",
+      "category": "Best Debut Mystery",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Velvet Was the Night"
+    },
+    {
+      "authors": [
+        "Wanda M. Morris"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2022",
+      "category": "Best Debut Mystery",
+      "position": "2022.05",
+      "result": "nominee",
+      "title": "All Her Little Secrets"
+    },
+    {
+      "authors": [
+        "Stacy Willingham"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2023",
+      "category": "Best Debut Mystery",
+      "position": "2023",
+      "result": "winner",
+      "title": "A Flicker in the Dark"
+    },
+    {
+      "authors": [
+        "Erin E. Adams"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2023",
+      "category": "Best Debut Mystery",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "Jackal: A Novel"
+    },
+    {
+      "authors": [
+        "Jacqueline Bublitz"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2023",
+      "category": "Best Debut Mystery",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "Before You Knew My Name"
+    },
+    {
+      "authors": [
+        "Eli Cranor"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2023",
+      "category": "Best Debut Mystery",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "Don't Know Tough"
+    },
+    {
+      "authors": [
+        "Ramona Emerson"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2023",
+      "category": "Best Debut Mystery",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "Shutter"
+    },
+    {
+      "authors": [
+        "I.S. Berry"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2024",
+      "category": "Best Debut Mystery",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "The Peacock and the Sparrow"
+    },
+    {
+      "authors": [
+        "Lisa Brideau"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2024",
+      "category": "Best Debut Mystery",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Adrift: A Novel"
+    },
+    {
+      "authors": [
+        "Hugh Lessig"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2024",
+      "category": "Best Debut Mystery",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "Fadeaway Joe: A Novel"
+    },
+    {
+      "authors": [
+        "Rebecca McKanna"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2024",
+      "category": "Best Debut Mystery",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "Don't Forget the Girl"
+    },
+    {
+      "authors": [
+        "Ana Reyes"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2024",
+      "category": "Best Debut Mystery",
+      "position": "2024.05",
+      "result": "nominee",
+      "title": "The House in the Pines"
+    },
+    {
+      "authors": [
+        "Nina Simon"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2024",
+      "category": "Best Debut Mystery",
+      "position": "2024.06",
+      "result": "nominee",
+      "title": "Mother-Daughter Murder Night"
+    },
+    {
+      "authors": [
+        "Philip Myles Dane"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2025",
+      "category": "Best Debut Mystery",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "ALL THE DARK VOICES"
+    },
+    {
+      "authors": [
+        "Simon Hayes"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2025",
+      "category": "Best Debut Mystery",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "Zero Ri$k"
+    },
+    {
+      "authors": [
+        "Carl Vonderau"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2025",
+      "category": "Best Debut Mystery",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Saving Myles"
+    },
+    {
+      "authors": [
+        "Tessa Wegert"
+      ],
+      "award": "The Strand Critics Award",
+      "award_year": "2025",
+      "category": "Best Debut Mystery",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "The Coldest Case"
+    }
+  ],
+  "fetched_at": "2026-11-16T05:46:18Z",
+  "list_id": "strand_critics_award_debut_mystery",
+  "list_name": "Strand Critics Award - Debut Mystery",
+  "match_series": false,
+  "notes": [],
+  "parser": "strand_critics_award_debut_mystery",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Strand Critics Award - Debut Mystery",
+    "source_id": "strand_critics_award_debut_mystery",
+    "url": "https://www.librarything.com/award/1380/The-Strand-Critics-Award"
+  }
+}

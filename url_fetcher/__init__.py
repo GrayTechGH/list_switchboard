@@ -268,7 +268,6 @@ from .newbery import UrlFetcherJohnNewberyMedal
 from .cbca_book_of_the_year import (
   UrlFetcherCBCABookOfTheYearEarlyChildhood,
   UrlFetcherCBCABookOfTheYearEvePownall,
-  UrlFetcherCBCABookOfTheYearMiddleReaders,
   UrlFetcherCBCABookOfTheYearNewIllustrator,
   UrlFetcherCBCABookOfTheYearOlderReaders,
   UrlFetcherCBCABookOfTheYearPictureBook,
@@ -897,7 +896,6 @@ URL_FETCHER_CLASSES = (
   UrlFetcherJohnNewberyMedal,
   UrlFetcherCBCABookOfTheYearOlderReaders,
   UrlFetcherCBCABookOfTheYearYoungerReaders,
-  UrlFetcherCBCABookOfTheYearMiddleReaders,
   UrlFetcherCBCABookOfTheYearEarlyChildhood,
   UrlFetcherCBCABookOfTheYearPictureBook,
   UrlFetcherCBCABookOfTheYearEvePownall,

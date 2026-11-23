@@ -1,0 +1,157 @@
+{
+  "append_state": {
+    "entry_count": 8,
+    "last_entry_key": "a thread of violence|mark o connell",
+    "last_position": "2024.02",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Margo Jefferson"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2023-prize/"
+      },
+      "title": "Constructing a Nervous System"
+    },
+    {
+      "authors": [
+        "Will Ashon"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2023-prize/"
+      },
+      "title": "The Passengers"
+    },
+    {
+      "authors": [
+        "Amy Bloom"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2023-prize/"
+      },
+      "title": "In Love"
+    },
+    {
+      "authors": [
+        "Jonathan Freedland"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023.03",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2023-prize/"
+      },
+      "title": "The Escape Artist"
+    },
+    {
+      "authors": [
+        "Darren McGarvey"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023.04",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2023-prize/"
+      },
+      "title": "The Social Distance Between Us"
+    },
+    {
+      "aliases": [
+        "Thunderclap"
+      ],
+      "authors": [
+        "Laura Cumming"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2024",
+      "category": "Non-Fiction",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2024-nonfiction-shortlist/"
+      },
+      "title": "Thunderclap: a memoir of art and life & sudden death"
+    },
+    {
+      "authors": [
+        "Naomi Klein"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2024",
+      "category": "Non-Fiction",
+      "position": "2024.01",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2024-nonfiction-shortlist/"
+      },
+      "title": "Doppelganger: A trip into the Mirror World"
+    },
+    {
+      "authors": [
+        "Mark O\u2019Connell"
+      ],
+      "award": "Folio/Writers' Prize",
+      "award_year": "2024",
+      "category": "Non-Fiction",
+      "position": "2024.02",
+      "result": "shortlisted",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://thewritersprize.com/2024-nonfiction-shortlist/"
+      },
+      "title": "A Thread of Violence"
+    }
+  ],
+  "fetched_at": "2026-08-01T09:25:10Z",
+  "list_id": "folio_writers_prize_nonfiction",
+  "list_name": "Folio/Writers' Prize - Non-Fiction (discontinued)",
+  "match_series": false,
+  "notes": [
+    "The published Writers' Prize archive covers 2014-2015 and 2017-2024; no prize was awarded in 2016 and 2024 is the final published year.",
+    "Non-Fiction was introduced as a separate category in 2023."
+  ],
+  "parser": "folio_writers_prize_nonfiction",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Folio/Writers' Prize - Non-Fiction (discontinued)",
+    "source_id": "folio_writers_prize_nonfiction",
+    "url": "https://thewritersprize.com/"
+  }
+}

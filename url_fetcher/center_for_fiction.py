@@ -7,13 +7,18 @@ from .generic import (
   UrlFetcherError,
   UrlFetcherGeneric,
 )
+from .center_for_fiction_transport import CenterForFictionOfficialAttempt
 
 try:
   from calibre_plugins.list_switchboard.parser.source_fallback import (
     SourceAttempt, SourceFallbackRunner,
   )
+  from calibre_plugins.list_switchboard.parser.center_for_fiction_updates import fetch_center_official
+  from calibre_plugins.list_switchboard.parser.center_for_fiction_sources import WINNERS_URL
 except ImportError:
   from parser.source_fallback import SourceAttempt, SourceFallbackRunner
+  from parser.center_for_fiction_updates import fetch_center_official
+  from parser.center_for_fiction_sources import WINNERS_URL
 
 
 OFFICIAL_URL = 'https://centerforfiction.org/grants-awards/the-first-novel-prize/'
@@ -22,6 +27,7 @@ WIKIPEDIA_URL = 'https://en.wikipedia.org/wiki/Center_for_Fiction_First_Novel_Pr
 
 class UrlFetcherCenterForFictionFirstNovelPrize(UrlFetcherGeneric):
 
+  SUPPORTS_INCREMENTAL_UPDATE = True
   FILTER_CATEGORIES = (
     CATEGORY_LITERARY_GENERAL_FICTION,
     CATEGORY_REGIONAL_NATIONAL_AWARDS,
@@ -30,8 +36,13 @@ class UrlFetcherCenterForFictionFirstNovelPrize(UrlFetcherGeneric):
   NAME = 'Center for Fiction First Novel Prize'
   URL = OFFICIAL_URL
   WIKIPEDIA_URL = WIKIPEDIA_URL
+  WINNERS_URL = WINNERS_URL
+  FIRST_YEAR = 2006
   order = 243
   options = {'match_series': False}
+
+  def create_parser(self):
+    return self.create_official_parser()
 
   def create_official_parser(self):
     try:
@@ -53,13 +64,13 @@ class UrlFetcherCenterForFictionFirstNovelPrize(UrlFetcherGeneric):
 
   def source_attempts(self):
     return (
-      SourceAttempt(
+      CenterForFictionOfficialAttempt(self,
         'Center for Fiction',
         self.URL,
-        lambda html, url, fetch_url=None, log=None, progress=None: (
-          self.create_official_parser().parse(
-            html, url, self.NAME, fetch_url=fetch_url, log=log, progress=progress)),
-        source_rank=0),
+        lambda html, url, fetch_url=None, progress=None, cached_parsed=None, incremental_update=False, **_kwargs:
+          fetch_center_official(self, self.parser(), html, url, fetch_url,
+            cached_parsed, incremental_update, progress),
+        source_rank=0, supports_incremental=True),
       SourceAttempt(
         'Wikipedia',
         self.WIKIPEDIA_URL,
@@ -74,7 +85,8 @@ class UrlFetcherCenterForFictionFirstNovelPrize(UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None, incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -86,7 +98,8 @@ class UrlFetcherCenterForFictionFirstNovelPrize(UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice, cached_parsed=cached_parsed,
+        incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 

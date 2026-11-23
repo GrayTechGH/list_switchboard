@@ -66,13 +66,15 @@ class PhilipKDickParser(SFADBParser):
   RESULT_SECTIONS = SECTION_RESULTS
 
   def parse(self, overview_html, base_url, name=None, category=None,
-            category_aliases=None, fetch_url=None, log=None, progress=None):
+            category_aliases=None, fetch_url=None, log=None, progress=None,
+            cached_parsed=None, incremental_update=False, enable_incremental=False):
     return super().parse(
       overview_html, base_url,
       name='Philip K. Dick Award - Novel',
       category=CATEGORY_NAME,
       category_aliases=(),
-      fetch_url=fetch_url, log=log, progress=progress)
+      fetch_url=fetch_url, log=log, progress=progress, cached_parsed=cached_parsed,
+      incremental_update=incremental_update, enable_incremental=enable_incremental)
 
   def assign_year_positions(self, rows, year):
     entries = []

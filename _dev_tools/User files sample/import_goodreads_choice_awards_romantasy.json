@@ -1,0 +1,1045 @@
+{
+  "append_state": {
+    "entry_count": 60,
+    "last_entry_key": "our vicious oaths|n e davenport",
+    "last_position": "2025.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Rebecca Yarros"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "Fourth Wing",
+      "votes": "397565"
+    },
+    {
+      "authors": [
+        "Hannah Nicole Maehrer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "Assistant to the Villain",
+      "votes": "33665"
+    },
+    {
+      "authors": [
+        "Carissa Broadbent"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "The Ashes & the Star-Cursed King",
+      "votes": "29127"
+    },
+    {
+      "authors": [
+        "Jennifer L. Armentrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "A Soul of Ash and Blood",
+      "votes": "16747"
+    },
+    {
+      "authors": [
+        "Caroline Peckham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "Sorrow and Starlight",
+      "votes": "15440"
+    },
+    {
+      "authors": [
+        "Kerri Maniscalco"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "Throne of the Fallen",
+      "votes": "13061"
+    },
+    {
+      "authors": [
+        "Thea Guanzon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "The Hurricane Wars",
+      "votes": "12218"
+    },
+    {
+      "authors": [
+        "Charlie N. Holmberg"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "The Hanging City",
+      "votes": "10965"
+    },
+    {
+      "authors": [
+        "Jennifer L. Armentrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "A Fire in the Flesh",
+      "votes": "10128"
+    },
+    {
+      "authors": [
+        "Sara Hashem"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "The Jasad Heir",
+      "votes": "9437"
+    },
+    {
+      "authors": [
+        "Scarlett St. Clair"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "A Game of Gods",
+      "votes": "3619"
+    },
+    {
+      "authors": [
+        "Hannah Whitten"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "The Foxglove King",
+      "votes": "3593"
+    },
+    {
+      "authors": [
+        "Harper L. Woods"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "The Coven",
+      "votes": "2915"
+    },
+    {
+      "authors": [
+        "Jennifer L. Armentrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "Fall of Ruin and Wrath",
+      "votes": "2591"
+    },
+    {
+      "authors": [
+        "Laura Thalassa"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "Bewitched",
+      "votes": "2400"
+    },
+    {
+      "authors": [
+        "Carissa Broadbent"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "Slaying the Vampire Conqueror",
+      "votes": "2314"
+    },
+    {
+      "authors": [
+        "Nisha J. Tuli"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "Rule of the Aurora King",
+      "votes": "2186"
+    },
+    {
+      "authors": [
+        "K.A. Tucker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "A Queen of Thieves & Chaos",
+      "votes": "1738"
+    },
+    {
+      "authors": [
+        "Stacia Stark"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "A Court This Cruel & Lovely",
+      "votes": "1705"
+    },
+    {
+      "authors": [
+        "Kate Golden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Romantasy",
+      "position": "2023.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-romantasy-books-2023"
+      },
+      "title": "A Dawn of Onyx",
+      "votes": "1398"
+    },
+    {
+      "authors": [
+        "Sarah J. Maas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "House of Flame and Shadow",
+      "votes": "122895"
+    },
+    {
+      "authors": [
+        "Hannah Nicole Maehrer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "Apprentice to the Villain",
+      "votes": "56345"
+    },
+    {
+      "authors": [
+        "Callie Hart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "Quicksilver",
+      "votes": "49930"
+    },
+    {
+      "authors": [
+        "Sarah A. Parker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "When the Moon Hatched",
+      "votes": "48611"
+    },
+    {
+      "authors": [
+        "Sarah Beth Durst"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "The Spellshop",
+      "votes": "39760"
+    },
+    {
+      "authors": [
+        "Danielle L. Jensen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "A Fate Inked in Blood",
+      "votes": "35858"
+    },
+    {
+      "authors": [
+        "Kaylie Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "Phantasma",
+      "votes": "32174"
+    },
+    {
+      "authors": [
+        "Caroline Peckham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "Restless Stars",
+      "votes": "22647"
+    },
+    {
+      "authors": [
+        "Jennifer L. Armentrout"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "Born of Blood and Ash",
+      "votes": "19586"
+    },
+    {
+      "authors": [
+        "Scarlett St. Clair"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "A Touch of Chaos",
+      "votes": "18975"
+    },
+    {
+      "authors": [
+        "Sydney J. Shields"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "The Honey Witch",
+      "votes": "7790"
+    },
+    {
+      "authors": [
+        "Saara El-Arifi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "Faebound",
+      "votes": "7648"
+    },
+    {
+      "authors": [
+        "Allison Saft"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "A Dark and Drowning Tide",
+      "votes": "7246"
+    },
+    {
+      "authors": [
+        "Jasmine Mas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "Blood of Hercules",
+      "votes": "6264"
+    },
+    {
+      "authors": [
+        "Abigail Owen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "The Games Gods Play",
+      "votes": "6117"
+    },
+    {
+      "authors": [
+        "Raven Kennedy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "Gold",
+      "votes": "5617"
+    },
+    {
+      "authors": [
+        "Holly Renee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "The Veiled Kingdom",
+      "votes": "3388"
+    },
+    {
+      "authors": [
+        "Stacia Stark"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "A Crown This Cold and Heavy",
+      "votes": "3168"
+    },
+    {
+      "authors": [
+        "Nisha J. Tuli"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "Fate of the Sun King",
+      "votes": "2882"
+    },
+    {
+      "authors": [
+        "Kate Golden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Romantasy",
+      "position": "2024.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2024"
+      },
+      "title": "A Promise of Peridot",
+      "votes": "2404"
+    },
+    {
+      "authors": [
+        "Rebecca Yarros"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "Onyx Storm",
+      "votes": "298565"
+    },
+    {
+      "authors": [
+        "SenLinYu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "Alchemised",
+      "votes": "86230"
+    },
+    {
+      "authors": [
+        "Rachel Gillig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "The Knight and the Moth",
+      "votes": "69786"
+    },
+    {
+      "authors": [
+        "Ali Hazelwood"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "Mate",
+      "votes": "56473"
+    },
+    {
+      "authors": [
+        "Devney Perry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "Shield of Sparrows",
+      "votes": "56360"
+    },
+    {
+      "authors": [
+        "Sangu Mandanna"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "A Witch's Guide to Magical Innkeeping",
+      "votes": "52188"
+    },
+    {
+      "authors": [
+        "Hannah Nicole Maehrer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "Accomplice to the Villain",
+      "votes": "40916"
+    },
+    {
+      "authors": [
+        "Heather Fawcett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "Emily Wilde's Compendium of Lost Tales",
+      "votes": "30460"
+    },
+    {
+      "authors": [
+        "Kaylie Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "Enchantra",
+      "votes": "22884"
+    },
+    {
+      "authors": [
+        "Rebecca Ross"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "Wild Reverence",
+      "votes": "21201"
+    },
+    {
+      "authors": [
+        "Dani Francis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "Silver Elite",
+      "votes": "9881"
+    },
+    {
+      "authors": [
+        "Carissa Broadbent"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "The Songbird & the Heart of Stone",
+      "votes": "9166"
+    },
+    {
+      "authors": [
+        "Sable Sorensen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "Dire Bound",
+      "votes": "8263"
+    },
+    {
+      "authors": [
+        "Brigitte Knightley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "The Irresistible Urge to Fall for Your Enemy",
+      "votes": "7251"
+    },
+    {
+      "authors": [
+        "Jasmine Mas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "Bonds of Hercules",
+      "votes": "6570"
+    },
+    {
+      "authors": [
+        "Julie Soto"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "Rose in Chains",
+      "votes": "6304"
+    },
+    {
+      "authors": [
+        "Sue Lynn Tan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "Immortal",
+      "votes": "6208"
+    },
+    {
+      "authors": [
+        "Briar Boleyn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "On Wings of Blood",
+      "votes": "3655"
+    },
+    {
+      "authors": [
+        "Amber V. Nicole"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "The Wrath of the Fallen",
+      "votes": "3332"
+    },
+    {
+      "authors": [
+        "N.E. Davenport"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Romantasy",
+      "position": "2025.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-romantasy-books-2025"
+      },
+      "title": "Our Vicious Oaths",
+      "votes": "2515"
+    }
+  ],
+  "fetched_at": "2026-07-28T04:17:32Z",
+  "list_id": "goodreads_choice_awards_romantasy",
+  "list_name": "Goodreads Choice Awards - Romantasy",
+  "match_series": false,
+  "notes": [
+    "Goodreads contributor enrichment stopped after an access challenge; 20 newest-year rows retained ballot credits."
+  ],
+  "parser": "goodreads_choice_awards_romantasy",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Romantasy",
+    "source_id": "goodreads_choice_awards_romantasy",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

@@ -38,6 +38,7 @@ class UrlFetcherReadWithJennaJr(UrlFetcherGeneric):
     'read-with-jenna-junior-book-list-2026-rcna348963'
   )
   order = 45
+  SUPPORTS_INCREMENTAL_UPDATE = True
   FILTER_CATEGORIES = (
     CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,
     CATEGORY_YOUNG_ADULT_CHILDRENS_LITERATURE,
@@ -68,4 +69,6 @@ class UrlFetcherReadWithJennaJr(UrlFetcherGeneric):
       self.NAME,
       fetch_url=kwargs.get('fetch_url'),
       bootstrap_url=self.BOOTSTRAP_URL,
+      cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False),
     )

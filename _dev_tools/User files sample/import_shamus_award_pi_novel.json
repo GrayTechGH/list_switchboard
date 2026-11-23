@@ -1,0 +1,2487 @@
+{
+  "append_state": {
+    "entry_count": 224,
+    "last_entry_key": "mirage city|lev ac rosen",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Bill Pronzini"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1982",
+      "category": "Best P.I. Novel",
+      "position": "1982",
+      "result": "winner",
+      "title": "Hoodwink"
+    },
+    {
+      "authors": [
+        "Lawrence Block"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1982",
+      "category": "Best P.I. Novel",
+      "position": "1982.01",
+      "result": "nominee",
+      "title": "A Stab in the Dark"
+    },
+    {
+      "authors": [
+        "Richard Hoyt"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1982",
+      "category": "Best P.I. Novel",
+      "position": "1982.02",
+      "result": "nominee",
+      "title": "Thirty for a Harry"
+    },
+    {
+      "authors": [
+        "Arthur Lyons"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1982",
+      "category": "Best P.I. Novel",
+      "position": "1982.03",
+      "result": "nominee",
+      "title": "Hard Trade"
+    },
+    {
+      "authors": [
+        "Robert B. Parker"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1982",
+      "category": "Best P.I. Novel",
+      "position": "1982.04",
+      "result": "nominee",
+      "title": "Early Autumn"
+    },
+    {
+      "authors": [
+        "Lawrence Block"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1983",
+      "category": "Best P.I. Novel",
+      "position": "1983",
+      "result": "winner",
+      "title": "Eight Million Ways To Die"
+    },
+    {
+      "authors": [
+        "Sue Grafton"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1983",
+      "category": "Best P.I. Novel",
+      "position": "1983.01",
+      "result": "nominee",
+      "title": "A Is for Alibi"
+    },
+    {
+      "authors": [
+        "Joseph Hansen"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1983",
+      "category": "Best P.I. Novel",
+      "position": "1983.02",
+      "result": "nominee",
+      "title": "Gravedigger"
+    },
+    {
+      "authors": [
+        "Jack Livingston"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1983",
+      "category": "Best P.I. Novel",
+      "position": "1983.03",
+      "result": "nominee",
+      "title": "A Piece of the Silence"
+    },
+    {
+      "authors": [
+        "Robert B. Parker"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1983",
+      "category": "Best P.I. Novel",
+      "position": "1983.04",
+      "result": "nominee",
+      "title": "Ceremony"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1984",
+      "category": "Best P.I. Novel",
+      "position": "1984",
+      "result": "winner",
+      "title": "True Detective"
+    },
+    {
+      "authors": [
+        "James Crumley"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1984",
+      "category": "Best P.I. Novel",
+      "position": "1984.01",
+      "result": "nominee",
+      "title": "Dancing Bear"
+    },
+    {
+      "authors": [
+        "Stanley Ellin"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1984",
+      "category": "Best P.I. Novel",
+      "position": "1984.02",
+      "result": "nominee",
+      "title": "The Dark Fantastic"
+    },
+    {
+      "authors": [
+        "Loren D. Estleman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1984",
+      "category": "Best P.I. Novel",
+      "position": "1984.03",
+      "result": "nominee",
+      "title": "The Glass Highway"
+    },
+    {
+      "authors": [
+        "Robert B. Parker"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1984",
+      "category": "Best P.I. Novel",
+      "position": "1984.04",
+      "result": "nominee",
+      "title": "The Widening Gyre"
+    },
+    {
+      "authors": [
+        "Loren D. Estleman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1985",
+      "category": "Best P.I. Novel",
+      "position": "1985",
+      "result": "winner",
+      "title": "Sugartown"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1985",
+      "category": "Best P.I. Novel",
+      "position": "1985.01",
+      "result": "nominee",
+      "title": "True Crime"
+    },
+    {
+      "authors": [
+        "Jack Livingston"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1985",
+      "category": "Best P.I. Novel",
+      "position": "1985.02",
+      "result": "nominee",
+      "title": "Die Again, Macready"
+    },
+    {
+      "authors": [
+        "John Lutz"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1985",
+      "category": "Best P.I. Novel",
+      "position": "1985.03",
+      "result": "nominee",
+      "title": "Nightlines"
+    },
+    {
+      "authors": [
+        "Robert J. Randisi"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1985",
+      "category": "Best P.I. Novel",
+      "position": "1985.04",
+      "result": "nominee",
+      "title": "Full Contact"
+    },
+    {
+      "authors": [
+        "Sue Grafton"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1986",
+      "category": "Best P.I. Novel",
+      "position": "1986",
+      "result": "winner",
+      "title": "B Is for Burglar"
+    },
+    {
+      "authors": [
+        "Harold Adams"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1986",
+      "category": "Best P.I. Novel",
+      "position": "1986.01",
+      "result": "nominee",
+      "title": "The Naked Liar"
+    },
+    {
+      "authors": [
+        "Doug Hornig"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1986",
+      "category": "Best P.I. Novel",
+      "position": "1986.02",
+      "result": "nominee",
+      "title": "Hardball"
+    },
+    {
+      "authors": [
+        "Robert B. Parker"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1986",
+      "category": "Best P.I. Novel",
+      "position": "1986.03",
+      "result": "nominee",
+      "title": "A Catskill Eagle"
+    },
+    {
+      "authors": [
+        "Bill Pronzini"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1986",
+      "category": "Best P.I. Novel",
+      "position": "1986.04",
+      "result": "nominee",
+      "title": "Bones"
+    },
+    {
+      "authors": [
+        "Jeremiah Healy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1987",
+      "category": "Best P.I. Novel",
+      "position": "1987",
+      "result": "winner",
+      "title": "The Staked Goat"
+    },
+    {
+      "authors": [
+        "Lawrence Block"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1987",
+      "category": "Best P.I. Novel",
+      "position": "1987.01",
+      "result": "nominee",
+      "title": "When the Sacred Ginmill Closes"
+    },
+    {
+      "authors": [
+        "Robert Campbell"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1987",
+      "category": "Best P.I. Novel",
+      "position": "1987.02",
+      "result": "nominee",
+      "title": "In La-La Land We Trust"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1987",
+      "category": "Best P.I. Novel",
+      "position": "1987.03",
+      "result": "nominee",
+      "title": "The Million-Dollar Wound"
+    },
+    {
+      "authors": [
+        "Sue Grafton"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1987",
+      "category": "Best P.I. Novel",
+      "position": "1987.04",
+      "result": "nominee",
+      "title": "C Is for Corpse"
+    },
+    {
+      "authors": [
+        "Benjamin Schutz"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1988",
+      "category": "Best P.I. Novel",
+      "position": "1988",
+      "result": "winner",
+      "title": "A Tax in Blood"
+    },
+    {
+      "authors": [
+        "Linda Barnes"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1988",
+      "category": "Best P.I. Novel",
+      "position": "1988.01",
+      "result": "nominee",
+      "title": "A Trouble of Fools"
+    },
+    {
+      "authors": [
+        "Loren D. Estleman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1988",
+      "category": "Best P.I. Novel",
+      "position": "1988.02",
+      "result": "nominee",
+      "title": "Lady Yesterday"
+    },
+    {
+      "authors": [
+        "Ed Gorman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1988",
+      "category": "Best P.I. Novel",
+      "position": "1988.03",
+      "result": "nominee",
+      "title": "The Autumn Dead"
+    },
+    {
+      "authors": [
+        "John Lutz"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1988",
+      "category": "Best P.I. Novel",
+      "position": "1988.04",
+      "result": "nominee",
+      "title": "Ride the Lightning"
+    },
+    {
+      "authors": [
+        "John Lutz"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1989",
+      "category": "Best P.I. Novel",
+      "position": "1989",
+      "result": "winner",
+      "title": "Kiss"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1989",
+      "category": "Best P.I. Novel",
+      "position": "1989.01",
+      "result": "nominee",
+      "title": "Neon Mirage"
+    },
+    {
+      "authors": [
+        "Earl Emerson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1989",
+      "category": "Best P.I. Novel",
+      "position": "1989.02",
+      "result": "nominee",
+      "title": "Deviant Behavior"
+    },
+    {
+      "authors": [
+        "Jeremiah Healy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1989",
+      "category": "Best P.I. Novel",
+      "position": "1989.03",
+      "result": "nominee",
+      "title": "Swan Dive"
+    },
+    {
+      "authors": [
+        "Sara Paretsky"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1989",
+      "category": "Best P.I. Novel",
+      "position": "1989.04",
+      "result": "nominee",
+      "title": "Blood Shot"
+    },
+    {
+      "authors": [
+        "Jonathan Valin"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1990",
+      "category": "Best P.I. Novel",
+      "position": "1990",
+      "result": "winner",
+      "title": "Extenuating Circumstances"
+    },
+    {
+      "authors": [
+        "Lawrence Block"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1990",
+      "category": "Best P.I. Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "title": "Out on the Cutting Edge"
+    },
+    {
+      "authors": [
+        "Wayne D. Dundee"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1990",
+      "category": "Best P.I. Novel",
+      "position": "1990.02",
+      "result": "nominee",
+      "title": "The Skintight Shroud"
+    },
+    {
+      "authors": [
+        "Marcia Muller"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1990",
+      "category": "Best P.I. Novel",
+      "position": "1990.03",
+      "result": "nominee",
+      "title": "The Shape of Dread"
+    },
+    {
+      "authors": [
+        "Mickey Spillane"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1990",
+      "category": "Best P.I. Novel",
+      "position": "1990.04",
+      "result": "nominee",
+      "title": "The Killing Man"
+    },
+    {
+      "authors": [
+        "Sue Grafton"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1991",
+      "category": "Best P.I. Novel",
+      "position": "1991",
+      "result": "winner",
+      "title": "G Is for Gumshoe"
+    },
+    {
+      "authors": [
+        "Lawrence Block"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1991",
+      "category": "Best P.I. Novel",
+      "position": "1991.01",
+      "result": "nominee",
+      "title": "A Ticket to the Boneyard"
+    },
+    {
+      "authors": [
+        "Stuart Kaminsky"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1991",
+      "category": "Best P.I. Novel",
+      "position": "1991.02",
+      "result": "nominee",
+      "title": "Poor Butterfly"
+    },
+    {
+      "authors": [
+        "Jerry Kennealy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1991",
+      "category": "Best P.I. Novel",
+      "position": "1991.03",
+      "result": "nominee",
+      "title": "Polo\u2019s Wild Card"
+    },
+    {
+      "authors": [
+        "John Lescroart"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1991",
+      "category": "Best P.I. Novel",
+      "position": "1991.04",
+      "result": "nominee",
+      "title": "Dead Irish"
+    },
+    {
+      "authors": [
+        "Bernard Schopen"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1991",
+      "category": "Best P.I. Novel",
+      "position": "1991.05",
+      "result": "nominee",
+      "title": "The Desert Look"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1992",
+      "category": "Best P.I. Novel",
+      "position": "1992",
+      "result": "winner",
+      "title": "Stolen Away"
+    },
+    {
+      "authors": [
+        "Lawrence Block"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1992",
+      "category": "Best P.I. Novel",
+      "position": "1992.01",
+      "result": "nominee",
+      "title": "A Dance at the Slaughterhouse"
+    },
+    {
+      "authors": [
+        "Marcia Muller"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1992",
+      "category": "Best P.I. Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "title": "Where Echoes Live"
+    },
+    {
+      "authors": [
+        "Benjamin Schutz"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1992",
+      "category": "Best P.I. Novel",
+      "position": "1992.03",
+      "result": "nominee",
+      "title": "A Fistful of Empty"
+    },
+    {
+      "authors": [
+        "Jonathan Valin"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1992",
+      "category": "Best P.I. Novel",
+      "position": "1992.04",
+      "result": "nominee",
+      "title": "Second Chance"
+    },
+    {
+      "authors": [
+        "Harold Adams"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1993",
+      "category": "Best P.I. Novel",
+      "position": "1993",
+      "result": "winner",
+      "title": "The Man Who Was Taller Than God"
+    },
+    {
+      "authors": [
+        "Michael Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1993",
+      "category": "Best P.I. Novel",
+      "position": "1993.01",
+      "result": "nominee",
+      "title": "Cassandra in Red"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1993",
+      "category": "Best P.I. Novel",
+      "position": "1993.02",
+      "result": "nominee",
+      "title": "Lullaby Town"
+    },
+    {
+      "authors": [
+        "Jeremiah Healy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1993",
+      "category": "Best P.I. Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "title": "Shallow Graves"
+    },
+    {
+      "authors": [
+        "Jerry Kennealy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1993",
+      "category": "Best P.I. Novel",
+      "position": "1993.04",
+      "result": "nominee",
+      "title": "Special Delivery"
+    },
+    {
+      "authors": [
+        "Lawrence Block"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1994",
+      "category": "Best P.I. Novel",
+      "position": "1994",
+      "result": "winner",
+      "title": "The Devil Knows You\u2019re Dead"
+    },
+    {
+      "authors": [
+        "Jeremiah Healy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1994",
+      "category": "Best P.I. Novel",
+      "position": "1994.01",
+      "result": "nominee",
+      "title": "Foursome"
+    },
+    {
+      "authors": [
+        "Marcia Muller"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1994",
+      "category": "Best P.I. Novel",
+      "position": "1994.02",
+      "result": "nominee",
+      "title": "Wolf in the Shadows"
+    },
+    {
+      "authors": [
+        "James Sallis"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1994",
+      "category": "Best P.I. Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "title": "Moth"
+    },
+    {
+      "authors": [
+        "Judith Van Gieson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1994",
+      "category": "Best P.I. Novel",
+      "position": "1994.04",
+      "result": "nominee",
+      "title": "The Lies that Bind"
+    },
+    {
+      "authors": [
+        "Sue Grafton"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1995",
+      "category": "Best P.I. Novel",
+      "position": "1995",
+      "result": "winner",
+      "title": "K Is for Killer"
+    },
+    {
+      "authors": [
+        "Lawrence Block"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1995",
+      "category": "Best P.I. Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "title": "A Long Line of Dead Men"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1995",
+      "category": "Best P.I. Novel",
+      "position": "1995.02",
+      "result": "nominee",
+      "title": "Carnal Hours"
+    },
+    {
+      "authors": [
+        "Sandra West Prowell"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1995",
+      "category": "Best P.I. Novel",
+      "position": "1995.03",
+      "result": "nominee",
+      "title": "The Killing of Monday Brown"
+    },
+    {
+      "authors": [
+        "Les Roberts"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1995",
+      "category": "Best P.I. Novel",
+      "position": "1995.04",
+      "result": "nominee",
+      "title": "The Lake Effect"
+    },
+    {
+      "authors": [
+        "S.J. Rozan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1996",
+      "category": "Best P.I. Novel",
+      "position": "1996",
+      "result": "winner",
+      "title": "Concourse"
+    },
+    {
+      "authors": [
+        "Earl Emerson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1996",
+      "category": "Best P.I. Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "title": "The Vanishing Smile"
+    },
+    {
+      "authors": [
+        "Dick Francis"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1996",
+      "category": "Best P.I. Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "title": "Come to Grief"
+    },
+    {
+      "authors": [
+        "Parnell Hall"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1996",
+      "category": "Best P.I. Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "title": "Movie"
+    },
+    {
+      "authors": [
+        "Dick Lochte"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1996",
+      "category": "Best P.I. Novel",
+      "position": "1996.04",
+      "result": "nominee",
+      "title": "Neon Smile"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1997",
+      "category": "Best P.I. Novel",
+      "position": "1997",
+      "result": "winner",
+      "title": "Sunset Express"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1997",
+      "category": "Best P.I. Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "title": "Damned in Paradise"
+    },
+    {
+      "authors": [
+        "Stephen Greenleaf"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1997",
+      "category": "Best P.I. Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "title": "Flesh Wounds"
+    },
+    {
+      "authors": [
+        "Jeremiah Healy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1997",
+      "category": "Best P.I. Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "title": "Invasion of Privacy"
+    },
+    {
+      "authors": [
+        "Bill Pronzini"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1997",
+      "category": "Best P.I. Novel",
+      "position": "1997.04",
+      "result": "nominee",
+      "title": "Sentinels"
+    },
+    {
+      "authors": [
+        "Sandra West Prowell"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1997",
+      "category": "Best P.I. Novel",
+      "position": "1997.05",
+      "result": "nominee",
+      "title": "When Wallflowers Die"
+    },
+    {
+      "authors": [
+        "Terrance Faherty"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1998",
+      "category": "Best P.I. Novel",
+      "position": "1998",
+      "result": "winner",
+      "title": "Come Back Dead"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1998",
+      "category": "Best P.I. Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "title": "Indigo Slam"
+    },
+    {
+      "authors": [
+        "Earl Emerson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1998",
+      "category": "Best P.I. Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "title": "Deception Pass"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1998",
+      "category": "Best P.I. Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "title": "Sacred"
+    },
+    {
+      "authors": [
+        "Maxine O\u2019Callaghan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1998",
+      "category": "Best P.I. Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "title": "Down for the Count"
+    },
+    {
+      "authors": [
+        "S.J. Rozan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1998",
+      "category": "Best P.I. Novel",
+      "position": "1998.05",
+      "result": "nominee",
+      "title": "No Colder Place"
+    },
+    {
+      "authors": [
+        "Bill Pronzini"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1999",
+      "category": "Best P.I. Novel",
+      "position": "1999",
+      "result": "winner",
+      "title": "Boobytrap"
+    },
+    {
+      "authors": [
+        "Harold Adams"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1999",
+      "category": "Best P.I. Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "title": "No Badge, No Gun"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1999",
+      "category": "Best P.I. Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "title": "Flying Blind"
+    },
+    {
+      "authors": [
+        "Jeremiah Healy"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1999",
+      "category": "Best P.I. Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "title": "The Only Good Lawyer"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Shamus Award",
+      "award_year": "1999",
+      "category": "Best P.I. Novel",
+      "position": "1999.04",
+      "result": "nominee",
+      "title": "Gone, Baby, Gone"
+    },
+    {
+      "authors": [
+        "Don Winslow"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2000",
+      "category": "Best P.I. Novel",
+      "position": "2000",
+      "result": "winner",
+      "title": "California Fire and Life"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2000",
+      "category": "Best P.I. Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "title": "L.A. Requiem"
+    },
+    {
+      "authors": [
+        "Jonathan Kellerman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2000",
+      "category": "Best P.I. Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "title": "Monster"
+    },
+    {
+      "authors": [
+        "Dennis Lehane"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2000",
+      "category": "Best P.I. Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "Prayers for Rain"
+    },
+    {
+      "authors": [
+        "S.J. Rozan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2000",
+      "category": "Best P.I. Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "title": "Stone Quarry"
+    },
+    {
+      "authors": [
+        "Carolina Garcia-Aguilera"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2001",
+      "category": "Best P.I. Novel",
+      "position": "2001",
+      "result": "winner",
+      "title": "Havana Heat"
+    },
+    {
+      "authors": [
+        "Loren D. Estleman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2001",
+      "category": "Best P.I. Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "title": "A Smile on the Face of the Tiger"
+    },
+    {
+      "authors": [
+        "G.M. Ford"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2001",
+      "category": "Best P.I. Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "title": "The Deader the Better"
+    },
+    {
+      "authors": [
+        "Stephen Greenleaf"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2001",
+      "category": "Best P.I. Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "title": "Ellipsis"
+    },
+    {
+      "authors": [
+        "Marcia Muller"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2001",
+      "category": "Best P.I. Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "title": "Listen to the Silence"
+    },
+    {
+      "authors": [
+        "S.J. Rozan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2002",
+      "category": "Best P.I. Novel",
+      "position": "2002",
+      "result": "winner",
+      "title": "Reflecting the Sky"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2002",
+      "category": "Best P.I. Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "title": "Angel in Black"
+    },
+    {
+      "authors": [
+        "Martha C. Lawrence"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2002",
+      "category": "Best P.I. Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "title": "Ashes of Aries"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2002",
+      "category": "Best P.I. Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "title": "The Devil Went Down to Austin"
+    },
+    {
+      "authors": [
+        "John Straley"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2002",
+      "category": "Best P.I. Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "title": "Cold Water Burning"
+    },
+    {
+      "authors": [
+        "James W. Hall"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2003",
+      "category": "Best P.I. Novel",
+      "position": "2003",
+      "result": "winner",
+      "title": "Blackwater Sound"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2003",
+      "category": "Best P.I. Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "North of Nowhere"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2003",
+      "category": "Best P.I. Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "title": "The Last Place"
+    },
+    {
+      "authors": [
+        "George Pelecanos"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2003",
+      "category": "Best P.I. Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "title": "Hell to Pay"
+    },
+    {
+      "authors": [
+        "S.J. Rozan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2003",
+      "category": "Best P.I. Novel",
+      "position": "2003.04",
+      "result": "nominee",
+      "title": "Winter and Night"
+    },
+    {
+      "authors": [
+        "Ken Bruen"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2004",
+      "category": "Best P.I. Novel",
+      "position": "2004",
+      "result": "winner",
+      "title": "The Guards"
+    },
+    {
+      "authors": [
+        "Robert Ferrigno"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2004",
+      "category": "Best P.I. Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "title": "Scavenger Hunt"
+    },
+    {
+      "authors": [
+        "Steve Hamilton"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2004",
+      "category": "Best P.I. Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "title": "Blood Is the Sky"
+    },
+    {
+      "authors": [
+        "Jonathon King"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2004",
+      "category": "Best P.I. Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "title": "A Visible Darkness"
+    },
+    {
+      "authors": [
+        "William Lashner"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2004",
+      "category": "Best P.I. Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "title": "Fatal Flaw"
+    },
+    {
+      "authors": [
+        "Edward Wright"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2005",
+      "category": "Best P.I. Novel",
+      "position": "2005",
+      "result": "winner",
+      "title": "While I Disappear"
+    },
+    {
+      "authors": [
+        "Leonard Chang"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2005",
+      "category": "Best P.I. Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "title": "Fade to Clear"
+    },
+    {
+      "authors": [
+        "Robert Ferrigno"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2005",
+      "category": "Best P.I. Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "title": "The Wake-Up"
+    },
+    {
+      "authors": [
+        "Chuck Logan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2005",
+      "category": "Best P.I. Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "After the Rain"
+    },
+    {
+      "authors": [
+        "James C. Mitchell"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2005",
+      "category": "Best P.I. Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "title": "Choke Point"
+    },
+    {
+      "authors": [
+        "Michael Connelly"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2006",
+      "category": "Best P.I. Novel",
+      "position": "2006",
+      "result": "winner",
+      "title": "The Lincoln Lawyer"
+    },
+    {
+      "authors": [
+        "Peter Abrahams"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2006",
+      "category": "Best P.I. Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "title": "Oblivion"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2006",
+      "category": "Best P.I. Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "title": "The Forgotten Man"
+    },
+    {
+      "authors": [
+        "Terence Faherty"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2006",
+      "category": "Best P.I. Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "In a Teapot"
+    },
+    {
+      "authors": [
+        "Lee Goldberg"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2006",
+      "category": "Best P.I. Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "title": "The Man with the Iron-On Badge"
+    },
+    {
+      "authors": [
+        "Walter Mosley"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2006",
+      "category": "Best P.I. Novel",
+      "position": "2006.05",
+      "result": "nominee",
+      "title": "Cinnamon Kiss"
+    },
+    {
+      "authors": [
+        "Ken Bruen"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2007",
+      "category": "Best P.I. Novel",
+      "position": "2007",
+      "result": "winner",
+      "title": "The Dramatist"
+    },
+    {
+      "authors": [
+        "Daniel Judson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2007",
+      "category": "Best P.I. Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "The Darkest Place"
+    },
+    {
+      "authors": [
+        "Ken Kuhlken"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2007",
+      "category": "Best P.I. Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "title": "The Do-Re-Mi"
+    },
+    {
+      "authors": [
+        "Marcia Muller"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2007",
+      "category": "Best P.I. Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "title": "Vanishing Point"
+    },
+    {
+      "authors": [
+        "Kris Nelscott"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2007",
+      "category": "Best P.I. Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "Days of Rage"
+    },
+    {
+      "authors": [
+        "Reed Farrel Coleman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2008",
+      "category": "Best P.I. Novel",
+      "position": "2008",
+      "result": "winner",
+      "title": "Soul Patch"
+    },
+    {
+      "authors": [
+        "Thomas B. Cavanagh"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2008",
+      "category": "Best P.I. Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "title": "Head Games"
+    },
+    {
+      "authors": [
+        "Declan Hughes"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2008",
+      "category": "Best P.I. Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "title": "The Color of Blood"
+    },
+    {
+      "authors": [
+        "Michael Koryta"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2008",
+      "category": "Best P.I. Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "title": "A Welcome Grave"
+    },
+    {
+      "authors": [
+        "William Lashner"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2008",
+      "category": "Best P.I. Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "A Killer\u2019s Kiss"
+    },
+    {
+      "authors": [
+        "Reed Farrel Coleman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2009",
+      "category": "Best P.I. Novel",
+      "position": "2009",
+      "result": "winner",
+      "title": "Empty Ever After"
+    },
+    {
+      "authors": [
+        "Larry Beinhart"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2009",
+      "category": "Best P.I. Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "title": "Salvation Boulevard"
+    },
+    {
+      "authors": [
+        "David Fulmer"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2009",
+      "category": "Best P.I. Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "The Blue Door"
+    },
+    {
+      "authors": [
+        "Declan Hughes"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2009",
+      "category": "Best P.I. Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "title": "The Price of Blood"
+    },
+    {
+      "authors": [
+        "Domenic Stansberry"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2009",
+      "category": "Best P.I. Novel",
+      "position": "2009.04",
+      "result": "nominee",
+      "title": "The Ancient Rain"
+    },
+    {
+      "authors": [
+        "Marcia Muller"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2010",
+      "category": "Best P.I. Novel",
+      "position": "2010",
+      "result": "winner",
+      "title": "Locked In"
+    },
+    {
+      "authors": [
+        "Michael Koryta"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2010",
+      "category": "Best P.I. Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "title": "The Silent Hour"
+    },
+    {
+      "authors": [
+        "David Levien"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2010",
+      "category": "Best P.I. Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "title": "Where the Dead Lay"
+    },
+    {
+      "authors": [
+        "Bill Pronzini"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2010",
+      "category": "Best P.I. Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "Schemers"
+    },
+    {
+      "authors": [
+        "Yrsa Sigurdardottir"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2010",
+      "category": "Best P.I. Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "My Soul To Take"
+    },
+    {
+      "authors": [
+        "Lori Armstrong"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2011",
+      "category": "Best P.I. Novel",
+      "position": "2011",
+      "result": "winner",
+      "title": "No Mercy"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2011",
+      "category": "Best P.I. Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "title": "The First Rule"
+    },
+    {
+      "authors": [
+        "Daniel Judson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2011",
+      "category": "Best P.I. Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "title": "Voyeur"
+    },
+    {
+      "authors": [
+        "Philip Kerr"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2011",
+      "category": "Best P.I. Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "title": "If the Dead Rise Not"
+    },
+    {
+      "authors": [
+        "Domenic Stansberry"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2011",
+      "category": "Best P.I. Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "title": "Naked Moon"
+    },
+    {
+      "authors": [
+        "Michael Wiley"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2012",
+      "category": "Best P.I. Novel",
+      "position": "2012",
+      "result": "winner",
+      "title": "A Bad Night\u2019s Sleep"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2012",
+      "category": "Best P.I. Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "Bye Bye, Baby"
+    },
+    {
+      "authors": [
+        "Anne Holt"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2012",
+      "category": "Best P.I. Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "1222"
+    },
+    {
+      "authors": [
+        "Walter Mosley"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2012",
+      "category": "Best P.I. Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "When the Thrill Is Gone"
+    },
+    {
+      "authors": [
+        "Richard Yancey"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2012",
+      "category": "Best P.I. Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "title": "The Highly Effective Detective Crosses the Line"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2013",
+      "category": "Best P.I. Novel",
+      "position": "2013",
+      "result": "winner",
+      "title": "Taken"
+    },
+    {
+      "authors": [
+        "Ace Atkins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2013",
+      "category": "Best P.I. Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "title": "Robert B. Parker\u2019s Lullaby"
+    },
+    {
+      "authors": [
+        "Jack Fredrickson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2013",
+      "category": "Best P.I. Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "Hunting Sweetie Rose"
+    },
+    {
+      "authors": [
+        "Dick Lochte"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2013",
+      "category": "Best P.I. Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "title": "Blues in the Night"
+    },
+    {
+      "authors": [
+        "Hank Phillippi Ryan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2013",
+      "category": "Best P.I. Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "title": "The Other Woman"
+    },
+    {
+      "authors": [
+        "Brad Parks"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2014",
+      "category": "Best P.I. Novel",
+      "position": "2014",
+      "result": "winner",
+      "title": "The Good Cop"
+    },
+    {
+      "authors": [
+        "Sue Grafton"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2014",
+      "category": "Best P.I. Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "title": "W Is for Wasted"
+    },
+    {
+      "authors": [
+        "Timothy Hallinan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2014",
+      "category": "Best P.I. Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "title": "Little Elvises"
+    },
+    {
+      "authors": [
+        "Richard Helms"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2014",
+      "category": "Best P.I. Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "The Mojito Coast"
+    },
+    {
+      "authors": [
+        "Bill Pronzini"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2014",
+      "category": "Best P.I. Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "Nemesis"
+    },
+    {
+      "authors": [
+        "David Rosenfelt"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2015",
+      "category": "Best P.I. Novel",
+      "position": "2015",
+      "result": "winner",
+      "title": "Hounded"
+    },
+    {
+      "authors": [
+        "Reed Farrel Coleman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2015",
+      "category": "Best P.I. Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "title": "The Hollow Girl"
+    },
+    {
+      "authors": [
+        "Robert Galbraith"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2015",
+      "category": "Best P.I. Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "title": "The Silkworm"
+    },
+    {
+      "authors": [
+        "Barry Lancet"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2015",
+      "category": "Best P.I. Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "title": "Tokyo Kill"
+    },
+    {
+      "authors": [
+        "John Verdon"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2015",
+      "category": "Best P.I. Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "title": "Peter Pan Must Die"
+    },
+    {
+      "authors": [
+        "Ingrid Thoft"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2016",
+      "category": "Best P.I. Novel",
+      "position": "2016",
+      "result": "winner",
+      "title": "Brutality"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2016",
+      "category": "Best P.I. Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "title": "The Promise"
+    },
+    {
+      "authors": [
+        "J.A. Jance"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2016",
+      "category": "Best P.I. Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "title": "Dance of the Bones"
+    },
+    {
+      "authors": [
+        "Rob Leininger"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2016",
+      "category": "Best P.I. Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "title": "Gumshoe"
+    },
+    {
+      "authors": [
+        "Sara Paretsky"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2016",
+      "category": "Best P.I. Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "title": "Brush Back"
+    },
+    {
+      "authors": [
+        "T. Jefferson Parker"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2018",
+      "category": "Best P.I. Novel",
+      "position": "2018",
+      "result": "winner",
+      "title": "The Room of White Fire"
+    },
+    {
+      "authors": [
+        "Parker Bilal"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2018",
+      "category": "Best P.I. Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Dark Water"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2018",
+      "category": "Best P.I. Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "title": "Blood Truth"
+    },
+    {
+      "authors": [
+        "Sue Grafton"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2018",
+      "category": "Best P.I. Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "title": "Y Is for Yesterday"
+    },
+    {
+      "authors": [
+        "Michael Wiley"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2018",
+      "category": "Best P.I. Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "title": "Monument Road"
+    },
+    {
+      "authors": [
+        "Kristen Lepionka"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2019",
+      "category": "Best P.I. Novel",
+      "position": "2019",
+      "result": "winner",
+      "title": "What You Want To See"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2019",
+      "category": "Best P.I. Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Wrong Light"
+    },
+    {
+      "authors": [
+        "Sujata Massey"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2019",
+      "category": "Best P.I. Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "title": "The Widows of Malabar Hill"
+    },
+    {
+      "authors": [
+        "John Straley"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2019",
+      "category": "Best P.I. Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Baby\u2019s First Felony"
+    },
+    {
+      "authors": [
+        "Sam Wiebe"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2019",
+      "category": "Best P.I. Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "title": "Cut You Down"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2020",
+      "category": "Best P.I. Novel",
+      "position": "2020",
+      "result": "winner",
+      "title": "Lost Tomorrows"
+    },
+    {
+      "authors": [
+        "Casey Barrett"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2020",
+      "category": "Best P.I. Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "The Tower of Songs"
+    },
+    {
+      "authors": [
+        "Matt Goldman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2020",
+      "category": "Best P.I. Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "The Shallows"
+    },
+    {
+      "authors": [
+        "Howard Michael Gould"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2020",
+      "category": "Best P.I. Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "title": "Below the Line"
+    },
+    {
+      "authors": [
+        "Julia Keller"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2020",
+      "category": "Best P.I. Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "title": "The Cold Way Home"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2021",
+      "category": "Best P.I. Novel",
+      "position": "2021",
+      "result": "winner",
+      "title": "Blind Vigil"
+    },
+    {
+      "authors": [
+        "Tracy Clark"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2021",
+      "category": "Best P.I. Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "What You Don\u2019t See"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2021",
+      "category": "Best P.I. Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "Do No Harm"
+    },
+    {
+      "authors": [
+        "Joseph Finder"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2021",
+      "category": "Best P.I. Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "title": "House on Fire"
+    },
+    {
+      "authors": [
+        "Rachel Howzell Hall"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2021",
+      "category": "Best P.I. Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "title": "And Now She\u2019s Gone"
+    },
+    {
+      "authors": [
+        "S.J. Rozan"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2022",
+      "category": "Best P.I. Novel",
+      "position": "2022",
+      "result": "winner",
+      "title": "Family Business"
+    },
+    {
+      "authors": [
+        "Tracy Clark"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2022",
+      "category": "Best P.I. Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "Runner"
+    },
+    {
+      "authors": [
+        "Matt Coyle"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2022",
+      "category": "Best P.I. Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "Last Redemption"
+    },
+    {
+      "authors": [
+        "Howard Michael Gould"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2022",
+      "category": "Best P.I. Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Pay or Play"
+    },
+    {
+      "authors": [
+        "Michael Wiley"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2022",
+      "category": "Best P.I. Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "Head Case"
+    },
+    {
+      "authors": [
+        "Jonathan Ames"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2023",
+      "category": "Best P.I. Novel",
+      "position": "2023",
+      "result": "winner",
+      "title": "The Wheel of Doll"
+    },
+    {
+      "authors": [
+        "Max Allan Collins"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2023",
+      "category": "Best P.I. Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "title": "The Big Bundle"
+    },
+    {
+      "authors": [
+        "Joe Ide"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2023",
+      "category": "Best P.I. Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "title": "The Goodbye Coast: A Philip Marlowe Novel"
+    },
+    {
+      "authors": [
+        "Kenneth Johnson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2023",
+      "category": "Best P.I. Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "title": "Holmes Coming"
+    },
+    {
+      "authors": [
+        "M. Ravenel"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2023",
+      "category": "Best P.I. Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "title": "The Blackmail"
+    },
+    {
+      "authors": [
+        "Will Thomas"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2024",
+      "category": "Best P.I. Novel",
+      "position": "2024",
+      "result": "winner",
+      "title": "Heart of the Nile"
+    },
+    {
+      "authors": [
+        "Samantha Jayne Allen"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2024",
+      "category": "Best P.I. Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Hard Rain"
+    },
+    {
+      "authors": [
+        "Steve Goble"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2024",
+      "category": "Best P.I. Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Go Find Daddy"
+    },
+    {
+      "authors": [
+        "Sujata Massey"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2024",
+      "category": "Best P.I. Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "The Mistress of Bhatia House"
+    },
+    {
+      "authors": [
+        "Lev AC Rosen"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2024",
+      "category": "Best P.I. Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "title": "The Bell in the Fog"
+    },
+    {
+      "authors": [
+        "Delia Pitts"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2025",
+      "category": "Best P.I. Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "Trouble in Queenstown"
+    },
+    {
+      "authors": [
+        "Mike Lawson"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2025",
+      "category": "Best P.I. Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "Kingpin"
+    },
+    {
+      "authors": [
+        "Phillip Miller"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2025",
+      "category": "Best P.I. Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "The Hollow Tree"
+    },
+    {
+      "authors": [
+        "Walter Mosley"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2025",
+      "category": "Best P.I. Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "Farewell, Amethystine"
+    },
+    {
+      "authors": [
+        "Will Thomas"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2025",
+      "category": "Best P.I. Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "Death and Glory"
+    },
+    {
+      "authors": [
+        "Robert Crais"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2026",
+      "category": "Best P.I. Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "title": "The Big Empty"
+    },
+    {
+      "authors": [
+        "Brian Freeman"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2026",
+      "category": "Best P.I. Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "title": "Photograph"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2026",
+      "category": "Best P.I. Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "title": "Hatchet Girls"
+    },
+    {
+      "authors": [
+        "Walter Mosley"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2026",
+      "category": "Best P.I. Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "title": "Gray Dawn"
+    },
+    {
+      "authors": [
+        "Lev AC Rosen"
+      ],
+      "award": "Shamus Award",
+      "award_year": "2026",
+      "category": "Best P.I. Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "title": "Mirage City"
+    }
+  ],
+  "fetched_at": "2026-11-16T01:08:19Z",
+  "list_id": "shamus_award_pi_novel",
+  "list_name": "Shamus Award - P.I. Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "shamus_award_pi_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Shamus Award - P.I. Novel",
+    "source_id": "shamus_award_pi_novel",
+    "url": "https://www.stopyourekillingme.com/Awards/Shamus_Awards.html"
+  }
+}

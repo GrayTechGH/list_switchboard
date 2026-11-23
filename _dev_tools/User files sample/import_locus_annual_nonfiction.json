@@ -1,0 +1,6599 @@
+{
+  "append_state": {
+    "entry_count": 406,
+    "last_entry_key": "colourfields|paul kincaid",
+    "last_position": "2026.09",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Brian W. Aldiss",
+        "David Wingrove"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "Trillion Year Spree"
+    },
+    {
+      "authors": [
+        "Paul Williams"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "Only Apparently Real: The World of Philip K. Dick"
+    },
+    {
+      "authors": [
+        "Perry A. Chapdelaine, Sr",
+        "Tony Chapdelaine",
+        "George Hay"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "The John W. Campbell Letters, Vol. 1"
+    },
+    {
+      "authors": [
+        "Thomas G. Smith"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "Industrial Light and Magic: The Art of Special Effects"
+    },
+    {
+      "authors": [
+        "Charles N. Brown",
+        "William G. Contento"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "Science Fiction in Print: 1985"
+    },
+    {
+      "authors": [
+        "Jack Sullivan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "The Penguin Encyclopedia of Horror and the Supernatural"
+    },
+    {
+      "authors": [
+        "Frank Miller",
+        "Klaus Janson",
+        "Lynn Varley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "The Dark Knight Returns"
+    },
+    {
+      "authors": [
+        "Marshall B. Tymn",
+        "Mike Ashley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "Science Fiction, Fantasy, and Weird Fiction Magazines"
+    },
+    {
+      "authors": [
+        "Curtis C. Smith"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "Twentieth-Century Science-Fiction Writers, Second Edition"
+    },
+    {
+      "authors": [
+        "Chris Evans",
+        "Jim Burns"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "Lightship"
+    },
+    {
+      "authors": [
+        "H. R. Giger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "H.R. Giger's Necronomicon 2"
+    },
+    {
+      "authors": [
+        "Sharon Jarvis"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "Inside Outer Space: Science Fiction Professionals Look at Their Craft"
+    },
+    {
+      "authors": [
+        "Brian W. Aldiss"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "...And the Lurid Glare of the Comet"
+    },
+    {
+      "authors": [
+        "George E. Slusser",
+        "Eric S. Rabkin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "Hard Science Fiction"
+    },
+    {
+      "authors": [
+        "David L. Rosheim"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "Galaxy Magazine: The Dark and the Light Years"
+    },
+    {
+      "authors": [
+        "Jon Gustafson",
+        "Alex Schomburg"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1987",
+      "category": "Non-Fiction",
+      "position": "1987.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1987"
+      },
+      "title": "Chroma: The Art of Alex Schomburg"
+    },
+    {
+      "authors": [
+        "Alan Moore",
+        "Dave Gibbons"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "Watchmen"
+    },
+    {
+      "authors": [
+        "Michael Whelan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "Michael Whelan's Works of Wonder"
+    },
+    {
+      "authors": [
+        "Neil Barron"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "Anatomy of Wonder, 3rd Edition"
+    },
+    {
+      "authors": [
+        "Tom Weller"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "Cvltvre Made Stvpid"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "Wizardry and Wild Romance"
+    },
+    {
+      "authors": [
+        "Charles N. Brown",
+        "William G. Contento"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "Science Fiction, Fantasy, & Horror: 1986"
+    },
+    {
+      "authors": [
+        "J. N. Williamson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "How to Write Tales of Horror, Fantasy, and Science Fiction"
+    },
+    {
+      "authors": [
+        "Jack Matthews"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "The Battle of Brazil"
+    },
+    {
+      "authors": [
+        "Patricia S. Warrick"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "Mind in Motion, the Fiction of Philip K. Dick"
+    },
+    {
+      "authors": [
+        "James Blish"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "The Tale that Wags the God"
+    },
+    {
+      "authors": [
+        "John J. Pierce"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "Foundations of Science Fiction"
+    },
+    {
+      "authors": [
+        "David Ketterer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "Imprisoned in a Tesseract: The Life of James Blish"
+    },
+    {
+      "authors": [
+        "Frank Herbert"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "The Maker of Dune: Insights of a Master of Science Fiction"
+    },
+    {
+      "authors": [
+        "Leon Stover"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "Robert Heinlein"
+    },
+    {
+      "authors": [
+        "Patrick Woodroffe"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "A Closer Look"
+    },
+    {
+      "authors": [
+        "Hal W. Hall"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1988",
+      "category": "Non-Fiction",
+      "position": "1988.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1988"
+      },
+      "title": "Science Fiction and Fantasy Reference Index, Vols I and II"
+    },
+    {
+      "authors": [
+        "Robert A. Heinlein"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Non-Fiction",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Grumbles from the Grave"
+    },
+    {
+      "authors": [
+        "Alexei Panshin",
+        "Cory Panshin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Non-Fiction",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "The World Beyond the Hill: Science Fiction and the Quest for Transcendence"
+    },
+    {
+      "authors": [
+        "Arthur C. Clarke"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Non-Fiction",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Astounding Days"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Non-Fiction",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Dancing at the Edge of the World"
+    },
+    {
+      "authors": [
+        "H. R. Giger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Non-Fiction",
+      "position": "1990.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Giger's Alien"
+    },
+    {
+      "authors": [
+        "Lawrence Sutin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Non-Fiction",
+      "position": "1990.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Divine Invasions"
+    },
+    {
+      "authors": [
+        "Charles N. Brown",
+        "William G. Contento"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Non-Fiction",
+      "position": "1990.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Science Fiction, Fantasy, & Horror: 1988"
+    },
+    {
+      "authors": [
+        "Gregg Rickman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Non-Fiction",
+      "position": "1990.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "To the High Castle Philip K. Dick: A Life 1928-1962"
+    },
+    {
+      "authors": [
+        "Philip K. Dick"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Non-Fiction",
+      "position": "1990.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "The Dark-Haired Girl"
+    },
+    {
+      "authors": [
+        "Harlan Ellison"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Non-Fiction",
+      "position": "1990.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Harlan Ellison's Watching"
+    },
+    {
+      "authors": [
+        "Martha A. Bartter"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Non-Fiction",
+      "position": "1990.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "The Way to Ground Zero"
+    },
+    {
+      "authors": [
+        "Charles Solomon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Non-Fiction",
+      "position": "1990.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "Enchanted Drawings"
+    },
+    {
+      "authors": [
+        "John J. Pierce"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1990",
+      "category": "Non-Fiction",
+      "position": "1990.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1990"
+      },
+      "title": "When Worldviews Collide"
+    },
+    {
+      "authors": [
+        "Kristine Kathryn Rusch",
+        "Dean Wesley Smith"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Non-Fiction",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Science Fiction Writers of America Handbook"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Non-Fiction",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "How to Write Science Fiction and Fantasy"
+    },
+    {
+      "authors": [
+        "Norman Spinrad"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Non-Fiction",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Science Fiction in the Real World"
+    },
+    {
+      "authors": [
+        "H. R. Giger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Non-Fiction",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "H.R. Giger's Biomechanics"
+    },
+    {
+      "authors": [
+        "David J. Skal"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Non-Fiction",
+      "position": "1991.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Hollywood Gothic"
+    },
+    {
+      "authors": [
+        "Brian W. Aldiss"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Non-Fiction",
+      "position": "1991.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Bury My Heart at W.H. Smith's"
+    },
+    {
+      "authors": [
+        "Charles N. Brown",
+        "William G. Contento"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Non-Fiction",
+      "position": "1991.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Science Fiction, Fantasy, & Horror: 1989"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Non-Fiction",
+      "position": "1991.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "The Weird Tale"
+    },
+    {
+      "authors": [
+        "Neil Barron"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Non-Fiction",
+      "position": "1991.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Fantasy Literature: A Reader's Guide"
+    },
+    {
+      "authors": [
+        "A. N. Wilson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Non-Fiction",
+      "position": "1991.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "C.S. Lewis: A Biography"
+    },
+    {
+      "authors": [
+        "Neil Barron"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Non-Fiction",
+      "position": "1991.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Horror Literature: A Reader's Guide"
+    },
+    {
+      "authors": [
+        "Alison Lurie"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Non-Fiction",
+      "position": "1991.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Don't Tell the Grown-Ups"
+    },
+    {
+      "authors": [
+        "Thomas D. Clareson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Non-Fiction",
+      "position": "1991.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Understanding American Science Fiction: The Formative Period, 1926-1970"
+    },
+    {
+      "authors": [
+        "Charles N. Brown",
+        "William G. Contento"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1991",
+      "category": "Non-Fiction",
+      "position": "1991.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1991"
+      },
+      "title": "Science Fiction, Fantasy, & Horror: 1984"
+    },
+    {
+      "authors": [
+        "Everett F. Bleiler"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Non-Fiction",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "Science-Fiction: The Early Years"
+    },
+    {
+      "authors": [
+        "Charles Addams"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Non-Fiction",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "The World of Charles Addams"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Non-Fiction",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "Clive Barker's Shadows in Eden"
+    },
+    {
+      "authors": [
+        "Charles N. Brown",
+        "William G. Contento"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Non-Fiction",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "Science Fiction, Fantasy, & Horror: 1990"
+    },
+    {
+      "authors": [
+        "Nancy Willard",
+        "Leo",
+        "Diane Dillon",
+        "Lee Dillon",
+        "illustrators"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Non-Fiction",
+      "position": "1992.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "Pish, Posh, Said Hieronymous Bosch"
+    },
+    {
+      "authors": [
+        "Nick Bantock"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Non-Fiction",
+      "position": "1992.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "Griffin & Sabine"
+    },
+    {
+      "authors": [
+        "Bruce Byfield"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Non-Fiction",
+      "position": "1992.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "Witches of the Mind: A Critical Study of Fritz Leiber"
+    },
+    {
+      "authors": [
+        "J. R. R. Tolkien",
+        "Alan Lee"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Non-Fiction",
+      "position": "1992.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "The Lord of the Rings"
+    },
+    {
+      "authors": [
+        "Mark Harrison"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Non-Fiction",
+      "position": "1992.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "Dreamlands"
+    },
+    {
+      "authors": [
+        "Bud Foote"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Non-Fiction",
+      "position": "1992.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "The Connecticut Yankee in the Twentieth Century: Travel to the Past in Science Fiction"
+    },
+    {
+      "authors": [
+        "H. R. Giger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1992",
+      "category": "Non-Fiction",
+      "position": "1992.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1992"
+      },
+      "title": "H.R. Giger's Necronomicon"
+    },
+    {
+      "authors": [
+        "James Gurney"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Non-Fiction",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Dinotopia"
+    },
+    {
+      "authors": [
+        "(US title: Arthur C. Clarke: The Authorized Biography )",
+        "Neil McAleer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Non-Fiction",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Odyssey: The Authorised Biography of Arthur C. Clarke"
+    },
+    {
+      "authors": [
+        "Virgil Finlay"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Non-Fiction",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Virgil Finlay's Women of the Ages"
+    },
+    {
+      "authors": [
+        "Noelle Watson",
+        "Paul E. Schellinger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Non-Fiction",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Twentieth-Century Science-Fiction Writers, Third Edition"
+    },
+    {
+      "authors": [
+        "James Gunn"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Non-Fiction",
+      "position": "1993.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Inside Science Fiction: Essays on Fantastic Literature"
+    },
+    {
+      "authors": [
+        "Charles N. Brown",
+        "William G. Contento"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Non-Fiction",
+      "position": "1993.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Science Fiction, Fantasy, & Horror: 1991"
+    },
+    {
+      "authors": [
+        "Colin Greenland"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Non-Fiction",
+      "position": "1993.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Michael Moorcock: Death Is No Obstacle"
+    },
+    {
+      "authors": [
+        "Robert Reginald"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Non-Fiction",
+      "position": "1993.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Science Fiction and Fantasy Literature, 1975-1991"
+    },
+    {
+      "authors": [
+        "Bruce Sterling"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Non-Fiction",
+      "position": "1993.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "The Hacker Crackdown: Law and Disorder on the Electronic Frontier"
+    },
+    {
+      "authors": [
+        "Michael Burgess"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Non-Fiction",
+      "position": "1993.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Reference Guide to Science Fiction, Fantasy, and Horror"
+    },
+    {
+      "authors": [
+        "Maxim Jakubowski",
+        "Edward James"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Non-Fiction",
+      "position": "1993.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "The Profession of Science Fiction"
+    },
+    {
+      "authors": [
+        "George E. Slusser",
+        "Tom Shippey"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Non-Fiction",
+      "position": "1993.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Fiction 2000: Cyberpunk and the Future of Narrative"
+    },
+    {
+      "authors": [
+        "Damon Knight"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Non-Fiction",
+      "position": "1993.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Monad: Essays on Science Fiction #2"
+    },
+    {
+      "authors": [
+        "Brian Attebery"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1993",
+      "category": "Non-Fiction",
+      "position": "1993.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1993"
+      },
+      "title": "Strategies of Fantasy"
+    },
+    {
+      "authors": [
+        "John Clute",
+        "Peter Nicholls"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Non-Fiction",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "The Encyclopedia of Science Fiction"
+    },
+    {
+      "authors": [
+        "Robert Bloch"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Non-Fiction",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Once Around the Bloch: An Unauthorized Autobiography"
+    },
+    {
+      "authors": [
+        "David J. Skal"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Non-Fiction",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "The Monster Show: A Cultural History of Horror"
+    },
+    {
+      "authors": [
+        "Theodore R. Cogswell"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Non-Fiction",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "PITFCS: Proceedings of the Institute for Twenty-First Century Studies"
+    },
+    {
+      "authors": [
+        "Albert I. Berger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Non-Fiction",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "The Magic That Works: John W. Campbell and the American Response to Technology"
+    },
+    {
+      "authors": [
+        "Maria Tatar"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Non-Fiction",
+      "position": "1994.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Off with Their Heads!: Fairy Tales and the Culture of Childhood"
+    },
+    {
+      "authors": [
+        "Hal W. Hall"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1994",
+      "category": "Non-Fiction",
+      "position": "1994.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1994"
+      },
+      "title": "Science Fiction and Fantasy Reference Index: 1985-1991"
+    },
+    {
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Non-Fiction",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "I. Asimov: A Memoir"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Non-Fiction",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "Silent Interviews: On Language, Race, Sex, Science Fiction, and Some Comics"
+    },
+    {
+      "authors": [
+        "Michael Andre-Driussi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Non-Fiction",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "Lexicon Urthus: A Dictionary for the Urth Cycle"
+    },
+    {
+      "authors": [
+        "Edward James"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Non-Fiction",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "Science Fiction in the Twentieth Century"
+    },
+    {
+      "authors": [
+        "Jack Zipes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Non-Fiction",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "Fairy Tale as Myth/Myth as Fairy Tale"
+    },
+    {
+      "authors": [
+        "Jerry Hewett",
+        "Daryl F. Mallett"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Non-Fiction",
+      "position": "1995.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "The Work of Jack Vance: An Annotated Bibliography and Guide"
+    },
+    {
+      "authors": [
+        "Paul Alkon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Non-Fiction",
+      "position": "1995.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "Science Fiction Before 1900: Imagination Discovers Technology"
+    },
+    {
+      "authors": [
+        "Robert Irwin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Non-Fiction",
+      "position": "1995.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "The Arabian Nights: A Companion"
+    },
+    {
+      "authors": [
+        "John J. Pierce"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Non-Fiction",
+      "position": "1995.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "Odd Genre: A Study in Imagination and Evolution"
+    },
+    {
+      "authors": [
+        "Robert Crossley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1995",
+      "category": "Non-Fiction",
+      "position": "1995.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1995"
+      },
+      "title": "Olaf Stapledon: Speaking for the Future"
+    },
+    {
+      "authors": [
+        "John Clute"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Non-Fiction",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Science Fiction: The Illustrated Encyclopedia"
+    },
+    {
+      "authors": [
+        "Neil Barron"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Non-Fiction",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Anatomy of Wonder 4"
+    },
+    {
+      "authors": [
+        "David Pringle"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Non-Fiction",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "The Ultimate Guide to Science Fiction, Second Edition"
+    },
+    {
+      "authors": [
+        "Lawrence Sutin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Non-Fiction",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "The Shifting Realities of Philip K. Dick: Selected Literary and Philosophical Writings"
+    },
+    {
+      "authors": [
+        "Brian W. Aldiss"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Non-Fiction",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "The Detached Retina"
+    },
+    {
+      "authors": [
+        "Jay P. Pederson",
+        "Robert Reginald"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Non-Fiction",
+      "position": "1996.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "St. James Guide to Science Fiction Writers: 4th Edition"
+    },
+    {
+      "authors": [
+        "Joanna Russ"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Non-Fiction",
+      "position": "1996.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "To Write Like a Woman: Essays in Feminism and Science Fiction"
+    },
+    {
+      "authors": [
+        "Nina Auerbach"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Non-Fiction",
+      "position": "1996.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Our Vampires, Ourselves"
+    },
+    {
+      "authors": [
+        "H. Bruce Franklin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1996",
+      "category": "Non-Fiction",
+      "position": "1996.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1996"
+      },
+      "title": "Future Perfect: American Science Fiction of the Nineteenth Century\u2014An Anthology"
+    },
+    {
+      "authors": [
+        "John Clute"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Non-Fiction",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "Look at the Evidence"
+    },
+    {
+      "authors": [
+        "L. Sprague de Camp"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Non-Fiction",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "Time & Chance: An Autobiography"
+    },
+    {
+      "authors": [
+        "Diana Wynne Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Non-Fiction",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "The Tough Guide to Fantasyland"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Non-Fiction",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "H.P. Lovecraft: A Life"
+    },
+    {
+      "authors": [
+        "David Pringle"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Non-Fiction",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "St. James Guide to Fantasy Writers"
+    },
+    {
+      "authors": [
+        "James Sallis"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Non-Fiction",
+      "position": "1997.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "Ash of Stars: On the Writing of Samuel R. Delany"
+    },
+    {
+      "authors": [
+        "Herbert R. Lottman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Non-Fiction",
+      "position": "1997.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "Jules Verne: An Exploratory Biography"
+    },
+    {
+      "authors": [
+        "Brian Taves",
+        "Stephen Michaluk, Jr"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1997",
+      "category": "Non-Fiction",
+      "position": "1997.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1997"
+      },
+      "title": "The Jules Verne Encyclopedia"
+    },
+    {
+      "authors": [
+        "John Clute",
+        "John Grant"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "The Encyclopedia of Fantasy"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "Reflections and Refractions: Thoughts on Science-Fiction, Science, and Other Matters"
+    },
+    {
+      "authors": [
+        "James Gunn"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "Isaac Asimov: The Foundations of Science Fiction, Revised Edition"
+    },
+    {
+      "authors": [
+        "Algis Budrys"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "Outposts: Literatures of Milieux"
+    },
+    {
+      "authors": [
+        "David Pringle"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "St. James Guide to Fantasy Writers"
+    },
+    {
+      "authors": [
+        "Nina Auerbach",
+        "David J. Skal"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "Bram Stoker's Dracula"
+    },
+    {
+      "authors": [
+        "Brooks Landon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "Science Fiction After 1900: From the Steam Man to the Stars"
+    },
+    {
+      "authors": [
+        "Jack Zipes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "Happily Ever After: Fairy Tales, Children, and the Culture Industry"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "A Subtler Magick: The Writings and Philosopy of H.P. Lovecraft"
+    },
+    {
+      "authors": [
+        "Hal W. Hall"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1998",
+      "category": "Non-Fiction",
+      "position": "1998.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1998"
+      },
+      "title": "Science Fiction and Fantasy Reference Index: 1992-1995"
+    },
+    {
+      "authors": [
+        "Thomas M. Disch"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "The Dreams Our Stuff Is Made Of: How Science Fiction Conquered the World"
+    },
+    {
+      "authors": [
+        "Everett F. Bleiler"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "Science-Fiction: The Gernsback Years"
+    },
+    {
+      "authors": [
+        "Howard DeVore"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "The Hugo, Nebula and World Fantasy Awards"
+    },
+    {
+      "authors": [
+        "Peter Cannon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "Lovecraft Remembered"
+    },
+    {
+      "authors": [
+        "Richard A. Hauptmann"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "The Work of Jack Williamson: An Annotated Bibliography and Guide"
+    },
+    {
+      "authors": [
+        "David Pringle"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "The Ultimate Encyclopedia of Fantasy: The Definitive Illustrated Guide"
+    },
+    {
+      "authors": [
+        "Edo van Belkom"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "Northern Dreamers: Interviews with Famous Science Fiction, Fantasy, and Horror Writers"
+    },
+    {
+      "authors": [
+        "David Pringle"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "St. James Guide to Horror, Ghost, and Gothic Writers"
+    },
+    {
+      "authors": [
+        "Darrell Schweitzer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "Windows of the Imagination"
+    },
+    {
+      "authors": [
+        "Carolyn Sigler"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "1999",
+      "category": "Non-Fiction",
+      "position": "1999.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_1999"
+      },
+      "title": "Alternative Alices"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "Sixty Years of Arkham House"
+    },
+    {
+      "authors": [
+        "Brian W. Aldiss"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "The Twinkling of an Eye or My Life as an Englishman"
+    },
+    {
+      "authors": [
+        "Eric Leif Davin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "Pioneers of Wonder: Conversations with the Founders of Science Fiction"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "Deconstructing the Starships: Science, Fiction and Reality"
+    },
+    {
+      "authors": [
+        "Neil Barron"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "Fantasy and Horror: A Critical and Historical Guide to Literature, Illustration, Film, TV, Radio, and the Internet"
+    },
+    {
+      "authors": [
+        "Jack Zipes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "When Dreams Came True: Classical Fairy Tales and Their Tradition"
+    },
+    {
+      "authors": [
+        "Edgar L. Chapman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "The Road to Castle Mount: The Science Fiction of Robert Silverberg"
+    },
+    {
+      "authors": [
+        "Russell Blackford",
+        "Van Ikin",
+        "Sean McMullen"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "Strange Constellations: A History of Australian Science Fiction"
+    },
+    {
+      "authors": [
+        "C. N. Manlove"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "The Fantasy Literature of England"
+    },
+    {
+      "authors": [
+        "J. Neil Schulman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "The Robert Heinlein Interview and Other Heinleiniana"
+    },
+    {
+      "authors": [
+        "Melvin H. Schuetz"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "A Chesley Bonestell Space Art Chronology"
+    },
+    {
+      "authors": [
+        "Jeanne Cortiel"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2000",
+      "category": "Non-Fiction",
+      "position": "2000.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2000"
+      },
+      "title": "Demand My Writing: Joanna Russ/Feminism/Science Fiction"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "On Writing"
+    },
+    {
+      "authors": [
+        "James Gifford"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Robert A. Heinlein: A Reader's Companion"
+    },
+    {
+      "authors": [
+        "Daniel Keyes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Algernon, Charlie and I"
+    },
+    {
+      "authors": [
+        "A. E. Cunningham"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Jack Vance: Critical Appreciations and a Bibliography"
+    },
+    {
+      "authors": [
+        "Camille Bacon-Smith"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Science Fiction Culture"
+    },
+    {
+      "authors": [
+        "Tom Shippey"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "J.R.R. Tolkien: Author of the Century"
+    },
+    {
+      "authors": [
+        "Julius Schwartz",
+        "Brian M. Thomsen"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Man of Two Worlds: My Life in Science Fiction and Comics"
+    },
+    {
+      "authors": [
+        "H. P. Lovecraft",
+        "S. T. Joshi",
+        "David E. Schultz"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Lord of a Visible World: An Autobiography in Letters"
+    },
+    {
+      "authors": [
+        "Andrew M. Butler",
+        "Edward James",
+        "Farah Mendlesohn"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Terry Pratchett: Guilty of Literature"
+    },
+    {
+      "authors": [
+        "Jack Zipes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "The Oxford Companion to Fairy Tales"
+    },
+    {
+      "authors": [
+        "Alexander Theroux"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "The Strange Case of Edward Gorey"
+    },
+    {
+      "authors": [
+        "Carl Freedman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Critical Theory and Science Fiction"
+    },
+    {
+      "authors": [
+        "Jean-Marc Lofficier",
+        "Randy Lofficier"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "French Science Fiction, Fantasy, Horror and Pulp Fiction"
+    },
+    {
+      "authors": [
+        "David Seed"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "American Science Fiction and the Cold War"
+    },
+    {
+      "authors": [
+        "Damien Broderick"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Transrealist Fiction: Writing in the Slipstream of Science"
+    },
+    {
+      "authors": [
+        "Bill Sheehan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "At the Foot of the Story Tree: An Inquiry into the Fiction of Peter Straub"
+    },
+    {
+      "authors": [
+        "G. Peter Winnington"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2001",
+      "category": "Non-Fiction",
+      "position": "2001.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2001"
+      },
+      "title": "Vast Alchemies: The Life and Work of Mervyn Peake"
+    },
+    {
+      "authors": [
+        "Michael Swanwick"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Being Gardner Dozois"
+    },
+    {
+      "authors": [
+        "Karen Haber"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Meditations on Middle-Earth"
+    },
+    {
+      "authors": [
+        "Stephen Baxter"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Deep Future"
+    },
+    {
+      "authors": [
+        "Gwen Lee",
+        "Doris Elaine Sauter"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "What If Our World Is Their Heaven? The Final Conversations of Philip K. Dick"
+    },
+    {
+      "authors": [
+        "Mike Ashley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "The Time Machines: The Story of the Science-Fiction Pulp Magazines from the Beginning to 1950"
+    },
+    {
+      "authors": [
+        "Jack Zipes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Sticks and Stones: The Troublesome Success of Children's Literature from Slovenly Peter to Harry Potter"
+    },
+    {
+      "authors": [
+        "E. Hoffmann Price"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Book of the Dead: Friends of Yesteryear: Fictioneers & Others"
+    },
+    {
+      "authors": [
+        "Gary Westfahl"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Space and Beyond: The Frontier Theme in Science Fiction"
+    },
+    {
+      "authors": [
+        "William H. Patterson",
+        "Jr. Thornton",
+        "Andrew Thornton"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "The Martian Named Smith: Critical Perspectives on Robert A. Heinlein's Stranger in a Strange Land"
+    },
+    {
+      "authors": [
+        "Mavis Haut"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "The Hidden Library of Tanith Lee: Themes and Subtexts from Dionysos to the Immortal Gene"
+    },
+    {
+      "authors": [
+        "Michael R. Collings"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Storyteller: The Official Orson Scott Card Bibliography and Guide"
+    },
+    {
+      "authors": [
+        "Neil Wilson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Shadows in the Attic: A Guide to British Supernatural Fiction 1820-1950"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2002",
+      "category": "Non-Fiction",
+      "position": "2002.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2002"
+      },
+      "title": "Ramsey Campbell and Modern Horror Fiction"
+    },
+    {
+      "authors": [
+        "Bruce Sterling"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Tomorrow Now: Envisioning the Next Fifty Years"
+    },
+    {
+      "authors": [
+        "Ellen Weil",
+        "Gary K. Wolfe"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Harlan Ellison: The Edge of Forever"
+    },
+    {
+      "authors": [
+        "Judith Merril",
+        "Emily Pohl-Weary"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Better to Have Loved: The Life of Judith Merril"
+    },
+    {
+      "authors": [
+        "Justine Larbalestier"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "The Battle of the Sexes in Science Fiction"
+    },
+    {
+      "authors": [
+        "Douglas E. Winter"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Clive Barker: The Dark Fantastic"
+    },
+    {
+      "authors": [
+        "Jeff Gardiner"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "The Age of Chaos: The Multiverse of Michael Moorcock"
+    },
+    {
+      "authors": [
+        "Richard Bleiler"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Supernatural Fiction Writers: Contemporary Fantasy and Horror, Second Edition, Volumes I & II"
+    },
+    {
+      "authors": [
+        "Eric Solstein"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "John W. Campbell's Golden Age of Science Fiction"
+    },
+    {
+      "authors": [
+        "Malcolm Yorke"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Mervyn Peake: My Eyes Mint Gold: A Life"
+    },
+    {
+      "authors": [
+        "Karen L. Hellekson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "The Science Fiction of Cordwainer Smith"
+    },
+    {
+      "authors": [
+        "Katharine M. Rogers"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "L. Frank Baum: Creator of Oz"
+    },
+    {
+      "authors": [
+        "(US title: Algernon Blackwood: An Extraordinary Life )",
+        "Mike Ashley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "Starlight Man: The Extraordinary Life of Algernon Blackwood"
+    },
+    {
+      "authors": [
+        "H. L. Drake"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2003",
+      "category": "Non-Fiction",
+      "position": "2003.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2003"
+      },
+      "title": "A. E. van Vogt: Science Fantasy's Icon"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The Wave in the Mind"
+    },
+    {
+      "authors": [
+        "Jonathan R. Eller",
+        "William F. Touponce"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Ray Bradbury: The Life of Fiction"
+    },
+    {
+      "authors": [
+        "Mike Ashley",
+        "Robert A. W. Lowndes"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The Gernsback Days"
+    },
+    {
+      "authors": [
+        "William Tenn"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Dancing Naked: The Unexpurgated William Tenn"
+    },
+    {
+      "authors": [
+        "Maria Tatar"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The Annotated Brothers Grimm"
+    },
+    {
+      "authors": [
+        "Robert Borski"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Solar Labyrinth: Exploring Gene Wolfe's Book of the New Sun"
+    },
+    {
+      "authors": [
+        "Bev Vincent"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The Road to the Dark Tower: Exploring Stephen King's Magnum Opus"
+    },
+    {
+      "authors": [
+        "Damien Broderick"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "x, y, z, t: Dimensions of Science Fiction"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The Evolution of the Weird Tale"
+    },
+    {
+      "authors": [
+        "Peter Wright"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Attending Daedalus: Gene Wolfe, Artifice and the Reader"
+    },
+    {
+      "authors": [
+        "Edward Carmien"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "The Cherryh Odyssey"
+    },
+    {
+      "authors": [
+        "Darrell Schweitzer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Speaking of the Fantastic II"
+    },
+    {
+      "authors": [
+        "M. Elizabeth Ginway"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2005",
+      "category": "Non-Fiction",
+      "position": "2005.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2005"
+      },
+      "title": "Brazilian Science Fiction"
+    },
+    {
+      "authors": [
+        "Kate Wilhelm"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Storyteller: Writing Lessons and More from 27 Years of the Clarion Writers' Workshop"
+    },
+    {
+      "authors": [
+        "Neil Barron"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Anatomy of Wonder: A Critical Guide to Science Fiction, 5th Edition"
+    },
+    {
+      "authors": [
+        "Gary K. Wolfe"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Soundings: Reviews 1992-1996"
+    },
+    {
+      "authors": [
+        "Mike Ashley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Transformations: The Story of the Science-Fiction Magazines from 1950 to 1970"
+    },
+    {
+      "authors": [
+        "Mike Cadden"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Ursula K. Le Guin: Beyond Genre"
+    },
+    {
+      "authors": [
+        "Joseph McCabe"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Hanging Out with the Dream King: Conversations with Neil Gaiman and His Collaborators"
+    },
+    {
+      "authors": [
+        "Gary Westfahl"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Science Fiction Quotations"
+    },
+    {
+      "authors": [
+        "David Langford"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "The SEX Column and Other Misprints"
+    },
+    {
+      "authors": [
+        "Gary Westfahl"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "The Greenwood Encyclopedia of Science Fiction and Fantasy: Themes, Works, and Wonders"
+    },
+    {
+      "authors": [
+        "Stephen Jones",
+        "Kim Newman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Horror: Another 100 Best Books"
+    },
+    {
+      "authors": [
+        "Farah Mendlesohn"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Diana Wynne Jones: Children's Literature and the Fantastic Tradition"
+    },
+    {
+      "authors": [
+        "James Gunn",
+        "Matthew Candelaria"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Speculations on Speculation: Theories of Science Fiction"
+    },
+    {
+      "authors": [
+        "Michael Bishop"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "A Reverie for Mister Ray"
+    },
+    {
+      "authors": [
+        "Brian Stableford"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Historical Dictionary of Fantasy Literature"
+    },
+    {
+      "authors": [
+        "S. T. Joshi",
+        "Stefan Dziemianowicz"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Supernatural Literature of the World: An Encyclopedia"
+    },
+    {
+      "authors": [
+        "Fredric Jameson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Archaeologies of the Future: The Desire Called Utopia and Other Science Fictions"
+    },
+    {
+      "authors": [
+        "Ruth Nadelman Lynn"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Fantasy Literature for Children and Young Adults: Fifth Edition"
+    },
+    {
+      "authors": [
+        "Roger Luckhurst"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2006",
+      "category": "Non-Fiction",
+      "position": "2006.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2006"
+      },
+      "title": "Science Fiction"
+    },
+    {
+      "authors": [
+        "Julie Phillips"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "James Tiptree, Jr.: The Double Life of Alice B. Sheldon"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "About Writing: Seven Essays, Four Letters, and Five Interviews"
+    },
+    {
+      "authors": [
+        "Win Scott Eckert"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Myths for the Modern Age: Philip Jose Farmer's Wold Newton Universe"
+    },
+    {
+      "authors": [
+        "Mark Finn"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Blood and Thunder: The Life and Art of Robert E. Howard"
+    },
+    {
+      "authors": [
+        "John Clute"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "The Darkening Garden: A Short Lexicon of Horror"
+    },
+    {
+      "authors": [
+        "Justine Larbalestier"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Daughters of Earth: Feminist Science Fiction in the Twentieth Century"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "The History of Science Fiction"
+    },
+    {
+      "authors": [
+        "Joseph T. Major"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Heinlein's Children: The Juveniles"
+    },
+    {
+      "authors": [
+        "Mike Resnick",
+        "Joe Siclari"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Worldcon Guest of Honor Speeches"
+    },
+    {
+      "authors": [
+        "Robert Borski"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "The Long and the Short of It: More Essays on the Fiction of Gene Wolfe"
+    },
+    {
+      "authors": [
+        "Leonard S. Marcus"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "The Wand in the Word: Conversations with Writers of Fantasy"
+    },
+    {
+      "authors": [
+        "Scott Connors"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "The Freedom of Fantastic Things: Selected Criticisms on Clark Ashton Smith"
+    },
+    {
+      "authors": [
+        "Robert M. Philmus"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2007",
+      "category": "Non-Fiction",
+      "position": "2007.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2007"
+      },
+      "title": "Visions and Re-Visions: [Re]constructing Science Fiction"
+    },
+    {
+      "authors": [
+        "Barry N. Malzberg"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Non-Fiction",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Breakfast in the Ruins"
+    },
+    {
+      "authors": [
+        "Jeff Prucher"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Non-Fiction",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Brave New Words: The Oxford Dictionary of Science Fiction"
+    },
+    {
+      "authors": [
+        "Joanna Russ"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Non-Fiction",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "The Country You Have Never Seen"
+    },
+    {
+      "authors": [
+        "Mike Ashley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Non-Fiction",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Gateways to Forever: The Story of the Science-Fiction Magazines from 1970 to 1980"
+    },
+    {
+      "authors": [
+        "Peter Wright"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Non-Fiction",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Shadows of the New Sun: Wolfe on Writing/Writers on Wolfe"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Non-Fiction",
+      "position": "2008.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Sides"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Non-Fiction",
+      "position": "2008.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Icons of Horror and the Supernatural: An Encyclopedia of Our Worst Nightmares"
+    },
+    {
+      "authors": [
+        "Robin Roberts"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Non-Fiction",
+      "position": "2008.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Anne McCaffrey: A Life with Dragons"
+    },
+    {
+      "authors": [
+        "Brian Stableford"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Non-Fiction",
+      "position": "2008.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Science Fact and Science Fiction: An Encyclopedia"
+    },
+    {
+      "authors": [
+        "Gary Westfahl"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Non-Fiction",
+      "position": "2008.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "Hugo Gernsback and the Century of Science Fiction"
+    },
+    {
+      "authors": [
+        "Carl B. Yoke",
+        "Carol L. Robinson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2008",
+      "category": "Non-Fiction",
+      "position": "2008.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2008"
+      },
+      "title": "The Cultural Influences of William Gibson, the \"Father\" of Cyberpunk Science Fiction"
+    },
+    {
+      "authors": [
+        "William H. Patterson, Jr"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Non-Fiction",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Robert A. Heinlein: In Dialogue with His Century: Volume 1: 1907-1948: Learning Curve"
+    },
+    {
+      "authors": [
+        "Karen Joy Fowler",
+        "Debbie Notkin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Non-Fiction",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "80! Memories & Reflections on Ursula K. Le Guin"
+    },
+    {
+      "authors": [
+        "Mark Rich"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Non-Fiction",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "CM Kornbluth: The Life and Works of a Science Fiction Visionary"
+    },
+    {
+      "authors": [
+        "Consuela Francis"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Non-Fiction",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Conversations with Octavia Butler"
+    },
+    {
+      "authors": [
+        "Gary K. Wolfe"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Non-Fiction",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Bearings: Reviews 1997-2001"
+    },
+    {
+      "authors": [
+        "Paul Kincaid",
+        "Niall Harrison"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Non-Fiction",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "British Science Fiction & Fantasy: Twenty Years, Two Surveys"
+    },
+    {
+      "authors": [
+        "Bud Webster"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Non-Fiction",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Anthopology 101: Reflections, Inspections and Dissections of SF Anthologies"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Non-Fiction",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Into the Media Web"
+    },
+    {
+      "authors": [
+        "Bruce Shaw"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Non-Fiction",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "The Animal Fable in Science Fiction and Fantasy"
+    },
+    {
+      "authors": [
+        "Ericka Hoagland",
+        "Reema Sarwal"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2011",
+      "category": "Non-Fiction",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2011"
+      },
+      "title": "Science Fiction, Imperialism, and the Third World: Essays on Postcolonial Literature and Film"
+    },
+    {
+      "authors": [
+        "Gary K. Wolfe"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Non-Fiction",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Evaporating Genres: Essays on Fantastic Literature"
+    },
+    {
+      "authors": [
+        "Jonathan R. Eller"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Non-Fiction",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Becoming Ray Bradbury"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Non-Fiction",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Musings and Meditations"
+    },
+    {
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Non-Fiction",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "In Other Worlds: SF and the Human Imagination"
+    },
+    {
+      "authors": [
+        "Gary K. Wolfe"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Non-Fiction",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Sightings: Reviews 2002-2006"
+    },
+    {
+      "authors": [
+        "John Clute"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Non-Fiction",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Pardon This Intrusion: Fantastika in the World Storm"
+    },
+    {
+      "authors": [
+        "Rudy Rucker"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Non-Fiction",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Nested Scrolls: The Autobiography of Rudolf von Bitter Rucker"
+    },
+    {
+      "authors": [
+        "John Grant"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2012",
+      "category": "Non-Fiction",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2012"
+      },
+      "title": "Denying Science"
+    },
+    {
+      "authors": [
+        "William Gibson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Non-Fiction",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Distrust That Particular Flavor"
+    },
+    {
+      "authors": [
+        "Damien Broderick",
+        "Paul Di Filippo"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Non-Fiction",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Science Fiction: The 101 Best Novels 1985-2010"
+    },
+    {
+      "authors": [
+        "Neal Stephenson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Non-Fiction",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Some Remarks"
+    },
+    {
+      "authors": [
+        "Edward James",
+        "Farah Mendlesohn"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Non-Fiction",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "The Cambridge Companion to Fantasy Literature"
+    },
+    {
+      "authors": [
+        "Brian Aldiss"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Non-Fiction",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "An Exile on Planet Earth"
+    },
+    {
+      "authors": [
+        "Brit Mandelo"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Non-Fiction",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "We Wuz Pushed: On Joanna Russ and Radical Truth-Telling"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Non-Fiction",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "London Peculiar and Other Nonfiction"
+    },
+    {
+      "authors": [
+        "Michael Dirda"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Non-Fiction",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "On Conan Doyle"
+    },
+    {
+      "authors": [
+        "Sonya Andermahr",
+        "Lawrence Phillips"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Non-Fiction",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Angela Carter: New Critical Readings"
+    },
+    {
+      "authors": [
+        "Michael Saler"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Non-Fiction",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "As If: Modern Enchantment and the Literary Prehistory of Virtual Reality"
+    },
+    {
+      "authors": [
+        "John Cheng"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2013",
+      "category": "Non-Fiction",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2013"
+      },
+      "title": "Astounding Wonder: Imagining Science and Science Fiction in Interwar America"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Non-Fiction",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Wonderbook: The Illustrated Guide to Creating Imaginative Fiction"
+    },
+    {
+      "authors": [
+        "Rebecca J. Holden",
+        "Nisi Shawl"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Non-Fiction",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Strange Matings: Science Fiction, Feminism, African American Voices, and Octavia E. Butler"
+    },
+    {
+      "authors": [
+        "Stefan Ekman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Non-Fiction",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Here Be Dragons: Exploring Fantasy Maps and Settings"
+    },
+    {
+      "authors": [
+        "Ytasha L. Womack"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Non-Fiction",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Afrofuturism: The World of Black Sci-Fi and Fantasy Culture"
+    },
+    {
+      "authors": [
+        "Fred Nadis"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Non-Fiction",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "The Man from Mars: Ray Palmer's Amazing Pulp Journey"
+    },
+    {
+      "authors": [
+        "Robert H. Waugh"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Non-Fiction",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Lovecraft and Influence: His Predecessors and Successors"
+    },
+    {
+      "authors": [
+        "Martyn Colebrook",
+        "Katharine Cox"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Non-Fiction",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "The Transgressive Iain Banks: Essays on a Writer Beyond Borders"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Non-Fiction",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "The Riddles of the Hobbit"
+    },
+    {
+      "authors": [
+        "Algis Budrys"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Non-Fiction",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Benchmarks Revisited"
+    },
+    {
+      "authors": [
+        "Brian Attebery",
+        "Veronica Hollinger"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Non-Fiction",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Parabolas of Science Fiction"
+    },
+    {
+      "authors": [
+        "Algis Budrys"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Non-Fiction",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Benchmarks Concluded"
+    },
+    {
+      "authors": [
+        "Bud Webster"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2014",
+      "category": "Non-Fiction",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2014"
+      },
+      "title": "Past Masters and Other Bookish Natterings"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Non-Fiction",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "What Makes This Book So Great"
+    },
+    {
+      "authors": [
+        "Jill Lepore"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Non-Fiction",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "The Secret History of Wonder Woman"
+    },
+    {
+      "authors": [
+        "William H. Patterson, Jr"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Non-Fiction",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Robert A. Heinlein: In Dialogue with His Century, Volume 2: 1948-1988: The Man Who Learned Better"
+    },
+    {
+      "authors": [
+        "Jonathan R. Eller"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Non-Fiction",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Ray Bradbury Unbound"
+    },
+    {
+      "authors": [
+        "Harry Harrison"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Non-Fiction",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Harry Harrison! Harry Harrison!"
+    },
+    {
+      "authors": [
+        "Karen Burnham"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Non-Fiction",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Greg Egan"
+    },
+    {
+      "authors": [
+        "John Clute"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Non-Fiction",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Stay"
+    },
+    {
+      "authors": [
+        "Rob Latham"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Non-Fiction",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "The Oxford Handbook of Science Fiction"
+    },
+    {
+      "authors": [
+        "Thomas D. Clareson",
+        "Joe Sanders"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Non-Fiction",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "The Heritage of Heinlein: A Critical Reading of the Fiction"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Non-Fiction",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Sibilant Fricative: Essays & Reviews"
+    },
+    {
+      "authors": [
+        "Arthur B. Evans"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Non-Fiction",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Vintage Visions: Essays on Early Science Fiction"
+    },
+    {
+      "authors": [
+        "Paul Kincaid"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2015",
+      "category": "Non-Fiction",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2015"
+      },
+      "title": "Call and Response"
+    },
+    {
+      "authors": [
+        "Alisa Krasnostein",
+        "Alexandra Pierce"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Non-Fiction",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "Letters to Tiptree"
+    },
+    {
+      "authors": [
+        "Simone Caroti"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Non-Fiction",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "The Culture Series of Iain M. Banks"
+    },
+    {
+      "authors": [
+        "David Seed"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Non-Fiction",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "Ray Bradbury"
+    },
+    {
+      "authors": [
+        "Edward James"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Non-Fiction",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "Lois McMaster Bujold"
+    },
+    {
+      "authors": [
+        "Michael R. Page"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2016",
+      "category": "Non-Fiction",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2016"
+      },
+      "title": "Frederik Pohl"
+    },
+    {
+      "authors": [
+        "Kameron Hurley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Non-Fiction",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "The Geek Feminist Revolution"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Non-Fiction",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Words Are My Matter: Writings about Life and Books, 2000-2016"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Non-Fiction",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "The View From the Cheap Seats"
+    },
+    {
+      "authors": [
+        "Ruth Franklin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Non-Fiction",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Shirley Jackson: A Rather Haunted Life"
+    },
+    {
+      "authors": [
+        "Gerry Canavan"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Non-Fiction",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Octavia E. Butler"
+    },
+    {
+      "authors": [
+        "Alvaro Zinos-Amaro"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Non-Fiction",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Traveler of Worlds: Conversations with Robert Silverberg"
+    },
+    {
+      "authors": [
+        "Mike Ashley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Non-Fiction",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Science Fiction Rebels: The Story of the Science-Fiction Magazines from 1981 to 1990"
+    },
+    {
+      "authors": [
+        "James Gleick"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Non-Fiction",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Time Travel: A History"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Non-Fiction",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "The History of Science Fiction: Second Edition"
+    },
+    {
+      "authors": [
+        "Andr\u00e9 M. Carrington"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2017",
+      "category": "Non-Fiction",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2017"
+      },
+      "title": "Speculative Blackness: The Future of Race in Science Fiction"
+    },
+    {
+      "authors": [
+        "Alexandra Pierce",
+        "Mimi Mondal"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Non-Fiction",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Luminescent Threads: Connections to Octavia E. Butler"
+    },
+    {
+      "authors": [
+        "Liz Bourke"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Non-Fiction",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Sleeping with Monsters: Readings and Reactions in Science Fiction and Fantasy"
+    },
+    {
+      "authors": [
+        "John Scalzi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Non-Fiction",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Don't Live for Your Obituary"
+    },
+    {
+      "authors": [
+        "Paul Kincaid"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Non-Fiction",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Iain M. Banks"
+    },
+    {
+      "authors": [
+        "Samuel R. Delany"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Non-Fiction",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "In Search of Silence: The Journals of Samuel R. Delany, Volume 1, 1957-1969"
+    },
+    {
+      "authors": [
+        "James Gunn"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Non-Fiction",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Star-Begotten: A Life Lived in Science Fiction"
+    },
+    {
+      "authors": [
+        "Nat Segaloff"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Non-Fiction",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "A Lit Fuse: The Provocative Life of Harlan Ellison"
+    },
+    {
+      "authors": [
+        "D. Harlan Wilson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Non-Fiction",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "J.G. Ballard"
+    },
+    {
+      "authors": [
+        "Edmund Gordon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Non-Fiction",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "The Invention of Angela Carter"
+    },
+    {
+      "authors": [
+        "Frank M. Robinson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2018",
+      "category": "Non-Fiction",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2018"
+      },
+      "title": "Not So Good a Gay Man"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin",
+        "David Naimon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Non-Fiction",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Ursula K. Le Guin: Conversations on Writing"
+    },
+    {
+      "authors": [
+        "Alec Nevala-Lee"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Non-Fiction",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Astounding: John W. Campbell, Isaac Asimov, Robert A. Heinlein, L. Ron Hubbard, and the Golden Age of Science Fiction"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Non-Fiction",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "An Informal History of the Hugos: A Personal Look Back at the Hugo Awards, 1953-2000"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Non-Fiction",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Dreams Must Explain Themselves: The Selected Non-Fiction of Ursula K. Le Guin"
+    },
+    {
+      "authors": [
+        "Catherine McIlwaine"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Non-Fiction",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Tolkien: Maker of Middle-earth"
+    },
+    {
+      "authors": [
+        "Michael Benson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Non-Fiction",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Space Odyssey: Stanley Kubrick, Arthur C. Clarke, and the Making of a Masterpiece"
+    },
+    {
+      "authors": [
+        "Gardner Dozois"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Non-Fiction",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Sense of Wonder: Short Fiction Reviews (2009-2017)"
+    },
+    {
+      "authors": [
+        "Benjamin J. Robertson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Non-Fiction",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "None of This Is Normal: The Fiction of Jeff VanderMeer"
+    },
+    {
+      "authors": [
+        "Alexis Lothian"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Non-Fiction",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Old Futures: Speculative Fiction and Queer Possibility"
+    },
+    {
+      "authors": [
+        "Jason Heller"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2019",
+      "category": "Non-Fiction",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2019"
+      },
+      "title": "Strange Stars"
+    },
+    {
+      "authors": [
+        "Lisa Kr\u00f6ger",
+        "Melanie R. Anderson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Non-Fiction",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Monster, She Wrote: The Women Who Pioneered Horror and Speculative Fiction"
+    },
+    {
+      "authors": [
+        "Mallory O'Meara"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Non-Fiction",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "The Lady from the Black Lagoon: Hollywood Monsters and the Lost Legacy of Milicent Patrick"
+    },
+    {
+      "authors": [
+        "Farah Mendlesohn"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Non-Fiction",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "The Pleasant Profession of Robert A. Heinlein"
+    },
+    {
+      "authors": [
+        "Gwyneth Jones"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Non-Fiction",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Joanna Russ"
+    },
+    {
+      "authors": [
+        "Desirina Boskovich"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Non-Fiction",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Lost Transmissions: The Secret History of Science Fiction"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Non-Fiction",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Broken Places & Outer Spaces: Finding Creativity in the Unexpected"
+    },
+    {
+      "authors": [
+        "Robert Markley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Non-Fiction",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Kim Stanley Robinson"
+    },
+    {
+      "authors": [
+        "John Crowley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Non-Fiction",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "Reading Backwards: Essays and Reviews, 2005-2018"
+    },
+    {
+      "authors": [
+        "Damien Broderick"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Non-Fiction",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "The Time Machine Hypothesis: Extreme Science Meets Science Fiction"
+    },
+    {
+      "authors": [
+        "Adam Roberts"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2020",
+      "category": "Non-Fiction",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2020"
+      },
+      "title": "HG Wells: A Literary Life"
+    },
+    {
+      "authors": [
+        "Marc Burrows"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Non-Fiction",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "The Magic of Terry Pratchett"
+    },
+    {
+      "authors": [
+        "Isiah Lavender III",
+        "Lisa Yaszek"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Non-Fiction",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Literary Afrofuturism in the Twenty-First Century"
+    },
+    {
+      "authors": [
+        "Katherine E. Bishop",
+        "David Higgins",
+        "Jerry M\u00e4\u00e4tt\u00e4"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Non-Fiction",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Plants in Science Fiction: Speculative Vegetation"
+    },
+    {
+      "authors": [
+        "Kerry Fine",
+        "Michael K. Johnson",
+        "Rebecca M. Lush",
+        "Sara L. Spurgeon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Non-Fiction",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Weird Westerns: Race, Gender, Genre"
+    },
+    {
+      "authors": [
+        "David Ritter",
+        "Daniel Ritter"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Non-Fiction",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "The Visual History of Science Fiction Fandom, Volume One: The 1930's"
+    },
+    {
+      "authors": [
+        "Sarah Cole"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Non-Fiction",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Inventing Tomorrow: H.G. Wells and the Twentieth Century"
+    },
+    {
+      "authors": [
+        "Andrew Milner",
+        "J. R. Burgmann"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Non-Fiction",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Science Fiction and Climate Change: A Sociological Approach"
+    },
+    {
+      "authors": [
+        "Walter Koenig"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Non-Fiction",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Beaming Up and Getting Off: Life Before and Beyond Star Trek"
+    },
+    {
+      "authors": [
+        "Jonathan R. Eller"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Non-Fiction",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Bradbury Beyond Apollo"
+    },
+    {
+      "authors": [
+        "Maria Sachiko Cecire"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2021",
+      "category": "Non-Fiction",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2021"
+      },
+      "title": "Re-Enchanted: The Rise of Children's Fantasy Literature in the Twentieth Century"
+    },
+    {
+      "authors": [
+        "Andrew Nette",
+        "Iain McIntyre"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Non-Fiction",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Dangerous Visions and New Worlds: Radical Science Fiction, 1950 to 1985"
+    },
+    {
+      "authors": [
+        "F. Brett Cox"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Non-Fiction",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Roger Zelazny"
+    },
+    {
+      "authors": [
+        "Valerie Estelle Frankel"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Non-Fiction",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Jewish Science Fiction and Fantasy Through 1945: Immigrants in the Golden Age"
+    },
+    {
+      "authors": [
+        "Joy Sanchez-Taylor"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Non-Fiction",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Diverse Futures: Science Fiction and Authors of Color"
+    },
+    {
+      "authors": [
+        "Roger Luckhurst"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Non-Fiction",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Gothic: An Illustrated History"
+    },
+    {
+      "authors": [
+        "Hua Li"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Non-Fiction",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Chinese Science Fiction during the Post-Mao Cultural Thaw"
+    },
+    {
+      "authors": [
+        "Mike Ashley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Non-Fiction",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "Yesterday's Tomorrows"
+    },
+    {
+      "authors": [
+        "Claire Tomalin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Non-Fiction",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "The Young H.G. Wells: Changing the World"
+    },
+    {
+      "authors": [
+        "Thomas Connolly"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Non-Fiction",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "After Human: A Critical History of the Human in Science Fiction from Shelley to Le Guin"
+    },
+    {
+      "authors": [
+        "Angela Slatter"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2022",
+      "category": "Non-Fiction",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2022"
+      },
+      "title": "You Are Not Your Writing & Other Sage Advice"
+    },
+    {
+      "authors": [
+        "Rob Wilkins"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Terry Pratchett: A Life With Footnotes: The Official Biography"
+    },
+    {
+      "authors": [
+        "Mike Ashley"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "The Rise of the Cyberzines: The Story of the Science-Fiction Magazines from 1991 to 2020"
+    },
+    {
+      "authors": [
+        "Brian Attebery"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Fantasy: How It Works"
+    },
+    {
+      "authors": [
+        "Scott Darieck"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Keeping It Unreal: Black Queer Fantasy and Superhero Comics"
+    },
+    {
+      "authors": [
+        "Bev Vincent"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Stephen King: A Complete Exploration of His Work, Life, and Influences"
+    },
+    {
+      "authors": [
+        "Ritch Calvin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Queering SF: Readings"
+    },
+    {
+      "authors": [
+        "David Ritter",
+        "Daniel Ritter"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "The Visual History of Science Fiction Fandom, Volume Two: 1940"
+    },
+    {
+      "authors": [
+        "Oghenechovwe Donald Ekpeki"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Bridging Worlds: Global Conversations on Creating Pan-African Speculative Literature in a Pandemic"
+    },
+    {
+      "authors": [
+        "Eugen Bacon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "An Earnest Blackness"
+    },
+    {
+      "authors": [
+        "Elizabeth Carmel Hamilton"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2023",
+      "category": "Non-Fiction",
+      "position": "2023.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2023"
+      },
+      "title": "Charting the Afrofuturist Imaginary in African American Art: The Black Female Fantastic"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Non-Fiction",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Space Crone"
+    },
+    {
+      "authors": [
+        "Sadie Hartmann"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Non-Fiction",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "101 Horror Books to Read Before You're Murdered"
+    },
+    {
+      "authors": [
+        "Kevin Jon Davies"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Non-Fiction",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "42: The Wildly Improbable Ideas of Douglas Adams"
+    },
+    {
+      "authors": [
+        "Maureen Kincaid Speller"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Non-Fiction",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "A Traveller in Time: The Critical Practice of Maureen Kincaid Speller"
+    },
+    {
+      "authors": [
+        "Chinelo Onwualu"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Non-Fiction",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Ex Marginalia: Essays on Writing Speculative Fiction by Persons of Color"
+    },
+    {
+      "authors": [
+        "Alvaro Zinos-Amaro"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Non-Fiction",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Being Michael Swanwick"
+    },
+    {
+      "authors": [
+        "M. John Harrison"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Non-Fiction",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Wish I Was Here: An Anti-Memoir"
+    },
+    {
+      "authors": [
+        "Niall Harrison"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Non-Fiction",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "All These Worlds"
+    },
+    {
+      "authors": [
+        "Jack Dann"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Non-Fiction",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "The Fiction Writer's Guide to Alternate History"
+    },
+    {
+      "authors": [
+        "Robert Charles Wilson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2024",
+      "category": "Non-Fiction",
+      "position": "2024.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2024"
+      },
+      "title": "Owning the Unknown: A Science Fiction Writer Explores Atheism, Agnosticism, and the Idea of God"
+    },
+    {
+      "authors": [
+        "Eugen Bacon"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Non-Fiction",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Afro-Centered Futurisms in Our Speculative Fiction"
+    },
+    {
+      "authors": [
+        "Jordan S. Carroll"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Non-Fiction",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Speculative Whiteness: Science Fiction and the Alt-Right"
+    },
+    {
+      "authors": [
+        "Jon Greenaway"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Non-Fiction",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Capitalism: A Horror Story"
+    },
+    {
+      "authors": [
+        "Nana Visitor"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Non-Fiction",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Star Trek: Open a Channel"
+    },
+    {
+      "authors": [
+        "Abigail Nussbaum"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Non-Fiction",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Track Changes"
+    },
+    {
+      "authors": [
+        "Ken Liu"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Non-Fiction",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Laozi's Dao De Jing"
+    },
+    {
+      "authors": [
+        "Stefan Ekman"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Non-Fiction",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "Urban Fantasy: Exploring Modernity through Magic"
+    },
+    {
+      "authors": [
+        "John Clute"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Non-Fiction",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "The Book Blinders"
+    },
+    {
+      "authors": [
+        "Mark Bould",
+        "Steven Shaviro"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Non-Fiction",
+      "position": "2025.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "This Is Not a Science Fiction Textbook"
+    },
+    {
+      "authors": [
+        "Holly Swinyard"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2025",
+      "category": "Non-Fiction",
+      "position": "2025.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2025"
+      },
+      "title": "A History of Fans and Fandom"
+    },
+    {
+      "authors": [
+        "Cory Doctorow"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Non-Fiction",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Enshittification"
+    },
+    {
+      "authors": [
+        "Susana M. Morris"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Non-Fiction",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Positive Obsession: The Life and Times of Octavia E. Butler"
+    },
+    {
+      "authors": [
+        "Terry Bisson"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Non-Fiction",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "The Outspoken and the Incendiary"
+    },
+    {
+      "authors": [
+        "Chi-ming Yang"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Non-Fiction",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Octavia E. Butler: H Is for Horse"
+    },
+    {
+      "authors": [
+        "Becky Siegel Spratford"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Non-Fiction",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Why I Love Horror: Essays on Horror Literature"
+    },
+    {
+      "authors": [
+        "Richard Wolinsky"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Non-Fiction",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Space Ships! Ray Guns! Martian Octopods!: Interviews with Science Fiction Legends"
+    },
+    {
+      "authors": [
+        "Tavia Nyong'o"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Non-Fiction",
+      "position": "2026.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Black Apocalypse: Afrofuturism at the End of the World"
+    },
+    {
+      "authors": [
+        "Henry Lien"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Non-Fiction",
+      "position": "2026.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Spring, Summer, Asteroid, Bird: The Art of Eastern Storytelling"
+    },
+    {
+      "authors": [
+        "Tochi Onyebuchi"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Non-Fiction",
+      "position": "2026.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Racebook: A Personal History of the Internet"
+    },
+    {
+      "authors": [
+        "Paul Kincaid"
+      ],
+      "award": "Locus Poll Award",
+      "award_year": "2026",
+      "category": "Non-Fiction",
+      "position": "2026.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Locus_Awards_2026"
+      },
+      "title": "Colourfields"
+    }
+  ],
+  "fetched_at": "2026-07-23T07:56:08Z",
+  "list_id": "locus_annual_nonfiction",
+  "list_name": "Locus - Annual Non-Fiction",
+  "match_series": false,
+  "notes": [],
+  "parser": "locus_annual_nonfiction",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Locus - Annual Non-Fiction",
+    "source_id": "locus_annual_nonfiction",
+    "url": "https://www.sfadb.com/Locus_Awards"
+  }
+}

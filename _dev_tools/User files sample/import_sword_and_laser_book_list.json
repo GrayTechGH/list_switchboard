@@ -1,8 +1,8 @@
 {
   "append_state": {
-    "entry_count": 408,
-    "last_entry_key": "a midnight pastry shop called hwawoldang|lee onhwa",
-    "last_position": "205",
+    "entry_count": 412,
+    "last_entry_key": "the stardust grail|yume kitasei",
+    "last_position": "209",
     "source_revision": null
   },
   "entries": [
@@ -4327,16 +4327,65 @@
         "url": "https://swordandlaser.fandom.com/wiki/A_Midnight_Pastry_Shop_Called_Hwawoldang"
       },
       "title": "A Midnight Pastry Shop Called Hwawoldang"
+    },
+    {
+      "authors": [
+        "Ilona Andrews"
+      ],
+      "position": "206",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://swordandlaser.fandom.com/wiki/This_Kingdom_Will_Not_Kill_Me"
+      },
+      "title": "This Kingdom Will Not Kill Me"
+    },
+    {
+      "authors": [
+        "Silvia Park"
+      ],
+      "position": "207",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://swordandlaser.fandom.com/wiki/Luminous"
+      },
+      "title": "Luminous"
+    },
+    {
+      "authors": [
+        "Brom"
+      ],
+      "position": "208",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://swordandlaser.fandom.com/wiki/Slewfoot_A_Tale_of_Bewitchery"
+      },
+      "title": "Slewfoot: A Tale of Bewitchery"
+    },
+    {
+      "authors": [
+        "Yume Kitasei"
+      ],
+      "position": "209",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://swordandlaser.fandom.com/wiki/The_Stardust_Grail"
+      },
+      "title": "The Stardust Grail"
     }
   ],
-  "fetched_at": "2026-07-15T05:17:42Z",
+  "fetched_at": "2026-11-08T19:26:47Z",
   "list_id": "sword_and_laser_book_list",
   "list_name": "Sword and Laser",
   "match_series": false,
   "notes": [
-    "March Madness checked 215 of 215 linked pages; found 453 nomination entries; added 193 new recipe entries; skipped 260 duplicate entries."
+    "March Madness was enabled, but no linked Sword & Laser book pages were available from 412 main entries."
   ],
   "parser": "sword_and_laser_book_list",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Sword and Laser",

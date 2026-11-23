@@ -1,6 +1,6 @@
 {
   "append_state": {
-    "entry_count": 366,
+    "entry_count": 364,
     "last_entry_key": "presumed guilty|scott turow",
     "last_position": "2026.06",
     "source_revision": null
@@ -15,11 +15,6 @@
       "category": "Best Novel",
       "position": "1954",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "Beat Not the Bones"
     },
     {
@@ -31,11 +26,6 @@
       "category": "Best Novel",
       "position": "1955",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Long Goodbye"
     },
     {
@@ -47,11 +37,6 @@
       "category": "Best Novel",
       "position": "1956",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "Beast in View"
     },
     {
@@ -63,11 +48,6 @@
       "category": "Best Novel",
       "position": "1956.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Case of the Talking Bug"
     },
     {
@@ -79,11 +59,6 @@
       "category": "Best Novel",
       "position": "1956.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Talented Mr. Ripley"
     },
     {
@@ -95,11 +70,6 @@
       "category": "Best Novel",
       "position": "1957",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "A Dram of Poison"
     },
     {
@@ -111,11 +81,6 @@
       "category": "Best Novel",
       "position": "1957.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Man Who Didn't Fly"
     },
     {
@@ -127,43 +92,17 @@
       "category": "Best Novel",
       "position": "1958",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "Room to Swing"
     },
     {
       "authors": [
-        "Arthur Upfield"
+        "Bill S. Ballinger"
       ],
       "award": "Edgar Award",
       "award_year": "1958",
       "category": "Best Novel",
       "position": "1958.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Bushman Who Came Back"
-    },
-    {
-      "authors": [
-        "Bill Ballinger"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1958",
-      "category": "Best Novel",
-      "position": "1958.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Longest Second"
     },
     {
@@ -173,14 +112,20 @@
       "award": "Edgar Award",
       "award_year": "1958",
       "category": "Best Novel",
+      "position": "1958.02",
+      "result": "nominee",
+      "title": "The Night of the Good Children"
+    },
+    {
+      "authors": [
+        "Arthur Upfield"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1958",
+      "category": "Best Novel",
       "position": "1958.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Night of the Good Children"
+      "title": "Bony Buys a Woman"
     },
     {
       "authors": [
@@ -191,28 +136,7 @@
       "category": "Best Novel",
       "position": "1959",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Eighth Circle"
-    },
-    {
-      "authors": [
-        "Dorothy Salisbury Davis"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1959",
-      "category": "Best Novel",
-      "position": "1959.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "A Gentleman Called"
     },
     {
       "authors": [
@@ -221,30 +145,31 @@
       "award": "Edgar Award",
       "award_year": "1959",
       "category": "Best Novel",
-      "position": "1959.02",
+      "position": "1959.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Madhouse in Washington Square"
     },
     {
       "authors": [
-        "Lee Blackstock"
+        "Charity Blackstock"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1959",
+      "category": "Best Novel",
+      "position": "1959.02",
+      "result": "nominee",
+      "title": "The Woman in the Woods"
+    },
+    {
+      "authors": [
+        "Dorothy Salisbury Davis"
       ],
       "award": "Edgar Award",
       "award_year": "1959",
       "category": "Best Novel",
       "position": "1959.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Woman in the Woods"
+      "title": "A Gentleman Called"
     },
     {
       "authors": [
@@ -255,11 +180,6 @@
       "category": "Best Novel",
       "position": "1960",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Hours Before Dawn"
     },
     {
@@ -271,11 +191,6 @@
       "category": "Best Novel",
       "position": "1960.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The List of Adrian Messenger"
     },
     {
@@ -287,28 +202,7 @@
       "category": "Best Novel",
       "position": "1961",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Progress of a Crime"
-    },
-    {
-      "authors": [
-        "Peter Curtis"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1961",
-      "category": "Best Novel",
-      "position": "1961.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Devil's Own"
     },
     {
       "authors": [
@@ -317,14 +211,20 @@
       "award": "Edgar Award",
       "award_year": "1961",
       "category": "Best Novel",
+      "position": "1961.01",
+      "result": "nominee",
+      "title": "The Traces of Brillhart"
+    },
+    {
+      "authors": [
+        "Peter Curtis"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1961",
+      "category": "Best Novel",
       "position": "1961.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Traces of Brillhart"
+      "title": "The Little Wax Doll"
     },
     {
       "authors": [
@@ -335,60 +235,18 @@
       "category": "Best Novel",
       "position": "1961.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "Watcher in the Shadows"
     },
     {
       "authors": [
-        "J.J. Marric"
+        "J. J. Marric"
       ],
       "award": "Edgar Award",
       "award_year": "1962",
       "category": "Best Novel",
       "position": "1962",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "Gideon's Fire"
-    },
-    {
-      "authors": [
-        "Lionel Davidson"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1962",
-      "category": "Best Novel",
-      "position": "1962.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "Night of Wenceslas"
-    },
-    {
-      "authors": [
-        "Anne Blaisdell"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1962",
-      "category": "Best Novel",
-      "position": "1962.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "Nightmare"
     },
     {
       "authors": [
@@ -397,14 +255,31 @@
       "award": "Edgar Award",
       "award_year": "1962",
       "category": "Best Novel",
+      "position": "1962.01",
+      "result": "nominee",
+      "title": "The Green Stone"
+    },
+    {
+      "authors": [
+        "Lionel Davidson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1962",
+      "category": "Best Novel",
+      "position": "1962.02",
+      "result": "nominee",
+      "title": "The Night of Wenceslas"
+    },
+    {
+      "authors": [
+        "Lesley Egan"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1962",
+      "category": "Best Novel",
       "position": "1962.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Green Stone"
+      "title": "Nightmare"
     },
     {
       "authors": [
@@ -415,11 +290,6 @@
       "category": "Best Novel",
       "position": "1962.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Wycherly Woman"
     },
     {
@@ -431,28 +301,18 @@
       "category": "Best Novel",
       "position": "1963",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "Death and the Joyful Woman"
     },
     {
       "authors": [
-        "Dell Shannon"
+        "Ross Macdonald"
       ],
       "award": "Edgar Award",
       "award_year": "1963",
       "category": "Best Novel",
       "position": "1963.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "Knave of Hearts"
+      "title": "The Zebra-Striped Hearse"
     },
     {
       "authors": [
@@ -463,28 +323,7 @@
       "category": "Best Novel",
       "position": "1963.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "Seance"
-    },
-    {
-      "authors": [
-        "Shelley Smith"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1963",
-      "category": "Best Novel",
-      "position": "1963.03",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Ballad of the Running Man"
+      "title": "Seance on a Wet Afternoon"
     },
     {
       "authors": [
@@ -493,30 +332,31 @@
       "award": "Edgar Award",
       "award_year": "1963",
       "category": "Best Novel",
-      "position": "1963.04",
+      "position": "1963.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Evil Wish"
     },
     {
       "authors": [
-        "Ross Macdonald"
+        "Elizabeth Linington"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1963",
+      "category": "Best Novel",
+      "position": "1963.04",
+      "result": "nominee",
+      "title": "Knave of Hearts"
+    },
+    {
+      "authors": [
+        "Shelley Smith"
       ],
       "award": "Edgar Award",
       "award_year": "1963",
       "category": "Best Novel",
       "position": "1963.05",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Zebra-Striped Hearse"
+      "title": "The Ballad of the Running Man"
     },
     {
       "authors": [
@@ -527,44 +367,7 @@
       "category": "Best Novel",
       "position": "1964",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Light of Day"
-    },
-    {
-      "authors": [
-        "Stanton Forbes"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1964",
-      "category": "Best Novel",
-      "position": "1964.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "Grieve for the Past"
-    },
-    {
-      "authors": [
-        "Dorothy B. Hughes"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1964",
-      "category": "Best Novel",
-      "position": "1964.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Expendable Man"
     },
     {
       "authors": [
@@ -573,14 +376,31 @@
       "award": "Edgar Award",
       "award_year": "1964",
       "category": "Best Novel",
+      "position": "1964.01",
+      "result": "nominee",
+      "title": "The Make-Believe Man"
+    },
+    {
+      "authors": [
+        "Tobias Wells"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1964",
+      "category": "Best Novel",
+      "position": "1964.02",
+      "result": "nominee",
+      "title": "Grieve for the past"
+    },
+    {
+      "authors": [
+        "Dorothy B. Hughes"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1964",
+      "category": "Best Novel",
       "position": "1964.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Make-Believe Man"
+      "title": "The Expendable Man"
     },
     {
       "authors": [
@@ -591,44 +411,18 @@
       "category": "Best Novel",
       "position": "1964.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Player on the Other Side"
     },
     {
       "authors": [
-        "John le Carre"
+        "John le Carr\u00e9"
       ],
       "award": "Edgar Award",
       "award_year": "1965",
       "category": "Best Novel",
       "position": "1965",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Spy Who Came in from the Cold"
-    },
-    {
-      "authors": [
-        "Margaret Millar"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1965",
-      "category": "Best Novel",
-      "position": "1965.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Fiend"
     },
     {
       "authors": [
@@ -637,14 +431,20 @@
       "award": "Edgar Award",
       "award_year": "1965",
       "category": "Best Novel",
+      "position": "1965.01",
+      "result": "nominee",
+      "title": "The Night of the Generals"
+    },
+    {
+      "authors": [
+        "Margaret Millar"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1965",
+      "category": "Best Novel",
       "position": "1965.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Night of the Generals"
+      "title": "The Fiend"
     },
     {
       "authors": [
@@ -655,11 +455,6 @@
       "category": "Best Novel",
       "position": "1965.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "This Rough Magic"
     },
     {
@@ -671,28 +466,18 @@
       "category": "Best Novel",
       "position": "1966",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Quiller Memorandum"
     },
     {
       "authors": [
-        "Mary Stewart"
+        "Dorothy Salisbury Davis"
       ],
       "award": "Edgar Award",
       "award_year": "1966",
       "category": "Best Novel",
       "position": "1966.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "Airs Above the Ground"
+      "title": "The Pale Betrayer"
     },
     {
       "authors": [
@@ -703,12 +488,18 @@
       "category": "Best Novel",
       "position": "1966.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "Funeral in Berlin"
+    },
+    {
+      "authors": [
+        "H. R. F. Keating"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1966",
+      "category": "Best Novel",
+      "position": "1966.03",
+      "result": "nominee",
+      "title": "The Perfect Murder"
     },
     {
       "authors": [
@@ -717,46 +508,20 @@
       "award": "Edgar Award",
       "award_year": "1966",
       "category": "Best Novel",
-      "position": "1966.03",
+      "position": "1966.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Far Side of the Dollar"
     },
     {
       "authors": [
-        "Dorothy Salisbury Davis"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1966",
-      "category": "Best Novel",
-      "position": "1966.04",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Pale Betrayer"
-    },
-    {
-      "authors": [
-        "H.R.F. Keating"
+        "Mary Stewart"
       ],
       "award": "Edgar Award",
       "award_year": "1966",
       "category": "Best Novel",
       "position": "1966.05",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Perfect Murder"
+      "title": "Airs Above the Ground"
     },
     {
       "authors": [
@@ -767,28 +532,7 @@
       "category": "Best Novel",
       "position": "1967",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The King of the Rainy Country"
-    },
-    {
-      "authors": [
-        "Ngaio Marsh"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1967",
-      "category": "Best Novel",
-      "position": "1967.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "Killer Dolphin"
     },
     {
       "authors": [
@@ -797,14 +541,20 @@
       "award": "Edgar Award",
       "award_year": "1967",
       "category": "Best Novel",
+      "position": "1967.01",
+      "result": "nominee",
+      "title": "Odds Against"
+    },
+    {
+      "authors": [
+        "Ngaio Marsh"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1967",
+      "category": "Best Novel",
       "position": "1967.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "Odds Against"
+      "title": "Killer Dolphin"
     },
     {
       "authors": [
@@ -815,11 +565,6 @@
       "category": "Best Novel",
       "position": "1967.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "The Busy Body"
     },
     {
@@ -831,12 +576,29 @@
       "category": "Best Novel",
       "position": "1968",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "God Save the Mark"
+    },
+    {
+      "authors": [
+        "Charlotte Armstrong"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1968",
+      "category": "Best Novel",
+      "position": "1968.01",
+      "result": "nominee",
+      "title": "The Gift Shop"
+    },
+    {
+      "authors": [
+        "Charlotte Armstrong"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1968",
+      "category": "Best Novel",
+      "position": "1968.02",
+      "result": "nominee",
+      "title": "Lemon in the Basket"
     },
     {
       "authors": [
@@ -845,14 +607,9 @@
       "award": "Edgar Award",
       "award_year": "1968",
       "category": "Best Novel",
-      "position": "1968.01",
+      "position": "1968.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "A Parade of Cockeyed Creatures"
+      "title": "A Parade of Cockeyed Creatures, or Did Someone Murder Our Wandering Boy?"
     },
     {
       "authors": [
@@ -861,30 +618,9 @@
       "award": "Edgar Award",
       "award_year": "1968",
       "category": "Best Novel",
-      "position": "1968.02",
+      "position": "1968.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "Flying Finish"
-    },
-    {
-      "authors": [
-        "Charlotte Armstrong"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1968",
-      "category": "Best Novel",
-      "position": "1968.03",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "Lemon in the Basket"
     },
     {
       "authors": [
@@ -893,95 +629,20 @@
       "award": "Edgar Award",
       "award_year": "1968",
       "category": "Best Novel",
-      "position": "1968.04",
+      "position": "1968.05",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "Rosemary's Baby"
     },
     {
       "authors": [
-        "Charlotte Armstrong"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1968",
-      "category": "Best Novel",
-      "position": "1968.05",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Gift Shop"
-    },
-    {
-      "authors": [
-        "Jeffery Hudson"
+        "Michael Crichton"
       ],
       "award": "Edgar Award",
       "award_year": "1969",
       "category": "Best Novel",
       "position": "1969",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "A Case of Need"
-    },
-    {
-      "authors": [
-        "Peter Dickinson"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1969",
-      "category": "Best Novel",
-      "position": "1969.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "A Glass-Sided Ants' Nest"
-    },
-    {
-      "authors": [
-        "Dick Francis"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1969",
-      "category": "Best Novel",
-      "position": "1969.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "Blood Sport"
-    },
-    {
-      "authors": [
-        "Dorothy Salisbury Davis",
-        "Jerome Ross"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1969",
-      "category": "Best Novel",
-      "position": "1969.03",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "God Speed the Night"
     },
     {
       "authors": [
@@ -990,14 +651,31 @@
       "award": "Edgar Award",
       "award_year": "1969",
       "category": "Best Novel",
-      "position": "1969.04",
+      "position": "1969.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "Picture Miss Seeton"
+    },
+    {
+      "authors": [
+        "Dorothy Salisbury Davis"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1969",
+      "category": "Best Novel",
+      "position": "1969.02",
+      "result": "nominee",
+      "title": "God Speed the Night"
+    },
+    {
+      "authors": [
+        "Peter Dickinson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1969",
+      "category": "Best Novel",
+      "position": "1969.03",
+      "result": "nominee",
+      "title": "The Glass-Sided Ants' Nest"
     },
     {
       "authors": [
@@ -1006,14 +684,20 @@
       "award": "Edgar Award",
       "award_year": "1969",
       "category": "Best Novel",
+      "position": "1969.04",
+      "result": "nominee",
+      "title": "The Valentine Estate"
+    },
+    {
+      "authors": [
+        "Dick Francis"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1969",
+      "category": "Best Novel",
       "position": "1969.05",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Valentine Estate"
+      "title": "Blood Sport"
     },
     {
       "authors": [
@@ -1024,76 +708,7 @@
       "category": "Best Novel",
       "position": "1970",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Forfeit"
-    },
-    {
-      "authors": [
-        "Chester Himes"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1970",
-      "category": "Best Novel",
-      "position": "1970.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Blind Man with a Pistol"
-    },
-    {
-      "authors": [
-        "Shaun Herron"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1970",
-      "category": "Best Novel",
-      "position": "1970.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Miro"
-    },
-    {
-      "authors": [
-        "Peter Dickinson"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1970",
-      "category": "Best Novel",
-      "position": "1970.03",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "The Old English Peep Show"
-    },
-    {
-      "authors": [
-        "Emma Lathen"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1970",
-      "category": "Best Novel",
-      "position": "1970.04",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
-      "title": "When in Greece"
     },
     {
       "authors": [
@@ -1102,47 +717,75 @@
       "award": "Edgar Award",
       "award_year": "1970",
       "category": "Best Novel",
-      "position": "1970.05",
+      "position": "1970.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=4"
-      },
       "title": "Where the Dark Streets Go"
     },
     {
       "authors": [
-        "Maj Sjowall",
-        "Per Wahloo"
+        "Peter Dickinson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970.02",
+      "result": "nominee",
+      "title": "The Old English Peep Show"
+    },
+    {
+      "authors": [
+        "Shaun Herron"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970.03",
+      "result": "nominee",
+      "title": "Miro"
+    },
+    {
+      "authors": [
+        "Chester Himes"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970.04",
+      "result": "nominee",
+      "title": "Blind Man with a Pistol"
+    },
+    {
+      "authors": [
+        "Emma Lathen"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1970",
+      "category": "Best Novel",
+      "position": "1970.05",
+      "result": "nominee",
+      "title": "When in Greece"
+    },
+    {
+      "authors": [
+        "Maj Sj\u00f6wall"
       ],
       "award": "Edgar Award",
       "award_year": "1971",
       "category": "Best Novel",
       "position": "1971",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Laughing Policeman"
     },
     {
       "authors": [
-        "Pat Stadley"
+        "Shaun Herron"
       ],
       "award": "Edgar Award",
       "award_year": "1971",
       "category": "Best Novel",
       "position": "1971.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Autumn of a Hunter"
+      "title": "The Hound and the Fox and the Harper"
     },
     {
       "authors": [
@@ -1153,12 +796,7 @@
       "category": "Best Novel",
       "position": "1971.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Beyond this Point Are Monsters"
+      "title": "Beyond This Point Are Monsters"
     },
     {
       "authors": [
@@ -1169,12 +807,18 @@
       "category": "Best Novel",
       "position": "1971.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Many Deadly Returns"
+    },
+    {
+      "authors": [
+        "Pat Stadley"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1971",
+      "category": "Best Novel",
+      "position": "1971.04",
+      "result": "nominee",
+      "title": "Autumn of a hunter"
     },
     {
       "authors": [
@@ -1183,30 +827,9 @@
       "award": "Edgar Award",
       "award_year": "1971",
       "category": "Best Novel",
-      "position": "1971.04",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Hot Rock"
-    },
-    {
-      "authors": [
-        "Shaun Herron"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1971",
-      "category": "Best Novel",
       "position": "1971.05",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Hound and the Fox and the Harper"
+      "title": "The Hot Rock"
     },
     {
       "authors": [
@@ -1217,44 +840,7 @@
       "category": "Best Novel",
       "position": "1972",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Day of the Jackal"
-    },
-    {
-      "authors": [
-        "P.D. James"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1972",
-      "category": "Best Novel",
-      "position": "1972.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Shroud for a Nightingale"
-    },
-    {
-      "authors": [
-        "G.F. Newman"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1972",
-      "category": "Best Novel",
-      "position": "1972.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Sir, You Bastard"
     },
     {
       "authors": [
@@ -1263,14 +849,31 @@
       "award": "Edgar Award",
       "award_year": "1972",
       "category": "Best Novel",
+      "position": "1972.01",
+      "result": "nominee",
+      "title": "The Fly on the Wall"
+    },
+    {
+      "authors": [
+        "P. D. James"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1972",
+      "category": "Best Novel",
+      "position": "1972.02",
+      "result": "nominee",
+      "title": "Shroud for a Nightingale"
+    },
+    {
+      "authors": [
+        "G. F. Newman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1972",
+      "category": "Best Novel",
       "position": "1972.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Fly on the Wall"
+      "title": "Sir, You Bastard"
     },
     {
       "authors": [
@@ -1281,11 +884,6 @@
       "category": "Best Novel",
       "position": "1972.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Who Killed Enoch Powell?"
     },
     {
@@ -1297,44 +895,29 @@
       "category": "Best Novel",
       "position": "1973",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Lingala Code"
     },
     {
       "authors": [
-        "Martin Cruz Smith"
+        "John Dudley Ball"
       ],
       "award": "Edgar Award",
       "award_year": "1973",
       "category": "Best Novel",
       "position": "1973.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Canto for a Gypsy"
+      "title": "Five Pieces of Jade"
     },
     {
       "authors": [
-        "John Ball"
+        "Ngaio Marsh"
       ],
       "award": "Edgar Award",
       "award_year": "1973",
       "category": "Best Novel",
       "position": "1973.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Five Pieces of Jade"
+      "title": "Tied Up in Tinsel"
     },
     {
       "authors": [
@@ -1345,28 +928,18 @@
       "category": "Best Novel",
       "position": "1973.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Shooting Gallery"
+      "title": "The shooting gallery"
     },
     {
       "authors": [
-        "Ngaio Marsh"
+        "Martin Cruz Smith"
       ],
       "award": "Edgar Award",
       "award_year": "1973",
       "category": "Best Novel",
       "position": "1973.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Tied Up in Tinsel"
+      "title": "Canto for a Gypsy"
     },
     {
       "authors": [
@@ -1377,12 +950,18 @@
       "category": "Best Novel",
       "position": "1974",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Dance Hall of the Dead"
+    },
+    {
+      "authors": [
+        "Victor Canning"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1974",
+      "category": "Best Novel",
+      "position": "1974.01",
+      "result": "nominee",
+      "title": "The Rainbird Pattern"
     },
     {
       "authors": [
@@ -1391,29 +970,19 @@
       "award": "Edgar Award",
       "award_year": "1974",
       "category": "Best Novel",
-      "position": "1974.01",
+      "position": "1974.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Amigo, Amigo"
     },
     {
       "authors": [
-        "P.D. James"
+        "P. D. James"
       ],
       "award": "Edgar Award",
       "award_year": "1974",
       "category": "Best Novel",
-      "position": "1974.02",
+      "position": "1974.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "An Unsuitable Job for a Woman"
     },
     {
@@ -1423,30 +992,9 @@
       "award": "Edgar Award",
       "award_year": "1974",
       "category": "Best Novel",
-      "position": "1974.03",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Dear Laura"
-    },
-    {
-      "authors": [
-        "Victor Canning"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1974",
-      "category": "Best Novel",
       "position": "1974.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Rainbird Pattern"
+      "title": "Dear Laura"
     },
     {
       "authors": [
@@ -1457,44 +1005,7 @@
       "category": "Best Novel",
       "position": "1975",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Peter's Pence"
-    },
-    {
-      "authors": [
-        "Francis Clifford"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1975",
-      "category": "Best Novel",
-      "position": "1975.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Goodbye and Amen"
-    },
-    {
-      "authors": [
-        "Andrew Garve"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1975",
-      "category": "Best Novel",
-      "position": "1975.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Lester Affair"
     },
     {
       "authors": [
@@ -1503,30 +1014,42 @@
       "award": "Edgar Award",
       "award_year": "1975",
       "category": "Best Novel",
-      "position": "1975.03",
+      "position": "1975.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Man Who Loved Zoos"
     },
     {
       "authors": [
-        "Paul E. Erdman"
+        "Francis Clifford"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1975",
+      "category": "Best Novel",
+      "position": "1975.02",
+      "result": "nominee",
+      "title": "Good-bye and Amen"
+    },
+    {
+      "authors": [
+        "Paul Erdman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1975",
+      "category": "Best Novel",
+      "position": "1975.03",
+      "result": "nominee",
+      "title": "The Silver Bears"
+    },
+    {
+      "authors": [
+        "Andrew Garve"
       ],
       "award": "Edgar Award",
       "award_year": "1975",
       "category": "Best Novel",
       "position": "1975.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Silver Bears"
+      "title": "The Lester affair"
     },
     {
       "authors": [
@@ -1537,12 +1060,18 @@
       "category": "Best Novel",
       "position": "1976",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Hopscotch"
+    },
+    {
+      "authors": [
+        "Marvin H. Albert"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1976",
+      "category": "Best Novel",
+      "position": "1976.01",
+      "result": "nominee",
+      "title": "The Gargoyle Conspiracy"
     },
     {
       "authors": [
@@ -1551,46 +1080,9 @@
       "award": "Edgar Award",
       "award_year": "1976",
       "category": "Best Novel",
-      "position": "1976.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Harry's Game"
-    },
-    {
-      "authors": [
-        "Maggie Rennert"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1976",
-      "category": "Best Novel",
       "position": "1976.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Operation Alcestic"
-    },
-    {
-      "authors": [
-        "Marvin Albert"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1976",
-      "category": "Best Novel",
-      "position": "1976.03",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Gargoyle Conspiracy"
+      "title": "Harry's Game"
     },
     {
       "authors": [
@@ -1599,13 +1091,8 @@
       "award": "Edgar Award",
       "award_year": "1976",
       "category": "Best Novel",
-      "position": "1976.04",
+      "position": "1976.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Money Harvest"
     },
     {
@@ -1617,28 +1104,7 @@
       "category": "Best Novel",
       "position": "1977",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Promised Land"
-    },
-    {
-      "authors": [
-        "Richard Neely"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1977",
-      "category": "Best Novel",
-      "position": "1977.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "A Madness of the Heart"
     },
     {
       "authors": [
@@ -1647,14 +1113,20 @@
       "award": "Edgar Award",
       "award_year": "1977",
       "category": "Best Novel",
+      "position": "1977.01",
+      "result": "nominee",
+      "title": "The Cavanaugh Quest"
+    },
+    {
+      "authors": [
+        "Richard Neely"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1977",
+      "category": "Best Novel",
       "position": "1977.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Cavanaugh Quest"
+      "title": "Madness of the Heart"
     },
     {
       "authors": [
@@ -1665,11 +1137,6 @@
       "category": "Best Novel",
       "position": "1977.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Glory Boys"
     },
     {
@@ -1681,11 +1148,6 @@
       "category": "Best Novel",
       "position": "1977.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Main"
     },
     {
@@ -1697,12 +1159,7 @@
       "category": "Best Novel",
       "position": "1978",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Catch Me: Kill Me"
+      "title": "Catch Me : Kill Me"
     },
     {
       "authors": [
@@ -1713,11 +1170,6 @@
       "category": "Best Novel",
       "position": "1978.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Laidlaw"
     },
     {
@@ -1729,11 +1181,6 @@
       "category": "Best Novel",
       "position": "1978.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Nightwing"
     },
     {
@@ -1745,28 +1192,18 @@
       "category": "Best Novel",
       "position": "1979",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Eye of the Needle"
+      "title": "Eye of the Needle"
     },
     {
       "authors": [
-        "Ruth Rendell"
+        "John Godey"
       ],
       "award": "Edgar Award",
       "award_year": "1979",
       "category": "Best Novel",
       "position": "1979.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "A Sleeping Life"
+      "title": "The Snake"
     },
     {
       "authors": [
@@ -1777,12 +1214,18 @@
       "category": "Best Novel",
       "position": "1979.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Listening Woman"
+    },
+    {
+      "authors": [
+        "Ruth Rendell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1979",
+      "category": "Best Novel",
+      "position": "1979.03",
+      "result": "nominee",
+      "title": "A Sleeping Life"
     },
     {
       "authors": [
@@ -1791,30 +1234,9 @@
       "award": "Edgar Award",
       "award_year": "1979",
       "category": "Best Novel",
-      "position": "1979.03",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Shallow Grave"
-    },
-    {
-      "authors": [
-        "John Godey"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1979",
-      "category": "Best Novel",
       "position": "1979.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Snake"
+      "title": "The Shallow Grave"
     },
     {
       "authors": [
@@ -1825,28 +1247,7 @@
       "category": "Best Novel",
       "position": "1980",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Rheingold Route"
-    },
-    {
-      "authors": [
-        "C.P. Snow"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1980",
-      "category": "Best Novel",
-      "position": "1980.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "A Coat of Varnish"
     },
     {
       "authors": [
@@ -1855,29 +1256,19 @@
       "award": "Edgar Award",
       "award_year": "1980",
       "category": "Best Novel",
-      "position": "1980.02",
+      "position": "1980.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Death of a Mystery Writer"
     },
     {
       "authors": [
-        "Frank Parrish"
+        "Roger Longrigg"
       ],
       "award": "Edgar Award",
       "award_year": "1980",
       "category": "Best Novel",
-      "position": "1980.03",
+      "position": "1980.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Fire in the Barley"
     },
     {
@@ -1887,14 +1278,20 @@
       "award": "Edgar Award",
       "award_year": "1980",
       "category": "Best Novel",
+      "position": "1980.03",
+      "result": "nominee",
+      "title": "Make Death Love Me"
+    },
+    {
+      "authors": [
+        "C. P. Snow"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1980",
+      "category": "Best Novel",
       "position": "1980.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Make Death Love Me"
+      "title": "A Coat of Varnish"
     },
     {
       "authors": [
@@ -1905,28 +1302,7 @@
       "category": "Best Novel",
       "position": "1981",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Whip Hand"
-    },
-    {
-      "authors": [
-        "B.M. Gill"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1981",
-      "category": "Best Novel",
-      "position": "1981.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Death Drop"
     },
     {
       "authors": [
@@ -1935,30 +1311,20 @@
       "award": "Edgar Award",
       "award_year": "1981",
       "category": "Best Novel",
-      "position": "1981.02",
+      "position": "1981.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Death of a Literary Widow"
     },
     {
       "authors": [
-        "A.J. Quinnell"
+        "B. M. Gill"
       ],
       "award": "Edgar Award",
       "award_year": "1981",
       "category": "Best Novel",
-      "position": "1981.03",
+      "position": "1981.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Man on Fire"
+      "title": "Death Drop"
     },
     {
       "authors": [
@@ -1967,14 +1333,20 @@
       "award": "Edgar Award",
       "award_year": "1981",
       "category": "Best Novel",
+      "position": "1981.03",
+      "result": "nominee",
+      "title": "The Spy's Wife"
+    },
+    {
+      "authors": [
+        "A. J. Quinnell"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1981",
+      "category": "Best Novel",
       "position": "1981.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Spy's Wife"
+      "title": "Man on Fire"
     },
     {
       "authors": [
@@ -1985,28 +1357,18 @@
       "category": "Best Novel",
       "position": "1982",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Peregrine"
     },
     {
       "authors": [
-        "Patrick McGinley"
+        "Ted Allbeury"
       ],
       "award": "Edgar Award",
       "award_year": "1982",
       "category": "Best Novel",
       "position": "1982.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Bogmail"
+      "title": "The Other Side of Silence"
     },
     {
       "authors": [
@@ -2017,11 +1379,6 @@
       "category": "Best Novel",
       "position": "1982.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Death in a Cold Climate"
     },
     {
@@ -2033,11 +1390,6 @@
       "category": "Best Novel",
       "position": "1982.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Dupe"
     },
     {
@@ -2049,28 +1401,18 @@
       "category": "Best Novel",
       "position": "1982.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Amateur"
     },
     {
       "authors": [
-        "Ted Allbeury"
+        "Patrick McGinley"
       ],
       "award": "Edgar Award",
       "award_year": "1982",
       "category": "Best Novel",
       "position": "1982.05",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Other Side of Silence"
+      "title": "Bogmail"
     },
     {
       "authors": [
@@ -2081,11 +1423,6 @@
       "category": "Best Novel",
       "position": "1983",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Billingsgate Shoal"
     },
     {
@@ -2097,28 +1434,7 @@
       "category": "Best Novel",
       "position": "1983.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Eight Million Ways to Die"
-    },
-    {
-      "authors": [
-        "Donald E. Westlake"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1983",
-      "category": "Best Novel",
-      "position": "1983.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Kahawa"
     },
     {
       "authors": [
@@ -2127,13 +1443,8 @@
       "award": "Edgar Award",
       "award_year": "1983",
       "category": "Best Novel",
-      "position": "1983.03",
+      "position": "1983.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Split Images"
     },
     {
@@ -2143,14 +1454,20 @@
       "award": "Edgar Award",
       "award_year": "1983",
       "category": "Best Novel",
+      "position": "1983.03",
+      "result": "nominee",
+      "title": "The Captain"
+    },
+    {
+      "authors": [
+        "Donald E. Westlake"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1983",
+      "category": "Best Novel",
       "position": "1983.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Captain"
+      "title": "Kahawa"
     },
     {
       "authors": [
@@ -2161,44 +1478,7 @@
       "category": "Best Novel",
       "position": "1984",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "La Brava"
-    },
-    {
-      "authors": [
-        "Christopher Leach"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1984",
-      "category": "Best Novel",
-      "position": "1984.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Texas Station"
-    },
-    {
-      "authors": [
-        "John le Carre"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1984",
-      "category": "Best Novel",
-      "position": "1984.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Little Drummer Girl"
+      "title": "LaBrava"
     },
     {
       "authors": [
@@ -2207,14 +1487,31 @@
       "award": "Edgar Award",
       "award_year": "1984",
       "category": "Best Novel",
+      "position": "1984.01",
+      "result": "nominee",
+      "title": "The Name of the Rose"
+    },
+    {
+      "authors": [
+        "Christopher Leach"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1984",
+      "category": "Best Novel",
+      "position": "1984.02",
+      "result": "nominee",
+      "title": "Texas Station"
+    },
+    {
+      "authors": [
+        "John le Carr\u00e9"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1984",
+      "category": "Best Novel",
       "position": "1984.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Name of the Rose"
+      "title": "The Little Drummer Girl"
     },
     {
       "authors": [
@@ -2225,11 +1522,6 @@
       "category": "Best Novel",
       "position": "1984.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Papers of Tony Veitch"
     },
     {
@@ -2241,44 +1533,7 @@
       "category": "Best Novel",
       "position": "1985",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Briar Patch"
-    },
-    {
-      "authors": [
-        "William Pearson"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1985",
-      "category": "Best Novel",
-      "position": "1985.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Chessplayer"
-    },
-    {
-      "authors": [
-        "Jane Langton"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1985",
-      "category": "Best Novel",
-      "position": "1985.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Emily Dickinson is Dead"
+      "title": "Briarpatch"
     },
     {
       "authors": [
@@ -2287,46 +1542,64 @@
       "award": "Edgar Award",
       "award_year": "1985",
       "category": "Best Novel",
-      "position": "1985.03",
+      "position": "1985.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Black Seraphim"
     },
     {
       "authors": [
-        "B.M. Gill"
+        "B. M. Gill"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985.02",
+      "result": "nominee",
+      "title": "The Twelfth Juror"
+    },
+    {
+      "authors": [
+        "Jane Langton"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1985",
+      "category": "Best Novel",
+      "position": "1985.03",
+      "result": "nominee",
+      "title": "Emily Dickinson Is Dead"
+    },
+    {
+      "authors": [
+        "William Pearson"
       ],
       "award": "Edgar Award",
       "award_year": "1985",
       "category": "Best Novel",
       "position": "1985.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Twelfth Juror"
+      "title": "Chessplayer"
     },
     {
       "authors": [
-        "L.R. Wright"
+        "L. R. Wright"
       ],
       "award": "Edgar Award",
       "award_year": "1986",
       "category": "Best Novel",
       "position": "1986",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Suspect"
+    },
+    {
+      "authors": [
+        "Paul Auster"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1986",
+      "category": "Best Novel",
+      "position": "1986.01",
+      "result": "nominee",
+      "title": "City of Glass"
     },
     {
       "authors": [
@@ -2335,13 +1608,8 @@
       "award": "Edgar Award",
       "award_year": "1986",
       "category": "Best Novel",
-      "position": "1986.01",
+      "position": "1986.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "A Shock to the System"
     },
     {
@@ -2351,30 +1619,9 @@
       "award": "Edgar Award",
       "award_year": "1986",
       "category": "Best Novel",
-      "position": "1986.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "An Unkindness of Ravens"
-    },
-    {
-      "authors": [
-        "Paul Auster"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1986",
-      "category": "Best Novel",
       "position": "1986.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "City of Glass: The New York Trilogy, Part 1"
+      "title": "The Tree of Hands"
     },
     {
       "authors": [
@@ -2385,12 +1632,7 @@
       "category": "Best Novel",
       "position": "1986.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Tree of Hands"
+      "title": "An Unkindness of Ravens"
     },
     {
       "authors": [
@@ -2401,28 +1643,18 @@
       "category": "Best Novel",
       "position": "1987",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "A Dark-Adapted Eye"
     },
     {
       "authors": [
-        "P.D. James"
+        "Brian Freemantle"
       ],
       "award": "Edgar Award",
       "award_year": "1987",
       "category": "Best Novel",
       "position": "1987.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "A Taste Of Death"
+      "title": "The Blind Run"
     },
     {
       "authors": [
@@ -2433,28 +1665,18 @@
       "category": "Best Novel",
       "position": "1987.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Come Morning"
     },
     {
       "authors": [
-        "Brian Freemantle"
+        "P. D. James"
       ],
       "award": "Edgar Award",
       "award_year": "1987",
       "category": "Best Novel",
       "position": "1987.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "The Blind Run"
+      "title": "A Taste for Death"
     },
     {
       "authors": [
@@ -2465,11 +1687,6 @@
       "category": "Best Novel",
       "position": "1987.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Straight Man"
     },
     {
@@ -2481,11 +1698,6 @@
       "category": "Best Novel",
       "position": "1988",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Old Bones"
     },
     {
@@ -2497,27 +1709,17 @@
       "category": "Best Novel",
       "position": "1988.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "A Trouble of Fools"
     },
     {
       "authors": [
-        "B.M. Gill"
+        "B. M. Gill"
       ],
       "award": "Edgar Award",
       "award_year": "1988",
       "category": "Best Novel",
       "position": "1988.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Nursery Crimes"
     },
     {
@@ -2529,11 +1731,6 @@
       "category": "Best Novel",
       "position": "1988.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Rough Cider"
     },
     {
@@ -2545,11 +1742,6 @@
       "category": "Best Novel",
       "position": "1988.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Corpse in Oozak's Pond"
     },
     {
@@ -2561,59 +1753,17 @@
       "category": "Best Novel",
       "position": "1989",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "A Cold Red Sunrise"
     },
     {
       "authors": [
-        "Tony Hillerman"
+        "K. C. Constantine"
       ],
       "award": "Edgar Award",
       "award_year": "1989",
       "category": "Best Novel",
       "position": "1989.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "A Thief of Time"
-    },
-    {
-      "authors": [
-        "David L. Lindsey"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1989",
-      "category": "Best Novel",
-      "position": "1989.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "In the Lake of the Moon"
-    },
-    {
-      "authors": [
-        "K.C. Constantine"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1989",
-      "category": "Best Novel",
-      "position": "1989.03",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "Joey's Case"
     },
     {
@@ -2623,14 +1773,31 @@
       "award": "Edgar Award",
       "award_year": "1989",
       "category": "Best Novel",
+      "position": "1989.02",
+      "result": "nominee",
+      "title": "Sacrificial Ground"
+    },
+    {
+      "authors": [
+        "Tony Hillerman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best Novel",
+      "position": "1989.03",
+      "result": "nominee",
+      "title": "A Thief of Time"
+    },
+    {
+      "authors": [
+        "David L. Lindsey"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1989",
+      "category": "Best Novel",
       "position": "1989.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Sacrificial Ground"
+      "title": "In the Lake of the Moon"
     },
     {
       "authors": [
@@ -2641,12 +1808,18 @@
       "category": "Best Novel",
       "position": "1990",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Black Cherry Blues"
+    },
+    {
+      "authors": [
+        "Andrew Coburn"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1990",
+      "category": "Best Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "title": "Goldilocks"
     },
     {
       "authors": [
@@ -2655,13 +1828,8 @@
       "award": "Edgar Award",
       "award_year": "1990",
       "category": "Best Novel",
-      "position": "1990.01",
+      "position": "1990.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "A Question of Guilt"
     },
     {
@@ -2671,30 +1839,9 @@
       "award": "Edgar Award",
       "award_year": "1990",
       "category": "Best Novel",
-      "position": "1990.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Death of a Joyce Scholar"
-    },
-    {
-      "authors": [
-        "Andrew Coburn"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1990",
-      "category": "Best Novel",
       "position": "1990.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
-      "title": "Goldilocks"
+      "title": "The Death of A Joyce Scholar"
     },
     {
       "authors": [
@@ -2705,11 +1852,6 @@
       "category": "Best Novel",
       "position": "1990.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=3"
-      },
       "title": "The Booster"
     },
     {
@@ -2721,44 +1863,18 @@
       "category": "Best Novel",
       "position": "1991",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "New Orleans Mourning"
     },
     {
       "authors": [
-        "Reginald Hill"
+        "Robert Alexander"
       ],
       "award": "Edgar Award",
       "award_year": "1991",
       "category": "Best Novel",
       "position": "1991.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Bones and Silence"
-    },
-    {
-      "authors": [
-        "R.D. Zimmerman"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1991",
-      "category": "Best Novel",
-      "position": "1991.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Deadfall In Berlin"
+      "title": "Deadfall in Berlin"
     },
     {
       "authors": [
@@ -2767,30 +1883,31 @@
       "award": "Edgar Award",
       "award_year": "1991",
       "category": "Best Novel",
-      "position": "1991.03",
+      "position": "1991.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Fade the Heat"
     },
     {
       "authors": [
-        "Loren Estleman"
+        "Loren D. Estleman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1991",
+      "category": "Best Novel",
+      "position": "1991.03",
+      "result": "nominee",
+      "title": "Whiskey River"
+    },
+    {
+      "authors": [
+        "Reginald Hill"
       ],
       "award": "Edgar Award",
       "award_year": "1991",
       "category": "Best Novel",
       "position": "1991.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Whiskey River"
+      "title": "Bones and Silence"
     },
     {
       "authors": [
@@ -2801,11 +1918,6 @@
       "category": "Best Novel",
       "position": "1992",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "A Dance at the Slaughterhouse"
     },
     {
@@ -2817,12 +1929,18 @@
       "category": "Best Novel",
       "position": "1992.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Don't Say a Word"
+    },
+    {
+      "authors": [
+        "Lia Matera"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1992",
+      "category": "Best Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "title": "Prior Convictions"
     },
     {
       "authors": [
@@ -2831,13 +1949,8 @@
       "award": "Edgar Award",
       "award_year": "1992",
       "category": "Best Novel",
-      "position": "1992.02",
+      "position": "1992.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "I.O.U."
     },
     {
@@ -2847,30 +1960,9 @@
       "award": "Edgar Award",
       "award_year": "1992",
       "category": "Best Novel",
-      "position": "1992.03",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Palindrome"
-    },
-    {
-      "authors": [
-        "Lia Matera"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1992",
-      "category": "Best Novel",
       "position": "1992.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Prior Convictions"
+      "title": "Palindrome"
     },
     {
       "authors": [
@@ -2881,28 +1973,7 @@
       "category": "Best Novel",
       "position": "1993",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Bootlegger's Daughter"
-    },
-    {
-      "authors": [
-        "Joe Gores"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1993",
-      "category": "Best Novel",
-      "position": "1993.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "32 Cadillacs"
     },
     {
       "authors": [
@@ -2911,30 +1982,20 @@
       "award": "Edgar Award",
       "award_year": "1993",
       "category": "Best Novel",
-      "position": "1993.02",
+      "position": "1993.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Backhand"
     },
     {
       "authors": [
-        "Kem Nunn"
+        "Joe Gores"
       ],
       "award": "Edgar Award",
       "award_year": "1993",
       "category": "Best Novel",
-      "position": "1993.03",
+      "position": "1993.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Pomona Queen"
+      "title": "32 Cadillacs"
     },
     {
       "authors": [
@@ -2943,14 +2004,20 @@
       "award": "Edgar Award",
       "award_year": "1993",
       "category": "Best Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "title": "White Butterfly"
+    },
+    {
+      "authors": [
+        "Kem Nunn"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1993",
+      "category": "Best Novel",
       "position": "1993.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "White Butterfly"
+      "title": "Pomona Queen"
     },
     {
       "authors": [
@@ -2961,11 +2028,6 @@
       "category": "Best Novel",
       "position": "1994",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "The Sculptress"
     },
     {
@@ -2977,44 +2039,18 @@
       "category": "Best Novel",
       "position": "1994.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Free Fall"
     },
     {
       "authors": [
-        "Peter Hoeg"
+        "Peter H\u00f8eg"
       ],
       "award": "Edgar Award",
       "award_year": "1994",
       "category": "Best Novel",
       "position": "1994.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Smilla's Sense Of Snow"
-    },
-    {
-      "authors": [
-        "Gerald Seymour"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1994",
-      "category": "Best Novel",
-      "position": "1994.03",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "The Journeyman Tailor"
+      "title": "Smilla's Sense of Snow"
     },
     {
       "authors": [
@@ -3023,14 +2059,20 @@
       "award": "Edgar Award",
       "award_year": "1994",
       "category": "Best Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "title": "Wolf in the Shadows"
+    },
+    {
+      "authors": [
+        "Gerald Seymour"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1994",
+      "category": "Best Novel",
       "position": "1994.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Wolf in the Shadows"
+      "title": "The Journeyman Tailor"
     },
     {
       "authors": [
@@ -3041,28 +2083,7 @@
       "category": "Best Novel",
       "position": "1995",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "The Red Scream"
-    },
-    {
-      "authors": [
-        "Lawrence Block"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1995",
-      "category": "Best Novel",
-      "position": "1995.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "A Long Line of Dead Men"
     },
     {
       "authors": [
@@ -3071,14 +2092,20 @@
       "award": "Edgar Award",
       "award_year": "1995",
       "category": "Best Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "title": "Lights Out"
+    },
+    {
+      "authors": [
+        "Lawrence Block"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1995",
+      "category": "Best Novel",
       "position": "1995.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Lights Out"
+      "title": "A Long Line of Dead Men"
     },
     {
       "authors": [
@@ -3089,11 +2116,6 @@
       "category": "Best Novel",
       "position": "1995.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Miami, It's Murder"
     },
     {
@@ -3105,11 +2127,6 @@
       "category": "Best Novel",
       "position": "1995.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Wednesday's Child"
     },
     {
@@ -3121,11 +2138,6 @@
       "category": "Best Novel",
       "position": "1996",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Come to Grief"
     },
     {
@@ -3137,28 +2149,7 @@
       "category": "Best Novel",
       "position": "1996.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "The Bookman's Wake"
-    },
-    {
-      "authors": [
-        "Edward Marston"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1996",
-      "category": "Best Novel",
-      "position": "1996.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "The Roaring Boy"
     },
     {
       "authors": [
@@ -3167,13 +2158,8 @@
       "award": "Edgar Award",
       "award_year": "1996",
       "category": "Best Novel",
-      "position": "1996.03",
+      "position": "1996.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "The Shadow Man"
     },
     {
@@ -3183,14 +2169,20 @@
       "award": "Edgar Award",
       "award_year": "1996",
       "category": "Best Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "title": "The Summons"
+    },
+    {
+      "authors": [
+        "Edward Marston"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1996",
+      "category": "Best Novel",
       "position": "1996.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "The Summons"
+      "title": "The Roaring Boy"
     },
     {
       "authors": [
@@ -3201,12 +2193,18 @@
       "category": "Best Novel",
       "position": "1997",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "The Chatham School Affair"
+    },
+    {
+      "authors": [
+        "Laurie R. King"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1997",
+      "category": "Best Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "title": "With Child"
     },
     {
       "authors": [
@@ -3215,30 +2213,9 @@
       "award": "Edgar Award",
       "award_year": "1997",
       "category": "Best Novel",
-      "position": "1997.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Hearts and Bones"
-    },
-    {
-      "authors": [
-        "Carolyn Wheat"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1997",
-      "category": "Best Novel",
       "position": "1997.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Mean Streak"
+      "title": "Hearts and Bones"
     },
     {
       "authors": [
@@ -3249,28 +2226,18 @@
       "category": "Best Novel",
       "position": "1997.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Pentecost Alley"
     },
     {
       "authors": [
-        "Laurie R. King"
+        "Carolyn Wheat"
       ],
       "award": "Edgar Award",
       "award_year": "1997",
       "category": "Best Novel",
       "position": "1997.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "With Child"
+      "title": "Mean Streak"
     },
     {
       "authors": [
@@ -3281,12 +2248,18 @@
       "category": "Best Novel",
       "position": "1998",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Cimarron Rose"
+    },
+    {
+      "authors": [
+        "Deborah Crombie"
+      ],
+      "award": "Edgar Award",
+      "award_year": "1998",
+      "category": "Best Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "title": "Dreaming of the Bones"
     },
     {
       "authors": [
@@ -3295,13 +2268,8 @@
       "award": "Edgar Award",
       "award_year": "1998",
       "category": "Best Novel",
-      "position": "1998.01",
+      "position": "1998.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "A Wasteland of Strangers"
     },
     {
@@ -3311,30 +2279,9 @@
       "award": "Edgar Award",
       "award_year": "1998",
       "category": "Best Novel",
-      "position": "1998.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Black and Blue"
-    },
-    {
-      "authors": [
-        "Deborah Crombie"
-      ],
-      "award": "Edgar Award",
-      "award_year": "1998",
-      "category": "Best Novel",
       "position": "1998.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Dreaming of the Bones"
+      "title": "Black and Blue"
     },
     {
       "authors": [
@@ -3345,11 +2292,6 @@
       "category": "Best Novel",
       "position": "1998.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "The Purification Ceremony"
     },
     {
@@ -3361,28 +2303,18 @@
       "category": "Best Novel",
       "position": "1999",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Mr. White's Confession"
     },
     {
       "authors": [
-        "J. Wallis Martin"
+        "Michael Connelly"
       ],
       "award": "Edgar Award",
       "award_year": "1999",
       "category": "Best Novel",
       "position": "1999.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "A Likeness in Stone"
+      "title": "Blood Work"
     },
     {
       "authors": [
@@ -3393,28 +2325,18 @@
       "category": "Best Novel",
       "position": "1999.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Beyond Recall"
     },
     {
       "authors": [
-        "Michael Connelly"
+        "Julia Wallis Martin"
       ],
       "award": "Edgar Award",
       "award_year": "1999",
       "category": "Best Novel",
       "position": "1999.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Blood Work"
+      "title": "A Likeness in Stone"
     },
     {
       "authors": [
@@ -3425,11 +2347,6 @@
       "category": "Best Novel",
       "position": "1999.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "The Last Days of Il Duce"
     },
     {
@@ -3441,28 +2358,18 @@
       "category": "Best Novel",
       "position": "2000",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Bones"
     },
     {
       "authors": [
-        "Peter Robinson"
+        "Rennie Airth"
       ],
       "award": "Edgar Award",
       "award_year": "2000",
       "category": "Best Novel",
       "position": "2000.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "In a Dry Season"
+      "title": "River of Darkness"
     },
     {
       "authors": [
@@ -3473,28 +2380,7 @@
       "category": "Best Novel",
       "position": "2000.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "L.A. Requiem"
-    },
-    {
-      "authors": [
-        "Rennie Airth"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2000",
-      "category": "Best Novel",
-      "position": "2000.03",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "River of Darkness"
+      "title": "L. A. Requiem"
     },
     {
       "authors": [
@@ -3503,14 +2389,20 @@
       "award": "Edgar Award",
       "award_year": "2000",
       "category": "Best Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "title": "Strawberry Sunday: A John Marshall Tanner Novel"
+    },
+    {
+      "authors": [
+        "Peter Robinson"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2000",
+      "category": "Best Novel",
       "position": "2000.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Strawberry Sunday"
+      "title": "In a Dry Season"
     },
     {
       "authors": [
@@ -3521,28 +2413,7 @@
       "category": "Best Novel",
       "position": "2001",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "The Bottoms"
-    },
-    {
-      "authors": [
-        "Kris Nelscott"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2001",
-      "category": "Best Novel",
-      "position": "2001.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "A Dangerous Road"
     },
     {
       "authors": [
@@ -3551,14 +2422,20 @@
       "award": "Edgar Award",
       "award_year": "2001",
       "category": "Best Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "title": "A Place of Execution"
+    },
+    {
+      "authors": [
+        "Kris Nelscott"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2001",
+      "category": "Best Novel",
       "position": "2001.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "A Place of Execution"
+      "title": "A Dangerous Road"
     },
     {
       "authors": [
@@ -3569,11 +2446,6 @@
       "category": "Best Novel",
       "position": "2001.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Red Light"
     },
     {
@@ -3585,11 +2457,6 @@
       "category": "Best Novel",
       "position": "2001.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "The Whole Truth"
     },
     {
@@ -3601,44 +2468,18 @@
       "category": "Best Novel",
       "position": "2002",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Silent Joe"
     },
     {
       "authors": [
-        "Ed McBain"
+        "D. W. Buffa"
       ],
       "award": "Edgar Award",
       "award_year": "2002",
       "category": "Best Novel",
       "position": "2002.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Money, Money, Money"
-    },
-    {
-      "authors": [
-        "S.J. Rozan"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2002",
-      "category": "Best Novel",
-      "position": "2002.02",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Reflecting the Sky"
+      "title": "The Judgment"
     },
     {
       "authors": [
@@ -3647,46 +2488,53 @@
       "award": "Edgar Award",
       "award_year": "2002",
       "category": "Best Novel",
-      "position": "2002.03",
+      "position": "2002.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Tell No One"
     },
     {
       "authors": [
-        "D.W. Buffa"
+        "Ed McBain"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2002",
+      "category": "Best Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "title": "Money, Money, Money"
+    },
+    {
+      "authors": [
+        "S. J. Rozan"
       ],
       "award": "Edgar Award",
       "award_year": "2002",
       "category": "Best Novel",
       "position": "2002.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "The Judgment"
+      "title": "Reflecting the Sky"
     },
     {
       "authors": [
-        "S.J. Rozan"
+        "S. J. Rozan"
       ],
       "award": "Edgar Award",
       "award_year": "2003",
       "category": "Best Novel",
       "position": "2003",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Winter and Night"
+    },
+    {
+      "authors": [
+        "Mary Kay Andrews"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2003",
+      "category": "Best Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "title": "Savannah Blues"
     },
     {
       "authors": [
@@ -3695,30 +2543,9 @@
       "award": "Edgar Award",
       "award_year": "2003",
       "category": "Best Novel",
-      "position": "2003.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "City of Bones"
-    },
-    {
-      "authors": [
-        "James Lee Burke"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2003",
-      "category": "Best Novel",
       "position": "2003.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Jolie Blon's Bounce"
+      "title": "City of Bones"
     },
     {
       "authors": [
@@ -3729,28 +2556,7 @@
       "category": "Best Novel",
       "position": "2003.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "No Good Deed"
-    },
-    {
-      "authors": [
-        "Mary Kay Andrews"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2003",
-      "category": "Best Novel",
-      "position": "2003.04",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Savannah Blues"
     },
     {
       "authors": [
@@ -3761,28 +2567,18 @@
       "category": "Best Novel",
       "position": "2004",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Resurrection Men"
     },
     {
       "authors": [
-        "Jacqueline Winspear"
+        "Ken Bruen"
       ],
       "award": "Edgar Award",
       "award_year": "2004",
       "category": "Best Novel",
       "position": "2004.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Maisie Dobbs"
+      "title": "The Guards"
     },
     {
       "authors": [
@@ -3793,28 +2589,18 @@
       "category": "Best Novel",
       "position": "2004.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Out"
     },
     {
       "authors": [
-        "Ken Bruen"
+        "Jacqueline Winspear"
       ],
       "award": "Edgar Award",
       "award_year": "2004",
       "category": "Best Novel",
       "position": "2004.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "The Guards"
+      "title": "Maisie Dobbs"
     },
     {
       "authors": [
@@ -3825,28 +2611,7 @@
       "category": "Best Novel",
       "position": "2005",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "California Girl"
-    },
-    {
-      "authors": [
-        "Laura Lippman"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2005",
-      "category": "Best Novel",
-      "position": "2005.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "By a Spiders Thread"
     },
     {
       "authors": [
@@ -3855,30 +2620,20 @@
       "award": "Edgar Award",
       "award_year": "2005",
       "category": "Best Novel",
-      "position": "2005.02",
+      "position": "2005.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Evan's Gate"
     },
     {
       "authors": [
-        "Julia Spencer-Fleming"
+        "Laura Lippman"
       ],
       "award": "Edgar Award",
       "award_year": "2005",
       "category": "Best Novel",
-      "position": "2005.03",
+      "position": "2005.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Out of the Deep I Cry"
+      "title": "By a Spider's Thread"
     },
     {
       "authors": [
@@ -3887,14 +2642,20 @@
       "award": "Edgar Award",
       "award_year": "2005",
       "category": "Best Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "title": "Remembering Sarah"
+    },
+    {
+      "authors": [
+        "Julia Spencer-Fleming"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2005",
+      "category": "Best Novel",
       "position": "2005.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Remembering Sarah"
+      "title": "Out of the Deep I Cry"
     },
     {
       "authors": [
@@ -3905,28 +2666,18 @@
       "category": "Best Novel",
       "position": "2006",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Citizen Vince"
     },
     {
       "authors": [
-        "George Pelecanos"
+        "Michael Connelly"
       ],
       "award": "Edgar Award",
       "award_year": "2006",
       "category": "Best Novel",
       "position": "2006.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Drama City"
+      "title": "The Lincoln Lawyer"
     },
     {
       "authors": [
@@ -3937,28 +2688,7 @@
       "category": "Best Novel",
       "position": "2006.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Red Leaves"
-    },
-    {
-      "authors": [
-        "Michael Connelly"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2006",
-      "category": "Best Novel",
-      "position": "2006.03",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "The Lincoln Lawyer"
     },
     {
       "authors": [
@@ -3967,14 +2697,20 @@
       "award": "Edgar Award",
       "award_year": "2006",
       "category": "Best Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "title": "Vanish"
+    },
+    {
+      "authors": [
+        "George Pelecanos"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2006",
+      "category": "Best Novel",
       "position": "2006.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Vanish"
+      "title": "Drama City"
     },
     {
       "authors": [
@@ -3985,12 +2721,18 @@
       "category": "Best Novel",
       "position": "2007",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "The Janissary Tree"
+    },
+    {
+      "authors": [
+        "Louis Bayard"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "title": "The Pale Blue Eye"
     },
     {
       "authors": [
@@ -3999,30 +2741,9 @@
       "award": "Edgar Award",
       "award_year": "2007",
       "category": "Best Novel",
-      "position": "2007.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Gentlemen & Players"
-    },
-    {
-      "authors": [
-        "Olen Steinhauer"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2007",
-      "category": "Best Novel",
       "position": "2007.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Liberation Movements"
+      "title": "Gentlemen and Players"
     },
     {
       "authors": [
@@ -4033,28 +2754,7 @@
       "category": "Best Novel",
       "position": "2007.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "The Dead Hour"
-    },
-    {
-      "authors": [
-        "Louis Bayard"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2007",
-      "category": "Best Novel",
-      "position": "2007.04",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "The Pale Blue Eye"
     },
     {
       "authors": [
@@ -4063,14 +2763,20 @@
       "award": "Edgar Award",
       "award_year": "2007",
       "category": "Best Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "title": "The Virgin of Small Plains"
+    },
+    {
+      "authors": [
+        "Olen Steinhauer"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2007",
+      "category": "Best Novel",
       "position": "2007.05",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "The Virgin of Small Plains"
+      "title": "Liberation Movements"
     },
     {
       "authors": [
@@ -4081,11 +2787,6 @@
       "category": "Best Novel",
       "position": "2008",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Down River"
     },
     {
@@ -4097,11 +2798,6 @@
       "category": "Best Novel",
       "position": "2008.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Christine Falls"
     },
     {
@@ -4113,28 +2809,7 @@
       "category": "Best Novel",
       "position": "2008.02",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Priest"
-    },
-    {
-      "authors": [
-        "Reed Farrel Coleman"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2008",
-      "category": "Best Novel",
-      "position": "2008.03",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Soul Patch"
     },
     {
       "authors": [
@@ -4143,46 +2818,31 @@
       "award": "Edgar Award",
       "award_year": "2008",
       "category": "Best Novel",
-      "position": "2008.04",
+      "position": "2008.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "The Yiddish Policemen's Union"
     },
     {
       "authors": [
-        "C.J. Box"
+        "Reed Farrel Coleman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2008",
+      "category": "Best Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "title": "Soul Patch"
+    },
+    {
+      "authors": [
+        "C. J. Box"
       ],
       "award": "Edgar Award",
       "award_year": "2009",
       "category": "Best Novel",
       "position": "2009",
       "result": "winner",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Blue Heaven"
-    },
-    {
-      "authors": [
-        "Lisa Lutz"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2009",
-      "category": "Best Novel",
-      "position": "2009.01",
-      "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Curse of the Spellmans"
     },
     {
       "authors": [
@@ -4191,13 +2851,8 @@
       "award": "Edgar Award",
       "award_year": "2009",
       "category": "Best Novel",
-      "position": "2009.02",
+      "position": "2009.01",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "Missing"
     },
     {
@@ -4207,14 +2862,20 @@
       "award": "Edgar Award",
       "award_year": "2009",
       "category": "Best Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "title": "Sins of the Assassin"
+    },
+    {
+      "authors": [
+        "Declan Hughes"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2009",
+      "category": "Best Novel",
       "position": "2009.03",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "Sins of the Assassin"
+      "title": "The Price of Blood"
     },
     {
       "authors": [
@@ -4225,28 +2886,18 @@
       "category": "Best Novel",
       "position": "2009.04",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "The Night Following"
     },
     {
       "authors": [
-        "Declan Hughes"
+        "Lisa Lutz"
       ],
       "award": "Edgar Award",
       "award_year": "2009",
       "category": "Best Novel",
       "position": "2009.05",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
-      "title": "The Price of Blood"
+      "title": "Curse of the Spellmans"
     },
     {
       "authors": [
@@ -4261,34 +2912,12 @@
     },
     {
       "authors": [
-        "Charlie Huston"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2010",
-      "category": "Best Novel",
-      "position": "2010.01",
-      "result": "nominee",
-      "title": "Mystic Arts of Erasing All Signs of Death"
-    },
-    {
-      "authors": [
-        "Jo Nesbo"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2010",
-      "category": "Best Novel",
-      "position": "2010.02",
-      "result": "nominee",
-      "title": "Nemesis"
-    },
-    {
-      "authors": [
         "Tim Gautreaux"
       ],
       "award": "Edgar Award",
       "award_year": "2010",
       "category": "Best Novel",
-      "position": "2010.03",
+      "position": "2010.01",
       "result": "nominee",
       "title": "The Missing"
     },
@@ -4299,9 +2928,31 @@
       "award": "Edgar Award",
       "award_year": "2010",
       "category": "Best Novel",
-      "position": "2010.04",
+      "position": "2010.02",
       "result": "nominee",
       "title": "The Odds"
+    },
+    {
+      "authors": [
+        "Charlie Huston"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "title": "The Mystic Arts of Erasing All Signs of Death"
+    },
+    {
+      "authors": [
+        "Jo Nesb\u00f8"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2010",
+      "category": "Best Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "title": "Nemesis"
     },
     {
       "authors": [
@@ -4312,23 +2963,7 @@
       "category": "Best Novel",
       "position": "2010.05",
       "result": "nominee",
-      "source": {
-        "name": "",
-        "source_id": "",
-        "url": "https://edgarawards.com/category-list-best-novel/?instance=1&listpage=2"
-      },
       "title": "A Beautiful Place to Die"
-    },
-    {
-      "authors": [
-        "Steve Hamilton"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2011",
-      "category": "Best Novel",
-      "position": "2011",
-      "result": "winner",
-      "title": "The Lock Artist"
     },
     {
       "authors": [
@@ -4365,25 +3000,36 @@
     },
     {
       "authors": [
-        "Laura Lippman"
+        "Timothy Hallinan"
       ],
       "award": "Edgar Award",
       "award_year": "2011",
       "category": "Best Novel",
       "position": "2011.04",
       "result": "nominee",
-      "title": "I'd Know You Anywhere"
+      "title": "The Queen of Patpong"
     },
     {
       "authors": [
-        "Timothy Hallinan"
+        "Steve Hamilton"
       ],
       "award": "Edgar Award",
       "award_year": "2011",
       "category": "Best Novel",
       "position": "2011.05",
       "result": "nominee",
-      "title": "The Queen of Patpong"
+      "title": "The Lock Artist"
+    },
+    {
+      "authors": [
+        "Laura Lippman"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2011",
+      "category": "Best Novel",
+      "position": "2011.06",
+      "result": "nominee",
+      "title": "I'd Know You Anywhere"
     },
     {
       "authors": [
@@ -4398,25 +3044,25 @@
     },
     {
       "authors": [
-        "Anne Holt"
+        "Ace Atkins"
       ],
       "award": "Edgar Award",
       "award_year": "2012",
       "category": "Best Novel",
       "position": "2012.01",
       "result": "nominee",
-      "title": "1222"
+      "title": "The Ranger"
     },
     {
       "authors": [
-        "Philip Kerr"
+        "Anne Holt"
       ],
       "award": "Edgar Award",
       "award_year": "2012",
       "category": "Best Novel",
       "position": "2012.02",
       "result": "nominee",
-      "title": "Field Gray"
+      "title": "1222"
     },
     {
       "authors": [
@@ -4431,14 +3077,14 @@
     },
     {
       "authors": [
-        "Ace Atkins"
+        "Philip Kerr"
       ],
       "award": "Edgar Award",
       "award_year": "2012",
       "category": "Best Novel",
       "position": "2012.04",
       "result": "nominee",
-      "title": "The Ranger"
+      "title": "Field Grey"
     },
     {
       "authors": [
@@ -4453,14 +3099,25 @@
     },
     {
       "authors": [
-        "Walter Mosley"
+        "Ace Atkins"
       ],
       "award": "Edgar Award",
       "award_year": "2013",
       "category": "Best Novel",
       "position": "2013.01",
       "result": "nominee",
-      "title": "All I Did Was Shoot My Man"
+      "title": "The Lost Ones"
+    },
+    {
+      "authors": [
+        "Lyndsay Faye"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2013",
+      "category": "Best Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "title": "The Gods of Gotham"
     },
     {
       "authors": [
@@ -4469,9 +3126,9 @@
       "award": "Edgar Award",
       "award_year": "2013",
       "category": "Best Novel",
-      "position": "2013.02",
+      "position": "2013.03",
       "result": "nominee",
-      "title": "Gone Girl: A Novel"
+      "title": "Gone Girl"
     },
     {
       "authors": [
@@ -4480,7 +3137,7 @@
       "award": "Edgar Award",
       "award_year": "2013",
       "category": "Best Novel",
-      "position": "2013.03",
+      "position": "2013.04",
       "result": "nominee",
       "title": "Potboiler"
     },
@@ -4491,31 +3148,20 @@
       "award": "Edgar Award",
       "award_year": "2013",
       "category": "Best Novel",
-      "position": "2013.04",
+      "position": "2013.05",
       "result": "nominee",
       "title": "Sunset"
     },
     {
       "authors": [
-        "Lyndsay Faye"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2013",
-      "category": "Best Novel",
-      "position": "2013.05",
-      "result": "nominee",
-      "title": "The Gods of Gotham"
-    },
-    {
-      "authors": [
-        "Ace Atkins"
+        "Walter Mosley"
       ],
       "award": "Edgar Award",
       "award_year": "2013",
       "category": "Best Novel",
       "position": "2013.06",
       "result": "nominee",
-      "title": "The Lost Ones"
+      "title": "All I Did Was Shoot My Man"
     },
     {
       "authors": [
@@ -4530,36 +3176,14 @@
     },
     {
       "authors": [
-        "Louise Penny"
+        "Thomas H. Cook"
       ],
       "award": "Edgar Award",
       "award_year": "2014",
       "category": "Best Novel",
       "position": "2014.01",
       "result": "nominee",
-      "title": "How the Light Gets In"
-    },
-    {
-      "authors": [
-        "Thomas H. Cook"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2014",
-      "category": "Best Novel",
-      "position": "2014.02",
-      "result": "nominee",
       "title": "Sandrine's Case"
-    },
-    {
-      "authors": [
-        "Ian Rankin"
-      ],
-      "award": "Edgar Award",
-      "award_year": "2014",
-      "category": "Best Novel",
-      "position": "2014.03",
-      "result": "nominee",
-      "title": "Standing in Another Man's Grave"
     },
     {
       "authors": [
@@ -4568,9 +3192,31 @@
       "award": "Edgar Award",
       "award_year": "2014",
       "category": "Best Novel",
-      "position": "2014.04",
+      "position": "2014.02",
       "result": "nominee",
       "title": "The Humans"
+    },
+    {
+      "authors": [
+        "Louise Penny"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "title": "How the Light Gets In"
+    },
+    {
+      "authors": [
+        "Ian Rankin"
+      ],
+      "award": "Edgar Award",
+      "award_year": "2014",
+      "category": "Best Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "title": "Standing in Another Man's Grave"
     },
     {
       "authors": [
@@ -4662,7 +3308,7 @@
     },
     {
       "authors": [
-        "M.J. Carter"
+        "M. J. Carter"
       ],
       "award": "Edgar Award",
       "award_year": "2016",
@@ -4834,7 +3480,7 @@
       "category": "Best Novel",
       "position": "2019",
       "result": "winner",
-      "title": "Down the River Unto the Sea"
+      "title": "Down the River unto the Sea"
     },
     {
       "authors": [
@@ -4977,7 +3623,7 @@
       "category": "Best Novel",
       "position": "2021.02",
       "result": "nominee",
-      "title": "Thursday Murder Club"
+      "title": "The Thursday Murder Club"
     },
     {
       "authors": [
@@ -5036,7 +3682,7 @@
     },
     {
       "authors": [
-        "S.A. Cosby"
+        "S. A. Cosby"
       ],
       "award": "Edgar Award",
       "award_year": "2022",
@@ -5065,7 +3711,7 @@
       "category": "Best Novel",
       "position": "2022.04",
       "result": "nominee",
-      "title": "No One Will Miss Her"
+      "title": "No One Will Miss Her: A Novel"
     },
     {
       "authors": [
@@ -5120,7 +3766,7 @@
       "category": "Best Novel",
       "position": "2023.04",
       "result": "nominee",
-      "title": "The Devil Takes You Home"
+      "title": "The Devil Takes You Home: A Novel"
     },
     {
       "authors": [
@@ -5146,7 +3792,7 @@
     },
     {
       "authors": [
-        "S.A. Cosby"
+        "S. A. Cosby"
       ],
       "award": "Edgar Award",
       "award_year": "2024",
@@ -5164,7 +3810,7 @@
       "category": "Best Novel",
       "position": "2024.02",
       "result": "nominee",
-      "title": "The Madwomen of Paris"
+      "title": "The Madwomen of Paris: A Novel"
     },
     {
       "authors": [
@@ -5241,7 +3887,7 @@
       "category": "Best Novel",
       "position": "2025.02",
       "result": "nominee",
-      "title": "Rough Trade"
+      "title": "Rough Trade: A Novel"
     },
     {
       "authors": [
@@ -5365,16 +4011,17 @@
       "title": "Presumed Guilty"
     }
   ],
-  "fetched_at": "2026-07-16T23:42:13Z",
+  "fetched_at": "2026-11-15T22:28:26Z",
   "list_id": "edgar_award_novel",
   "list_name": "Edgar Award - Novel",
   "match_series": false,
   "notes": [],
   "parser": "edgar_award_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Edgar Award - Novel",
     "source_id": "edgar_award_novel",
-    "url": "https://edgarawards.com/category-list-best-novel/"
+    "url": "https://www.librarything.com/award/490/Edgar-Award"
   }
 }

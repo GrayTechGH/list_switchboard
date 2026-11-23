@@ -5253,12 +5253,13 @@
       "title": "History Lessons"
     }
   ],
-  "fetched_at": "2026-07-18T00:45:04Z",
+  "fetched_at": "2026-11-15T22:30:11Z",
   "list_id": "edgar_award_first_novel",
   "list_name": "Edgar Award - First Novel",
   "match_series": false,
   "notes": [],
   "parser": "edgar_award_first_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Edgar Award - First Novel",

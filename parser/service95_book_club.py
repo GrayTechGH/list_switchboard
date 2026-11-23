@@ -21,6 +21,11 @@ from .book_club_base import (
   split_title_author,
 )
 from .base import parsed_source
+from .incremental import ParsedUnitCache, position_independent_fingerprint
+try:
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
+except ImportError:
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 class Service95BookClubParser(BookClubParserBase):
@@ -44,46 +49,72 @@ class Service95BookClubParser(BookClubParserBase):
 
   def parse(
       self, html, base_url, name=None, scope=None, fetch_url=None,
-      progress=None, **_kwargs):
+      progress=None, cached_parsed=None, incremental_update=False, **_kwargs):
     scope = scope or self.DEFAULT_SCOPE
     soup = BeautifulSoup(html or '<html></html>', 'html.parser')
     links = self.monthly_read_links(soup, base_url)
+    units = ParsedUnitCache('service95-details-v1', [base_url, scope],
+      cached_parsed, incremental_update)
     if not links or fetch_url is None:
       parsed = super().parse(html, base_url, name or self.CLUB_NAME, scope)
       parsed['entries'] = self.positioned_entries(parsed['entries'])
+      if incremental_update and (cached_parsed or {}).get('entries') and not parsed['entries']:
+        raise ValueError('Service95 did not expose usable monthly selections; saved history was not replaced.')
       return parsed
 
     entries = []
     notes = []
     total = len(links)
+    dates = [(int(parse_year(text) or 0),int(parse_month(text) or 0)) for _url,text in links]
+    latest = max(dates)
+    refresh = {url for index,((url,_text),date) in enumerate(zip(links,dates))
+      if index==0 or date==latest}
     for index, (detail_url, card_text) in enumerate(links, 1):
       if progress is not None:
         progress(index - 1, total, f'Fetching Service95 monthly read {index} of {total}')
+      reused = units.reuse(detail_url,card_text) if detail_url not in refresh else None
+      if reused is not None:
+        entries.extend(reused)
+        continue
+      complete = True
       try:
         detail_html = fetch_url(detail_url)
         entry = self.entry_from_detail(
           detail_html, detail_url, card_text, base_url, scope, index)
+      except (ImportCancelledError,CamoufoxRequiredError):
+        raise
       except Exception as err:
+        complete = False
         notes.append(f'Service95 monthly-read page could not be fetched: {detail_url} ({err})')
+        if units.previous(detail_url):
+          entries.extend(units.failed(detail_url,card_text))
+          continue
         entry = self.entry_from_card_text(
           card_text, detail_url, base_url, scope, index)
       if entry is not None:
         entries.append(entry)
+        units.put(detail_url,[entry],card_text,complete=complete)
       else:
         notes.append(
           f'Service95 monthly-read page did not expose complete book metadata: {detail_url}')
+        entries.extend(units.failed(detail_url,card_text))
     if progress is not None:
       progress(total, total, f'Fetched {total} Service95 monthly reads')
     entries = self.positioned_entries(entries)
     if not entries:
       notes.append('No Service95 monthly-read detail pages exposed title and author data.')
-    return {
+    parsed = {
       'name': name or self.CLUB_NAME,
       'source': parsed_source(name or self.CLUB_NAME, base_url),
       'entries': entries,
       'notes': notes,
       'match_series': False,
     }
+    parsed['incremental_state'] = units.state(entries, identity=position_independent_fingerprint)
+    parsed['incremental_state']['discovery'] = {'refresh_units': sorted(refresh)}
+    if incremental_update:
+      parsed['incremental_update'] = True
+    return parsed
 
   def monthly_read_links(self, soup, base_url):
     links = []

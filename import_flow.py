@@ -15,14 +15,16 @@ Maintenance notes:
   before a database object is fully available.
 """
 
+from html import escape
+
 from qt.core import QApplication, QDialog, QProgressDialog
 
 from calibre.gui2 import error_dialog, question_dialog
 
 try:
-  from calibre_plugins.list_switchboard.camoufox_transport import with_browser_operation
+  from calibre_plugins.list_switchboard.transport.camoufox import with_browser_operation
 except ImportError:
-  from camoufox_transport import with_browser_operation
+  from transport.camoufox import with_browser_operation
 
 try:
   from calibre_plugins.list_switchboard.dialogs import (
@@ -94,6 +96,20 @@ def constrain_import_progress_dialog(progress):
     progress.setFixedWidth(IMPORT_PROGRESS_DIALOG_WIDTH)
   except Exception:
     pass
+
+
+def import_failure_summary(error):
+  details = str(error or '').strip()
+  if not details:
+    return 'The web import did not provide an error message.'
+  if 'bot-verification page' in details:
+    if 'browser response still requires bot verification' in details:
+      return 'The website returned a bot-verification page. Camoufox was also blocked.'
+    return 'The website returned a bot-verification page. Camoufox could not recover it.'
+  lines = [line.strip().removeprefix('- ').strip() for line in details.splitlines()]
+  reason = next((line for line in lines if line and line not in (
+    'Could not fetch or parse the imported list.', 'Tried:')), details)
+  return compact_import_progress_message(reason)
 
 
 def parsed_list_source_url(parsed):
@@ -261,8 +277,8 @@ class ImportFlowMixin:
           if getattr(recipe, 'RESOLVE_ISFDB_ORIGINAL_WORKS', False) else {}))
     except (ImportCancelledError, CamoufoxRequiredError):
       raise
-    except Exception:
-      if cache and self.should_fallback_to_cached_import(recipe, cache):
+    except Exception as err:
+      if cache and self.should_fallback_to_cached_import(recipe, cache, err):
         parsed = self.cached_import_to_parsed(cache)
         parsed['list_id'] = list_id
         self.complete_import_progress_phase(
@@ -289,14 +305,19 @@ class ImportFlowMixin:
       return 'cancel'
     return getattr(dialog, 'choice', 'cancel')
 
-  def should_fallback_to_cached_import(self, recipe, cache):
+  def should_fallback_to_cached_import(self, recipe, cache, error=None):
     fetched_at = cache.get('fetched_at') or 'unknown time'
     entries = len(cache.get('entries') or [])
+    report = f'Reason: {import_failure_summary(error)}\n\n' if error is not None else ''
+    message = (
+      f'Could not import "{recipe.NAME}" from the web.\n\n'
+      f'{report}'
+      f'Use the saved list from {fetched_at} with {entries} entries instead?')
     return question_dialog(
       self.gui,
       'Import List',
-      f'Could not import "{recipe.NAME}" from the web.\n\n'
-      f'Use the saved list from {fetched_at} with {entries} entries instead?')
+      '<p>' + escape(message).replace('\n', '<br>') + '</p>',
+      det_msg=str(error) if error is not None else '')
 
   def create_import_progress(self, list_name):
     progress = QProgressDialog(

@@ -22,6 +22,8 @@ Maintenance notes:
 """
 
 import re
+import json
+import datetime
 from urllib.parse import urljoin
 
 from lxml import html as lxml_html
@@ -33,6 +35,9 @@ try:
     strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.incremental import (
+    ParsedUnitCache, project_source_rows, restore_source_rows)
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_NOMINEE, RESULT_WINNER, assign_positions,
@@ -40,6 +45,8 @@ except ImportError:
     strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache, project_source_rows, restore_source_rows
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 YEAR_HEADING = re.compile(r'^(19|20)\d{2}$')
@@ -55,11 +62,15 @@ class HammettPrizeParser(AwardParserBase):
 
   def parse(
       self, html, base_url, name, category, category_aliases=(),
-      fetch_url=None, log=None, progress=None):
+      fetch_url=None, log=None, progress=None, cached_parsed=None,
+      incremental_update=False):
     page_urls = self.discover_page_urls(html, base_url)
-    page_roots = []
+    ranges = self.discover_page_ranges(html, base_url)
+    cache = ParsedUnitCache('hammett-archive-projections-v1',
+      json.dumps([base_url, name, category, category_aliases]), cached_parsed, incremental_update)
+    sources, notes = [], []
     if self.page_has_year_sections(html):
-      page_roots.append((base_url, self.html_root(html)))
+      sources.append((base_url, self.parse_year_page(self.html_root(html), base_url, category), True, None))
     elif not page_urls:
       raise ValueError('official Hammett source did not expose any year pages')
 
@@ -68,16 +79,57 @@ class HammettPrizeParser(AwardParserBase):
         raise ValueError('official Hammett parser requires fetch_url for linked year pages')
       if log is not None:
         log(f'Hammett: fetching year page {page_url}')
-      page_roots.append((page_url, self.html_root(fetch_url(page_url))))
+      bounds = ranges.get(page_url)
+      old = cache.old_units.get(page_url) or {}
+      try:
+        old_rows = restore_source_rows(cache.previous(page_url), old.get('metadata') or {})
+      except (ValueError, TypeError):
+        old_rows = None
+      if (bounds and bounds[-1] < datetime.datetime.now().year and
+          old.get('complete') is True and old.get('revision') == bounds and
+          (old.get('metadata') or {}).get('settled') is True and old_rows):
+        sources.append((page_url, old_rows, True, bounds))
+        continue
+      try:
+        rows = self.parse_year_page(self.html_root(fetch_url(page_url)), page_url, category)
+        if not rows or (bounds and {int(row['award_year']) for row in rows} != set(range(bounds[0], bounds[-1]+1))):
+          raise ValueError('Hammett archive did not expose its advertised year coverage.')
+        sources.append((page_url, rows, True, bounds))
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
+      except Exception as err:
+        sources.append((page_url, old_rows or [], False, bounds))
+        notes.append(f'Hammett archive could not be fetched or parsed: {page_url}: {err}')
 
-    rows = []
-    for page_url, root in page_roots:
-      rows.extend(self.parse_year_page(root, page_url, category))
+    rows = [row for _url, source_rows, _complete, _bounds in sources for row in source_rows]
     entries = self.entries_from_rows(self.dedupe_rows(rows))
-    return self.parsed_result(
+    entries = sorted(entries, key=lambda item: position_sort_key(item.get('position', '')))
+    for url, source_rows, complete, bounds in sources:
+      projected, metadata = project_source_rows(source_rows, entries,
+        lambda row: (str(row['award_year']), normalize_heading(row['title'])))
+      years = {row['award_year'] for row in source_rows}
+      metadata['settled'] = bool(years) and years == {
+        row['award_year'] for row in source_rows if row['result'] == RESULT_WINNER}
+      cache.put(url, projected, revision=bounds, complete=complete, metadata=metadata)
+    result = self.parsed_result(
       name,
       base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))))
+      entries, notes)
+    result['incremental_state'] = cache.state(entries)
+    result['incremental_state']['discovery'] = {'refresh_units': [base_url] + [
+      url for url in page_urls if not ranges.get(url)]}
+    return result
+
+  def discover_page_ranges(self, html, base_url):
+    ranges = {}
+    for node in self.html_root(html).xpath('//a[@href]'):
+      url = urljoin(base_url, node.get('href'))
+      if not YEAR_PAGE_URL.search(url):
+        continue
+      match = re.search(r'\b((?:19|20)\d{2})\s*[-\u2013\u2014]\s*((?:19|20)\d{2})\b', self.node_text(node))
+      if match and int(match.group(1)) <= int(match.group(2)):
+        ranges[url] = [int(match.group(1)), int(match.group(2))]
+    return ranges
 
   def discover_page_urls(self, html, base_url):
     root = self.html_root(html)

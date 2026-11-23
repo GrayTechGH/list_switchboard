@@ -1,0 +1,89 @@
+{
+  "append_state": {
+    "entry_count": 6,
+    "last_entry_key": "lake county|lori roy",
+    "last_position": "2025.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Kellye Garrett"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Standalone Mystery Novel",
+      "position": "2025",
+      "result": "winner",
+      "title": "MISSING WHITE WOMAN"
+    },
+    {
+      "authors": [
+        "Libby Cudmore"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Standalone Mystery Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "NEGATIVE GIRL"
+    },
+    {
+      "authors": [
+        "Laura Dave"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Standalone Mystery Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "THE NIGHT WE LOST HIM"
+    },
+    {
+      "authors": [
+        "Harry Hunsicker"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Standalone Mystery Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "THE LIFE AND DEATH OF ROSE DOUCETTE"
+    },
+    {
+      "authors": [
+        "Dervla McTiernan"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Standalone Mystery Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "title": "WHAT HAPPENED TO NINA?"
+    },
+    {
+      "authors": [
+        "Lori Roy"
+      ],
+      "award": "ITW Thriller Award",
+      "award_year": "2025",
+      "category": "Best Standalone Mystery Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "title": "LAKE COUNTY"
+    }
+  ],
+  "fetched_at": "2026-11-16T00:29:05Z",
+  "list_id": "itw_thriller_award_standalone_mystery_novel",
+  "list_name": "ITW Thriller Award - Standalone Mystery Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "itw_thriller_award_standalone_mystery_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "ITW Thriller Award - Standalone Mystery Novel",
+    "source_id": "itw_thriller_award_standalone_mystery_novel",
+    "url": "https://thrillerwriters.org/past-nominees-and-winners"
+  }
+}

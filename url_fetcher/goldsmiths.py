@@ -21,6 +21,7 @@ WIKIPEDIA_URL = 'https://en.wikipedia.org/wiki/Goldsmiths_Prize'
 
 
 class UrlFetcherGoldsmithsPrize(UrlFetcherGeneric):
+  SUPPORTS_INCREMENTAL_UPDATE = True
 
   FILTER_CATEGORIES = (
     CATEGORY_LITERARY_GENERAL_FICTION,
@@ -52,10 +53,10 @@ class UrlFetcherGoldsmithsPrize(UrlFetcherGeneric):
       SourceAttempt(
         'Goldsmiths',
         self.URL,
-        lambda html, url, fetch_url=None, log=None, progress=None: (
+        lambda html, url, fetch_url=None, log=None, progress=None,**kwargs: (
           self.create_official_parser().parse(
-            html, url, self.NAME, fetch_url=fetch_url, log=log, progress=progress)),
-        source_rank=0),
+            html, url, self.NAME, fetch_url=fetch_url, log=log, progress=progress,**kwargs)),
+        source_rank=0,supports_incremental=True),
       SourceAttempt(
         'Wikipedia',
         self.WIKIPEDIA_URL,
@@ -70,7 +71,8 @@ class UrlFetcherGoldsmithsPrize(UrlFetcherGeneric):
   def fetch_and_parse(
       self, fetch_url, sleep=None, fetch_error=None, log=None, progress=None,
       before_fetch=None, after_fetch=None, before_parse=None,
-      force_fallback_level=0, disable_fallbacks=False, source_choice=None):
+      force_fallback_level=0, disable_fallbacks=False, source_choice=None,
+      cached_parsed=None,incremental_update=False):
     parsed = SourceFallbackRunner(
       self.source_attempts(),
       error_class=UrlFetcherError).run(
@@ -82,7 +84,7 @@ class UrlFetcherGoldsmithsPrize(UrlFetcherGeneric):
         before_parse=before_parse,
         force_fallback_level=force_fallback_level,
         disable_fallbacks=disable_fallbacks,
-        source_choice=source_choice)
+        source_choice=source_choice,cached_parsed=cached_parsed,incremental_update=incremental_update)
     parsed.setdefault('match_series', self.options.get('match_series', True))
     return parsed
 

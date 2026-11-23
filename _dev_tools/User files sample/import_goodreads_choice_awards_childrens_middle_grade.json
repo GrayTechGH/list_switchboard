@@ -1,0 +1,4103 @@
+{
+  "append_state": {
+    "entry_count": 240,
+    "last_entry_key": "how to heal a gryphon|meg cannistra",
+    "last_position": "2022.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "The Son of Neptune",
+      "votes": "4186"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "The Throne of Fire",
+      "votes": "3827"
+    },
+    {
+      "authors": [
+        "Shel Silverstein"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "Every Thing on It",
+      "votes": "3498"
+    },
+    {
+      "authors": [
+        "Jeff Kinney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "Cabin Fever",
+      "votes": "3167"
+    },
+    {
+      "authors": [
+        "Brian Selznick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "Wonderstruck",
+      "votes": "1990"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "The Girl Who Circumnavigated Fairyland in a Ship of Her Own Making",
+      "votes": "1947"
+    },
+    {
+      "authors": [
+        "Patrick Ness"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "A Monster Calls",
+      "votes": "1783"
+    },
+    {
+      "authors": [
+        "Lauren Oliver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "Liesl & Po",
+      "votes": "1290"
+    },
+    {
+      "authors": [
+        "Erin Hunter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "Sign of the Moon",
+      "votes": "1055"
+    },
+    {
+      "authors": [
+        "Anthony Horowitz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "Scorpia Rising",
+      "votes": "1033"
+    },
+    {
+      "authors": [
+        "Gary D. Schmidt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "Okay for Now",
+      "votes": "641"
+    },
+    {
+      "authors": [
+        "Angie Sage"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "Darke",
+      "votes": "495"
+    },
+    {
+      "authors": [
+        "Brandon Mull"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "A World Without Heroes",
+      "votes": "443"
+    },
+    {
+      "authors": [
+        "Jeanne Birdsall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "The Penderwicks at Point Mouette",
+      "votes": "396"
+    },
+    {
+      "authors": [
+        "John Stephens"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "The Emerald Atlas",
+      "votes": "389"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "Vespers Rising",
+      "votes": "277"
+    },
+    {
+      "authors": [
+        "Angela Sage Larsen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "Travel to Tomorrow",
+      "votes": "183"
+    },
+    {
+      "authors": [
+        "Anne Ursu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "Breadcrumbs",
+      "votes": "177"
+    },
+    {
+      "authors": [
+        "Lisa McMann"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "The Unwanteds",
+      "votes": "146"
+    },
+    {
+      "authors": [
+        "Colin Meloy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Middle Grade & Children's",
+      "position": "2011.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2011"
+      },
+      "title": "Wildwood",
+      "votes": "119"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "The Mark of Athena",
+      "votes": "16681"
+    },
+    {
+      "authors": [
+        "Jeff Kinney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "The Third Wheel",
+      "votes": "7912"
+    },
+    {
+      "authors": [
+        "R.J. Palacio"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "Wonder",
+      "votes": "6216"
+    },
+    {
+      "authors": [
+        "Eoin Colfer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "The Last Guardian",
+      "votes": "5590"
+    },
+    {
+      "authors": [
+        "Chris Colfer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "The Wishing Spell",
+      "votes": "4311"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "The Serpent's Shadow",
+      "votes": "3715"
+    },
+    {
+      "authors": [
+        "Jennifer A. Nielsen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "The False Prince",
+      "votes": "3074"
+    },
+    {
+      "authors": [
+        "Trenton Lee Stewart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "The Extraordinary Education of Nicholas Benedict",
+      "votes": "2394"
+    },
+    {
+      "authors": [
+        "Carl Hiaasen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "Chomp",
+      "votes": "2084"
+    },
+    {
+      "authors": [
+        "Katherine Applegate"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "The One and Only Ivan",
+      "votes": "1717"
+    },
+    {
+      "authors": [
+        "Brandon Mull"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "Seeds of Rebellion",
+      "votes": "880"
+    },
+    {
+      "authors": [
+        "Jo Knowles"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "See You at Harry's",
+      "votes": "795"
+    },
+    {
+      "authors": [
+        "Lynda Mullaly Hunt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "One for the Murphys",
+      "votes": "776"
+    },
+    {
+      "authors": [
+        "Michael Buckley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "The Council of Mirrors",
+      "votes": "736"
+    },
+    {
+      "authors": [
+        "Shannon Hale"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "Palace of Stone",
+      "votes": "684"
+    },
+    {
+      "authors": [
+        "Peter Lerangis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "The Dead of Night",
+      "votes": "630"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "The Girl Who Fell Beneath Fairyland and Led the Revels There",
+      "votes": "474"
+    },
+    {
+      "authors": [
+        "Lemony Snicket"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "Who Could That Be at This Hour?",
+      "votes": "374"
+    },
+    {
+      "authors": [
+        "Rebecca Stead"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "Liar & Spy",
+      "votes": "162"
+    },
+    {
+      "authors": [
+        "Christopher Healy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Middle Grade & Children's",
+      "position": "2012.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2012"
+      },
+      "title": "The Hero's Guide to Saving Your Kingdom",
+      "votes": "123"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "The House of Hades",
+      "votes": "42877"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "Fortunately, the Milk",
+      "votes": "12860"
+    },
+    {
+      "authors": [
+        "Rachel Ren\u00e9e Russell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "Tales from a Not-So-Happy Heartbreaker",
+      "votes": "5835"
+    },
+    {
+      "authors": [
+        "Chris Colfer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "The Enchantress Returns",
+      "votes": "5730"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "Doll Bones",
+      "votes": "5303"
+    },
+    {
+      "authors": [
+        "Jennifer A. Nielsen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "The Runaway King",
+      "votes": "4386"
+    },
+    {
+      "authors": [
+        "Erin Hunter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "The Sun Trail",
+      "votes": "3946"
+    },
+    {
+      "authors": [
+        "Angie Sage"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "Fyre",
+      "votes": "3422"
+    },
+    {
+      "authors": [
+        "Holly Goldberg Sloan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "Counting by 7s",
+      "votes": "3233"
+    },
+    {
+      "authors": [
+        "Chris Grabenstein"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "Escape from Mr. Lemoncello's Library",
+      "votes": "2849"
+    },
+    {
+      "authors": [
+        "Clare Vanderpool"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "Navigating Early",
+      "votes": "1443"
+    },
+    {
+      "authors": [
+        "Brandon Mull"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "Chasing the Prophecy",
+      "votes": "1232"
+    },
+    {
+      "authors": [
+        "Alan Gratz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "Prisoner B-3087",
+      "votes": "1157"
+    },
+    {
+      "authors": [
+        "Linda Sue Park"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "Trust No One",
+      "votes": "1049"
+    },
+    {
+      "authors": [
+        "Jonathan Stroud"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "The Screaming Staircase",
+      "votes": "978"
+    },
+    {
+      "authors": [
+        "Soman Chainani"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "The School for Good and Evil",
+      "votes": "812"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "The Girl Who Soared Over Fairyland and Cut the Moon in Two",
+      "votes": "562"
+    },
+    {
+      "authors": [
+        "John Flanagan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "The Royal Ranger",
+      "votes": "552"
+    },
+    {
+      "authors": [
+        "K.L. Armstrong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "Loki's Wolves",
+      "votes": "371"
+    },
+    {
+      "authors": [
+        "Liesl Shurtliff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Middle Grade & Children's",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2013"
+      },
+      "title": "Rump",
+      "votes": "210"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "The Blood of Olympus",
+      "votes": "63219"
+    },
+    {
+      "authors": [
+        "Jeff Kinney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "The Long Haul",
+      "votes": "18042"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "The Iron Trial",
+      "votes": "15412"
+    },
+    {
+      "authors": [
+        "Raina Telgemeier"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "Sisters",
+      "votes": "10904"
+    },
+    {
+      "authors": [
+        "Chris Colfer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "A Grimm Warning",
+      "votes": "9171"
+    },
+    {
+      "authors": [
+        "Jacqueline Woodson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "Brown Girl Dreaming",
+      "votes": "8110"
+    },
+    {
+      "authors": [
+        "Soman Chainani"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "A World Without Princes",
+      "votes": "7965"
+    },
+    {
+      "authors": [
+        "Jennifer A. Nielsen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "The Shadow Throne",
+      "votes": "6959"
+    },
+    {
+      "authors": [
+        "Rachel Ren\u00e9e Russell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "Tales from a Not-So-Glam TV Star",
+      "votes": "5466"
+    },
+    {
+      "authors": [
+        "Natalie Lloyd"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "A Snicker of Magic",
+      "votes": "4540"
+    },
+    {
+      "authors": [
+        "Cece Bell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "El Deafo",
+      "votes": "2019"
+    },
+    {
+      "authors": [
+        "Brandon Mull"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "Sky Raiders",
+      "votes": "1866"
+    },
+    {
+      "authors": [
+        "Jason Segel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "Nightmares!",
+      "votes": "1546"
+    },
+    {
+      "authors": [
+        "Natalie Standiford"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "Countdown",
+      "votes": "1413"
+    },
+    {
+      "authors": [
+        "Jonathan Auxier"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "The Night Gardener",
+      "votes": "1268"
+    },
+    {
+      "authors": [
+        "Jennifer L. Holm"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "The Fourteenth Goldfish",
+      "votes": "1170"
+    },
+    {
+      "authors": [
+        "Jonathan Stroud"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "The Whispering Skull",
+      "votes": "1150"
+    },
+    {
+      "authors": [
+        "Kwame Alexander"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "The Crossover",
+      "votes": "923"
+    },
+    {
+      "authors": [
+        "Lisa Graff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "Absolutely Almost",
+      "votes": "721"
+    },
+    {
+      "authors": [
+        "Kenneth Oppel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Middle Grade & Children's",
+      "position": "2014.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2014"
+      },
+      "title": "The Boundless",
+      "votes": "537"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "The Sword of Summer",
+      "votes": "43363"
+    },
+    {
+      "authors": [
+        "Soman Chainani"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "The Last Ever After",
+      "votes": "10949"
+    },
+    {
+      "authors": [
+        "Chris Colfer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "Beyond the Kingdoms",
+      "votes": "10333"
+    },
+    {
+      "authors": [
+        "Robert Beatty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "Serafina and the Black Cloak",
+      "votes": "10320"
+    },
+    {
+      "authors": [
+        "Alex Gino"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "Melissa",
+      "votes": "7581"
+    },
+    {
+      "authors": [
+        "Melissa de la Cruz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "The Isle of the Lost",
+      "votes": "7540"
+    },
+    {
+      "authors": [
+        "Cynthia Lord"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "A Handful of Stars",
+      "votes": "6042"
+    },
+    {
+      "authors": [
+        "Ali Benjamin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "The Thing About Jellyfish",
+      "votes": "5994"
+    },
+    {
+      "authors": [
+        "Kimberly Brubaker Bradley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "The War That Saved My Life",
+      "votes": "5299"
+    },
+    {
+      "authors": [
+        "Lynda Mullaly Hunt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "Fish in a Tree",
+      "votes": "5098"
+    },
+    {
+      "authors": [
+        "Jeanne Birdsall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "The Penderwicks in Spring",
+      "votes": "2522"
+    },
+    {
+      "authors": [
+        "Rebecca Stead"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "Goodbye Stranger",
+      "votes": "2470"
+    },
+    {
+      "authors": [
+        "Pam Mu\u00f1oz Ryan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "Echo",
+      "votes": "2425"
+    },
+    {
+      "authors": [
+        "Brandon Mull"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "Rogue Knight",
+      "votes": "1938"
+    },
+    {
+      "authors": [
+        "Brian Selznick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "The Marvels",
+      "votes": "1901"
+    },
+    {
+      "authors": [
+        "Dan Gemeinhart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "The Honest Truth",
+      "votes": "1774"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "The Copper Gauntlet",
+      "votes": "1621"
+    },
+    {
+      "authors": [
+        "Marie Lu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "The Evertree",
+      "votes": "1502"
+    },
+    {
+      "authors": [
+        "Katherine Applegate"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "Crenshaw",
+      "votes": "1447"
+    },
+    {
+      "authors": [
+        "Jonathan Stroud"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Middle Grade & Children's",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2015"
+      },
+      "title": "The Hollow Boy",
+      "votes": "1171"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "The Hidden Oracle",
+      "votes": "46348"
+    },
+    {
+      "authors": [
+        "Sara Pennypacker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "Pax",
+      "votes": "17372"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "The Hammer of Thor",
+      "votes": "17027"
+    },
+    {
+      "authors": [
+        "Chris Colfer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "An Author's Odyssey",
+      "votes": "11775"
+    },
+    {
+      "authors": [
+        "Tahereh Mafi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "Furthermore",
+      "votes": "9384"
+    },
+    {
+      "authors": [
+        "Ally Condie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "Summerlost",
+      "votes": "8635"
+    },
+    {
+      "authors": [
+        "Chris Grabenstein"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "Mr. Lemoncello's Library Olympics",
+      "votes": "8390"
+    },
+    {
+      "authors": [
+        "Erin Hunter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "The Apprentice's Quest",
+      "votes": "7737"
+    },
+    {
+      "authors": [
+        "Kate DiCamillo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "Raymie Nightingale",
+      "votes": "7114"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "The Bronze Key",
+      "votes": "4369"
+    },
+    {
+      "authors": [
+        "Lauren Wolk"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "Wolf Hollow",
+      "votes": "3129"
+    },
+    {
+      "authors": [
+        "Lindsay Eagar"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "Hour of the Bees",
+      "votes": "2650"
+    },
+    {
+      "authors": [
+        "Jonathan Stroud"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "The Creeping Shadow",
+      "votes": "2522"
+    },
+    {
+      "authors": [
+        "Peter Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "The Wild Robot",
+      "votes": "2313"
+    },
+    {
+      "authors": [
+        "Donna Gephart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "Lily and Dunkin",
+      "votes": "1758"
+    },
+    {
+      "authors": [
+        "Brandon Mull"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "Death Weavers",
+      "votes": "1595"
+    },
+    {
+      "authors": [
+        "Tui T. Sutherland"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "Escaping Peril",
+      "votes": "1564"
+    },
+    {
+      "authors": [
+        "Leslie Connor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "All Rise for the Honorable Perry T. Cook",
+      "votes": "1400"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "The Dark Talent",
+      "votes": "906"
+    },
+    {
+      "authors": [
+        "David Neilsen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Middle Grade & Children's",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2016"
+      },
+      "title": "Dr. Fell and the Playground of Doom",
+      "votes": "453"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "The Ship of the Dead",
+      "votes": "34516"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "The Dark Prophecy",
+      "votes": "23851"
+    },
+    {
+      "authors": [
+        "Jennifer Donnelly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "Beauty and the Beast",
+      "votes": "17338"
+    },
+    {
+      "authors": [
+        "Chris Colfer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "Worlds Collide",
+      "votes": "12679"
+    },
+    {
+      "authors": [
+        "Hena Khan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "Amina's Voice",
+      "votes": "12151"
+    },
+    {
+      "authors": [
+        "Jack Cheng"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "See You in the Cosmos",
+      "votes": "9726"
+    },
+    {
+      "authors": [
+        "Lauren Wolk"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "Beyond the Bright Sea",
+      "votes": "7397"
+    },
+    {
+      "authors": [
+        "Brandon Mull"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "Dragonwatch",
+      "votes": "6811"
+    },
+    {
+      "authors": [
+        "Barbara Dee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "Star-Crossed",
+      "votes": "6101"
+    },
+    {
+      "authors": [
+        "Melissa de la Cruz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "Rise of the Isle of the Lost",
+      "votes": "5823"
+    },
+    {
+      "authors": [
+        "Lisa Thompson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "The Goldfish Boy",
+      "votes": "2899"
+    },
+    {
+      "authors": [
+        "Ellen Oh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "Flying Lessons & Other Stories",
+      "votes": "2311"
+    },
+    {
+      "authors": [
+        "Soman Chainani"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "Quests for Glory",
+      "votes": "2095"
+    },
+    {
+      "authors": [
+        "Katherine Applegate"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "Wishtree",
+      "votes": "1748"
+    },
+    {
+      "authors": [
+        "Tui T. Sutherland"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "Talons of Power",
+      "votes": "1742"
+    },
+    {
+      "authors": [
+        "Ali Standish"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "The Ethan I Was Before",
+      "votes": "1724"
+    },
+    {
+      "authors": [
+        "Sally J. Pla"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "The Someday Birds",
+      "votes": "1721"
+    },
+    {
+      "authors": [
+        "Jonathan Stroud"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "The Empty Grave",
+      "votes": "1224"
+    },
+    {
+      "authors": [
+        "Kimberly Brubaker Bradley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "The War I Finally Won",
+      "votes": "1142"
+    },
+    {
+      "authors": [
+        "Lauren Baratz-Logsted"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Middle Grade & Children's",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2017"
+      },
+      "title": "I Love You, Michael Collins",
+      "votes": "599"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "The Burning Maze",
+      "votes": "42529"
+    },
+    {
+      "authors": [
+        "Victoria Schwab"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "City of Ghosts",
+      "votes": "35781"
+    },
+    {
+      "authors": [
+        "Neil Patrick Harris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "The Magic Misfits",
+      "votes": "15674"
+    },
+    {
+      "authors": [
+        "Roshani Chokshi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "Aru Shah and the End of Time",
+      "votes": "13872"
+    },
+    {
+      "authors": [
+        "Aisha Saeed"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "Amal Unbound",
+      "votes": "8698"
+    },
+    {
+      "authors": [
+        "Jewell Parker Rhodes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "Ghost Boys",
+      "votes": "8021"
+    },
+    {
+      "authors": [
+        "Jeanne Birdsall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "The Penderwicks at Last",
+      "votes": "7398"
+    },
+    {
+      "authors": [
+        "Robert Beatty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "Willa of the Wood",
+      "votes": "7265"
+    },
+    {
+      "authors": [
+        "Stacy McAnulty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "The Miscalculations of Lightning Girl",
+      "votes": "6831"
+    },
+    {
+      "authors": [
+        "Wendy Mass"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "Bob",
+      "votes": "6010"
+    },
+    {
+      "authors": [
+        "Kelly Yang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "Front Desk",
+      "votes": "2600"
+    },
+    {
+      "authors": [
+        "Jason Reynolds"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "Sunny",
+      "votes": "2488"
+    },
+    {
+      "authors": [
+        "Erin Entrada Kelly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "You Go First",
+      "votes": "2077"
+    },
+    {
+      "authors": [
+        "Veera Hiranandani"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "The Night Diary",
+      "votes": "2065"
+    },
+    {
+      "authors": [
+        "Sayantani DasGupta"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "The Serpent's Secret",
+      "votes": "1923"
+    },
+    {
+      "authors": [
+        "Kate DiCamillo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "Louisiana's Way Home",
+      "votes": "1591"
+    },
+    {
+      "authors": [
+        "Holly Black"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "The Golden Tower",
+      "votes": "1474"
+    },
+    {
+      "authors": [
+        "Brandon Mull"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "Wrath of the Dragon King",
+      "votes": "1236"
+    },
+    {
+      "authors": [
+        "Katherine Arden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "Small Spaces",
+      "votes": "1104"
+    },
+    {
+      "authors": [
+        "Amy Makechnie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Middle Grade & Children's",
+      "position": "2018.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2018"
+      },
+      "title": "The Unforgettable Guinevere St. Clair",
+      "votes": "768"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "The Tyrant's Tomb",
+      "votes": "33333"
+    },
+    {
+      "authors": [
+        "Victoria Schwab"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "Tunnel of Bones",
+      "votes": "30557"
+    },
+    {
+      "authors": [
+        "Raina Telgemeier"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "Guts",
+      "votes": "20488"
+    },
+    {
+      "authors": [
+        "Dan Gemeinhart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "The Remarkable Journey of Coyote Sunrise",
+      "votes": "10979"
+    },
+    {
+      "authors": [
+        "Jerry Craft"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "New Kid",
+      "votes": "10452"
+    },
+    {
+      "authors": [
+        "Soman Chainani"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "A Crystal of Time",
+      "votes": "9798"
+    },
+    {
+      "authors": [
+        "Yoon Ha Lee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "Dragon Pearl",
+      "votes": "9008"
+    },
+    {
+      "authors": [
+        "Jeff Kinney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "Diary of an Awesome Friendly Kid",
+      "votes": "8726"
+    },
+    {
+      "authors": [
+        "Margaret Peterson Haddix"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "The Strangers",
+      "votes": "7878"
+    },
+    {
+      "authors": [
+        "Roshani Chokshi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "Aru Shah and the Song of Death",
+      "votes": "7336"
+    },
+    {
+      "authors": [
+        "Padma Venkatraman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "The Bridge Home",
+      "votes": "3481"
+    },
+    {
+      "authors": [
+        "Jasmine Warga"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "Other Words for Home",
+      "votes": "3371"
+    },
+    {
+      "authors": [
+        "Shannon Messenger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "Legacy",
+      "votes": "3061"
+    },
+    {
+      "authors": [
+        "Lynda Mullaly Hunt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "Shouting at the Rain",
+      "votes": "2910"
+    },
+    {
+      "authors": [
+        "Holly Goldberg Sloan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "To Night Owl from Dogfish",
+      "votes": "2817"
+    },
+    {
+      "authors": [
+        "Katherine Arden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "Dead Voices",
+      "votes": "2757"
+    },
+    {
+      "authors": [
+        "Gordon Korman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "The Unteachables",
+      "votes": "2715"
+    },
+    {
+      "authors": [
+        "Chris Colfer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "A Tale of Magic",
+      "votes": "2460"
+    },
+    {
+      "authors": [
+        "Julie Murphy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "Dear Sweet Pea",
+      "votes": "1344"
+    },
+    {
+      "authors": [
+        "Kwame Mbalia"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Middle Grade & Children's",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2019"
+      },
+      "title": "Tristan Strong Punches a Hole in the Sky",
+      "votes": "1295"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "The Tower of Nero",
+      "votes": "49341"
+    },
+    {
+      "authors": [
+        "Katherine Applegate"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "The One and Only Bob",
+      "votes": "23486"
+    },
+    {
+      "authors": [
+        "Jacqueline Woodson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "Before the Ever After",
+      "votes": "15347"
+    },
+    {
+      "authors": [
+        "Soman Chainani"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "One True King",
+      "votes": "13228"
+    },
+    {
+      "authors": [
+        "Jessica Townsend"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "Hollowpox",
+      "votes": "13186"
+    },
+    {
+      "authors": [
+        "Janae Marks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "From the Desk of Zoe Washington",
+      "votes": "11673"
+    },
+    {
+      "authors": [
+        "Erin Entrada Kelly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "We Dream of Space",
+      "votes": "11151"
+    },
+    {
+      "authors": [
+        "Rebecca Stead"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "The List of Things That Will Not Change",
+      "votes": "10230"
+    },
+    {
+      "authors": [
+        "Claribel A. Ortega"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "Ghost Squad",
+      "votes": "10049"
+    },
+    {
+      "authors": [
+        "James Patterson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "Ali Cross",
+      "votes": "9520"
+    },
+    {
+      "authors": [
+        "Roshani Chokshi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "Aru Shah and the Tree of Wishes",
+      "votes": "4351"
+    },
+    {
+      "authors": [
+        "Kacen Callender"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "King and the Dragonflies",
+      "votes": "4296"
+    },
+    {
+      "authors": [
+        "Nic Stone"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "Clean Getaway",
+      "votes": "3900"
+    },
+    {
+      "authors": [
+        "Sara Pennypacker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "Here in the Real World",
+      "votes": "3666"
+    },
+    {
+      "authors": [
+        "Chris Colfer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "A Tale of Witchcraft",
+      "votes": "3599"
+    },
+    {
+      "authors": [
+        "Rebecca Roanhorse"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "Race to the Sun",
+      "votes": "3516"
+    },
+    {
+      "authors": [
+        "Shannon Messenger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "Unlocked",
+      "votes": "2108"
+    },
+    {
+      "authors": [
+        "Ricky Tims"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "Lizzy Albright and the Attic Window",
+      "votes": "1612"
+    },
+    {
+      "authors": [
+        "Kimberly Brubaker Bradley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "Fighting Words",
+      "votes": "760"
+    },
+    {
+      "authors": [
+        "Ernesto Cisneros"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Middle Grade & Children's",
+      "position": "2020.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2020"
+      },
+      "title": "Efr\u00e9n Divided",
+      "votes": "734"
+    },
+    {
+      "authors": [
+        "Rick Riordan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Daughter of the Deep",
+      "votes": "24836"
+    },
+    {
+      "authors": [
+        "Victoria Schwab"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Bridge of Souls",
+      "votes": "24368"
+    },
+    {
+      "authors": [
+        "Joanna Ho"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Eyes that Kiss in the Corners",
+      "votes": "21560"
+    },
+    {
+      "authors": [
+        "B.B. Alston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Amari and the Night Brothers",
+      "votes": "21390"
+    },
+    {
+      "authors": [
+        "Lisa Fipps"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Starfish",
+      "votes": "20031"
+    },
+    {
+      "authors": [
+        "Soman Chainani"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Beasts and Beauty",
+      "votes": "16458"
+    },
+    {
+      "authors": [
+        "Megan E. Freeman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Alone",
+      "votes": "11906"
+    },
+    {
+      "authors": [
+        "Alan Gratz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Ground Zero",
+      "votes": "9669"
+    },
+    {
+      "authors": [
+        "Roshani Chokshi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Aru Shah and the City of Gold",
+      "votes": "6892"
+    },
+    {
+      "authors": [
+        "Melissa de la Cruz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "The Thirteenth Fairy",
+      "votes": "6554"
+    },
+    {
+      "authors": [
+        "Rajani LaRocca"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Red, White, and Whole",
+      "votes": "2447"
+    },
+    {
+      "authors": [
+        "James Patterson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Best Nerds Forever",
+      "votes": "2367"
+    },
+    {
+      "authors": [
+        "Justina Ireland"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Ophie's Ghosts",
+      "votes": "2246"
+    },
+    {
+      "authors": [
+        "Eden Royce"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Root Magic",
+      "votes": "2064"
+    },
+    {
+      "authors": [
+        "Karah Sutton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "A Wolf for a Spell",
+      "votes": "2057"
+    },
+    {
+      "authors": [
+        "Gordon Korman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Unplugged",
+      "votes": "1900"
+    },
+    {
+      "authors": [
+        "Sarwat Chadda"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "City of the Plague God",
+      "votes": "1507"
+    },
+    {
+      "authors": [
+        "Jasmine Warga"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "The Shape of Thunder",
+      "votes": "1418"
+    },
+    {
+      "authors": [
+        "Graci Kim"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "The Last Fallen Star",
+      "votes": "1152"
+    },
+    {
+      "authors": [
+        "Wendy Monica Winter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Middle Grade & Children's",
+      "position": "2021.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2021"
+      },
+      "title": "Where's My Joey?",
+      "votes": "1034"
+    },
+    {
+      "authors": [
+        "Andie Powers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "I Am Quiet: A Story for the Introvert in All of Us",
+      "votes": "26266"
+    },
+    {
+      "authors": [
+        "Soman Chainani"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "Rise of the School for Good and Evil",
+      "votes": "22822"
+    },
+    {
+      "authors": [
+        "B.B. Alston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "Amari and the Great Game",
+      "votes": "20315"
+    },
+    {
+      "authors": [
+        "Phil Stamper"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "Small Town Pride",
+      "votes": "17263"
+    },
+    {
+      "authors": [
+        "Claribel A. Ortega"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "Witchlings",
+      "votes": "15897"
+    },
+    {
+      "authors": [
+        "Anna Kang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "This Is (Not) Enough",
+      "votes": "15750"
+    },
+    {
+      "authors": [
+        "Shannon Messenger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "Stellarlune",
+      "votes": "14894"
+    },
+    {
+      "authors": [
+        "Xiran Jay Zhao"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "Zachary Ying and the Dragon Emperor",
+      "votes": "11387"
+    },
+    {
+      "authors": [
+        "James Patterson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "The Elephant Girl",
+      "votes": "11243"
+    },
+    {
+      "authors": [
+        "Roshani Chokshi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "Aru Shah and the Nectar of Immortality",
+      "votes": "11104"
+    },
+    {
+      "authors": [
+        "Dhonielle Clayton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "The Marvellers",
+      "votes": "3658"
+    },
+    {
+      "authors": [
+        "Kalyn Josephson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "Ravenfall",
+      "votes": "3180"
+    },
+    {
+      "authors": [
+        "Kelly Barnhill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "The Ogress and the Orphans",
+      "votes": "3069"
+    },
+    {
+      "authors": [
+        "Jennifer A. Bell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "The Best Gift for Bear",
+      "votes": "2760"
+    },
+    {
+      "authors": [
+        "Korey Watari"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "I Am Able to Shine",
+      "votes": "2734"
+    },
+    {
+      "authors": [
+        "Kelly Yang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "New from Here",
+      "votes": "2668"
+    },
+    {
+      "authors": [
+        "Eric Koester"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "The Pennymores and the Curse of the Invisible Quill",
+      "votes": "2321"
+    },
+    {
+      "authors": [
+        "Lindsay Currie"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "The Girl in White",
+      "votes": "2245"
+    },
+    {
+      "authors": [
+        "Brandon Sanderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "Bastille vs. the Evil Librarians",
+      "votes": "2000"
+    },
+    {
+      "authors": [
+        "Meg Cannistra"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Middle Grade & Children's",
+      "position": "2022.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-childrens-books-2022"
+      },
+      "title": "How to Heal a Gryphon",
+      "votes": "1706"
+    }
+  ],
+  "fetched_at": "2026-07-28T04:10:50Z",
+  "list_id": "goodreads_choice_awards_childrens_middle_grade",
+  "list_name": "Goodreads Choice Awards - Children's & Middle Grade (discontinued)",
+  "match_series": false,
+  "notes": [],
+  "parser": "goodreads_choice_awards_childrens_middle_grade",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Children's & Middle Grade (discontinued)",
+    "source_id": "goodreads_choice_awards_childrens_middle_grade",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

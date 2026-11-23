@@ -5,14 +5,16 @@
 Walter Scott Prize parser for the official PDF/history pages and Wikipedia.
 
 Maintenance notes:
-- The official archive source is a PDF covering previous winners and
-  shortlists. Keep the tiny PDF text extractor local to this source shape until
-  another production recipe needs binary PDF parsing.
+- The official archive is a two-column PDF. Calibre's bundled pdftotext bounds
+  words spatially before year parsing; plain text and small offline fixtures
+  retain the local extractor. Exact annual counts gate reuse of the dated PDF.
 - V1 imports winners and shortlists only. Official longlists are deliberately
   ignored to match adjacent literary-award recipes.
 """
 
 import re
+import json
+import datetime
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
@@ -24,6 +26,8 @@ try:
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key # pyright: ignore[reportMissingImports]
   from calibre_plugins.list_switchboard.parser.pdf_text import extract_pdf_text # pyright: ignore[reportMissingImports]
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError,CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
@@ -31,6 +35,8 @@ except ImportError:
   )
   from .generic import position_sort_key
   from .pdf_text import extract_pdf_text
+  from .incremental import ParsedUnitCache,project_source_rows,restore_source_rows
+  from errors import ImportCancelledError,CamoufoxRequiredError
 
 
 AWARD_NAME = 'Walter Scott Prize'
@@ -130,6 +136,10 @@ class WalterScottParserMixin(AwardParserBase):
 
 class WalterScottOfficialParser(WalterScottParserMixin):
 
+  # Verified ballots in the configured August 2025 PDF. A replacement PDF
+  # requires a renewed coverage review before its history can be reused.
+  HISTORY_COUNTS = dict(zip(range(2010,2026), (8,5,6,6,6,7,6,7,6,6,6,5,4,7,6,6)))
+
   SUPPLEMENT_URLS = (
     (SHORTLIST_URL_2026, RESULT_SHORTLISTED),
     (WINNER_URL_2026, RESULT_WINNER),
@@ -137,19 +147,44 @@ class WalterScottOfficialParser(WalterScottParserMixin):
 
   def parse(
       self, pdf_or_text, base_url=PDF_URL, name=AWARD_NAME, fetch_url=None,
-      current_pages=None, log=None, progress=None):
-    rows = list(self.parse_pdf_rows(pdf_or_text, base_url))
+      current_pages=None, log=None, progress=None,cached_parsed=None,incremental_update=False):
+    cache=self.update_cache(base_url,name,cached_parsed,incremental_update)
+    history=self.reusable_history(base_url,name,cached_parsed,incremental_update)
+    if history is None:
+      history=list(self.parse_pdf_rows(pdf_or_text,base_url))
+    rows=list(history)
+    units={'history':(history,base_url,self.history_complete(history,base_url))}
     notes = []
     pages = list(current_pages or ())
 
     if fetch_url is not None and current_pages is None:
       total = len(self.SUPPLEMENT_URLS)
       for index, (url, result) in enumerate(self.SUPPLEMENT_URLS, 1):
+        revision=[result,self.year_from_text(url)]
+        old=cache.old_units.get(url) or {}
+        previous=[]
+        try:
+          previous=restore_source_rows(cache.previous(url),old.get('metadata') or {})
+        except (ValueError,TypeError):
+          pass
+        if (revision[1] and revision[1]<datetime.datetime.now().year and
+            old.get('complete') is True and old.get('revision')==revision and previous):
+          rows.extend(previous)
+          units[url]=(previous,revision,True)
+          continue
         try:
           if progress is not None:
             progress(index, total, f'Fetching {name} supplement page {index} of {total}')
-          pages.append((url, result, fetch_url(url)))
+          source_rows=self.parse_html_rows(fetch_url(url),url,result)
+          if not source_rows:
+            raise ValueError('Official announcement had no usable prize rows.')
+          rows.extend(source_rows)
+          units[url]=(source_rows,revision,True)
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
         except Exception as err:
+          rows.extend(previous)
+          units[url]=(previous,revision,False)
           notes.append(f'{name} supplement page could not be fetched: {url}: {err}')
           if log is not None:
             log(f'{name} supplement page failed: {url}: {err}')
@@ -160,21 +195,106 @@ class WalterScottOfficialParser(WalterScottParserMixin):
         result = RESULT_SHORTLISTED
       else:
         url, result, html = page
-      rows.extend(self.parse_html_rows(html, url, result))
+      source_rows=self.parse_html_rows(html,url,result)
+      rows.extend(source_rows)
+      units[url]=(source_rows,[result,self.year_from_text(url)],bool(source_rows))
 
     entries = self.entries_from_rows(self.dedupe_rows(rows))
-    return self.parsed_result(
+    entries=sorted(entries,key=lambda item:position_sort_key(item.get('position','')))
+    for url,(source_rows,revision,complete) in units.items():
+      projected,metadata=project_source_rows(source_rows,entries,
+        lambda row:(str(row['award_year']),normalize_heading(row['title'])))
+      cache.put(url,projected,revision=revision,complete=complete,metadata=metadata)
+    parsed=self.parsed_result(
       name,
       base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      entries,
       notes=notes)
+    parsed['incremental_state']=cache.state(entries)
+    parsed['incremental_state']['discovery']={'refresh_units':[url for url in units if url!='history']}
+    return parsed
+
+  def update_cache(self,base_url,name,cached_parsed,incremental_update):
+    return ParsedUnitCache('walter-scott-parsed-history-v1',json.dumps([
+      base_url,name,self.AWARD_NAME,CATEGORY,self.HISTORY_COUNTS]),cached_parsed,incremental_update)
+
+  def reusable_history(self,base_url,name=AWARD_NAME,cached_parsed=None,incremental_update=False):
+    cache=self.update_cache(base_url,name,cached_parsed,incremental_update)
+    old=cache.old_units.get('history') or {}
+    if old.get('complete') is not True or old.get('revision')!=base_url:
+      return None
+    try:
+      rows=restore_source_rows(cache.previous('history'),old.get('metadata') or {})
+      if self.history_complete(rows,base_url) and all(int(r['award_year'])<datetime.datetime.now().year for r in rows):
+        return rows
+    except (ValueError,TypeError,KeyError):
+      pass
+    return None
+
+  def history_complete(self,rows,base_url):
+    version=re.search(r'/uploads/(20\d{2})/\d{2}/',base_url)
+    if not version or not rows:
+      return False
+    years={str(year) for year in range(2010,int(version.group(1))+1)}
+    return (set(map(str,self.HISTORY_COUNTS))==years and
+      set(str(r.get('award_year')) for r in rows)==years and
+      {str(r.get('award_year')) for r in rows if r.get('result')==RESULT_WINNER}==years and
+      all(sum(str(r.get('award_year'))==str(year) for r in rows)==count
+        for year,count in self.HISTORY_COUNTS.items()) and
+      all(r.get('title') and r.get('author') and '\ufffd' not in r['title']+r['author'] for r in rows))
 
   def parse_pdf_rows(self, pdf_or_text, base_url=PDF_URL):
     text = self.extract_pdf_text(pdf_or_text)
     return self.rows_from_text(text, base_url)
 
   def extract_pdf_text(self, value):
+    if (isinstance(value,bytes) and value.startswith(b'%PDF-')) or str(value).startswith('%PDF-'):
+      try:
+        from calibre.ebooks.pdf.pdftohtml import PDFTOTEXT,creationflags
+      except ImportError:
+        pass
+      else:
+        import subprocess
+        import tempfile
+        from pathlib import Path
+        data=value if isinstance(value,bytes) else value.encode('latin-1')
+        with tempfile.TemporaryDirectory(prefix='list-switchboard-walter-pdf-') as folder:
+          pdf=Path(folder)/'history.pdf'
+          pdf.write_bytes(data)
+          result=subprocess.run([PDFTOTEXT,'-bbox-layout','-enc','UTF-8',str(pdf),'-'],
+            stdout=subprocess.PIPE,stderr=subprocess.PIPE,check=True,
+            creationflags=creationflags,timeout=45)
+          return self.pdf_columns(result.stdout)
     return extract_pdf_text(value)
+
+  def pdf_columns(self,xml):
+    """Read the history's two year columns without interleaving their ballots."""
+    from lxml import etree
+    root=etree.fromstring(xml,parser=etree.XMLParser(resolve_entities=False,no_network=True))
+    result=[]
+    for page in root.xpath('//*[local-name()="page"]'):
+      anchors=[float(word.get('xMin')) for word in page.xpath('.//*[local-name()="word"]')
+        if re.fullmatch(r'20\d{2}',word.text or '')]
+      if not anchors:
+        continue
+      right_anchors=[x for x in anchors if x>float(page.get('width'))/2]
+      boundary=min(right_anchors)-2 if right_anchors else float(page.get('width'))+1
+      lines=page.xpath('.//*[local-name()="line"]')
+      for right in (False,True):
+        for line in sorted(lines,key=lambda n:float(n.get('yMin'))):
+          whole_line=' '.join(word.text or '' for word in line)
+          if 'managed by The Abbotsford Trust' in whole_line or 'PREVIOUS WINNERS' in whole_line:
+            continue
+          words=[word.text or '' for word in line.xpath('./*[local-name()="word"]')
+            if (float(word.get('xMin'))>=boundary)==right]
+          text=normalize_line(' '.join(words))
+          if not text or 'managed by The Abbotsford Trust' in text or 'PREVIOUS WINNERS' in text:
+            continue
+          result.append(text)
+    text='\n'.join(result)
+    # The dated PDF joins Carey's wrapped surname to the next book's title.
+    return text.replace('A Long Way From Home by Peter\nCarey After The Party',
+      'A Long Way From Home by Peter Carey\nAfter The Party')
 
   def rows_from_text(self, text, base_url):
     rows = []
@@ -314,6 +434,13 @@ class WalterScottOfficialParser(WalterScottParserMixin):
     value = normalize_line(value)
     value = re.sub(r'^\s*[*\-\u2022]\s*', '', value)
     value = re.sub(r'\s+(winner|shortlisted)\s*$', '', value, flags=re.I)
+    for title,author in (
+        ('The Narrow Land','Christine Dwyer Hickey'),
+        ('Miss Boston and Miss Hargreaves','Rachel Malik'),
+        ('On Canaan\u2019s Side','Sebastian Barry'),
+        ('The Sisters Brothers','Patrick de Witt')):
+      if value==title+' '+author:
+        return title,author
     by_match = re.match(r'^(.+?)\s+by\s+(.+)$', value, re.I)
     if by_match is not None:
       return (
@@ -338,6 +465,35 @@ class WalterScottOfficialParser(WalterScottParserMixin):
     if year is None:
       return []
     soup = BeautifulSoup(html or '', 'html.parser')
+    content=soup.select_one('#content')
+    if content and content.find('h1'):
+      rows=[]
+      heading=self.clean_text(content.find('h1'))
+      if result==RESULT_WINNER:
+        author=re.split(r'\s+(?:wins|has won)\b',heading,maxsplit=1,flags=re.I)[0]
+        for p in content.find_all('p',recursive=False):
+          if re.search(r'\bhas won\b',self.clean_text(p),re.I):
+            title=p.find(['em','i'])
+            if title and author and author!=heading:
+              rows.append({'award_year':str(year),'title':self.clean_title(self.clean_text(title)),
+                'author':self.clean_author(author),'result':result,'source_url':base_url,'category':CATEGORY})
+            break
+      else:
+        for p in content.find_all('p',recursive=False):
+          if not re.search(r'\bshortlist\s+comprised\b',self.clean_text(p),re.I):
+            continue
+          ballot=p.find_next_sibling(['p','ul'])
+          if ballot:
+            for line in ballot.get_text('\n',strip=True).splitlines():
+              if not re.fullmatch(r'.+?\s+by\s+[^.!?]+',line.strip(),re.I):
+                continue
+              parsed=self.title_author_from_text(line)
+              if parsed:
+                title,author=parsed
+                rows.append({'award_year':str(year),'title':title,'author':author,
+                  'result':result,'source_url':base_url,'category':CATEGORY})
+          break
+      return rows
     rows = []
     for line in self.html_candidate_lines(soup):
       parsed = self.title_author_from_text(line)

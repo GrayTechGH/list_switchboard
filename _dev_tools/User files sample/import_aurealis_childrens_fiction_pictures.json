@@ -1,0 +1,89 @@
+{
+  "append_state": {
+    "entry_count": 6,
+    "last_entry_key": "inside the world of tom roberts a ben and gracie art adventure|mark wilson",
+    "last_position": "2012.03",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Sonya Hartnett"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Children's Fiction (told primarily through pictures)",
+      "position": "2010",
+      "result": "winner",
+      "title": "The Boy and the Toy"
+    },
+    {
+      "authors": [
+        "Christopher Cheng"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2011",
+      "category": "Children's Fiction (told primarily through pictures)",
+      "position": "2011",
+      "result": "winner",
+      "title": "Sounds Spooky"
+    },
+    {
+      "authors": [
+        "Graeme Base"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "Children's Fiction (told primarily through pictures)",
+      "position": "2012",
+      "result": "winner",
+      "title": "Little Elephants"
+    },
+    {
+      "authors": [
+        "Gary Crew"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "Children's Fiction (told primarily through pictures)",
+      "position": "2012.01",
+      "result": "nominee",
+      "title": "The boy who grew into a tree"
+    },
+    {
+      "authors": [
+        "Den Scheer Dr Gary Crew"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "Children's Fiction (told primarily through pictures)",
+      "position": "2012.02",
+      "result": "nominee",
+      "title": "In the beech forest"
+    },
+    {
+      "authors": [
+        "Mark Wilson"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "Children's Fiction (told primarily through pictures)",
+      "position": "2012.03",
+      "result": "nominee",
+      "title": "Inside the world of Tom Roberts : a Ben and Gracie art adventure"
+    }
+  ],
+  "fetched_at": "2026-11-15T04:09:04Z",
+  "list_id": "aurealis_childrens_fiction_pictures",
+  "list_name": "Aurealis - Children's Fiction (Pictures) (discontinued)",
+  "match_series": false,
+  "notes": [],
+  "parser": "aurealis_childrens_fiction_pictures",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Aurealis - Children's Fiction (Pictures) (discontinued)",
+    "source_id": "aurealis_childrens_fiction_pictures",
+    "url": "https://www.librarything.com/award/1348/Aurealis-Award"
+  }
+}

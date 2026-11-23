@@ -22,6 +22,7 @@ BSFA_SPECULATIVE_REGIONAL_CATEGORIES = (
 
 class UrlFetcherBSFA(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
+  ENABLE_SFADB_INCREMENTAL = True
   URL = BSFA_AWARDS_URL
   FETCH_URLS = (BSFA_AWARDS_URL,)
   FILTER_CATEGORIES = BSFA_SPECULATIVE_REGIONAL_CATEGORIES
@@ -42,7 +43,7 @@ class UrlFetcherBSFA(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
     return BSFAParser()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -51,10 +52,12 @@ class UrlFetcherBSFA(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
       self.CATEGORY_ALIASES,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False), enable_incremental=True)
 
 
 class UrlFetcherBSFANovel(UrlFetcherBSFA):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bsfa_novel'
   NAME = 'BSFA - Novel'
   CATEGORY = 'Novel'
@@ -64,6 +67,7 @@ class UrlFetcherBSFANovel(UrlFetcherBSFA):
 
 
 class UrlFetcherBSFAShorterFiction(UrlFetcherBSFA):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bsfa_shorter_fiction'
   NAME = 'BSFA - Shorter Fiction'
   CATEGORY = 'Shorter Fiction'
@@ -77,6 +81,7 @@ class UrlFetcherBSFAShorterFiction(UrlFetcherBSFA):
 
 
 class UrlFetcherBSFACollectionAnthology(UrlFetcherBSFA):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bsfa_collection_anthology'
   NAME = 'BSFA - Collection/Anthology'
   CATEGORY = 'Collection/Anthology'
@@ -86,6 +91,7 @@ class UrlFetcherBSFACollectionAnthology(UrlFetcherBSFA):
 
 
 class UrlFetcherBSFAFictionForYoungerReaders(UrlFetcherBSFA):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bsfa_fiction_for_younger_readers'
   NAME = 'BSFA - Fiction for Younger Readers'
   FILTER_CATEGORIES = (
@@ -102,6 +108,7 @@ class UrlFetcherBSFAFictionForYoungerReaders(UrlFetcherBSFA):
 
 
 class UrlFetcherBSFALongNonfiction(UrlFetcherBSFA):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bsfa_long_nonfiction'
   NAME = 'BSFA - Long Non-Fiction'
   FILTER_CATEGORIES = (

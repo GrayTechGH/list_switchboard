@@ -1,0 +1,1409 @@
+{
+  "append_state": {
+    "entry_count": 85,
+    "last_entry_key": "shark girl|kate beaton",
+    "last_position": "2026.05",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Tarol Hunt"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2011",
+      "category": "Graphic Novel",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2011"
+      },
+      "title": "Goblins"
+    },
+    {
+      "authors": [
+        "Ryan Sohmer",
+        "Lar DeSouza"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2011",
+      "category": "Graphic Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2011"
+      },
+      "title": "Looking for Group, Vol. 3"
+    },
+    {
+      "authors": [
+        "Von Allan"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2011",
+      "category": "Graphic Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2011"
+      },
+      "title": "Stargazer, Vol. 1"
+    },
+    {
+      "authors": [
+        "Emily Ragozzino"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2011",
+      "category": "Graphic Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2011"
+      },
+      "title": "Tomboy Tara"
+    },
+    {
+      "authors": [
+        "Tarol Hunt"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2012",
+      "category": "Graphic Novel",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2012"
+      },
+      "title": "Goblins"
+    },
+    {
+      "authors": [
+        "James Rewucki",
+        "John Toone"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2012",
+      "category": "Graphic Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2012"
+      },
+      "title": "Imagination Manifesto, Book 2 , GMB Chomichuk"
+    },
+    {
+      "authors": [
+        "Alina Pete"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2012",
+      "category": "Graphic Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2012"
+      },
+      "title": "Weregeek"
+    },
+    {
+      "authors": [
+        "Alina Pete"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2013",
+      "category": "Graphic Novel",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2013"
+      },
+      "title": "Weregeek"
+    },
+    {
+      "authors": [
+        "Tarol Hunt"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2013",
+      "category": "Graphic Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2013"
+      },
+      "title": "Goblins"
+    },
+    {
+      "authors": [
+        "Ryan Sohmer",
+        "Lar DeSouza"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2013",
+      "category": "Graphic Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2013"
+      },
+      "title": "Looking for Group"
+    },
+    {
+      "authors": [
+        "GMB Chomichuk"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2013",
+      "category": "Graphic Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2013"
+      },
+      "title": "Raygun Gothic"
+    },
+    {
+      "authors": [
+        "Kari Maaren"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2013",
+      "category": "Graphic Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2013"
+      },
+      "title": "West of Bathurst"
+    },
+    {
+      "authors": [
+        "Peter Chiykowski"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2014",
+      "category": "Graphic Novel",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2014"
+      },
+      "title": "Rock, Paper, Cynic"
+    },
+    {
+      "authors": [
+        "Lar deSouza",
+        "Ryan Sohmer"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2014",
+      "category": "Graphic Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2014"
+      },
+      "title": "Looking for Group"
+    },
+    {
+      "authors": [
+        "Alina Pete"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2014",
+      "category": "Graphic Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2014"
+      },
+      "title": "Weregeek"
+    },
+    {
+      "authors": [
+        "Jeff Lemire"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2014",
+      "category": "Graphic Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2014"
+      },
+      "title": "Wild Game: Sweet Tooth Vol. 6"
+    },
+    {
+      "authors": [
+        "Kari Maaren"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2015",
+      "category": "Graphic Novel",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2015"
+      },
+      "title": "It Never Rains"
+    },
+    {
+      "authors": [
+        "Justin Currie",
+        "GMB Chomichuk"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2015",
+      "category": "Graphic Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2015"
+      },
+      "title": "Cassie & Tonk"
+    },
+    {
+      "authors": [
+        "GMB Chomichuk"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2015",
+      "category": "Graphic Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2015"
+      },
+      "title": "Raygun Gothic Vol. 2"
+    },
+    {
+      "authors": [
+        "Dominic Bercier"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2015",
+      "category": "Graphic Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2015"
+      },
+      "title": "Treadwell"
+    },
+    {
+      "authors": [
+        "Jeff Lemire"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2015",
+      "category": "Graphic Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2015"
+      },
+      "title": "Trillium"
+    },
+    {
+      "authors": [
+        "Vincent Marcone"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2016",
+      "category": "Graphic Novel",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2016"
+      },
+      "title": "The Lady ParaNorma"
+    },
+    {
+      "authors": [
+        "illustrated by Ryan Cole"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2016",
+      "category": "Graphic Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2016"
+      },
+      "title": "Bloodsuckers: Volume 2 , J. M. Frey"
+    },
+    {
+      "authors": [
+        "Kate Larking",
+        "Finn Lucullan"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2016",
+      "category": "Graphic Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2016"
+      },
+      "title": "Crash and Burn: Prologue"
+    },
+    {
+      "authors": [
+        "GMB Chomichuk"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2016",
+      "category": "Graphic Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2016"
+      },
+      "title": "Infinitum: Time Travel Noir"
+    },
+    {
+      "authors": [
+        "Kari Maaren"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2016",
+      "category": "Graphic Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2016"
+      },
+      "title": "West of Bathurst: The Complete Collection"
+    },
+    {
+      "authors": [
+        "Johnnie Christmas",
+        "Tamra Bonvillian"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2017",
+      "category": "Graphic Novel",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2017"
+      },
+      "title": "Angel Catbird Volume One , Margaret Atwood"
+    },
+    {
+      "authors": [
+        "Kate Larking",
+        "Finn Lucullan"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2017",
+      "category": "Graphic Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2017"
+      },
+      "title": "Crash and Burn"
+    },
+    {
+      "authors": [
+        "Crystal Yates"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2017",
+      "category": "Graphic Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2017"
+      },
+      "title": "Earthsong"
+    },
+    {
+      "authors": [
+        "Kari Maaren"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2017",
+      "category": "Graphic Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2017"
+      },
+      "title": "It Never Rains"
+    },
+    {
+      "authors": [
+        "Alina Pete"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2017",
+      "category": "Graphic Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2017"
+      },
+      "title": "Weregeek"
+    },
+    {
+      "authors": [
+        "Peter Chiykowski"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2018"
+      },
+      "title": "Rock Paper Cynic"
+    },
+    {
+      "authors": [
+        "Kate Larking",
+        "Finn Lucullan"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2018"
+      },
+      "title": "Crash and Burn"
+    },
+    {
+      "authors": [
+        "Ryan",
+        "Laura Harby"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2018"
+      },
+      "title": "Honey Dill"
+    },
+    {
+      "authors": [
+        "Kari Maaren"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2018"
+      },
+      "title": "It Never Rains"
+    },
+    {
+      "authors": [
+        "Daniel Wong",
+        "Paris Alleyne"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2018"
+      },
+      "title": "Riftworld Legends, #1-4 , Jonathan Williams"
+    },
+    {
+      "authors": [
+        "Dominic Bercier"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2018",
+      "category": "Graphic Novel",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2018"
+      },
+      "title": "SIGNAL Saga #0: PanGaea and the Key of Mirrari"
+    },
+    {
+      "authors": [
+        "Kari Maaren"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2019"
+      },
+      "title": "It Never Rains"
+    },
+    {
+      "authors": [
+        "Finn Lucullan",
+        "Kate Larking"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2019"
+      },
+      "title": "Crash and Burn"
+    },
+    {
+      "authors": [
+        "Rick Overwater",
+        "Cam Hayden"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2019"
+      },
+      "title": "FUTILITY: Orange Planet Horror"
+    },
+    {
+      "authors": [
+        "S. M. Beiko"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2019"
+      },
+      "title": "Krampus Is My Boyfriend!"
+    },
+    {
+      "authors": [
+        "Aminder Dhaliwal"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2019",
+      "category": "Graphic Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2019"
+      },
+      "title": "Woman World"
+    },
+    {
+      "authors": [
+        "S. M. Beiko"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2020"
+      },
+      "title": "Krampus Is My Boyfriend!"
+    },
+    {
+      "authors": [
+        "Michael Nicoll Yahgulanaas"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2020"
+      },
+      "title": "Carpe Fin"
+    },
+    {
+      "authors": [
+        "Cole Pauls"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2020"
+      },
+      "title": "Dakw\u00e4k\u00e3da Warriors"
+    },
+    {
+      "authors": [
+        "Margaret Atwood",
+        "Renee Nault"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2020"
+      },
+      "title": "The Handmaid's Tale: The Graphic Novel"
+    },
+    {
+      "authors": [
+        "Kari Maaren"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2020",
+      "category": "Graphic Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2020"
+      },
+      "title": "It Never Rains"
+    },
+    {
+      "authors": [
+        "Kari Maaren"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2021"
+      },
+      "title": "It Never Rains"
+    },
+    {
+      "authors": [
+        "Kate Larking",
+        "Finn Lucullan"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2021"
+      },
+      "title": "Crash and Burn"
+    },
+    {
+      "authors": [
+        "Ellipsis Hana Stephens"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2021"
+      },
+      "title": "Goblins"
+    },
+    {
+      "authors": [
+        "S. M. Beiko"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2021"
+      },
+      "title": "Gothic Tales of Haunted Futures"
+    },
+    {
+      "authors": [
+        "S. M. Beiko"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2021"
+      },
+      "title": "Krampus Is My Boyfriend!"
+    },
+    {
+      "authors": [
+        "illustrated by Scott B. Henderson"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2021",
+      "category": "Graphic Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2021"
+      },
+      "title": "Northwest Resistance, Katherena Vermette"
+    },
+    {
+      "authors": [
+        "Kari Maaren"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2022",
+      "category": "Graphic Novel",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2022"
+      },
+      "title": "It Never Rains"
+    },
+    {
+      "authors": [
+        "Kate Larking",
+        "Finn Lucullan"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2022",
+      "category": "Graphic Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2022"
+      },
+      "title": "Crash and Burn"
+    },
+    {
+      "authors": [
+        "Sam Maggs",
+        "Hunter Severn Bonyun"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2022",
+      "category": "Graphic Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2022"
+      },
+      "title": "Critical Role: The Mighty Nein. Origins -- Jester Lavorre"
+    },
+    {
+      "authors": [
+        "Ellipsis Hana Stephens"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2022",
+      "category": "Graphic Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2022"
+      },
+      "title": "Goblins"
+    },
+    {
+      "authors": [
+        "Hiromi Goto",
+        "Ann Xu"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2022",
+      "category": "Graphic Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2022"
+      },
+      "title": "Shadow Life"
+    },
+    {
+      "authors": [
+        "Mariko Tamaki",
+        "Gurihiru"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2022",
+      "category": "Graphic Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2022"
+      },
+      "title": "Thor and Loki: Double Trouble"
+    },
+    {
+      "authors": [
+        "Kari Maaren"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2023",
+      "category": "Graphic Novel",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2023"
+      },
+      "title": "It Never Rains"
+    },
+    {
+      "authors": [
+        "Michael DeForge"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2023",
+      "category": "Graphic Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2023"
+      },
+      "title": "Birds of Maine"
+    },
+    {
+      "authors": [
+        "Marika Kapogeorgakis"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2023",
+      "category": "Graphic Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2023"
+      },
+      "title": "Cupcake War Machine"
+    },
+    {
+      "authors": [
+        "Ellipsis Hana Stephens"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2023",
+      "category": "Graphic Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2023"
+      },
+      "title": "Goblins"
+    },
+    {
+      "authors": [
+        "Mich\u00e8le Laframboise"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2023",
+      "category": "Graphic Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2023"
+      },
+      "title": "Mistress of the Winds"
+    },
+    {
+      "authors": [
+        "Jeph Jacques"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2023",
+      "category": "Graphic Novel",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2023"
+      },
+      "title": "Questionable Content"
+    },
+    {
+      "authors": [
+        "Ally Rom Colthoff"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2023",
+      "category": "Graphic Novel",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2023"
+      },
+      "title": "Wychwood"
+    },
+    {
+      "authors": [
+        "Norm Konyu"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2024"
+      },
+      "title": "A Call to Cthulhu"
+    },
+    {
+      "authors": [
+        "Vivian Zhou"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2024"
+      },
+      "title": "Atana and the Firebird"
+    },
+    {
+      "authors": [
+        "Martin Powell",
+        "Ronn Sutton"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2024"
+      },
+      "title": "Carson of Venus , Maggie Lopez"
+    },
+    {
+      "authors": [
+        "Jeff Lemire",
+        "David Rubin"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2024"
+      },
+      "title": "Cosmic Detective , Matt Kindt"
+    },
+    {
+      "authors": [
+        "Kari Maaren"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2024"
+      },
+      "title": "It Never Rains"
+    },
+    {
+      "authors": [
+        "Kyla Aiko",
+        "Joanna Cacao"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2024"
+      },
+      "title": "The Secret of the Ravens"
+    },
+    {
+      "authors": [
+        "Ally Rom Colthoff"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2024",
+      "category": "Graphic Novel",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2024"
+      },
+      "title": "Wychwood"
+    },
+    {
+      "authors": [
+        "Ryan North",
+        "Chris Fenoglio"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2025"
+      },
+      "title": "Star Trek Lower Decks: Warp Your Own Way"
+    },
+    {
+      "authors": [
+        "Brittany Peer",
+        "Geg\u00ea Schall"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2025"
+      },
+      "title": "Cemetery Kids Don't Die: Volume 1 , Zac Thompson , Daniel Irrizari"
+    },
+    {
+      "authors": [
+        "Vikki VanSickle",
+        "Jensine Eckwall"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2025"
+      },
+      "title": "Into the Goblin Market"
+    },
+    {
+      "authors": [
+        "Kari Maaren"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2025"
+      },
+      "title": "It Never Rains"
+    },
+    {
+      "authors": [
+        "Richard Van Camp",
+        "Christopher Shy"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2025"
+      },
+      "title": "Wheetago War: Roth"
+    },
+    {
+      "authors": [
+        "Aminder Dhaliwal"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2025"
+      },
+      "title": "A Witch's Guide to Burning"
+    },
+    {
+      "authors": [
+        "Mariko Tamaki"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2025",
+      "category": "Graphic Novel",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2025"
+      },
+      "title": "Zatanna: Bring Down the House"
+    },
+    {
+      "authors": [
+        "Vivian Zhou"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2026",
+      "category": "Graphic Novel",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2026"
+      },
+      "title": "Atana and the Jade Mermaid"
+    },
+    {
+      "authors": [
+        "Ally Rom"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2026",
+      "category": "Graphic Novel",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2026"
+      },
+      "title": "Bonds of the Forest"
+    },
+    {
+      "authors": [
+        "Kari Maaren"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2026",
+      "category": "Graphic Novel",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2026"
+      },
+      "title": "It Never Rains"
+    },
+    {
+      "authors": [
+        "Jeph Jacques"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2026",
+      "category": "Graphic Novel",
+      "position": "2026.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2026"
+      },
+      "title": "Questionable Content"
+    },
+    {
+      "authors": [
+        "Kate Beaton"
+      ],
+      "award": "Aurora Award",
+      "award_year": "2026",
+      "category": "Graphic Novel",
+      "position": "2026.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurora_Awards_2026"
+      },
+      "title": "Shark Girl"
+    }
+  ],
+  "fetched_at": "2026-07-20T12:45:38Z",
+  "list_id": "aurora_graphic_novel",
+  "list_name": "Aurora - Graphic Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "aurora_graphic_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Aurora - Graphic Novel",
+    "source_id": "aurora_graphic_novel",
+    "url": "https://www.sfadb.com/Aurora_Awards"
+  }
+}

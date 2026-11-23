@@ -15,6 +15,7 @@ BRAM_STOKER_AWARDS_URL = 'https://www.sfadb.com/Bram_Stoker_Awards'
 
 class UrlFetcherBramStoker(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
+  ENABLE_SFADB_INCREMENTAL = True
   URL = BRAM_STOKER_AWARDS_URL
   FETCH_URLS = (BRAM_STOKER_AWARDS_URL,)
   FILTER_CATEGORIES = (CATEGORY_HORROR_DARK_FICTION,)
@@ -45,7 +46,7 @@ class UrlFetcherBramStoker(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
 
     return BramStokerISFDBParser()
 
-  def parse(self, html, fetch_url=None, log=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, log=None, progress=None, **kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -54,10 +55,12 @@ class UrlFetcherBramStoker(SFADBISFDYAwardFallbackMixin, UrlFetcherGeneric):
       self.CATEGORY_ALIASES,
       fetch_url=fetch_url,
       log=log,
-      progress=progress)
+      progress=progress, cached_parsed=kwargs.get('cached_parsed'),
+      incremental_update=kwargs.get('incremental_update', False), enable_incremental=True)
 
 
 class UrlFetcherBramStokerNovel(UrlFetcherBramStoker):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bram_stoker_novel'
   NAME = 'Bram Stoker - Novel'
   CATEGORY = 'Novel'
@@ -67,6 +70,7 @@ class UrlFetcherBramStokerNovel(UrlFetcherBramStoker):
 
 
 class UrlFetcherBramStokerFirstNovel(UrlFetcherBramStoker):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bram_stoker_first_novel'
   NAME = 'Bram Stoker - First Novel'
   CATEGORY = 'First Novel'
@@ -76,6 +80,7 @@ class UrlFetcherBramStokerFirstNovel(UrlFetcherBramStoker):
 
 
 class UrlFetcherBramStokerYoungAdultNovel(UrlFetcherBramStoker):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bram_stoker_young_adult_novel'
   NAME = 'Bram Stoker - Young Adult Novel'
   FILTER_CATEGORIES = (
@@ -89,6 +94,7 @@ class UrlFetcherBramStokerYoungAdultNovel(UrlFetcherBramStoker):
 
 
 class UrlFetcherBramStokerMiddleGradeNovel(UrlFetcherBramStoker):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bram_stoker_middle_grade_novel'
   NAME = 'Bram Stoker - Middle Grade Novel'
   FILTER_CATEGORIES = (
@@ -102,6 +108,7 @@ class UrlFetcherBramStokerMiddleGradeNovel(UrlFetcherBramStoker):
 
 
 class UrlFetcherBramStokerLongFiction(UrlFetcherBramStoker):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bram_stoker_long_fiction'
   NAME = 'Bram Stoker - Long Fiction'
   CATEGORY = 'Long Fiction'
@@ -111,6 +118,7 @@ class UrlFetcherBramStokerLongFiction(UrlFetcherBramStoker):
 
 
 class UrlFetcherBramStokerFictionCollection(UrlFetcherBramStoker):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bram_stoker_fiction_collection'
   NAME = 'Bram Stoker - Fiction Collection'
   CATEGORY = 'Fiction Collection'
@@ -118,6 +126,7 @@ class UrlFetcherBramStokerFictionCollection(UrlFetcherBramStoker):
 
 
 class UrlFetcherBramStokerAnthology(UrlFetcherBramStoker):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bram_stoker_anthology'
   NAME = 'Bram Stoker - Anthology'
   CATEGORY = 'Anthology'
@@ -127,6 +136,7 @@ class UrlFetcherBramStokerAnthology(UrlFetcherBramStoker):
 
 
 class UrlFetcherBramStokerPoetryCollection(UrlFetcherBramStoker):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bram_stoker_poetry_collection'
   NAME = 'Bram Stoker - Poetry Collection'
   CATEGORY = 'Poetry Collection'
@@ -136,6 +146,7 @@ class UrlFetcherBramStokerPoetryCollection(UrlFetcherBramStoker):
 
 
 class UrlFetcherBramStokerGraphicNovel(UrlFetcherBramStoker):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bram_stoker_graphic_novel'
   NAME = 'Bram Stoker - Graphic Novel'
   CATEGORY = 'Graphic Novel'
@@ -147,6 +158,7 @@ class UrlFetcherBramStokerGraphicNovel(UrlFetcherBramStoker):
 
 
 class UrlFetcherBramStokerNonfiction(UrlFetcherBramStoker):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'bram_stoker_nonfiction'
   NAME = 'Bram Stoker - Nonfiction'
   FILTER_CATEGORIES = (CATEGORY_HORROR_DARK_FICTION, CATEGORY_NONFICTION)

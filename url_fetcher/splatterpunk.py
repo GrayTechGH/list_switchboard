@@ -19,11 +19,13 @@ except ImportError:
   )
 
 try:
-  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError,CamoufoxRequiredError
+  from calibre_plugins.list_switchboard.parser.splatterpunk_updates import fetch_splatterpunk
 except ImportError:
-  from errors import ImportCancelledError
+  from errors import ImportCancelledError,CamoufoxRequiredError
+  from parser.splatterpunk_updates import fetch_splatterpunk
 
-from .splatterpunk_transport import SplatterpunkFetchPolicy
+from .splatterpunk_transport import SplatterpunkFetchPolicy,SplatterpunkOfficialFetchPolicy
 
 from .generic import (
   CATEGORY_HORROR_DARK_FICTION,
@@ -40,8 +42,9 @@ class UrlFetcherSplatterpunk(GoodreadsFetchPolicyMixin, UrlFetcherGeneric):
   """Keep official sources authoritative and historical recovery page-local.
 
   Invariants:
-  - Only the Goodreads supplement uses the per-import browser policy.
-  - The entire supplement is discarded if any required page still fails.
+  - Official REST and Goodreads supplement policies validate their own sources.
+  - Failed live pagination is discarded as a whole; compatible updates retain
+    the previous whole supplement pending retry.
   - Operation policy and progress state are cleared on success or failure.
   """
 
@@ -75,6 +78,8 @@ class UrlFetcherSplatterpunk(GoodreadsFetchPolicyMixin, UrlFetcherGeneric):
     self._splatterpunk_fetch_policy = SplatterpunkFetchPolicy(
       fetch_url, lambda url: self.legacy_fetch_url(fetch_url, url), self.parser(),
       log=log, progress=progress)
+    self._splatterpunk_official_policy=SplatterpunkOfficialFetchPolicy(
+      fetch_url,lambda url:self.legacy_fetch_url(fetch_url,url),self.parser(),log)
     try:
       return self._fetch_and_parse(
         fetch_url, sleep, fetch_error, log, progress, before_fetch, after_fetch,
@@ -82,12 +87,16 @@ class UrlFetcherSplatterpunk(GoodreadsFetchPolicyMixin, UrlFetcherGeneric):
         cached_parsed, incremental_update)
     finally:
       self._splatterpunk_fetch_policy = None
+      self._splatterpunk_official_policy = None
       self._splatterpunk_progress = None
 
   def fetch_url(self, fetch_url, url):
     policy = getattr(self, '_splatterpunk_fetch_policy', None)
     if policy is not None and url.startswith(GOODREADS_URL):
       return policy.fetch(url)
+    official=getattr(self,'_splatterpunk_official_policy',None)
+    if official is not None and url in (OFFICIAL_AWARDS_API_URL,OFFICIAL_PAST_WINNERS_API_URL):
+      return official.fetch(url)
     return self.legacy_fetch_url(fetch_url, url)
 
   def legacy_fetch_url(self, fetch_url, url):
@@ -115,47 +124,8 @@ class UrlFetcherSplatterpunk(GoodreadsFetchPolicyMixin, UrlFetcherGeneric):
 
     fetcher_fetch_url = lambda target_url: self.fetch_url(fetch_url, target_url)
     parser = self.parser()
-    parsed_results = []
-    notes = []
-
-    try:
-      parsed_results.append(self.fetch_parse_current(
-        parser, fetcher_fetch_url, before_fetch, after_fetch, before_parse))
-    except ImportCancelledError:
-      raise
-    except Exception as err:
-      note = f'Splatterpunk official current nominees failed: {err}'
-      notes.append(note)
-      if log is not None:
-        log(note)
-
-    try:
-      parsed_results.append(self.fetch_parse_official_winners(
-        parser, fetcher_fetch_url, before_fetch, after_fetch, before_parse))
-    except ImportCancelledError:
-      raise
-    except Exception as err:
-      note = f'Splatterpunk official past winners failed: {err}'
-      notes.append(note)
-      if log is not None:
-        log(note)
-
-    try:
-      parsed_results.extend(self.fetch_parse_goodreads_pages(
-        parser, fetcher_fetch_url, before_fetch, after_fetch, before_parse, log, progress))
-    except ImportCancelledError:
-      raise
-    except Exception as err:
-      note = f'Splatterpunk Goodreads historical supplement failed: {err}'
-      notes.append(note)
-      if log is not None:
-        log(note)
-
-    combined = parser.combine_results(
-      self.NAME,
-      self.URL,
-      *parsed_results,
-      {'entries': (), 'notes': notes})
+    combined=fetch_splatterpunk(self,fetcher_fetch_url,cached_parsed,incremental_update,
+      before_fetch,after_fetch,before_parse,log,progress)
     if not combined.get('entries'):
       raise UrlFetcherError('Could not fetch or parse the imported list.')
     combined['match_series'] = self.options.get('match_series', True)
@@ -174,7 +144,10 @@ class UrlFetcherSplatterpunk(GoodreadsFetchPolicyMixin, UrlFetcherGeneric):
       self.NAME,
       self.CATEGORY,
       self.CATEGORY_ALIASES)
-    parser.validate_official_current_result(parsed)
+    parser.validate_official_current_result(parsed,source)
+    parsed['current_state']=parser.current_phase(source)
+    if parsed['current_state']['intake']:
+      parsed['notes'].append('Official KillerCon current page is nomination intake; no finalist ballot is published there yet.')
     return parsed
 
   def fetch_parse_official_winners(
@@ -254,6 +227,7 @@ class UrlFetcherSplatterpunk(GoodreadsFetchPolicyMixin, UrlFetcherGeneric):
 
 
 class UrlFetcherSplatterpunkNovel(UrlFetcherSplatterpunk):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'splatterpunk_novel'
   NAME = 'Splatterpunk - Novel'
   CATEGORY = 'Novel'
@@ -261,6 +235,7 @@ class UrlFetcherSplatterpunkNovel(UrlFetcherSplatterpunk):
 
 
 class UrlFetcherSplatterpunkNovella(UrlFetcherSplatterpunk):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'splatterpunk_novella'
   NAME = 'Splatterpunk - Novella'
   CATEGORY = 'Novella'
@@ -268,6 +243,7 @@ class UrlFetcherSplatterpunkNovella(UrlFetcherSplatterpunk):
 
 
 class UrlFetcherSplatterpunkCollection(UrlFetcherSplatterpunk):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'splatterpunk_collection'
   NAME = 'Splatterpunk - Collection'
   CATEGORY = 'Collection'
@@ -275,6 +251,7 @@ class UrlFetcherSplatterpunkCollection(UrlFetcherSplatterpunk):
 
 
 class UrlFetcherSplatterpunkAnthology(UrlFetcherSplatterpunk):
+  SUPPORTS_INCREMENTAL_UPDATE = True
   source_id = 'splatterpunk_anthology'
   NAME = 'Splatterpunk - Anthology'
   CATEGORY = 'Anthology'

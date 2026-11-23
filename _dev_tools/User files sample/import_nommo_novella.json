@@ -1,0 +1,438 @@
+{
+  "append_state": {
+    "entry_count": 33,
+    "last_entry_key": "the practice the horizon and the chain|sofia samatar",
+    "last_position": "2025.03",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2017",
+      "category": "Novella",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Binti_(novella)"
+      },
+      "title": "Binti"
+    },
+    {
+      "authors": [
+        "Mame Bougouma Diene"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2017",
+      "category": "Novella",
+      "position": "2017.01",
+      "result": "nominee",
+      "title": "Hell Freezes Over"
+    },
+    {
+      "authors": [
+        "Dilman Dila"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2017",
+      "category": "Novella",
+      "position": "2017.02",
+      "result": "nominee",
+      "title": "The Flying Man of Stone"
+    },
+    {
+      "authors": [
+        "Muthi Nhlema"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2017",
+      "category": "Novella",
+      "position": "2017.03",
+      "result": "nominee",
+      "title": "Ta O'Reva"
+    },
+    {
+      "authors": [
+        "Tade Thompson",
+        "Nick Wood"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2017",
+      "category": "Novella",
+      "position": "2017.04",
+      "result": "nominee",
+      "title": "The Last Pantheon"
+    },
+    {
+      "authors": [
+        "Tade Thompson"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2018",
+      "category": "Novella",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/The_Murders_of_Molly_Southbourne"
+      },
+      "title": "The Murders of Molly Southbourne"
+    },
+    {
+      "authors": [
+        "Sofia Samatar"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2018",
+      "category": "Novella",
+      "position": "2018.01",
+      "result": "nominee",
+      "title": "Fallow"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2018",
+      "category": "Novella",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Binti:_Home"
+      },
+      "title": "Binti: Home"
+    },
+    {
+      "authors": [
+        "Nerine Dorman"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Novella",
+      "position": "2019",
+      "result": "winner",
+      "title": "The Firebird"
+    },
+    {
+      "authors": [
+        "Caldon Mull"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Novella",
+      "position": "2019.01",
+      "result": "nominee",
+      "title": "Neid-Fire"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Novella",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Binti:_The_Night_Masquerade"
+      },
+      "title": "Binti: The Night Masquerade"
+    },
+    {
+      "authors": [
+        "Sofia Samatar"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2019",
+      "category": "Novella",
+      "position": "2019.03",
+      "result": "nominee",
+      "title": "Hard Mary"
+    },
+    {
+      "authors": [
+        "Wole Talabi"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2020",
+      "category": "Novella",
+      "position": "2020",
+      "result": "winner",
+      "title": "Incompleteness Theories"
+    },
+    {
+      "authors": [
+        "Kerstin Hall"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2020",
+      "category": "Novella",
+      "position": "2020.01",
+      "result": "nominee",
+      "title": "The Border Keeper"
+    },
+    {
+      "authors": [
+        "Caldon Mull"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2020",
+      "category": "Novella",
+      "position": "2020.02",
+      "result": "nominee",
+      "title": "Weatherman"
+    },
+    {
+      "authors": [
+        "Oghenechovwe Donald Ekpeki"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Ife-Iyoku,_the_Tale_of_Imadeyunuagbon"
+      },
+      "title": "Ife-Iyoku: The Tale of Imadeyunuagbon"
+    },
+    {
+      "authors": [
+        "David A. Atta"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021.01",
+      "result": "nominee",
+      "title": "Guardians: The Awakening"
+    },
+    {
+      "authors": [
+        "Dilman Dila"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021.02",
+      "result": "nominee",
+      "title": "A Fledgling Abiba"
+    },
+    {
+      "authors": [
+        "Tochi Onyebuchi"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Riot_Baby"
+      },
+      "title": "Riot Baby"
+    },
+    {
+      "authors": [
+        "Tlotlo Tsamaase"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2021",
+      "category": "Novella",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/The_Silence_of_the_Wilting_Skin"
+      },
+      "title": "The Silence of the Wilting Skin"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2022",
+      "category": "Novella",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Remote_Control_(novella)"
+      },
+      "title": "Remote Control"
+    },
+    {
+      "authors": [
+        "Dilman Dila"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2022",
+      "category": "Novella",
+      "position": "2022.01",
+      "result": "nominee",
+      "title": "The Future God of Love"
+    },
+    {
+      "authors": [
+        "Kola Heyward-Rotimi"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2022",
+      "category": "Novella",
+      "position": "2022.02",
+      "result": "nominee",
+      "title": "An Exploration of Nicole Otieno\u2019s Early Filmography"
+    },
+    {
+      "authors": [
+        "Erhu Kome"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2022",
+      "category": "Novella",
+      "position": "2022.03",
+      "result": "nominee",
+      "title": "Not Seeing is a Flower"
+    },
+    {
+      "authors": [
+        "Nuzo Onoh"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2022",
+      "category": "Novella",
+      "position": "2022.04",
+      "result": "nominee",
+      "title": "The Abomination"
+    },
+    {
+      "authors": [
+        "Stephen Embleton"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2024",
+      "category": "Novella",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Mothersound"
+      },
+      "title": "Undulation"
+    },
+    {
+      "authors": [
+        "Eugen Bacon"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2024",
+      "category": "Novella",
+      "position": "2024.01",
+      "result": "nominee",
+      "title": "Broken Paradise"
+    },
+    {
+      "authors": [
+        "Oghenechovwe Donald Ekpeki",
+        "Joshua Uchenna Omenga"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2024",
+      "category": "Novella",
+      "position": "2024.02",
+      "result": "nominee",
+      "title": "Land of the Awaiting Birth"
+    },
+    {
+      "authors": [
+        "Moses Ose Utomi"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2024",
+      "category": "Novella",
+      "position": "2024.03",
+      "result": "nominee",
+      "title": "The Lies of the Ajungo"
+    },
+    {
+      "authors": [
+        "Suyi Davies Okungbowa"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2025",
+      "category": "Novella",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://en.wikipedia.org/wiki/Lost_Ark_Dreaming"
+      },
+      "title": "Lost Ark Dreaming"
+    },
+    {
+      "authors": [
+        "Ivana Akotowaa Ofori"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2025",
+      "category": "Novella",
+      "position": "2025.01",
+      "result": "nominee",
+      "title": "The Year of Return"
+    },
+    {
+      "authors": [
+        "Tobi Ogundiran"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2025",
+      "category": "Novella",
+      "position": "2025.02",
+      "result": "nominee",
+      "title": "In the Shadow of the Fall"
+    },
+    {
+      "authors": [
+        "Sofia Samatar"
+      ],
+      "award": "Nommo Award",
+      "award_year": "2025",
+      "category": "Novella",
+      "position": "2025.03",
+      "result": "nominee",
+      "title": "The Practice, the Horizon, and the Chain"
+    }
+  ],
+  "fetched_at": "2026-07-23T19:03:07Z",
+  "list_id": "nommo_novella",
+  "list_name": "Nommo - Novella",
+  "match_series": false,
+  "notes": [],
+  "parser": "nommo_novella",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Nommo - Novella",
+    "source_id": "nommo_novella",
+    "url": "https://en.wikipedia.org/wiki/Nommo_Awards"
+  }
+}

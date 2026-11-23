@@ -10,6 +10,7 @@ class UrlFetcherService95BookClub(UrlFetcherGeneric):
   NAME = 'Service95 Book Club'
   URL = 'https://www.service95.com/book-club'
   order = 52
+  SUPPORTS_INCREMENTAL_UPDATE = True
   FILTER_CATEGORIES = (CATEGORY_GENERAL_AUDIENCE_BOOK_CLUBS,)
   options = {'match_series': False}
 
@@ -20,6 +21,8 @@ class UrlFetcherService95BookClub(UrlFetcherGeneric):
       from parser.service95_book_club import Service95BookClubParser
     return Service95BookClubParser()
 
-  def parse(self, html, fetch_url=None, progress=None, **_kwargs):
+  def parse(self, html, fetch_url=None, progress=None, cached_parsed=None,
+            incremental_update=False, **_kwargs):
     return self.parser().parse(
-      html, self.URL, self.NAME, fetch_url=fetch_url, progress=progress)
+      html, self.URL, self.NAME, fetch_url=fetch_url, progress=progress,
+      cached_parsed=cached_parsed, incremental_update=incremental_update)

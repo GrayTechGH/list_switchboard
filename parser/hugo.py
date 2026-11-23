@@ -34,10 +34,14 @@ try:
     entry_source_object, imported_entry, ListParserBase, parsed_source)
   from calibre_plugins.list_switchboard.parser.award_base import is_author_suffix
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
   from .base import entry_source_object, imported_entry, ListParserBase, parsed_source
   from .award_base import is_author_suffix
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 YEAR_LINK = re.compile(r'^(\d{4})\s+Hugo Awards$', re.I)
@@ -112,42 +116,82 @@ class HugoAwardsCategoryParser(ListParserBase):
   INCLUDE_INCOMPLETE_FINALISTS = False
   PARSER_NOTES = ()
 
-  def parse(self, history_html, base_url, fetch_url=None, log=None, progress=None):
+  def parse(self, history_html, base_url, fetch_url=None, log=None, progress=None,
+            cached_parsed=None, incremental_update=False):
+    """Reuse settled official years; refresh discovery, latest and unsettled ballots.
+
+    Empty category history is reusable only inside a recognizable official year
+    page. Category notes and narrow SFADB winner corrections belong to that year.
+    """
     soup = BeautifulSoup(history_html, 'html.parser')
     year_links = _hugo_year_links(soup, base_url)
+    if not year_links:
+      raise ValueError('Official Hugo history did not expose award year links.')
+    cache = ParsedUnitCache('hugo-official-years-v1',
+      f'{base_url}|{type(self).__name__}|{self.CATEGORY_ALIASES}|'
+      f'{self.INCLUDE_INCOMPLETE_FINALISTS}|{self.APPLY_SFADB_WINNER_FALLBACK}',
+      cached_parsed, incremental_update)
+    current_year = datetime.datetime.now().year
+    latest_year = max(link['year'] for link in year_links)
     entries = []
     notes = list(self.PARSER_NOTES)
     _progress(progress, 0, len(year_links), f'Preparing {self.NAME} year pages...')
     for index, year_link in enumerate(year_links, start=1):
       year = year_link['year']
       url = year_link['url']
+      old_metadata = (cache.old_units.get(url) or {}).get('metadata', {})
+      if year < current_year and year < latest_year and old_metadata.get('settled') is True:
+        reused = cache.reuse(url, revision=year)
+        if reused is not None:
+          entries.extend(reused)
+          notes.extend(old_metadata.get('notes', []))
+          _progress(progress, index, len(year_links), f'Reusing Hugo Awards {year}...')
+          continue
       _progress(progress, index, len(year_links), f'Fetching Hugo Awards {year}...')
       try:
         html = fetch_url(url) if fetch_url is not None else ''
+      except (ImportCancelledError, CamoufoxRequiredError):
+        raise
       except Exception as err:
         notes.append(f'Hugo Awards {year} could not be fetched: {err}')
+        entries.extend(cache.failed(url, revision=year))
+        notes.extend(old_metadata.get('notes', []))
         _log(log, 'fetch-failed', {'year': year, 'url': url, 'error': str(err)})
+        continue
+      year_soup = BeautifulSoup(html, 'html.parser')
+      heading = _find_category_heading(year_soup, self.CATEGORY_ALIASES)
+      item_nodes = _category_item_nodes(year_soup, self.CATEGORY_ALIASES)
+      valid_page = bool(item_nodes) or _recognizable_hugo_year_page(year_soup, year)
+      if not valid_page or (heading is not None and not item_nodes):
+        notes.append(f'Hugo Awards {year} did not expose a usable category page; retained cached entries.')
+        entries.extend(cache.failed(url, revision=year))
+        notes.extend(old_metadata.get('notes', []))
         continue
       year_entries = _parse_hugo_year_category_entries(
         year, url, html, self.AWARD_NAME, self.CATEGORY, self.CATEGORY_ALIASES,
         include_incomplete_finalists=self.INCLUDE_INCOMPLETE_FINALISTS,
         parse_item=self.parse_item,
         parse_item_node=self.parse_item_node)
-      if not year_entries:
-        _log(log, 'year-skipped', {'year': year, 'url': url})
-        continue
-      notes.extend(self.notes_for_year(year, url, html, year_entries))
+      year_notes = list(self.notes_for_year(year, url, html, year_entries)) if year_entries else []
+      complete = True
       if (
           self.APPLY_SFADB_WINNER_FALLBACK
+          and year_entries
           and fetch_url is not None
           and not any(e['result'] == 'winner' for e in year_entries)):
-        _apply_sfadb_winner_fallback(year_entries, year, fetch_url, log, notes)
+        complete = _apply_sfadb_winner_fallback(year_entries, year, fetch_url, log, year_notes)
+      settled = _completed_hugo_year_page(year_soup, self.CATEGORY_ALIASES) or heading is None
+      cache.put(url, year_entries, revision=year, complete=complete,
+        metadata={'settled': settled, 'notes': year_notes})
+      notes.extend(year_notes)
       entries.extend(year_entries)
       _log(log, 'year-parsed', {'year': year, 'url': url, 'entries': len(year_entries)})
+    entries = sorted(entries, key=lambda item: position_sort_key(item.get('position', '')))
     return {
       'name': self.NAME,
       'source': parsed_source(self.NAME, base_url),
-      'entries': sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      'entries': entries,
+      'incremental_state': cache.state(entries),
       'notes': notes,
       'match_series': False,
     }
@@ -261,6 +305,13 @@ def _hugo_year_links(soup, base_url):
   return sorted(links, key=lambda item: item['year'])
 
 
+def _recognizable_hugo_year_page(soup, year):
+  title = soup.find('h1', class_='entry-title')
+  content = soup.find(class_='entry-content')
+  return bool(title is not None and title.get_text(' ', strip=True) == f'{year} Hugo Awards'
+    and content is not None and content.find('li') is not None)
+
+
 def _parse_hugo_year_category_entries(
     year, source_url, html, award_name, category, aliases,
     include_incomplete_finalists=False, parse_item=None, parse_item_node=None):
@@ -325,7 +376,7 @@ def _apply_sfadb_winner_fallback(entries, year, fetch_url, log, notes):
   _log_fallback(log, f'checking year={year} current_year={current_year}')
   if year > current_year:
     _log_fallback(log, f'skipped year={year}; award year is in the future')
-    return
+    return False
   try:
     sfadb_url = f'https://www.sfadb.com/Hugo_Awards_{year}'
     _log_fallback(log, f'fetching {sfadb_url}')
@@ -333,7 +384,7 @@ def _apply_sfadb_winner_fallback(entries, year, fetch_url, log, notes):
     winner_title = _parse_sfadb_hugo_novel_winner_title(html)
     if not winner_title:
       _log_fallback(log, f'no SFADB Novel winner found for {year}')
-      return
+      return False
     _log_fallback(log, f'SFADB Novel winner title={winner_title!r}')
     for entry in entries:
       if _same_hugo_title(winner_title, entry.get('title', '')):
@@ -341,11 +392,14 @@ def _apply_sfadb_winner_fallback(entries, year, fetch_url, log, notes):
         entry['position'] = str(year)
         entry['source'] = entry_source_object(sfadb_url)
         _log_fallback(log, f'marked winner year={year} title={entry["title"]!r}')
-        return
+        return True
     _log_fallback(log, f'winner title did not match parsed official entries for {year}')
+  except (ImportCancelledError, CamoufoxRequiredError):
+    raise
   except Exception as err:
     _log_fallback(log, f'failed year={year}: {err}')
     notes.append(f'Hugo Awards {year} SFADB winner fallback failed: {err}')
+  return False
 
 
 def _parse_sfadb_hugo_novel_winner_title(html):

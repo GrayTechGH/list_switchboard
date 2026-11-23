@@ -8,9 +8,9 @@ from urllib.parse import parse_qs, urlparse
 from .dragons_and_jetpacks_transport import DragonsJetpacksFetchPolicy
 
 try:
-  from calibre_plugins.list_switchboard.errors import ImportCancelledError
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
-  from errors import ImportCancelledError
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 from .generic import (
   CATEGORY_FANTASY,
@@ -28,7 +28,9 @@ class UrlFetcherDragonsJetpacks(GoodreadsFetchPolicyMixin, UrlFetcherGeneric):
   URL = (
     'https://www.goodreads.com/group/bookshelf/106876-dragons-jetpacks'
     '?per_page=100&shelf=group-read')
+  FETCH_URLS = (URL + '&sort=date_added&order=d',)
   order = 58
+  SUPPORTS_INCREMENTAL_UPDATE = True
   FILTER_CATEGORIES = (
     CATEGORY_ONLINE_COMMUNITY_BOOK_CLUBS,
     CATEGORY_SCIENCE_FICTION,
@@ -64,7 +66,7 @@ class UrlFetcherDragonsJetpacks(GoodreadsFetchPolicyMixin, UrlFetcherGeneric):
     for retry in range(retries + 1):
       try:
         return self.fetch_url_once(fetch_url, url)
-      except ImportCancelledError:
+      except (ImportCancelledError,CamoufoxRequiredError):
         raise
       except Exception as err:
         if retry >= retries or not self.is_timeout_error(err):
@@ -102,7 +104,7 @@ class UrlFetcherDragonsJetpacks(GoodreadsFetchPolicyMixin, UrlFetcherGeneric):
 
   def parse(
       self, html, fetch_url=None, fetch_error=None, log=None, progress=None,
-      **_kwargs):
+      cached_parsed=None, incremental_update=False, **_kwargs):
     return self.parser().parse(
       html,
       self.URL,
@@ -110,4 +112,4 @@ class UrlFetcherDragonsJetpacks(GoodreadsFetchPolicyMixin, UrlFetcherGeneric):
       fetch_url=fetch_url,
       fetch_error=fetch_error,
       log=log,
-      progress=progress)
+      progress=progress,cached_parsed=cached_parsed,incremental_update=incremental_update)

@@ -833,12 +833,13 @@
       "title": "The Prestige"
     }
   ],
-  "fetched_at": "2026-07-11T00:41:47Z",
+  "fetched_at": "2026-07-23T05:56:03Z",
   "list_id": "locus_all_time_2012_fh_20th_novel",
   "list_name": "Locus - All-Time 2012 20th Century Fantasy/Horror Novel",
   "match_series": false,
   "notes": [],
   "parser": "locus_all_time_2012_fh_20th_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Locus - All-Time 2012 20th Century Fantasy/Horror Novel",

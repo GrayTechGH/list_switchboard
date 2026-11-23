@@ -1,0 +1,3426 @@
+{
+  "append_state": {
+    "entry_count": 200,
+    "last_entry_key": "falastin|sami tamimi",
+    "last_position": "2020.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Gwyneth Paltrow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "My Father's Daughter: Delicious, Easy Recipes Celebrating Family & Togetherness",
+      "votes": "2287"
+    },
+    {
+      "authors": [
+        "Alton Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Good Eats 3",
+      "votes": "2201"
+    },
+    {
+      "authors": [
+        "Gabrielle Hamilton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Blood, Bones, and Butter",
+      "votes": "1748"
+    },
+    {
+      "authors": [
+        "Sandra Beasley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Don't Kill the Birthday Girl",
+      "votes": "1488"
+    },
+    {
+      "authors": [
+        "Sara Wells"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Our Best Bites",
+      "votes": "1430"
+    },
+    {
+      "authors": [
+        "Gary Taubes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Why We Get Fat",
+      "votes": "842"
+    },
+    {
+      "authors": [
+        "Jack Norris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Vegan for Life",
+      "votes": "811"
+    },
+    {
+      "authors": [
+        "Lisa Abend"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "The Sorcerer's Apprentices",
+      "votes": "782"
+    },
+    {
+      "authors": [
+        "Jeni Britton Bauer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Jeni's Splendid Ice Creams at Home",
+      "votes": "765"
+    },
+    {
+      "authors": [
+        "Barry Estabrook"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Tomatoland",
+      "votes": "689"
+    },
+    {
+      "authors": [
+        "Grant Achatz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Life, on the Line",
+      "votes": "368"
+    },
+    {
+      "authors": [
+        "Paula H. Deen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Paula Deen's Southern Cooking Bible",
+      "votes": "366"
+    },
+    {
+      "authors": [
+        "Whole Living Magazine"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Power Foods",
+      "votes": "346"
+    },
+    {
+      "authors": [
+        "Heidi Swanson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Super Natural Every Day",
+      "votes": "344"
+    },
+    {
+      "authors": [
+        "Kathy Freston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Veganist",
+      "votes": "307"
+    },
+    {
+      "authors": [
+        "William Davis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Wheat Belly",
+      "votes": "268"
+    },
+    {
+      "authors": [
+        "Annia Ciezadlo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Day of Honey",
+      "votes": "172"
+    },
+    {
+      "authors": [
+        "Annette Cottrell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "The Urban Farm Handbook",
+      "votes": "124"
+    },
+    {
+      "authors": [
+        "Isa Chandra Moskowitz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "Vegan Pie in the Sky",
+      "votes": "101"
+    },
+    {
+      "authors": [
+        "Kathleen Flinn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Food & Cooking",
+      "position": "2011.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cooking-books-2011"
+      },
+      "title": "The Kitchen Counter Cooking School",
+      "votes": "70"
+    },
+    {
+      "authors": [
+        "Ree Drummond"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "The Pioneer Woman Cooks: Food from My Frontier",
+      "votes": "7977"
+    },
+    {
+      "authors": [
+        "Alana Chernila"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "The Homemade Pantry",
+      "votes": "2888"
+    },
+    {
+      "authors": [
+        "Amy Thomas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "Paris, My Sweet",
+      "votes": "2755"
+    },
+    {
+      "authors": [
+        "Joy Wilson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "Joy the Baker Cookbook",
+      "votes": "2438"
+    },
+    {
+      "authors": [
+        "Marisa McClellan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "Food in Jars",
+      "votes": "1983"
+    },
+    {
+      "authors": [
+        "Scott Jurek"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "Eat & Run",
+      "votes": "1923"
+    },
+    {
+      "authors": [
+        "Chloe Coscarelli"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "Chloe's Kitchen",
+      "votes": "1876"
+    },
+    {
+      "authors": [
+        "Karen Le Billon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "French Kids Eat Everything",
+      "votes": "1849"
+    },
+    {
+      "authors": [
+        "Will Allen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "The Good Food Revolution",
+      "votes": "1635"
+    },
+    {
+      "authors": [
+        "Jenny Rosenstrach"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "Dinner",
+      "votes": "1499"
+    },
+    {
+      "authors": [
+        "Luisa Weiss"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "My Berlin Kitchen",
+      "votes": "983"
+    },
+    {
+      "authors": [
+        "Diane Sanfilippo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "Practical Paleo",
+      "votes": "895"
+    },
+    {
+      "authors": [
+        "Dallas Hartwig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "It Starts with Food",
+      "votes": "752"
+    },
+    {
+      "authors": [
+        "Tracie McMillan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "The American Way of Eating",
+      "votes": "681"
+    },
+    {
+      "authors": [
+        "Deb Perelman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "The Smitten Kitchen Cookbook",
+      "votes": "661"
+    },
+    {
+      "authors": [
+        "Sandor Ellix Katz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "The Art of Fermentation",
+      "votes": "487"
+    },
+    {
+      "authors": [
+        "Chelsea Monroe-Cassel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "A Feast of Ice and Fire",
+      "votes": "431"
+    },
+    {
+      "authors": [
+        "Del Sroufe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "Forks Over Knives\u2014The Cookbook",
+      "votes": "287"
+    },
+    {
+      "authors": [
+        "Sara Wells"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "Savoring the Seasons with Our Best Bites",
+      "votes": "201"
+    },
+    {
+      "authors": [
+        "Cheryl Day"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2012",
+      "category": "Food & Cookbooks",
+      "position": "2012.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2012"
+      },
+      "title": "The Back in the Day Bakery Cookbook",
+      "votes": "195"
+    },
+    {
+      "authors": [
+        "Tim Federle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "Tequila Mockingbird: Cocktails with a Literary Twist",
+      "votes": "8598"
+    },
+    {
+      "authors": [
+        "Ree Drummond"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "The Pioneer Woman Cooks",
+      "votes": "6293"
+    },
+    {
+      "authors": [
+        "Amy Stewart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "The Drunken Botanist",
+      "votes": "6247"
+    },
+    {
+      "authors": [
+        "Michael Moss"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "Salt Sugar Fat",
+      "votes": "5200"
+    },
+    {
+      "authors": [
+        "Michael Pollan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "Cooked",
+      "votes": "4966"
+    },
+    {
+      "authors": [
+        "The Moosewood Collective"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "Moosewood Restaurant Favorites",
+      "votes": "4616"
+    },
+    {
+      "authors": [
+        "Lucy Knisley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "Relish",
+      "votes": "3933"
+    },
+    {
+      "authors": [
+        "Shauna Niequist"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "Bread and Wine",
+      "votes": "3207"
+    },
+    {
+      "authors": [
+        "Jo Robinson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "Eating on the Wild Side",
+      "votes": "3060"
+    },
+    {
+      "authors": [
+        "Michael Mosley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "The FastDiet",
+      "votes": "2310"
+    },
+    {
+      "authors": [
+        "Nigel Slater"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "Notes from the Larder",
+      "votes": "1215"
+    },
+    {
+      "authors": [
+        "Rip Esselstyn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "My Beef with Meat",
+      "votes": "1166"
+    },
+    {
+      "authors": [
+        "Deborah Madison"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "Vegetable Literacy",
+      "votes": "1118"
+    },
+    {
+      "authors": [
+        "Gwyneth Paltrow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "It's All Good",
+      "votes": "1023"
+    },
+    {
+      "authors": [
+        "Melanie Warner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "Pandora's Lunchbox",
+      "votes": "828"
+    },
+    {
+      "authors": [
+        "Lindsay S. Nixon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "Happy Herbivore Abroad",
+      "votes": "812"
+    },
+    {
+      "authors": [
+        "Susan Mallery"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "Fool's Gold Cookbook",
+      "votes": "695"
+    },
+    {
+      "authors": [
+        "T. Colin Campbell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "Whole",
+      "votes": "614"
+    },
+    {
+      "authors": [
+        "David Perlmutter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "Grain Brain",
+      "votes": "244"
+    },
+    {
+      "authors": [
+        "Mark Bittman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Food & Cookbooks",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2013"
+      },
+      "title": "VB6",
+      "votes": "174"
+    },
+    {
+      "authors": [
+        "Ina Garten"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "Make It Ahead: A Barefoot Contessa Cookbook",
+      "votes": "12345"
+    },
+    {
+      "authors": [
+        "David Lebovitz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "My Paris Kitchen",
+      "votes": "10883"
+    },
+    {
+      "authors": [
+        "Thug Kitchen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "Thug Kitchen",
+      "votes": "10794"
+    },
+    {
+      "authors": [
+        "Lisa Leake"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "100 Days of Real Food",
+      "votes": "10294"
+    },
+    {
+      "authors": [
+        "Michelle Tam"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "Nom Nom Paleo",
+      "votes": "7984"
+    },
+    {
+      "authors": [
+        "Angela Liddon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "The Oh She Glows Cookbook",
+      "votes": "7791"
+    },
+    {
+      "authors": [
+        "Kathleen Flinn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "Burnt Toast Makes You Sing Good",
+      "votes": "7776"
+    },
+    {
+      "authors": [
+        "America's Test Kitchen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "The How Can It Be Gluten Free Cookbook",
+      "votes": "5653"
+    },
+    {
+      "authors": [
+        "Michael Gibney"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "Sous Chef",
+      "votes": "5383"
+    },
+    {
+      "authors": [
+        "Molly Wizenberg"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "Delancey",
+      "votes": "5188"
+    },
+    {
+      "authors": [
+        "Ava Chin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "Eating Wildly",
+      "votes": "2952"
+    },
+    {
+      "authors": [
+        "Diane Sanfilippo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "The 21-Day Sugar Detox Cookbook",
+      "votes": "2881"
+    },
+    {
+      "authors": [
+        "Dan Barber"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "The Third Plate",
+      "votes": "2812"
+    },
+    {
+      "authors": [
+        "J.J. Smith"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "10-Day Green Smoothie Cleanse",
+      "votes": "2656"
+    },
+    {
+      "authors": [
+        "Jonathan Bailor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "The Calorie Myth",
+      "votes": "2485"
+    },
+    {
+      "authors": [
+        "Food Pyramid by Denise Minger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "Death",
+      "votes": "2219"
+    },
+    {
+      "authors": [
+        "Liz Wolfe"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "Eat the Yolks",
+      "votes": "1878"
+    },
+    {
+      "authors": [
+        "Gina Homolka"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "The Skinnytaste Cookbook",
+      "votes": "1855"
+    },
+    {
+      "authors": [
+        "Yotam Ottolenghi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "Plenty More",
+      "votes": "1265"
+    },
+    {
+      "authors": [
+        "Corky Pollan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Food & Cookbooks",
+      "position": "2014.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2014"
+      },
+      "title": "The Pollan Family Table",
+      "votes": "893"
+    },
+    {
+      "authors": [
+        "Ree Drummond"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "The Pioneer Woman Cooks: Dinnertime: Comfort Classics, Freezer Food, 16-Minute Meals, and Other Delicious Ways to Solve Supper!",
+      "votes": "12063"
+    },
+    {
+      "authors": [
+        "Rosanna Pansino"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "The Nerdy Nummies Cookbook",
+      "votes": "11288"
+    },
+    {
+      "authors": [
+        "Katie Higgins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "Chocolate-Covered Katie",
+      "votes": "8352"
+    },
+    {
+      "authors": [
+        "Kristen Miglore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "Food52 Genius Recipes",
+      "votes": "6921"
+    },
+    {
+      "authors": [
+        "Sasha Martin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "Life from Scratch",
+      "votes": "6744"
+    },
+    {
+      "authors": [
+        "Melissa Urban"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "The Whole30",
+      "votes": "6179"
+    },
+    {
+      "authors": [
+        "America's Test Kitchen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "The Complete Vegetarian Cookbook",
+      "votes": "6170"
+    },
+    {
+      "authors": [
+        "Andie Mitchell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "It Was Me All Along",
+      "votes": "6141"
+    },
+    {
+      "authors": [
+        "Mark Schatzker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "The Dorito Effect",
+      "votes": "5568"
+    },
+    {
+      "authors": [
+        "Kristy Turner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "But I Could Never Go Vegan!",
+      "votes": "5536"
+    },
+    {
+      "authors": [
+        "Ella Woodward"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "Deliciously Ella",
+      "votes": "2678"
+    },
+    {
+      "authors": [
+        "Aaron Franklin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "Franklin Barbecue",
+      "votes": "2405"
+    },
+    {
+      "authors": [
+        "Richa Hingle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "Vegan Richa's Indian Kitchen",
+      "votes": "2184"
+    },
+    {
+      "authors": [
+        "Gene Baur"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "Living the Farm Sanctuary Life",
+      "votes": "2047"
+    },
+    {
+      "authors": [
+        "Craig Lehoullier"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "Epic Tomatoes",
+      "votes": "1913"
+    },
+    {
+      "authors": [
+        "Barry Estabrook"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "Pig Tales",
+      "votes": "1651"
+    },
+    {
+      "authors": [
+        "J. Kenji L\u00f3pez-Alt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "The Food Lab",
+      "votes": "1174"
+    },
+    {
+      "authors": [
+        "Dave Asprey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "The Bulletproof Diet",
+      "votes": "1111"
+    },
+    {
+      "authors": [
+        "Ruth Reichl"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "My Kitchen Year",
+      "votes": "918"
+    },
+    {
+      "authors": [
+        "Amelia P. Morris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Food & Cookbooks",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2015"
+      },
+      "title": "Bon Appetempt",
+      "votes": "730"
+    },
+    {
+      "authors": [
+        "Chrissy Teigen",
+        "Adeena Sussman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Cravings: Recipes for All the Food You Want to Eat",
+      "votes": "23867"
+    },
+    {
+      "authors": [
+        "Theresa Carle-Sanders"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Outlander Kitchen",
+      "votes": "19131"
+    },
+    {
+      "authors": [
+        "Loren Bouchard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "The Bob's Burgers Burger Book",
+      "votes": "14260"
+    },
+    {
+      "authors": [
+        "Alton Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "EveryDayCook",
+      "votes": "12312"
+    },
+    {
+      "authors": [
+        "Tessa Huff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Layered",
+      "votes": "10387"
+    },
+    {
+      "authors": [
+        "Gwyneth Paltrow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "It's All Easy",
+      "votes": "7780"
+    },
+    {
+      "authors": [
+        "Angela Liddon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Oh She Glows Every Day",
+      "votes": "6404"
+    },
+    {
+      "authors": [
+        "Larry Olmsted"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Real Food / Fake Food",
+      "votes": "5936"
+    },
+    {
+      "authors": [
+        "Gina Homolka"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Skinnytaste Fast and Slow",
+      "votes": "5585"
+    },
+    {
+      "authors": [
+        "Laura Miller"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Raw. Vegan. Not Gross.",
+      "votes": "5152"
+    },
+    {
+      "authors": [
+        "Andie Mitchell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Eating in the Middle",
+      "votes": "2649"
+    },
+    {
+      "authors": [
+        "Cara Mangini"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "The Vegetable Butcher",
+      "votes": "2481"
+    },
+    {
+      "authors": [
+        "Steven Raichlen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Project Smoke",
+      "votes": "2271"
+    },
+    {
+      "authors": [
+        "Lucie B. Amundsen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Locally Laid",
+      "votes": "1909"
+    },
+    {
+      "authors": [
+        "Deuki Hong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Koreatown",
+      "votes": "1770"
+    },
+    {
+      "authors": [
+        "Hannah Crum"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "The Big Book of Kombucha",
+      "votes": "1484"
+    },
+    {
+      "authors": [
+        "Martin Cate"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Smuggler's Cove",
+      "votes": "1018"
+    },
+    {
+      "authors": [
+        "Anthony Bourdain"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Appetites",
+      "votes": "915"
+    },
+    {
+      "authors": [
+        "Shalane Flanagan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Run Fast. Eat Slow.",
+      "votes": "721"
+    },
+    {
+      "authors": [
+        "Vivian Howard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Food & Cookbooks",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2016"
+      },
+      "title": "Deep Run Roots",
+      "votes": "631"
+    },
+    {
+      "authors": [
+        "Ree Drummond"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "The Pioneer Woman Cooks: Come and Get It! Simple, Scrumptious Recipes for Crazy Busy Lives",
+      "votes": "23994"
+    },
+    {
+      "authors": [
+        "Jamie Oliver"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "5 Ingredients \u2013 Quick & Easy Food",
+      "votes": "13295"
+    },
+    {
+      "authors": [
+        "Sarah Michelle Gellar"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "Stirring Up Fun with Food",
+      "votes": "12148"
+    },
+    {
+      "authors": [
+        "Amy Thielen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "Give a Girl a Knife",
+      "votes": "11987"
+    },
+    {
+      "authors": [
+        "Tia Mowry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "Whole New You",
+      "votes": "10853"
+    },
+    {
+      "authors": [
+        "Deb Perelman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "Smitten Kitchen Every Day",
+      "votes": "10519"
+    },
+    {
+      "authors": [
+        "Stella Parks"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "BraveTart",
+      "votes": "7603"
+    },
+    {
+      "authors": [
+        "Michael W. Twitty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "The Cooking Gene",
+      "votes": "7475"
+    },
+    {
+      "authors": [
+        "Oprah Winfrey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "Food, Health and Happiness",
+      "votes": "7320"
+    },
+    {
+      "authors": [
+        "Samin Nosrat"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "Salt, Fat, Acid, Heat",
+      "votes": "5612"
+    },
+    {
+      "authors": [
+        "Bianca Bosker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "Cork Dork",
+      "votes": "2600"
+    },
+    {
+      "authors": [
+        "Michael Ruhlman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "Grocery",
+      "votes": "2211"
+    },
+    {
+      "authors": [
+        "Katie Wells"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "The Wellness Mama Cookbook",
+      "votes": "2199"
+    },
+    {
+      "authors": [
+        "Alice Waters"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "Coming to My Senses",
+      "votes": "1674"
+    },
+    {
+      "authors": [
+        "Michelle Tam"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "Ready or Not!",
+      "votes": "1605"
+    },
+    {
+      "authors": [
+        "Kathryne Taylor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "Love Real Food",
+      "votes": "1502"
+    },
+    {
+      "authors": [
+        "Sarah Lohman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "Eight Flavors",
+      "votes": "1254"
+    },
+    {
+      "authors": [
+        "Jim Harrison"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "A Really Big Lunch",
+      "votes": "984"
+    },
+    {
+      "authors": [
+        "Yotam Ottolenghi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "Sweet",
+      "votes": "936"
+    },
+    {
+      "authors": [
+        "Tieghan Gerard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Food & Cookbooks",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2017"
+      },
+      "title": "Half Baked Harvest Cookbook",
+      "votes": "855"
+    },
+    {
+      "authors": [
+        "Chrissy Teigen",
+        "Adeena Sussman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Cravings: Hungry for More",
+      "votes": "36003"
+    },
+    {
+      "authors": [
+        "Joanna Gaines"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Magnolia Table",
+      "votes": "25225"
+    },
+    {
+      "authors": [
+        "Tasty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Tasty Latest and Greatest",
+      "votes": "19249"
+    },
+    {
+      "authors": [
+        "Alison Walsh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "A Literary Tea Party",
+      "votes": "11578"
+    },
+    {
+      "authors": [
+        "Ina Garten"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Cook Like a Pro",
+      "votes": "10916"
+    },
+    {
+      "authors": [
+        "Tim Federle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Are You There God? It's Me, Margarita",
+      "votes": "8875"
+    },
+    {
+      "authors": [
+        "Lauren Toyota"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Hot for Food Vegan Comfort Classics",
+      "votes": "8474"
+    },
+    {
+      "authors": [
+        "Heather Kim"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Sweet Revenge",
+      "votes": "7848"
+    },
+    {
+      "authors": [
+        "Giada De Laurentiis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Giada's Italy",
+      "votes": "6345"
+    },
+    {
+      "authors": [
+        "Gaz Oakley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Vegan 100",
+      "votes": "5683"
+    },
+    {
+      "authors": [
+        "Bobby Flay"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Bobby Flay Fit",
+      "votes": "2520"
+    },
+    {
+      "authors": [
+        "Rosanna Pansino"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Baking All Year Round",
+      "votes": "2139"
+    },
+    {
+      "authors": [
+        "Daniel Stone"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "The Food Explorer",
+      "votes": "2125"
+    },
+    {
+      "authors": [
+        "Edward Lee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Buttermilk Graffiti",
+      "votes": "1722"
+    },
+    {
+      "authors": [
+        "Gina Homolka"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Skinnytaste One and Done",
+      "votes": "1569"
+    },
+    {
+      "authors": [
+        "Yotam Ottolenghi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Ottolenghi Simple",
+      "votes": "1553"
+    },
+    {
+      "authors": [
+        "Mark Kurlansky"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Milk! A 10,000-Year Food Fracas",
+      "votes": "1526"
+    },
+    {
+      "authors": [
+        "Camas Davis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Killing It",
+      "votes": "1431"
+    },
+    {
+      "authors": [
+        "Jonathan Kauffman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Hippie Food",
+      "votes": "1341"
+    },
+    {
+      "authors": [
+        "Julia Turshen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Food & Cookbooks",
+      "position": "2018.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2018"
+      },
+      "title": "Now & Again",
+      "votes": "585"
+    },
+    {
+      "authors": [
+        "Antoni Porowski",
+        "Mindy Fox"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Antoni in the Kitchen",
+      "votes": "25387"
+    },
+    {
+      "authors": [
+        "Misha Collins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "The Adventurous Eaters Club",
+      "votes": "21108"
+    },
+    {
+      "authors": [
+        "Kwame Onwuachi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Notes from a Young Black Chef",
+      "votes": "19910"
+    },
+    {
+      "authors": [
+        "Wini Moranville"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "The Little Women Cookbook",
+      "votes": "15334"
+    },
+    {
+      "authors": [
+        "Rachael Ray"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Rachael Ray 50",
+      "votes": "14953"
+    },
+    {
+      "authors": [
+        "Toni Okamoto"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Plant-Based on a Budget",
+      "votes": "13561"
+    },
+    {
+      "authors": [
+        "Hugh Amano"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Let's Make Ramen!",
+      "votes": "13416"
+    },
+    {
+      "authors": [
+        "Ruth Reichl"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Save Me the Plums",
+      "votes": "11220"
+    },
+    {
+      "authors": [
+        "Priya Krishna"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Indian-Ish",
+      "votes": "9699"
+    },
+    {
+      "authors": [
+        "Maida Heatter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Happiness Is Baking",
+      "votes": "7635"
+    },
+    {
+      "authors": [
+        "Valya Dudycz Lupescu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Forking Good",
+      "votes": "3521"
+    },
+    {
+      "authors": [
+        "Gwyneth Paltrow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "The Clean Plate",
+      "votes": "2903"
+    },
+    {
+      "authors": [
+        "Yasmin Khan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Zaitoun",
+      "votes": "2762"
+    },
+    {
+      "authors": [
+        "Teri Turner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "No Crumbs Left",
+      "votes": "2581"
+    },
+    {
+      "authors": [
+        "Waylynn Lucas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Sunny-Side Up",
+      "votes": "2494"
+    },
+    {
+      "authors": [
+        "Andrew Rea"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Binging with Babish",
+      "votes": "2286"
+    },
+    {
+      "authors": [
+        "Ella Risbridger"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Midnight Chicken",
+      "votes": "2149"
+    },
+    {
+      "authors": [
+        "Alison Roman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Nothing Fancy",
+      "votes": "927"
+    },
+    {
+      "authors": [
+        "Tracy Pollan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Mostly Plants",
+      "votes": "897"
+    },
+    {
+      "authors": [
+        "Iliana Regan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Food & Cookbooks",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2019"
+      },
+      "title": "Burn the Place",
+      "votes": "876"
+    },
+    {
+      "authors": [
+        "Ina Garten"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Modern Comfort Food: A Barefoot Contessa Cookbook",
+      "votes": "27866"
+    },
+    {
+      "authors": [
+        "Gordon Ramsay"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Gordon Ramsay Quick and Delicious",
+      "votes": "25901"
+    },
+    {
+      "authors": [
+        "Joanna Gaines"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Magnolia Table",
+      "votes": "21885"
+    },
+    {
+      "authors": [
+        "Sarah Kieffer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "100 Cookies",
+      "votes": "18419"
+    },
+    {
+      "authors": [
+        "David Chang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Eat a Peach",
+      "votes": "18162"
+    },
+    {
+      "authors": [
+        "Theresa Carle-Sanders"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Outlander Kitchen",
+      "votes": "17153"
+    },
+    {
+      "authors": [
+        "Mena Massoud"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Evolving Vegan",
+      "votes": "11675"
+    },
+    {
+      "authors": [
+        "Yotam Ottolenghi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Ottolenghi Flavor",
+      "votes": "11473"
+    },
+    {
+      "authors": [
+        "Ree Drummond"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Frontier Follies",
+      "votes": "11321"
+    },
+    {
+      "authors": [
+        "Bryant Terry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Vegetable Kingdom",
+      "votes": "9514"
+    },
+    {
+      "authors": [
+        "Victoria James"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Wine Girl",
+      "votes": "3120"
+    },
+    {
+      "authors": [
+        "Alex Snodgrass"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "The Defined Dish",
+      "votes": "3054"
+    },
+    {
+      "authors": [
+        "Dzung Lewis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "The Honeysuckle Cookbook",
+      "votes": "2873"
+    },
+    {
+      "authors": [
+        "Kristin Cavallari"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "True Comfort",
+      "votes": "2817"
+    },
+    {
+      "authors": [
+        "Bill Buford"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Dirt",
+      "votes": "2716"
+    },
+    {
+      "authors": [
+        "Gina Homolka"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Skinnytaste Meal Prep",
+      "votes": "2278"
+    },
+    {
+      "authors": [
+        "Claire Saffitz"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Dessert Person",
+      "votes": "2114"
+    },
+    {
+      "authors": [
+        "Angela Liddon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Oh She Glows for Dinner",
+      "votes": "1104"
+    },
+    {
+      "authors": [
+        "Cortney Burns"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Nourish Me Home",
+      "votes": "961"
+    },
+    {
+      "authors": [
+        "Sami Tamimi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Food & Cookbooks",
+      "position": "2020.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-food-cookbooks-2020"
+      },
+      "title": "Falastin",
+      "votes": "830"
+    }
+  ],
+  "fetched_at": "2026-07-28T02:05:04Z",
+  "list_id": "goodreads_choice_awards_food_cooking",
+  "list_name": "Goodreads Choice Awards - Food & Cooking (discontinued)",
+  "match_series": false,
+  "notes": [],
+  "parser": "goodreads_choice_awards_food_cooking",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Food & Cooking (discontinued)",
+    "source_id": "goodreads_choice_awards_food_cooking",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

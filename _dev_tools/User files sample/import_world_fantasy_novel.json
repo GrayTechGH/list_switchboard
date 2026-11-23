@@ -1,0 +1,4443 @@
+{
+  "append_state": {
+    "entry_count": 276,
+    "last_entry_key": "the wings upon her back|samantha mills",
+    "last_position": "2025.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Patricia A. McKillip"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1975",
+      "category": "Novel",
+      "position": "1975",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1975"
+      },
+      "title": "The Forgotten Beasts of Eld"
+    },
+    {
+      "authors": [
+        "H. Warner Munn"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1975",
+      "category": "Novel",
+      "position": "1975.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1975"
+      },
+      "title": "Merlin's Ring"
+    },
+    {
+      "authors": [
+        "Poul Anderson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1975",
+      "category": "Novel",
+      "position": "1975.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1975"
+      },
+      "title": "A Midsummer Tempest"
+    },
+    {
+      "authors": [
+        "Richard Matheson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1976",
+      "category": "Novel",
+      "position": "1976",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1976"
+      },
+      "title": "Bid Time Return"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1976",
+      "category": "Novel",
+      "position": "1976.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1976"
+      },
+      "title": "'Salem's Lot"
+    },
+    {
+      "authors": [
+        "William Kotzwinkle"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1977",
+      "category": "Novel",
+      "position": "1977",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1977"
+      },
+      "title": "Doctor Rat"
+    },
+    {
+      "authors": [
+        "John Steinbeck"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1977",
+      "category": "Novel",
+      "position": "1977.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1977"
+      },
+      "title": "The Acts of King Arthur and His Noble Knights"
+    },
+    {
+      "authors": [
+        "Karl Edward Wagner"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1977",
+      "category": "Novel",
+      "position": "1977.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1977"
+      },
+      "title": "Dark Crusade"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1977",
+      "category": "Novel",
+      "position": "1977.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1977"
+      },
+      "title": "The Doll Who Ate His Mother"
+    },
+    {
+      "authors": [
+        "Gordon R. Dickson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1977",
+      "category": "Novel",
+      "position": "1977.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1977"
+      },
+      "title": "The Dragon and the George"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1977",
+      "category": "Novel",
+      "position": "1977.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1977"
+      },
+      "title": "The Sailor on the Seas of Fate"
+    },
+    {
+      "authors": [
+        "Fritz Leiber"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1978",
+      "category": "Novel",
+      "position": "1978",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1978"
+      },
+      "title": "Our Lady of Darkness"
+    },
+    {
+      "authors": [
+        "Stephen R. Donaldson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1978",
+      "category": "Novel",
+      "position": "1978.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1978"
+      },
+      "title": "The Chronicles of Thomas Covenant the Unbeliever"
+    },
+    {
+      "authors": [
+        "Charles L. Grant"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1978",
+      "category": "Novel",
+      "position": "1978.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1978"
+      },
+      "title": "The Hour of the Oxrun Dead"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1979",
+      "category": "Novel",
+      "position": "1979",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1979"
+      },
+      "title": "Gloriana"
+    },
+    {
+      "authors": [
+        "Les Daniels"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1979",
+      "category": "Novel",
+      "position": "1979.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1979"
+      },
+      "title": "The Black Castle"
+    },
+    {
+      "authors": [
+        "Tanith Lee"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1979",
+      "category": "Novel",
+      "position": "1979.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1979"
+      },
+      "title": "Night's Master"
+    },
+    {
+      "authors": [
+        "Charles L. Grant"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1979",
+      "category": "Novel",
+      "position": "1979.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1979"
+      },
+      "title": "The Sound of Midnight"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1979",
+      "category": "Novel",
+      "position": "1979.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1979"
+      },
+      "title": "The Stand"
+    },
+    {
+      "authors": [
+        "Elizabeth A. Lynn"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1980",
+      "category": "Novel",
+      "position": "1980",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1980"
+      },
+      "title": "Watchtower"
+    },
+    {
+      "authors": [
+        "Elizabeth A. Lynn"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1980",
+      "category": "Novel",
+      "position": "1980.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1980"
+      },
+      "title": "The Dancers of Arun"
+    },
+    {
+      "authors": [
+        "Patricia Wrightson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1980",
+      "category": "Novel",
+      "position": "1980.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1980"
+      },
+      "title": "The Dark Bright Water"
+    },
+    {
+      "authors": [
+        "Patricia A. McKillip"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1980",
+      "category": "Novel",
+      "position": "1980.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1980"
+      },
+      "title": "Harpist in the Wind"
+    },
+    {
+      "authors": [
+        "Charles L. Grant"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1980",
+      "category": "Novel",
+      "position": "1980.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1980"
+      },
+      "title": "The Last Call of Mourning"
+    },
+    {
+      "authors": [
+        "Chelsea Quinn Yarbro"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1980",
+      "category": "Novel",
+      "position": "1980.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1980"
+      },
+      "title": "The Palace"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1981",
+      "category": "Novel",
+      "position": "1981",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1981"
+      },
+      "title": "The Shadow of the Torturer"
+    },
+    {
+      "authors": [
+        "Chelsea Quinn Yarbro"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1981",
+      "category": "Novel",
+      "position": "1981.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1981"
+      },
+      "title": "Ariosto"
+    },
+    {
+      "authors": [
+        "Parke Godwin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1981",
+      "category": "Novel",
+      "position": "1981.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1981"
+      },
+      "title": "Firelord"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1981",
+      "category": "Novel",
+      "position": "1981.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1981"
+      },
+      "title": "Dark Forces"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1981",
+      "category": "Novel",
+      "position": "1981.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1981"
+      },
+      "title": "Shadowland"
+    },
+    {
+      "authors": [
+        "John Crowley"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1982"
+      },
+      "title": "Little, Big"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1982"
+      },
+      "title": "The Claw of the Conciliator"
+    },
+    {
+      "authors": [
+        "Ramsey Campbell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1982"
+      },
+      "title": "The Nameless"
+    },
+    {
+      "authors": [
+        "Michael Moorcock"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1982"
+      },
+      "title": "The War Hound and the World's Pain"
+    },
+    {
+      "authors": [
+        "D. M. Thomas"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1982",
+      "category": "Novel",
+      "position": "1982.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1982"
+      },
+      "title": "The White Hotel"
+    },
+    {
+      "authors": [
+        "Michael Shea"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1983"
+      },
+      "title": "Nifft the Lean"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1983"
+      },
+      "title": "Fevre Dream"
+    },
+    {
+      "authors": [
+        "Charles L. Grant"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1983"
+      },
+      "title": "The Nestling"
+    },
+    {
+      "authors": [
+        "Thomas Tessier"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1983"
+      },
+      "title": "Phantom"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1983",
+      "category": "Novel",
+      "position": "1983.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1983"
+      },
+      "title": "The Sword of the Lictor"
+    },
+    {
+      "authors": [
+        "John M. Ford"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1984"
+      },
+      "title": "The Dragon Waiting"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1984"
+      },
+      "title": "The Armageddon Rag"
+    },
+    {
+      "authors": [
+        "Jack Vance"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1984"
+      },
+      "title": "Lyonesse"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1984"
+      },
+      "title": "Pet Sematary"
+    },
+    {
+      "authors": [
+        "R. A. MacAvoy"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1984"
+      },
+      "title": "Tea with the Black Dragon"
+    },
+    {
+      "authors": [
+        "Manuel Mujica Lainez"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1984",
+      "category": "Novel",
+      "position": "1984.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1984"
+      },
+      "title": "The Wandering Unicorn"
+    },
+    {
+      "authors": [
+        "Barry Hughart"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1985"
+      },
+      "title": "Bridge of Birds"
+    },
+    {
+      "authors": [
+        "Robert Holdstock"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1985"
+      },
+      "title": "Mythago Wood"
+    },
+    {
+      "authors": [
+        "Diana Wynne Jones"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1985"
+      },
+      "title": "Archer's Goon"
+    },
+    {
+      "authors": [
+        "T. E. D. Klein"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1985"
+      },
+      "title": "The Ceremonies"
+    },
+    {
+      "authors": [
+        "Stephen King",
+        "Peter Straub"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1985",
+      "category": "Novel",
+      "position": "1985.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1985"
+      },
+      "title": "The Talisman"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1986"
+      },
+      "title": "Song of Kali"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1986"
+      },
+      "title": "The Damnation Game"
+    },
+    {
+      "authors": [
+        "Lisa Goldstein"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1986"
+      },
+      "title": "The Dream Years"
+    },
+    {
+      "authors": [
+        "Peter Carey"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1986"
+      },
+      "title": "Illywhacker"
+    },
+    {
+      "authors": [
+        "Anne Rice"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1986"
+      },
+      "title": "The Vampire Lestat"
+    },
+    {
+      "authors": [
+        "Paul Hazel"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1986",
+      "category": "Novel",
+      "position": "1986.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1986"
+      },
+      "title": "Winterking"
+    },
+    {
+      "authors": [
+        "Patrick S\u00fcskind"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1987"
+      },
+      "title": "Perfume"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1987"
+      },
+      "title": "It"
+    },
+    {
+      "authors": [
+        "Charles L. Grant"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1987"
+      },
+      "title": "The Pet"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1987"
+      },
+      "title": "Soldier of the Mist"
+    },
+    {
+      "authors": [
+        "Dean R. Koontz"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1987"
+      },
+      "title": "Strangers"
+    },
+    {
+      "authors": [
+        "Terry Bisson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1987"
+      },
+      "title": "Talking Man"
+    },
+    {
+      "authors": [
+        "Margaret Mahy"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1987",
+      "category": "Novel",
+      "position": "1987.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1987"
+      },
+      "title": "The Tricksters"
+    },
+    {
+      "authors": [
+        "Ken Grimwood"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "Replay"
+    },
+    {
+      "authors": [
+        "John Crowley"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "\u00c6gypt"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "Misery"
+    },
+    {
+      "authors": [
+        "Tim Powers"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "On Stranger Tides"
+    },
+    {
+      "authors": [
+        "Orson Scott Card"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "Seventh Son"
+    },
+    {
+      "authors": [
+        "Robert R. McCammon"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "Swan Song"
+    },
+    {
+      "authors": [
+        "Clive Barker"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Novel",
+      "position": "1988.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "Weaveworld"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "Koko"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "The Drive-In"
+    },
+    {
+      "authors": [
+        "Robert Cormier"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "Fade"
+    },
+    {
+      "authors": [
+        "James P. Blaylock"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "The Last Coin"
+    },
+    {
+      "authors": [
+        "Thomas Harris"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "The Silence of the Lambs"
+    },
+    {
+      "authors": [
+        "Jonathan Carroll"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Novel",
+      "position": "1989.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "Sleeping In Flame"
+    },
+    {
+      "authors": [
+        "Jack Vance"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "Lyonesse: Madouc"
+    },
+    {
+      "authors": [
+        "Dan Simmons"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "Carrion Comfort"
+    },
+    {
+      "authors": [
+        "Jonathan Carroll"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "A Child Across the Sky"
+    },
+    {
+      "authors": [
+        "Charles L. Grant"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "In a Dark Dream"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "Soldier of Arete"
+    },
+    {
+      "authors": [
+        "Tim Powers"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Novel",
+      "position": "1990.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "The Stress of Her Regard"
+    },
+    {
+      "authors": [
+        "James Morrow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "Only Begotten Daughter"
+    },
+    {
+      "authors": [
+        "Ellen Kushner"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "Thomas the Rhymer"
+    },
+    {
+      "authors": [
+        "Terry Pratchett",
+        "Neil Gaiman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "Good Omens"
+    },
+    {
+      "authors": [
+        "Valerie Martin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "Mary Reilly"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Novel",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "Tigana"
+    },
+    {
+      "authors": [
+        "Robert R. McCammon"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "Boy's Life"
+    },
+    {
+      "authors": [
+        "Emma Bull"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "Bone Dance"
+    },
+    {
+      "authors": [
+        "A. A. Attanasio"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "Hunting the Ghost Dancer"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "The Little Country"
+    },
+    {
+      "authors": [
+        "Jonathan Carroll"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "Outside the Dog Museum"
+    },
+    {
+      "authors": [
+        "James P. Blaylock"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Novel",
+      "position": "1992.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "The Paper Grail"
+    },
+    {
+      "authors": [
+        "Tim Powers"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "Last Call"
+    },
+    {
+      "authors": [
+        "Kim Newman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "Anno Dracula"
+    },
+    {
+      "authors": [
+        "Jane Yolen"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "Briar Rose"
+    },
+    {
+      "authors": [
+        "Steve Szilagyi"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "Photographing Fairies"
+    },
+    {
+      "authors": [
+        "Geoff Ryman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Novel",
+      "position": "1993.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "Was"
+    },
+    {
+      "authors": [
+        "Lewis Shiner"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Glimpses"
+    },
+    {
+      "authors": [
+        "Poppy Z. Brite"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Drawing Blood"
+    },
+    {
+      "authors": [
+        "Peter S. Beagle"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "The Innkeeper's Song"
+    },
+    {
+      "authors": [
+        "Michael Swanwick"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "The Iron Dragon's Daughter"
+    },
+    {
+      "authors": [
+        "Judith Tarr"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Lord of the Two Lands"
+    },
+    {
+      "authors": [
+        "Kathe Koja"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Skin"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Novel",
+      "position": "1994.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "The Throat"
+    },
+    {
+      "authors": [
+        "James Morrow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "Towing Jehovah"
+    },
+    {
+      "authors": [
+        "Michael Bishop"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "Brittle Innings"
+    },
+    {
+      "authors": [
+        "Brooke Stevens"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "The Circus of the Earth and the Air"
+    },
+    {
+      "authors": [
+        "Jonathan Carroll"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "From the Teeth of Angels"
+    },
+    {
+      "authors": [
+        "John Crowley"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "Love & Sleep"
+    },
+    {
+      "authors": [
+        "Elizabeth Hand"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Novel",
+      "position": "1995.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "Waking the Moon"
+    },
+    {
+      "authors": [
+        "Christopher Priest"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "The Prestige"
+    },
+    {
+      "authors": [
+        "James P. Blaylock"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "All the Bells on Earth"
+    },
+    {
+      "authors": [
+        "Tim Powers"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "Expiration Date"
+    },
+    {
+      "authors": [
+        "Vikram Chandra"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "Red Earth and Pouring Rain"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "Requiem"
+    },
+    {
+      "authors": [
+        "Nina Kiriki Hoffman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Novel",
+      "position": "1996.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "The Silent Strength of Stones"
+    },
+    {
+      "authors": [
+        "Rachel Pollack"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "Godmother Night"
+    },
+    {
+      "authors": [
+        "Marc Laidlaw"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "The 37th Mandala"
+    },
+    {
+      "authors": [
+        "William Kotzwinkle"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "The Bear Went Over the Mountain"
+    },
+    {
+      "authors": [
+        "Mark Sumner"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "Devil's Tower"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "A Game of Thrones"
+    },
+    {
+      "authors": [
+        "Melanie Rawn",
+        "Jennifer Roberson",
+        "Kate Elliott"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "The Golden Key"
+    },
+    {
+      "authors": [
+        "Terence M. Green"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Novel",
+      "position": "1997.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "Shadow of Ashland"
+    },
+    {
+      "authors": [
+        "Jeffrey Ford"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "The Physiognomy"
+    },
+    {
+      "authors": [
+        "Harvey Jacobs"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "American Goliath"
+    },
+    {
+      "authors": [
+        "Eric S. Nylund"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "Dry Water"
+    },
+    {
+      "authors": [
+        "Patrick O'Leary"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "The Gift"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "Trader"
+    },
+    {
+      "authors": [
+        "Arturo P\u00e9rez-Reverte"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Novel",
+      "position": "1998.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "The Club Dumas"
+    },
+    {
+      "authors": [
+        "Louise Erdrich"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "The Antelope Wife"
+    },
+    {
+      "authors": [
+        "Thomas Sullivan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "The Martyring"
+    },
+    {
+      "authors": [
+        "Sean Stewart"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "Mockingbird"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "Sailing to Sarantium"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Novel",
+      "position": "1999.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "Someplace to Be Flying"
+    },
+    {
+      "authors": [
+        "Martin Scott"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "Thraxas"
+    },
+    {
+      "authors": [
+        "Steven Erikson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "Gardens of the Moon"
+    },
+    {
+      "authors": [
+        "James P. Blaylock"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "The Rainy Season"
+    },
+    {
+      "authors": [
+        "Nina Kiriki Hoffman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "A Red Heart of Memories"
+    },
+    {
+      "authors": [
+        "Peter S. Beagle"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "Tamsin"
+    },
+    {
+      "authors": [
+        "Terence M. Green"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Novel",
+      "position": "2000.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "A Witness to Life"
+    },
+    {
+      "authors": [
+        "Tim Powers"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "Declare"
+    },
+    {
+      "authors": [
+        "Sean Stewart"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "Galveston"
+    },
+    {
+      "authors": [
+        "Philip Pullman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "The Amber Spyglass"
+    },
+    {
+      "authors": [
+        "Paula Volsky"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "The Grand Ellipse"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "Lord of Emperors"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Novel",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "Perdido Street Station"
+    },
+    {
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "The Other Wind"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "American Gods"
+    },
+    {
+      "authors": [
+        "Jay Russell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "Brown Harvest"
+    },
+    {
+      "authors": [
+        "Lois McMaster Bujold"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "The Curse of Chalion"
+    },
+    {
+      "authors": [
+        "Ray Bradbury"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "From the Dust Returned"
+    },
+    {
+      "authors": [
+        "Charles de Lint"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "The Onion Girl"
+    },
+    {
+      "authors": [
+        "Jonathan Carroll"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Novel",
+      "position": "2002.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "The Wooden Sea"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "The Facts of Life"
+    },
+    {
+      "authors": [
+        "Patricia A. McKillip"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "Ombria in Shadow"
+    },
+    {
+      "authors": [
+        "Gregory Frost"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "Fitcher's Brides"
+    },
+    {
+      "authors": [
+        "Jeffrey Ford"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "The Portrait of Mrs. Charbuque"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Novel",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "The Scar"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "Tooth and Claw"
+    },
+    {
+      "authors": [
+        "K. J. Bishop"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "The Etched City"
+    },
+    {
+      "authors": [
+        "Kij Johnson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "Fudoki"
+    },
+    {
+      "authors": [
+        "Ian R. MacLeod"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "The Light Ages"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Novel",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "Veniss Underground"
+    },
+    {
+      "authors": [
+        "Susanna Clarke"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "Jonathan Strange & Mr Norrell"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "Iron Council"
+    },
+    {
+      "authors": [
+        "Sean Stewart"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "Perfect Circle"
+    },
+    {
+      "authors": [
+        "Stephen R. Donaldson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "The Runes of the Earth"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Novel",
+      "position": "2005.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "The Wizard Knight"
+    },
+    {
+      "authors": [
+        "Haruki Murakami"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "Kafka on the Shore"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "The Limits of Enchantment"
+    },
+    {
+      "authors": [
+        "Bret Easton Ellis"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "Lunar Park"
+    },
+    {
+      "authors": [
+        "Patricia A. McKillip"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "Od Magic"
+    },
+    {
+      "authors": [
+        "Paul Park"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "A Princess of Roumania"
+    },
+    {
+      "authors": [
+        "Hal Duncan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Novel",
+      "position": "2006.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "Vellum"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "Soldier of Sidon"
+    },
+    {
+      "authors": [
+        "Scott Lynch"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "The Lies of Locke Lamora"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "Lisey's Story"
+    },
+    {
+      "authors": [
+        "Catherynne M. Valente"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "The Orphan's Tales: In the Night Garden"
+    },
+    {
+      "authors": [
+        "Ellen Kushner"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Novel",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "The Privilege of the Sword"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "Ysabel"
+    },
+    {
+      "authors": [
+        "John Marks"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "Fangland"
+    },
+    {
+      "authors": [
+        "Will Shetterly"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "The Gospel of the Knife"
+    },
+    {
+      "authors": [
+        "Michael Marshall Smith"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "The Servants"
+    },
+    {
+      "authors": [
+        "Emma Bull"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Novel",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "Territory"
+    },
+    {
+      "authors": [
+        "Jeffrey Ford"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "The Shadow Year"
+    },
+    {
+      "authors": [
+        "Margo Lanagan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "Tender Morsels"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "The Graveyard Book"
+    },
+    {
+      "authors": [
+        "Kage Baker"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "The House of the Stag"
+    },
+    {
+      "authors": [
+        "Daryl Gregory"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Novel",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "Pandemonium"
+    },
+    {
+      "authors": [
+        "China Mi\u00e9ville"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "The City & the City"
+    },
+    {
+      "authors": [
+        "James Enge"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "Blood of Ambrose"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "Finch"
+    },
+    {
+      "authors": [
+        "Kit Whitfield"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "In Great Waters"
+    },
+    {
+      "authors": [
+        "Caitl\u00edn R. Kiernan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Novel",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "The Red Tree"
+    },
+    {
+      "authors": [
+        "Nnedi Okorafor"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "Who Fears Death"
+    },
+    {
+      "authors": [
+        "N. K. Jemisin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "The Hundred Thousand Kingdoms"
+    },
+    {
+      "authors": [
+        "Karen Lord"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "Redemption in Indigo"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "The Silent Land"
+    },
+    {
+      "authors": [
+        "Guy Gavriel Kay"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "Under Heaven"
+    },
+    {
+      "authors": [
+        "Lauren Beukes"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Novel",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "Zoo City"
+    },
+    {
+      "authors": [
+        "Lavie Tidhar"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "Osama"
+    },
+    {
+      "authors": [
+        "Stephen King"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "11/22/63"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "Among Others"
+    },
+    {
+      "authors": [
+        "George R. R. Martin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "A Dance with Dragons"
+    },
+    {
+      "authors": [
+        "Christopher Buehlman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Novel",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "Those Across the River"
+    },
+    {
+      "authors": [
+        "G. Willow Wilson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "Alif the Unseen"
+    },
+    {
+      "authors": [
+        "Anna Tambour"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "Crandolin"
+    },
+    {
+      "authors": [
+        "Caitl\u00edn R. Kiernan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "The Drowning Girl"
+    },
+    {
+      "authors": [
+        "N. K. Jemisin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "The Killing Moon"
+    },
+    {
+      "authors": [
+        "Graham Joyce"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Novel",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "Some Kind of Fairy Tale"
+    },
+    {
+      "authors": [
+        "Sofia Samatar"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "A Stranger in Olondria"
+    },
+    {
+      "authors": [
+        "Richard Bowes"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "Dust Devil on a Quiet Street"
+    },
+    {
+      "authors": [
+        "Helene Wecker"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "The Golem and the Jinni"
+    },
+    {
+      "authors": [
+        "Gene Wolfe"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "The Land Across"
+    },
+    {
+      "authors": [
+        "Marie Brennan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "A Natural History of Dragons: A Memoir by Lady Trent"
+    },
+    {
+      "authors": [
+        "Neil Gaiman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Novel",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "The Ocean at the End of the Lane"
+    },
+    {
+      "authors": [
+        "David Mitchell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "The Bone Clocks"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "Area X: The Southern Reach Trilogy"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "City of Stairs"
+    },
+    {
+      "authors": [
+        "Katherine Addison"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "The Goblin Emperor"
+    },
+    {
+      "authors": [
+        "Jo Walton"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Novel",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "My Real Children"
+    },
+    {
+      "authors": [
+        "Anna Smaill"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "The Chimes"
+    },
+    {
+      "authors": [
+        "Kazuo Ishiguro"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "The Buried Giant"
+    },
+    {
+      "authors": [
+        "N. K. Jemisin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "The Fifth Season"
+    },
+    {
+      "authors": [
+        "Paul Tremblay"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "A Head Full of Ghosts"
+    },
+    {
+      "authors": [
+        "K. J. Parker"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "Savages"
+    },
+    {
+      "authors": [
+        "Naomi Novik"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Novel",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "Uprooted"
+    },
+    {
+      "authors": [
+        "Claire North"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "The Sudden Appearance of Hope"
+    },
+    {
+      "authors": [
+        "Mishell Baker"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "Borderline"
+    },
+    {
+      "authors": [
+        "Matt Ruff"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "Lovecraft Country"
+    },
+    {
+      "authors": [
+        "N. K. Jemisin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "The Obelisk Gate"
+    },
+    {
+      "authors": [
+        "Betsy James"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Novel",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "Roadsouls"
+    },
+    {
+      "authors": [
+        "Victor LaValle"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "The Changeling"
+    },
+    {
+      "authors": [
+        "Fonda Lee"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "Jade City"
+    },
+    {
+      "authors": [
+        "S. A. Chakraborty"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "The City of Brass"
+    },
+    {
+      "authors": [
+        "John Crowley"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "Ka: Dar Oakley in the Ruin of Ymr"
+    },
+    {
+      "authors": [
+        "Daryl Gregory"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "Spoonbenders"
+    },
+    {
+      "authors": [
+        "Theodora Goss"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Novel",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "The Strange Case of the Alchemist's Daughter"
+    },
+    {
+      "authors": [
+        "C. L. Polk"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "Witchmark"
+    },
+    {
+      "authors": [
+        "Dale Bailey"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "In the Night Wood"
+    },
+    {
+      "authors": [
+        "Maria Dahvana Headley"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "The Mere Wife"
+    },
+    {
+      "authors": [
+        "R. F. Kuang"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "The Poppy War"
+    },
+    {
+      "authors": [
+        "Rebecca Roanhorse"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "Trail of Lightning"
+    },
+    {
+      "authors": [
+        "Kacen Callender"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "Queen of the Conquered"
+    },
+    {
+      "authors": [
+        "Tamsyn Muir"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "Gideon the Ninth"
+    },
+    {
+      "authors": [
+        "Yoko Ogawa"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "The Memory Police"
+    },
+    {
+      "authors": [
+        "Ann Leckie"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "The Raven Tower"
+    },
+    {
+      "authors": [
+        "Alix E. Harrow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "The Ten Thousand Doors of January"
+    },
+    {
+      "authors": [
+        "Alaya Dawn Johnson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "Trouble the Saints"
+    },
+    {
+      "authors": [
+        "Silvia Moreno-Garcia"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "Mexican Gothic"
+    },
+    {
+      "authors": [
+        "C. L. Polk"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "The Midnight Bargain"
+    },
+    {
+      "authors": [
+        "Stephen Graham Jones"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "The Only Good Indians"
+    },
+    {
+      "authors": [
+        "Susanna Clarke"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "Piranesi"
+    },
+    {
+      "authors": [
+        "Tasha Suri"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "The Jasmine Throne"
+    },
+    {
+      "authors": [
+        "Zen Cho"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "Black Water Sister"
+    },
+    {
+      "authors": [
+        "Aden Polydoros"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "The City Beautiful"
+    },
+    {
+      "authors": [
+        "Catriona Ward"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "The Last House on Needless Street"
+    },
+    {
+      "authors": [
+        "P. Dj\u00e8l\u00ed Clark"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "A Master of Djinn"
+    },
+    {
+      "authors": [
+        "C. S. E. Cooney"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "Saint Death's Daughter"
+    },
+    {
+      "authors": [
+        "R. F. Kuang"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "Babel"
+    },
+    {
+      "authors": [
+        "Alex Jennings"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "The Ballad of Perilous Graves"
+    },
+    {
+      "authors": [
+        "Nghi Vo"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "Siren Queen"
+    },
+    {
+      "authors": [
+        "Nicola Griffith"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "Spear"
+    },
+    {
+      "authors": [
+        "Tananarive Due"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "The Reformatory"
+    },
+    {
+      "authors": [
+        "Catriona Ward"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "Looking Glass Sound"
+    },
+    {
+      "authors": [
+        "Yael Goldstein-Love"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "The Possibilities"
+    },
+    {
+      "authors": [
+        "Wole Talabi"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "Shigidi and the Brass Head of Obalufon"
+    },
+    {
+      "authors": [
+        "Alix E. Harrow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "Starling House"
+    },
+    {
+      "authors": [
+        "Martha Wells"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "Witch King"
+    },
+    {
+      "authors": [
+        "Robert Jackson Bennett"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "The Tainted Cup"
+    },
+    {
+      "authors": [
+        "Kay Chronister"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "The Bog Wife"
+    },
+    {
+      "authors": [
+        "Lev Grossman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "The Bright Sword"
+    },
+    {
+      "authors": [
+        "Yangsze Choo"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "The Fox Wife"
+    },
+    {
+      "authors": [
+        "Samantha Mills"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "The Wings Upon Her Back"
+    }
+  ],
+  "fetched_at": "2026-07-25T01:24:43Z",
+  "list_id": "world_fantasy_novel",
+  "list_name": "World Fantasy - Novel",
+  "match_series": false,
+  "notes": [],
+  "parser": "world_fantasy_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "World Fantasy - Novel",
+    "source_id": "world_fantasy_novel",
+    "url": "https://www.sfadb.com/World_Fantasy_Awards"
+  }
+}

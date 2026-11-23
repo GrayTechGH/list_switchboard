@@ -1,0 +1,3239 @@
+{
+  "append_state": {
+    "entry_count": 195,
+    "last_entry_key": "northern nights|michael kelly",
+    "last_position": "2025.04",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Kathryn Cramer",
+        "Peter D. Pautz"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Anthology",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "The Architecture of Fear"
+    },
+    {
+      "authors": [
+        "David G. Hartwell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Anthology",
+      "position": "1988",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "The Dark Descent"
+    },
+    {
+      "authors": [
+        "Jeanne Van Buren Dann",
+        "Jack Dann"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Anthology",
+      "position": "1988.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "In the Field of Fire"
+    },
+    {
+      "authors": [
+        "J. N. Williamson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Anthology",
+      "position": "1988.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "Masques II"
+    },
+    {
+      "authors": [
+        "Anonymous"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Anthology",
+      "position": "1988.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "Night Visions 4"
+    },
+    {
+      "authors": [
+        "Christopher Evans",
+        "Robert Holdstock"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Anthology",
+      "position": "1988.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "Other Edens"
+    },
+    {
+      "authors": [
+        "Karl Edward Wagner"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1988",
+      "category": "Anthology",
+      "position": "1988.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1988"
+      },
+      "title": "The Year's Best Horror Stories: XV"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Anthology",
+      "position": "1989",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "The Year's Best Fantasy: First Annual Collection"
+    },
+    {
+      "authors": [
+        "Anonymous"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Anthology",
+      "position": "1989.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "Night Visions 6"
+    },
+    {
+      "authors": [
+        "Douglas E. Winter"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Anthology",
+      "position": "1989.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "Prime Evil"
+    },
+    {
+      "authors": [
+        "David J. Schow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1989",
+      "category": "Anthology",
+      "position": "1989.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1989"
+      },
+      "title": "Silver Scream"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Anthology",
+      "position": "1990",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "The Year's Best Fantasy: Second Annual Collection"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Anthology",
+      "position": "1990.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "Blood Is Not Enough"
+    },
+    {
+      "authors": [
+        "John Skipp",
+        "Craig Spector"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Anthology",
+      "position": "1990.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "Book of the Dead"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale",
+        "Pat LoBrutto"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1990",
+      "category": "Anthology",
+      "position": "1990.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1990"
+      },
+      "title": "Razored Saddles"
+    },
+    {
+      "authors": [
+        "Stephen Jones",
+        "Ramsey Campbell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Anthology",
+      "position": "1991",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "Best New Horror"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Anthology",
+      "position": "1991.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "Alien Sex"
+    },
+    {
+      "authors": [
+        "Thomas F. Monteleone"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Anthology",
+      "position": "1991.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "Borderlands"
+    },
+    {
+      "authors": [
+        "David Sutton",
+        "Stephen Jones"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Anthology",
+      "position": "1991.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "Dark Voices 2: The Pan Book of Horror"
+    },
+    {
+      "authors": [
+        "Kathryn Cramer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Anthology",
+      "position": "1991.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "Walls of Fear"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1991",
+      "category": "Anthology",
+      "position": "1991.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1991"
+      },
+      "title": "The Year's Best Fantasy and Horror: Third Annual Collection"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Anthology",
+      "position": "1992",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "The Year's Best Fantasy and Horror: Fourth Annual Collection"
+    },
+    {
+      "authors": [
+        "Martin H. Greenberg"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Anthology",
+      "position": "1992.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "After the King: Stories in Honor of J.R.R. Tolkien"
+    },
+    {
+      "authors": [
+        "Stefan R. Dziemianowicz",
+        "Robert Weinberg",
+        "Martin H. Greenberg"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Anthology",
+      "position": "1992.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "Famous Fantastic Mysteries"
+    },
+    {
+      "authors": [
+        "Charles L. Grant"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Anthology",
+      "position": "1992.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "Final Shadows"
+    },
+    {
+      "authors": [
+        "Lewis Shiner"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Anthology",
+      "position": "1992.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "When the Music's Over"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1992",
+      "category": "Anthology",
+      "position": "1992.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1992"
+      },
+      "title": "A Whisper of Blood"
+    },
+    {
+      "authors": [
+        "Dennis Etchison"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Anthology",
+      "position": "1993",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "MetaHorror"
+    },
+    {
+      "authors": [
+        "F. Paul Wilson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Anthology",
+      "position": "1993.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "Freak Show"
+    },
+    {
+      "authors": [
+        "Richard Gilliam",
+        "Martin H. Greenberg",
+        "Edward E. Kramer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Anthology",
+      "position": "1993.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "Grails: Quests, Visitations and Other Occurrences"
+    },
+    {
+      "authors": [
+        "Peter Crowther"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Anthology",
+      "position": "1993.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "Narrow Houses"
+    },
+    {
+      "authors": [
+        "Don Hutchison"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1993",
+      "category": "Anthology",
+      "position": "1993.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1993"
+      },
+      "title": "Northern Frights"
+    },
+    {
+      "authors": [
+        "Lou Aronica",
+        "Amy Stout",
+        "Betsy Mitchell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Anthology",
+      "position": "1994",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Full Spectrum 4"
+    },
+    {
+      "authors": [
+        "David G. Hartwell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Anthology",
+      "position": "1994.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Christmas Forever"
+    },
+    {
+      "authors": [
+        "Alison Lurie"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Anthology",
+      "position": "1994.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "The Oxford Book of Modern Fairy Tales"
+    },
+    {
+      "authors": [
+        "George Hatch"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Anthology",
+      "position": "1994.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Sinistre"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Anthology",
+      "position": "1994.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "Snow White, Blood Red"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1994",
+      "category": "Anthology",
+      "position": "1994.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1994"
+      },
+      "title": "The Year's Best Fantasy and Horror: Sixth Annual Collection"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Anthology",
+      "position": "1995",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "Little Deaths"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Anthology",
+      "position": "1995.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "Black Thorn, White Rose"
+    },
+    {
+      "authors": [
+        "Poppy Z. Brite",
+        "Martin H. Greenberg"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Anthology",
+      "position": "1995.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "Love in Vein"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1995",
+      "category": "Anthology",
+      "position": "1995.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1995"
+      },
+      "title": "Shadows Over Innsmouth"
+    },
+    {
+      "authors": [
+        "A. Susan Williams",
+        "Richard Glyn Jones"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Anthology",
+      "position": "1996",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "The Penguin Book of Modern Fantasy by Women"
+    },
+    {
+      "authors": [
+        "Nancy A. Collins",
+        "Edward E. Kramer",
+        "Martin H. Greenberg"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Anthology",
+      "position": "1996.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "Dark Love"
+    },
+    {
+      "authors": [
+        "Stephen Jones",
+        "David Sutton"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Anthology",
+      "position": "1996.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "Dark Terrors"
+    },
+    {
+      "authors": [
+        "Steve Rasnic Tem"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Anthology",
+      "position": "1996.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "High Fantastic"
+    },
+    {
+      "authors": [
+        "Lucy Sussex",
+        "Judith Raphael Buckrich"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1996",
+      "category": "Anthology",
+      "position": "1996.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1996"
+      },
+      "title": "She's Fantastical"
+    },
+    {
+      "authors": [
+        "Patrick Nielsen Hayden"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Anthology",
+      "position": "1997",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "Starlight 1"
+    },
+    {
+      "authors": [
+        "Stephen Jones",
+        "David Sutton"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Anthology",
+      "position": "1997.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "Dark Terrors 2"
+    },
+    {
+      "authors": [
+        "Katharine Kerr",
+        "Martin H. Greenberg"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Anthology",
+      "position": "1997.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "The Shimmering Door"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1997",
+      "category": "Anthology",
+      "position": "1997.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1997"
+      },
+      "title": "The Year's Best Fantasy and Horror: Ninth Annual Collection"
+    },
+    {
+      "authors": [
+        "Nicola Griffith",
+        "Stephen Pagel"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Anthology",
+      "position": "1998",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "Bending the Landscape: Fantasy"
+    },
+    {
+      "authors": [
+        "Stephen Jones",
+        "David Sutton"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Anthology",
+      "position": "1998.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "Dark Terrors 3"
+    },
+    {
+      "authors": [
+        "Gardner Dozois"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Anthology",
+      "position": "1998.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "Modern Classics of Fantasy"
+    },
+    {
+      "authors": [
+        "Don Hutchison"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Anthology",
+      "position": "1998.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "Northern Frights 4"
+    },
+    {
+      "authors": [
+        "Douglas E. Winter"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1998",
+      "category": "Anthology",
+      "position": "1998.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1998"
+      },
+      "title": "Revelations"
+    },
+    {
+      "authors": [
+        "Jack Dann",
+        "Janeen Webb"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Anthology",
+      "position": "1999",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "Dreaming Down-Under"
+    },
+    {
+      "authors": [
+        "Bryan Cholfin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Anthology",
+      "position": "1999.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "The Best of Crank!"
+    },
+    {
+      "authors": [
+        "Stephen Jones",
+        "David Sutton"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Anthology",
+      "position": "1999.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "Dark Terrors 4"
+    },
+    {
+      "authors": [
+        "Robert Silverberg"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Anthology",
+      "position": "1999.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "Legends"
+    },
+    {
+      "authors": [
+        "Patrick Nielsen Hayden"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "1999",
+      "category": "Anthology",
+      "position": "1999.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_1999"
+      },
+      "title": "Starlight 2"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Anthology",
+      "position": "2000",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "Silver Birch, Blood Moon"
+    },
+    {
+      "authors": [
+        "Al Sarrantonio"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Anthology",
+      "position": "2000.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "999: New Stories of Horror and Suspense"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Anthology",
+      "position": "2000.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "Dark Detectives: Adventures of the Supernatural Sleuths"
+    },
+    {
+      "authors": [
+        "Don Hutchison"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Anthology",
+      "position": "2000.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "Northern Frights 5"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2000",
+      "category": "Anthology",
+      "position": "2000.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2000"
+      },
+      "title": "The Year's Best Fantasy and Horror: Twelfth Annual Collection"
+    },
+    {
+      "authors": [
+        "Sheree R. Thomas"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Anthology",
+      "position": "2001",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "Dark Matter: A Century of Speculative Fiction from the African Diaspora"
+    },
+    {
+      "authors": [
+        "Stephen Jones",
+        "David Sutton"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Anthology",
+      "position": "2001.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "Dark Terrors 5"
+    },
+    {
+      "authors": [
+        "Barbara Roden",
+        "Christopher Roden"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Anthology",
+      "position": "2001.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "Shadows and Silence"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Anthology",
+      "position": "2001.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "Vanishing Acts"
+    },
+    {
+      "authors": [
+        "Nalo Hopkinson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Anthology",
+      "position": "2001.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "Whispers from the Cotton Tree Root: Caribbean Fabulist Fiction"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2001",
+      "category": "Anthology",
+      "position": "2001.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2001"
+      },
+      "title": "The Year's Best Fantasy and Horror: Thirteenth Annual Collection"
+    },
+    {
+      "authors": [
+        "Dennis Etchison"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Anthology",
+      "position": "2002",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "The Museum of Horrors"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Anthology",
+      "position": "2002.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "The Mammoth Book of Best New Horror: Volume Twelve"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Anthology",
+      "position": "2002.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "The Mammoth Book of Vampire Stories by Women"
+    },
+    {
+      "authors": [
+        "Jerad Walters"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Anthology",
+      "position": "2002.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "Stigmata"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2002",
+      "category": "Anthology",
+      "position": "2002.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2002"
+      },
+      "title": "The Year's Best Fantasy and Horror: Fourteenth Annual Collection"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Anthology",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "The Green Man: Tales from the Mythic Forest"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer",
+        "Forrest Aguirre"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Anthology",
+      "position": "2003",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "Leviathan, Volume Three"
+    },
+    {
+      "authors": [
+        "Brian M. Thomsen"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Anthology",
+      "position": "2003.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "The American Fantasy Tradition"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Anthology",
+      "position": "2003.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "Conjunctions 39: The New Wave Fabulists"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2003",
+      "category": "Anthology",
+      "position": "2003.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2003"
+      },
+      "title": "The Year's Best Fantasy and Horror: Fifteenth Annual Collection"
+    },
+    {
+      "authors": [
+        "Rosalie Parker"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Anthology",
+      "position": "2004",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "Strange Tales"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Anthology",
+      "position": "2004.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "The Dark: New Ghost Stories"
+    },
+    {
+      "authors": [
+        "Jack Dann",
+        "Dennis Etchison",
+        "Ramsey Campbell"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Anthology",
+      "position": "2004.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "Gathering the Bones"
+    },
+    {
+      "authors": [
+        "Jeff VanderMeer",
+        "Mark Roberts"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Anthology",
+      "position": "2004.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "The Thackery T. Lambshead Pocket Guide to Eccentric & Discredited Diseases"
+    },
+    {
+      "authors": [
+        "Kelly Link"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2004",
+      "category": "Anthology",
+      "position": "2004.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2004"
+      },
+      "title": "Trampoline: An Anthology"
+    },
+    {
+      "authors": [
+        "Barbara Roden",
+        "Christopher Roden"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Anthology",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "Acquainted with the Night"
+    },
+    {
+      "authors": [
+        "Sheree R. Thomas"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Anthology",
+      "position": "2005",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "Dark Matter: Reading the Bones"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Anthology",
+      "position": "2005.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "The Faery Reel: Tales from the Twilight Realm"
+    },
+    {
+      "authors": [
+        "Harry Turtledove",
+        "Noreen Doyle"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Anthology",
+      "position": "2005.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "The First Heroes: New Tales of the Bronze Age"
+    },
+    {
+      "authors": [
+        "Deborah Layne",
+        "Jay Lake"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2005",
+      "category": "Anthology",
+      "position": "2005.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2005"
+      },
+      "title": "Polyphony, Volume 4"
+    },
+    {
+      "authors": [
+        "Marvin Kaye"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Anthology",
+      "position": "2006",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "The Fair Folk"
+    },
+    {
+      "authors": [
+        "Chris Roberson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Anthology",
+      "position": "2006.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "Adventure, Vol. 1"
+    },
+    {
+      "authors": [
+        "Neil Williamson",
+        "Andrew J. Wilson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Anthology",
+      "position": "2006.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "Nova Scotia: New Scottish Speculative Fiction"
+    },
+    {
+      "authors": [
+        "Deborah Layne",
+        "Jay Lake"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Anthology",
+      "position": "2006.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "Polyphony, Volume 5"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2006",
+      "category": "Anthology",
+      "position": "2006.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2006"
+      },
+      "title": "Weird Shadows Over Innsmouth"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Anthology",
+      "position": "2007",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "Salon Fantastique"
+    },
+    {
+      "authors": [
+        "Scott A. Cupp",
+        "Joe R. Lansdale"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Anthology",
+      "position": "2007.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "Cross Plains Universe: Texans Celebrate Robert E. Howard."
+    },
+    {
+      "authors": [
+        "Sharyn November"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Anthology",
+      "position": "2007.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "Firebirds Rising"
+    },
+    {
+      "authors": [
+        "Joe R. Lansdale"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Anthology",
+      "position": "2007.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "Retro Pulp Tales"
+    },
+    {
+      "authors": [
+        "David Moles",
+        "Susan Marie Groppi"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2007",
+      "category": "Anthology",
+      "position": "2007.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2007"
+      },
+      "title": "Twenty Epics"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Anthology",
+      "position": "2008",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "Inferno"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Anthology",
+      "position": "2008.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "The Coyote Road: Trickster Tales"
+    },
+    {
+      "authors": [
+        "Gary A. Braunbeck",
+        "Hank Schwaeble"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Anthology",
+      "position": "2008.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "Five Strokes to Midnight"
+    },
+    {
+      "authors": [
+        "John Klima"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Anthology",
+      "position": "2008.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "Logorrhea"
+    },
+    {
+      "authors": [
+        "Jack Dann",
+        "Gardner Dozois"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2008",
+      "category": "Anthology",
+      "position": "2008.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2008"
+      },
+      "title": "Wizards"
+    },
+    {
+      "authors": [
+        "Ekaterina Sedia"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Anthology",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "Paper Cities: An Anthology of Urban Fantasy"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Anthology",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "The Del Rey Book of Science Fiction and Fantasy"
+    },
+    {
+      "authors": [
+        "John Joseph Adams"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Anthology",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "The Living Dead"
+    },
+    {
+      "authors": [
+        "Ann VanderMeer",
+        "Jeff VanderMeer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Anthology",
+      "position": "2009.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "Steampunk"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Kelly Link",
+        "Gavin J. Grant"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2009",
+      "category": "Anthology",
+      "position": "2009.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2009"
+      },
+      "title": "The Year's Best Fantasy and Horror 2008: Twenty-First Annual Collection"
+    },
+    {
+      "authors": [
+        "Peter Straub"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "American Fantastic Tales: Terror and the Uncanny: From Poe to the Pulps/From the 1940s to Now"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "Eclipse Three"
+    },
+    {
+      "authors": [
+        "Danel Olson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "Exotic Gothic 3: Strange Visitations"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "Poe"
+    },
+    {
+      "authors": [
+        "George R. R. Martin",
+        "Gardner Dozois"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "Songs of The Dying Earth: Stories in Honor of Jack Vance"
+    },
+    {
+      "authors": [
+        "Gordon Van Gelder"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2010"
+      },
+      "title": "The Very Best of Fantasy & Science Fiction : Sixtieth Anniversary Anthology"
+    },
+    {
+      "authors": [
+        "Kate Bernheimer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "My Mother, She Killed Me, My Father, He Ate Me"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "Black Wings: New Tales of Lovecraftian Horror"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Nick Mamatas"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "Haunted Legends"
+    },
+    {
+      "authors": [
+        "Neil Gaiman",
+        "Al Sarrantonio"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "Stories: All-New Tales"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan",
+        "Lou Anders"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "Swords & Dark Magic"
+    },
+    {
+      "authors": [
+        "John Joseph Adams"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2011"
+      },
+      "title": "The Way of the Wizard"
+    },
+    {
+      "authors": [
+        "Ann VanderMeer",
+        "Jeff VanderMeer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "The Weird"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "Blood and Other Cravings"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "A Book of Horrors"
+    },
+    {
+      "authors": [
+        "Conrad Williams"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "Gutshot"
+    },
+    {
+      "authors": [
+        "Ann VanderMeer",
+        "Jeff VanderMeer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2012"
+      },
+      "title": "The Thackery T. Lambshead Cabinet of Curiosities"
+    },
+    {
+      "authors": [
+        "Danel Olson"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "Postscripts #28/#29: Exotic Gothic 4"
+    },
+    {
+      "authors": [
+        "John Joseph Adams"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "Epic: Legends of Fantasy"
+    },
+    {
+      "authors": [
+        "Jonathan Oliver"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "Magic: An Anthology of the Esoteric and Arcane"
+    },
+    {
+      "authors": [
+        "Eduardo Jim\u00e9nez Mayo",
+        "Chris N. Brown"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "Three Messages and a Warning: Contemporary Mexican Short Stories of the Fantastic"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2013"
+      },
+      "title": "Under My Hat: Tales from the Cauldron"
+    },
+    {
+      "authors": [
+        "George R. R. Martin",
+        "Gardner Dozois"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "Dangerous Women"
+    },
+    {
+      "authors": [
+        "Jonathan Oliver"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "End of the Road"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "Fearsome Journeys: The New Solaris Book of Fantasy"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "Flotsam Fantastique: The Souvenir Book of World Fantasy Convention 2013"
+    },
+    {
+      "authors": [
+        "Ellen Datlow",
+        "Terri Windling"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "Queen Victoria's Book of Spells"
+    },
+    {
+      "authors": [
+        "Kate Bernheimer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2014"
+      },
+      "title": "xo Orpheus: Fifty New Myths"
+    },
+    {
+      "authors": [
+        "Kelly Link",
+        "Gavin J. Grant"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "Monstrous Affections"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "Fearful Symmetries"
+    },
+    {
+      "authors": [
+        "Rose Fox",
+        "Daniel Jos\u00e9 Older"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "Long Hidden: Speculative Fiction from the Margins of History"
+    },
+    {
+      "authors": [
+        "George R. R. Martin",
+        "Gardner Dozois"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "Rogues"
+    },
+    {
+      "authors": [
+        "Michael Kelly"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2015"
+      },
+      "title": "Shadows & Tall Trees 2014"
+    },
+    {
+      "authors": [
+        "Silvia Moreno-Garcia",
+        "Paula R. Stiles"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "She Walks in Shadows"
+    },
+    {
+      "authors": [
+        "Simon Strantzas"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "Aickman's Heirs"
+    },
+    {
+      "authors": [
+        "S. T. Joshi"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "Black Wings IV"
+    },
+    {
+      "authors": [
+        "Joseph S. Pulver, Sr."
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "Cassilda's Song"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2016"
+      },
+      "title": "The Doll Collection"
+    },
+    {
+      "authors": [
+        "Jack Dann"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "Dreaming in the Dark"
+    },
+    {
+      "authors": [
+        "Karen Joy Fowler",
+        "John Joseph Adams"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "The Best American Science Fiction and Fantasy 2016"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "Children of Lovecraft"
+    },
+    {
+      "authors": [
+        "Mike Allen"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "Clockwork Phoenix 5"
+    },
+    {
+      "authors": [
+        "Dominik Parisien",
+        "Navah Wolfe"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2017"
+      },
+      "title": "The Starlit Wood"
+    },
+    {
+      "authors": [
+        "Peter S. Beagle",
+        "Jacob Weisman"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "The New Voices of Fantasy"
+    },
+    {
+      "authors": [
+        "William Schafer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "The Best of Subterranean"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "Black Feathers"
+    },
+    {
+      "authors": [
+        "Gardner Dozois"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "The Book of Swords"
+    },
+    {
+      "authors": [
+        "Mahvesh Murad",
+        "Jared Shurin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2018"
+      },
+      "title": "The Djinn Falls in Love and Other Stories"
+    },
+    {
+      "authors": [
+        "Irene Gallo"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "Worlds Seen in Passing"
+    },
+    {
+      "authors": [
+        "Stephen Jones"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "Best New Horror #28"
+    },
+    {
+      "authors": [
+        "Gardner Dozois"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "The Book of Magic"
+    },
+    {
+      "authors": [
+        "Dominik Parisien",
+        "Navah Wolfe"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "Robots vs Fairies"
+    },
+    {
+      "authors": [
+        "Aidan Doyle",
+        "Rachael K. Jones",
+        "E. Catherine Tobler"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2019"
+      },
+      "title": "Sword and Sonnet"
+    },
+    {
+      "authors": [
+        "Nisi Shawl"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "New Suns: Original Speculative Fiction by People of Color"
+    },
+    {
+      "authors": [
+        "Ann VanderMeer",
+        "Jeff VanderMeer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "The Big Book of Classic Fantasy"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "Echoes: The Saga Anthology of Ghost Stories"
+    },
+    {
+      "authors": [
+        "Dominik Parisien",
+        "Navah Wolfe"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "The Mythic Dream"
+    },
+    {
+      "authors": [
+        "Mahvesh Murad",
+        "Jared Shurin"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2020"
+      },
+      "title": "The Outcast Hours"
+    },
+    {
+      "authors": [
+        "Ann VanderMeer",
+        "Jeff VanderMeer"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "The Big Book of Modern Fantasy"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "The Book of Dragons"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "Edited By"
+    },
+    {
+      "authors": [
+        "Michael Kelly"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "Shadows & Tall Trees 8"
+    },
+    {
+      "authors": [
+        "James D. Jenkins",
+        "Ryan Cagle"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2021"
+      },
+      "title": "The Valencourt Book of World Horror Stories, Vol. 1"
+    },
+    {
+      "authors": [
+        "Oghenechovwe Donald Ekpeki"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "The Year's Best African Speculative Fiction (2021)"
+    },
+    {
+      "authors": [
+        "Charlatan Bardot",
+        "Eric J. Guignard"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "Professor Charlatan Bardot's Travel Anthology to the Most (Fictional) Haunted Buildings in the Weird, Wild World (2021 Edition)"
+    },
+    {
+      "authors": [
+        "Alex Hernandez",
+        "Matthew David Goodwin",
+        "Sarah Rafael Garc\u00eda"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "Speculative Fiction for Dreamers: A Latinx Anthology"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "When Things Get Dark: Stories Inspired by Shirley Jackson"
+    },
+    {
+      "authors": [
+        "Paula Guran"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2022"
+      },
+      "title": "The Year's Best Dark Fantasy & Horror Volume Two"
+    },
+    {
+      "authors": [
+        "Sheree Ren\u00e9e Thomas",
+        "Oghenechovwe Donald Ekpeki",
+        "Zelda Knight"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "Africa Risen: A New Era of Speculative Fiction"
+    },
+    {
+      "authors": [
+        "John F. D. Taff"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "Dark Stars: New Tales of Darkest Horror"
+    },
+    {
+      "authors": [
+        "Vince A. Liaguno",
+        "Rena Mason"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "Other Terrors: An Inclusive Anthology"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "Screams from the Dark: 29 Tales of Monsters and the Monstrous"
+    },
+    {
+      "authors": [
+        "Sheree Ren\u00e9e Thomas",
+        "Pan Morigan",
+        "Troy L. Wiggins"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2023"
+      },
+      "title": "Trouble the Waters: Tales from the Deep Blue"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Anthology",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "The Book of Witches"
+    },
+    {
+      "authors": [
+        "R. F. Kuang",
+        "John Joseph Adams"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Anthology",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "The Best American Science Fiction and Fantasy 2023"
+    },
+    {
+      "authors": [
+        "Ellen Datlow"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Anthology",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "Christmas and Other Horrors"
+    },
+    {
+      "authors": [
+        "Jordan Peele",
+        "John Joseph Adams"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Anthology",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "Out There Screaming: An Anthology of New Black Horror"
+    },
+    {
+      "authors": [
+        "Stephen Kotowych"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2024",
+      "category": "Anthology",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2024"
+      },
+      "title": "Year's Best Canadian Fantasy & Science Fiction: Volume One"
+    },
+    {
+      "authors": [
+        "Dan Coxon"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "Heartwood"
+    },
+    {
+      "authors": [
+        "dave ring"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "The Crawling Moon: Queer Tales of Inescapable Dread"
+    },
+    {
+      "authors": [
+        "Nate Pedersen"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "The Dagon Collection"
+    },
+    {
+      "authors": [
+        "Carol Gyzander",
+        "Anna Taborska"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "Discontinue If Death Ensues"
+    },
+    {
+      "authors": [
+        "Michael Kelly"
+      ],
+      "award": "World Fantasy Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/World_Fantasy_Awards_2025"
+      },
+      "title": "Northern Nights"
+    }
+  ],
+  "fetched_at": "2026-07-24T11:26:40Z",
+  "list_id": "world_fantasy_anthology",
+  "list_name": "World Fantasy - Anthology",
+  "match_series": false,
+  "notes": [],
+  "parser": "world_fantasy_anthology",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "World Fantasy - Anthology",
+    "source_id": "world_fantasy_anthology",
+    "url": "https://www.sfadb.com/World_Fantasy_Awards"
+  }
+}

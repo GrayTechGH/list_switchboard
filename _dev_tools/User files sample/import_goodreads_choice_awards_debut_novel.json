@@ -1,0 +1,4428 @@
+{
+  "append_state": {
+    "entry_count": 259,
+    "last_entry_key": "the original daughter|jemimah wei",
+    "last_position": "2025.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Emma Chase"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "Tangled",
+      "votes": "13929"
+    },
+    {
+      "authors": [
+        "Helene Wecker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "The Golem and the Jinni",
+      "votes": "10202"
+    },
+    {
+      "authors": [
+        "Tara Conklin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "The House Girl",
+      "votes": "9766"
+    },
+    {
+      "authors": [
+        "A.G. Howard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "Splintered",
+      "votes": "8515"
+    },
+    {
+      "authors": [
+        "Katy Evans"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "Real",
+      "votes": "8465"
+    },
+    {
+      "authors": [
+        "Megan Shepherd"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "The Madman's Daughter",
+      "votes": "6268"
+    },
+    {
+      "authors": [
+        "Jennifer Rush"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "Altered",
+      "votes": "5710"
+    },
+    {
+      "authors": [
+        "Erin Bowman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "Taken",
+      "votes": "4982"
+    },
+    {
+      "authors": [
+        "Emily Murdoch"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "If You Find Me",
+      "votes": "4357"
+    },
+    {
+      "authors": [
+        "Brian McClellan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "Promise of Blood",
+      "votes": "4150"
+    },
+    {
+      "authors": [
+        "Suzanne Rindell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "The Other Typist",
+      "votes": "2248"
+    },
+    {
+      "authors": [
+        "Yangsze Choo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "The Ghost Bride",
+      "votes": "2141"
+    },
+    {
+      "authors": [
+        "Willow Aster"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "True Love Story",
+      "votes": "2103"
+    },
+    {
+      "authors": [
+        "Priscille Sibley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "The Promise of Stardust",
+      "votes": "1908"
+    },
+    {
+      "authors": [
+        "Jessica Brockmole"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "Letters from Skye",
+      "votes": "1869"
+    },
+    {
+      "authors": [
+        "Penelope Douglas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "Bully",
+      "votes": "1399"
+    },
+    {
+      "authors": [
+        "Gail McHugh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "Collide",
+      "votes": "1197"
+    },
+    {
+      "authors": [
+        "Kasie West"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "Pivot Point",
+      "votes": "945"
+    },
+    {
+      "authors": [
+        "Wendy Lawless"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "Chanel Bonfire",
+      "votes": "706"
+    },
+    {
+      "authors": [
+        "Leah Raeder"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2013",
+      "category": "Debut Goodreads Author",
+      "position": "2013.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2013"
+      },
+      "title": "Unteachable",
+      "votes": "665"
+    },
+    {
+      "authors": [
+        "Pierce Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "Red Rising",
+      "votes": "15028"
+    },
+    {
+      "authors": [
+        "Rosamund Hodge"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "Cruel Beauty",
+      "votes": "14381"
+    },
+    {
+      "authors": [
+        "J. Daniels"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "Sweet Addiction",
+      "votes": "14074"
+    },
+    {
+      "authors": [
+        "Andy Weir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "The Martian",
+      "votes": "13367"
+    },
+    {
+      "authors": [
+        "Jennifer Mathieu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "The Truth About Alice",
+      "votes": "13041"
+    },
+    {
+      "authors": [
+        "Mary Kubica"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "The Good Girl",
+      "votes": "11360"
+    },
+    {
+      "authors": [
+        "Danielle Paige"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "Dorothy Must Die",
+      "votes": "10880"
+    },
+    {
+      "authors": [
+        "Celeste Ng"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "Everything I Never Told You",
+      "votes": "10461"
+    },
+    {
+      "authors": [
+        "Nadia Hashimi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "The Pearl That Broke Its Shell",
+      "votes": "8803"
+    },
+    {
+      "authors": [
+        "Danielle L. Jensen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "Stolen Songbird",
+      "votes": "8748"
+    },
+    {
+      "authors": [
+        "Rebecca Yarros"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "Full Measures",
+      "votes": "4419"
+    },
+    {
+      "authors": [
+        "Brian Staveley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "The Emperor's Blades",
+      "votes": "4351"
+    },
+    {
+      "authors": [
+        "Emma Healey"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "Elizabeth Is Missing",
+      "votes": "4309"
+    },
+    {
+      "authors": [
+        "Emery Lord"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "Open Road Summer",
+      "votes": "3765"
+    },
+    {
+      "authors": [
+        "Laura McHugh"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "The Weight of Blood",
+      "votes": "3351"
+    },
+    {
+      "authors": [
+        "J.D. Horn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "The Line",
+      "votes": "3031"
+    },
+    {
+      "authors": [
+        "Sally Green"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "Half Bad",
+      "votes": "2724"
+    },
+    {
+      "authors": [
+        "Erika Johansen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "The Queen of the Tearling",
+      "votes": "2372"
+    },
+    {
+      "authors": [
+        "Lila Rose"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "Holding Out",
+      "votes": "2017"
+    },
+    {
+      "authors": [
+        "Paula Marinaro"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2014",
+      "category": "Debut Goodreads Author",
+      "position": "2014.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2014"
+      },
+      "title": "Raine Falling",
+      "votes": "336"
+    },
+    {
+      "authors": [
+        "Victoria Aveyard"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "Red Queen",
+      "votes": "46698"
+    },
+    {
+      "authors": [
+        "Sabaa Tahir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "An Ember in the Ashes",
+      "votes": "23753"
+    },
+    {
+      "authors": [
+        "Becky Albertalli"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "Simon vs. the Homo Sapiens Agenda",
+      "votes": "12991"
+    },
+    {
+      "authors": [
+        "Nicola Yoon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "Everything, Everything",
+      "votes": "11925"
+    },
+    {
+      "authors": [
+        "Robert Beatty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "Serafina and the Black Cloak",
+      "votes": "9189"
+    },
+    {
+      "authors": [
+        "Jessica Knoll"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "Luckiest Girl Alive",
+      "votes": "8121"
+    },
+    {
+      "authors": [
+        "Sara Novi\u0107"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "Girl at War",
+      "votes": "7667"
+    },
+    {
+      "authors": [
+        "R.J. Prescott"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "The Hurricane",
+      "votes": "6823"
+    },
+    {
+      "authors": [
+        "Jasmine Warga"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "My Heart and Other Black Holes",
+      "votes": "6579"
+    },
+    {
+      "authors": [
+        "Scarlett Cole"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "The Strongest Steel",
+      "votes": "5481"
+    },
+    {
+      "authors": [
+        "S.D. Hendrickson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "The Mason List",
+      "votes": "2824"
+    },
+    {
+      "authors": [
+        "Christopher Scotton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "The Secret Wisdom of the Earth",
+      "votes": "2770"
+    },
+    {
+      "authors": [
+        "Chigozie Obioma"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "The Fishermen",
+      "votes": "2395"
+    },
+    {
+      "authors": [
+        "Roan Parrish"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "In the Middle of Somewhere",
+      "votes": "2322"
+    },
+    {
+      "authors": [
+        "Aline Ohanesian"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "Orhan's Inheritance",
+      "votes": "1864"
+    },
+    {
+      "authors": [
+        "Cassie Beasley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "Circus Mirandus",
+      "votes": "1803"
+    },
+    {
+      "authors": [
+        "Scott Hawkins"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "The Library at Mount Char",
+      "votes": "1670"
+    },
+    {
+      "authors": [
+        "Francesca Zappia"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "Made You Up",
+      "votes": "1226"
+    },
+    {
+      "authors": [
+        "Nikki Sloane"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "Three Simple Rules",
+      "votes": "1060"
+    },
+    {
+      "authors": [
+        "Sarai Walker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2015",
+      "category": "Debut Goodreads Author",
+      "position": "2015.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2015"
+      },
+      "title": "Dietland",
+      "votes": "789"
+    },
+    {
+      "authors": [
+        "Alwyn Hamilton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "Rebel of the Sands",
+      "votes": "24445"
+    },
+    {
+      "authors": [
+        "Martha Hall Kelly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "Lilac Girls",
+      "votes": "18767"
+    },
+    {
+      "authors": [
+        "Roshani Chokshi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "The Star-Touched Queen",
+      "votes": "17345"
+    },
+    {
+      "authors": [
+        "B.A. Paris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "Behind Closed Doors",
+      "votes": "17305"
+    },
+    {
+      "authors": [
+        "Steven Rowley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "Lily and the Octopus",
+      "votes": "13705"
+    },
+    {
+      "authors": [
+        "Logan Chance"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "Like a Boss",
+      "votes": "9473"
+    },
+    {
+      "authors": [
+        "Heidi Heilig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "The Girl from Everywhere",
+      "votes": "9389"
+    },
+    {
+      "authors": [
+        "Jeff Zentner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "The Serpent King",
+      "votes": "8624"
+    },
+    {
+      "authors": [
+        "Brit Bennett"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "The Mothers",
+      "votes": "7596"
+    },
+    {
+      "authors": [
+        "Amanda Bouchet"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "A Promise of Fire",
+      "votes": "5564"
+    },
+    {
+      "authors": [
+        "Traci Chee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "The Reader",
+      "votes": "3479"
+    },
+    {
+      "authors": [
+        "Nathan Hill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "The Nix",
+      "votes": "3478"
+    },
+    {
+      "authors": [
+        "Louise Jensen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "The Sister",
+      "votes": "3117"
+    },
+    {
+      "authors": [
+        "Imbolo Mbue"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "Behold the Dreamers",
+      "votes": "2383"
+    },
+    {
+      "authors": [
+        "Nicole Y. Dennis-Benn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "Here Comes the Sun",
+      "votes": "2042"
+    },
+    {
+      "authors": [
+        "Garth Greenwell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "What Belongs to You",
+      "votes": "1678"
+    },
+    {
+      "authors": [
+        "Tiffany McDaniel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "The Summer that Melted Everything",
+      "votes": "871"
+    },
+    {
+      "authors": [
+        "Louise Miller"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "The City Baker's Guide to Country Living",
+      "votes": "724"
+    },
+    {
+      "authors": [
+        "Nicole Waggoner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "Center Ring",
+      "votes": "412"
+    },
+    {
+      "authors": [
+        "Nigel Jay Cooper"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2016",
+      "category": "Debut Goodreads Author",
+      "position": "2016.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2016"
+      },
+      "title": "Beat the Rain",
+      "votes": "252"
+    },
+    {
+      "authors": [
+        "Angie Thomas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "The Hate U Give",
+      "votes": "74925"
+    },
+    {
+      "authors": [
+        "Stephanie Garber"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "Caraval",
+      "votes": "40849"
+    },
+    {
+      "authors": [
+        "Katherine Arden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "The Bear and the Nightingale",
+      "votes": "23863"
+    },
+    {
+      "authors": [
+        "Georgia Hunter"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "We Were the Lucky Ones",
+      "votes": "13151"
+    },
+    {
+      "authors": [
+        "Matthew J. Sullivan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "Midnight at the Bright Ideas Bookstore",
+      "votes": "12368"
+    },
+    {
+      "authors": [
+        "Jane Harper"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "The Dry",
+      "votes": "11918"
+    },
+    {
+      "authors": [
+        "Omar El Akkad"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "American War",
+      "votes": "7326"
+    },
+    {
+      "authors": [
+        "Jennifer Ryan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "The Chilbury Ladies' Choir",
+      "votes": "6955"
+    },
+    {
+      "authors": [
+        "Gabriel Tallent"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "My Absolute Darling",
+      "votes": "5250"
+    },
+    {
+      "authors": [
+        "Lisa Ko"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "The Leavers",
+      "votes": "5166"
+    },
+    {
+      "authors": [
+        "Ay\u1ecd\u0300ba\u0301mi Ade\u0301ba\u0301y\u1ecd\u0300"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "Stay with Me",
+      "votes": "2181"
+    },
+    {
+      "authors": [
+        "Elan Mastai"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "All Our Wrong Todays",
+      "votes": "2174"
+    },
+    {
+      "authors": [
+        "Rachel Khong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "Goodbye, Vitamin",
+      "votes": "1897"
+    },
+    {
+      "authors": [
+        "Kayla Rae Whitaker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "The Animators",
+      "votes": "1881"
+    },
+    {
+      "authors": [
+        "Abby Fabiaschi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "I Liked My Life",
+      "votes": "1468"
+    },
+    {
+      "authors": [
+        "Zinzi Clemmons"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "What We Lose",
+      "votes": "1221"
+    },
+    {
+      "authors": [
+        "Nicholas Eames"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "Kings of the Wyld",
+      "votes": "1086"
+    },
+    {
+      "authors": [
+        "Devney Perry"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "The Coppersmith Farmhouse",
+      "votes": "1081"
+    },
+    {
+      "authors": [
+        "Robinne Lee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "The Idea of You",
+      "votes": "864"
+    },
+    {
+      "authors": [
+        "Dan Moren"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2017",
+      "category": "Debut Goodreads Author",
+      "position": "2017.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-goodreads-author-2017"
+      },
+      "title": "The Caledonian Gambit",
+      "votes": "612"
+    },
+    {
+      "authors": [
+        "Tomi Adeyemi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "Children of Blood and Bone",
+      "votes": "70984"
+    },
+    {
+      "authors": [
+        "A.J. Finn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "The Woman in the Window",
+      "votes": "36008"
+    },
+    {
+      "authors": [
+        "Heather Morris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "The Tattooist of Auschwitz",
+      "votes": "35180"
+    },
+    {
+      "authors": [
+        "Helen Hoang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "The Kiss Quotient",
+      "votes": "23334"
+    },
+    {
+      "authors": [
+        "Alexandra Christo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "To Kill a Kingdom",
+      "votes": "20896"
+    },
+    {
+      "authors": [
+        "Tommy Orange"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "There There",
+      "votes": "13962"
+    },
+    {
+      "authors": [
+        "R.F. Kuang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "The Poppy War",
+      "votes": "11754"
+    },
+    {
+      "authors": [
+        "Emily X.R. Pan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "The Astonishing Color of After",
+      "votes": "11502"
+    },
+    {
+      "authors": [
+        "Catherine Steadman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "Something in the Water",
+      "votes": "9718"
+    },
+    {
+      "authors": [
+        "C.J. Tudor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "The Chalk Man",
+      "votes": "8478"
+    },
+    {
+      "authors": [
+        "Hank Green"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "An Absolutely Remarkable Thing",
+      "votes": "4309"
+    },
+    {
+      "authors": [
+        "Fatima Farheen Mirza"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "A Place for Us",
+      "votes": "4208"
+    },
+    {
+      "authors": [
+        "Zeyn Joukhadar"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "The Map of Salt and Stars",
+      "votes": "2815"
+    },
+    {
+      "authors": [
+        "Stuart Turton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "The 7\u00bd Deaths of Evelyn Hardcastle",
+      "votes": "2747"
+    },
+    {
+      "authors": [
+        "Adrienne Young"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "Sky in the Deep",
+      "votes": "2696"
+    },
+    {
+      "authors": [
+        "Shobha Rao"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "Girls Burn Brighter",
+      "votes": "2607"
+    },
+    {
+      "authors": [
+        "Mira T. Lee"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "Everything Here Is Beautiful",
+      "votes": "2153"
+    },
+    {
+      "authors": [
+        "Ingrid Rojas Contreras"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "Fruit of the Drunken Tree",
+      "votes": "1630"
+    },
+    {
+      "authors": [
+        "C.L. Polk"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "Witchmark",
+      "votes": "892"
+    },
+    {
+      "authors": [
+        "Jack Carr"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2018",
+      "category": "Debut Author",
+      "position": "2018.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-author-2018"
+      },
+      "title": "The Terminal List",
+      "votes": "732"
+    },
+    {
+      "authors": [
+        "Casey McQuiston"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "Red, White & Royal Blue",
+      "votes": "60656"
+    },
+    {
+      "authors": [
+        "Alex Michaelides"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "The Silent Patient",
+      "votes": "44936"
+    },
+    {
+      "authors": [
+        "Oyinkan Braithwaite"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "My Sister, the Serial Killer",
+      "votes": "26662"
+    },
+    {
+      "authors": [
+        "Alix E. Harrow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "The Ten Thousand Doors of January",
+      "votes": "18657"
+    },
+    {
+      "authors": [
+        "Ta-Nehisi Coates"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "The Water Dancer",
+      "votes": "18350"
+    },
+    {
+      "authors": [
+        "Linda Holmes"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "Evvie Drake Starts Over",
+      "votes": "16722"
+    },
+    {
+      "authors": [
+        "Ocean Vuong"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "On Earth We're Briefly Gorgeous",
+      "votes": "13688"
+    },
+    {
+      "authors": [
+        "Etaf Rum"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "A Woman Is No Man",
+      "votes": "12315"
+    },
+    {
+      "authors": [
+        "Lara Prescott"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "The Secrets We Kept",
+      "votes": "11746"
+    },
+    {
+      "authors": [
+        "Candice Carty-Williams"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "Queenie",
+      "votes": "11242"
+    },
+    {
+      "authors": [
+        "Shelby Mahurin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "Serpent & Dove",
+      "votes": "5457"
+    },
+    {
+      "authors": [
+        "Angie Kim"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "Miracle Creek",
+      "votes": "5405"
+    },
+    {
+      "authors": [
+        "Claire Lombardo"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "The Most Fun We Ever Had",
+      "votes": "4648"
+    },
+    {
+      "authors": [
+        "Trent Dalton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "Boy Swallows Universe",
+      "votes": "4607"
+    },
+    {
+      "authors": [
+        "Anne Griffin"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "When All Is Said",
+      "votes": "3697"
+    },
+    {
+      "authors": [
+        "Erin A. Craig"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "House of Salt and Sorrows",
+      "votes": "3674"
+    },
+    {
+      "authors": [
+        "Hafsah Faizal"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "We Hunt the Flame",
+      "votes": "3569"
+    },
+    {
+      "authors": [
+        "Tamsyn Muir"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "Gideon the Ninth",
+      "votes": "3145"
+    },
+    {
+      "authors": [
+        "Abby Jimenez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "The Friend Zone",
+      "votes": "3041"
+    },
+    {
+      "authors": [
+        "Taffy Brodesser-Akner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2019",
+      "category": "Debut Novel",
+      "position": "2019.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2019"
+      },
+      "title": "Fleishman Is in Trouble",
+      "votes": "2525"
+    },
+    {
+      "authors": [
+        "Kiley Reid"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "Such a Fun Age",
+      "votes": "52450"
+    },
+    {
+      "authors": [
+        "Aiden Thomas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "Cemetery Boys",
+      "votes": "51018"
+    },
+    {
+      "authors": [
+        "Kate Elizabeth Russell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "My Dark Vanessa",
+      "votes": "37502"
+    },
+    {
+      "authors": [
+        "Natalie Jenner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "The Jane Austen Society",
+      "votes": "26032"
+    },
+    {
+      "authors": [
+        "Abi Dar\u00e9"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "The Girl with the Louding Voice",
+      "votes": "25143"
+    },
+    {
+      "authors": [
+        "Alexis Henderson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "The Year of the Witching",
+      "votes": "23286"
+    },
+    {
+      "authors": [
+        "Kate Stayman-London"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "One to Watch",
+      "votes": "22777"
+    },
+    {
+      "authors": [
+        "Alka Joshi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "The Henna Artist",
+      "votes": "21646"
+    },
+    {
+      "authors": [
+        "Andrea Stewart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "The Bone Shard Daughter",
+      "votes": "10900"
+    },
+    {
+      "authors": [
+        "Elizabeth Wetmore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "Valentine",
+      "votes": "10055"
+    },
+    {
+      "authors": [
+        "Megha Majumdar"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "A Burning",
+      "votes": "4945"
+    },
+    {
+      "authors": [
+        "Raven Leilani"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "Luster",
+      "votes": "4093"
+    },
+    {
+      "authors": [
+        "Brandon Taylor"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "Real Life",
+      "votes": "3571"
+    },
+    {
+      "authors": [
+        "Sarah Hogle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "You Deserve Each Other",
+      "votes": "3109"
+    },
+    {
+      "authors": [
+        "David Heska Wanbli Weiden"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "Winter Counts",
+      "votes": "2964"
+    },
+    {
+      "authors": [
+        "C Pam Zhang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "How Much of These Hills Is Gold",
+      "votes": "2857"
+    },
+    {
+      "authors": [
+        "Lindsay Ellis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "Axiom's End",
+      "votes": "2518"
+    },
+    {
+      "authors": [
+        "Jordan Ifueko"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "Raybearer",
+      "votes": "2100"
+    },
+    {
+      "authors": [
+        "Douglas Stuart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "Shuggie Bain",
+      "votes": "1161"
+    },
+    {
+      "authors": [
+        "Linden A. Lewis"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2020",
+      "category": "Debut Novel",
+      "position": "2020.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2020"
+      },
+      "title": "The First Sister",
+      "votes": "856"
+    },
+    {
+      "authors": [
+        "Elena Armas"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "The Spanish Love Deception",
+      "votes": "55621"
+    },
+    {
+      "authors": [
+        "Sarah Penner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "The Lost Apothecary",
+      "votes": "47761"
+    },
+    {
+      "authors": [
+        "Angeline Boulley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "Firekeeper's Daughter",
+      "votes": "38188"
+    },
+    {
+      "authors": [
+        "Ashley Audrain"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "The Push",
+      "votes": "29928"
+    },
+    {
+      "authors": [
+        "Namina Forna"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "The Gilded Ones",
+      "votes": "26689"
+    },
+    {
+      "authors": [
+        "Shelley Parker-Chan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "She Who Became the Sun",
+      "votes": "24986"
+    },
+    {
+      "authors": [
+        "Miranda Cowley Heller"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "The Paper Palace",
+      "votes": "18153"
+    },
+    {
+      "authors": [
+        "Morgan Rogers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "Honey Girl",
+      "votes": "16898"
+    },
+    {
+      "authors": [
+        "Tracey Lange"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "We Are the Brennans",
+      "votes": "13541"
+    },
+    {
+      "authors": [
+        "Torrey Peters"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "Detransition, Baby",
+      "votes": "13289"
+    },
+    {
+      "authors": [
+        "Everina Maxwell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "Winter's Orbit",
+      "votes": "4079"
+    },
+    {
+      "authors": [
+        "Gabriela Garcia"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "Of Women and Salt",
+      "votes": "3566"
+    },
+    {
+      "authors": [
+        "Dawnie Walton"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "The Final Revival of Opal & Nev",
+      "votes": "3411"
+    },
+    {
+      "authors": [
+        "Robert Jones Jr."
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "The Prophets",
+      "votes": "3139"
+    },
+    {
+      "authors": [
+        "Honor\u00e9e Fanonne Jeffers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "The Love Songs of W.E.B. Du Bois",
+      "votes": "2902"
+    },
+    {
+      "authors": [
+        "Mateo Askaripour"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "Black Buck",
+      "votes": "2751"
+    },
+    {
+      "authors": [
+        "Nathan Harris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "The Sweetness of Water",
+      "votes": "2714"
+    },
+    {
+      "authors": [
+        "Caleb Azumah Nelson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "Open Water",
+      "votes": "2541"
+    },
+    {
+      "authors": [
+        "Wanda M. Morris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "All Her Little Secrets",
+      "votes": "1611"
+    },
+    {
+      "authors": [
+        "Kirstin Valdez Quade"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2021",
+      "category": "Debut Novel",
+      "position": "2021.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2021"
+      },
+      "title": "The Five Wounds",
+      "votes": "1430"
+    },
+    {
+      "authors": [
+        "Bonnie Garmus"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "Lessons in Chemistry",
+      "votes": "64107"
+    },
+    {
+      "authors": [
+        "Sue Lynn Tan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "Daughter of the Moon Goddess",
+      "votes": "58601"
+    },
+    {
+      "authors": [
+        "Carley Fortune"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "Every Summer After",
+      "votes": "57167"
+    },
+    {
+      "authors": [
+        "Nita Prose"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "The Maid",
+      "votes": "42474"
+    },
+    {
+      "authors": [
+        "Shelby Van Pelt"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "Remarkably Bright Creatures",
+      "votes": "27231"
+    },
+    {
+      "authors": [
+        "Stacy Willingham"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "A Flicker in the Dark",
+      "votes": "26728"
+    },
+    {
+      "authors": [
+        "Charmaine Wilkerson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "Black Cake",
+      "votes": "19969"
+    },
+    {
+      "authors": [
+        "Ashley Flowers"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "All Good People Here",
+      "votes": "19347"
+    },
+    {
+      "authors": [
+        "Vaishnavi Patel"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "Kaikeyi",
+      "votes": "16741"
+    },
+    {
+      "authors": [
+        "Coco Mellors"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "Cleopatra and Frankenstein",
+      "votes": "16093"
+    },
+    {
+      "authors": [
+        "Isabel Ca\u00f1as"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "The Hacienda",
+      "votes": "5499"
+    },
+    {
+      "authors": [
+        "Sequoia Nagamatsu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "How High We Go in the Dark",
+      "votes": "5219"
+    },
+    {
+      "authors": [
+        "X\u00f3chitl Gonz\u00e1lez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "Olga Dies Dreaming",
+      "votes": "4627"
+    },
+    {
+      "authors": [
+        "GennaRose Nethercott"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "Thistlefoot",
+      "votes": "4568"
+    },
+    {
+      "authors": [
+        "Leila Mottley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "Nightcrawling",
+      "votes": "4331"
+    },
+    {
+      "authors": [
+        "Julia Armfield"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "Our Wives Under the Sea",
+      "votes": "3917"
+    },
+    {
+      "authors": [
+        "Nikki Erlick"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "The Measure",
+      "votes": "3661"
+    },
+    {
+      "authors": [
+        "Tara M. Stringfellow"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "Memphis",
+      "votes": "3328"
+    },
+    {
+      "authors": [
+        "Brendan Slocumb"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "The Violin Conspiracy",
+      "votes": "3302"
+    },
+    {
+      "authors": [
+        "Erin E. Adams"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2022",
+      "category": "Debut Novel",
+      "position": "2022.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2022"
+      },
+      "title": "Jackal",
+      "votes": "1789"
+    },
+    {
+      "authors": [
+        "Emilia Hart"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "Weyward",
+      "votes": "45420"
+    },
+    {
+      "authors": [
+        "Emma T\u00f6rzs"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "Ink Blood Sister Scribe",
+      "votes": "32924"
+    },
+    {
+      "authors": [
+        "Jenny Jackson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "Pineapple Street",
+      "votes": "29199"
+    },
+    {
+      "authors": [
+        "Jessica George"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "Maame",
+      "votes": "27680"
+    },
+    {
+      "authors": [
+        "Carissa Orlando"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "The September House",
+      "votes": "22346"
+    },
+    {
+      "authors": [
+        "Heather Marshall"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "Looking for Jane",
+      "votes": "20045"
+    },
+    {
+      "authors": [
+        "Genevieve Wheeler"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "Adelaide",
+      "votes": "19745"
+    },
+    {
+      "authors": [
+        "Crystal Smith Paul"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "Did You Hear About Kitty Karr?",
+      "votes": "19698"
+    },
+    {
+      "authors": [
+        "Parini Shroff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "The Bandit Queens",
+      "votes": "18208"
+    },
+    {
+      "authors": [
+        "Nana Kwame Adjei-Brenyah"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "Chain-Gang All-Stars",
+      "votes": "7645"
+    },
+    {
+      "authors": [
+        "Mikki Brammer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "The Collected Regrets of Clover",
+      "votes": "6979"
+    },
+    {
+      "authors": [
+        "Laura Spence-Ash"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "Beyond That, the Sea",
+      "votes": "6605"
+    },
+    {
+      "authors": [
+        "Emily Habeck"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "Shark Heart",
+      "votes": "6041"
+    },
+    {
+      "authors": [
+        "Alice Winn"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "In Memoriam",
+      "votes": "5303"
+    },
+    {
+      "authors": [
+        "Eleanor Shearer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "River Sing Me Home",
+      "votes": "4095"
+    },
+    {
+      "authors": [
+        "Thao Thai"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "Banyan Moon",
+      "votes": "3597"
+    },
+    {
+      "authors": [
+        "Gerardo S\u00e1mano C\u00f3rdova"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "Monstrilio",
+      "votes": "3391"
+    },
+    {
+      "authors": [
+        "Marisa Crane"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "I Keep My Exoskeletons to Myself",
+      "votes": "3165"
+    },
+    {
+      "authors": [
+        "Terah Shelton Harris"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2023",
+      "category": "Debut Novel",
+      "position": "2023.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-debut-novel-2023"
+      },
+      "title": "One Summer in Savannah",
+      "votes": "3049"
+    },
+    {
+      "authors": [
+        "Yulin Kuang"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "How to End a Love Story",
+      "votes": "63605"
+    },
+    {
+      "authors": [
+        "Kaliane Bradley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "The Ministry of Time",
+      "votes": "44473"
+    },
+    {
+      "authors": [
+        "Marcus Kliewer"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "We Used to Live Here",
+      "votes": "43234"
+    },
+    {
+      "authors": [
+        "Gareth Brown"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "The Book of Doors",
+      "votes": "34967"
+    },
+    {
+      "authors": [
+        "Hwang Bo-Reum"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "Welcome to the Hyunam-Dong Bookshop",
+      "votes": "33169"
+    },
+    {
+      "authors": [
+        "Kaveh Akbar"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "Martyr!",
+      "votes": "24186"
+    },
+    {
+      "authors": [
+        "Frances White"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "Voyage of the Damned",
+      "votes": "18744"
+    },
+    {
+      "authors": [
+        "Monika Kim"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "The Eyes Are the Best Part",
+      "votes": "17609"
+    },
+    {
+      "authors": [
+        "Danica Nava"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "The Truth According to Ember",
+      "votes": "17134"
+    },
+    {
+      "authors": [
+        "Rebecca K. Reilly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "Greta & Valdin",
+      "votes": "11372"
+    },
+    {
+      "authors": [
+        "Vanessa Chan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "The Storm We Made",
+      "votes": "4833"
+    },
+    {
+      "authors": [
+        "Eve J. Chung"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "Daughters of Shandong",
+      "votes": "4517"
+    },
+    {
+      "authors": [
+        "O.O. Sangoyomi"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "Masquerade",
+      "votes": "4344"
+    },
+    {
+      "authors": [
+        "Elba Iris P\u00e9rez"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "The Things We Didn\u2019t Know",
+      "votes": "3372"
+    },
+    {
+      "authors": [
+        "Ashton Lattimore"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "All We Were Promised",
+      "votes": "3316"
+    },
+    {
+      "authors": [
+        "Ferdia Lennon"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "Glorious Exploits",
+      "votes": "3000"
+    },
+    {
+      "authors": [
+        "Cebo Campbell"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "Sky Full of Elephants",
+      "votes": "1899"
+    },
+    {
+      "authors": [
+        "Morgan Talty"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "Fire Exit",
+      "votes": "1672"
+    },
+    {
+      "authors": [
+        "Betsy Lerner"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "Shred Sisters",
+      "votes": "1515"
+    },
+    {
+      "authors": [
+        "Andrew Boryga"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2024",
+      "category": "Debut Novel",
+      "position": "2024.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2024"
+      },
+      "title": "Victim",
+      "votes": "986"
+    },
+    {
+      "authors": [
+        "SenLinYu"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "Alchemised",
+      "votes": "165184"
+    },
+    {
+      "authors": [
+        "Florence Knapp"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "The Names",
+      "votes": "52001"
+    },
+    {
+      "authors": [
+        "Virginia Evans"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "The Correspondent",
+      "votes": "49050"
+    },
+    {
+      "authors": [
+        "Sarah Damoff"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "The Bright Years",
+      "votes": "25827"
+    },
+    {
+      "authors": [
+        "Venessa Vida Kelley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "When the Tides Held the Moon",
+      "votes": "25645"
+    },
+    {
+      "authors": [
+        "Morgan Ryan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "A Resistance of Witches",
+      "votes": "23502"
+    },
+    {
+      "authors": [
+        "Heather Aimee O'Neill"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "The Irish Goodbye",
+      "votes": "19454"
+    },
+    {
+      "authors": [
+        "Erin Crosby Eckstine"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "Junie",
+      "votes": "16369"
+    },
+    {
+      "authors": [
+        "Karissa Chen"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "Homeseeking",
+      "votes": "13027"
+    },
+    {
+      "authors": [
+        "Milo Todd"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "The Lilac People",
+      "votes": "12897"
+    },
+    {
+      "authors": [
+        "Loretta Rothschild"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "Finding Grace",
+      "votes": "6182"
+    },
+    {
+      "authors": [
+        "Daria Lavelle"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "Aftertaste",
+      "votes": "6144"
+    },
+    {
+      "authors": [
+        "Claire Lynch"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "A Family Matter",
+      "votes": "5095"
+    },
+    {
+      "authors": [
+        "Aisha Muharrar"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "Loved One",
+      "votes": "4972"
+    },
+    {
+      "authors": [
+        "Emily St. James"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "Woodworking",
+      "votes": "4437"
+    },
+    {
+      "authors": [
+        "Archer Sullivan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "The Witch's Orchard",
+      "votes": "3537"
+    },
+    {
+      "authors": [
+        "Joanna Miller"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "The Eights",
+      "votes": "2990"
+    },
+    {
+      "authors": [
+        "Grace Walker"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "The Merge",
+      "votes": "2764"
+    },
+    {
+      "authors": [
+        "Addie E. Citchens"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "Dominion",
+      "votes": "2712"
+    },
+    {
+      "authors": [
+        "Jemimah Wei"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2025",
+      "category": "Debut Novel",
+      "position": "2025.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/readers-favorite-debut-novel-2025"
+      },
+      "title": "The Original Daughter",
+      "votes": "1817"
+    }
+  ],
+  "fetched_at": "2026-07-28T04:15:23Z",
+  "list_id": "goodreads_choice_awards_debut_novel",
+  "list_name": "Goodreads Choice Awards - Debut Novel",
+  "match_series": false,
+  "notes": [
+    "Goodreads contributor enrichment stopped after an access challenge; 20 newest-year rows retained ballot credits."
+  ],
+  "parser": "goodreads_choice_awards_debut_novel",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Debut Novel",
+    "source_id": "goodreads_choice_awards_debut_novel",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

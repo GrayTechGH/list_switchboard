@@ -1,0 +1,1443 @@
+{
+  "append_state": {
+    "entry_count": 87,
+    "last_entry_key": "never say die|canberra speculative fiction guild",
+    "last_position": "2026.03",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "Anthology",
+      "position": "2009",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2009"
+      },
+      "title": "The Starry Rift"
+    },
+    {
+      "authors": [
+        "Jack Dann"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "Anthology",
+      "position": "2009.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2009"
+      },
+      "title": "Dreaming Again"
+    },
+    {
+      "authors": [
+        "Bill Congreve",
+        "Michelle Marquardt"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2009",
+      "category": "Anthology",
+      "position": "2009.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2009"
+      },
+      "title": "The Year's Best Australian Fantasy and Science Fiction, Fourth Annual Volume"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "Eclipse Three"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "Eclipse Two"
+    },
+    {
+      "authors": [
+        "Alisa Krasnostein",
+        "Tehani Wessely"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "New Ceres Night"
+    },
+    {
+      "authors": [
+        "Gardner Dozois",
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "The New Space Opera 2"
+    },
+    {
+      "authors": [
+        "Keith Stevenson"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2010",
+      "category": "Anthology",
+      "position": "2010.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2010"
+      },
+      "title": "X 6"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan",
+        "Marianne S. Jablon"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2011"
+      },
+      "title": "Wings of Fire"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2011"
+      },
+      "title": "Godlike Machines"
+    },
+    {
+      "authors": [
+        "Angela Challis",
+        "Marty Young"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2011"
+      },
+      "title": "Macabre: A Journey Through Australia's Darkest Fears"
+    },
+    {
+      "authors": [
+        "Amanda Pillar",
+        "Peter Kempshall"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2011"
+      },
+      "title": "Scenes from the Second Storey"
+    },
+    {
+      "authors": [
+        "Alisa Krasnostein"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2011",
+      "category": "Anthology",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2011"
+      },
+      "title": "Sprawl"
+    },
+    {
+      "authors": [
+        "Jack Dann",
+        "Nick Gevers"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2012"
+      },
+      "title": "Ghosts by Gaslight"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2012"
+      },
+      "title": "The Best Science Fiction and Fantasy of the Year Volume Five"
+    },
+    {
+      "authors": [
+        "Amanda Pillar",
+        "K. V. Taylor"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2012"
+      },
+      "title": "Ishtar"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2012"
+      },
+      "title": "Life on Mars: Tales of the New Frontier"
+    },
+    {
+      "authors": [
+        "Liz Grzyb",
+        "Talie Helene"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2012",
+      "category": "Anthology",
+      "position": "2012.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2012"
+      },
+      "title": "The Year's Best Australian Fantasy and Horror 2010"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2013"
+      },
+      "title": "The Best Science Fiction and Fantasy of the Year Volume Six"
+    },
+    {
+      "authors": [
+        "Amanda Pillar"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2013"
+      },
+      "title": "Bloodstones"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2013"
+      },
+      "title": "Edge of Infinity"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2013"
+      },
+      "title": "Under My Hat: Tales from the Cauldron"
+    },
+    {
+      "authors": [
+        "Liz Grzyb",
+        "Talie Helene"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2013",
+      "category": "Anthology",
+      "position": "2013.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2013"
+      },
+      "title": "The Year's Best Australian Fantasy and Horror 2011"
+    },
+    {
+      "authors": [
+        "Tehani Wessely"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "One Small Step: An Anthology of Discoveries"
+    },
+    {
+      "authors": [
+        "Liz Grzyb",
+        "Talie Helene"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "The Year\u2019s Best Australian Fantasy and Horror 2012"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "The Best Science Fiction and Fantasy of the Year Volume Seven"
+    },
+    {
+      "authors": [
+        "Liz Grzyb"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "Dreaming of Djinn"
+    },
+    {
+      "authors": [
+        "Tehani Wessely"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2014",
+      "category": "Anthology",
+      "position": "2014.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2014"
+      },
+      "title": "Focus 2012: Highlights of Australian Short Fiction"
+    },
+    {
+      "authors": [
+        "Alisa Krasnostein",
+        "Julia Rios"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2015"
+      },
+      "title": "Kaleidoscope: Diverse YA Science Fiction and Fantasy Stories"
+    },
+    {
+      "authors": [
+        "Dominica Malcolm"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2015"
+      },
+      "title": "Amok: An Anthology of Asia-Pacific Speculative Fiction"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2015"
+      },
+      "title": "Fearsome Magics"
+    },
+    {
+      "authors": [
+        "Liz Grzyb"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2015"
+      },
+      "title": "Kisses by Clockwork"
+    },
+    {
+      "authors": [
+        "Tehani Wessely"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2015"
+      },
+      "title": "Phantazein"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2015",
+      "category": "Anthology",
+      "position": "2015.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2015"
+      },
+      "title": "Reach for Infinity"
+    },
+    {
+      "authors": [
+        "Amanda Pillar"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2016"
+      },
+      "title": "Bloodlines"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2016"
+      },
+      "title": "The Best Science Fiction and Fantasy of the Year Volume Nine"
+    },
+    {
+      "authors": [
+        "Tehani Wessely"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2016"
+      },
+      "title": "Focus 2014: highlights of Australian short fiction"
+    },
+    {
+      "authors": [
+        "Liz Grzyb"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2016"
+      },
+      "title": "Hear Me Roar"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2016"
+      },
+      "title": "Meeting Infinity"
+    },
+    {
+      "authors": [
+        "Liz Grzyb",
+        "Talie Helene"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2016",
+      "category": "Anthology",
+      "position": "2016.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2016"
+      },
+      "title": "The Year's Best Australian Fantasy and Horror 2014"
+    },
+    {
+      "authors": [
+        "Julia Rios",
+        "Alisa Krasnostein"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2017"
+      },
+      "title": "Year's Best YA Speculative Fiction 2015"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2017"
+      },
+      "title": "The Best Science Fiction & Fantasy of the Year Volume Ten"
+    },
+    {
+      "authors": [
+        "Tsana Dolichva",
+        "Holly Kench"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2017"
+      },
+      "title": "Defying Doomsday"
+    },
+    {
+      "authors": [
+        "Jack Dann"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2017"
+      },
+      "title": "Dreaming in the Dark"
+    },
+    {
+      "authors": [
+        "Tehani Wessely"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2017",
+      "category": "Anthology",
+      "position": "2017.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2017"
+      },
+      "title": "In Your Face"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2018"
+      },
+      "title": "Infinity Wars"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2018"
+      },
+      "title": "The Best Science Fiction and Fantasy of the Year: Volume 11"
+    },
+    {
+      "authors": [
+        "Keith Stevenson"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2018"
+      },
+      "title": "Dimension6: Annual Collection 2017"
+    },
+    {
+      "authors": [
+        "Shane Jiraiya Cummings",
+        "Anthony Fergson"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2018"
+      },
+      "title": "Midnight Echo #12"
+    },
+    {
+      "authors": [
+        "Liz Grzyb",
+        "Talie Helene"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2018",
+      "category": "Anthology",
+      "position": "2018.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2018"
+      },
+      "title": "The Year's Best Australian Fantasy and Horror 2015"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2019"
+      },
+      "title": "The Best Science Fiction & Fantasy of the Year Volume Twelve"
+    },
+    {
+      "authors": [
+        "Russell B. Farr"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2019"
+      },
+      "title": "Aurum"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2019"
+      },
+      "title": "Infinity's End"
+    },
+    {
+      "authors": [
+        "Rivqa Rafael",
+        "Tansy Rayner Roberts"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2019"
+      },
+      "title": "Mother of Invention"
+    },
+    {
+      "authors": [
+        "Rachael K. Jones",
+        "E. Catherine Tobler"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2019",
+      "category": "Anthology",
+      "position": "2019.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2019"
+      },
+      "title": "Sword and Sonnet , Aidan Doyle"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2020"
+      },
+      "title": "Mission Critical"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2020"
+      },
+      "title": "The Best Science Fiction and Fantasy of the Year: Volume 13"
+    },
+    {
+      "authors": [
+        "Michael Earp"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2020"
+      },
+      "title": "Kindred: 12 Queer #LoveOzYA Stories"
+    },
+    {
+      "authors": [
+        "Christopher Sequeira"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2020",
+      "category": "Anthology",
+      "position": "2020.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2020"
+      },
+      "title": "Sherlock Holmes and Doctor Was Not"
+    },
+    {
+      "authors": [
+        "Tsana Dolichva"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "Rebuilding Tomorrow"
+    },
+    {
+      "authors": [
+        "Michael Mohammed Ahmad"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "After Australia"
+    },
+    {
+      "authors": [
+        "Lee Murray",
+        "Geneve Flynn"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "Black Cranes: Tales of Unquiet Women"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "Made to Order: Robots and Revolution"
+    },
+    {
+      "authors": [
+        "Alis Franklin",
+        "Lyss Wickramasinghe"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "Unnatural Order"
+    },
+    {
+      "authors": [
+        "Aiki Flinthart",
+        "Pamela Jeffs"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2021",
+      "category": "Anthology",
+      "position": "2021.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2021"
+      },
+      "title": "The Zookeeper's Tales of Interstellar Oddities"
+    },
+    {
+      "authors": [
+        "Aiki Flinthart"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2022"
+      },
+      "title": "Relics, Wrecks & Ruins"
+    },
+    {
+      "authors": [
+        "Poppy Nwosu"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2022"
+      },
+      "title": "Hometown Haunts: #LoveOzYA Horror Tales"
+    },
+    {
+      "authors": [
+        "Deborah Sheldon"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2022"
+      },
+      "title": "Spawn: Weird Horror Tales About Pregnancy, Birth and Babies"
+    },
+    {
+      "authors": [
+        "Lindy Cameron"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2022",
+      "category": "Anthology",
+      "position": "2022.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2022"
+      },
+      "title": "Who Sleuthed It?"
+    },
+    {
+      "authors": [
+        "Mykaela Saunders"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "This All Come Back Now"
+    },
+    {
+      "authors": [
+        "Tehani Croft with Stephanie Lai"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "The Art of Being Human"
+    },
+    {
+      "authors": [
+        "Narrelle M. Harris"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "Clamour and Mischief"
+    },
+    {
+      "authors": [
+        "Julie Bozz"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "Queer Weird West Tales"
+    },
+    {
+      "authors": [
+        "Rafeif Ismail"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "Unlimited Futures"
+    },
+    {
+      "authors": [
+        "L E Daniels",
+        "Christa Carmen"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2023",
+      "category": "Anthology",
+      "position": "2023.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2023"
+      },
+      "title": "We are Providence"
+    },
+    {
+      "authors": [
+        "Jonathan Strahan"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Anthology",
+      "position": "2024",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "The Book of Witches"
+    },
+    {
+      "authors": [
+        "Gillian Hagenus"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Anthology",
+      "position": "2024.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "Strangely Enough"
+    },
+    {
+      "authors": [
+        "Seth Malacari"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2024",
+      "category": "Anthology",
+      "position": "2024.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2024"
+      },
+      "title": "An Unexpected Party"
+    },
+    {
+      "authors": [
+        "Samuel Maguire"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "Far-Flung"
+    },
+    {
+      "authors": [
+        "Cat Sparks",
+        "Kaaron Warren"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "Calvaria Fell: Stories"
+    },
+    {
+      "authors": [
+        "Aidan Demmers"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "Celestial Bodies"
+    },
+    {
+      "authors": [
+        "Eugen Bacon",
+        "Gene Rowe"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "Fission #4"
+    },
+    {
+      "authors": [
+        "Andrew Cull",
+        "Gabino Iglesias"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2025",
+      "category": "Anthology",
+      "position": "2025.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2025"
+      },
+      "title": "Found 2: More Stories of Found Footage Horror"
+    },
+    {
+      "authors": [
+        "Michaela Teschendorff Harden",
+        "Matt Richardson"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Anthology",
+      "position": "2026",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "Austral 2025 , Ciar Fhearchair"
+    },
+    {
+      "authors": [
+        "Eugen Bacon",
+        "Gene Rowe"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Anthology",
+      "position": "2026.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "Fission #5: An Anthology of Stories from the British Science Fiction Association"
+    },
+    {
+      "authors": [
+        "Marty Young"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Anthology",
+      "position": "2026.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "Midnight Echo"
+    },
+    {
+      "authors": [
+        "Canberra Speculative Fiction Guild"
+      ],
+      "award": "Aurealis Award",
+      "award_year": "2026",
+      "category": "Anthology",
+      "position": "2026.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.sfadb.com/Aurealis_Awards_2026"
+      },
+      "title": "Never Say Die"
+    }
+  ],
+  "fetched_at": "2026-11-15T02:07:31Z",
+  "list_id": "aurealis_anthology",
+  "list_name": "Aurealis - Anthology",
+  "match_series": false,
+  "notes": [],
+  "parser": "aurealis_anthology",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Aurealis - Anthology",
+    "source_id": "aurealis_anthology",
+    "url": "https://www.sfadb.com/Aurealis_Awards"
+  }
+}

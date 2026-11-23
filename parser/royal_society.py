@@ -13,7 +13,9 @@ Maintenance notes:
 """
 
 import re
-from urllib.parse import urljoin
+import json
+import datetime
+from urllib.parse import urljoin,urlsplit
 
 from lxml import html as lxml_html
 
@@ -23,12 +25,16 @@ try:
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from calibre_plugins.list_switchboard.parser.generic import position_sort_key
+  from calibre_plugins.list_switchboard.parser.incremental import ParsedUnitCache, project_source_rows, restore_source_rows
+  from calibre_plugins.list_switchboard.errors import ImportCancelledError, CamoufoxRequiredError
 except ImportError:
   from .award_base import (
     AwardParserBase, RESULT_SHORTLISTED, RESULT_WINNER, assign_positions,
     normalize_heading, normalize_line, strip_publication_notes,
   )
   from .generic import position_sort_key
+  from .incremental import ParsedUnitCache, project_source_rows, restore_source_rows
+  from errors import ImportCancelledError, CamoufoxRequiredError
 
 
 AWARD_NAME = 'Royal Society Trivedi Science Book Prize'
@@ -71,19 +77,73 @@ class RoyalSocietyScienceBookPrizeParser(AwardParserBase):
 
   AWARD_NAME = AWARD_NAME
 
-  def parse(self, html, base_url, name, category=CATEGORY, fetch_url=None, **_kwargs):
+  def validate_fetch_payload(self,html,url):
+    if self.is_book_detail_url(url):
+      row=self.row_from_detail_page(html,url,CATEGORY)
+      year=re.search(r'/books/((?:19|20)\d{2})/',url)
+      if not row or not year or row['award_year']!=year.group(1):
+        raise ValueError('Royal Society book page did not expose its own prize year and metadata.')
+      return
+    root=self.html_root(html)
+    heading=' '.join(self.node_text(node) for node in root.xpath('//h1'))
+    items=self.landing_items(html,url)
+    if ('science book prize' not in normalize_heading(heading) or not items or
+        any(not item.get('title') or not item.get('author') or not item.get('award_year') or
+          urlsplit(item['source_url']).hostname not in ('royalsociety.org','www.royalsociety.org') for item in items)):
+      raise ValueError('Royal Society archive did not expose the adult Science Book Prize roster.')
+
+  def parse(self, html, base_url, name, category=CATEGORY, fetch_url=None,
+      cached_parsed=None, incremental_update=False, **_kwargs):
     notes = []
-    rows = self.parse_rows(html, base_url, category, fetch_url, notes)
+    cache = ParsedUnitCache('royal-society-annual-details-v1',
+      json.dumps([base_url,name,self.AWARD_NAME,category]),cached_parsed,incremental_update)
+    groups={}
+    for item in self.landing_items(html,base_url):
+      if item.get('award_year'):
+        groups.setdefault(str(item['award_year']),[]).append(item)
+    rows,units=[],{}
+    latest=max(map(int,groups)) if groups else 0
+    for year,items in groups.items():
+      revision=[[item['source_url'],item['title'],item['author']] for item in items]
+      old=cache.old_units.get(year) or {}
+      previous=[]
+      try:
+        previous=restore_source_rows(cache.previous(year),old.get('metadata') or {})
+      except (ValueError,TypeError):
+        pass
+      if (int(year)<min(latest,datetime.datetime.now().year) and
+          old.get('complete') is True and old.get('revision')==revision and
+          previous and any(row['result']==RESULT_WINNER for row in previous)):
+        source_rows,complete=previous,True
+      else:
+        count=len(notes)
+        source_rows=self.rows_from_items(items,category,fetch_url,notes)
+        complete=fetch_url is not None and len(source_rows)==len(items) and count==len(notes)
+        if not complete and previous:
+          source_rows=previous
+      rows.extend(source_rows)
+      units[year]=(source_rows,revision,complete)
     entries = self.entries_from_rows(self.dedupe_rows(rows))
-    return self.parsed_result(
+    entries=sorted(entries,key=lambda item:position_sort_key(item.get('position','')))
+    for year,(source_rows,revision,complete) in units.items():
+      projected,metadata=project_source_rows(source_rows,entries,
+        lambda row:(str(row['award_year']),normalize_heading(row['title'])))
+      cache.put(year,projected,revision=revision,complete=complete,metadata=metadata)
+    parsed=self.parsed_result(
       name,
       base_url,
-      sorted(entries, key=lambda item: position_sort_key(item.get('position', ''))),
+      entries,
       notes=notes)
+    parsed['incremental_state']=cache.state(entries)
+    parsed['incremental_state']['discovery']={'refresh_units':[str(latest)]}
+    return parsed
 
   def parse_rows(self, html, base_url, category, fetch_url, notes):
+    return self.rows_from_items(self.landing_items(html,base_url),category,fetch_url,notes)
+
+  def rows_from_items(self,items,category,fetch_url,notes):
     rows = []
-    for item in self.landing_items(html, base_url):
+    for item in items:
       row = self.row_from_landing_item(item, category)
       if fetch_url is not None and item.get('source_url'):
         try:
@@ -91,6 +151,10 @@ class RoyalSocietyScienceBookPrizeParser(AwardParserBase):
             fetch_url(item['source_url']),
             item['source_url'],
             category)
+          if detail is not None and detail['award_year']!=str(item['award_year']):
+            raise ValueError('Detail returned another award year.')
+        except (ImportCancelledError,CamoufoxRequiredError):
+          raise
         except Exception as err:
           notes.append(
             'Official Royal Society detail page failed for %s: %s' % (
@@ -146,6 +210,9 @@ class RoyalSocietyScienceBookPrizeParser(AwardParserBase):
     return link
 
   def title_author_from_landing(self, link, context):
+    metadata=context.xpath('.//*[contains(concat(" ",normalize-space(@class)," ")," card__meta-item ")]')
+    if metadata:
+      return self.clean_title(self.title_from_node(link)),self.clean_author(self.node_text(metadata[0]))
     title = self.title_from_node(link) or self.title_from_node(context)
     author = self.author_from_context(context, title)
     if not title or not author:
@@ -182,14 +249,16 @@ class RoyalSocietyScienceBookPrizeParser(AwardParserBase):
     }
 
   def result_year_from_detail(self, root):
-    for node in root.xpath('//h1|//h2|//h3|//h4|//p|//span|//strong'):
+    labels=root.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," hero__subtitle ")]')
+    for node in labels or root.xpath('//h2|//h3|//h4|//p|//span|//strong'):
       text = self.node_text(node)
+      if not re.match(r'^(?:winner|shortlist(?:ed)?|finalist)\b',text,re.I):
+        continue
       result = self.result_from_text(text)
       year = self.year_from_text(text)
       if result is not None and year is not None:
         return result, year
-    text = self.node_text(root)
-    return self.result_from_text(text), self.year_from_text(text)
+    return None,None
 
   def result_from_text(self, value):
     text = normalize_heading(value)
@@ -213,7 +282,8 @@ class RoyalSocietyScienceBookPrizeParser(AwardParserBase):
       nodes = node.xpath(xpath)
       if nodes:
         return nodes[0]
-    return node.getparent() or node
+    parent=node.getparent()
+    return parent if parent is not None else node
 
   def title_from_node(self, node):
     title_nodes = node.xpath(

@@ -1,0 +1,363 @@
+{
+  "append_state": {
+    "entry_count": 20,
+    "last_entry_key": "crazy river|richard grant",
+    "last_position": "2011.19",
+    "source_revision": null
+  },
+  "entries": [
+    {
+      "authors": [
+        "Conor Grennan"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011",
+      "result": "winner",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "Little Princes: One Man's Promise to Bring Home the Lost Children of Nepal",
+      "votes": "1874"
+    },
+    {
+      "authors": [
+        "Mark Adams"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.01",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "Turn Right at Machu Picchu",
+      "votes": "1023"
+    },
+    {
+      "authors": [
+        "Rachel Friedman"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.02",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "The Good Girl's Guide to Getting Lost",
+      "votes": "903"
+    },
+    {
+      "authors": [
+        "Danny Bent"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.03",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "You've Gone Too Far This Time, Sir!",
+      "votes": "840"
+    },
+    {
+      "authors": [
+        "Ken Jennings"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.04",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "Maphead",
+      "votes": "828"
+    },
+    {
+      "authors": [
+        "Susan Conley"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.05",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "The Foremost Good Fortune",
+      "votes": "740"
+    },
+    {
+      "authors": [
+        "Caitlin Shetterly"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.06",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "Made for You and Me",
+      "votes": "652"
+    },
+    {
+      "authors": [
+        "Miranda Kennedy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.07",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "Sideways on a Scooter",
+      "votes": "645"
+    },
+    {
+      "authors": [
+        "Jim Davidson"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.08",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "The Ledge",
+      "votes": "621"
+    },
+    {
+      "authors": [
+        "Philip Connors"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.09",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "Fire Season",
+      "votes": "425"
+    },
+    {
+      "authors": [
+        "Paul Theroux"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.10",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "The Tao of Travel",
+      "votes": "224"
+    },
+    {
+      "authors": [
+        "Elisabeth Eaves"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.11",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "Wanderlust",
+      "votes": "167"
+    },
+    {
+      "authors": [
+        "Michael Levy"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.12",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "Kosher Chinese",
+      "votes": "155"
+    },
+    {
+      "authors": [
+        "Linda Leaming"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.13",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "Married to Bhutan",
+      "votes": "142"
+    },
+    {
+      "authors": [
+        "Colin Thubron"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.14",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "To a Mountain in Tibet",
+      "votes": "123"
+    },
+    {
+      "authors": [
+        "Carl Safina"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.15",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "The View from Lazy Point",
+      "votes": "107"
+    },
+    {
+      "authors": [
+        "Alan Paul"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.16",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "Big in China",
+      "votes": "97"
+    },
+    {
+      "authors": [
+        "Tony Perrottet"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.17",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "The Sinner's Grand Tour",
+      "votes": "68"
+    },
+    {
+      "authors": [
+        "Steven Weinberg"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.18",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "To Timbuktu",
+      "votes": "36"
+    },
+    {
+      "authors": [
+        "Richard Grant"
+      ],
+      "award": "Goodreads Choice Awards",
+      "award_year": "2011",
+      "category": "Travel & Outdoors",
+      "position": "2011.19",
+      "result": "nominee",
+      "source": {
+        "name": "",
+        "source_id": "",
+        "url": "https://www.goodreads.com/choiceawards/best-travel-outdoors-books-2011"
+      },
+      "title": "Crazy River",
+      "votes": "19"
+    }
+  ],
+  "fetched_at": "2026-07-28T04:33:59Z",
+  "list_id": "goodreads_choice_awards_travel_outdoors",
+  "list_name": "Goodreads Choice Awards - Travel & Outdoors (discontinued)",
+  "match_series": false,
+  "notes": [],
+  "parser": "goodreads_choice_awards_travel_outdoors",
+  "requires_series_matching": false,
+  "schema_version": 2,
+  "source": {
+    "name": "Goodreads Choice Awards - Travel & Outdoors (discontinued)",
+    "source_id": "goodreads_choice_awards_travel_outdoors",
+    "url": "https://www.goodreads.com/choiceawards"
+  }
+}

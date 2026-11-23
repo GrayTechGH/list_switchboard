@@ -6151,12 +6151,13 @@
       "title": "Wearing the Lion"
     }
   ],
-  "fetched_at": "2026-07-08T15:27:50Z",
+  "fetched_at": "2026-07-23T18:42:47Z",
   "list_id": "nebula_awards_novel",
   "list_name": "Nebula Awards - Novel",
   "match_series": false,
   "notes": [],
   "parser": "nebula_awards_novel",
+  "requires_series_matching": false,
   "schema_version": 2,
   "source": {
     "name": "Nebula Awards - Novel",

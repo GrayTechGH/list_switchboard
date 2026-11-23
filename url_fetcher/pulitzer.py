@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 # vim:fileencoding=UTF-8:ts=2:sw=2:sta:et:sts=2:ai
 
-"""Pulitzer recipes with two transports inside the official source attempt.
+"""Pulitzer recipes with validated browser/legacy source attempts.
 
 Maintenance notes:
 - Validate rendered and legacy HTML separately before replacing the official
   source with Wikipedia or winner-only Britannica. A successful transport retry
   remains source rank 0 and must not add a failed-source note.
+- Britannica also tries Camoufox before legacy, retaining its winner-only rank 2
+  and the shared browser disable/version/cancellation rules.
 """
 
 import time
@@ -48,7 +50,8 @@ PULITZER_FICTION_BRITANNICA_URL = (
 PULITZER_BRITANNICA_URL = 'https://www.britannica.com/topic/Pulitzer-Prize'
 
 
-class PulitzerOfficialAttempt(SourceAttempt):
+class PulitzerBrowserAttempt(SourceAttempt):
+  """Try both transports within one ranked source, validating each response."""
 
   def execute(
       self, fetch_url, log=None, progress=None, before_fetch=None,
@@ -74,19 +77,19 @@ class PulitzerOfficialAttempt(SourceAttempt):
     for label, transport in (('Camoufox', browser_fetch), ('legacy', fetch_url)):
       started = time.monotonic()
       try:
-        report(f'Official Pulitzer transport={label} url={self.url}')
+        report(f'{self.label} transport={label} url={self.url}')
 
         def announce(url):
           if before_fetch is not None:
             before_fetch(url)
           if progress is not None:
-            progress(0, 1, f'Fetching official Pulitzer via {label}...')
+            progress(0, 1, f'Fetching {self.label} via {label}...')
 
         parsed = super().execute(
           transport, log=log, progress=progress, before_fetch=announce,
           after_fetch=after_fetch, before_parse=before_parse)
         report(
-          f'Official Pulitzer transport={label} accepted entries={len(parsed["entries"])} '
+          f'{self.label} transport={label} accepted entries={len(parsed["entries"])} '
           f'seconds={time.monotonic() - started:.1f}')
         return parsed
       except ImportCancelledError:
@@ -95,8 +98,12 @@ class PulitzerOfficialAttempt(SourceAttempt):
         reason = str(err) or err.__class__.__name__
         failures.append(f'{label}: {reason}')
         report(
-          f'Official Pulitzer transport={label} failed seconds={time.monotonic() - started:.1f}: {reason}')
-    raise UrlFetcherError('Official Pulitzer transports failed: ' + '; '.join(failures))
+          f'{self.label} transport={label} failed seconds={time.monotonic() - started:.1f}: {reason}')
+    raise UrlFetcherError(f'{self.label} transports failed: ' + '; '.join(failures))
+
+
+class PulitzerOfficialAttempt(PulitzerBrowserAttempt):
+  pass
 
 
 class UrlFetcherPulitzerAward(UrlFetcherGeneric):
@@ -148,7 +155,7 @@ class UrlFetcherPulitzerAward(UrlFetcherGeneric):
           html, url, self.NAME, self.CATEGORY, self.CATEGORY_ALIASES,
           tied_winner_years=self.WIKIPEDIA_TIED_WINNER_YEARS),
         source_rank=1),
-      SourceAttempt(
+      PulitzerBrowserAttempt(
         'Britannica',
         self.BRITANNICA_URL,
         lambda html, url, **_kwargs: PulitzerBritannicaParser().parse(

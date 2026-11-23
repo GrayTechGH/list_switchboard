@@ -20,9 +20,9 @@ from collections import OrderedDict
 from calibre.ebooks.metadata import title_sort
 
 try:
-  from calibre_plugins.list_switchboard.camoufox_transport import with_browser_operation
+  from calibre_plugins.list_switchboard.transport.camoufox import with_browser_operation
 except ImportError:
-  from camoufox_transport import with_browser_operation
+  from transport.camoufox import with_browser_operation
 
 
 SERIES_SUFFIX_WORDS = frozenset([

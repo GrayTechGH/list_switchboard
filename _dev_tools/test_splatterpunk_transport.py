@@ -1,4 +1,4 @@
-"""Splatterpunk historical supplement transport and official-source isolation."""
+"""Independent validation for official REST and historical supplement transport."""
 import json
 import unittest
 from html import escape
@@ -76,9 +76,9 @@ class SplatterpunkTransportTests(unittest.TestCase):
         self.assertEqual(len(browser['entries']), 11)
         self.assertFalse(browser['match_series'])
         self.assertEqual([(u, b) for u, b, _ in calls], [
-          (OFFICIAL_AWARDS_API_URL, False), (OFFICIAL_PAST_WINNERS_API_URL, False),
+          (OFFICIAL_AWARDS_API_URL, True), (OFFICIAL_PAST_WINNERS_API_URL, True),
           (GOODREADS_URL, True), (NEXT, True)])
-        self.assertTrue(all(kw.get('timeout') != 60 for u, _, kw in calls if u != GOODREADS_URL and u != NEXT))
+        self.assertTrue(all(kw.get('timeout') == 60 for _u, _b, kw in calls))
         winner = next(e for e in browser['entries'] if e['title'] == f'Official {factory.CATEGORY} 2018')
         self.assertEqual(winner['result'], 'winner')
         self.assertNotIn('goodreads', winner['source']['url'])
@@ -105,8 +105,8 @@ class SplatterpunkTransportTests(unittest.TestCase):
     self.assertEqual(len(result['entries']), 11)
 
   def test_cancellation_all_network_boundaries(self):
-    for url, browser in ((OFFICIAL_AWARDS_API_URL, False),
-        (OFFICIAL_PAST_WINNERS_API_URL, False), (GOODREADS_URL, True), (NEXT, True),
+    for url, browser in ((OFFICIAL_AWARDS_API_URL, True),(OFFICIAL_AWARDS_API_URL, False),
+        (OFFICIAL_PAST_WINNERS_API_URL, True),(OFFICIAL_PAST_WINNERS_API_URL, False), (GOODREADS_URL, True), (NEXT, True),
         (GOODREADS_URL, False), (NEXT, False)):
       with self.subTest(url=url, browser=browser):
         recipe, calls = FETCHERS[0](), []
@@ -192,7 +192,7 @@ class SplatterpunkTransportTests(unittest.TestCase):
     for _ in range(2):
       recipe.fetch_and_parse(owner.fetch)
       self.assertIsNone(recipe._splatterpunk_fetch_policy)
-    self.assertEqual(len(owner.rejected), 2)
+    self.assertEqual(len(owner.rejected), 4)
 
 
 if __name__ == '__main__':
